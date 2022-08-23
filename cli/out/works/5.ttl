@@ -1,0 +1,72 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/work/5> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2013-11-29"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-08-22T13:52:55.443881"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value 5 ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "001.4" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://http://bibliokeia.com//5/Agent700-1> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bf:Contribution ;
+            bf:agent <http://http://bibliokeia.com//5/Agent700-2> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://http://bibliokeia.com//5/Agent110> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://bibliokeia.com/instance/5> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            rdf:value "001.4 B823c" ] ;
+    bf:intendedAudience [ a bf:IntendedAudience ;
+            rdfs:label "specialized" ;
+            bf:IntendedAudience <http://id.loc.gov/vocabulary/maudience/spe> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <http://http://bibliokeia.com//5/Topic650-1>,
+        <http://http://bibliokeia.com//5/Topic650-2> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Contribuição da pós-graduação brasileira para o desenvolvimento sustentável : capes na rio+20 / " ;
+            bf:mainTitle "Contribuição da pós-graduação brasileira para o desenvolvimento sustentável" ;
+            bf:subtitle "capes na rio+20" ] .
+
+<http://http://bibliokeia.com//5/Agent110> a bf:Agent,
+        bf:Organization ;
+    rdfs:label "Brasil. Ministério da Educação. Coordenação de Aperfeiçoamento de Pessoal de Nível Superior" ;
+    bflc:name10MatchKey "Brasil. Ministério da Educação. Coordenação de Aperfeiçoamento de Pessoal de Nível Superior" ;
+    bflc:primaryContributorName10MatchKey "Brasil. Ministério da Educação. Coordenação de Aperfeiçoamento de Pessoal de Nível Superior" .
+
+<http://http://bibliokeia.com//5/Agent700-1> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Phillippi Jr., Arlindo" ;
+    bflc:name00MatchKey "Phillippi Jr., Arlindo" .
+
+<http://http://bibliokeia.com//5/Agent700-2> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Sobral, Maria do Carmo Martins." ;
+    bflc:name00MatchKey "Sobral, Maria do Carmo Martins." .
+
+<http://http://bibliokeia.com//5/Topic650-1> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Desenvolvimento sustentável." ;
+    madsrdf:authoritativeLabel "Desenvolvimento sustentável" .
+
+<http://http://bibliokeia.com//5/Topic650-2> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Pesquisa científica." ;
+    madsrdf:authoritativeLabel "Pesquisa científica" .
+

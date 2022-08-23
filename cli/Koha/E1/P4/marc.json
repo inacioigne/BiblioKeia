@@ -1,0 +1,3282 @@
+[
+    {
+        "leader": "00769nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142824.0",
+            "008": "140130s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-201-10271-4"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.61 "
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.61 D264a"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Davis, William S."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Análise e projeto de sistemas : ",
+                    "b": "uma abordagem estruturada /  ",
+                    "c": "William S. Davis ; tradução de Newton Dias de Vasconcellos. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Livros Técnicos e Científicos,",
+                    "c": "1987."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xiv, 378 p. ",
+                    "b": "il."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Aplicações de computadores."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém índice e bibliografia."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Sistemas de informação"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Processamento de dados."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Análise de sistemas."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_610000000000000_D264A",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22973",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.61 D264a",
+                        "p": "95-1122",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00585nam a2200205   4500",
+        "controlfields": {
+            "005": "20161123142823.0",
+            "008": "140128s1977    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.61"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.61 G613m"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bingham, J. E."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Manual de análise de sistemas / ",
+                    "c": "J. E. Bingham, G. W. P. Davies."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Interciência, ",
+                    "c": "1977."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "188 p. : ",
+                    "b": "il."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Sistema de informação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Análise de sistemas."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Davies, G. W. P."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_610000000000000_G613M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22963",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.61 G613m",
+                        "p": "R",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_610000000000000_G613M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22964",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.61 G613m",
+                        "p": "95-1169",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00764nam a2200241   4500",
+        "controlfields": {
+            "005": "20161123142823.0",
+            "008": "140129s1984    bl a   f     0000 0 spa  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "84-283-0435-1"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.61"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.61 H333m"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Hartman, W."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Manual de los sistemas de informacion : ",
+                    "b": "análisis, requisitos y su determinación, diseño y desarrolo, implatación y su evaluación / ",
+                    "c": "W. Hartman, H. Matthes, A. Proeme."
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "6. ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Madrid : ",
+                    "b": "Paraninfo, ",
+                    "c": "1984."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "382 p. : ",
+                    "b": "il."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Biblioteca tecnica philips"
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Sistemas de informação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Análise de sistemas."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Matthes, H."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Proeme, A."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_610000000000000_H333M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22966",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.61 H333m",
+                        "p": "95-1060",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00592nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142825.0",
+            "008": "140130s2014    bl     f     0000 0 fre  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64  B664m"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Micro-ordinateur une solution pour votre gestion :  ",
+                    "b": "Le connaître, le choisir, l'utiliser. / ",
+                    "c": "Bernard Boch. [et. al.]."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Paris :  ",
+                    "b": "Eyrolles,",
+                    "c": "1983."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "x, 133 p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bibliografia p. 133."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Informática."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Gestão da informação."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_B664M",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22982",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 B664m",
+                        "p": "94-0867",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00525nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142825.0",
+            "008": "140130s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64  C331c"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Vasconcellos, Augusto de"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Computadores eletrônicos digitais / ",
+                    "c": "Augusto de Vasconcellos. "
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "2. ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "[s.l. ] :  ",
+                    "b": "[s.n.],",
+                    "c": "1968."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "119p. : ",
+                    "b": "il."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computador",
+                        "x": "História."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_C331C",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22983",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 C331c",
+                        "p": "95-1500",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00616nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142822.0",
+            "008": "140127s2014    bl     f     0000 0 eng  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-19-858323-0"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64 L399c"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Laver, M."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Computers, communications and society /  ",
+                    "c": "Murray Laver."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "London ; New York : ",
+                    "b": "Oxford University Press, ",
+                    "c": "1975."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "99 p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bibliografia : 94 / Contém índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Telecomunicação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Comunicação."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_L399C",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22951",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 L399c",
+                        "p": "76-1757",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00583nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142822.0",
+            "008": "140128s2014    bl     f     0000 0 spa  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-13-046516-X"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64 M285a"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Mano, M. Morris"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Arquitectura de computadores /   ",
+                    "c": "M. Morris Mano."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Madrid : ",
+                    "b": "Prentice hall, ",
+                    "c": "1983."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "508 p. :",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Arquitetura de computadores."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Algoritimos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_M285A",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22955",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 M285a",
+                        "p": "95-1204",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00654nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142832.0",
+            "008": "140219s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-7001-791-X"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64 S271s"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Sawicki, Ed."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Segurança : ",
+                    "b": "seu guia para o uso seguro em redes locais. / ",
+                    "c": "Ed Sawicki ; Tradução José Paulo T.P. de Faria."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Campus, ",
+                    "c": "c1993."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "278p. : ",
+                    "b": "il."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice remissivo."
+                }
+            },
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Faria, José Paulo T. P., trad. "
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_S271S",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23049",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 S271s",
+                        "p": "93-0584",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00520nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142823.0",
+            "008": "140129s1975    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64 S556s"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Shimizu, Tamio"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Simulação em computador digital / ",
+                    "c": "Tamio Shimizu."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "Edgar blucher, ",
+                    "c": "1974."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "107 p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Informática."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_S556S",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22967",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 S556s",
+                        "p": "76-0579",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_S556S",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22968",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.64 S556s",
+                        "p": "76-0580",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00631nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142823.0",
+            "008": "140128s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-224-0067-9"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64  S556p"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Shimizu, Tamio"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Processamento de dados :  ",
+                    "b": "Conceitos básicos / ",
+                    "c": "Tamio Shimizu."
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "3. ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "Atlas, ",
+                    "c": "1988."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "278 p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém glossário."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Processamento de dados."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Linguagem de programação."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "001_640000000000000_S556P",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22960",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 S556p",
+                        "p": "98-0115",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00626nam a2200205   4500",
+        "controlfields": {
+            "005": "20161123142823.0",
+            "008": "140128s2014    bl     f     0000 0 eng  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-932376-13-4"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64  S573t"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Siewiorek, Daniel P."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "The theory and practice of reliable system design /  ",
+                    "c": "Daniel P. Siewiorek, Robert S. Swarz"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bedford : ",
+                    "b": "Digital press, ",
+                    "c": "1982."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "772 p. :",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bibliografia p. 721-747. Contém índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Linguagem de programação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_S573T",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22962",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 S573t",
+                        "p": "95-1069",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00781nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142825.0",
+            "008": "140130s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-917072-40-5"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.61"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64  W262d"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Ward, Paul T."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Desenvolvendo sistemas sem complicação : ",
+                    "b": "guia do usuário para a modelagem de padrões organizacionais / ",
+                    "c": "Paul T. Ward ; tradução de José Roberto Gomes da Silva. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Livros Técnicos e Científicos,",
+                    "c": "1987."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xxi, 288p. :",
+                    "b": "il."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Ciência de computação."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Contém índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Sistemas de informação."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Processamento de dados."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Informática."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640000000000000_W262D",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22981",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64 W262d",
+                        "p": "95-1152",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00666nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142829.0",
+            "008": "140211s2014    bl     f     0000 0 eng  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-471-05051-2"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 B259i"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Barna, Arpad."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Introduction to microcomputers and microprocessors / ",
+                    "c": "Arpad Barna, Dan I. Porat."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "New York : ",
+                    "b": "A Wiley-Interscience publication, ",
+                    "c": "1976."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "108p. :",
+                    "b": "Il."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "inclui índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Microprocessors."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Microcomputers."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Central Processor Unit."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Porat, Dan I."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_B259I",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23015",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.6404 B259i",
+                        "p": "78-1091",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00718nam a2200241   4500",
+        "controlfields": {
+            "005": "20161123142832.0",
+            "008": "140219s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-7001-784-7"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 G659p"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Gookin, Dan"
+                }
+            },
+            "240": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "PC hotline."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "PC : ",
+                    "b": "linha direta. / ",
+                    "c": "Dan Gookin ; Tradução Publicare Serviços de Informática."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Campus,",
+                    "c": "c1993."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "211p. : ",
+                    "b": "il."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice remissivo."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Memória do PC."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Disco de Boot."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Arquivos e seus atributos. "
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Publicare Serviços de Informática, trad."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_G659P",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23044",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.6404 G659p",
+                        "p": "93-0609",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00518nam a2200181   4500",
+        "controlfields": {
+            "005": "20161123142920.0",
+            "008": "140528suuuu    bl     f     0000 0 spa  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 I43"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Informatica / ",
+                    "c": "Enciclopedia práctica de la informatica."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bogotá : ",
+                    "b": "Editora Cinco, ",
+                    "c": "1984."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "4 v. : ",
+                    "b": "il. color."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Informática."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Enciclopedia práctica de la informatica."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_I43",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23531",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.6404 I43",
+                        "p": "95-1220",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_I43",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23532",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.6404 I43",
+                        "p": "95-1221",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_I43",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23533",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.6404 I43",
+                        "p": "95-1222",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_I43",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23534",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.6404 I43",
+                        "p": "95-1223",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00650nam a2200253   4500",
+        "controlfields": {
+            "003": "Br",
+            "005": "20161123142826.0",
+            "008": "851108n00001984brjac         001 0 por u"
+        },
+        "datafields": {
+            "035": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "96101720031818001"
+                }
+            },
+            "040": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Br",
+                    "b": "por"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 M626"
+                }
+            },
+            "092": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "VI-267,7,16-17"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Micro computador :",
+                    "b": "curso basico. -"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "[Rio de Janeiro] : ",
+                    "b": "Rio Graf. e Ed., ",
+                    "c": "c1984."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "b": "il. col., ret. col. ;",
+                    "c": "29cm."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Inclui índice."
+                }
+            },
+            "595": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "BNB",
+                    "c": "85"
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Microcomputadores."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Hardware."
+                    }
+                }
+            ],
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_M626",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22985",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.6404 M626",
+                        "p": "92-0593",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00649nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142833.0",
+            "008": "140220s2014    bl     f     0000 0 eng  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-471-81391-5"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 S719m"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Souicek, Branko"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Microprocessors and microcomputers / ",
+                    "c": "Branko Soucek"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "New York : ",
+                    "b": "Willey-Interscience, ",
+                    "c": "c1976."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xv, 607p. :  ",
+                    "b": "il."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice."
+                }
+            },
+            "510": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém referência."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Números binários."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Luz ultravioleta."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Instruções sobre o Macro."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "001_640400000000000_S719M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23060",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.6404 S719m",
+                        "p": "78-1083",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00444nam a2200157   4500",
+        "controlfields": {
+            "005": "20161123142926.0",
+            "008": "140702s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.6404"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.6404 V331c"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Vasconcelos, Laércio"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Como cuidar bem do seu micro / ",
+                    "c": "Laércio Vasconcelos."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "LVC, ",
+                    "c": "[s.n.]."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computadores",
+                        "x": "Manutenção."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640400000000000_V331C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23600",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.6404 V331c",
+                        "p": "98-0372",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00712nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142834.0",
+            "008": "140221s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.64042"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.64042  S237c"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Santos, José Abel Royo dos"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Computação analógica / ",
+                    "c": "José Abel Royo dos Santos"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "Livros Técnicos e Científicos, ",
+                    "c": "1974."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xiii, 331p. ",
+                    "b": "il."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Ciência da Computação."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia p.329-331."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice remissivo."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computadores analógicos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Escalamento."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Computação iterativa."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_640420000000000_S237C",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23067",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.64042 S237c",
+                        "p": "80-1106",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00688nam a2200241   4500",
+        "controlfields": {
+            "005": "20161123142833.0",
+            "008": "140220s2014    bl     f     0000 0 eng  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "0-12-093552-X"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.642"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.642 B553d"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Berztiss, A.T."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Data structures : ",
+                    "b": "theory and practice / ",
+                    "c": "A. T. Berztiss"
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "2.ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "New York : ",
+                    "b": "Academic Press, ",
+                    "c": "c1975."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xv, 586p. : ",
+                    "b": "il."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Computer science and applied mathematics."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia p.555-572."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Estruturas."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Eletrônica digital."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_642000000000000_B553D",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23061",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.642 B553d",
+                        "p": "79-0911",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P4"
+                }
+            }
+        }
+    }
+]

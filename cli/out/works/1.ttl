@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/work/1> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2003-07-01"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-08-22T13:52:55.339888"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value 1 ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "001" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://http://bibliokeia.com//1/Agent100> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://bibliokeia.com/instance/1> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            rdf:value "001 P831c" ] ;
+    bf:intendedAudience [ a bf:IntendedAudience ;
+            rdfs:label "specialized" ;
+            bf:IntendedAudience <http://id.loc.gov/vocabulary/maudience/spe> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <http://http://bibliokeia.com//1/Topic650-1>,
+        <http://http://bibliokeia.com//1/Topic650-2> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjecturas e refutações / " ;
+            bf:mainTitle "Conjecturas e refutações" ] .
+
+<http://http://bibliokeia.com//1/Agent100> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Popper, Karl Raimund, 1902-1994." ;
+    bflc:name00MatchKey "Popper, Karl Raimund, 1902-1994." ;
+    bflc:primaryContributorName00MatchKey "Popper, Karl Raimund, 1902-1994." .
+
+<http://http://bibliokeia.com//1/Topic650-1> a bf:Topic ;
+    madsrdf:componentList ( [ a madsrdf:Topic ;
+                madsrdf:authoritativeLabel "Ciência" ] [ a madsrdf:Topic ;
+                madsrdf:authoritativeLabel "Metodologia" ] ) .
+
+<http://http://bibliokeia.com//1/Topic650-2> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "Teoria do conhecimento." ;
+    madsrdf:authoritativeLabel "Teoria do conhecimento" .
+

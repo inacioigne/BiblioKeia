@@ -1,0 +1,2852 @@
+[
+    {
+        "leader": "00650nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s1982    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001 P831c"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Popper, Karl Raimund, ",
+                    "c": "Sir, ",
+                    "d": "1902-1994."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Conjecturas e refutações / ",
+                    "c": "Karl R. Popper; tradução de Sérgio Bath."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "Ed. Universidade de Brasília, ",
+                    "c": "1982."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "449 p."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Pensamento científico ; ",
+                    "v": "n. 1"
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Título original: Conjectures and refutations, 4th ed. rev, 1972."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Metodologia."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Teoria do conhecimento."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_000000000000000_P831C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "8880",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001 P831c",
+                        "p": "01-0519",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00509nam a2200157   4500",
+        "controlfields": {
+            "008": "030701s2000    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.0141"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.0141 D687"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "3"
+                },
+                "subfields": {
+                    "a": "Os donos da paisagem : ",
+                    "b": "estudos sobre divulgação científica / ",
+                    "c": "Glória Kreinz, Crodowaldo Pavan, organizadores."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "NJR/ECA/USP, ",
+                    "c": "2000."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "252 p."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Divulgação Científica ; ",
+                    "v": "v. 3"
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Divulgação científica."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_014100000000000_D687",
+                        "7": "0",
+                        "8": "G",
+                        "9": "8847",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.0141 D687",
+                        "p": "01-0478",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00637nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123141504.0",
+            "008": "040611s1994    bl b   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.14"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.14 C776"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Cooperação Brasil-França : ",
+                    "b": "meio ambiente = ",
+                    "c": "Ministère des affaires Etrangères, Ambassade de France en Brésil."
+                }
+            },
+            "246": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Cooperation France-Brésil : ",
+                    "b": "environnement / "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Paris : ",
+                    "b": "Ministère des Affaires Etrangères, Ambassade de France en Brésil, ",
+                    "c": "1994."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "78 p. : ",
+                    "b": "mapas."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciências ambientais",
+                        "x": "Cooperação internacional."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_140000000000000_C776",
+                        "7": "0",
+                        "8": "G",
+                        "9": "15845",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.14 C776",
+                        "p": "95-0006",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00636nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s1998    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 B588p"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bienal de Pesquisa da Fundação Oswaldo Cruz ",
+                    "n": "(1. : ",
+                    "d": "1998 : ",
+                    "c": "Rio de Janeiro)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "<I=     1> Bienal de Pesquisa da Fundação Oswaldo Cruz, 7 a 11 de dezembro de 1998."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "[Rio de Janeiro] : ",
+                    "b": "FIOCRUZ, ",
+                    "c": "1998."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "467 p."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Inclui índice de autores."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Saúde pública",
+                        "z": "Brasil."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_B588P",
+                        "7": "0",
+                        "8": "G",
+                        "9": "11464",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 B588p",
+                        "p": "03-0107",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00863nam a2200229   4500",
+        "controlfields": {
+            "005": "20161123142804.0",
+            "008": "131129s2012    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "978-85-88468-17-7"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 B823c"
+                }
+            },
+            "110": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasil.",
+                    "b": "Ministério da Educação. Coordenação de Aperfeiçoamento de Pessoal de Nível Superior"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Contribuição da pós-graduação brasileira para o desenvolvimento sustentável : ",
+                    "b": "capes na rio+20 / ",
+                    "c": "Coordenadores Arlindo Philippi Jr,, Maria do Carmo Martins Sobral."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "Capes, ",
+                    "c": "2012."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "194 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém gráficos."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Desenvolvimento sustentável."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa científica."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Phillippi Jr., Arlindo"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Sobral, Maria do Carmo Martins."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_B823C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22764",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 B823c",
+                        "p": "13-0348",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_B823C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22765",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 B823c",
+                        "p": "13-0349",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_B823C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22766",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 B823c",
+                        "p": "13-0350",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_B823C",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22767",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 B823c",
+                        "p": "13-0351",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00792cam a2200217 a 4500",
+        "controlfields": {
+            "005": "20161124162314.0",
+            "008": "141217s||||     bl|||||||||||||||||por|u"
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-86956-03-1"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 F218h"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "FAPESP: ",
+                    "b": " uma história de política científica e tecnológica / ",
+                    "c": "Fundação de Amparo à Pesquisa do Estado de São Paulo. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo: ",
+                    "b": "FAPESP, ",
+                    "c": "1999. "
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "296p. : ",
+                    "b": "il., color."
+                }
+            },
+            "610": [
+                {
+                    "indicators": {
+                        "Ind1": "0",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Secretaria da Ciência, Tecnologia e Desenvolvimento Econômico.",
+                        "b": "Fundação de Amparo à Pesquisa do Estado de São Paulo"
+                    }
+                }
+            ],
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Pesquisa e Subdesenvolvimento."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "FAPESP e globalização. "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Desafios institucionais."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Motoyama, Shozo",
+                        "c": "Org."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "001_400000000000000_F218H",
+                        "7": "0",
+                        "8": "G",
+                        "9": "24228",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-24",
+                        "l": "0",
+                        "o": "001.4 F218h",
+                        "p": "INPA.2014.137",
+                        "r": "2016-11-24",
+                        "w": "2016-11-24",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00738cam a2200229 a 4500",
+        "controlfields": {
+            "005": "20161124162314.0",
+            "008": "141217s||||     bl|||||||||||||||||por|u"
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-86956-04-X"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 F218p"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Para uma história da FAPESP:  ",
+                    "b": "marcos documentais / ",
+                    "c": "(Org.) Shozo Motoyama, Amélia Império Hamburger, Marilda Nagamini."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo:",
+                    "b": "FAPESP, ",
+                    "c": "1999."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "247p. "
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Ciência e pesquisa",
+                        "z": "São Paulo. "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Política científica e tecnológica."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Ciência e tecnologia. "
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Motoyama, Shozo",
+                        "c": "Org."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Nagaminni, Marilda",
+                        "c": "Org."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Hamburger, Amélia Império",
+                        "c": "Org."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "001_400000000000000_F218P",
+                        "7": "0",
+                        "8": "G",
+                        "9": "24229",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-24",
+                        "l": "0",
+                        "o": "001.4 F218p",
+                        "p": "INPA.2014.135",
+                        "r": "2016-11-24",
+                        "w": "2016-11-24",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00558nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123142900.0",
+            "008": "140422s2008    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 F981"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Relatório de atividades 2003-2008 / ",
+                    "c": "Fundação de Amparo à Pesquisa do Estado do Amazonas."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "Fapeam, ",
+                    "c": "2009."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "38 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Relatório de atividades",
+                        "x": "Fapeam",
+                        "y": "2003-2008."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Fundação de Amparo à Pesquisa do Estado do Amazonas."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_F981",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "23308",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 F981",
+                        "p": "14-0355",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00780nam a2200241   4500",
+        "controlfields": {
+            "005": "20161123142532.0",
+            "008": "080122s1999    bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "041": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "por"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada Científica da fundação Oswaldo Cruz",
+                    "n": "(5. : ",
+                    "d": "25 jun. 05 jul. 1999 : ",
+                    "c": "Rio de Janeiro)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "V Jornada científica de pos-graduação da FIOCRUZ:  ",
+                    "b": "anais / "
+                }
+            },
+            "246": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Quinta jornada cientifica de pós-graduação da FIOCRUZ"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro: ",
+                    "b": "FIOCRUZ, ",
+                    "c": "1999."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "570p. "
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Inclui índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Ministério da Saúde"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Fundação Oswaldo Cruz"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_J82",
+                        "7": "0",
+                        "8": "G",
+                        "9": "21423",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 J82",
+                        "p": "08-0028",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00532nam a2200169   4500",
+        "controlfields": {
+            "008": "030701s1985    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82a"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada Científica da Fundação Oswaldo Cruz ",
+                    "n": "(3. : ",
+                    "d": "1985 : ",
+                    "c": "Rio de Janeiro)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Anais / ",
+                    "c": "III Jornada científica da Fundação Oswaldo Cruz."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "[Rio de Janeiro] : ",
+                    "b": "FIOCRUZ, ",
+                    "c": "1985."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "618 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_J82A",
+                        "7": "0",
+                        "8": "G",
+                        "9": "10815",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 J82a",
+                        "p": "02-1641",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00636nam a2200181   4500",
+        "controlfields": {
+            "008": "030701s1997    bl     f      100 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de Iniciação Científica da Universidade do Amazonas ",
+                    "n": "(6. : ",
+                    "d": "1997 : ",
+                    "c": "Manaus)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Anais / ",
+                    "c": "VI Jornada de Iniciação Científica da Universidade do Amazonas, 28 de agosto."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "Universidade do Amazonas, ",
+                    "c": "1997."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "191 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "8874",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "01-0511",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "38936",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2018-09-19",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "05-0428",
+                        "r": "2018-09-19",
+                        "w": "2018-09-19",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00550nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123142905.0",
+            "008": "140428s2007    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 F981"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Relatório de atividades 2007 / ",
+                    "c": "Fundação de Amparo à Pesquisa do Estado de São Paulo."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "Fapesp, ",
+                    "c": "2007."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "211 p. : ",
+                    "b": "il."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Relatório de atividades",
+                        "x": "Fapesp",
+                        "z": "2007."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Fundação de Amparo à Pesquisa do Estado de São Paulo."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_F981",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23368",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 F981",
+                        "p": "14-0356",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00660nam a2200181   4500",
+        "controlfields": {
+            "008": "050803s1999    bl       a    101 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4  "
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de Iniciação Científica da Universidade do Amazonas ",
+                    "n": "(8. : ",
+                    "d": "1999 : ",
+                    "c": "Manaus)  "
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "VII [i.e. VIII] Jornada de Iniciação Científica da Universidade do Amazonas, 19 de agosto de 1999, Manaus, AM."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UFAM, ",
+                    "c": "1999."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "183 p. "
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos.  "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "19926",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "05-0443",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00736nam a2200205   4500",
+        "controlfields": {
+            "003": "BR-MnINPA",
+            "005": "20180919165821.0",
+            "008": "030701s2002    bl     f a    101 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "2": "19"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "AM 001.4 C749d"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Congresso de Iniciação Científica da Universidade Federal do Amazonas ",
+                    "n": "(11. : ",
+                    "d": "2002 : ",
+                    "c": "Manaus)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "XI Congresso de Iniciação Científica da Universidade Federal do Amazonas, 5 a 9 de agosto de 2002, Manaus-AM."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UFAM, ",
+                    "c": "2002."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "400 p. : ",
+                    "b": "il."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Na capa: PIBIC e PIC."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Congressos",
+                        "v": "Resumos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Congressos",
+                        "v": "Resumos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_C749D",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "11024",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 C749d",
+                        "p": "02-1746",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_C749D",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "11025",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 C749d",
+                        "p": "05-0446",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00689nam a2200193   4500",
+        "controlfields": {
+            "008": "050803s2000    bl       a    101 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4  "
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de Iniciação Científica da Universidade do Amazonas ",
+                    "n": "(10. : ",
+                    "d": "2000 : ",
+                    "c": "Manaus)  "
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "IX Jornada de Iniciação Científica da Universidade do Amazonas, 23 e 24 de agosto de 2000, Manaus, AM."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UA, ",
+                    "c": "2000."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "216 p. "
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Na capa: PIBIC e PIC."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos.  "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "19927",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "05-0444",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00679nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s2001    bl     f a    101 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de Iniciação Científica da Universidade do Amazonas ",
+                    "n": "(10. : ",
+                    "d": "2001 : ",
+                    "c": "Manaus)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "X Jornada de Iniciação Científica da Universidade do Amazonas, 3 e 4 setembro de 2001, Manaus-AM."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UFAM, ",
+                    "c": "2001."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "222 p."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Na capa: PIBIC e PIC."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "13190",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "02-1300",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "13191",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "05-0445",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00646nam a2200181   4500",
+        "controlfields": {
+            "008": "050801s1998    bl       a    100 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4 "
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de Iniciação Científica da Universidade do Amazonas ",
+                    "n": "(7. : ",
+                    "d": "1998 : ",
+                    "c": "Manaus) "
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "VII Jornada de Iniciação Científica da Universidade do Amazonas, 26-27 de agosto de 1998, Manaus-AM."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UFAM, ",
+                    "c": "1998."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "178 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos. "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_J82",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "19902",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 J82",
+                        "p": "05-0430",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00565nam a2200181   4500",
+        "controlfields": {
+            "005": "20161123142900.0",
+            "008": "140422s2011    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "001.4 I59"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Relatório de atividades 2010 / ",
+                    "c": "Instituto de Pesquisa Ambiental da Amazônia."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "IPAM, ",
+                    "c": "2011."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "100 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Relatório de atividades",
+                        "x": "IPAM",
+                        "y": "2010."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Instituto de Pesquisa Ambiental da Amazônia."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_I59",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "23307",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4 I59",
+                        "p": "14-0354",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P1"
+                }
+            }
+        }
+    }
+]

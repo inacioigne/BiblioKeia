@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/instance/6> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2014-12-17"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-08-22T13:52:55.490756"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value 6 ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/mstatus/False> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "296p. : " ] ;
+    bf:hasItem <http://bibliokeia.com//item/INPA.2014.137> ;
+    bf:instanceOf <http://bibliokeia.com/work/6> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "FAPESP" ] ;
+            bf:date "1999" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "São Paulo" ] ] ;
+    bf:responsibilityStatement "Fundação de Amparo à Pesquisa do Estado de São Paulo. " ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "FAPESP" ;
+            bf:subtitle " uma história de política científica e tecnológica" ] .
+

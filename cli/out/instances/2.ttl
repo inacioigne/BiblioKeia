@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/instance/2> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2003-07-01"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-08-22T13:52:55.385477"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value 2 ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/mstatus/nc> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "252 p." ] ;
+    bf:hasItem <http://bibliokeia.com//item/01-0478> ;
+    bf:instanceOf <http://bibliokeia.com/work/2> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "NJR/ECA/USP" ] ;
+            bf:date "2000" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "São Paulo" ] ] ;
+    bf:responsibilityStatement "Glória Kreinz, Crodowaldo Pavan, organizadores." ;
+    bf:seriesStatement "Divulgação Científica ; v. 3" ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Os donos da paisagem" ;
+            bf:subtitle "estudos sobre divulgação científica" ] .
+

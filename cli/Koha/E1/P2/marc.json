@@ -1,0 +1,4217 @@
+[
+    {
+        "leader": "00680nam a2200205   4500",
+        "controlfields": {
+            "005": "20161123142301.0",
+            "008": "050803s1999    bl     f a   0100 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "M916"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Mostra Técnico-Científica da Universidade do Amazonas ",
+                    "n": "(1. : ",
+                    "d": "1999 : ",
+                    "c": "Manaus)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "I Mostra Técnico-Científica da Universidade do Amazonas, Manaus, AM, 1999."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UA, ",
+                    "c": "1999."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "93 p."
+                }
+            },
+            "610": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas."
+                    }
+                }
+            ],
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Tecnologia",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_M916",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "19918",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "h": "1999",
+                        "l": "0",
+                        "o": "AM 001.4 M916",
+                        "p": "05-0436",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00668nam a2200205   4500",
+        "controlfields": {
+            "005": "20161123142303.0",
+            "008": "050803s2000    bl     f a   0101 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4 "
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "M916"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Mostra Técnico-Científica da Universidade do Amazonas ",
+                    "n": "(2. : ",
+                    "d": "2000 : ",
+                    "c": "Manaus) "
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos / ",
+                    "c": "II Mostra Técnico-Científica da Universidade do Amazonas."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus : ",
+                    "b": "UA, ",
+                    "c": "2000."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "98 p. "
+                }
+            },
+            "610": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas."
+                    }
+                }
+            ],
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos. "
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Tecnologia",
+                        "z": "Amazonas",
+                        "x": "Congressos. "
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Universidade do Amazonas"
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_M916",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "19928",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "h": "2000",
+                        "l": "0",
+                        "o": "AM 001.4 M916",
+                        "p": "05-0447",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_400000000000000_M916",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "38989",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2018-09-21",
+                        "l": "0",
+                        "o": "AM 001.4 M916",
+                        "p": "05-0448",
+                        "r": "2018-09-21",
+                        "w": "2018-09-21",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00567nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142910.0",
+            "008": "140505s2010    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "978-85-88063-06-8"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "P474"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Pesquisa científica e tecnológica em saúde / ",
+                    "c": "Ministério da Ciência e Tecnologia."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "Mct, ",
+                    "c": "2010."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "283 p. "
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa em saúde."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Tecnologia em saúde."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Ministério da Ciência e Tecnologia."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23424",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 P474",
+                        "p": "14-0461",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23425",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 P474",
+                        "p": "14-0462",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23426",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 P474",
+                        "p": "14-0463",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00667nam a2200169   4500",
+        "controlfields": {
+            "008": "030701s1996    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "8528500144"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "P474"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Pesquisas recentes em energia, meio ambiente e tecnologia / ",
+                    "c": "Marcos Aurélio Vasconcelos de Freitas, Luís Eduardo Duque Dutra, organizadores ; Luiz Pinguelli Rosa, prefácio ; Marcos Aurélio Vasconcelos de Freitas ... [et al.]."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Rio de Janeiro : ",
+                    "b": "COPPE/UFRJ, ",
+                    "c": "1996."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "133 p. : ",
+                    "b": "il., mapas."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Desenvolvimento energético",
+                        "z": "Brasil."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Energia elétrica",
+                        "z": "Brasil."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "8448",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 P474",
+                        "p": "99-0372",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00523nam a2200169   4500",
+        "controlfields": {
+            "008": "030701s1996    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "P877i"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Pourchet-Campos, Maria Aparecida"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Iniciação à pesquisa científica : ",
+                    "b": "bases da metodologia / ",
+                    "c": "Maria Aparecida Pourchet-Campos."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "SN Publicidade, ",
+                    "c": "1996."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "186 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Metodologia."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Metodologia."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_P877I",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9850",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.4 P877i",
+                        "p": "06-0418",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00653nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s1986    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4",
+                    "b": "S471p"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Seminário de Ciências da Fiube ",
+                    "n": "(1. : ",
+                    "d": "1986 : ",
+                    "c": "Uberaba, MG)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "<1º >Seminário de Ciências da Fiube / ",
+                    "c": "coordenador, Wilson Uieda."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Uberaba, MG : ",
+                    "b": "Fiube, ",
+                    "c": "1986."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "113 p. : ",
+                    "b": "il."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Na capa: Anais do seminário de ciências da Fiube."
+                }
+            },
+            "610": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Faculdades Integradas do Triangulo Mineiro."
+                    }
+                }
+            ],
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Congressos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_400000000000000_S471P",
+                        "7": "0",
+                        "8": "G",
+                        "9": "11082",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4 S471p",
+                        "p": "02-1796",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00412nam a2200145   4500",
+        "controlfields": {
+            "008": "030701s1980    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.40913"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.40913",
+                    "b": "E56"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Encontro sobre o programa de pesquisas para o trópico úmido."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "CNPq, ",
+                    "c": "1980."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "1 v. (pag. irregular)"
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Trópicos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_409130000000000_E56",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9679",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.40913 E56",
+                        "p": "85-0851",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00504nam a2200157   4500",
+        "controlfields": {
+            "008": "030701s2002    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.40981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.40981",
+                    "b": "P474"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "A pesquisa no Brasil : ",
+                    "b": "perfil das áreas do conhecimento."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "CNPq, ",
+                    "c": "2002."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "3 v."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Conteúdo: v.1. Ciências da natureza e Engenharias - v. 2. Ciências da vida - v.3. Humanidades."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_409810000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9803",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.40981 P474",
+                        "p": "02-0378",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_409810000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9804",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.40981 P474",
+                        "p": "02-0379",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_409810000000000_P474",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9805",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "0000-00-00",
+                        "l": "0",
+                        "o": "001.40981 P474",
+                        "p": "02-0380",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00757nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142656.0",
+            "008": "100831s2006    bl a   fr    0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.409811"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.409811",
+                    "b": "S471"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Semináro de Iniciação Científica ",
+                    "n": "(17. : ",
+                    "d": "2006 : ",
+                    "c": "Belém)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Resumos do XVII Seminário de Iniciação Científica da UFPA / ",
+                    "c": "Universidade Federal do Pará; Conselho Nacional de Desenvolvimento Científico e Tecnológico. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Belém, PA : ",
+                    "b": "EDUFPA, ",
+                    "c": "2006."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "445 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Amazonas",
+                        "x": "Congressos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Programa Institucional de Bolsas de Iniciação Científica",
+                        "z": "Amazonas."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_409811000000000_S471",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "22041",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.409811 S471",
+                        "p": "08-0109",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00620nam a2200181   4500",
+        "controlfields": {
+            "008": "030701s1984    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4098115"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4098115",
+                    "b": "F144f"
+                }
+            },
+            "110": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Fundação de Amparo e Desenvolvimento da Pesquisa (Belém, PA)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "FADESP, Fundação de Amaparo e Desenvolvimento da Pesquisa, Belém-Pará."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Belém : ",
+                    "b": "A Fundação, ",
+                    "c": "[1984?]."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "115 p.  : ",
+                    "b": "il."
+                }
+            },
+            "590": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Dados retirados da capa."
+                }
+            },
+            "610": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Fundação de Amparo e Desenvolvimento da Pesquisa (PA)."
+                    }
+                }
+            ],
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Pará."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "AM_001_409811500000000_F144F",
+                        "7": "0",
+                        "8": "AM",
+                        "9": "13728",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "AM 001.4098115 F144f",
+                        "p": "84-0568",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "01411nam a2200193   4500",
+        "controlfields": {
+            "005": "20161123142850.0",
+            "008": "140402s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.42"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.42",
+                    "b": "I58"
+                }
+            },
+            "110": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "b": "Instituto Nacional de Pesquisas Espaciais."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Manual de normas para publicações técnico-científicas / ",
+                    "c": "Instituto Nacional de Pesquisas.  "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São José dos Campos : ",
+                    "b": "INPE, ",
+                    "c": "1990."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "vii, 126p. : ",
+                    "b": "il."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Inclui índice."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Normas bibliográficas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_420000000000000_I58",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23195",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.42 I58",
+                        "p": "94-0461",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00715nam a2200241   4500",
+        "controlfields": {
+            "003": "Br",
+            "005": "20161123142841.0",
+            "008": "140326s20140000bdf           000 0 por u"
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "001.42"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.42",
+                    "b": "L379m"
+                }
+            },
+            "092": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "VI-469,2,32"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Lourenço, Genilda Casemiro."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Manual do autor : ",
+                    "b": "normas para apresentação de trabalhos de pesquisa destinados a publicação / ",
+                    "c": "Genilda Casemiro Lourenço. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "SUDEPE, ",
+                    "c": "1977."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "101p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bibliografia: p. 101."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Redação técnica."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Relatórios",
+                        "x": "Redação."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "SUDEPE."
+                    }
+                }
+            ],
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_420000000000000_L379M",
+                        "7": "1",
+                        "8": "G",
+                        "9": "23127",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.42 L379m",
+                        "p": "78-1535",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00715nam a2200205   4500",
+        "controlfields": {
+            "008": "030701s1979    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-12-92010-6"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422",
+                    "b": "H438e"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Heath, Oscar Victor Sayer"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "A estatística na pesquisa científica / ",
+                    "c": "O. V. S. Heath ; tradução, Leonidas Hegenberg e Octanny S. da Mota ; revisão técnica, José Maria Pacheco de Souza."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "b": "EDUSP, ",
+                    "c": "1979."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xiii, 95 p."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Temas de biologia ; ",
+                    "v": "v. 1"
+                }
+            },
+            "534": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Original inglês: Investigation by experiment."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Métodos estatísticos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_422000000000000_H438E",
+                        "7": "0",
+                        "8": "G",
+                        "9": "12150",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.422 H438e",
+                        "p": "95-1233",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_422000000000000_H438E",
+                        "7": "0",
+                        "8": "G",
+                        "9": "12151",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "j": "0",
+                        "l": "0",
+                        "o": "001.422 H438e",
+                        "p": "12-0641",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00470nam a2200181   4500",
+        "controlfields": {
+            "005": "20161123142922.0",
+            "008": "140611s2014    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422",
+                    "b": "P958"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Prioridades da pesquisa do CIFOR : ",
+                    "b": "2013-2014 / ",
+                    "c": "Cifor."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "[s.n.] : ",
+                    "b": "Cifor, ",
+                    "c": "2014."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "22 p."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Cifor."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Cifor."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_422000000000000_P958",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23555",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.422 P958",
+                        "p": "14-0668",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00648nam a2200205   4500",
+        "controlfields": {
+            "005": "20161123142847.0",
+            "008": "140401s2007    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "978-8589281157"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.422",
+                    "b": "R433m"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Resende, Marcos Deon Vilela de"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Matemática e estatística na análise de experimentos e no melhoramento genético / ",
+                    "c": "Marcos Deon Vilela de Resende."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Colombo, ",
+                    "b": "Embrapa, ",
+                    "c": "2007."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "561 p. : ",
+                    "b": "il."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Contém bibliografia."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Melhoramento genético",
+                        "x": "Experimentos."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Estatística."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_422000000000000_R433M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23175",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.422 R433m",
+                        "p": "14-0281",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00541nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123142915.0",
+            "008": "140508s2013    bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4226"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4226",
+                    "b": "R382"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Relatório de atividades 2011-2013 / ",
+                    "c": "Sociedade Brasileira para o Progresso da Ciência."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "SBPC, ",
+                    "c": "2013."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "59 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Relatório de pesquisa",
+                        "x": "SBPC."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Sociedade Brasileira para o Progresso da Ciência."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_422600000000000_R382",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23471",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4226 R382",
+                        "p": "14-0528",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00582nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123142915.0",
+            "008": "140509s2008    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424",
+                    "b": "S471"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Seminário pesquisa tecnológica : ",
+                    "b": "as instituições de ciência e tecnológia de portas abertas / ",
+                    "c": "Semana Nacional de Ciência e Tecnologia."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "Abipti, ",
+                    "c": "2008."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "143 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Inovação tecnológica."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Semana Nacional de Ciência e Tecnologia."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_424000000000000_S471",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23477",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.424 S471",
+                        "p": "14-0485",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00653nam a2200169   4500",
+        "controlfields": {
+            "005": "20161123142911.0",
+            "008": "140507s2010    bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424",
+                    "b": "J82"
+                }
+            },
+            "111": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Jornada de iniciação e pesquisa científica e tecnológica do IESPES",
+                    "n": "(7, ",
+                    "d": "10 a 12 de maio de 2010, ",
+                    "c": "Santarém, PA.)"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Pesquisa científica :  ",
+                    "b": "a pesquisa interdisciplinar e a integração / ",
+                    "c": "Jornada de iniciação e pesquisa científica e tecnológica do IESPES."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Santarém : ",
+                    "b": "Iespes, ",
+                    "c": "2010."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "182 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa científica",
+                        "v": "Resumos."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_424000000000000_J82",
+                        "7": "0",
+                        "8": "G",
+                        "9": "23435",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.424 J82",
+                        "p": "14-0500",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00505nam a2200157   4500",
+        "controlfields": {
+            "008": "030701s1987    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.424",
+                    "b": "S528p"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Shamblin, James E."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Pesquisa operacional : ",
+                    "b": "uma abordagem básica / ",
+                    "c": "James E. Shamblin, G. T. Stevens, Jr. ; tradução de Carlos Roberto Vieira de Araújo."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "Atlas, ",
+                    "c": "1987."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "426 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa operacional."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_424000000000000_S528P",
+                        "7": "0",
+                        "8": "G",
+                        "9": "12120",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.424 S528p",
+                        "p": "95-1145",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00703nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142817.0",
+            "008": "140115s        bl     f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "978-85-86957-17-8"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.44"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.44",
+                    "b": "C569"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Ciência, tecnologia e inovação para um Brasil competitivo / ",
+                    "c": "Sociedade brasileira para o progresso da ciência; coordenador Roberto Mendonça Farias. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São paulo : ",
+                    "b": "SBPC, ",
+                    "c": "2011."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "196 p.: ",
+                    "b": "il., color."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Inclui bibliografia."
+                }
+            },
+            "505": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Contém gráficos."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência",
+                        "x": "Tecnologia"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "x": "Inovação."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Faria, Roberto Mendonça."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440000000000000_C569",
+                        "7": "1",
+                        "8": "G",
+                        "9": "22900",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.44 C569",
+                        "p": "14-0154",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00785nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142800.0",
+            "008": "131113s2002    bl a   f     0000 0 por  "
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-314-0740-0"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4406081"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.4406081 ",
+                    "b": "A613"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Os 40 anos da fundação Ford no Brasil : ",
+                    "b": "uma parceria para a mudança social = The Ford Foundation's 40 years in Brazil : a partnership for social change / ",
+                    "c": "organizadores Nigel Brooke, Mary Witoshynsky. "
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "São Paulo : ",
+                    "b": "Edusp, ",
+                    "c": "2002."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "455 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Texto bilíngue : português - inglês."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Desenvolvimento sustentável."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Brooke, Nigel"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Witoshynsky, Mary."
+                    }
+                }
+            ],
+            "710": [
+                {
+                    "indicators": {
+                        "Ind1": "2",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Fundação Ford."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440608100000000_A613",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22721",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.4406081 A613",
+                        "p": "13-0307",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00577nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s1980    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "C651o"
+                }
+            },
+            "110": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "CNPq"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Orçamento da União para ciência e tecnologia, 1980 / ",
+                    "c": "CNPq."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "CNPq, ",
+                    "c": "1980."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "146 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ajuda federal à pesquisa",
+                        "z": "Brasil."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Dotação para pesquisa."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil",
+                        "x": "Financiamento."
+                    }
+                }
+            ],
+            "651": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "Brasil",
+                    "x": "Dotações e dispêndios."
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_C651O",
+                        "7": "0",
+                        "8": "G",
+                        "9": "10816",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 C651o",
+                        "p": "02-1642",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00586nam a2200193   4500",
+        "controlfields": {
+            "008": "030701s1995    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "G943"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Guia de fontes de financiamento à ciência & tecnologia / ",
+                    "c": "MCT, CNPq."
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "7. ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "CNPq, ",
+                    "c": "1995."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "189 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ajuda federal à pesquisa",
+                        "z": "Brasil."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Dotação para pesquisa."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil",
+                        "x": "Financiamento."
+                    }
+                }
+            ],
+            "651": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "Brasil",
+                    "x": "Dotações e dispêndios."
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_G943",
+                        "7": "0",
+                        "8": "G",
+                        "9": "10817",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 G943",
+                        "p": "02-1643",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00719nam a2200217   4500",
+        "controlfields": {
+            "005": "20161123142716.0",
+            "008": "110520s1996    bl     fr    0000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "G943"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Guia de fontes de financiamento à ciência & tecnologia / ",
+                    "c": "Ministério da Ciência e Tecnologia, Conselho Nacional de Desenvolvimento Científico e Tecnológico. "
+                }
+            },
+            "250": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "8. ed."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "CNPq, ",
+                    "c": "1996."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "195 p."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ciência e tecnologia"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ajuda federal à pesquisa",
+                        "z": "Brasil"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Dotação para a pesquisa."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil",
+                        "x": "Financiamento."
+                    }
+                }
+            ],
+            "651": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "Brasil."
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_G943",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22247",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 G943",
+                        "p": "11-0259",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00531nam a2200169   4500",
+        "controlfields": {
+            "008": "030701s1994    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "G963a"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Guimarães, Reinaldo"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Avaliação e fomento de C&T no Brasil : ",
+                    "b": "propostas para os anos 90 / ",
+                    "c": "Reinaldo Guimarães."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "MCT/CNPq, ",
+                    "c": "1994."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "177 p."
+                }
+            },
+            "490": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Série acompanhamento e avaliação de C & T"
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_G963A",
+                        "7": "0",
+                        "8": "G",
+                        "9": "9665",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 G963a",
+                        "p": "02-1074",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00517nam a2200181   4500",
+        "controlfields": {
+            "005": "20161123142800.0",
+            "008": "131113s2006    bl a   f     0000 0 fre  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "R297"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Recherches de I'RD au Brésil depuis 1998 / ",
+                    "c": "Coordenador Pierre Sabaté."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília : ",
+                    "b": "IRD, ",
+                    "c": "2006."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "159 p. : ",
+                    "b": "il. color."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Texto em francês."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "z": "Brasil."
+                    }
+                }
+            ],
+            "700": [
+                {
+                    "indicators": {
+                        "Ind1": "1",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "a": "Sabaté, Pierre."
+                    }
+                }
+            ],
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_R297",
+                        "7": "0",
+                        "8": "G",
+                        "9": "22718",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 R297",
+                        "p": "13-0304",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00934nam a2200229   4500",
+        "controlfields": {
+            "008": "030701s1982    bl     f      000 0 por  "
+        },
+        "datafields": {
+            "082": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.440981",
+                    "b": "C651s"
+                }
+            },
+            "110": {
+                "indicators": {
+                    "Ind1": "2",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "CNPq"
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Setor produtivo estatal : ",
+                    "b": "dispêndios em Ciência e Tecnologia, 1979/82 / ",
+                    "c": "CNPq ; [texto elaborado pela Coordenação de Orçamento e Estatística da Assessoria de Planejamento e Orçamento da Presidência do CNPq, sob supervisão de Erno I. Paulinyi ; revisão, Lúcia Maria Valle de Almeida, Maria Cristina Paiva Badaró]."
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Brasília, DF : ",
+                    "b": "CNPq, ",
+                    "c": "1982."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "158 p."
+                }
+            },
+            "500": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Anexos: p. 139-145."
+                }
+            },
+            "504": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Bibliografia: p. 153-158."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Ajuda federal à pesquisa",
+                        "z": "Brasil."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Dotação para pesquisa."
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": "0"
+                    },
+                    "subfields": {
+                        "a": "Pesquisa",
+                        "x": "Brasil"
+                    }
+                },
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "x": "Financiamento."
+                    }
+                }
+            ],
+            "651": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "Brasil",
+                    "x": "Dotações e dispêndios."
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "4": "0",
+                        "6": "001_440981000000000_C651S",
+                        "7": "0",
+                        "8": "G",
+                        "9": "10431",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-23",
+                        "l": "0",
+                        "o": "001.440981 C651s",
+                        "p": "02-1185",
+                        "r": "2016-11-23",
+                        "w": "2016-11-23",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            },
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            }
+        }
+    },
+    {
+        "leader": "00624cam a22002177a 4500",
+        "controlfields": {
+            "003": "BR-RjBN",
+            "005": "20161124164441.0",
+            "008": "970609s19960000bam           000 0 por d"
+        },
+        "datafields": {
+            "020": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "85-85482-65-6  (broch.)."
+                }
+            },
+            "035": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "98041716490184E53"
+                }
+            },
+            "040": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Br",
+                    "b": "por"
+                }
+            },
+            "082": {
+                "indicators": {
+                    "Ind1": "0",
+                    "Ind2": "4"
+                },
+                "subfields": {
+                    "a": "001.42",
+                    "2": "19"
+                }
+            },
+            "090": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "001.42",
+                    "b": "S481m"
+                }
+            },
+            "100": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Seráfico, José."
+                }
+            },
+            "245": {
+                "indicators": {
+                    "Ind1": "1",
+                    "Ind2": "0"
+                },
+                "subfields": {
+                    "a": "Metodos e tecnicas de pesquisa aplicados a administração /",
+                    "c": "Jose Serafico. -"
+                }
+            },
+            "260": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "Manaus :",
+                    "b": "EDUA,",
+                    "c": "1996."
+                }
+            },
+            "300": {
+                "indicators": {
+                    "Ind1": " ",
+                    "Ind2": " "
+                },
+                "subfields": {
+                    "a": "xi, 140p. ; ",
+                    "c": "22cm."
+                }
+            },
+            "650": [
+                {
+                    "indicators": {
+                        "Ind1": "0",
+                        "Ind2": "4"
+                    },
+                    "subfields": {
+                        "a": "Administração de empresas - ",
+                        "x": "Metodologia"
+                    }
+                }
+            ],
+            "852": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Obras gerais",
+                    "c": "E1.P2"
+                }
+            },
+            "952": [
+                {
+                    "indicators": {
+                        "Ind1": " ",
+                        "Ind2": " "
+                    },
+                    "subfields": {
+                        "0": "0",
+                        "1": "0",
+                        "2": "ddc",
+                        "4": "0",
+                        "6": "001_420000000000000_S481M",
+                        "7": "0",
+                        "8": "G",
+                        "9": "24233",
+                        "a": "sdin",
+                        "b": "sdin",
+                        "d": "2016-11-24",
+                        "l": "0",
+                        "o": "001.42 S481m",
+                        "p": "2016-0548",
+                        "r": "2016-11-24",
+                        "w": "2016-11-24",
+                        "y": "L"
+                    }
+                }
+            ],
+            "900": {
+                "indicators": {
+                    "Ind1": "_",
+                    "Ind2": "_"
+                },
+                "subfields": {
+                    "a": "Livro"
+                }
+            }
+        }
+    }
+]
