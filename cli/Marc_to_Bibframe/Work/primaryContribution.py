@@ -8,7 +8,7 @@ def PrimaryContribution(g, work, workMarc, numberWork, uri, BF, BFLC):
         return g
 
     contribution = BNode()
-    agent = URIRef(f"http://{uri}/{numberWork}/{primaryContribution.get('agent')}") 
+    agent = URIRef(f"http://{uri}/work/{numberWork}/{primaryContribution.get('agent')}") 
     g.add((work, BF.contribution, contribution))
     g.add((contribution, RDF.type, BFLC.PrimaryContribution))
     g.add((contribution, RDF.type, BF.Contribution))
@@ -32,7 +32,7 @@ def PrimaryContribution(g, work, workMarc, numberWork, uri, BF, BFLC):
     g.add((agent, bflcMatchKey, Literal(primaryContribution.get('name'))))
     g.add((agent, primaryContributorMatchKey, Literal(primaryContribution.get('name'))))
     g.add((contribution, BF.role, URIRef(f"http://id.loc.gov/vocabulary/relators/ctb")))
-    #SECUNDARY
+    #SECUNDARY 
     # secundary = BNode()
     # g.add((work, BF.contribution, secundary))
     # g.add((secundary, RDF.type, BF.Contribution))
