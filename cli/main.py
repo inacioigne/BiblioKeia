@@ -15,7 +15,7 @@ import pysolr
 def CreateBF(path_marc, count, shelf, type):
 
     uri = "http://bibliokeia.com"
-    fuseki = FusekiUpdate('http://localhost:3030', 'catalogo')
+    fuseki = FusekiUpdate('http://localhost:3030', 'acervo')
     solr = pysolr.Solr('http://localhost:8983/solr/search/', timeout=10)
 
     marc_file = parse(path_marc)
@@ -43,8 +43,8 @@ def CreateBF(path_marc, count, shelf, type):
         fuseki.insert_graph(instance)
 
         #Solr
-        #doc = create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count)
-        #solr.add([doc])
+        doc = create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count)
+        solr.add([doc])
         
 
 path_marc = r'Koha/E1P1.xml'
