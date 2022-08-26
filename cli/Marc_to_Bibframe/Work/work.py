@@ -1,4 +1,4 @@
-from rdflib import Graph, Namespace
+from rdflib import Graph, Namespace, URIRef
 from datetime import date, datetime
 from rdflib.namespace import RDF, RDFS
 
@@ -14,8 +14,10 @@ from Marc_to_Bibframe.Work.type import Type
 from Marc_to_Bibframe.Work.contribution import Contributions
 
 def Work(count, workMarc, BFwork, BFinstance, uri):
+
+    identifier = URIRef('http://bibliokeia.com/work/1')
   
-    g = Graph()
+    g = Graph(identifier=identifier) 
     #Prefix
     g.bind('rdf', RDF)
     g.bind('rdfs', RDFS)

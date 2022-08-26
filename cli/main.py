@@ -30,7 +30,7 @@ def CreateBF(path_marc, count, shelf, type):
         itemsMarc = MarcItems(marcxml)
         print(workMarc.Title().get('title'))
         
-        BFwork = URIRef(f"{uri}/work/{count}")
+        BFwork = URIRef(f"{uri}/work/{count}") 
         BFinstance = URIRef(f"{uri}/instance/{count}")
         #Work
         work = Work(count, workMarc, BFwork, BFinstance, uri)
