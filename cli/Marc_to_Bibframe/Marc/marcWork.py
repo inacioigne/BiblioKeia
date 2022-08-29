@@ -149,7 +149,7 @@ class MarcWork:
     
     def Contributions(self):
         contributions = self.marcxml.findall("datafield/[@tag='700']")
-        if contributions != None:
+        if len(contributions) > 0:
             contributions = [contribution.find("subfield/[@code='a']").text for contribution in contributions]
             return contributions
         else:

@@ -1,14 +1,14 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 
-def PrimaryContribution(g, work, workMarc, numberWork, uri, BF, BFLC):
+def PrimaryContribution(g, work, workMarc, count, BF, BFLC):
 
     primaryContribution = workMarc.PrimaryContribution()
     if primaryContribution == False:
         return g
 
     contribution = BNode()
-    agent = URIRef(f"http://{uri}/work/{numberWork}/{primaryContribution.get('agent')}") 
+    agent = URIRef(f"http://bibliokeia.com/bibframe/work/{count}/{primaryContribution.get('agent')}") 
     g.add((work, BF.contribution, contribution))
     g.add((contribution, RDF.type, BFLC.PrimaryContribution))
     g.add((contribution, RDF.type, BF.Contribution))

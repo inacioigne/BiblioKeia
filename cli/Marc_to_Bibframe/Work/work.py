@@ -13,11 +13,11 @@ from Marc_to_Bibframe.Work.subject import Subject
 from Marc_to_Bibframe.Work.type import Type
 from Marc_to_Bibframe.Work.contribution import Contributions
 
-def Work(count, workMarc, BFwork, BFinstance, uri):
+def Work(count, workMarc, BFwork, BFinstance):
 
-    identifier = URIRef('http://bibliokeia.com/work/1')
-  
-    g = Graph(identifier=identifier) 
+    uri = f"http://bibliokeia.com/bibframe/work"
+
+    g = Graph(identifier=BFwork)
     #Prefix
     g.bind('rdf', RDF)
     g.bind('rdfs', RDFS)
@@ -33,7 +33,8 @@ def Work(count, workMarc, BFwork, BFinstance, uri):
     g.add((BFwork, RDF.type, BF.Work)) 
     
     #AdminMetadata
-    g = WorkAdmin(g, uri, BFwork, count, workMarc, BF)
+
+    g = WorkAdmin(g, BFwork, count, workMarc, BF)
     #Language
     g = Language(g, BFwork, workMarc, BF)
     #Audience
@@ -44,7 +45,7 @@ def Work(count, workMarc, BFwork, BFinstance, uri):
     #Chamada
     g = Chamada(g, BFwork, workMarc, BF)
     #PrimaryContribution
-    g = PrimaryContribution(g, BFwork, workMarc, count, uri, BF, BFLC)
+    g = PrimaryContribution(g, BFwork, workMarc, count, BF, BFLC)
     if workMarc.Contributions():
         g = Contributions(g, BFwork, workMarc, count, uri, BF, BFLC)
     #Title
