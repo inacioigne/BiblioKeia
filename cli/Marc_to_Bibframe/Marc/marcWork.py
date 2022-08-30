@@ -108,7 +108,7 @@ class MarcWork:
         chamada = f'{self.cdd} {cutter}'
         return chamada
 
-    def PrimaryContribution(self):
+    def PrimaryContribution(self): 
         if '100' in self.datafields:
             person = self.marcxml.find("datafield/[@tag='100']"\
                                 "/subfield/[@code='a']").text
@@ -116,15 +116,22 @@ class MarcWork:
                                 "/subfield/[@code='d']")
             if date != None:
                 name = f'{person}{date.text}'
-            return {'name': name,
+                return {'name': name,
                     'person': person.rstrip().removesuffix(','),
                     'agent': 'Agent100'}
+            else:
+                return {'name': person,
+                    'person': person.rstrip().removesuffix(','),
+                    'agent': 'Agent100'}
+
         elif '110' in self.datafields:
             corporate = self.marcxml.find("datafield/[@tag='110']"\
                                 "/subfield/[@code='a']").text
             b = self.marcxml.find("datafield/[@tag='110']"\
                                 "/subfield/[@code='b']")
-            corporate = corporate+' '+b.text
+            if b != None:
+                corporate = corporate+' '+b.text
+                
             return {'name': corporate,
                     'agent': 'Agent110'}
         elif '111' in self.datafields:

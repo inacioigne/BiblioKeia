@@ -2,6 +2,7 @@ class MarcInstance:
     def __init__(self, marcxml):
         self.marcxml = marcxml
         self.tag008 = marcxml.find("controlfield/[@tag='008']").text
+        self.datafields = [datafield.get('tag') for datafield in marcxml.findall("datafield")]
 
     def Form(self):
         code = self.tag008[23]
@@ -43,6 +44,8 @@ class MarcInstance:
         if serie == None:
             return False
         else:
+            if volume == None:
+                return serie.text
             return serie.text+volume.text
 
     def Note(self):

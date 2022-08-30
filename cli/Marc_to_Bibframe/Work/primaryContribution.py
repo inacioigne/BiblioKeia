@@ -32,9 +32,5 @@ def PrimaryContribution(g, work, workMarc, count, BF, BFLC):
     g.add((agent, bflcMatchKey, Literal(primaryContribution.get('name'))))
     g.add((agent, primaryContributorMatchKey, Literal(primaryContribution.get('name'))))
     g.add((contribution, BF.role, URIRef(f"http://id.loc.gov/vocabulary/relators/ctb")))
-    #SECUNDARY 
-    # secundary = BNode()
-    # g.add((work, BF.contribution, secundary))
-    # g.add((secundary, RDF.type, BF.Contribution))
 
     return g

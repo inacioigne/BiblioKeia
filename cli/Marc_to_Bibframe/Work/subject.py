@@ -42,7 +42,8 @@ def Subject(g, work, uri, numberWork, workMarc, BF, MADSRDF, RDFS):
         else:
             g.add((topic, RDF.type, MADSRDF.Topic))
             g.add((topic, RDFS.label, Literal(s.get('label'))))
-            g.add((topic, MADSRDF.authoritativeLabel, Literal(s.get('sub')['a'])))
+            v = s.get('sub').get('a', list(s.get('sub').values())[0])
+            g.add((topic, MADSRDF.authoritativeLabel, Literal( v )))
 
     return g
             

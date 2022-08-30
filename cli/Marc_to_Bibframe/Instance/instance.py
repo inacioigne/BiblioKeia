@@ -7,7 +7,8 @@ from Marc_to_Bibframe.Instance.publication import Publication
 from Marc_to_Bibframe.Work.title import Title
 from Marc_to_Bibframe.Items.items import Item
 
-def Instance(count, workMarc, instanceMarc, itemsMarc, BFwork, BFinstance, shelf, fuseki, uri):
+def Instance(count, workMarc, instanceMarc, itemsMarc, BFwork, BFinstance, shelf):
+    uri = 'http://bibliokeia.com/bibframe'
     g = Graph()
     g.bind('rdf', RDF)
     BF = Namespace("http://id.loc.gov/ontologies/bibframe/")
@@ -39,12 +40,17 @@ def Instance(count, workMarc, instanceMarc, itemsMarc, BFwork, BFinstance, shelf
         g.add((BFinstance, BF.seriesStatement, Literal(instanceMarc.Serie())))
 
     #Items
+    items = list()
     for item in itemsMarc.Items():
         BFitem = URIRef(f"{uri}/item/{item.get('register')}")
         g.add((BFinstance, BF.hasItem, BFitem))
         gi = Item(BFitem, item, BFinstance, shelf)
+        items.append((gi, item.get('register') ))
+      
         #JENA
-        fuseki.insert_graph(gi)
+        #fuseki.insert_graph(gi)
         #gi.serialize(f'out/items/{item.get("register")}.ttl', format='turtle')
 
-    return g
+    d = {'instance': g, 'items': items}
+
+    return d
