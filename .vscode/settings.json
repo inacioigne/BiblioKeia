@@ -10,6 +10,6 @@
         "**/__pycache__": true,
         "cli/Marc_to_Bibframe/__pycache__": true,
         "**/__init__.py": false,
-        "/venv": true
+        "venv": true
       },
 }

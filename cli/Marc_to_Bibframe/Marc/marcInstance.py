@@ -22,6 +22,8 @@ class MarcInstance:
         year = self.marcxml.find("datafield/[@tag='260']"\
                                 "/subfield/[@code='c']").text
         year = year.rstrip().removesuffix('.')
+        if '?' in year:
+            year = year.replace('[', '').replace('?]', '')
 
         publication = {'place': place, 'publisher': publisher, 'year': year}
 
