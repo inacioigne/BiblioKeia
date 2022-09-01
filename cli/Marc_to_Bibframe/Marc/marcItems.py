@@ -7,7 +7,7 @@ class MarcItems:
     def Items(self):
         items = [
             {
-                'register': item.find("subfield/[@code='p']").text,
+                'register': item.find("subfield/[@code='p']").text.rstrip(),
                 'creationDate': item.find("subfield/[@code='d']").text,
                 'callnumber': item.find("subfield/[@code='o']").text
             }

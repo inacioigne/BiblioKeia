@@ -3,7 +3,7 @@ def create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
 
     doc = {
         'id': count,
-        'call': workMarc.Chamada(),
+        'call': workMarc.Classification()+" "+workMarc.Cutter(),
         'shelf': shelf,
         'title': workMarc.Title().get('label').rstrip().removesuffix('/').rstrip(),
         'responsibilities': instanceMarc.ResponsibilityStatement(),

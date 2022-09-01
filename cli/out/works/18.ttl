@@ -29,7 +29,7 @@
     bf:subject <http://http://bibliokeia.com//18/Topic650-1> ;
     bf:title [ a bf:Title ;
             rdfs:label "Relatório de atividades 2010 / " ;
-            bf:mainTitle "Relatório de atividades 2010" ] .
+            bf:mainTitle "Relatório de atividades 2010" ] . 
 
 <http://http://bibliokeia.com//18/Topic650-1> a bf:Topic ;
     madsrdf:componentList ( [ a madsrdf:Topic ;

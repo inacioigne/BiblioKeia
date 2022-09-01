@@ -1,7 +1,7 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 
-def Subject(g, work, uri, numberWork, workMarc, BF, MADSRDF, RDFS):
+def SubjectsPlace(g, BFwork, uri, count, workMarc, BF, MADSRDF, RDFS):
 
     def FirstRest(g, node, assunto, first, rest):
         topico = BNode()
@@ -11,12 +11,12 @@ def Subject(g, work, uri, numberWork, workMarc, BF, MADSRDF, RDFS):
         g.add((node.get(first), RDF.rest, node.get(rest)))
         return g
 
-    for s in workMarc.Subjects():
-        index = workMarc.Subjects().index(s) + 1
-        topic = URIRef(f"http://{uri}/{numberWork}/Topic650-{index}")
-        g.add((work, BF.subject, topic))
+    for s in workMarc.SubjectsPlace():
+        index = workMarc.SubjectsPlace().index(s) + 1
+        topic = URIRef(f"http://{uri}/{count}/Topic651-{index}")
+        g.add((BFwork, BF.subject, topic))
 
-        g.add((topic, RDF.type, BF.Topic))
+        g.add((topic, RDF.type, BF.Place))
         if len(s.get('sub').keys()) > 1:
             node = { 
                 'a': BNode(),

@@ -659,7 +659,7 @@
   <controlfield tag="005">20161123142823.0</controlfield>
   <controlfield tag="008">140128s2014    bl     f     0000 0 fre  </controlfield>
   <datafield tag="020" ind1=" " ind2=" ">
-    <subfield code="a">2-13-042011-7</subfield>
+    <subfield code="a">2-13-042011-7</subfield> 
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001.539</subfield>

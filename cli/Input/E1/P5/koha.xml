@@ -1191,7 +1191,7 @@
   </datafield>
   <controlfield tag="003">Br</controlfield>
   <controlfield tag="005">20180831163011.0</controlfield>
-  <controlfield tag="008">20100452003     rsba           01 1 por </controlfield>
+  <controlfield tag="008">20100452003     rsba           01 1por </controlfield>
   <datafield tag="020" ind1=" " ind2=" ">
     <subfield code="a">8536301473 (enc.)</subfield>
   </datafield>

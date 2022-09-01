@@ -10,6 +10,7 @@ from Marc_to_Bibframe.Work.chamada import Chamada
 from Marc_to_Bibframe.Work.primaryContribution import PrimaryContribution
 from Marc_to_Bibframe.Work.title import Title
 from Marc_to_Bibframe.Work.subject import Subject
+from Marc_to_Bibframe.Work.subjectsPlace import SubjectsPlace
 from Marc_to_Bibframe.Work.type import Type
 from Marc_to_Bibframe.Work.contribution import Contributions
 
@@ -34,14 +35,14 @@ def Work(count, workMarc, BFwork, BFinstance):
     
     #AdminMetadata
 
-    g = WorkAdmin(g, BFwork, count, workMarc, BF)
+    g = WorkAdmin(g, BFwork, count, workMarc, BF) 
     #Language
     g = Language(g, BFwork, workMarc, BF)
     #Audience
     if workMarc.Audience():
         g = Audience(g, BFwork, workMarc, BF)
     #Classification
-    g = Classification(g, BFwork, workMarc, BF)
+    g = Classification(g, BFwork, workMarc, BF) 
     #Chamada
     g = Chamada(g, BFwork, workMarc, BF)
     #PrimaryContribution
@@ -50,7 +51,10 @@ def Work(count, workMarc, BFwork, BFinstance):
         g = Contributions(g, BFwork, workMarc, count, uri, BF, BFLC)
     #Title
     g = Title(g, BFwork, workMarc, BF)
+    #BF.Topic
     g = Subject(g, BFwork, uri, count, workMarc, BF, MADSRDF, RDFS)
+    if workMarc.SubjectsPlace():
+        g = SubjectsPlace(g, BFwork, uri, count, workMarc, BF, MADSRDF, RDFS)
 
     g = Type(g, BFwork, workMarc, BF)
     g.add((BFwork, BF.hasInstance, BFinstance))

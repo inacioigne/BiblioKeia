@@ -1,0 +1,149 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/14649397> a bf:Text,
+        bf:Work ;
+    bflc:aap "Amazônia" ;
+    bflc:aap-normalized "amazônia" ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/5> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2017-09-28T08:13:08"^^xsd:dateTime ;
+            bf:creationDate "2006-11-28"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier [ a bf:Agent ;
+                    bf:code "OCLCQ" ] ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0" ;
+                    bf:generationDate "2022-03-03T15:24:57.618766-05:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "14649397" ] ;
+            bf:note [ a bf:Note,
+                        <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+                    rdfs:label "0 - successive" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c serials $d 3 $e ncip $f 20 $g n-oclcserc" ;
+            lclocal:d925 "=925  0  $a Acquire $b 1 shelf copy $x Policy default 2007-01-09" ;
+            lclocal:d955 "=955     $c Rio Office $d db44 2007-01-09 $e db44 2007-01-09 to Ser. Div. $a Barcode 0020057350A returned from bindery 2009-08-31 $a Barcode 00200573493 returned from bindery 2009-09-01 $a Barcode 0019682392A returned from bindery 2010-04-23" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "Q127.A45" ;
+            bf:itemPortion "A43" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n50078345> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:expressionOf <http://id.loc.gov/resources/hubs/80c571d2-43bd-6427-dd6f-67890f8516a8> ;
+    bf:genreForm <http://id.loc.gov/vocabulary/graphicMaterials/tgm007641> ;
+    bf:geographicCoverage <http://id.loc.gov/vocabulary/geographicAreas/s-bl> ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/14649397> ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "1809-4058" ],
+        [ a bf:IssnL ;
+            rdf:value "1809-4058" ] ;
+    bf:language [ a bf:Language ; 
+            bf:part "summary" ;
+            rdf:value <http://id.loc.gov/vocabulary/languages/eng> ],
+        [ a bf:Language ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Text in Portuguese, with abstracts in English and Portuguese." ] ],
+        <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Regional planning--Brazil--Amazonas--Periodicals." ;
+            bflc:aap-normalized "regionalplanningbrazilamazonasperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Regional planning--Brazil--Amazonas--Periodicals." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Regional planning" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Brazil" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazonas" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Periodicals" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Agricultural development projects." ;
+            bflc:aap-normalized "agriculturaldevelopmentprojects" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:authoritativeLabel "Agricultural development projects." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Agricultural development projects--Brazil--Amazonas--Periodicals." ;
+            bflc:aap-normalized "agriculturaldevelopmentprojectsbrazilamazonasperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Agricultural development projects--Brazil--Amazonas--Periodicals." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Agricultural development projects" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Brazil" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazonas" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Periodicals" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Science--Brazil--Amazonas--Periodicals." ;
+            bflc:aap-normalized "sciencebrazilamazonasperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Science--Brazil--Amazonas--Periodicals." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Science" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Brazil" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazonas" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Periodicals" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Regional planning." ;
+            bflc:aap-normalized "regionalplanning" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:authoritativeLabel "Regional planning." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Economic history." ;
+            bflc:aap-normalized "economichistory" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:authoritativeLabel "Economic history." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Science." ;
+            bflc:aap-normalized "science" ;
+            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
+            madsrdf:authoritativeLabel "Science." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
+        [ a bf:Place,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Amazonas (Brazil)--Economic conditions--Periodicals." ;
+            bflc:aap-normalized "amazonas(brazil)economicconditionsperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Amazonas (Brazil)--Economic conditions--Periodicals." ;
+            madsrdf:componentList ( [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazonas (Brazil)" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Economic conditions" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Periodicals" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        <http://id.loc.gov/authorities/names/n80104462-781> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Ciência e desenvolvimento" ],
+        [ a bf:Title ;
+            bf:mainTitle "Amazônia" ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Revista Amazônia" ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Title from website" ] ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Ciência & desenvolvimento" ;
+            bf:variantType "portion" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+

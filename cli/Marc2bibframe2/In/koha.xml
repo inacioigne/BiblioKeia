@@ -13,7 +13,7 @@
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001</subfield>
-    <subfield code="b">P831c</subfield> 
+    <subfield code="b">P831c</subfield>
   </datafield>
   <datafield tag="100" ind1="1" ind2=" ">
     <subfield code="a">Popper, Karl Raimund, </subfield>
@@ -201,7 +201,7 @@
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001.4</subfield>
-    <subfield code="b">B588p</subfield> 
+    <subfield code="b">B588p</subfield>
   </datafield>
   <datafield tag="111" ind1="2" ind2=" ">
     <subfield code="a">Bienal de Pesquisa da Fundação Oswaldo Cruz </subfield>

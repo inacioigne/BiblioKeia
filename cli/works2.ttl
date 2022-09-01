@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/bibframe/work/0> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2016-03-21"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-08-31T20:17:20.834234"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value 0 ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "001.5" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://bibliokeia.com/bibframe/work/0/Agent110> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://bibliokeia.com/bibframe/instance/0> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            rdf:value "<Element 'subfield' at 0x000001ECCA14D4E0> P474" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <http://http://bibliokeia.com/bibframe/work/0/Topic650-1>,
+        <http://http://bibliokeia.com/bibframe/work/0/Topic651-1> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Pesquisas amazônicas / " ;
+            bf:mainTitle "Pesquisas amazônicas" ] .
+
+<http://bibliokeia.com/bibframe/work/0/Agent110> a bf:Agent,
+        bf:Organization ;
+    rdfs:label "Superintendência do Desenvolvimento da Amazônia" ;
+    bflc:name10MatchKey "Superintendência do Desenvolvimento da Amazônia" ;
+    bflc:primaryContributorName10MatchKey "Superintendência do Desenvolvimento da Amazônia" .
+
+<http://http://bibliokeia.com/bibframe/work/0/Topic650-1> a bf:Topic,
+        madsrdf:Topic ;
+    rdfs:label "pesquisas na Amazônia" ;
+    madsrdf:authoritativeLabel "pesquisas na Amazônia" .
+
+<http://http://bibliokeia.com/bibframe/work/0/Topic651-1> a bf:Place,
+        madsrdf:Topic ;
+    rdfs:label "Amazônia" ;
+    madsrdf:authoritativeLabel "Amazônia" .
+

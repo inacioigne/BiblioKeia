@@ -1,0 +1,64 @@
+  <record>
+  <leader>00547nam a22001811a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30371</subfield>
+    <subfield code="d">30371</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20190213171641.0</controlfield>
+  <controlfield tag="008">160321s1977    bl |||||||||||||| ||por d</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">19</subfield>
+    <subfield code="a">001.5</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">AM 001.5</subfield>
+    <subfield code="b">P474</subfield>
+  </datafield>
+  <datafield tag="110" ind1=" " ind2=" ">
+    <subfield code="9">5790</subfield>
+    <subfield code="a">Superintendência do Desenvolvimento da Amazônia</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2="1">
+    <subfield code="a">Pesquisas amazônicas / </subfield>
+    <subfield code="c">Superintendência do Desenvolvimento da Amazônia . -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém, Pará :</subfield>
+    <subfield code="b">[s.n]</subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">49 p. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="9">5791</subfield>
+    <subfield code="a">pesquisas na Amazônia</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="7">
+    <subfield code="9">574</subfield>
+    <subfield code="a">Amazônia</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_001_500000000000000_P474</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38676</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-08-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 001.5 P474</subfield>
+    <subfield code="p">2018-1716</subfield>
+    <subfield code="r">2018-08-20</subfield>
+    <subfield code="w">2018-08-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>

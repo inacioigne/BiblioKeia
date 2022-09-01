@@ -1,10 +1,10 @@
 class MarcWork:
-    def __init__(self, marcxml):
+    def __init__(self, marcxml): 
         self.marcxml = marcxml
         self.leader = marcxml.find('leader').text
         self.tag008 = marcxml.find("controlfield/[@tag='008']").text
         self.cdd = marcxml.find("datafield/[@tag='082']"\
-                                "/subfield/[@code='a']").text
+                                "/subfield/[@code='a']")
         self.chamada = marcxml.find("datafield/[@tag='090']"\
                                 "/subfield/[@code='a']").text
         self.datafields = [datafield.get('tag') for datafield in marcxml.findall("datafield")]
@@ -37,6 +37,13 @@ class MarcWork:
         code = self.tag008[35:38]
         return code
 
+    def Classification(self):
+        if self.cdd == None:
+            return self.chamada
+        else:
+            return self.cdd.text
+
+
     #Books
     def IllustrativeContent(self):
         code = self.tag008[18:22]
@@ -46,7 +53,10 @@ class MarcWork:
         return code
 
     def Audience(self):
-        codes = {'f': {'code': 'spe', 'label': 'specialized'}}
+        codes = {
+            'f': {'code': 'spe', 'label': 'Specialized'},
+            'g': {'code': 'gen', 'label': 'General'}
+            }
         code = self.tag008[22]
         if code in ['|', ' ']:
             return False
@@ -102,11 +112,11 @@ class MarcWork:
 
         return code
     
-    def Chamada(self):
+    def Cutter(self):
         cutter = self.marcxml.find("datafield/[@tag='090']"\
                                 "/subfield/[@code='b']").text
         chamada = f'{self.cdd} {cutter}'
-        return chamada
+        return cutter
 
     def PrimaryContribution(self): 
         if '100' in self.datafields:
@@ -195,18 +205,39 @@ class MarcWork:
         return mainTitle
 
     def Subjects(self):
-        subjects = self.marcxml.findall("datafield/[@tag='650']")
+        subjects = self.marcxml.findall(f"datafield/[@tag='650']")
         subjectsList = list() 
         for subject in subjects:
             labelList = list()
             subfield = {'sub': dict()}
             for i in subject:
-                labelList.append(i.text)
-                text = i.text.rstrip()
-                text = text.removesuffix('.')
-                subfield['sub'][i.attrib['code']] = text
+                if i.attrib['code'] != '9':
+                    labelList.append(i.text)
+                    text = i.text.rstrip()
+                    text = text.removesuffix('.')
+                    subfield['sub'][i.attrib['code']] = text
             subfield['label'] =  '--'.join(labelList)
-
             subjectsList.append(subfield)
 
         return subjectsList
+    
+    def SubjectsPlace(self):
+        subjects = self.marcxml.findall(f"datafield/[@tag='651']")
+        if len(subjects) == 0:
+            return False
+        subjectsList = list() 
+        for subject in subjects:
+            labelList = list()
+            subfield = {'sub': dict()}
+            for i in subject:
+                if i.attrib['code'] != '9':
+                    labelList.append(i.text)
+                    text = i.text.rstrip()
+                    text = text.removesuffix('.')
+                    subfield['sub'][i.attrib['code']] = text
+            subfield['label'] =  '--'.join(labelList)
+            subjectsList.append(subfield)
+
+        return subjectsList
+    
+  
