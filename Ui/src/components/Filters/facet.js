@@ -1,25 +1,18 @@
 import {
-    Typography,
-    Box,
-    Accordion,
-    AccordionSummary,
-    AccordionDetails,
-    Checkbox,
-    Divider,
-    Stack,
-  } from "@mui/material/";
+  Typography,
+  Box,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Checkbox,
+  Divider,
+  Stack,
+} from "@mui/material/";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { indigo } from "@mui/material/colors";
 import { useForm, Controller } from "react-hook-form";
 
-export default function Facet({ subject, facetSuject }) {
-
-  const { handleSubmit, control, reset } = useForm({
-    defaultValues: {
-      checkbox: false,
-    }
-  });
-  
+export default function Facet({ subject, facetSuject, control }) {
   return (
     <Accordion>
       <AccordionSummary
@@ -33,10 +26,19 @@ export default function Facet({ subject, facetSuject }) {
       </AccordionSummary>
       <AccordionDetails>
         <Divider />
+
         <Stack spacing={1}>
           {facetSuject?.map((suject, index) => (
             <Box key={index} sx={{ display: "flex" }}>
-              <Checkbox />
+              <Controller
+                name="checkbox"
+                control={control}
+                rules={{ required: true }}
+                render={({ field }) => <Checkbox {...field} />}
+              />
+              {/* 
+
+             <Checkbox /> */}
               <Box
                 sx={{
                   display: "flex",

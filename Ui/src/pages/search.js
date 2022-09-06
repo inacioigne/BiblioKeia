@@ -22,7 +22,7 @@ export default function Search() {
   const getData = (field, assunto) => {
     const data = {
       query: `${field}:${assunto}`,
-      //query: `Ciencia`,
+     
       facet: {
         subject: {
           field: "subject_str",
@@ -61,16 +61,10 @@ export default function Search() {
     }
 
     if (q == "all") {
-      const field = "*";
-      const assunto = "*";
-      getData(field, assunto);
-    } else {
-      
+      getData("*", "*");
+    } else {  
       getData('general_search', q);
-
     }
-    //const field = "*";
-    
     setQuery(q);
 
   
