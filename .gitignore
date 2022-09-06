@@ -3,3 +3,4 @@ Jena
 Solr
 /venv
 /cli/out
+**/__pycache__/**

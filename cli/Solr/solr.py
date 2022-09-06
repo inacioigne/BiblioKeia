@@ -9,7 +9,6 @@ def create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
         'responsibilities': instanceMarc.ResponsibilityStatement(),
         'place': instanceMarc.Publication().get('place'),
         'publisher': instanceMarc.Publication().get('publisher'),
-        'year': instanceMarc.Publication().get('year'),
         'subject': [subject.get('label').removesuffix('.') for subject in workMarc.Subjects()],
         'type': type,
         'items': [item.get('register') for item in itemsMarc.Items()]
@@ -18,7 +17,11 @@ def create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
         doc.update(author=workMarc.PrimaryContribution().get('person'))
     if instanceMarc.Serie():
         doc.update(serie=instanceMarc.Serie())
+    if instanceMarc.Publication().get('year') not in ['s.n.']:
+        doc.update(year=instanceMarc.Publication().get('year'))
+
 
     return doc
 
 
+ 

@@ -10,7 +10,7 @@ class MarcInstance:
             return 'nc'
         return False
 
-    def Publication(self):
+    def Publication(self): 
         place = self.marcxml.find("datafield/[@tag='260']"\
                                 "/subfield/[@code='a']").text
         place = place.rstrip().removesuffix(':').rstrip()
@@ -24,6 +24,10 @@ class MarcInstance:
         year = year.rstrip().removesuffix('.')
         if '?' in year:
             year = year.replace('[', '').replace('?]', '')
+        elif '[' in year:
+            year = year.replace('[', '').replace(']', '')
+        elif 'c' in year:
+            year = year.replace('c', '')
 
         publication = {'place': place, 'publisher': publisher, 'year': year}
 
