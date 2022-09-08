@@ -51,7 +51,7 @@ export default function Home() {
               }
             />
             <Counters
-              counter={"5.000"}
+              counter={500}
               title={"Revistas científicas"}
               description={
                 "Títulos de revistas científicas na area de ciências biologicas"

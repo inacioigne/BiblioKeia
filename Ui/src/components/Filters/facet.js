@@ -11,8 +11,16 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { indigo } from "@mui/material/colors";
 import { useForm, Controller } from "react-hook-form";
+import { useEffect, useState } from "react";
 
-export default function Facet({ subject, facetSuject, control }) {
+export default function Facet({
+  subject,
+  facetSuject,
+  control,
+  state,
+  setState,
+}) {
+  //const [state, setState] = useState([])
   return (
     <Accordion>
       <AccordionSummary
@@ -28,17 +36,33 @@ export default function Facet({ subject, facetSuject, control }) {
         <Divider />
 
         <Stack spacing={1}>
-          {facetSuject?.map((suject, index) => (
+          {facetSuject?.map((termo, index) => (
             <Box key={index} sx={{ display: "flex" }}>
-              <Controller
-                name="checkbox"
+              {/* <Controller
+                //name="checkbox"
+                name={`${subject}.${termo}`}
                 control={control}
                 rules={{ required: true }}
                 render={({ field }) => <Checkbox {...field} />}
-              />
-              {/* 
+              /> */}
 
-             <Checkbox /> */}
+              <Checkbox
+                
+                onChange={(event) => {
+                  if (event.target.checked) {
+                    setState((state) => [...state, event.target.value]);
+                  } else {
+                    setState(
+                      state.filter(function (e) {
+                        return e !== event.target.value;
+                      })
+                    );
+                  }
+              
+                }}
+                value={termo.val}
+                name="assunto"
+              />
               <Box
                 sx={{
                   display: "flex",
@@ -55,7 +79,7 @@ export default function Facet({ subject, facetSuject, control }) {
                     alignItems: "center",
                   }}
                 >
-                  {suject.val}
+                  {termo.val}
                 </Typography>
                 <Typography
                   variant="button"
@@ -71,7 +95,7 @@ export default function Facet({ subject, facetSuject, control }) {
                     borderRadius: "5px",
                   }}
                 >
-                  {suject.count}
+                  {termo.count}
                 </Typography>
               </Box>
             </Box>

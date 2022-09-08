@@ -1,0 +1,98 @@
+2022-09-07 00:43:40.774 INFO  (main) [] o.e.j.u.log Logging initialized @8567ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-07 00:43:41.108 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-07 00:43:41.941 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-07 00:43:41.953 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-07 00:43:41.953 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-07 00:43:41.953 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-07 00:43:41.953 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-07T00:43:41.953534Z
+2022-09-07 00:43:41.969 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-09-07 00:43:41.969 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-09-07 00:43:43.540 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-09-07 00:43:43.556 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-09-07 00:44:02.117 WARN  (main) [] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.419 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2022-09-07 00:44:02.750 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-09-07 00:44:02.750 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
+2022-09-07 00:44:02.782 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-09-07 00:44:02.868 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-07 00:44:03.016 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=search-config
+2022-09-07 00:44:03.818 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1eef9aef{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-07 00:44:03.838 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_07.request.log
+2022-09-07 00:44:03.854 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-07 00:44:03.854 INFO  (main) [] o.e.j.s.Server Started @31648ms
+2022-09-07 00:44:03.951 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema search-config/1.6 with uniqueid field id
+2022-09-07 00:44:03.951 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from configset C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\configsets\search, trusted=true
+2022-09-07 00:44:04.071 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-07 00:44:05.957 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=133
+2022-09-07 00:44:23.398 WARN  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.385 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2022-09-07 00:44:23.812 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-09-07 00:44:23.812 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-09-07 00:44:23.866 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-07 00:44:23.882 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-07 00:44:24.402 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\configsets\search\conf
+2022-09-07 00:44:24.432 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-07 00:44:24.448 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-07 00:44:24.468 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-07 00:44:24.468 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-07 00:44:24.479 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-07 00:44:57.757 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662511497690} status=0 QTime=2
+2022-09-07 00:44:57.826 INFO  (qtp1355887174-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662511497691} status=0 QTime=70
+2022-09-07 00:44:57.893 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662511497691} status=0 QTime=58
+2022-09-07 00:45:03.062 INFO  (qtp1355887174-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662511497690} status=0 QTime=0
+2022-09-07 00:45:03.073 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1662511503056} status=0 QTime=7
+2022-09-07 00:45:03.083 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1662511503056} status=0 QTime=14
+2022-09-07 00:45:03.092 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1662511497691&ts=1662511497691} status=503 QTime=2
+2022-09-07 00:45:03.220 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662511497691} status=0 QTime=157
+2022-09-07 00:45:03.231 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1662511503056} status=0 QTime=146
+2022-09-07 00:45:07.352 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662511497690} status=0 QTime=0
+2022-09-07 00:45:07.423 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662511497691} status=0 QTime=71
+2022-09-07 00:45:09.490 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662511497690} status=0 QTime=0
+2022-09-07 00:45:09.555 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662511507338} hits=18 status=0 QTime=64
+2022-09-07 00:45:09.568 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662511497691} status=0 QTime=78
+2022-09-07 00:45:27.837 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=2
+2022-09-07 00:45:27.847 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=11
+2022-09-07 00:45:27.923 INFO  (qtp1355887174-20) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=12,phase1=12,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-07 00:45:27.928 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=79
+2022-09-07 00:45:27.929 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=86
+2022-09-07 01:37:47.139 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=126
+2022-09-07 01:37:47.278 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=84
+2022-09-07 01:40:00.754 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=7
+2022-09-07 01:40:22.840 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 01:41:11.966 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=5
+2022-09-07 01:43:38.616 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 01:46:50.443 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=30
+2022-09-07 01:51:48.784 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 01:53:08.462 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 01:53:43.071 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=5
+2022-09-07 02:01:57.628 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=11
+2022-09-07 02:02:47.311 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 02:03:19.595 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 02:11:05.541 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=6
+2022-09-07 02:11:05.554 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 02:12:28.600 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 02:13:27.660 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 02:15:41.412 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=5
+2022-09-07 02:21:56.099 INFO  (qtp1355887174-48) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 02:23:19.720 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=6
+2022-09-07 02:24:17.231 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 02:27:06.559 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 02:31:32.000 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 02:32:31.545 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 02:37:13.932 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 02:51:50.117 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=22
+2022-09-07 02:51:50.158 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=14
+2022-09-07 02:58:07.292 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 03:05:47.773 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 03:06:23.397 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 03:08:07.037 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=1
+2022-09-07 03:09:13.312 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=3
+2022-09-07 03:11:36.777 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 03:13:07.303 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 03:15:30.229 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 03:18:26.384 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=5
+2022-09-07 03:22:34.941 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=0 status=0 QTime=5
+2022-09-07 03:22:34.956 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=2
+2022-09-07 03:30:37.232 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 03:33:51.328 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=12
+2022-09-07 03:37:07.870 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=8
+2022-09-07 03:38:03.783 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=4
+2022-09-07 03:38:45.688 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/query params={} hits=18 status=0 QTime=5

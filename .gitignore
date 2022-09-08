@@ -1,6 +1,6 @@
 /apache-jena-fuseki-4.5.0
 Jena
-Solr
+# Solr
 /venv
 /cli/out
 **/__pycache__/**
