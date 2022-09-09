@@ -43,10 +43,8 @@ export default function Filters({
     };
 
     const json_filter = {
-      filter: filter
-    }
-
-  
+      filter: filter,
+    };
 
     api
       .get("select", {
@@ -77,16 +75,13 @@ export default function Filters({
   const [ano, setAno] = useState([]);
   const [tipo, setTipo] = useState([]);
   const { handleSubmit, control, reset } = useForm();
-  //   {
-  //   defaultValues: {
-  //     checkbox: false,
-  //   },
-  // }
+ 
 
   const onSubmit = () => {
+    let arr = []
+    const filter = arr.concat(assunto, autor, ano, tipo);
 
-    const filter = assunto.concat(autor, ano, tipo)
-    //alert(JSON.stringify(filter));
+    //alert(JSON.stringify(assunto));
     getData(query.field, query.term, filter);
   };
 
@@ -96,11 +91,11 @@ export default function Filters({
         Refine sua busca
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Button variant="outlined" type="submit">
-          Limitar
+        <Button mb={1} variant="outlined" type="submit">
+          Filtrar
         </Button>
 
-        <Stack>
+        <Stack mt={2}>
           {/* ASSUNTO */}
           <Facet
             metadata={"subject"}
@@ -113,16 +108,16 @@ export default function Filters({
 
           {/* AUTOR */}
           <Facet
-          metadata={"author"}
+            metadata={"author"}
             subject={"Autor"}
             facetSuject={facetAuthor}
             control={control}
             state={autor}
             setState={setAutor}
           />
-{/* Ano */}
+          {/* Ano */}
           <Facet
-          metadata={"year"}
+            metadata={"year"}
             subject={"Ano"}
             facetSuject={facetYear}
             control={control}
@@ -130,7 +125,7 @@ export default function Filters({
             setState={setAno}
           />
           <Facet
-          metadata={"type"}
+            metadata={"type"}
             subject={"Tipo"}
             facetSuject={facetType}
             control={control}

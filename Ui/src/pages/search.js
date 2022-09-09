@@ -1,4 +1,4 @@
-import { Stack, Box } from "@mui/material/";
+import { Stack, Box, Container, Pagination } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import { grey, blueGrey } from "@mui/material/colors";
 
@@ -7,20 +7,22 @@ import Filters from "src/components/Filters";
 import { api } from "src/services/solr";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Navbar from "src/components/Navbar/navbar_search";
+import AdvancedSearch from "src/components/SearchBox/advanced_search"
 
 export default function Search() {
   const router = useRouter();
   const { q } = router.query;
-  const [query, setQuery] = useState({field: "*", term: "*"});
+  const [query, setQuery] = useState({ field: "*", term: "*" });
 
   const [items, setItems] = useState(null);
   const [facetSuject, setfacetSuject] = useState(null);
   const [facetAuthor, setfacetAuthor] = useState(null);
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
+  const [page, setPage] = useState(0);
 
   const getData = (field, assunto) => {
-    
     const facet = {
       subject: {
         field: "subject_str",
@@ -40,8 +42,8 @@ export default function Search() {
       .get("select", {
         params: {
           q: `${field}:${assunto}`,
+          start: page,
           "q.op": "AND",
-          //fq:"subject:Pesquisa--Amazonas--Congressos",
           wt: "json",
           facet: true,
           "json.facet": JSON.stringify(facet),
@@ -60,6 +62,12 @@ export default function Search() {
       });
   };
 
+  const handlePagination = (e, p) => {
+    console.log('P:', e, p)
+    setPage(p)
+    getData(query.field, query.term)
+  }
+
   useEffect(() => {
     if (!q) {
       return;
@@ -68,53 +76,68 @@ export default function Search() {
     if (q == "all") {
       getData(query.field, query.term);
     } else {
-      setQuery({field:"general_search", term: q})
+      setQuery({ field: "general_search", term: q });
 
-      getData(query.field, query.term)
+      getData("general_search", q);
     }
+    setPage(1)
   }, [q]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid xs={3} sx={{ backgroundColor: grey[100] }}>
-          <Filters
-          setItems={setItems}
-            facetSuject={facetSuject}
-            setfacetSuject={setfacetSuject}
-            facetAuthor={facetAuthor}
-            setfacetAuthor={setfacetAuthor}
-            facetYear={facetYear}
-            setfacetYear={setfacetYear}
-            facetType={facetType}
-            setfacetType={setfacetType}
-            query={query}
-          /> 
-          {/* <code>{q}</code> */}
-        </Grid>
+      {/* Navbar */}
+      <Navbar />
+      <Container maxWidth="xl">
+      <AdvancedSearch getData={getData} />
+        
+        <Grid container spacing={2}>
+          <Grid xs={3} sx={{ backgroundColor: grey[100] }}>
+            <Filters
+              setItems={setItems}
+              facetSuject={facetSuject}
+              setfacetSuject={setfacetSuject}
+              facetAuthor={facetAuthor}
+              setfacetAuthor={setfacetAuthor}
+              facetYear={facetYear}
+              setfacetYear={setfacetYear}
+              facetType={facetType}
+              setfacetType={setfacetType}
+              query={query}
+            />
+            {/* <code>{q}</code> */}
+          </Grid>
 
-        <Grid
-          xs={9}
-          sx={{
-            backgroundColor: grey[200],
-            p: 3,
-          }}
-        >
-          <Stack spacing={2}>
-            {items?.map((item) => (
-              <CardItem
-                key={item.id}
-                title={item.title}
-                responsibilities={item.responsibilities}
-                publisher={item.publisher}
-                subjects={item.subject}
-                chamada={item.call}
-                shelf={item.shelf}
-              />
-            ))}
-          </Stack>
+          <Grid
+            xs={9}
+            sx={{
+              backgroundColor: grey[200],
+              p: 3,
+            }}
+          >
+            <Stack spacing={2}>
+              {items?.map((item) => (
+                <CardItem
+                  key={item.id}
+                  id={item.id}
+                  title={item.title}
+                  responsibilities={item.responsibilities}
+                  publisher={item.publisher}
+                  subjects={item.subject}
+                  chamada={item.call}
+                  shelf={item.shelf}
+                />
+              ))}
+            </Stack>
+            {/* Pagination */}
+            <Box my={2}>
+            <Pagination count={10} color="primary" 
+            onChange={handlePagination}
+            />
+            </Box>
+           
+          </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </Box>
   );
 }

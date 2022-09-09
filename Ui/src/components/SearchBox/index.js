@@ -62,11 +62,7 @@ export default function SearchBox() {
           />
         )}
       />
-          {/* <InputBase
-            sx={{ ml: 1, flex: 1 }}
-            placeholder="Faça uma busca"
-            inputProps={{ "aria-label": "Faça uma busca" }}
-          /> */}
+          
 
           <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
             <SearchIcon />

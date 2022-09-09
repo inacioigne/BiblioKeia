@@ -24,6 +24,7 @@ const styleDatails = {
 };
 
 export default function CardItem({
+  id,
   title,
   responsibilities,
   publisher,
@@ -46,7 +47,7 @@ export default function CardItem({
         <Box p={3}>
           <Image
             src={
-              "https://images-na.ssl-images-amazon.com/images/I/4119neGGZoL._SX332_BO1,204,203,200_.jpg"
+              `http://localhost:8000/items/${id}/imagem`
             }
             width={150}
             height={200}

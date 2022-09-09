@@ -46,7 +46,7 @@ export default function Facet({
                   } else {
                     setState(
                       state.filter(function (e) {
-                        return e !== event.target.value;
+                        return e !== `${metadata}:${event.target.value}`
                       })
                     );
                   }

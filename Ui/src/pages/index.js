@@ -1,4 +1,4 @@
-import { Paper, Box } from "@mui/material/";
+import { Paper, Box, Container } from "@mui/material/";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import SearchBox from "src/components/SearchBox";
@@ -20,6 +20,7 @@ export default function Home() {
       <Navbar />
       {/* SEARCHBOX */}
       <SearchBox />
+      {/** CONTENT */}
       <Box
         sx={{
           mx: "3rem",
@@ -27,6 +28,7 @@ export default function Home() {
           position: "absolute",
           zIndex: 1000,
           top: "60vh",
+          width: "calc(100% - 6rem)",
         }}
       >
         <Paper elevation={3}>
