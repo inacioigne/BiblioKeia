@@ -26,7 +26,7 @@ export default function Filters({
   setfacetType,
   query,
 }) {
-  const getData = (field, assunto) => {
+  const getData = (field, assunto, filter) => {
     const facet = {
       subject: {
         field: "subject_str",
@@ -41,29 +41,24 @@ export default function Filters({
         field: "type",
       },
     };
-  
-  const filter = {
-    filter: [
-      "subject:Pesquisa--Amazonas--Congressos",
-      "year:1997"
-    ]
-  }
 
-  {assunto:["Pesquisa--Amazonas--Congressos","Pesquisa--Congressos"]}
+    const json_filter = {
+      filter: filter
+    }
+
+  
 
     api
-      .get("select",
-       {
+      .get("select", {
         params: {
           q: `${field}:${assunto}`,
-          "q.op": "AND",
-          json: JSON.stringify(filter),
+          "q.op": "OR",
+          json: JSON.stringify(json_filter),
           wt: "json",
           facet: true,
           "json.facet": JSON.stringify(facet),
         },
-      }
-      )
+      })
       .then((response) => {
         console.log("Filtro: ", response.data);
         setItems(response.data.response.docs);
@@ -89,22 +84,10 @@ export default function Filters({
   // }
 
   const onSubmit = () => {
-    const params = {};
-    if (assunto.length > 0) {
-      params.assunto = assunto;
-    }
-    if (autor.length > 0) {
-      params.autor = autor;
-    }
-    if (ano.length > 0) {
-      params.ano = ano;
-    }
-    if (tipo.length > 0) {
-      params.tipo = tipo;
-    }
 
-    alert(JSON.stringify(params))
-    //getData(query.field, query.term);
+    const filter = assunto.concat(autor, ano, tipo)
+    //alert(JSON.stringify(filter));
+    getData(query.field, query.term, filter);
   };
 
   return (
@@ -120,6 +103,7 @@ export default function Filters({
         <Stack>
           {/* ASSUNTO */}
           <Facet
+            metadata={"subject"}
             subject={"Assunto"}
             facetSuject={facetSuject}
             control={control}
@@ -129,14 +113,16 @@ export default function Filters({
 
           {/* AUTOR */}
           <Facet
+          metadata={"author"}
             subject={"Autor"}
             facetSuject={facetAuthor}
             control={control}
             state={autor}
             setState={setAutor}
           />
-
+{/* Ano */}
           <Facet
+          metadata={"year"}
             subject={"Ano"}
             facetSuject={facetYear}
             control={control}
@@ -144,6 +130,7 @@ export default function Filters({
             setState={setAno}
           />
           <Facet
+          metadata={"type"}
             subject={"Tipo"}
             facetSuject={facetType}
             control={control}

@@ -14,6 +14,7 @@ import { useForm, Controller } from "react-hook-form";
 import { useEffect, useState } from "react";
 
 export default function Facet({
+  metadata,
   subject,
   facetSuject,
   control,
@@ -38,19 +39,10 @@ export default function Facet({
         <Stack spacing={1}>
           {facetSuject?.map((termo, index) => (
             <Box key={index} sx={{ display: "flex" }}>
-              {/* <Controller
-                //name="checkbox"
-                name={`${subject}.${termo}`}
-                control={control}
-                rules={{ required: true }}
-                render={({ field }) => <Checkbox {...field} />}
-              /> */}
-
               <Checkbox
-                
                 onChange={(event) => {
                   if (event.target.checked) {
-                    setState((state) => [...state, event.target.value]);
+                    setState((state) => [...state, `${metadata}:${event.target.value}`]);
                   } else {
                     setState(
                       state.filter(function (e) {
