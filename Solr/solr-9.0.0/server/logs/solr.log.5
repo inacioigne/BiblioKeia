@@ -1,0 +1,860 @@
+2022-09-08 23:45:42.270 INFO  (main) [] o.e.j.u.log Logging initialized @1885ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-08 23:45:42.568 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-08 23:45:43.168 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-08 23:45:43.184 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-08 23:45:43.184 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-08 23:45:43.184 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-08 23:45:43.184 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-08T23:45:43.184429300Z
+2022-09-08 23:45:43.192 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-09-08 23:45:43.195 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-09-08 23:45:44.363 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-09-08 23:45:44.375 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-09-08 23:45:44.772 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-09-08 23:45:44.773 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
+2022-09-08 23:45:44.778 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-09-08 23:45:44.828 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-08 23:45:44.918 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-08 23:45:45.429 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-08 23:45:45.430 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
+2022-09-08 23:45:45.488 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-08 23:45:45.555 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1eef9aef{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-08 23:45:45.566 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_08.request.log
+2022-09-08 23:45:45.581 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-08 23:45:45.582 INFO  (main) [] o.e.j.s.Server Started @5201ms
+2022-09-08 23:45:46.193 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-09-08 23:45:46.193 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-09-08 23:45:46.217 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-08 23:45:46.217 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-08 23:45:46.495 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-08 23:45:46.517 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-08 23:45:46.527 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-08 23:45:46.543 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-08 23:45:46.543 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-08 23:45:46.552 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-08 23:45:47.642 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=89
+2022-09-08 23:48:49.315 INFO  (qtp1355887174-21) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=23,phase1=23,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-08 23:48:49.352 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=364
+2022-09-08 23:57:34.713 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=98
+2022-09-09 00:03:59.142 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662681838975} status=0 QTime=93
+2022-09-09 00:03:59.159 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662681839026} hits=18 status=0 QTime=9
+2022-09-09 00:03:59.248 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662681838976} status=0 QTime=201
+2022-09-09 00:12:35.349 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=71
+2022-09-09 00:17:37.053 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=28
+2022-09-09 00:23:51.466 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=37
+2022-09-09 00:25:47.068 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=4
+2022-09-09 00:26:37.800 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=3
+2022-09-09 00:33:36.055 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=47
+2022-09-09 00:33:36.146 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662683615893} hits=18 status=0 QTime=27
+2022-09-09 00:33:36.288 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=288
+2022-09-09 00:37:42.017 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=45
+2022-09-09 00:40:07.488 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=17
+2022-09-09 00:40:16.786 ERROR (qtp1355887174-26) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Expected JSON Object but got ArrayList=[subject:Pesquisa--Amazonas--Congressos, author:Popper, Karl Raimund] => org.apache.solr.common.SolrException: Expected JSON Object but got ArrayList=[subject:Pesquisa--Amazonas--Congressos, author:Popper, Karl Raimund]
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130)
+org.apache.solr.common.SolrException: Expected JSON Object but got ArrayList=[subject:Pesquisa--Amazonas--Congressos, author:Popper, Karl Raimund]
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:316) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 00:40:16.788 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json=["subject:Pesquisa--Amazonas--Congressos","author:Popper,+Karl+Raimund"]&q.op=AND&wt=json&facet=true} status=400 QTime=106
+2022-09-09 00:43:43.124 ERROR (qtp1355887174-23) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos => org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130)
+org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:316) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 00:43:43.124 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json="subject:Pesquisa--Amazonas--Congressos"&q.op=AND&wt=json&facet=true} status=400 QTime=1
+2022-09-09 00:43:54.014 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=5
+2022-09-09 00:43:57.603 ERROR (qtp1355887174-28) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos => org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130)
+org.apache.solr.common.SolrException: Expected JSON Object but got String=subject:Pesquisa--Amazonas--Congressos
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:316) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 00:43:57.604 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json="subject:Pesquisa--Amazonas--Congressos"&q.op=AND&wt=json&facet=true} status=400 QTime=1
+2022-09-09 00:45:20.555 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=4
+2022-09-09 00:45:31.680 ERROR (qtp1355887174-26) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Expected JSON Object but got String="subject:Pesquisa--Amazonas--Congressos" => org.apache.solr.common.SolrException: Expected JSON Object but got String="subject:Pesquisa--Amazonas--Congressos"
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130)
+org.apache.solr.common.SolrException: Expected JSON Object but got String="subject:Pesquisa--Amazonas--Congressos"
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:316) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 00:45:31.681 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json="\"subject:Pesquisa--Amazonas--Congressos\""&q.op=AND&wt=json&facet=true} status=400 QTime=2
+2022-09-09 00:49:36.472 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=57
+2022-09-09 00:49:40.633 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["subject:Pesquisa--Amazonas--Congressos","year:1997"]}&q.op=AND&wt=json&facet=true} hits=1 status=0 QTime=550
+2022-09-09 00:51:39.551 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=3
+2022-09-09 00:51:57.143 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["subject:Pesquisa--Amazonas--Congressos","subject:Pesquisa--Amazonas--Congressos"]}&q.op=AND&wt=json&facet=true} hits=5 status=0 QTime=8
+2022-09-09 00:52:19.214 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["subject:Pesquisa--Amazonas--Congressos","subject:Pesquisa--Amazonas--Congressos"]}&q.op=AND&wt=json&facet=true} hits=5 status=0 QTime=4
+2022-09-09 00:52:31.248 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=6
+2022-09-09 00:52:36.305 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["author:Popper,+Karl+Raimund"]}&q.op=AND&wt=json&facet=true} hits=0 status=0 QTime=16
+2022-09-09 00:54:27.159 ERROR (qtp1355887174-26) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Expected JSON Object but got String=author:Popper, Karl Raimund => org.apache.solr.common.SolrException: Expected JSON Object but got String=author:Popper, Karl Raimund
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130)
+org.apache.solr.common.SolrException: Expected JSON Object but got String=author:Popper, Karl Raimund
+	at org.apache.solr.request.json.ObjectUtil.mergeObjects(ObjectUtil.java:130) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:316) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 00:54:27.159 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json="author:Popper,+Karl+Raimund"&q.op=OR&_=1662683615893} status=400 QTime=4
+2022-09-09 00:54:27.168 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=12
+2022-09-09 00:54:27.353 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=195
+2022-09-09 00:54:54.442 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=0
+2022-09-09 00:54:54.447 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={"filter":"author:Popper,+Karl+Raimund"}&q.op=OR&_=1662683615893} hits=1 status=0 QTime=4
+2022-09-09 00:54:54.556 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=116
+2022-09-09 00:57:02.287 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=1
+2022-09-09 00:57:02.293 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={"filter":+"author:Popper,+Karl+Raimund"}&q.op=OR&_=1662683615893} hits=1 status=0 QTime=3
+2022-09-09 00:57:02.429 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=140
+2022-09-09 00:57:23.428 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=0
+2022-09-09 00:57:23.453 ERROR (qtp1355887174-20) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.noggit.JSONParser$ParseException: JSON Parse Error: char=\,position=12 AFTER='{ "filter":[\' BEFORE='"author:Popper, Karl Raimund\"] }' => org.apache.solr.common.SolrException: org.noggit.JSONParser$ParseException: JSON Parse Error: char=\,position=12 AFTER='{ "filter":[\' BEFORE='"author:Popper, Karl Raimund\"] }'
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:320)
+org.apache.solr.common.SolrException: org.noggit.JSONParser$ParseException: JSON Parse Error: char=\,position=12 AFTER='{ "filter":[\' BEFORE='"author:Popper, Karl Raimund\"] }'
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:320) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:193) ~[?:?]
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:167) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:204) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.noggit.JSONParser$ParseException: JSON Parse Error: char=\,position=12 AFTER='{ "filter":[\' BEFORE='"author:Popper, Karl Raimund\"] }'
+	at org.noggit.JSONParser.err(JSONParser.java:436) ~[?:?]
+	at org.noggit.JSONParser.handleNonDoubleQuoteString(JSONParser.java:797) ~[?:?]
+	at org.noggit.JSONParser.next(JSONParser.java:1002) ~[?:?]
+	at org.noggit.JSONParser.nextEvent(JSONParser.java:1120) ~[?:?]
+	at org.noggit.ObjectBuilder.getArray(ObjectBuilder.java:199) ~[?:?]
+	at org.noggit.ObjectBuilder.getVal(ObjectBuilder.java:108) ~[?:?]
+	at org.noggit.ObjectBuilder.getObject(ObjectBuilder.java:178) ~[?:?]
+	at org.noggit.ObjectBuilder.getVal(ObjectBuilder.java:104) ~[?:?]
+	at org.noggit.ObjectBuilder.getVal(ObjectBuilder.java:58) ~[?:?]
+	at org.noggit.ObjectBuilder.fromJSONStrict(ObjectBuilder.java:45) ~[?:?]
+	at org.apache.solr.request.json.RequestUtil.mergeJSON(RequestUtil.java:312) ~[?:?]
+	... 55 more
+2022-09-09 00:57:23.453 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={%0a"filter":[\"author:Popper,+Karl+Raimund\"]%0a}&q.op=OR&_=1662683615893} status=400 QTime=26
+2022-09-09 00:57:23.552 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=123
+2022-09-09 00:57:46.631 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=0
+2022-09-09 00:57:46.636 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={%0a"filter":["author:Popper,+Karl+Raimund"]%0a}&q.op=OR&_=1662683615893} hits=1 status=0 QTime=3
+2022-09-09 00:57:46.758 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=127
+2022-09-09 01:00:41.748 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=0
+2022-09-09 01:00:41.750 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={%0a"filter":["author:Popper,+Karl+Raimund"]%0a}&q.op=AND&_=1662683615893} hits=0 status=0 QTime=2
+2022-09-09 01:00:41.862 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=114
+2022-09-09 01:01:03.337 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662683615842} status=0 QTime=0
+2022-09-09 01:01:03.339 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&json={%0a"filter":["author:Popper,+Karl+Raimund"]%0a}&q.op=OR&_=1662683615893} hits=1 status=0 QTime=1
+2022-09-09 01:01:03.441 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662683615843} status=0 QTime=103
+2022-09-09 01:03:30.208 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=5
+2022-09-09 01:03:36.224 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":[]}&q.op=OR&wt=json&facet=true} hits=18 status=0 QTime=7
+2022-09-09 01:03:43.705 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["author:Popper,+Karl+Raimund"]}&q.op=OR&wt=json&facet=true} hits=1 status=0 QTime=4
+2022-09-09 01:03:58.315 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["author:Popper,+Karl+Raimund"]}&q.op=OR&wt=json&facet=true} hits=1 status=0 QTime=4
+2022-09-09 01:04:45.362 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["author:Popper,+Karl+Raimund","author:Popper,+Karl+Raimund"]}&q.op=OR&wt=json&facet=true} hits=1 status=0 QTime=5
+2022-09-09 01:05:01.335 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["subject:Ciência--Metodologia","author:Popper,+Karl+Raimund","author:Popper,+Karl+Raimund"]}&q.op=OR&wt=json&facet=true} hits=1 status=0 QTime=41
+2022-09-09 01:05:08.524 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=1
+2022-09-09 01:05:31.783 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["year:1999"]}&q.op=OR&wt=json&facet=true} hits=4 status=0 QTime=22
+2022-09-09 01:06:05.331 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&json={"filter":["subject:Desafios+institucionais","year:1999"]}&q.op=OR&wt=json&facet=true} hits=1 status=0 QTime=4
+2022-09-09 01:07:00.918 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=5
+2022-09-09 01:18:29.589 ERROR (qtp1355887174-23) [ x:search] o.a.s.s.SchemaManager Could not add copy field => org.apache.solr.common.SolrException: copyField dest :'general_search' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:1007)
+org.apache.solr.common.SolrException: copyField dest :'general_search' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:1007) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:891) ~[?:?]
+	at org.apache.solr.schema.SchemaManager$OpType$2.perform(SchemaManager.java:246) ~[?:?]
+	at org.apache.solr.schema.SchemaManager.doOperations(SchemaManager.java:111) ~[?:?]
+	at org.apache.solr.schema.SchemaManager.performOperations(SchemaManager.java:91) ~[?:?]
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:93) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
+	at org.apache.solr.api.ApiBag$ReqHandlerToApi.call(ApiBag.java:352) ~[?:?]
+	at org.apache.solr.api.V2HttpCall.execute(V2HttpCall.java:400) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 01:18:29.599 ERROR (qtp1355887174-23) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, errors: [{errorMessages=[copyField dest :'general_search' is not an explicit field and doesn't match a dynamicField.
+], add-copy-field={source=subject, dest=[general_search]}}],  => org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, errors: [{errorMessages=[copyField dest :'general_search' is not an explicit field and doesn't match a dynamicField.
+], add-copy-field={source=subject, dest=[general_search]}}], 
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:95)
+org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, errors: [{errorMessages=[copyField dest :'general_search' is not an explicit field and doesn't match a dynamicField.
+], add-copy-field={source=subject, dest=[general_search]}}], 
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:95) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
+	at org.apache.solr.api.ApiBag$ReqHandlerToApi.call(ApiBag.java:352) ~[?:?]
+	at org.apache.solr.api.V2HttpCall.execute(V2HttpCall.java:400) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 01:20:10.345 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=3
+2022-09-09 01:20:10.373 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=22
+2022-09-09 01:20:10.424 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=82
+2022-09-09 01:20:10.486 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=10
+2022-09-09 01:20:10.550 INFO  (qtp1355887174-51) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=209
+2022-09-09 01:20:16.955 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:20:17.084 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=129
+2022-09-09 01:20:17.209 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=120
+2022-09-09 01:20:19.548 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:20:19.552 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1662686410327} status=0 QTime=1
+2022-09-09 01:20:19.564 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1662686410279&ts=1662686410279} status=503 QTime=6
+2022-09-09 01:20:19.592 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1662686419539} status=0 QTime=39
+2022-09-09 01:20:19.823 INFO  (qtp1355887174-51) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=275
+2022-09-09 01:20:19.841 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1662686419539} status=0 QTime=284
+2022-09-09 01:20:21.704 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:20:21.710 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=0
+2022-09-09 01:20:21.712 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=4
+2022-09-09 01:20:21.750 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=4
+2022-09-09 01:20:21.849 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=145
+2022-09-09 01:20:37.060 INFO  (qtp1355887174-51) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:20:37.064 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=3
+2022-09-09 01:20:37.064 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=0
+2022-09-09 01:20:37.098 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=5
+2022-09-09 01:20:37.191 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=130
+2022-09-09 01:21:01.673 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:21:01.675 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=0
+2022-09-09 01:21:01.676 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=3
+2022-09-09 01:21:01.719 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=6
+2022-09-09 01:21:01.793 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=121
+2022-09-09 01:23:01.772 INFO  (qtp1355887174-20) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-09-09 01:23:01.843 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-09 01:23:01.881 INFO  (qtp1355887174-20) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-09 01:23:02.123 INFO  (qtp1355887174-20) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-09 01:23:02.125 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.CoreContainer Reloading SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search
+2022-09-09 01:23:02.409 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-09 01:23:02.881 INFO  (qtp1355887174-20) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-09 01:23:02.881 INFO  (qtp1355887174-20) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-09 01:23:02.942 INFO  (qtp1355887174-20) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-09 01:23:02.953 INFO  (qtp1355887174-20) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-09 01:23:02.960 INFO  (qtp1355887174-20) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-09 01:23:02.979 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:23:02.979 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-09 01:23:02.997 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:23:03.030 INFO  (qtp1355887174-20) [ x:search] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-09-09 01:23:03.055 INFO  (qtp1355887174-20) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@3a6fcfd4 search
+2022-09-09 01:23:03.056 INFO  (qtp1355887174-20) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@3a6fcfd4
+2022-09-09 01:23:03.088 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:23:03.099 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 33 ms
+2022-09-09 01:23:11.488 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:23:11.490 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=0
+2022-09-09 01:23:11.494 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=3
+2022-09-09 01:23:11.520 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=3
+2022-09-09 01:23:11.612 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=122
+2022-09-09 01:23:15.229 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686410279} status=0 QTime=0
+2022-09-09 01:23:15.231 INFO  (qtp1355887174-58) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686410327} status=0 QTime=2
+2022-09-09 01:23:15.237 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686410327} status=0 QTime=0
+2022-09-09 01:23:15.274 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686410327} status=0 QTime=4
+2022-09-09 01:23:15.364 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686410279} status=0 QTime=134
+2022-09-09 01:23:29.555 INFO  (qtp1355887174-44) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-09-09 01:23:29.570 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-09 01:23:29.588 INFO  (qtp1355887174-44) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-09 01:23:29.694 INFO  (qtp1355887174-44) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-09 01:23:29.695 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.CoreContainer Reloading SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search
+2022-09-09 01:23:29.756 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-09 01:23:29.931 INFO  (qtp1355887174-44) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-09 01:23:29.931 INFO  (qtp1355887174-44) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-09 01:23:29.949 INFO  (qtp1355887174-44) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-09 01:23:29.950 INFO  (qtp1355887174-44) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-09 01:23:29.953 INFO  (qtp1355887174-44) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-09 01:23:29.958 INFO  (searcherExecutor-23-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:23:29.958 INFO  (searcherExecutor-23-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-09 01:23:29.976 INFO  (qtp1355887174-44) [ x:search] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-09-09 01:23:29.991 INFO  (searcherExecutor-23-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:23:30.015 INFO  (searcherExecutor-23-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:23:30.016 INFO  (qtp1355887174-44) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@4bf58922 search
+2022-09-09 01:23:30.017 INFO  (qtp1355887174-44) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@4bf58922
+2022-09-09 01:23:30.030 INFO  (searcherExecutor-23-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:23:42.246 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:23:42.249 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:23:42.250 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686622232} status=0 QTime=0
+2022-09-09 01:23:42.285 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:23:42.357 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=111
+2022-09-09 01:23:55.386 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:23:55.387 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686622232} status=0 QTime=1
+2022-09-09 01:23:55.390 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:23:55.413 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:23:55.507 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=121
+2022-09-09 01:24:15.779 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:24:15.781 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686622232} status=0 QTime=1
+2022-09-09 01:24:15.782 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686622232} status=0 QTime=2
+2022-09-09 01:24:15.804 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:24:15.890 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=111
+2022-09-09 01:24:39.963 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-09-09 01:24:39.980 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-09 01:24:39.992 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-09 01:24:40.141 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-09 01:24:40.141 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.CoreContainer Reloading SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search
+2022-09-09 01:24:40.267 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-09 01:24:40.527 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-09 01:24:40.527 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-09 01:24:40.543 INFO  (qtp1355887174-53) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-09 01:24:40.544 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-09 01:24:40.545 INFO  (qtp1355887174-53) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-09 01:24:40.548 INFO  (searcherExecutor-28-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:24:40.548 INFO  (searcherExecutor-28-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-09 01:24:40.561 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-09-09 01:24:40.565 INFO  (searcherExecutor-28-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:24:40.575 INFO  (searcherExecutor-28-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:24:40.575 INFO  (qtp1355887174-53) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@310d753f search
+2022-09-09 01:24:40.575 INFO  (qtp1355887174-53) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@310d753f
+2022-09-09 01:24:40.582 INFO  (searcherExecutor-28-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:24:54.411 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:24:54.412 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686622232} status=0 QTime=0
+2022-09-09 01:24:54.415 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:24:54.435 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686622232} status=0 QTime=2
+2022-09-09 01:24:54.528 INFO  (qtp1355887174-58) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=118
+2022-09-09 01:25:08.389 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-09-09 01:25:08.403 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-09 01:25:08.418 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-09 01:25:08.571 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-09 01:25:08.571 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.CoreContainer Reloading SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search
+2022-09-09 01:25:08.688 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-09 01:25:08.902 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-09 01:25:08.902 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-09 01:25:08.912 INFO  (qtp1355887174-53) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-09 01:25:08.913 INFO  (qtp1355887174-53) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-09 01:25:08.914 INFO  (qtp1355887174-53) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-09 01:25:08.919 INFO  (searcherExecutor-33-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:25:08.919 INFO  (searcherExecutor-33-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-09 01:25:08.934 INFO  (searcherExecutor-33-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:25:08.937 INFO  (qtp1355887174-53) [ x:search] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-09-09 01:25:08.948 INFO  (searcherExecutor-33-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-09 01:25:08.948 INFO  (qtp1355887174-53) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@223a5e92 search
+2022-09-09 01:25:08.948 INFO  (qtp1355887174-53) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@223a5e92
+2022-09-09 01:25:08.955 INFO  (searcherExecutor-33-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-09 01:30:19.149 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=2
+2022-09-09 01:30:19.285 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=137
+2022-09-09 01:30:19.403 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=108
+2022-09-09 01:30:21.422 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:30:21.426 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1662686622232} status=0 QTime=2
+2022-09-09 01:30:21.443 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1662687021413} status=0 QTime=13
+2022-09-09 01:30:21.448 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1662686622192&ts=1662686622192} status=503 QTime=1
+2022-09-09 01:30:21.662 INFO  (qtp1355887174-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=238
+2022-09-09 01:30:21.669 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1662687021413} status=0 QTime=236
+2022-09-09 01:30:33.968 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:30:34.085 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=116
+2022-09-09 01:30:38.105 INFO  (qtp1355887174-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:30:38.117 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662687033952} hits=18 status=0 QTime=10
+2022-09-09 01:30:38.222 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=117
+2022-09-09 01:31:19.437 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=1
+2022-09-09 01:31:19.459 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:*&indent=true&q.op=OR&_=1662687033952} hits=0 status=0 QTime=17
+2022-09-09 01:31:19.561 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=118
+2022-09-09 01:31:47.480 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:31:47.484 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Conjecturas+e+refutações&indent=true&q.op=OR&_=1662687033952} hits=0 status=0 QTime=7
+2022-09-09 01:31:47.592 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=114
+2022-09-09 01:33:39.111 ERROR (qtp1355887174-23) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Solr instance is not running in SolrCloud mode. => org.apache.solr.common.SolrException: Solr instance is not running in SolrCloud mode.
+	at org.apache.solr.handler.admin.CollectionsHandler.checkErrors(CollectionsHandler.java:227)
+org.apache.solr.common.SolrException: Solr instance is not running in SolrCloud mode.
+	at org.apache.solr.handler.admin.CollectionsHandler.checkErrors(CollectionsHandler.java:227) ~[?:?]
+	at org.apache.solr.handler.admin.CollectionsHandler.handleRequestBody(CollectionsHandler.java:194) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:893) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:584) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 01:33:39.113 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={name=search&action=REINDEXCOLLECTION} status=400 QTime=7
+2022-09-09 01:34:12.964 ERROR (qtp1355887174-28) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unsupported operation: REINDEXCOLLECTION => org.apache.solr.common.SolrException: Unsupported operation: REINDEXCOLLECTION
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleCustomAction(CoreAdminHandler.java:238)
+org.apache.solr.common.SolrException: Unsupported operation: REINDEXCOLLECTION
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleCustomAction(CoreAdminHandler.java:238) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:184) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:893) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:584) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-09-09 01:34:12.966 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=search&action=REINDEXCOLLECTION} status=400 QTime=4
+2022-09-09 01:34:42.575 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:34:42.689 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=113
+2022-09-09 01:34:42.786 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=104
+2022-09-09 01:34:45.047 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:34:45.063 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1662686622232} status=0 QTime=2
+2022-09-09 01:34:45.066 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1662687021413} status=0 QTime=15
+2022-09-09 01:34:45.069 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1662686622192&ts=1662686622192} status=503 QTime=0
+2022-09-09 01:34:45.254 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=197
+2022-09-09 01:34:45.274 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1662687021413} status=0 QTime=206
+2022-09-09 01:34:55.854 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662686622191} status=0 QTime=0
+2022-09-09 01:34:55.863 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662686622232} status=0 QTime=3
+2022-09-09 01:34:55.870 INFO  (qtp1355887174-46) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662686622232} status=0 QTime=12
+2022-09-09 01:34:55.901 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662686622232} status=0 QTime=11
+2022-09-09 01:34:55.961 INFO  (qtp1355887174-68) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662686622191} status=0 QTime=102
