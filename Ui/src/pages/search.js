@@ -1,4 +1,4 @@
-import { Stack, Box, Container, Pagination } from "@mui/material/";
+import { Stack, Box, Container, Pagination, Typography } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import { grey, blueGrey } from "@mui/material/colors";
 
@@ -8,7 +8,8 @@ import { api } from "src/services/solr";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Navbar from "src/components/Navbar/navbar_search";
-import AdvancedSearch from "src/components/SearchBox/advanced_search"
+import AdvancedSearch from "src/components/SearchBox/advanced_search";
+import CountUp from "react-countup";
 
 export default function Search() {
   const router = useRouter();
@@ -21,8 +22,9 @@ export default function Search() {
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
   const [page, setPage] = useState(0);
+  const [numFound, setNumFound] = useState(1);
 
-  const getData = (field, assunto) => {
+  const getData = (field, assunto, start) => {
     const facet = {
       subject: {
         field: "subject_str",
@@ -42,7 +44,7 @@ export default function Search() {
       .get("select", {
         params: {
           q: `${field}:${assunto}`,
-          start: page,
+          start: start,
           "q.op": "AND",
           wt: "json",
           facet: true,
@@ -51,6 +53,7 @@ export default function Search() {
       })
       .then((response) => {
         console.log("FT: ", response.data);
+        setNumFound(response.data.response.numFound);
         setItems(response.data.response.docs);
         setfacetSuject(response.data.facets.subject.buckets);
         setfacetAuthor(response.data.facets.author.buckets);
@@ -63,10 +66,19 @@ export default function Search() {
   };
 
   const handlePagination = (e, p) => {
-    console.log('P:', e, p)
-    setPage(p)
-    getData(query.field, query.term)
-  }
+    if (p == 1) {
+      setPage(0);
+      getData(query.field, query.term, 0);
+    } else {
+      let c = p * 10 - 9;
+      setPage(c);
+      getData(query.field, query.term, c);
+      console.log("P:", c);
+    }
+
+    //getData(query.field, query.term)
+    console.log("P:", query.field, query.term);
+  };
 
   useEffect(() => {
     if (!q) {
@@ -74,13 +86,12 @@ export default function Search() {
     }
 
     if (q == "all") {
-      getData(query.field, query.term);
+      getData(query.field, query.term, page);
     } else {
       setQuery({ field: "general_search", term: q });
 
-      getData("general_search", q);
+      getData("general_search", q, page);
     }
-    setPage(1)
   }, [q]);
 
   return (
@@ -88,12 +99,13 @@ export default function Search() {
       {/* Navbar */}
       <Navbar />
       <Container maxWidth="xl">
-      <AdvancedSearch getData={getData} />
-        
+        <AdvancedSearch getData={getData} />
+
         <Grid container spacing={2}>
           <Grid xs={3} sx={{ backgroundColor: grey[100] }}>
             <Filters
               setItems={setItems}
+              setNumFound={setNumFound}
               facetSuject={facetSuject}
               setfacetSuject={setfacetSuject}
               facetAuthor={facetAuthor}
@@ -114,6 +126,16 @@ export default function Search() {
               p: 3,
             }}
           >
+          <Box sx={{ display: 'flex', gap: "0.5rem"}}>
+          <Typography variant="h6" gutterBottom>
+              <CountUp separator="." end={numFound} duration={1} /> 
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+               item encontrados
+            </Typography>
+
+          </Box>
+            
             <Stack spacing={2}>
               {items?.map((item) => (
                 <CardItem
@@ -130,11 +152,12 @@ export default function Search() {
             </Stack>
             {/* Pagination */}
             <Box my={2}>
-            <Pagination count={10} color="primary" 
-            onChange={handlePagination}
-            />
+              <Pagination
+                count={Math.ceil(numFound / 10)}
+                color="primary"
+                onChange={handlePagination}
+              />
             </Box>
-           
           </Grid>
         </Grid>
       </Container>

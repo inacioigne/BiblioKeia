@@ -212,9 +212,10 @@ class MarcWork:
             subfield = {'sub': dict()}
             for i in subject:
                 if i.attrib['code'] != '9':
-                    labelList.append(i.text)
+                    
                     text = i.text.rstrip()
                     text = text.removesuffix('.')
+                    labelList.append(text)
                     subfield['sub'][i.attrib['code']] = text
             subfield['label'] =  '--'.join(labelList)
             subjectsList.append(subfield)

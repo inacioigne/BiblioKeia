@@ -16,6 +16,7 @@ import { api } from "src/services/solr";
 
 export default function Filters({
   setItems,
+  setNumFound,
   facetSuject,
   setfacetSuject,
   facetAuthor,
@@ -59,6 +60,7 @@ export default function Filters({
       })
       .then((response) => {
         console.log("Filtro: ", response.data);
+        setNumFound(response.data.response.numFound)
         setItems(response.data.response.docs);
         setfacetSuject(response.data.facets.subject.buckets);
         setfacetAuthor(response.data.facets.author.buckets);

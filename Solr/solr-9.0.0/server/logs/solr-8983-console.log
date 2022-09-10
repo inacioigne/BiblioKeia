@@ -1,7 +1,7 @@
-2022-09-09 13:24:06.488 INFO  (main) [] o.e.j.u.log Logging initialized @1377ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-09-09 13:24:06.733 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
-2022-09-09 13:24:07.362 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-09-09 13:24:07.377 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
-2022-09-09 13:24:07.377 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-09-09 13:24:07.377 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
-2022-09-09 13:24:07.377 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-09T13:24:07.377950700Z
+2022-09-09 21:58:40.618 INFO  (main) [] o.e.j.u.log Logging initialized @9114ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-09 21:58:41.023 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-09 21:58:41.982 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-09 21:58:42.015 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-09 21:58:42.015 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-09 21:58:42.015 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-09 21:58:42.015 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-09T21:58:42.015848500Z

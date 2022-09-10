@@ -9,7 +9,6 @@ export default function Counters({ counter, title, description }) {
         sx={{ fontWeight: "bold" }}
         variant="h4"
         color={indigo[500]}
-        //textGradient
       >
       <CountUp 
       separator="."
