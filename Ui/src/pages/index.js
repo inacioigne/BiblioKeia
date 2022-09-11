@@ -1,11 +1,15 @@
 import { Paper, Box, Container } from "@mui/material/";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
-import SearchBox from "src/components/SearchBox";
+import SearchBox from "src/components/Search";
 import Counters from "../components/Counters";
 import Footer from "../components/Footer";
+import { useSearch } from "src/providers/search"
 
 export default function Home() {
+  const {getData} = useSearch()
+  console.log(getData)
+
   return (
     <Box>
       <Box

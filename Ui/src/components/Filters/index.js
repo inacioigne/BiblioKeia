@@ -14,77 +14,44 @@ import { useEffect, useState } from "react";
 import Facet from "./facet";
 import { api } from "src/services/solr";
 
+import { useSearch } from "src/providers/search";
+
 export default function Filters({
-  setItems,
-  setNumFound,
-  facetSuject,
-  setfacetSuject,
-  facetAuthor,
-  setfacetAuthor,
-  facetYear,
-  setfacetYear,
-  facetType,
-  setfacetType,
+  //setItems,
+  //setNumFound,
   query,
+  page
 }) {
-  const getData = (field, assunto, filter) => {
-    const facet = {
-      subject: {
-        field: "subject_str",
-      },
-      author: {
-        field: "author_str",
-      },
-      year: {
-        field: "year",
-      },
-      type: {
-        field: "type",
-      },
-    };
-
-    const json_filter = {
-      filter: filter,
-    };
-
-    api
-      .get("select", {
-        params: {
-          q: `${field}:${assunto}`,
-          "q.op": "OR",
-          json: JSON.stringify(json_filter),
-          wt: "json",
-          facet: true,
-          "json.facet": JSON.stringify(facet),
-        },
-      })
-      .then((response) => {
-        console.log("Filtro: ", response.data);
-        setNumFound(response.data.response.numFound)
-        setItems(response.data.response.docs);
-        setfacetSuject(response.data.facets.subject.buckets);
-        setfacetAuthor(response.data.facets.author.buckets);
-        setfacetYear(response.data.facets.year.buckets);
-        setfacetType(response.data.facets.type.buckets);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
+ 
 
   const [assunto, setAssunto] = useState([]);
   const [autor, setAutor] = useState([]);
   const [ano, setAno] = useState([]);
   const [tipo, setTipo] = useState([]);
   const { handleSubmit, control, reset } = useForm();
- 
+
+  const {
+    getData,
+    numFound,
+    //setNumFound,
+    items,
+    //setItems,
+    facetSuject,
+    facetAuthor,
+    facetYear,
+    facetType,
+    filter,
+    setPage
+  } = useSearch();
 
   const onSubmit = () => {
-    let arr = []
-    const filter = arr.concat(assunto, autor, ano, tipo);
+    // let arr = [];
+    // const filter = arr.concat(assunto, autor, ano, tipo);
 
     //alert(JSON.stringify(assunto));
-    getData(query.field, query.term, filter);
+    setPage(0)
+
+    getData(query.field, query.term, page, filter);
   };
 
   return (

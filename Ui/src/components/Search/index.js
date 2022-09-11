@@ -4,7 +4,6 @@ import { useForm, Controller } from "react-hook-form";
 import { useRouter } from "next/router";
 
 export default function SearchBox() {
-  
   const router = useRouter();
 
   const { control, handleSubmit } = useForm({
@@ -14,12 +13,11 @@ export default function SearchBox() {
   });
 
   const onSubmit = (data) => {
-    if (data.search == '') {
+    if (data.search == "") {
       router.push(`/search?q=all`);
     } else {
       router.push(`/search?q=${data.search}`);
     }
-    
   };
 
   return (
@@ -50,19 +48,18 @@ export default function SearchBox() {
             width: 400,
           }}
         >
-        <Controller
-        name="search"
-        control={control}
-        render={({ field }) => (
-          <InputBase
-            {...field}
-            sx={{ ml: 1, flex: 1 }}
-            placeholder="Faça uma busca"
-            inputProps={{ "aria-label": "Faça uma busca" }}
+          <Controller
+            name="search"
+            control={control}
+            render={({ field }) => (
+              <InputBase
+                {...field}
+                sx={{ ml: 1, flex: 1 }}
+                placeholder="Faça uma busca"
+                inputProps={{ "aria-label": "Faça uma busca" }}
+              />
+            )}
           />
-        )}
-      />
-          
 
           <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
             <SearchIcon />

@@ -10,7 +10,8 @@ export default function Navbar() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          p: '2rem'
+          p: '2rem',
+          borderBottom: 'solid'
         }}
       >
          <Box lineHeight={1} py={0.75} pl={1}>

@@ -12,6 +12,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { indigo } from "@mui/material/colors";
 import { useForm, Controller } from "react-hook-form";
 import { useEffect, useState } from "react";
+import { useSearch } from "src/providers/search"
 
 export default function Facet({
   metadata,
@@ -21,7 +22,22 @@ export default function Facet({
   state,
   setState,
 }) {
-  //const [state, setState] = useState([])
+
+  const { filter, setFilter } = useSearch()
+
+  const handleFilter = (event) => {
+    if (event.target.checked) {
+      setFilter((filter) => [...filter, `${metadata}:${event.target.value}`]);
+    } else {
+      setFilter(
+        filter.filter(function (e) {
+          return e !== `${metadata}:${event.target.value}`
+        })
+      );
+    }
+
+  }
+ 
   return (
     <Accordion>
       <AccordionSummary
@@ -40,18 +56,19 @@ export default function Facet({
           {facetSuject?.map((termo, index) => (
             <Box key={index} sx={{ display: "flex" }}>
               <Checkbox
-                onChange={(event) => {
-                  if (event.target.checked) {
-                    setState((state) => [...state, `${metadata}:${event.target.value}`]);
-                  } else {
-                    setState(
-                      state.filter(function (e) {
-                        return e !== `${metadata}:${event.target.value}`
-                      })
-                    );
-                  }
+                // onChange={(event) => {
+                //   if (event.target.checked) {
+                //     setState((state) => [...state, `${metadata}:${event.target.value}`]);
+                //   } else {
+                //     setState(
+                //       state.filter(function (e) {
+                //         return e !== `${metadata}:${event.target.value}`
+                //       })
+                //     );
+                //   }
               
-                }}
+                // }}
+                onChange={handleFilter}
                 value={termo.val}
                 name="assunto"
               />

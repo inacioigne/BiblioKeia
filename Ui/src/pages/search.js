@@ -1,84 +1,42 @@
-import { Stack, Box, Container, Pagination, Typography } from "@mui/material/";
+// Material UI
+import { Stack, Box, Container, Typography } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
-import { grey, blueGrey } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
+// React Hooks
+import { useEffect, useState } from "react";
+
+// Next Components
+import { useRouter } from "next/router";
+
+// Libs
+import CountUp from "react-countup";
+
+
+// BiblioKeia Compenents
 import CardItem from "src/components/CardItem";
 import Filters from "src/components/Filters";
-import { api } from "src/services/solr";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Navbar from "src/components/Navbar/navbar_search";
-import AdvancedSearch from "src/components/SearchBox/advanced_search";
-import CountUp from "react-countup";
+import AdvancedSearch from "src/components/Search/advanced_search";
+import NavPages  from "src/components/Search/navPages"
+
+// BiblioKeia Hooks
+import { useSearch } from "src/providers/search"
+
 
 export default function Search() {
   const router = useRouter();
   const { q } = router.query;
   const [query, setQuery] = useState({ field: "*", term: "*" });
 
-  const [items, setItems] = useState(null);
+  //const [items, setItems] = useState(null);
   const [facetSuject, setfacetSuject] = useState(null);
   const [facetAuthor, setfacetAuthor] = useState(null);
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
-  const [page, setPage] = useState(0);
-  const [numFound, setNumFound] = useState(1);
 
-  const getData = (field, assunto, start) => {
-    const facet = {
-      subject: {
-        field: "subject_str",
-      },
-      author: {
-        field: "author_str",
-      },
-      year: {
-        field: "year",
-      },
-      type: {
-        field: "type",
-      },
-    };
+  const { getData, numFound, setNumFound, items, setItems, filter, page } = useSearch()
 
-    api
-      .get("select", {
-        params: {
-          q: `${field}:${assunto}`,
-          start: start,
-          "q.op": "AND",
-          wt: "json",
-          facet: true,
-          "json.facet": JSON.stringify(facet),
-        },
-      })
-      .then((response) => {
-        console.log("FT: ", response.data);
-        setNumFound(response.data.response.numFound);
-        setItems(response.data.response.docs);
-        setfacetSuject(response.data.facets.subject.buckets);
-        setfacetAuthor(response.data.facets.author.buckets);
-        setfacetYear(response.data.facets.year.buckets);
-        setfacetType(response.data.facets.type.buckets);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-
-  const handlePagination = (e, p) => {
-    if (p == 1) {
-      setPage(0);
-      getData(query.field, query.term, 0);
-    } else {
-      let c = p * 10 - 9;
-      setPage(c);
-      getData(query.field, query.term, c);
-      console.log("P:", c);
-    }
-
-    //getData(query.field, query.term)
-    console.log("P:", query.field, query.term);
-  };
 
   useEffect(() => {
     if (!q) {
@@ -115,8 +73,8 @@ export default function Search() {
               facetType={facetType}
               setfacetType={setfacetType}
               query={query}
+              page={page}
             />
-            {/* <code>{q}</code> */}
           </Grid>
 
           <Grid
@@ -133,6 +91,7 @@ export default function Search() {
             <Typography variant="h6" gutterBottom>
                item encontrados
             </Typography>
+          
 
           </Box>
             
@@ -150,14 +109,8 @@ export default function Search() {
                 />
               ))}
             </Stack>
-            {/* Pagination */}
-            <Box my={2}>
-              <Pagination
-                count={Math.ceil(numFound / 10)}
-                color="primary"
-                onChange={handlePagination}
-              />
-            </Box>
+     
+            <NavPages query={query} />
           </Grid>
         </Grid>
       </Container>
