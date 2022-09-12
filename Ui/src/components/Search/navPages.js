@@ -6,7 +6,7 @@ export default function NavPages({query}) {
     const { getData, numFound, setNumFound, items, setItems, filter, page, setPage } = useSearch()
 
     const handlePagination = (e, p) => {
-      console.log("P:", filter);
+      
         if (p == 1) {
           setPage(0);
           getData(query.field, query.term, 0, filter);
@@ -14,7 +14,7 @@ export default function NavPages({query}) {
           let c = p * 10 - 9;
           setPage(c);
           getData(query.field, query.term, c, filter);
-          //console.log("P:", c);
+          
         }
       };
 

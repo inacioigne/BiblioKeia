@@ -7,7 +7,7 @@ import {
   Button,
   CardActions,
 } from "@mui/material/";
-import Image from "next/image";
+
 import {
   MenuBook,
   FileCopy,
@@ -15,6 +15,10 @@ import {
   AddToPhotos,
   FactCheck,
 } from "@mui/icons-material";
+
+// Next Components
+import Link from 'next/link'
+import Image from "next/image";
 
 const styleDatails = {
   display: "flex",
@@ -284,9 +288,11 @@ export default function CardItem({
             </Box>
           </CardContent>
           <CardActions>
+          <Link href={`/item/${id}`}>
             <Button size="small" variant="outlined">
               Detalhes
             </Button>
+            </Link>
           </CardActions>
         </Box>
       </Box>

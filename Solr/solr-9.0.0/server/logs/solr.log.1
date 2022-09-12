@@ -1,29 +1,32 @@
-2022-09-08 18:54:17.472 INFO  (main) [] o.e.j.u.log Logging initialized @1294ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-09-08 18:54:17.682 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
-2022-09-08 18:54:18.228 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-09-08 18:54:18.242 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
-2022-09-08 18:54:18.242 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-09-08 18:54:18.242 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
-2022-09-08 18:54:18.242 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-08T18:54:18.242775800Z
-2022-09-08 18:54:18.242 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
-2022-09-08 18:54:18.252 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
-2022-09-08 18:54:19.002 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2022-09-08 18:54:19.012 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-09-08 18:54:19.212 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
-2022-09-08 18:54:19.732 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61d9efe0{/solr,file:///C:/Users/Usu%C3%A1rio/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
-2022-09-08 18:54:19.740 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_08.request.log
-2022-09-08 18:54:19.748 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@47605f2f{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-08 18:54:19.748 INFO  (main) [] o.e.j.s.Server Started @3570ms
-2022-09-08 18:54:22.496 INFO  (qtp909282611-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=58
-2022-09-08 18:54:41.327 INFO  (qtp909282611-25) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-09-08 18:54:41.354 INFO  (qtp909282611-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662663281271} status=0 QTime=31
-2022-09-08 18:54:41.373 INFO  (qtp909282611-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663281272} status=0 QTime=49
-2022-09-08 18:54:41.397 INFO  (qtp909282611-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663281272} status=0 QTime=20
-2022-09-08 18:56:19.914 INFO  (qtp909282611-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662663281271} status=0 QTime=0
-2022-09-08 18:56:19.961 INFO  (qtp909282611-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663281272} status=0 QTime=42
-2022-09-08 18:56:19.965 INFO  (qtp909282611-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1662663281271} status=0 QTime=0
-2022-09-08 19:00:18.082 INFO  (qtp909282611-21) [ x:search] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=search&action=CREATE&config=solrconfig.xml&instanceDir=search&wt=json&_=1662663281271
-2022-09-08 19:00:18.119 ERROR (qtp909282611-21) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
+2022-09-08 19:07:05.659 INFO  (main) [] o.e.j.u.log Logging initialized @1359ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-08 19:07:05.878 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-08 19:07:06.414 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-08T19:07:06.432436900Z
+2022-09-08 19:07:06.448 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-09-08 19:07:06.448 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-09-08 19:07:07.279 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-09-08 19:07:07.279 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-09-08 19:07:07.482 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-09-08 19:07:07.857 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5c1bd44c{/solr,file:///C:/Users/Usu%C3%A1rio/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-08 19:07:07.873 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_08.request.log
+2022-09-08 19:07:07.883 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@5827af16{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-08 19:07:07.883 INFO  (main) [] o.e.j.s.Server Started @3580ms
+2022-09-08 19:07:10.720 INFO  (qtp735085430-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=56
+2022-09-08 19:08:03.056 INFO  (qtp735085430-21) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-09-08 19:08:03.074 INFO  (qtp735085430-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664083014} status=0 QTime=24
+2022-09-08 19:08:03.086 INFO  (qtp735085430-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664083015} status=0 QTime=36
+2022-09-08 19:08:03.112 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664083015} status=0 QTime=21
+2022-09-08 19:08:28.290 INFO  (qtp735085430-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664108253} status=0 QTime=0
+2022-09-08 19:08:28.332 INFO  (qtp735085430-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664108253} status=0 QTime=42
+2022-09-08 19:08:28.361 INFO  (qtp735085430-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664108253} status=0 QTime=25
+2022-09-08 19:08:36.797 INFO  (qtp735085430-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=19
+2022-09-08 19:08:36.830 INFO  (qtp735085430-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+2022-09-08 19:08:36.837 INFO  (qtp735085430-25) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS&wt=json} status=0 QTime=0
+2022-09-08 19:08:36.841 INFO  (qtp735085430-29) [ x:search] o.a.s.h.a.CoreAdminOperation core create command name=search&action=CREATE&instanceDir=search&wt=json
+2022-09-08 19:08:36.854 ERROR (qtp735085430-29) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
 	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1468)
 org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
 	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1468) ~[?:?]
@@ -105,23 +108,16 @@ Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resour
 	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1550) ~[?:?]
 	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1426) ~[?:?]
 	... 53 more
-2022-09-08 19:00:18.119 INFO  (qtp909282611-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=search&action=CREATE&config=solrconfig.xml&instanceDir=search&wt=json&_=1662663281271} status=400 QTime=42
-2022-09-08 19:05:11.636 INFO  (qtp909282611-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=19
-2022-09-08 19:06:04.747 INFO  (qtp909282611-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=20
-2022-09-08 19:06:04.781 INFO  (qtp909282611-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
-2022-09-08 19:06:04.789 INFO  (qtp909282611-41) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS&wt=json} status=0 QTime=0
-2022-09-08 19:06:25.749 INFO  (qtp909282611-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662663281271} status=0 QTime=0
-2022-09-08 19:06:25.795 INFO  (qtp909282611-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663281272} status=0 QTime=45
-2022-09-08 19:06:25.818 INFO  (qtp909282611-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663281272} status=0 QTime=18
-2022-09-08 19:06:29.323 INFO  (qtp909282611-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662663989288} status=0 QTime=0
-2022-09-08 19:06:29.353 INFO  (qtp909282611-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663989289} status=0 QTime=30
-2022-09-08 19:06:29.379 INFO  (qtp909282611-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663989289} status=0 QTime=23
-2022-09-08 19:06:33.888 INFO  (qtp909282611-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662663993856} status=0 QTime=0
-2022-09-08 19:06:33.918 INFO  (qtp909282611-41) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663993856} status=0 QTime=31
-2022-09-08 19:06:33.942 INFO  (qtp909282611-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662663993856} status=0 QTime=21
-2022-09-08 19:06:59.912 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@47605f2f{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-08 19:06:59.922 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=632669667
-2022-09-08 19:06:59.926 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2022-09-08 19:06:59.941 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2022-09-08 19:06:59.951 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2022-09-08 19:06:59.970 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61d9efe0{/solr,null,STOPPED}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-08 19:08:36.854 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=search&action=CREATE&instanceDir=search&wt=json} status=400 QTime=13
+2022-09-08 19:09:12.245 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664152211} status=0 QTime=0
+2022-09-08 19:09:12.277 INFO  (qtp735085430-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664152212} status=0 QTime=32
+2022-09-08 19:09:12.300 INFO  (qtp735085430-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664152212} status=0 QTime=20
+2022-09-08 19:11:34.060 INFO  (qtp735085430-42) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=18
+2022-09-08 19:11:34.076 INFO  (qtp735085430-25) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS&wt=json} status=0 QTime=0
+2022-09-08 19:11:57.534 INFO  (qtp735085430-26) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS} status=0 QTime=0
+2022-09-08 19:12:43.666 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@5827af16{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-08 19:12:43.676 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=975905570
+2022-09-08 19:12:43.678 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-09-08 19:12:43.692 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-09-08 19:12:43.704 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-09-08 19:12:43.728 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@5c1bd44c{/solr,null,STOPPED}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}

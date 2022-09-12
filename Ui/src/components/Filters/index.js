@@ -17,10 +17,7 @@ import { api } from "src/services/solr";
 import { useSearch } from "src/providers/search";
 
 export default function Filters({
-  //setItems,
-  //setNumFound,
-  query,
-  page
+  query
 }) {
  
 
@@ -32,26 +29,16 @@ export default function Filters({
 
   const {
     getData,
-    numFound,
-    //setNumFound,
-    items,
-    //setItems,
     facetSuject,
     facetAuthor,
     facetYear,
     facetType,
-    filter,
-    setPage
+    filter
   } = useSearch();
 
   const onSubmit = () => {
-    // let arr = [];
-    // const filter = arr.concat(assunto, autor, ano, tipo);
 
-    //alert(JSON.stringify(assunto));
-    setPage(0)
-
-    getData(query.field, query.term, page, filter);
+    getData(query.field, query.term, 0, filter);
   };
 
   return (

@@ -12,7 +12,6 @@ import { useRouter } from "next/router";
 // Libs
 import CountUp from "react-countup";
 
-
 // BiblioKeia Compenents
 import CardItem from "src/components/CardItem";
 import Filters from "src/components/Filters";

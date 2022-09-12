@@ -1,15 +1,22 @@
-import { Paper, Box, Container } from "@mui/material/";
+// Material UI
+import { Paper, Box } from "@mui/material/";
+
+// Next Components
 import Image from "next/image";
+
+// BiblioKeia Compenents
 import Navbar from "../components/Navbar";
 import SearchBox from "src/components/Search";
 import Counters from "../components/Counters";
 import Footer from "../components/Footer";
+
+// BiblioKeia Hooks
 import { useSearch } from "src/providers/search"
 
 export default function Home() {
-  const {getData} = useSearch()
-  console.log(getData)
 
+  //const { getData } = useSearch()
+  
   return (
     <Box>
       <Box
