@@ -1,0 +1,4 @@
+127.0.0.1 - - [12/set./2022:00:14:27 +0000] "GET /solr/search/select?q=*:*&start=0&q.op=AND&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2042
+127.0.0.1 - - [12/set./2022:01:55:37 +0000] "GET /solr/admin/cores?_=1662947736983&indexInfo=false&wt=json HTTP/1.1" 200 477
+127.0.0.1 - - [12/set./2022:01:55:37 +0000] "GET /solr/admin/info/system?_=1662947736984&wt=json HTTP/1.1" 200 1371
+127.0.0.1 - - [12/set./2022:01:55:37 +0000] "GET /solr/admin/info/system?_=1662947736984&wt=json HTTP/1.1" 200 1368
