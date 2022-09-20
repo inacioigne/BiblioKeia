@@ -70,7 +70,7 @@ export default function CardItem({
               }}
             >
               <Typography gutterBottom variant="h5" component="div">
-                {title}
+                {`${title}-${id}`}
               </Typography>
               <Button
                 size="small"

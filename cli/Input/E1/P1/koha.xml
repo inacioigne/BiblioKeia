@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--1-->
 <record>
   <leader>00650nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-000344</controlfield>
@@ -72,7 +72,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--2-->
 <record>
   <leader>00509nam a2200157   4500</leader>
   <controlfield tag="001">BIBLIOPAC-000330</controlfield>
@@ -130,7 +130,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--3-->
 <record>
   <leader>00637nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-005142</controlfield>
@@ -191,7 +191,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--4-->
 <record>
   <leader>00636nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-002022</controlfield>
@@ -261,7 +261,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--5-->
 <record>
   <leader>00863nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009998</controlfield>
@@ -393,7 +393,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--6-->
 <record>
   <leader>00792cam a2200217 a 4500</leader>
   <controlfield tag="001">0013750</controlfield>
@@ -467,7 +467,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--7-->
 <record>
   <leader>00738cam a2200229 a 4500</leader>
   <controlfield tag="001">0013748</controlfield>
@@ -545,7 +545,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--8-->
 <record>
   <leader>00558nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010450</controlfield>
@@ -606,7 +606,131 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--9-->
+<record>
+  <leader>00550nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010488</controlfield>
+  <controlfield tag="005">20161123142905.0</controlfield>
+  <controlfield tag="008">140428s2007    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.4</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.4</subfield>
+    <subfield code="b">F981</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Relatório de atividades 2007 / </subfield>
+    <subfield code="c">Fundação de Amparo à Pesquisa do Estado de São Paulo.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Fapesp, </subfield>
+    <subfield code="c">2007.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">211 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Relatório de atividades</subfield>
+    <subfield code="x">Fapesp</subfield>
+    <subfield code="z">2007.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Fundação de Amparo à Pesquisa do Estado de São Paulo.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17198</subfield>
+    <subfield code="d">17198</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_400000000000000_F981</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23368</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.4 F981</subfield>
+    <subfield code="p">14-0356</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--10-->
+<record>
+  <leader>00565nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010449</controlfield>
+  <controlfield tag="005">20161123142900.0</controlfield>
+  <controlfield tag="008">140422s2011    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.4</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.4</subfield>
+    <subfield code="b">I59</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Relatório de atividades 2010 / </subfield>
+    <subfield code="c">Instituto de Pesquisa Ambiental da Amazônia.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília : </subfield>
+    <subfield code="b">IPAM, </subfield>
+    <subfield code="c">2011.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">100 p. : </subfield>
+    <subfield code="b">il. color.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Contém bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Relatório de atividades</subfield>
+    <subfield code="x">IPAM</subfield>
+    <subfield code="y">2010.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Instituto de Pesquisa Ambiental da Amazônia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17159</subfield>
+    <subfield code="d">17159</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_001_400000000000000_I59</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">23307</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 001.4 I59</subfield>
+    <subfield code="p">14-0354</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--11-->
 <record>
   <leader>00780nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009006</controlfield>
@@ -686,7 +810,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--12-->
 <record>
   <leader>00532nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001562</controlfield>
@@ -750,7 +874,76 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--13-->
+<record>
+  <leader>00646nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-008010</controlfield>
+  <controlfield tag="008">050801s1998    bl       a    100 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.4 </subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.4</subfield>
+    <subfield code="b">J82</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
+    <subfield code="n">(7. : </subfield>
+    <subfield code="d">1998 : </subfield>
+    <subfield code="c">Manaus) </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Resumos / </subfield>
+    <subfield code="c">VII Jornada de Iniciação Científica da Universidade do Amazonas, 26-27 de agosto de 1998, Manaus-AM.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Manaus : </subfield>
+    <subfield code="b">UFAM, </subfield>
+    <subfield code="c">1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">178 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ciência</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Pesquisa</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Universidade do Amazonas</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">14777</subfield>
+    <subfield code="d">14777</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_001_400000000000000_J82</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">19902</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 001.4 J82</subfield>
+    <subfield code="p">05-0430</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--14-->
 <record>
   <leader>00636nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-000340</controlfield>
@@ -839,67 +1032,97 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--15-->
 <record>
-  <leader>00550nam a2200169   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010488</controlfield>
-  <controlfield tag="005">20161123142905.0</controlfield>
-  <controlfield tag="008">140428s2007    bl a   f     0000 0 por  </controlfield>
+  <leader>00679nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-003263</controlfield>
+  <controlfield tag="008">030701s2001    bl     f a    101 0 por  </controlfield>
   <datafield tag="082" ind1="1" ind2=" ">
     <subfield code="a">001.4</subfield>
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001.4</subfield>
-    <subfield code="b">F981</subfield>
+    <subfield code="b">J82</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
+    <subfield code="n">(10. : </subfield>
+    <subfield code="d">2001 : </subfield>
+    <subfield code="c">Manaus)</subfield>
   </datafield>
   <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Relatório de atividades 2007 / </subfield>
-    <subfield code="c">Fundação de Amparo à Pesquisa do Estado de São Paulo.</subfield>
+    <subfield code="a">Resumos / </subfield>
+    <subfield code="c">X Jornada de Iniciação Científica da Universidade do Amazonas, 3 e 4 setembro de 2001, Manaus-AM.</subfield>
   </datafield>
   <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">São Paulo : </subfield>
-    <subfield code="b">Fapesp, </subfield>
-    <subfield code="c">2007.</subfield>
+    <subfield code="a">Manaus : </subfield>
+    <subfield code="b">UFAM, </subfield>
+    <subfield code="c">2001.</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">211 p. : </subfield>
-    <subfield code="b">il.</subfield>
+    <subfield code="a">222 p.</subfield>
   </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Relatório de atividades</subfield>
-    <subfield code="x">Fapesp</subfield>
-    <subfield code="z">2007.</subfield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Na capa: PIBIC e PIC.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ciência</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Pesquisa</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos.</subfield>
   </datafield>
   <datafield tag="710" ind1="2" ind2=" ">
-    <subfield code="a">Fundação de Amparo à Pesquisa do Estado de São Paulo.</subfield>
+    <subfield code="a">Universidade do Amazonas</subfield>
   </datafield>
   <datafield tag="942" ind1=" " ind2=" ">
     <subfield code="c">L</subfield>
   </datafield>
   <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17198</subfield>
-    <subfield code="d">17198</subfield>
+    <subfield code="c">10083</subfield>
+    <subfield code="d">10083</subfield>
   </datafield>
   <datafield tag="952" ind1=" " ind2=" ">
     <subfield code="0">0</subfield>
     <subfield code="1">0</subfield>
     <subfield code="4">0</subfield>
-    <subfield code="6">001_400000000000000_F981</subfield>
+    <subfield code="6">AM_001_400000000000000_J82</subfield>
     <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23368</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">13190</subfield>
     <subfield code="a">sdin</subfield>
     <subfield code="b">sdin</subfield>
     <subfield code="d">2016-11-23</subfield>
     <subfield code="l">0</subfield>
-    <subfield code="o">001.4 F981</subfield>
-    <subfield code="p">14-0356</subfield>
+    <subfield code="o">AM 001.4 J82</subfield>
+    <subfield code="p">02-1300</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_001_400000000000000_J82</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">13191</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 001.4 J82</subfield>
+    <subfield code="p">05-0445</subfield>
     <subfield code="r">2016-11-23</subfield>
     <subfield code="w">2016-11-23</subfield>
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--16-->
 <record>
   <leader>00660nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008024</controlfield>
@@ -969,7 +1192,80 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--17-->
+<record>
+  <leader>00689nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-008025</controlfield>
+  <controlfield tag="008">050803s2000    bl       a    101 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.4  </subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.4</subfield>
+    <subfield code="b">J82</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
+    <subfield code="n">(10. : </subfield>
+    <subfield code="d">2000 : </subfield>
+    <subfield code="c">Manaus)  </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Resumos / </subfield>
+    <subfield code="c">IX Jornada de Iniciação Científica da Universidade do Amazonas, 23 e 24 de agosto de 2000, Manaus, AM.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Manaus : </subfield>
+    <subfield code="b">UA, </subfield>
+    <subfield code="c">2000.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">216 p. </subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Na capa: PIBIC e PIC.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ciência</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos.  </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Pesquisa</subfield>
+    <subfield code="z">Amazonas</subfield>
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Universidade do Amazonas</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">14792</subfield>
+    <subfield code="d">14792</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_001_400000000000000_J82</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">19927</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 001.4 J82</subfield>
+    <subfield code="p">05-0444</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--18-->
 <record>
   <leader>00736nam a2200205   4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -1064,301 +1360,69 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--19-->
 <record>
-  <leader>00689nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-008025</controlfield>
-  <controlfield tag="008">050803s2000    bl       a    101 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.4  </subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.4</subfield>
-    <subfield code="b">J82</subfield>
-  </datafield>
-  <datafield tag="111" ind1="2" ind2=" ">
-    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
-    <subfield code="n">(10. : </subfield>
-    <subfield code="d">2000 : </subfield>
-    <subfield code="c">Manaus)  </subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Resumos / </subfield>
-    <subfield code="c">IX Jornada de Iniciação Científica da Universidade do Amazonas, 23 e 24 de agosto de 2000, Manaus, AM.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Manaus : </subfield>
-    <subfield code="b">UA, </subfield>
-    <subfield code="c">2000.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">216 p. </subfield>
-  </datafield>
-  <datafield tag="500" ind1=" " ind2=" ">
-    <subfield code="a">Na capa: PIBIC e PIC.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Ciência</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos.  </subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Pesquisa</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos.</subfield>
-  </datafield>
-  <datafield tag="710" ind1="2" ind2=" ">
-    <subfield code="a">Universidade do Amazonas</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">14792</subfield>
-    <subfield code="d">14792</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">AM_001_400000000000000_J82</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">AM</subfield>
-    <subfield code="9">19927</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">AM 001.4 J82</subfield>
-    <subfield code="p">05-0444</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00679nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-003263</controlfield>
-  <controlfield tag="008">030701s2001    bl     f a    101 0 por  </controlfield>
+  <leader>00643nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009918</controlfield>
+  <controlfield tag="005">20161123142754.0</controlfield>
+  <controlfield tag="008">131009s2005    bl     f     0000 0 por  </controlfield>
   <datafield tag="082" ind1="1" ind2=" ">
     <subfield code="a">001.4</subfield>
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001.4</subfield>
-    <subfield code="b">J82</subfield>
+    <subfield code="b">C749</subfield>
   </datafield>
   <datafield tag="111" ind1="2" ind2=" ">
-    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
-    <subfield code="n">(10. : </subfield>
-    <subfield code="d">2001 : </subfield>
-    <subfield code="c">Manaus)</subfield>
+    <subfield code="a">Congresso de iniciação científica da Universidade Federal do Amazonas</subfield>
+    <subfield code="n">(14. : </subfield>
+    <subfield code="d">2005. : </subfield>
+    <subfield code="c">Manaus.)</subfield>
   </datafield>
   <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Resumos / </subfield>
-    <subfield code="c">X Jornada de Iniciação Científica da Universidade do Amazonas, 3 e 4 setembro de 2001, Manaus-AM.</subfield>
+    <subfield code="a">Congresso de iniciação científica da Universidade Federal do Amazonas / </subfield>
+    <subfield code="c">Universidade Federal do Amazonas.</subfield>
   </datafield>
   <datafield tag="260" ind1=" " ind2=" ">
     <subfield code="a">Manaus : </subfield>
     <subfield code="b">UFAM, </subfield>
-    <subfield code="c">2001.</subfield>
+    <subfield code="c">2005.</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">222 p.</subfield>
+    <subfield code="a">274 p.</subfield>
   </datafield>
-  <datafield tag="500" ind1=" " ind2=" ">
-    <subfield code="a">Na capa: PIBIC e PIC.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Ciência</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Pesquisa</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos.</subfield>
-  </datafield>
-  <datafield tag="710" ind1="2" ind2=" ">
-    <subfield code="a">Universidade do Amazonas</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">10083</subfield>
-    <subfield code="d">10083</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">AM_001_400000000000000_J82</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">AM</subfield>
-    <subfield code="9">13190</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">AM 001.4 J82</subfield>
-    <subfield code="p">02-1300</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">AM_001_400000000000000_J82</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">AM</subfield>
-    <subfield code="9">13191</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">AM 001.4 J82</subfield>
-    <subfield code="p">05-0445</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00646nam a2200181   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-008010</controlfield>
-  <controlfield tag="008">050801s1998    bl       a    100 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.4 </subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.4</subfield>
-    <subfield code="b">J82</subfield>
-  </datafield>
-  <datafield tag="111" ind1="2" ind2=" ">
-    <subfield code="a">Jornada de Iniciação Científica da Universidade do Amazonas </subfield>
-    <subfield code="n">(7. : </subfield>
-    <subfield code="d">1998 : </subfield>
-    <subfield code="c">Manaus) </subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Resumos / </subfield>
-    <subfield code="c">VII Jornada de Iniciação Científica da Universidade do Amazonas, 26-27 de agosto de 1998, Manaus-AM.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Manaus : </subfield>
-    <subfield code="b">UFAM, </subfield>
-    <subfield code="c">1998.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">178 p.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Ciência</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos. </subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Pesquisa</subfield>
-    <subfield code="z">Amazonas</subfield>
-    <subfield code="x">Congressos.</subfield>
-  </datafield>
-  <datafield tag="710" ind1="2" ind2=" ">
-    <subfield code="a">Universidade do Amazonas</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">14777</subfield>
-    <subfield code="d">14777</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">AM_001_400000000000000_J82</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">AM</subfield>
-    <subfield code="9">19902</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">AM 001.4 J82</subfield>
-    <subfield code="p">05-0430</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00565nam a2200181   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010449</controlfield>
-  <controlfield tag="005">20161123142900.0</controlfield>
-  <controlfield tag="008">140422s2011    bl a   f     0000 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.4</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.4</subfield>
-    <subfield code="b">I59</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Relatório de atividades 2010 / </subfield>
-    <subfield code="c">Instituto de Pesquisa Ambiental da Amazônia.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Brasília : </subfield>
-    <subfield code="b">IPAM, </subfield>
-    <subfield code="c">2011.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">100 p. : </subfield>
-    <subfield code="b">il. color.</subfield>
-  </datafield>
-  <datafield tag="504" ind1=" " ind2=" ">
-    <subfield code="a">Contém bibliografia.</subfield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Resumo de trabalhos científicos.</subfield>
   </datafield>
   <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Relatório de atividades</subfield>
-    <subfield code="x">IPAM</subfield>
-    <subfield code="y">2010.</subfield>
-  </datafield>
-  <datafield tag="710" ind1="2" ind2=" ">
-    <subfield code="a">Instituto de Pesquisa Ambiental da Amazônia.</subfield>
+    <subfield code="a">Inicia&#xE7;&#xE3;o científica</subfield>
+    <subfield code="v">Anais.</subfield>
   </datafield>
   <datafield tag="942" ind1=" " ind2=" ">
     <subfield code="c">L</subfield>
   </datafield>
   <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17159</subfield>
-    <subfield code="d">17159</subfield>
+    <subfield code="c">16628</subfield>
+    <subfield code="d">16628</subfield>
   </datafield>
   <datafield tag="952" ind1=" " ind2=" ">
     <subfield code="0">0</subfield>
     <subfield code="1">0</subfield>
     <subfield code="2">ddc</subfield>
     <subfield code="4">0</subfield>
-    <subfield code="6">AM_001_400000000000000_I59</subfield>
+    <subfield code="6">AM_001_400000000000000_C749</subfield>
     <subfield code="7">0</subfield>
     <subfield code="8">AM</subfield>
-    <subfield code="9">23307</subfield>
+    <subfield code="9">22655</subfield>
     <subfield code="a">sdin</subfield>
     <subfield code="b">sdin</subfield>
     <subfield code="d">2016-11-23</subfield>
     <subfield code="l">0</subfield>
-    <subfield code="o">AM 001.4 I59</subfield>
-    <subfield code="p">14-0354</subfield>
+    <subfield code="o">AM 001.4 C749</subfield>
+    <subfield code="p">13-0207</subfield>
     <subfield code="r">2016-11-23</subfield>
     <subfield code="w">2016-11-23</subfield>
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
 </collection>

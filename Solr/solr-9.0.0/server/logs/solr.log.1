@@ -1,123 +1,71 @@
-2022-09-08 19:07:05.659 INFO  (main) [] o.e.j.u.log Logging initialized @1359ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-09-08 19:07:05.878 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
-2022-09-08 19:07:06.414 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
-2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
-2022-09-08 19:07:06.432 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-08T19:07:06.432436900Z
-2022-09-08 19:07:06.448 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
-2022-09-08 19:07:06.448 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
-2022-09-08 19:07:07.279 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2022-09-08 19:07:07.279 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-09-08 19:07:07.482 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
-2022-09-08 19:07:07.857 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5c1bd44c{/solr,file:///C:/Users/Usu%C3%A1rio/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
-2022-09-08 19:07:07.873 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_08.request.log
-2022-09-08 19:07:07.883 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@5827af16{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-08 19:07:07.883 INFO  (main) [] o.e.j.s.Server Started @3580ms
-2022-09-08 19:07:10.720 INFO  (qtp735085430-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=56
-2022-09-08 19:08:03.056 INFO  (qtp735085430-21) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-09-08 19:08:03.074 INFO  (qtp735085430-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664083014} status=0 QTime=24
-2022-09-08 19:08:03.086 INFO  (qtp735085430-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664083015} status=0 QTime=36
-2022-09-08 19:08:03.112 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664083015} status=0 QTime=21
-2022-09-08 19:08:28.290 INFO  (qtp735085430-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664108253} status=0 QTime=0
-2022-09-08 19:08:28.332 INFO  (qtp735085430-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664108253} status=0 QTime=42
-2022-09-08 19:08:28.361 INFO  (qtp735085430-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664108253} status=0 QTime=25
-2022-09-08 19:08:36.797 INFO  (qtp735085430-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=19
-2022-09-08 19:08:36.830 INFO  (qtp735085430-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
-2022-09-08 19:08:36.837 INFO  (qtp735085430-25) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS&wt=json} status=0 QTime=0
-2022-09-08 19:08:36.841 INFO  (qtp735085430-29) [ x:search] o.a.s.h.a.CoreAdminOperation core create command name=search&action=CREATE&instanceDir=search&wt=json
-2022-09-08 19:08:36.854 ERROR (qtp735085430-29) [] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search' => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1468)
-org.apache.solr.common.SolrException: Error CREATEing SolrCore 'search': Unable to create core [search] Caused by: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1468) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:389) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:411) ~[?:?]
-	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:194) ~[?:?]
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:893) ~[?:?]
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:584) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
-	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.common.SolrException: Unable to create core [search]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1583) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1426) ~[?:?]
-	... 53 more
-Caused by: org.apache.solr.common.SolrException: Could not load conf for core search: Error loading solr config from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\solrconfig.xml
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:263) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1550) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1426) ~[?:?]
-	... 53 more
-Caused by: org.apache.solr.common.SolrException: Error loading solr config from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\solrconfig.xml
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:165) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1550) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1426) ~[?:?]
-	... 53 more
-Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or 'C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search'
-	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:375) ~[?:?]
-	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:241) ~[?:?]
-	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:294) ~[?:?]
-	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:247) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1550) ~[?:?]
-	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1426) ~[?:?]
-	... 53 more
-2022-09-08 19:08:36.854 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=search&action=CREATE&instanceDir=search&wt=json} status=400 QTime=13
-2022-09-08 19:09:12.245 INFO  (qtp735085430-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662664152211} status=0 QTime=0
-2022-09-08 19:09:12.277 INFO  (qtp735085430-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664152212} status=0 QTime=32
-2022-09-08 19:09:12.300 INFO  (qtp735085430-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662664152212} status=0 QTime=20
-2022-09-08 19:11:34.060 INFO  (qtp735085430-42) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=18
-2022-09-08 19:11:34.076 INFO  (qtp735085430-25) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS&wt=json} status=0 QTime=0
-2022-09-08 19:11:57.534 INFO  (qtp735085430-26) [ x:search] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=search&action=STATUS} status=0 QTime=0
-2022-09-08 19:12:43.666 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@5827af16{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-08 19:12:43.676 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=975905570
-2022-09-08 19:12:43.678 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2022-09-08 19:12:43.692 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2022-09-08 19:12:43.704 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2022-09-08 19:12:43.728 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@5c1bd44c{/solr,null,STOPPED}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-08 22:53:20.121 INFO  (main) [] o.e.j.u.log Logging initialized @3492ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-08 22:53:20.487 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-08 22:53:23.964 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-08 22:53:23.991 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-08 22:53:23.992 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-08 22:53:23.992 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-08 22:53:23.992 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-08T22:53:23.992787700Z
+2022-09-08 22:53:24.012 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-09-08 22:53:24.017 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-09-08 22:53:26.015 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-09-08 22:53:26.037 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-09-08 22:53:26.809 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-09-08 22:53:26.810 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
+2022-09-08 22:53:26.820 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-09-08 22:53:26.904 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-08 22:53:27.110 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-08 22:53:27.921 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1eef9aef{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-08 22:53:27.935 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_08.request.log
+2022-09-08 22:53:27.952 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-08 22:53:27.953 INFO  (main) [] o.e.j.s.Server Started @11327ms
+2022-09-08 22:53:27.970 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-08 22:53:27.970 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
+2022-09-08 22:53:28.064 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-08 22:53:29.359 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-09-08 22:53:29.359 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-09-08 22:53:29.398 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-08 22:53:29.399 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-08 22:53:29.866 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-08 22:53:29.898 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-09-08 22:53:29.917 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-08 22:53:29.960 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-08 22:53:29.960 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-08 22:53:29.978 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-08 22:53:30.007 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=131
+2022-09-08 23:09:11.897 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=15
+2022-09-08 23:09:11.995 INFO  (qtp1355887174-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=116
+2022-09-08 23:09:12.076 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=77
+2022-09-08 23:24:53.496 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=4
+2022-09-08 23:24:53.605 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=105
+2022-09-08 23:24:53.646 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1662679493484} status=0 QTime=36
+2022-09-08 23:24:53.681 INFO  (qtp1355887174-44) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1662679493484} status=0 QTime=17
+2022-09-08 23:24:53.715 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1662678551788&ts=1662678551788} status=503 QTime=7
+2022-09-08 23:24:53.780 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1662679493484} status=0 QTime=97
+2022-09-08 23:24:58.309 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=0
+2022-09-08 23:24:58.389 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=80
+2022-09-08 23:25:00.830 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=0
+2022-09-08 23:25:00.923 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662679498295} hits=18 status=0 QTime=91
+2022-09-08 23:25:00.927 INFO  (qtp1355887174-44) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=96
+2022-09-08 23:25:08.489 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=0
+2022-09-08 23:25:08.502 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1662679493484} status=0 QTime=9
+2022-09-08 23:25:08.638 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=99
+2022-09-08 23:25:08.650 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1662679508477} status=0 QTime=8
+2022-09-08 23:25:08.676 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1662679493484} status=0 QTime=21
+2022-09-08 23:34:29.318 INFO  (qtp1355887174-54) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=20,phase1=20,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-08 23:34:29.358 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=561
+2022-09-08 23:34:29.375 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=2
+2022-09-08 23:35:04.624 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=5
+2022-09-08 23:35:04.758 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=137
+2022-09-08 23:35:06.227 INFO  (qtp1355887174-58) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1662678551787} status=0 QTime=0
+2022-09-08 23:35:06.231 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1662679498295} hits=18 status=0 QTime=1
+2022-09-08 23:35:06.323 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1662678551788} status=0 QTime=95
+2022-09-08 23:45:05.462 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&q.op=AND&wt=json&facet=true} hits=18 status=0 QTime=120
+2022-09-08 23:45:35.320 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-08 23:45:35.439 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1196716338
+2022-09-08 23:45:35.467 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@235442d8 search
+2022-09-08 23:45:35.470 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@235442d8
+2022-09-08 23:45:35.558 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2022-09-08 23:45:35.612 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-09-08 23:45:35.625 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-09-08 23:45:35.634 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-09-08 23:45:35.683 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1eef9aef{/solr,null,STOPPED}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
