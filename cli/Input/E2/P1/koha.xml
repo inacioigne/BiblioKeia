@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--106-->
 <record>
   <leader>00539nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010137</controlfield>
@@ -69,7 +69,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--107-->
 <record>
   <leader>00572nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-000227</controlfield>
@@ -138,7 +138,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--108-->
 <record>
   <leader>00799nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009409</controlfield>
@@ -224,7 +224,7 @@
     <subfield code=" ">52,00</subfield>
   </datafield>
 </record>
-
+<!--109-->
 <record>
   <leader>00532nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010225</controlfield>
@@ -288,7 +288,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--110-->
 <record>
   <leader>00823nam a2200277   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010174</controlfield>
@@ -374,7 +374,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--111-->
 <record>
   <leader>00767nam a2200229   4500</leader>
   <controlfield tag="003">Br</controlfield>
@@ -453,7 +453,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--112-->
 <record>
   <leader>00620nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009628</controlfield>
@@ -523,7 +523,73 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--113-->
+<record>
+  <leader>00588nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009605</controlfield>
+  <controlfield tag="005">20161123142716.0</controlfield>
+  <controlfield tag="008">140127s1983    bl     fr    0000 0 spa  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.6424</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.6424</subfield>
+    <subfield code="b">L566</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Lexikon Informática. </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Lenguajes de diagramas de flujo /  </subfield>
+    <subfield code="c">Alexandra I. Forsythe... [et. al.].</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">México : </subfield>
+    <subfield code="b">Editorial Limusa, </subfield>
+    <subfield code="c">1983.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">588 p. </subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Contém índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Computação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Linguagem de programação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Diagrama de fluxo.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16341</subfield>
+    <subfield code="d">16341</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_642400000000000_L566</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">22242</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.6424 L566</subfield>
+    <subfield code="p">95-1036</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--114-->
 <record>
   <leader>00837nam a2200301   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010179</controlfield>
@@ -615,73 +681,74 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--115-->
 <record>
-  <leader>00588nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-009605</controlfield>
-  <controlfield tag="005">20161123142716.0</controlfield>
-  <controlfield tag="008">140127s1983    bl     fr    0000 0 spa  </controlfield>
+  <leader>00566nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010133</controlfield>
+  <controlfield tag="005">20161123142822.0</controlfield>
+  <controlfield tag="008">140127s2014    bl     f     0000 0 eng  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">0-471-58292-1</subfield>
+  </datafield>
   <datafield tag="082" ind1="1" ind2=" ">
     <subfield code="a">001.6424</subfield>
   </datafield>
   <datafield tag="090" ind1=" " ind2=" ">
     <subfield code="a">001.6424</subfield>
-    <subfield code="b">L566</subfield>
+    <subfield code="b">M132s</subfield>
   </datafield>
-  <datafield tag="110" ind1="2" ind2=" ">
-    <subfield code="a">Lexikon Informática. </subfield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">McCracken, Daniel D.</subfield>
   </datafield>
   <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Lenguajes de diagramas de flujo /  </subfield>
-    <subfield code="c">Alexandra I. Forsythe... [et. al.].</subfield>
+    <subfield code="a">A simplified guide to FORTRAN programming / </subfield>
+    <subfield code="c">Daniel D. McCracken.</subfield>
   </datafield>
   <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">México : </subfield>
-    <subfield code="b">Editorial Limusa, </subfield>
-    <subfield code="c">1983.</subfield>
+    <subfield code="a">New York : </subfield>
+    <subfield code="b">Wiley, </subfield>
+    <subfield code="c">1974.</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">588 p. </subfield>
-  </datafield>
-  <datafield tag="500" ind1=" " ind2=" ">
-    <subfield code="a">Contém índice.</subfield>
+    <subfield code="a">277 p. :  </subfield>
+    <subfield code="b">il.</subfield>
   </datafield>
   <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Computação.</subfield>
+    <subfield code="a">FORTRAN.</subfield>
   </datafield>
   <datafield tag="650" ind1=" " ind2="4">
     <subfield code="a">Linguagem de programação.</subfield>
   </datafield>
   <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Diagrama de fluxo.</subfield>
+    <subfield code="a">Computação.</subfield>
   </datafield>
   <datafield tag="942" ind1=" " ind2=" ">
     <subfield code="c">L</subfield>
   </datafield>
   <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16341</subfield>
-    <subfield code="d">16341</subfield>
+    <subfield code="c">16843</subfield>
+    <subfield code="d">16843</subfield>
   </datafield>
   <datafield tag="952" ind1=" " ind2=" ">
     <subfield code="0">0</subfield>
     <subfield code="1">0</subfield>
     <subfield code="4">0</subfield>
-    <subfield code="6">001_642400000000000_L566</subfield>
-    <subfield code="7">0</subfield>
+    <subfield code="6">001_642400000000000_M132S</subfield>
+    <subfield code="7">1</subfield>
     <subfield code="8">G</subfield>
-    <subfield code="9">22242</subfield>
+    <subfield code="9">22950</subfield>
     <subfield code="a">sdin</subfield>
     <subfield code="b">sdin</subfield>
     <subfield code="d">2016-11-23</subfield>
     <subfield code="l">0</subfield>
-    <subfield code="o">001.6424 L566</subfield>
-    <subfield code="p">95-1036</subfield>
+    <subfield code="o">001.6424 M132s</subfield>
+    <subfield code="p">75-1227</subfield>
     <subfield code="r">2016-11-23</subfield>
     <subfield code="w">2016-11-23</subfield>
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--116-->
 <record>
   <leader>00743nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009227</controlfield>
@@ -754,74 +821,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00566nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010133</controlfield>
-  <controlfield tag="005">20161123142822.0</controlfield>
-  <controlfield tag="008">140127s2014    bl     f     0000 0 eng  </controlfield>
-  <datafield tag="020" ind1=" " ind2=" ">
-    <subfield code="a">0-471-58292-1</subfield>
-  </datafield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.6424</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.6424</subfield>
-    <subfield code="b">M132s</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">McCracken, Daniel D.</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">A simplified guide to FORTRAN programming / </subfield>
-    <subfield code="c">Daniel D. McCracken.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">New York : </subfield>
-    <subfield code="b">Wiley, </subfield>
-    <subfield code="c">1974.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">277 p. :  </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">FORTRAN.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Linguagem de programação.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Computação.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16843</subfield>
-    <subfield code="d">16843</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_642400000000000_M132S</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">22950</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.6424 M132s</subfield>
-    <subfield code="p">75-1227</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--117-->
 <record>
   <leader>00752nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010245</controlfield>
@@ -899,7 +899,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--118-->
 <record>
   <leader>00900nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010181</controlfield>
@@ -990,7 +990,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--119-->
 <record>
   <leader>00832nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010182</controlfield>
@@ -1071,7 +1071,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--120-->
 <record>
   <leader>00789nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010187</controlfield>
@@ -1151,7 +1151,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--121-->
 <record>
   <leader>00710nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010248</controlfield>
@@ -1224,7 +1224,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--122-->
 <record>
   <leader>00662nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010210</controlfield>
@@ -1297,7 +1297,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--123-->
 <record>
   <leader>00817nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010247</controlfield>
@@ -1380,7 +1380,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--124-->
 <record>
   <leader>00743nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010246</controlfield>
@@ -1448,7 +1448,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--125-->
 <record>
   <leader>00876nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010190</controlfield>
@@ -1536,7 +1536,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--126-->
 <record>
   <leader>00763nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010222</controlfield>
@@ -1611,7 +1611,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--127-->
 <record>
   <leader>00714nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010221</controlfield>
@@ -1684,92 +1684,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00541nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010677</controlfield>
-  <controlfield tag="005">20161123142925.0</controlfield>
-  <controlfield tag="008">140702s1967    bl     f     0000 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.6424F6</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.6424F6</subfield>
-    <subfield code="b">P118f</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Pacitti, Tercio</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Fortran - Monitor : </subfield>
-    <subfield code="b">princípios / </subfield>
-    <subfield code="c">Tercio Pacitti.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro : </subfield>
-    <subfield code="b">Ao Livro Técnico, </subfield>
-    <subfield code="c">1967.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">281 p. : </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="505" ind1=" " ind2="0">
-    <subfield code="a">Contêm índice.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Fortan.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Linguagem de programação.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17387</subfield>
-    <subfield code="d">17387</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_000000000000000_6424F6_P118F</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23598</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.6424F6 P118f</subfield>
-    <subfield code="p">77-0324</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_000000000000000_6424F6_P118F</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23599</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="j">0</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.6424F6 P118f</subfield>
-    <subfield code="p">76-1197</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--128-->
 <record>
   <leader>00656nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010135</controlfield>
@@ -1859,7 +1774,92 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--129-->
+<record>
+  <leader>00541nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010677</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140702s1967    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.6424F6</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.6424F6</subfield>
+    <subfield code="b">P118f</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Pacitti, Tercio</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Fortran - Monitor : </subfield>
+    <subfield code="b">princípios / </subfield>
+    <subfield code="c">Tercio Pacitti.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro : </subfield>
+    <subfield code="b">Ao Livro Técnico, </subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">281 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Contêm índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Fortan.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Linguagem de programação.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17387</subfield>
+    <subfield code="d">17387</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_000000000000000_6424F6_P118F</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23598</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.6424F6 P118f</subfield>
+    <subfield code="p">77-0324</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_000000000000000_6424F6_P118F</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23599</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="j">0</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.6424F6 P118f</subfield>
+    <subfield code="p">76-1197</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--130-->
 <record>
   <leader>00697nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010365</controlfield>
@@ -1939,7 +1939,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--131-->
 <record>
   <leader>01046nam a2200301   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010256</controlfield>
@@ -2031,7 +2031,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--132-->
 <record>
   <leader>00669nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010498</controlfield>
@@ -2105,7 +2105,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--133-->
 <record>
   <leader>00671nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010255</controlfield>
@@ -2178,7 +2178,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--134-->
 <record>
   <leader>00746nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010254</controlfield>
@@ -2255,7 +2255,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--135-->
 <record>
   <leader>00877nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010253</controlfield>
@@ -2337,7 +2337,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--136-->
 <record>
   <leader>00484nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010452</controlfield>
@@ -2399,7 +2399,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--137-->
 <record>
   <leader>00605nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010185</controlfield>
@@ -2472,7 +2472,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--138-->
 <record>
   <leader>00677nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010440</controlfield>
@@ -2545,7 +2545,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--139-->
 <record>
   <leader>00690nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010252</controlfield>
@@ -2619,7 +2619,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--140-->
 <record>
   <leader>00572nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010442</controlfield>
@@ -2686,7 +2686,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--141-->
 <record>
   <leader>00517nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010451</controlfield>
@@ -2751,7 +2751,79 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--142-->
+<record>
+  <leader>00680nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010196</controlfield>
+  <controlfield tag="008">140422s2014    bl     f     0000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">0-07-460762-6</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.6425</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.6425</subfield>
+    <subfield code="b">H679w</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Hoath, Maria A.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Wordperfect macros : </subfield>
+    <subfield code="b">versões 5.0 e 5.1 / </subfield>
+    <subfield code="c">Maria A. Hoath ;  Tradução Maria Cláudia de Olilveira Santos .</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">McGraw-Hill, </subfield>
+    <subfield code="c">c1991.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">vii, 133p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Processador de palavras</subfield>
+    <subfield code="x">Computador.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Wordperfect</subfield>
+    <subfield code="x">Programa de computador.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Santos, Maria Cláudia de Oliveira.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16906</subfield>
+    <subfield code="d">16906</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_642500000000000_H679W</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23017</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.6425 H679w</subfield>
+    <subfield code="p">93-0610</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--143-->
 <record>
   <leader>00842nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010251</controlfield>
@@ -2832,79 +2904,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00680nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010196</controlfield>
-  <controlfield tag="008">140422s2014    bl     f     0000 0 por  </controlfield>
-  <datafield tag="020" ind1=" " ind2=" ">
-    <subfield code="a">0-07-460762-6</subfield>
-  </datafield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.6425</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.6425</subfield>
-    <subfield code="b">H679w</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Hoath, Maria A.</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Wordperfect macros : </subfield>
-    <subfield code="b">versões 5.0 e 5.1 / </subfield>
-    <subfield code="c">Maria A. Hoath ;  Tradução Maria Cláudia de Olilveira Santos .</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">São Paulo : </subfield>
-    <subfield code="b">McGraw-Hill, </subfield>
-    <subfield code="c">c1991.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">vii, 133p. : </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="505" ind1=" " ind2="0">
-    <subfield code="a">Inclui índice.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Processador de palavras</subfield>
-    <subfield code="x">Computador.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Wordperfect</subfield>
-    <subfield code="x">Programa de computador.</subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Santos, Maria Cláudia de Oliveira.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16906</subfield>
-    <subfield code="d">16906</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_642500000000000_H679W</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23017</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.6425 H679w</subfield>
-    <subfield code="p">93-0610</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--144-->
 <record>
   <leader>00771nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010176</controlfield>
@@ -2987,101 +2987,4 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>01062nam a2200313   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010178</controlfield>
-  <controlfield tag="003">Br</controlfield>
-  <controlfield tag="005">20161123142828.0</controlfield>
-  <controlfield tag="008">970609s19960000brj           001 0 por d</controlfield>
-  <datafield tag="020" ind1=" " ind2=" ">
-    <subfield code="a">85-85840-37-4  (broch.)</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-    <subfield code="a">98041715425193E53</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-    <subfield code="a">Br</subfield>
-    <subfield code="b">por</subfield>
-  </datafield>
-  <datafield tag="082" ind1="0" ind2="4">
-    <subfield code="a">001.6425</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.6425</subfield>
-    <subfield code="b">L856d</subfield>
-  </datafield>
-  <datafield tag="092" ind1=" " ind2=" ">
-    <subfield code="a">III-436,1,22</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Longo, Mauricio B.</subfield>
-    <subfield code="q">(Mauricio de Britto).</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Desenvolvendo em Delphi 2.0 : </subfield>
-    <subfield code="b">para Windows 95 e Windows NT / </subfield>
-    <subfield code="c">Mauricio B. Longo, Ronaldo Smith Jr. ; com a colaboração de Daniel Polistchuck. -</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro : </subfield>
-    <subfield code="b">Brasport, </subfield>
-    <subfield code="c">1996.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">xiv, 218p. :</subfield>
-    <subfield code="c">23cm.</subfield>
-    <subfield code="b">Il. ;  </subfield>
-  </datafield>
-  <datafield tag="500" ind1=" " ind2=" ">
-    <subfield code="a">Subtitulo retirado da capa.</subfield>
-  </datafield>
-  <datafield tag="504" ind1=" " ind2=" ">
-    <subfield code="a">Inclui índice.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Delphi (Programa de computador)</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Windows (Programas de computador)</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Sistemas operacionais (Computadores)</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Windows NT (Sistema operacional de computador)</subfield>
-  </datafield>
-  <datafield tag="700" ind1=" " ind2=" ">
-    <subfield code="a">Smith Júnior, Ronaldo</subfield>
-  </datafield>
-  <datafield tag="852" ind1=" " ind2=" ">
-    <subfield code="a">Obras Gerais</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16888</subfield>
-    <subfield code="d">16888</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_642500000000000_L856D</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">22999</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.6425 L856d</subfield>
-    <subfield code="p">97-0880</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
 </collection>

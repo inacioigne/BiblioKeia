@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--87-->
 <record>
   <leader>00583nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-004764</controlfield>
@@ -72,7 +72,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--88-->
 <record>
   <leader>00512nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010679</controlfield>
@@ -138,7 +138,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--89-->
 <record>
   <leader>00659nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010244</controlfield>
@@ -212,7 +212,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--90-->
 <record>
   <leader>00716nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010240</controlfield>
@@ -287,7 +287,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--91-->
 <record>
   <leader>00838nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009735</controlfield>
@@ -369,7 +369,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--92-->
 <record>
   <leader>00645nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010249</controlfield>
@@ -439,7 +439,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--93-->
 <record>
   <leader>00497nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010692</controlfield>
@@ -499,7 +499,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--94-->
 <record>
   <leader>00842nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009745</controlfield>
@@ -569,74 +569,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00734nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010769</controlfield>
-  <controlfield tag="005">20161123142934.0</controlfield>
-  <controlfield tag="008">140714s2014    bl            000 0 por d</controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">001.642 </subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">001.642 </subfield>
-    <subfield code="b">V331p </subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Vasconcellos, José Augusto di Jorge. </subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Programação Linear com aplicações em microcomputadores / </subfield>
-    <subfield code="c">José Augusto di Jorge Vasconcellos, Rafael Beker Neto, Marcelo Momm Vasconcellos. </subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro: </subfield>
-    <subfield code="b">Ciência Moderna da Computação,  </subfield>
-    <subfield code="c">1988. </subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">77p. :  </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="7">
-    <subfield code="a">Programação linear. </subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="0">
-    <subfield code="a">Aplicação em microcomputador. </subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Beker Neto, Rafael</subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Vasconcellos, Marcelo Momm</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17479</subfield>
-    <subfield code="d">17479</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">001_642000000000000_V331P</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23694</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">001.642 V331p </subfield>
-    <subfield code="p">98-0278 </subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--95-->
 <record>
   <leader>00858nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010241</controlfield>
@@ -716,7 +649,74 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--96-->
+<record>
+  <leader>00734nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010769</controlfield>
+  <controlfield tag="005">20161123142934.0</controlfield>
+  <controlfield tag="008">140714s2014    bl            000 0 por d</controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">001.642 </subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">001.642 </subfield>
+    <subfield code="b">V331p </subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Vasconcellos, José Augusto di Jorge. </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Programação Linear com aplicações em microcomputadores / </subfield>
+    <subfield code="c">José Augusto di Jorge Vasconcellos, Rafael Beker Neto, Marcelo Momm Vasconcellos. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro: </subfield>
+    <subfield code="b">Ciência Moderna da Computação,  </subfield>
+    <subfield code="c">1988. </subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">77p. :  </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Programação linear. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Aplicação em microcomputador. </subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Beker Neto, Rafael</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Vasconcellos, Marcelo Momm</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17479</subfield>
+    <subfield code="d">17479</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">001_642000000000000_V331P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23694</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">001.642 V331p </subfield>
+    <subfield code="p">98-0278 </subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--97-->
 <record>
   <leader>00642nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010239</controlfield>
@@ -787,7 +787,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--98-->
 <record>
   <leader>00755nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010165</controlfield>
@@ -870,7 +870,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--99-->
 <record>
   <leader>00603nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010238</controlfield>
@@ -934,7 +934,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--100-->
 <record>
   <leader>00896nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010242</controlfield>
@@ -1016,7 +1016,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--101-->
 <record>
   <leader>00742nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010166</controlfield>
@@ -1099,7 +1099,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--102-->
 <record>
   <leader>00745nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010167</controlfield>
@@ -1182,7 +1182,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--103-->
 <record>
   <leader>00842nam a2200265   4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -1271,7 +1271,7 @@
     <subfield code="z">Livraria Saraiva</subfield>
   </datafield>
 </record>
-
+<!--104-->
 <record>
   <leader>00596nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010232</controlfield>
@@ -1351,7 +1351,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--105-->
 <record>
   <leader>00725nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009410</controlfield>
