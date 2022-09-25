@@ -211,7 +211,7 @@ class MarcWork:
             labelList = list()
             subfield = {'sub': dict()}
             for i in subject:
-                if i.attrib['code'] != '9':
+                if i.attrib['code'] not in ['4','9']:
                     
                     text = i.text.rstrip()
                     text = text.removesuffix('.')
