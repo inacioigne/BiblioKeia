@@ -175,6 +175,7 @@ export default function CardItem({
               }}
             >
               {/* ASSUNTOS */}
+              { subjects &&
               <Box>
                 <Typography
                   variant="button"
@@ -198,7 +199,7 @@ export default function CardItem({
                     {subject}
                   </Button>
                 ))}
-              </Box>
+              </Box>}
               {/* OUTROS DETALHES */}
 
               <Box

@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+  xmlns="http://www.loc.gov/MARC21/slim">
+<!--241-->
+<record>
+  <leader>00747nam a2200229   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-007251</controlfield>
+  <controlfield tag="008">050307s1940    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">43043514 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="9">(DLC) 43043514</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="c">TNJ</subfield>
+    <subfield code="d">OCoLC</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.704398</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.704398</subfield>
+    <subfield code="b">T693a</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Torres, Heloisa Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Arte indígena da Amazonia / </subfield>
+    <subfield code="c">Heloisa Alberto Torres.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro : </subfield>
+    <subfield code="b">Imprensa nacional, </subfield>
+    <subfield code="c">1940.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">xv, 50 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2=" ">
+    <subfield code="a">Publicações do Serviço do patrimonio histórico e artistico nacional ; </subfield>
+    <subfield code="v">n. 6</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Arte indígena </subfield>
+    <subfield code="z">Amazônia.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="x">Antiguidades.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="a">Marajó, Ilha de (PA)</subfield>
+    <subfield code="x">Antiguidades.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">14019</subfield>
+    <subfield code="d">14019</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_704398000000000_T693A</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">18820</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.704398 T693a</subfield>
+    <subfield code="p">56-0232</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--242-->
+<record>
+  <leader>00700nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-000580</controlfield>
+  <controlfield tag="008">030701s1977    bl     f      000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.811</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.811</subfield>
+    <subfield code="b">P659t</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Pinto, Aloisio de Arruda</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Trópicos úmidos : </subfield>
+    <subfield code="b">resumos informativos / </subfield>
+    <subfield code="c">Aloizio de Arruda Pinto ; colaboração técnica de Neusa Catarina Pinheiro Garcia, Nazira Leite Nassar, Divina Aparecida Silva.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília : </subfield>
+    <subfield code="b">EMBRAPA : </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">IBICT, </subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 v.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Geografia física</subfield>
+    <subfield code="z">Amazônia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Agricultura</subfield>
+    <subfield code="z">Amazônia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="x">Geografia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7405</subfield>
+    <subfield code="d">7405</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_P659T</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9172</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.1</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 P659t</subfield>
+    <subfield code="p">01-0851</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_P659T</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9173</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 P659t</subfield>
+    <subfield code="p">01-0855</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_P659T</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">39014</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-24</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 P659t</subfield>
+    <subfield code="p">77-0768</subfield>
+    <subfield code="r">2018-09-24</subfield>
+    <subfield code="w">2018-09-24</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--243-->
+<record>
+  <leader>00886nam a2200205   4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7792</subfield>
+    <subfield code="d">7792</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20180927125604.0</controlfield>
+  <controlfield tag="008">030701s1987    bl     f      000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.811</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.811</subfield>
+    <subfield code="b">S622c</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Sistema de Informação Científica e Tecnológica da Amazônia</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Cadastro de pesquisas sobre a Amazônia brasileira /</subfield>
+    <subfield code="c">Sistema de Informação Científica e Tecnológica da Amazônia . -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém : </subfield>
+    <subfield code="b">Universidade Federal do Pará, </subfield>
+    <subfield code="c">1987.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">4 v.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">v.1. Ciências da saúde e Ciências biológicas -- v.2. Ciências humanas, Ciências sociais aplicadas, Linguística e Letras e Artes -- v.3. Ciências exatas e da terra, Engenharias -- v.4. Ciências agrárias.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Pesquisa</subfield>
+    <subfield code="z">Amazônia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Tecnologia</subfield>
+    <subfield code="z">Amazônia</subfield>
+    <subfield code="x">Pesquisa.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9851</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.1</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0500</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9852</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0502</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9853</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.3</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0503</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9854</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.4</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0499</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9855</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.1 ex.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0504</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9856</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.2 ex.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0505</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9857</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.3 ex.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0506</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9858</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="h">v.4 ex.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">02-0507</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38723</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-08-27</subfield>
+    <subfield code="h">v.1 ex.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">92-0017</subfield>
+    <subfield code="r">2018-08-27</subfield>
+    <subfield code="w">2018-08-27</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38724</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-08-27</subfield>
+    <subfield code="h">v.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">92-0018</subfield>
+    <subfield code="r">2018-08-27</subfield>
+    <subfield code="w">2018-08-27</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38725</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-08-27</subfield>
+    <subfield code="h">v.2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">88-0026</subfield>
+    <subfield code="r">2018-08-27</subfield>
+    <subfield code="w">2018-08-27</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38726</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-08-27</subfield>
+    <subfield code="h">v.3</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">96-0549</subfield>
+    <subfield code="r">2018-08-27</subfield>
+    <subfield code="w">2018-08-27</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38992</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-21</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">88-0628</subfield>
+    <subfield code="r">2018-09-21</subfield>
+    <subfield code="w">2018-09-21</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S623C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38993</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-21</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S623c</subfield>
+    <subfield code="p">88-0024</subfield>
+    <subfield code="r">2018-09-21</subfield>
+    <subfield code="w">2018-09-21</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_811000000000000_S622C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">39015</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-24</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.811 S622c</subfield>
+    <subfield code="p">02-1583</subfield>
+    <subfield code="r">2018-09-24</subfield>
+    <subfield code="w">2018-09-24</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--244-->
+<record>
+  <leader>01107nam a2200301   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009033</controlfield>
+  <controlfield tag="005">20161123142538.0</controlfield>
+  <controlfield tag="008">080124s2000    bl     f     0000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">85-333-0212-9</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.981</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.981</subfield>
+    <subfield code="b">B582</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Biblioteca Nacional (Brasil)</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Catálogo arquivo de Mateus / </subfield>
+    <subfield code="c">coordenação, Darci Damasceno; supervisão, Waldir da Cunha; identificação e descrição, Carmen Tereza Moreno.</subfield>
+  </datafield>
+  <datafield tag="246" ind1="2" ind2=" ">
+    <subfield code="a">Arquivo de Mateus</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro: </subfield>
+    <subfield code="b">Fundação de Amapro à Pesquisa do Estado do Rio de Janeiro: </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">Ministério da Cultura, Fundação Biblioteca Nacional, Departamento do Livro, </subfield>
+    <subfield code="c">2000.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">431p. : </subfield>
+    <subfield code="b">il. (algumas color).</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Coleção Rodolfo Garcia </subfield>
+    <subfield code="v">V. 27</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Catálogo.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Damasceno, Darcy</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Cunha, Waldir da</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Moreno, Carmen Tereza</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Brasil. Ministério da Cultura</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Fundação Biblioteca Nacional (Brasil)</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Departamento Nacional do Livro</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">15793</subfield>
+    <subfield code="d">15793</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">016_981000000000000_B582</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">21460</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">016.981 B582</subfield>
+    <subfield code="p">08-0004</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--245-->
+<record>
+  <leader>00688nam a22002051a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30581</subfield>
+    <subfield code="d">30581</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20180919164724.0</controlfield>
+  <controlfield tag="008">160321|1974    bl |||||||||||||| ||por d</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">19</subfield>
+    <subfield code="a">016.9181</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.9181</subfield>
+    <subfield code="b">C972</subfield>
+  </datafield>
+  <datafield tag="100" ind1=" " ind2=" ">
+    <subfield code="9">5944</subfield>
+    <subfield code="a">Cunha, Alda das Mercês Moreira da</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">Georgrafia da Amazônia:</subfield>
+    <subfield code="b">bibliografia /</subfield>
+    <subfield code="c">Alda das Mercês Moreira da Cunha, Maria Thereza Alves, Clara Maria Galvão, Saphyra Farias Leitão. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém:</subfield>
+    <subfield code="b">[sem nome],</subfield>
+    <subfield code="c">1974</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">85f. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="9">574</subfield>
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="x">Geografia</subfield>
+    <subfield code="x">Bibliografia</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Alves, Maria Thereza</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Galvão, Clara Maria</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Leita, Saphyra Farias</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_918100000000000_C972</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38947</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-19</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9181 C972</subfield>
+    <subfield code="p">94-0144</subfield>
+    <subfield code="r">2018-09-19</subfield>
+    <subfield code="w">2018-09-19</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--246-->
+<record>
+  <leader>00593nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-001141</controlfield>
+  <controlfield tag="008">030701s1996    sp     f      000 0 spa  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.91811</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.91811</subfield>
+    <subfield code="b">A478m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Alzate Angel, Beatriz</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mensajeros del tropico amazonico / </subfield>
+    <subfield code="c">Beatriz Alzate Angel ; con la asesoría técnica de Fernando Enrique Pérez, Mercedes Rodríguez, Gloría Chapetón.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Bogotá : </subfield>
+    <subfield code="b">[s.n.], </subfield>
+    <subfield code="c">1996.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">312 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Exploradores</subfield>
+    <subfield code="z">Amazônia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Missões</subfield>
+    <subfield code="z">Amazônia.</subfield>
+    <subfield code="v">Bibliografia</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7963</subfield>
+    <subfield code="d">7963</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_918110000000000_A478M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">10170</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.91811 A478m</subfield>
+    <subfield code="p">02-0946</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--247-->
+<record>
+  <leader>00532nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-000995</controlfield>
+  <controlfield tag="008">030701s1985    sp     f      000 0 spa  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.9811</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.9811</subfield>
+    <subfield code="b">D671b</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Dominguez, Camilo</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Bibliografia de la Amazonia colombiana y areas fronterizas amazónicas / </subfield>
+    <subfield code="c">Camilo Dominguez.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Bogotá : </subfield>
+    <subfield code="b">DAINCO, Corporacion Araracuara, </subfield>
+    <subfield code="c">1985.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">226 p.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">América do Sul</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Colômbia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7818</subfield>
+    <subfield code="d">7818</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_981100000000000_D671B</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9912</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9811 D671b</subfield>
+    <subfield code="p">02-0542</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_981100000000000_D671B</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9913</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9811 D671b</subfield>
+    <subfield code="p">02-0543</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--248-->
+<record>
+  <leader>00872cam a22002657a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30590</subfield>
+    <subfield code="d">30590</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20180921160733.0</controlfield>
+  <controlfield tag="008">840703s1981    bac      b    000 0 por u</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">96101717194508001</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Br</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">s-bl-ac</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">016.9</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016</subfield>
+    <subfield code="b">016.9</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">Referencia</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Biava, Marina de Lourdes,</subfield>
+    <subfield code="d">1956-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Bibliografia do Acre /</subfield>
+    <subfield code="c">Marina de Lourdes Biava. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio Branco :</subfield>
+    <subfield code="b">UEPAE/Rio Branco ;</subfield>
+    <subfield code="a">Brasília :</subfield>
+    <subfield code="b">EMBRAPA, Departamento de Informação e Documentação,</subfield>
+    <subfield code="c">1981.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">521p. ;</subfield>
+    <subfield code="c">21cm.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Acre-</subfield>
+    <subfield code="x">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">EMBRAPA.</subfield>
+    <subfield code="b">Unidade de Execução de Pesquisa de Âmbito Estadual de Rio Branco.</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">EMBRAPA.</subfield>
+    <subfield code="b">Departamento de Informação e Documentação.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Referência</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="990" ind1=" " ind2=" ">
+    <subfield code="a">Livro</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">016_016000000000000_9</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">38988</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-21</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">016 016.9</subfield>
+    <subfield code="p">83-0203</subfield>
+    <subfield code="r">2018-09-21</subfield>
+    <subfield code="w">2018-09-21</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--249-->
+<record>
+  <leader>00858nam a2200265   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-003582</controlfield>
+  <controlfield tag="008">030701s1987    bl     f      000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.9811</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.9811</subfield>
+    <subfield code="b">I62</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Inventário analítico do fundo Rudolf Schuller.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém : </subfield>
+    <subfield code="b">Museu Paraense Emilio Goeldi, </subfield>
+    <subfield code="c">1987.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">87 p.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Apoio financeiro IBM Indústria, Máquinas e Serviços Ltda.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"Projeto Arquivo Permanente do Museu Paraense Emilio Goeldi."</subfield>
+  </datafield>
+  <datafield tag="600" ind1="1" ind2="4">
+    <subfield code="a">Schuller, Rodolfo R., </subfield>
+    <subfield code="d">1873-1932</subfield>
+    <subfield code="x">Biblioteca</subfield>
+  </datafield>
+  <datafield tag="600" ind1=" " ind2=" ">
+    <subfield code="x">Catálogos.</subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="4">
+    <subfield code="a">Museu Paraense Emílio Goeldi</subfield>
+    <subfield code="x">Catálogos.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="x">História</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="x">Fontes</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="x">Catálogos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="x">Descoberta e exploração</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="x">Fontes</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2=" ">
+    <subfield code="x">Catálogos.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">10401</subfield>
+    <subfield code="d">10401</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_981100000000000_I62</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">13628</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9811 I62</subfield>
+    <subfield code="p">87-0526</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--250-->
+<record>
+  <leader>00634nam a2200181   4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">31304</subfield>
+    <subfield code="d">31304</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20191126145442.0</controlfield>
+  <controlfield tag="008">160321|        bl |||||||||||||| ||por d</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">22</subfield>
+    <subfield code="a">016.98111</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.98111</subfield>
+    <subfield code="b">A489 </subfield>
+  </datafield>
+  <datafield tag="110" ind1=" " ind2=" ">
+    <subfield code="9">6524</subfield>
+    <subfield code="a">Instituto Brasileiro de Bibliografia e Documentação</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">Amazônia:</subfield>
+    <subfield code="b">bibliografia 1614-1962 / </subfield>
+    <subfield code="c">BRASIL, Instituto Brasileiro de Bibliografia e Documentação.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro:</subfield>
+    <subfield code="b">[s.n],</subfield>
+    <subfield code="c">1963</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">832 f. :</subfield>
+    <subfield code="b">ilust., color. </subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="4">
+    <subfield code="9">588</subfield>
+    <subfield code="a">Instituto Nacional de Pesquisas da Amazônia (Brasil)</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="9">5329</subfield>
+    <subfield code="a">Amazônia</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">016_981110000000000_A489</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">40229</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2019-11-26</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">016.98111 A489</subfield>
+    <subfield code="p">2019-0479</subfield>
+    <subfield code="r">2019-11-26</subfield>
+    <subfield code="w">2019-11-26</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--251-->
+<record>
+  <leader>00712nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-000993</controlfield>
+  <controlfield tag="008">030701s1982    bl     f      000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">016.9811</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">016.9811</subfield>
+    <subfield code="b">D585c</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Diniz, Léa</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Carajás, informações documentais / </subfield>
+    <subfield code="c">Léa Diniz, Maria Bernardete Martins Alves, Rose-Mary da Silva Sá.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém : </subfield>
+    <subfield code="b">Museu Paraense Emilio Goeldi, </subfield>
+    <subfield code="c">1982.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">v.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Infraestrutura (Economia)</subfield>
+    <subfield code="z">Carajás, Serra dos (PA)</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Programa Grande Carajás.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Recursos minerais</subfield>
+    <subfield code="z">Amazônia</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Carajás, Serra dos (PA)</subfield>
+    <subfield code="x">Condições econômicas</subfield>
+    <subfield code="v">Bibliografia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7816</subfield>
+    <subfield code="d">7816</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_981100000000000_D585C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9909</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9811 D585c</subfield>
+    <subfield code="p">02-0539</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_016_981100000000000_D585C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">9910</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 016.9811 D585c</subfield>
+    <subfield code="p">02-0540</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--252-->
+<record>
+  <leader>01155cas a2200325   4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30582</subfield>
+    <subfield code="d">30582</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20180920133229.0</controlfield>
+  <controlfield tag="008">760608c19789999bl uu     bc  0    0por  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">   76641705 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)ocm02441335 </subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">NST</subfield>
+    <subfield code="d">InU</subfield>
+    <subfield code="d">OCLCO</subfield>
+    <subfield code="d">OCoLC</subfield>
+  </datafield>
+  <datafield tag="042" ind1=" " ind2=" ">
+    <subfield code="a">pcc</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">s-bl---</subfield>
+    <subfield code="a">sa-----</subfield>
+  </datafield>
+  <datafield tag="050" ind1="0" ind2="0">
+    <subfield code="a">Z7165.B7</subfield>
+    <subfield code="b">D6</subfield>
+    <subfield code="a">HC188.A5</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">017</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">017</subfield>
+    <subfield code="b">D637</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Documentação amazônica:</subfield>
+    <subfield code="b">catálogo coletivo. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém:</subfield>
+    <subfield code="b">Rede de Bibliotecas da Amazônia,</subfield>
+    <subfield code="c">1978</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="c">28 cm.</subfield>
+  </datafield>
+  <datafield tag="362" ind1="0" ind2=" ">
+    <subfield code="a">v. 1- jan./abril 1974-</subfield>
+  </datafield>
+  <datafield tag="590" ind1=" " ind2=" ">
+    <subfield code="a">SERBIB/SERLOC merged record</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">Amazon River Valley</subfield>
+    <subfield code="x">Economic conditions</subfield>
+    <subfield code="v">Bibliography</subfield>
+    <subfield code="v">Catalogs.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">Amazon River Valley</subfield>
+    <subfield code="v">Bibliography</subfield>
+    <subfield code="v">Catalogs.</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="7">
+    <subfield code="a">Amazônia</subfield>
+    <subfield code="v">Bibliografia</subfield>
+    <subfield code="v">Catálogo</subfield>
+    <subfield code="9">574</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Amazonas, Rio, Vale</subfield>
+    <subfield code="v">Condições econômicas</subfield>
+    <subfield code="v">Bibliografia</subfield>
+    <subfield code="9">5948</subfield>
+    <subfield code="x">Catálogo</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Rede de Bibliotecas da Amazônia.</subfield>
+  </datafield>
+  <datafield tag="776" ind1="0" ind2="8">
+    <subfield code="i">Online version:</subfield>
+    <subfield code="t">Documentação amazônica</subfield>
+    <subfield code="w">(OCoLC)656680314</subfield>
+  </datafield>
+  <datafield tag="906" ind1=" " ind2=" ">
+    <subfield code="a">7</subfield>
+    <subfield code="b">cbc</subfield>
+    <subfield code="c">serials</subfield>
+    <subfield code="d">4</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">19</subfield>
+    <subfield code="g">n-oclcserc</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_017_000000000000000_D637</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38949</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 017 D637</subfield>
+    <subfield code="p">2018-1775</subfield>
+    <subfield code="r">2018-09-20</subfield>
+    <subfield code="w">2018-09-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_017_000000000000000_D637</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38950</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 017 D637</subfield>
+    <subfield code="p">2018-1776</subfield>
+    <subfield code="r">2018-09-20</subfield>
+    <subfield code="w">2018-09-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_017_000000000000000_D637</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38951</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 017 D637</subfield>
+    <subfield code="p">2018-1777</subfield>
+    <subfield code="r">2018-09-20</subfield>
+    <subfield code="w">2018-09-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_017_000000000000000_D637</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38952</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 017 D637</subfield>
+    <subfield code="p">2018-1778</subfield>
+    <subfield code="r">2018-09-20</subfield>
+    <subfield code="w">2018-09-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--253-->
+<record>
+  <leader>00539nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009090</controlfield>
+  <controlfield tag="005">20161123142548.0</controlfield>
+  <controlfield tag="008">080605s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">978-85-7004-275-0</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">017.1</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">017.1</subfield>
+    <subfield code="b">F981</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Fundação Casa de Rui Barbosa. Biblioteca</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Catálogo da Biblioteca de Rui Barbosa/ </subfield>
+    <subfield code="c">Fundação Casa de Rui Barbosa. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro: </subfield>
+    <subfield code="b">FCRB, </subfield>
+    <subfield code="c">2007.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">844 p.: </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Catálogos de bibliotecas.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">15847</subfield>
+    <subfield code="d">15847</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">017_100000000000000_F981</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">21526</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">017.1 F981</subfield>
+    <subfield code="p">08-0221</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--254-->
+<record>
+  <leader>01052nam a2200289   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-008461</controlfield>
+  <controlfield tag="005">20161123142412.0</controlfield>
+  <controlfield tag="008">060714s2006    bl           0001 0 por u</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8588130068</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">020</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">020</subfield>
+    <subfield code="b">A385</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Alfabetização digital e acesso ao conhecimento / </subfield>
+    <subfield code="c">Antônio Miranda e Elmira Simeão, organizadores.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília : </subfield>
+    <subfield code="b">Departamento de Ciência da Informação e Documentação, Universidade de Brasília, </subfield>
+    <subfield code="c">2006.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">xiii, 257 p. ; </subfield>
+    <subfield code="c">23 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Série Comunicação da informação digital ; </subfield>
+    <subfield code="v">v. 4</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Inclui bibliografias.</subfield>
+  </datafield>
+  <datafield tag="590" ind1=" " ind2=" ">
+    <subfield code="a">O exemplar está no Setor de Processamento Técnico da Biblioteca.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Alfabetização digital.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ciência da informação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Comunicação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Informação digital.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Tecnologia da informação.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Miranda, Antônio, </subfield>
+    <subfield code="d">1940-</subfield>
+    <subfield code="e">org.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Simeão, Elmira, </subfield>
+    <subfield code="e">org.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">15223</subfield>
+    <subfield code="d">15223</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_000000000000000_A385</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">20718</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020 A385</subfield>
+    <subfield code="p">06-0404</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--255-->
+<record>
+  <leader>00563nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010753</controlfield>
+  <controlfield tag="005">20161123142933.0</controlfield>
+  <controlfield tag="008">140710s1980    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">020.6</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">020.6</subfield>
+    <subfield code="b">M379p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Martins, Myriam Gusmão de </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Planejamento bibliotecário : </subfield>
+    <subfield code="b">para alunos de graduação em Biblioteconomia / </subfield>
+    <subfield code="c">Myriam Gusmão de Martins.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Livraria Pioneira, </subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">166 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Planejamento bibliotecário.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Biblioteconomia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17463</subfield>
+    <subfield code="d">17463</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_600000000000000_M379P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23677</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020.6 M379p</subfield>
+    <subfield code="p">14-0703</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--256-->
+<record>
+  <leader>00575nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010751</controlfield>
+  <controlfield tag="005">20161123142933.0</controlfield>
+  <controlfield tag="008">140710s1977    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">020.6</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">020.6</subfield>
+    <subfield code="b">M672p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Miranda, Antonio</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Planejamento bibliotecário no Brasil : </subfield>
+    <subfield code="b">a informação para o desenvolvimento / </subfield>
+    <subfield code="c">Antonio Miranda.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília : </subfield>
+    <subfield code="b">Livros Técnicos, </subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">135 p.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Contém índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Planejamento bibliotecário.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Biblioteconomia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17461</subfield>
+    <subfield code="d">17461</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_600000000000000_M672P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">40380</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2022-06-24</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020.6 M672p</subfield>
+    <subfield code="p">14-0702</subfield>
+    <subfield code="r">2022-06-24</subfield>
+    <subfield code="w">2022-06-24</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--257-->
+<record>
+  <leader>01407nam a2200241   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009810</controlfield>
+  <controlfield tag="008">2105784197889999bdfab  r     f001 0 por </controlfield>
+  <datafield tag="082" ind1="0" ind2=" ">
+    <subfield code="a">020.70981</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">020.70981</subfield>
+    <subfield code="b">E59</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="2">
+    <subfield code="a">O Ensino de biblioteconomia no Brasil :</subfield>
+    <subfield code="b">relatório de equipe de pesquisa sobre o status quo das escolas de biblioteconomia e documentação, com ênfase na situação do pessoal docente /</subfield>
+    <subfield code="c">editor: Nice Figueiredo. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília :</subfield>
+    <subfield code="b">Coordenação do Aperfeiçoamento de Pessoal de Nível Superior,</subfield>
+    <subfield code="c">1978</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">  v.  :</subfield>
+    <subfield code="b">il., mapa ;</subfield>
+    <subfield code="c">23cm.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2=" ">
+    <subfield code="a">Conteúdo: v. 1. Análise e caracterização das entidades e do pessoal - v. 2. Cadastro de entidades (escolas, departamentos e faculdades de biblioteconomia e documentação) e cadastro de professores de biblioteconomia ou quem é quem no ensino de biblioteconomia no Brasil / Cristina Argenton Colonelli - v. 3. Análise da literatura recomendada no ensino de biblioteconomia no Brasil.</subfield>
+  </datafield>
+  <datafield tag="590" ind1=" " ind2=" ">
+    <subfield code="a">A biblioteca só possui os volumes 2 e 3.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Biblioteconomia </subfield>
+    <subfield code="x">Estudo e ensino</subfield>
+    <subfield code="z">Brasil.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Bibliotecários</subfield>
+    <subfield code="z">Brasil.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Escolas de biblioteconomia</subfield>
+    <subfield code="z">Brasil.</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Figueiredo, Nice.</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Colonelli, Cristina Argenton.</subfield>
+  </datafield>
+  <datafield tag="710" ind1=" " ind2=" ">
+    <subfield code="a">Brasil.</subfield>
+    <subfield code="b">Coordenação do Aperfeiçoamento de Pessoal de Nível Superior.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16530</subfield>
+    <subfield code="d">16530</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_709810000000000_E59</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">22540</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020.70981 E59</subfield>
+    <subfield code="p">79-0046</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_709810000000000_E59</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">22541</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020.70981 E59</subfield>
+    <subfield code="p">79-0048</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">020_709810000000000_E59</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">22542</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="j">0</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">020.70981 E59</subfield>
+    <subfield code="p">79-0049</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+
+
+</collection>

@@ -26,6 +26,8 @@ class MarcInstance:
             year = year.replace('[', '').replace('?]', '')
         elif '[' in year:
             year = year.replace('[', '').replace(']', '')
+        elif ']' in year:
+            year = year.replace(']', '')
         elif 'c' in year:
             year = year.replace('c', '')
 

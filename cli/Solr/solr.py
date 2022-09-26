@@ -17,7 +17,7 @@ def create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
         doc.update(author=workMarc.PrimaryContribution().get('person'))
     if instanceMarc.Serie():
         doc.update(serie=instanceMarc.Serie())
-    if instanceMarc.Publication().get('year') not in ['s.n.']:
+    if instanceMarc.Publication().get('year') not in ['s.n.', '19--']:
         doc.update(year=instanceMarc.Publication().get('year'))
 
 
