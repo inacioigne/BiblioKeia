@@ -55,6 +55,7 @@ class MarcWork:
     def Audience(self):
         codes = {
             'f': {'code': 'spe', 'label': 'Specialized'},
+            'e': {'code': 'adu', 'label': 'adult'},
             'g': {'code': 'gen', 'label': 'General'}
             }
         code = self.tag008[22]

@@ -1,0 +1,11 @@
+127.0.0.1 - - [27/set./2022:00:00:26 +0000] "GET /solr/admin/cores?_=1664235937297&indexInfo=false&wt=json HTTP/1.1" 200 476
+127.0.0.1 - - [27/set./2022:00:00:26 +0000] "GET /solr/search/select?_=1664235958113&indent=true&q=id:1&q.op=OR HTTP/1.1" 200 819
+127.0.0.1 - - [27/set./2022:00:00:26 +0000] "GET /solr/admin/info/system?_=1664235937298&wt=json HTTP/1.1" 200 1365
+127.0.0.1 - - [27/set./2022:00:00:43 +0000] "GET /solr/admin/cores?_=1664235937297&indexInfo=false&wt=json HTTP/1.1" 200 475
+127.0.0.1 - - [27/set./2022:00:00:43 +0000] "GET /solr/admin/info/system?_=1664235937298&wt=json HTTP/1.1" 200 1364
+127.0.0.1 - - [27/set./2022:00:00:46 +0000] "GET /solr/admin/cores?_=1664235937297&indexInfo=false&wt=json HTTP/1.1" 200 475
+127.0.0.1 - - [27/set./2022:00:00:46 +0000] "GET /solr/search/select?_=1664235958113&indent=true&q=*:*&q.op=OR HTTP/1.1" 200 1480
+127.0.0.1 - - [27/set./2022:00:00:46 +0000] "GET /solr/admin/info/system?_=1664235937298&wt=json HTTP/1.1" 200 1363
+127.0.0.1 - - [27/set./2022:00:01:41 +0000] "GET /solr/search/select?q=*:*&start=281&q.op=AND&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2128
+127.0.0.1 - - [27/set./2022:00:01:52 +0000] "GET /solr/search/select?q=*:*&start=0&q.op=AND&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2032
+127.0.0.1 - - [27/set./2022:00:58:12 +0000] "GET /solr/search/select?q=*:*&start=0&q.op=AND&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2033

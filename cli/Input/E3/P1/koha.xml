@@ -688,6 +688,91 @@
 </record>
 <!--266-->
 <record>
+  <leader>00597nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-009521</controlfield>
+  <controlfield tag="005">20161123142707.0</controlfield>
+  <controlfield tag="008">110210s2004    bl a   fr    0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">027.581</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">027.581</subfield>
+    <subfield code="b">F981</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Fundação Biblioteca Nacional (Brasil)</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Biblioteca Nacional / </subfield>
+    <subfield code="c">Fundação Biblioteca Nacional. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Banco Safra, </subfield>
+    <subfield code="c">2004.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">351 p. : </subfield>
+    <subfield code="b">Il. color.</subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="4">
+    <subfield code="a">Biblioteca Nacional (Brasil)</subfield>
+    <subfield code="x">Acervo.</subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="4">
+    <subfield code="a">Biblioteca Nacional (Brasil)</subfield>
+    <subfield code="x">História.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Iconografia.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16267</subfield>
+    <subfield code="d">16267</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">027_581000000000000_F981</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">22150</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">027.581 F981</subfield>
+    <subfield code="p">13-0267</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">027_581000000000000_F981</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">40381</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2022-06-24</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">027.581 F981</subfield>
+    <subfield code="p">11-0071</subfield>
+    <subfield code="r">2022-06-24</subfield>
+    <subfield code="w">2022-06-24</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--267-->
+<record>
   <leader>00470nam a2200157Ia 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
   <controlfield tag="005">20160816090113.0</controlfield>
@@ -707,6 +792,7 @@
     <subfield code="a">Princípios básicos de organização de bibliotecas e de acesso à informação digital</subfield>
   </datafield>
   <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Manaus</subfield>
     <subfield code="b">[s.n.]</subfield>
     <subfield code="c">2012</subfield>
   </datafield>
@@ -739,7 +825,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--267-->
+<!--268-->
 <record>
   <leader>00775nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010280</controlfield>
@@ -826,7 +912,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--268-->
+<!--269-->
 <record>
   <leader>00860nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010367</controlfield>
@@ -918,7 +1004,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--270-->
 <record>
   <leader>00634nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010399</controlfield>
@@ -1026,7 +1112,77 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--271-->
+<record>
+  <leader>00616nam a2200193 a 4500</leader>
+  <controlfield tag="001">0013753</controlfield>
+  <controlfield tag="005">20161125154356.0</controlfield>
+  <controlfield tag="008">141217s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">85-7512-233-9</subfield>
+  </datafield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="a">060.98113</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">060.98113</subfield>
+    <subfield code="b">B813p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">Braga, Robério</subfield>
+    <subfield code="q">Robério Braga</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Presidentes da academia Amazonense de Letras: </subfield>
+    <subfield code="b">1918 - 2006.</subfield>
+    <subfield code="c">Robério Braga.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Manaus: </subfield>
+    <subfield code="b">Valer, </subfield>
+    <subfield code="c">2007.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">132p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Academia Amazonense de Letras</subfield>
+    <subfield code="x">História</subfield>
+    <subfield code="z">Amazonas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Presidentes da Academia de Letras.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Autores</subfield>
+    <subfield code="z">Amazonenses.</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17960</subfield>
+    <subfield code="d">17960</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">060_981130000000000_B813P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24241</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-25</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">060.98113 B813p</subfield>
+    <subfield code="p">2014-140</subfield>
+    <subfield code="r">2016-11-25</subfield>
+    <subfield code="w">2016-11-25</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--272-->
 <record>
   <leader>00637nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010397</controlfield>
@@ -1048,7 +1204,7 @@
   <datafield tag="260" ind1=" " ind2=" ">
     <subfield code="a">Berlin :  </subfield>
     <subfield code="b">Humboldt - Universität zu Berlin, </subfield>
-    <subfield code="c">[s.d.]</subfield>
+    <subfield code="c">2014</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
     <subfield code="a">144p. :</subfield>
@@ -1088,7 +1244,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--273-->
 <record>
   <leader>00824nam a2200253 a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -1170,7 +1326,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--274-->
 <record>
   <leader>00496nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001733</controlfield>
@@ -1232,7 +1388,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--275-->
 <record>
   <leader>00879nam a2200253   4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -1339,7 +1495,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--276-->
 <record>
   <leader>00921nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009731</controlfield>
@@ -1414,7 +1570,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--277-->
 <record>
   <leader>00466nam a2200157   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009513</controlfield>
@@ -1470,7 +1626,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--278-->
 <record>
   <leader>00539nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008457</controlfield>
@@ -1529,7 +1685,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--279-->
 <record>
   <leader>00636nam a2200205 a 4500</leader>
   <controlfield tag="001">0002610</controlfield>
@@ -1604,7 +1760,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--280-->
 <record>
   <leader>00604nam a2200193 a 4500</leader>
   <controlfield tag="001">0002436</controlfield>
@@ -1677,7 +1833,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--281-->
 <record>
   <leader>00576nam a2200169 a 4500</leader>
   <controlfield tag="001">0002443</controlfield>
@@ -1741,7 +1897,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--282-->
 <record>
   <leader>00505nam a2200169 a 4500</leader>
   <controlfield tag="001">0002434</controlfield>
@@ -1805,7 +1961,95 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--283-->
+<record>
+  <leader>00839nam a22002657a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30584</subfield>
+    <subfield code="d">30584</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20180920141728.0</controlfield>
+  <controlfield tag="008">971208s1997    paba     c    000 0 por d</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">99120913111210059</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Br</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="043" ind1=" " ind2=" ">
+    <subfield code="a">s-bl-pa</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="2">19</subfield>
+    <subfield code="a">069.6910</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">069.6910</subfield>
+    <subfield code="b">M986</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">I-414,7,6</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Museu da Santa Casa (PA)</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Catálogo do Museu da Santa Casa,</subfield>
+    <subfield code="b">n. 1 /</subfield>
+    <subfield code="c">organização e textos Alípio Augusto Barbosa Bordalo ; desenhos João Bento de Souza Neto ; fotografias Studio Paulo Bordalo. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Belém :</subfield>
+    <subfield code="b">O Museu,</subfield>
+    <subfield code="c">1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">102p. :</subfield>
+    <subfield code="b">il. ;</subfield>
+    <subfield code="c">30cm.</subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="4">
+    <subfield code="a">Museu da Santa Casa (PA)-</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Bordalo, Alípio Augusto Barbosa.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+    <subfield code="a">939.716 DL 11/12/97</subfield>
+  </datafield>
+  <datafield tag="990" ind1=" " ind2=" ">
+    <subfield code="a">Livro</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">AM_069_691000000000000_M986</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">AM</subfield>
+    <subfield code="9">38955</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-09-20</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">AM 069.6910 M986</subfield>
+    <subfield code="p">98-0665</subfield>
+    <subfield code="r">2018-09-20</subfield>
+    <subfield code="w">2018-09-20</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--284-->
 <record>
   <leader>00776nam a22003017a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -1901,7 +2145,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--285-->
 <record>
   <leader>00558nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-002075</controlfield>
@@ -1982,95 +2226,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00839nam a22002657a 4500</leader>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">30584</subfield>
-    <subfield code="d">30584</subfield>
-  </datafield>
-  <controlfield tag="003">BR-MnINPA</controlfield>
-  <controlfield tag="005">20180920141728.0</controlfield>
-  <controlfield tag="008">971208s1997    paba     c    000 0 por d</controlfield>
-  <datafield tag="035" ind1=" " ind2=" ">
-    <subfield code="a">99120913111210059</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-    <subfield code="a">Br</subfield>
-    <subfield code="b">por</subfield>
-  </datafield>
-  <datafield tag="043" ind1=" " ind2=" ">
-    <subfield code="a">s-bl-pa</subfield>
-  </datafield>
-  <datafield tag="082" ind1="0" ind2="4">
-    <subfield code="2">19</subfield>
-    <subfield code="a">069.6910</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">069.6910</subfield>
-    <subfield code="b">M986</subfield>
-  </datafield>
-  <datafield tag="092" ind1=" " ind2=" ">
-    <subfield code="a">I-414,7,6</subfield>
-  </datafield>
-  <datafield tag="110" ind1="2" ind2=" ">
-    <subfield code="a">Museu da Santa Casa (PA)</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Catálogo do Museu da Santa Casa,</subfield>
-    <subfield code="b">n. 1 /</subfield>
-    <subfield code="c">organização e textos Alípio Augusto Barbosa Bordalo ; desenhos João Bento de Souza Neto ; fotografias Studio Paulo Bordalo. -</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Belém :</subfield>
-    <subfield code="b">O Museu,</subfield>
-    <subfield code="c">1997.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">102p. :</subfield>
-    <subfield code="b">il. ;</subfield>
-    <subfield code="c">30cm.</subfield>
-  </datafield>
-  <datafield tag="610" ind1="2" ind2="4">
-    <subfield code="a">Museu da Santa Casa (PA)-</subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Bordalo, Alípio Augusto Barbosa.</subfield>
-  </datafield>
-  <datafield tag="852" ind1=" " ind2=" ">
-    <subfield code="a">Obras Gerais</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="2">ddc</subfield>
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="949" ind1=" " ind2=" ">
-    <subfield code="a">939.716 DL 11/12/97</subfield>
-  </datafield>
-  <datafield tag="990" ind1=" " ind2=" ">
-    <subfield code="a">Livro</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">AM_069_691000000000000_M986</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">AM</subfield>
-    <subfield code="9">38955</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2018-09-20</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">AM 069.6910 M986</subfield>
-    <subfield code="p">98-0665</subfield>
-    <subfield code="r">2018-09-20</subfield>
-    <subfield code="w">2018-09-20</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--286-->
 <record>
   <leader>00801cam a22002657a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -2160,7 +2316,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--287-->
 <record>
   <leader>00491nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001756</controlfield>
@@ -2223,7 +2379,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--288-->
 <record>
   <leader>00523nam a22001811a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -2288,7 +2444,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--289-->
 <record>
   <leader>01470nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001970</controlfield>
@@ -2310,6 +2466,7 @@
   </datafield>
   <datafield tag="260" ind1=" " ind2=" ">
     <subfield code="a">Manaus, </subfield>
+    <subfield code="b">Sem editora</subfield>
     <subfield code="c">2002.</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
@@ -2358,7 +2515,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--290-->
 <record>
   <leader>01109nam a2200301   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010155</controlfield>
@@ -2452,160 +2609,4 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00597nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-009521</controlfield>
-  <controlfield tag="005">20161123142707.0</controlfield>
-  <controlfield tag="008">110210s2004    bl a   fr    0000 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">027.581</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">027.581</subfield>
-    <subfield code="b">F981</subfield>
-  </datafield>
-  <datafield tag="110" ind1="2" ind2=" ">
-    <subfield code="a">Fundação Biblioteca Nacional (Brasil)</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Biblioteca Nacional / </subfield>
-    <subfield code="c">Fundação Biblioteca Nacional. </subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">São Paulo : </subfield>
-    <subfield code="b">Banco Safra, </subfield>
-    <subfield code="c">2004.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">351 p. : </subfield>
-    <subfield code="b">Il. color.</subfield>
-  </datafield>
-  <datafield tag="610" ind1="2" ind2="4">
-    <subfield code="a">Biblioteca Nacional (Brasil)</subfield>
-    <subfield code="x">Acervo.</subfield>
-  </datafield>
-  <datafield tag="610" ind1="2" ind2="4">
-    <subfield code="a">Biblioteca Nacional (Brasil)</subfield>
-    <subfield code="x">História.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Iconografia.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16267</subfield>
-    <subfield code="d">16267</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">027_581000000000000_F981</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">22150</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">027.581 F981</subfield>
-    <subfield code="p">13-0267</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">027_581000000000000_F981</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">40381</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2022-06-24</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">027.581 F981</subfield>
-    <subfield code="p">11-0071</subfield>
-    <subfield code="r">2022-06-24</subfield>
-    <subfield code="w">2022-06-24</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00616nam a2200193 a 4500</leader>
-  <controlfield tag="001">0013753</controlfield>
-  <controlfield tag="005">20161125154356.0</controlfield>
-  <controlfield tag="008">141217s||||     bl|||||||||||||||||por|u</controlfield>
-  <datafield tag="020" ind1=" " ind2=" ">
-    <subfield code="a">85-7512-233-9</subfield>
-  </datafield>
-  <datafield tag="082" ind1=" " ind2=" ">
-    <subfield code="a">060.98113</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">060.98113</subfield>
-    <subfield code="b">B813p</subfield>
-  </datafield>
-  <datafield tag="100" ind1="0" ind2=" ">
-    <subfield code="a">Braga, Robério</subfield>
-    <subfield code="q">Robério Braga</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Presidentes da academia Amazonense de Letras: </subfield>
-    <subfield code="b">1918 - 2006.</subfield>
-    <subfield code="c">Robério Braga.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Manaus: </subfield>
-    <subfield code="b">Valer, </subfield>
-    <subfield code="c">2007.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">132p. : </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Academia Amazonense de Letras</subfield>
-    <subfield code="x">História</subfield>
-    <subfield code="z">Amazonas.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Presidentes da Academia de Letras.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Autores</subfield>
-    <subfield code="z">Amazonenses.</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17960</subfield>
-    <subfield code="d">17960</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">060_981130000000000_B813P</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">24241</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-25</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">060.98113 B813p</subfield>
-    <subfield code="p">2014-140</subfield>
-    <subfield code="r">2016-11-25</subfield>
-    <subfield code="w">2016-11-25</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
 </collection>

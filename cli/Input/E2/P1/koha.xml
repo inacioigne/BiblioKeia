@@ -216,7 +216,7 @@
     <subfield code="l">0</subfield>
     <subfield code="n">0</subfield>
     <subfield code="o">PPBIO 001.6424 G642</subfield>
-    <subfield code="p">10-0118 | R</subfield>
+    <subfield code="p">10-0118</subfield>
     <subfield code="r">2016-11-23</subfield>
     <subfield code="w">2016-11-23</subfield>
     <subfield code="y">L</subfield>
@@ -2690,7 +2690,7 @@
 <record>
   <leader>00517nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010451</controlfield>
-  <controlfield tag="008">161121 1s1987    bl     f      000 0 por d</controlfield>
+  <controlfield tag="008">161121 1s1987  bl     f      000 0 por </controlfield>
   <datafield tag="020" ind1=" " ind2=" ">
     <subfield code="a">0-07-450230-1</subfield>
   </datafield>
