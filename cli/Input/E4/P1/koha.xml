@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+  xmlns="http://www.loc.gov/MARC21/slim">
+
+<record>
+  <leader>00835nam a2200265   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010380</controlfield>
+  <controlfield tag="003">Br</controlfield>
+  <controlfield tag="005">20161123142854.0</controlfield>
+  <controlfield tag="008">850711s19530000brj           000 0 por u</controlfield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">196.9</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">196.9</subfield>
+    <subfield code="b">M827f</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">VI-285,1,17</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Moraes Filho, Evaristo de,</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Francisco Sanches na renascença portuguêsa /    </subfield>
+    <subfield code="c">Evaristo de Moraes Filho.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Rio de Janeiro] : </subfield>
+    <subfield code="b">MEC, </subfield>
+    <subfield code="c">1953.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">121p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">(Os cadernos de cultura ;</subfield>
+    <subfield code="v">56)</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Contém dados biográficos.</subfield>
+  </datafield>
+  <datafield tag="600" ind1="1" ind2="4">
+    <subfield code="a">Sanchez, Francisco,</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Renascença</subfield>
+    <subfield code="z">Portugal .</subfield>
+  </datafield>
+  <datafield tag="710" ind1=" " ind2=" ">
+    <subfield code="a">Brasil.</subfield>
+  </datafield>
+  <datafield tag="830" ind1="0" ind2=" ">
+    <subfield code="a">Os cadernos de cultura (Brasil. Ministério da Educação e Cultura. Serviço de Documentação) ;</subfield>
+    <subfield code="v">56.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17090</subfield>
+    <subfield code="d">17090</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">196_900000000000000_M827F</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23232</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">196.9 M827f</subfield>
+    <subfield code="p">80-0832</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00676nam a2200229   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010674</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1969    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">199.81</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">199.81</subfield>
+    <subfield code="b">A173f</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Acerboni, Lídia</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A filosofia contemporânea no Brasil / </subfield>
+    <subfield code="c">Lídia Acerboni; tradução de João Bosco Feres</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Grijalbo, </subfield>
+    <subfield code="c">1969.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">215p. </subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Bibliografia: p. 189 - 215.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Cultura</subfield>
+    <subfield code="x">Brasil.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Problemática antropológica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Filosofia clássica.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Feres, João Bosco. </subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17384</subfield>
+    <subfield code="d">17384</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">199_810000000000000_A173F</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23595</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">199.81 A173f</subfield>
+    <subfield code="p">76-0714</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00491nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010668</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1974    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">199.81</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">199.81</subfield>
+    <subfield code="b">P143</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Paim, Antonio</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">História das ideias filosóficas no Brasil / </subfield>
+    <subfield code="c">Antonio Paim.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Editora da Universidade de São Paulo, </subfield>
+    <subfield code="c">1974.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">431 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia</subfield>
+    <subfield code="v">História</subfield>
+    <subfield code="z">Brasil.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17378</subfield>
+    <subfield code="d">17378</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">199_810000000000000_P143H</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23589</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">199.81 P143h</subfield>
+    <subfield code="p">76-0604</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00813nam a2200241   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010711</controlfield>
+  <controlfield tag="005">20161123142929.0</controlfield>
+  <controlfield tag="008">140707s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">200.1</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">200.1</subfield>
+    <subfield code="b">L296r</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Laternari, Vittorio</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">As religiões dos oprimidos: </subfield>
+    <subfield code="b">um estudo dos modernos cultos messiânicos / </subfield>
+    <subfield code="c">Vittorio Laternari; tradução de Geraldo Gerson de Souza.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Perspectiva, </subfield>
+    <subfield code="c">1974.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">359p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Coleção Debates</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Inclui bibliografia.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Tradução de: Movimenti religiosi di liberà e di salvezza dei popoli oppressi.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Cuturas religiosas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Movimentos religiosos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Morfologia.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Souza, Geraldo Gerson, trad.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17421</subfield>
+    <subfield code="d">17421</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">200_100000000000000_L296R</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23633</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">200.1 L296r</subfield>
+    <subfield code="p">78-0553</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00533nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010695</controlfield>
+  <controlfield tag="005">20161123142927.0</controlfield>
+  <controlfield tag="008">140703s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">213</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">213</subfield>
+    <subfield code="b">A743o</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Arnaldich, Luis</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A origem do mundo e do homem / </subfield>
+    <subfield code="c">Luis Arnaldich; tradução de José Ervedosa.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Livraria Flamboyant, </subfield>
+    <subfield code="c">[s.n.].</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">351 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Criacionismo.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Religião.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Ervedosa, José.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17405</subfield>
+    <subfield code="d">17405</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">213_000000000000000_A743O</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23617</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">213 A743o</subfield>
+    <subfield code="p">78-1275</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00533nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010694</controlfield>
+  <controlfield tag="005">20161123142927.0</controlfield>
+  <controlfield tag="008">140703s1955    bl     f     0000 0 eng  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">213</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">213</subfield>
+    <subfield code="b">K66g</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Klotz, John W. (John William), 1918-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Genes, genesis, and evolution / </subfield>
+    <subfield code="c">John W. Klotz.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Saint Louis : </subfield>
+    <subfield code="b">Concordia Pub. House, </subfield>
+    <subfield code="c">1955.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">575 p. : </subfield>
+    <subfield code="b">ill. ; 24 cm.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Criação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Evolução.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Religião.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17404</subfield>
+    <subfield code="d">17404</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">213_000000000000000_K66G</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23616</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">213 K66g</subfield>
+    <subfield code="p">57-0763</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00690nam a2200229   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010335</controlfield>
+  <controlfield tag="005">20161123142847.0</controlfield>
+  <controlfield tag="008">140401s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">220.63</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">220.63</subfield>
+    <subfield code="b">C797q</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Coreth, Emerich</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Questõoes fundamentais de hermenêutica / </subfield>
+    <subfield code="c">Emerich Coreth ; Trad. Carlos Lopes de Matos.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Universidade de São Paulo, </subfield>
+    <subfield code="c">1973.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">202p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Análise em filosofia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Bíblia</subfield>
+    <subfield code="x">Hermenêutica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Hermenêutica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Semântica.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Matos, Carlos Lopes de, trad. </subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17045</subfield>
+    <subfield code="d">17045</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">220_630000000000000_C797Q</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23173</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">220.63 C797q</subfield>
+    <subfield code="p">76-0629</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">220_630000000000000_C797Q</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23174</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="j">0</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">220.63 C797q</subfield>
+    <subfield code="p">76-0637</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00565nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010700</controlfield>
+  <controlfield tag="005">20161123142928.0</controlfield>
+  <controlfield tag="008">140704s1952    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">255</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">225</subfield>
+    <subfield code="b">N468</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Novum testamentum graece / </subfield>
+    <subfield code="c">Comentários Eberhard Nestle, Erwin Nestle.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">20. ed. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Alemanha : </subfield>
+    <subfield code="b">Wurtt, </subfield>
+    <subfield code="c">1952.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">671 p.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Texto em grego.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Bíblia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Novo testamento.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Nestle, Eberhard</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Nestle, Erwin.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17410</subfield>
+    <subfield code="d">17410</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">225_000000000000000_N468</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23622</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">225 N468</subfield>
+    <subfield code="p">80-2032</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00598nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010699</controlfield>
+  <controlfield tag="005">20161123142928.0</controlfield>
+  <controlfield tag="008">140704s1969    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">225</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">225</subfield>
+    <subfield code="b">N935</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">O novo testamento de nosso Senhor e Salvador Jesus Cristo / </subfield>
+    <subfield code="c">Os Gideões Internacionais; tradução João Ferreira de Almeida.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[s.n.] : </subfield>
+    <subfield code="b">Gideon, </subfield>
+    <subfield code="c">1969.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">728 p.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Texto bilíngue : português - inglês.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Bíblia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Novo Testamento.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Almeida, João Ferreira de.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17409</subfield>
+    <subfield code="d">17409</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">225_000000000000000_N935</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23621</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">225 N935</subfield>
+    <subfield code="p">78-0773</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00588cam a22002297a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">23931</subfield>
+    <subfield code="d">23931</subfield>
+  </datafield>
+  <controlfield tag="003">BR-RjBN</controlfield>
+  <controlfield tag="005">20180228102446.0</controlfield>
+  <controlfield tag="008">850613s00001984bspa          000 0 por u</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">96101719313199001</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Br</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">236.9</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">236.9</subfield>
+    <subfield code="b">B172h</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">VI-282,5,25</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Balbach, Alfons,</subfield>
+    <subfield code="d">1926-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="3">
+    <subfield code="a">Um novo mundo /</subfield>
+    <subfield code="c">A. Balbach. -</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">26. ed. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo :</subfield>
+    <subfield code="b">Edicoes "A edificacao do lar",</subfield>
+    <subfield code="c">[1984?]</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">269p. :</subfield>
+    <subfield code="b">il. ;</subfield>
+    <subfield code="c">23cm.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Fim do mundo.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="990" ind1=" " ind2=" ">
+    <subfield code="a">Livro</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">236_900000000000000_B172H</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">32391</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-02-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">236.9 B172h</subfield>
+    <subfield code="p">2018-0080</subfield>
+    <subfield code="r">2018-02-28</subfield>
+    <subfield code="w">2018-02-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00802cam a22002777a 4500</leader>
+  <controlfield tag="003">BR-RjBN</controlfield>
+  <controlfield tag="005">20170426152756.0</controlfield>
+  <controlfield tag="008">980310s1997    spb           000 0 por d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8573250496 (broch.).</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">98090811365203059</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Br</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="041" ind1="1" ind2=" ">
+    <subfield code="a">por</subfield>
+    <subfield code="h">eng</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">239</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">239</subfield>
+    <subfield code="b">Z16p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Zacharias, Ravi K.</subfield>
+    <subfield code="d">1946-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Pode o homem viver sem Deus? /</subfield>
+    <subfield code="c">Ravi Zacharias ; traduzido por Odayr Olivetti. -</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo :</subfield>
+    <subfield code="b">Mundo Cristão,</subfield>
+    <subfield code="c">1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">294p. ;</subfield>
+    <subfield code="c">21cm.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Tradução de: Can man live without God.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Cristianismo e ateísmo</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Apologética</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Ateísmo</subfield>
+    <subfield code="x">Literatura polêmica</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+    <subfield code="a">945.199 DL 16/03/98</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">19141</subfield>
+    <subfield code="d">19141</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">239_000000000000000_Z16P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">25866</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2017-04-25</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">239 Z16p</subfield>
+    <subfield code="p">2017-0161</subfield>
+    <subfield code="r">2017-04-25</subfield>
+    <subfield code="w">2017-04-25</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00506nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010726</controlfield>
+  <controlfield tag="005">20161123142930.0</controlfield>
+  <controlfield tag="008">      s1978                  000 0 por d</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="z">EEL-09</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">USP/SIBI</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">248.4</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">248.4</subfield>
+    <subfield code="b">M697m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mohana, João </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">O mundo e eu / </subfield>
+    <subfield code="c">João Mohana.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">6. ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro : </subfield>
+    <subfield code="b">Agir, </subfield>
+    <subfield code="c">1978.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">246 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Vida cristã.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17436</subfield>
+    <subfield code="d">17436</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">248_400000000000000_M697M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23650</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">248.4 M697m</subfield>
+    <subfield code="p">79-0457</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00708nam a2200253   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010702</controlfield>
+  <controlfield tag="005">20161123142928.0</controlfield>
+  <controlfield tag="008">130526s1994    bl            000 0 por d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">85-333-0030-1</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="z">BBM-2013-030470</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">USP/SIBi</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="044" ind1=" " ind2=" ">
+    <subfield code="a">bl</subfield>
+    <subfield code="c">brj</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">248.47</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">248.47</subfield>
+    <subfield code="b">L788</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Menegaz, Ronaldo</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Livro de Issac de Nínive :  </subfield>
+    <subfield code="b">(séc. XV) / </subfield>
+    <subfield code="c">Fac-símile e transcrição diplomátiica de Ronaldo Menegaz.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro : </subfield>
+    <subfield code="b">Biblioteca Nacional, </subfield>
+    <subfield code="c">1994.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">467 p. :</subfield>
+    <subfield code="c">21 x 13,8 cm</subfield>
+  </datafield>
+  <datafield tag="590" ind1=" " ind2=" ">
+    <subfield code="a">Broch</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">PALEOGRAFIA.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Idade Média.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17412</subfield>
+    <subfield code="d">17412</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">248_470000000000000_L788</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23624</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">248.47 L788</subfield>
+    <subfield code="p">96-0033</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00831cam a22002897a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">30692</subfield>
+    <subfield code="d">30692</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20181018140436.0</controlfield>
+  <controlfield tag="008">031210s2003    rjb           000 0 por d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8575420836 (broch.)</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">2003121017313795med</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Br</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="045" ind1=" " ind2=" ">
+    <subfield code="a">y0y9</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">261</subfield>
+    <subfield code="2">21</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">261</subfield>
+    <subfield code="b">B661c</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">V-222,7,46</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Boff, Leonardo,</subfield>
+    <subfield code="d">1938-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Civilização planetária :</subfield>
+    <subfield code="b">desafios à sociedade e ao cristianismo /</subfield>
+    <subfield code="c">Leonardo Boff. -  </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro :</subfield>
+    <subfield code="b">Sextante,</subfield>
+    <subfield code="c">2003.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">132 p. ;</subfield>
+    <subfield code="c">21cm.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Século XXI-</subfield>
+    <subfield code="x">Previsões.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Igreja e o mundo.</subfield>
+  </datafield>
+  <datafield tag="650" ind1="0" ind2="4">
+    <subfield code="a">Civilização moderna-</subfield>
+    <subfield code="x">Aspectos sociais.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+    <subfield code="a">1.086.128 DL 15/12/2003</subfield>
+  </datafield>
+  <datafield tag="990" ind1=" " ind2=" ">
+    <subfield code="a">Livro</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">261_000000000000000_B661C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">39170</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2018-10-18</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">261 B661c</subfield>
+    <subfield code="p">2018-1882</subfield>
+    <subfield code="r">2018-10-18</subfield>
+    <subfield code="w">2018-10-18</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00589nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-001071</controlfield>
+  <controlfield tag="008">030701s1969    bl     f      000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">262.8121</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">262.8121</subfield>
+    <subfield code="b">P116h</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Pachêco, Felipe Condurú, Bishop, </subfield>
+    <subfield code="d">1892-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">História eclesiástica do Maranhão / </subfield>
+    <subfield code="c">Felipe Condurú Pachêco.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[São Luís] : </subfield>
+    <subfield code="b">Departamento de Cultura, </subfield>
+    <subfield code="c">1969.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">846 p., [10] f. de lâms. : </subfield>
+    <subfield code="b">il., fac-síms, retrs.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Coleção César Marques ; </subfield>
+    <subfield code="v">v. 1</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="4">
+    <subfield code="a">Maranhão</subfield>
+    <subfield code="v">História eclesiástica.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">7894</subfield>
+    <subfield code="d">7894</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">262_812100000000000_P116H</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">10053</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">262.8121 P116h</subfield>
+    <subfield code="p">02-0665</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">262_812100000000000_P116H</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">10054</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">262.8121 P116h</subfield>
+    <subfield code="p">02-0666</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00461cam a2200157 a 4500</leader>
+  <controlfield tag="001">0013805</controlfield>
+  <controlfield tag="005">20161128171414.0</controlfield>
+  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">205</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">205</subfield>
+    <subfield code="b">R382</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Peirone, Frederico José</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A tribo Ajaua do alto niassa (Moçambique) e alguns aspectos da sua problemática neo-islâmica</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Lisboa:</subfield>
+    <subfield code="b">[s.n.],</subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">203 p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">Religiões e missões,</subfield>
+    <subfield code="v">1</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17965</subfield>
+    <subfield code="d">17965</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_R382</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24252</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 R382</subfield>
+    <subfield code="p">15-0347</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00530cam a2200169 a 4500</leader>
+  <controlfield tag="001">0013803</controlfield>
+  <controlfield tag="005">20161128171414.0</controlfield>
+  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">205</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">205</subfield>
+    <subfield code="b">S586m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Silva, António da</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mentalidade missiológica dos jesuítas em moçambique antes de 1759:</subfield>
+    <subfield code="b">esboço ideológico a partir do núcleo documental</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Lisboa:</subfield>
+    <subfield code="b">[s.n.], </subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">391 p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">Religiões e missões </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Missões jesuíticas</subfield>
+    <subfield code="z">Moçambique</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17966</subfield>
+    <subfield code="d">17966</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_S586M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24250</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 S586m</subfield>
+    <subfield code="p">15-0330</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_S586M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24251</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 S586m</subfield>
+    <subfield code="p">15-0329</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+</collection>

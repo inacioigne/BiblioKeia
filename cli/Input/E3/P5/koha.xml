@@ -1,0 +1,2052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+  xmlns="http://www.loc.gov/MARC21/slim">
+
+<record>
+  <leader>00543nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010670</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1977    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158</subfield>
+    <subfield code="b">M763c</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A conquista do êxito / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">6. ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Egéria, </subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">239 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">A psicologia do êxito, </subfield>
+    <subfield code="v">v. 2</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Auto-ajuda.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17380</subfield>
+    <subfield code="d">17380</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_000000000000000_M763C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23591</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158 M763c</subfield>
+    <subfield code="p">77-0962</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00549nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010671</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1977    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158</subfield>
+    <subfield code="b">M763e</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">O encontro com o eu interior / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">6. ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Égira, </subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">202 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">A psicologia do êxito, </subfield>
+    <subfield code="v">v. 3</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Auto-ajuda.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17381</subfield>
+    <subfield code="d">17381</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_000000000000000_M763E</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23592</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158 M763e</subfield>
+    <subfield code="p">77-0963</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00568nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010672</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1977    bl a   f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158</subfield>
+    <subfield code="b">M763p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Palavras que levam ao sucesso / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">6. ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Egéria, </subfield>
+    <subfield code="c">1977.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">224 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">A psicologia do êxito, </subfield>
+    <subfield code="v">v. 5</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Citações.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Máximas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Auto-ajuda.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17382</subfield>
+    <subfield code="d">17382</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_000000000000000_M763P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23593</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158 M763p</subfield>
+    <subfield code="p">77-0965</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00517nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010558</controlfield>
+  <controlfield tag="008">140630s1979    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.2</subfield>
+    <subfield code="b">M763m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Modernos métodos de venda / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Novo Brasil Editora, </subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">237 p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Biblioteca do dirigente moderno, </subfield>
+    <subfield code="v">v. 1</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Vendas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17268</subfield>
+    <subfield code="d">17268</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_200000000000000_M763M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23450</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.2 M763m</subfield>
+    <subfield code="p">79-1737</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00540nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010661</controlfield>
+  <controlfield tag="005">20161123142924.0</controlfield>
+  <controlfield tag="008">140630s1979    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.2</subfield>
+    <subfield code="b">M763m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mais psicologia, melhores negócios / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Novo Brasil Editora, </subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Biblioteca do dirigente moderno, </subfield>
+    <subfield code="v">v. 2</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia empresarial.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17371</subfield>
+    <subfield code="d">17371</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_200000000000000_M763M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23582</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.2 M763m</subfield>
+    <subfield code="p">79-1738</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00585nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010662</controlfield>
+  <controlfield tag="005">20161123142924.0</controlfield>
+  <controlfield tag="008">140630s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.2</subfield>
+    <subfield code="b">M763c</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Conheça melhor a si mesmo e às pessoas com quem trata / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Novo Brasil Editora, </subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">238 p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Biblioteca do dirigente moderno, </subfield>
+    <subfield code="v">v. 4</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Relações interpessoais.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17372</subfield>
+    <subfield code="d">17372</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_200000000000000_M763C</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23583</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.2 M763c</subfield>
+    <subfield code="p">79-1740</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00534nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010663</controlfield>
+  <controlfield tag="005">20161123142924.0</controlfield>
+  <controlfield tag="008">140630s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.2</subfield>
+    <subfield code="b">M763c</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Montalvão, Alberto</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">O comércio através dos tempos / </subfield>
+    <subfield code="c">Alberto Montalvão.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Novo Brasil Editora, </subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Biblioteca do dirigente moderno, </subfield>
+    <subfield code="v">v. 5</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Comércio</subfield>
+    <subfield code="x">História.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia aplicada.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17373</subfield>
+    <subfield code="d">17373</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_200000000000000</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23584</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.2</subfield>
+    <subfield code="p">79-1741</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00681nam a2200241   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010709</controlfield>
+  <controlfield tag="005">20161123142929.0</controlfield>
+  <controlfield tag="008">880129s1967    bl            000 0 por d</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="z">902811630</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">USP/SIBI</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="044" ind1=" " ind2=" ">
+    <subfield code="a">bl</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.2</subfield>
+    <subfield code="b">R362s</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Reilly, Willam John</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Sucesso nas relações humanas : </subfield>
+    <subfield code="b">princípios e práticas nos negócios, no lar e no governo / </subfield>
+    <subfield code="c">Willam J. Reilly.</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="a">4. ed.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Rio de Janeiro : </subfield>
+    <subfield code="b">Fundo de Cultura, </subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">221 p. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">PSICOLOGIA  APLICADA.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Relações interpessoais.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17419</subfield>
+    <subfield code="d">17419</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_200000000000000_R362S</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23631</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.2 R362s</subfield>
+    <subfield code="p">84-0257</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00735nam a2200265   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010655</controlfield>
+  <controlfield tag="005">20161123142923.0</controlfield>
+  <controlfield tag="008">960612s1975    bl            000 0 por d</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="z">906763915</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">USP/SIBI</subfield>
+  </datafield>
+  <datafield tag="041" ind1="0" ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="044" ind1=" " ind2=" ">
+    <subfield code="a">bl</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">158.7</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">158.7</subfield>
+    <subfield code="b">T565p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Tiffin, Joseph</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Psicologia industrial / </subfield>
+    <subfield code="c">Joseph Tiffin, Ernest J. McCormick.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Sao Paulo : </subfield>
+    <subfield code="b">Epu/edusp, </subfield>
+    <subfield code="c">1975.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 v. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Ciências do comportamento.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Contém bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">ADMINISTRAÇÃO DE RECURSOS HUMANOS.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Psicologia industrial.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Maccormick, Ernest James.</subfield>
+    <subfield code="4">colab</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17365</subfield>
+    <subfield code="d">17365</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_700000000000000_T565P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23573</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.7 T565p</subfield>
+    <subfield code="p">76-0232</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">158_700000000000000_T565P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23574</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">158.7 T565p</subfield>
+    <subfield code="p">76-0235</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00522nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-002492</controlfield>
+  <controlfield tag="008">030701n               f      000 0 eng  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">160</subfield>
+    <subfield code="b">K99p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Kyburg, Henry Ely, </subfield>
+    <subfield code="d">1928-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Probability and the logic of rational belief / </subfield>
+    <subfield code="c">by Henry E. Kyburg, Jr.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Middletown, Connecticut : </subfield>
+    <subfield code="b">Wesleyan University Press, </subfield>
+    <subfield code="c">c1961.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">viii, 346 p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Lógica simbólica e matemática.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Probabilidades.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">9312</subfield>
+    <subfield code="d">9312</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">160_000000000000000_K99P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">12100</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">160 K99p</subfield>
+    <subfield code="p">78-0102</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00862nam a2200277   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010648</controlfield>
+  <controlfield tag="005">20161123142922.0</controlfield>
+  <controlfield tag="008">140616s2014    bl            000 0 por d</controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">160 </subfield>
+    <subfield code="b">M425l</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mates, Benson</subfield>
+  </datafield>
+  <datafield tag="242" ind1="1" ind2="0">
+    <subfield code="a">Elementary logic</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Lógica elementar / </subfield>
+    <subfield code="c">Benson Mates ; traduzido por Leônidas H. B. Hegenberg, Octanny Silveira da Mota</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Nacional, </subfield>
+    <subfield code="c">1968.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">xv, 298 p. : </subfield>
+    <subfield code="c">21 cm</subfield>
+    <subfield code="b">il. ;</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2=" ">
+    <subfield code="a">Biblioteca Universitária. Série 1. Filosofia</subfield>
+    <subfield code="v">v. 11</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Título Original: Elementary logic</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Lógica formal.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Linguagem  natural.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Lógica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="7">
+    <subfield code="a">Lógica matemática.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Hegenberg, Leônidas H. B.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Mota, Octanny Silveira da</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17358</subfield>
+    <subfield code="d">17358</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">160_000000000000000_M425L</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23564</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">160 M425l</subfield>
+    <subfield code="p">77-0144</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00673nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010654</controlfield>
+  <controlfield tag="005">20161123142923.0</controlfield>
+  <controlfield tag="008">140620s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">160</subfield>
+    <subfield code="b">S628e</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Skirms, Brian</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Escolha e acaso: </subfield>
+    <subfield code="b">uma introdução à lógica indutiva / </subfield>
+    <subfield code="c">Brian Skirms; trad. Leonidas Hegenberg, Octanny Silveira da Mota.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Cultrix, </subfield>
+    <subfield code="c">c1966.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">227p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Probabilidade</subfield>
+    <subfield code="x">Indução.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Paradoxo de Goodman.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Lógica indutiva.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Hegenberg, Leonidas.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Mota, Octanny Silveira da</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17364</subfield>
+    <subfield code="d">17364</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">160_000000000000000_S628E</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23572</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">160 S628e</subfield>
+    <subfield code="p">76-0504</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00610nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010656</controlfield>
+  <controlfield tag="005">20161123142923.0</controlfield>
+  <controlfield tag="008">140620s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">160</subfield>
+    <subfield code="b">V714e</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Villalobos, João Eduardo R.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Lógica e existência: </subfield>
+    <subfield code="b">um ensaio de filosofia da educação / </subfield>
+    <subfield code="c">João Eduardo R. Villalobos. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Grijaldo, </subfield>
+    <subfield code="c">1971.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">171p. </subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Bibliografia: p.167 -169.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Extensão</subfield>
+    <subfield code="x">Compreensão.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Existência. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Certezas Apodíticas.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17366</subfield>
+    <subfield code="d">17366</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">160_000000000000000_V714E</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23575</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">160 V714e</subfield>
+    <subfield code="p">76-0984</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00646nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010407</controlfield>
+  <controlfield tag="005">20161123142856.0</controlfield>
+  <controlfield tag="008">140414s2014    bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">160</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">160</subfield>
+    <subfield code="b">W331t</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Wittgenstein, Ludwig.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Tractatus logico-philosophicus / </subfield>
+    <subfield code="c">Ludwig Wittgenstein ; Tradução de José Arthur Giannotti.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">Editora Nacional, </subfield>
+    <subfield code="c">1968.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">152p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Biblioteca Universitária ;   </subfield>
+    <subfield code="v">Série 1. Filosofia, v. 10</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Gottlob Frege.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Giannotti, José Arthur.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17117</subfield>
+    <subfield code="d">17117</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">160_000000000000000_W331T</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23261</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">160 W331t</subfield>
+    <subfield code="p">76-0912</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00493nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010657</controlfield>
+  <controlfield tag="005">20161123142923.0</controlfield>
+  <controlfield tag="008">140620s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">164</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">164</subfield>
+    <subfield code="b">H463l</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Hegenberg, Leônidas</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Lógica: </subfield>
+    <subfield code="b">simbolização e dedução / </subfield>
+    <subfield code="c">Leônidas Hegenberg.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">EPU, </subfield>
+    <subfield code="c">1975.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">219p. : </subfield>
+    <subfield code="b">il.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Lógica simbólica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Lógica matemática.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17367</subfield>
+    <subfield code="d">17367</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">164_000000000000000_H463L</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23576</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">164 H463l</subfield>
+    <subfield code="p">76-0564</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00679nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010669</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s1998    bl     f     0000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">85-12-48030-0</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">174.2</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">174.2</subfield>
+    <subfield code="b">F738e</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Fortes, Paulo Antonio de Carvalho</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Ética e saúde : </subfield>
+    <subfield code="b">questões éticas, deontológicas e legais, autonomia e direitos do paciente, estudos de casos / </subfield>
+    <subfield code="c">Paulo Antonio de Carvalho Fortes.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo : </subfield>
+    <subfield code="b">EPU, </subfield>
+    <subfield code="c">1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">119 p. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ética profisional.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ética</subfield>
+    <subfield code="x">Saúde.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ética médica.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Bioética.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17379</subfield>
+    <subfield code="d">17379</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_200000000000000_F738E</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23590</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.2 F738e</subfield>
+    <subfield code="p">98-0281</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00821nam a2200241   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-001710</controlfield>
+  <controlfield tag="008">030701s2002    bl     f      000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8523006729</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">174.28</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">174.28</subfield>
+    <subfield code="b">S368p</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Scholze, Simone Henriqueta Cossetin</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Patentes, transgênicos e clonagem : </subfield>
+    <subfield code="b">implicações jurídicas e bioéticas / </subfield>
+    <subfield code="c">Simone Henriqueta Cossetin Scholze.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília, DF : </subfield>
+    <subfield code="b">Ed. UnB, </subfield>
+    <subfield code="c">2002.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">304 p.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Originalmente apresentada como tese do autor (mestrado).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Bioética.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Biotecnologia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Clonagem (Biologia).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Engenharia genetica</subfield>
+    <subfield code="z">Brasil</subfield>
+    <subfield code="x">Legislação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Organismos geneticamente modificados</subfield>
+    <subfield code="z">Brasil</subfield>
+    <subfield code="x">Legislação.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Patentes.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">8531</subfield>
+    <subfield code="d">8531</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_280000000000000_S368P</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">11060</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.28 S368p</subfield>
+    <subfield code="p">02-1759</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00681nam a2200229   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-008218</controlfield>
+  <controlfield tag="005">20161123142335.0</controlfield>
+  <controlfield tag="008">051021s1990    bl            001 0 por  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">83007687 </subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8530801288</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">174.3</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">174.3</subfield>
+    <subfield code="b">L991r</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Lyons, David, </subfield>
+    <subfield code="d">1935-</subfield>
+  </datafield>
+  <datafield tag="240" ind1="1" ind2="0">
+    <subfield code="a">Ethics and the rule of law</subfield>
+    <subfield code="l">Português</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="3">
+    <subfield code="a">As regras morais e a ética / </subfield>
+    <subfield code="c">David Lyons ; tradução, Luís Alberto Peluso.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Campinas, SP : </subfield>
+    <subfield code="b">Papirus, </subfield>
+    <subfield code="c">[1990].</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">218 p.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Tradução de: Ethics and the rule of law.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Direito e ética.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">14984</subfield>
+    <subfield code="d">14984</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_300000000000000_L991R</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">20297</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.3 L991r</subfield>
+    <subfield code="p">97-0863</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00560nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010683</controlfield>
+  <controlfield tag="005">20161123142926.0</controlfield>
+  <controlfield tag="008">140702s1969    bl     f     0000 0 por  </controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">09-455-890-6</subfield>
+  </datafield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">174.9</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">174.9</subfield>
+    <subfield code="b">R357f</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Reid, R. W.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Tongues of conscience : </subfield>
+    <subfield code="b">war and the scientist's dilemma / </subfield>
+    <subfield code="c">R. W. Reid.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Londres : </subfield>
+    <subfield code="b">Constable, </subfield>
+    <subfield code="c">1969.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">351 p.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Contém índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia da ciência.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ética científica.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17393</subfield>
+    <subfield code="d">17393</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_900000000000000_R357F</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23605</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.9 R357f</subfield>
+    <subfield code="p">76-3535</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00664nam a2200217   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-008489</controlfield>
+  <controlfield tag="005">20161123142417.0</controlfield>
+  <controlfield tag="008">060728s2006    bl           0000 0 por u</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8533410786 (v. 1)</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">8533410719 (v. 2)</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">174.90901</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">174.90901</subfield>
+    <subfield code="b">C236</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Capacitação para comitês de ética em pesquisa.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília, DF : </subfield>
+    <subfield code="b">Ministério da saúde, </subfield>
+    <subfield code="c">2006.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">2 v. ; </subfield>
+    <subfield code="c">28 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Série F. Comunicação e educação em saúde.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Pesquisa</subfield>
+    <subfield code="x">Aspectos morais e éticos</subfield>
+    <subfield code="z">Brasil.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Ética</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+    <subfield code="a">Ministério da Saúde</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">15251</subfield>
+    <subfield code="d">15251</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_909010000000000_C236</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">20756</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.90901 C236</subfield>
+    <subfield code="p">06-0450 | Doação de </subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">174_909010000000000_C236</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">20757</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">174.90901 C236</subfield>
+    <subfield code="p">06-0451 | Doação de </subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00705nam a2200229   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010673</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">177</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">177</subfield>
+    <subfield code="b">M585e</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Messner, Johannes</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Ética social:  </subfield>
+    <subfield code="b">o direito natural no mundo moderno / </subfield>
+    <subfield code="c">Johannes Messner ; trad. Alípio Maia de Castro.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Quadrante, </subfield>
+    <subfield code="c">[s.d.].</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">517p.  </subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Contém 3  volumes.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Bibliografia: p. 501 -514.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Natureza do homem.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Conceito</subfield>
+    <subfield code="x">Direito natural.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Castro, Alípio Maia de Castro, trad.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17383</subfield>
+    <subfield code="d">17383</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">177_000000000000000_M585E</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23594</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">0000-00-00</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">177 M585e</subfield>
+    <subfield code="p">76-1122</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>01267nam a2200337   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-004888</controlfield>
+  <controlfield tag="005">20161123102747.0</controlfield>
+  <controlfield tag="008">040429s1993    enk          y100 0 eng  </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">94201594 </subfield>
+  </datafield>
+  <datafield tag="015" ind1=" " ind2=" ">
+    <subfield code="a">GB94-12809</subfield>
+  </datafield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">1874267103</subfield>
+  </datafield>
+  <datafield tag="042" ind1=" " ind2=" ">
+    <subfield code="a">lccopycat</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">179.1</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">179.1</subfield>
+    <subfield code="b">E84</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Ethics, religion and, biodiversity : </subfield>
+    <subfield code="b">relations between conservation and cultural values / </subfield>
+    <subfield code="c">edited by Lawrence S. Hamilton with the assistance of Helen F. Takeuchi.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Cambridge, UK : </subfield>
+    <subfield code="b">White Horse Press, </subfield>
+    <subfield code="c">1993.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">x, 218 p. : </subfield>
+    <subfield code="b">il., mapas.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"Papers... presented at a symposium in the XVII Pacific Science Congress held in Honolulu, Hawai'i, from May 27 to June 2, 1991."</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Biodiversidade</subfield>
+    <subfield code="x">Aspectos morais e religiosos</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ecologia</subfield>
+    <subfield code="x">Aspectos morais e religiosos</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ética ambiental</subfield>
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Recursos naturais</subfield>
+    <subfield code="x">Conservação</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="x">Aspectos morais e religiosos</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="x">Congressos.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Hamilton, Lawrence S.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Takeuchi, Helen F.</subfield>
+  </datafield>
+  <datafield tag="711" ind1="2" ind2=" ">
+    <subfield code="a">Pacific Science Congress </subfield>
+    <subfield code="n">(17. : </subfield>
+    <subfield code="d">1991 : </subfield>
+    <subfield code="c">Honolulu, Hawaii)</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">11703</subfield>
+    <subfield code="d">11703</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">179_100000000000000_E84</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">15431</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">179.1 E84</subfield>
+    <subfield code="p">95-1073</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00835nam a2200265   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010701</controlfield>
+  <controlfield tag="003">Br</controlfield>
+  <controlfield tag="005">20161123142928.0</controlfield>
+  <controlfield tag="008">910131s19900000brj           000 0 por u</controlfield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">182</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">180</subfield>
+    <subfield code="b">V529m</subfield>
+  </datafield>
+  <datafield tag="092" ind1=" " ind2=" ">
+    <subfield code="a">III-344,8,12</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Vernant, Jean Pierre,</subfield>
+  </datafield>
+  <datafield tag="240" ind1="0" ind2="0">
+    <subfield code="a">Mythe et pensée chez les grecs.</subfield>
+    <subfield code="l">Português</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mito e pensamento entre os gregos: </subfield>
+    <subfield code="b">estudos de psicologia histórica / </subfield>
+    <subfield code="c">Jean-Pierre Vernant ; tradução de Haiganuch Sarian.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Universidade de São Paulo, </subfield>
+    <subfield code="c">1973.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">322p.</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Tradução de: Mythe et pensée chez les grecs.</subfield>
+  </datafield>
+  <datafield tag="595" ind1=" " ind2=" ">
+    <subfield code="a">BNB</subfield>
+    <subfield code="c">90/04</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Filosofia antiga</subfield>
+    <subfield code="z">Grega.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Mitologia grega.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Sarian, Haiganuch.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="a">Obras Gerais</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17411</subfield>
+    <subfield code="d">17411</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">189_000000000000000_V529M</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23623</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">189 V529m</subfield>
+    <subfield code="p">76-0563</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00646nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010682</controlfield>
+  <controlfield tag="005">20161123142926.0</controlfield>
+  <controlfield tag="008">140702s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">182</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">182 </subfield>
+    <subfield code="b">S725r</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Sousa, Eudoro de</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Horizonte e complementariedade : </subfield>
+    <subfield code="b">ensaio sobre a relação entre mito e metafísica, nos primeiros filósofos gregos / </subfield>
+    <subfield code="c">Eudoro de Sousa.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Brasília: </subfield>
+    <subfield code="b">Universidade de Brasília, </subfield>
+    <subfield code="c">1975.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">145p. </subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Universidade, </subfield>
+    <subfield code="v">6.</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Inclui bibliografia.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia antiga.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Mitologia grega.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17392</subfield>
+    <subfield code="d">17392</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">182_000000000000000_S725R</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23604</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">182 S725r</subfield>
+    <subfield code="p">76-2207</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00502nam a2200169   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010686</controlfield>
+  <controlfield tag="005">20161123142926.0</controlfield>
+  <controlfield tag="008">140702s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">189</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">189</subfield>
+    <subfield code="b">N972g</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Nunes, Ruy Afonso da Costa</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Gênese, significado e ensino da filosofia no século XII / </subfield>
+    <subfield code="c">Ruy Afonso da Costa Nunes</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Universidade de São Paulo,  </subfield>
+    <subfield code="c">1974.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">377p. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia mental.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17396</subfield>
+    <subfield code="d">17396</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">189_000000000000000_N972G</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23608</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">189 N972g</subfield>
+    <subfield code="p">76-0570</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00619nam a2200205   4500</leader>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20161129162846.0</controlfield>
+  <controlfield tag="008">140702s        bl     f     0000 0      </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">190</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">190 </subfield>
+    <subfield code="b">B664f </subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Bochenski, I. M.  </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A filosofia contemporânea ocidental / </subfield>
+    <subfield code="c">I. M. Bochenski; tradução de Antônio Pinto de Carvalho. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Pedagógica e Universitária, </subfield>
+    <subfield code="c">1975. </subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">300p. </subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia. </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosófos modernos. </subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Carvalho, Antônio pinto de.  </subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17391</subfield>
+    <subfield code="d">17391</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">190_000000000000000_B664F</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="9">24256</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-29</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">190  B664f</subfield>
+    <subfield code="p">76-0565</subfield>
+    <subfield code="r">2016-11-29</subfield>
+    <subfield code="w">2016-11-29</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00706nam a2200241   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010675</controlfield>
+  <controlfield tag="005">20161123142925.0</controlfield>
+  <controlfield tag="008">140701s        bl     f     0000 0      </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">192</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">192</subfield>
+    <subfield code="b">A976i</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Ayer,  A. J. </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">As idéias de Bertrand Russell / </subfield>
+    <subfield code="c">Ayer A.J.; trad. Leonidas hegenberg, Octanny Silveira da Mota. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">São Paulo: </subfield>
+    <subfield code="b">Cultrix, </subfield>
+    <subfield code="c">1974. </subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">151p. </subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Bibliografia: p. 149-151.</subfield>
+  </datafield>
+  <datafield tag="505" ind1=" " ind2="0">
+    <subfield code="a">Inclui índice.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Obras de Russel.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Teoria do conhecimento.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia moral.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Hegenberg, Leonidas.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Mota, Octanny Silveira da</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17385</subfield>
+    <subfield code="d">17385</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">192_000000000000000_A976I</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23596</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">192  A976i </subfield>
+    <subfield code="p">76-0849</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00659nam a2200217 a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">31004</subfield>
+    <subfield code="d">31004</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20190603163439.0</controlfield>
+  <controlfield tag="008">101104s2005    spb     r     000 0 por d</controlfield>
+  <datafield tag="020" ind1=" " ind2=" ">
+    <subfield code="a">9788576980452</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">BIBLIODATA</subfield>
+    <subfield code="b">por</subfield>
+  </datafield>
+  <datafield tag="082" ind1="0" ind2="4">
+    <subfield code="a">194</subfield>
+    <subfield code="2">19</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">194</subfield>
+    <subfield code="b">B119b</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">Bachelard: raison et imagination = Bachelard: razão e imaginação /</subfield>
+    <subfield code="c">Marly Bulcão.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Feira de Santana :</subfield>
+    <subfield code="b">Universidade Estadual de Feira de Santana,</subfield>
+    <subfield code="c">2005.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">383 p.</subfield>
+  </datafield>
+  <datafield tag="600" ind1="1" ind2="4">
+    <subfield code="a">Bachelard, Gaston,</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Filosofia francesa.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Racionalismo.</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="9">6380</subfield>
+    <subfield code="a">Bulcão, Marly </subfield>
+    <subfield code="e">Organizadora</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="2">ddc</subfield>
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">194_000000000000000_B119</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">39674</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2019-05-31</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">194 B119</subfield>
+    <subfield code="p">2019-0178</subfield>
+    <subfield code="r">2019-05-31</subfield>
+    <subfield code="w">2019-05-31</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+</collection>

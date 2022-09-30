@@ -1,0 +1,2231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+  xmlns="http://www.loc.gov/MARC21/slim">
+
+<record>
+  <leader>00743nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013907</controlfield>
+  <controlfield tag="005">20161201090520.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Renner, Michael,</subfield>
+    <subfield code="d">1957-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Critical juncture :</subfield>
+    <subfield code="b">the future of peacekeeping /</subfield>
+    <subfield code="c">Michael Renner ; Ann Misch, research assistant ; Ed Ayres, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1993.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">74 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">114</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"May 1993."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 62-74).</subfield>
+  </datafield>
+  <datafield tag="610" ind1="2" ind2="0">
+    <subfield code="a">United Nations</subfield>
+    <subfield code="x">Armed Forces.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Segurança internacional</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18056</subfield>
+    <subfield code="d">18056</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24343</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.755</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00948nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013911</controlfield>
+  <controlfield tag="005">20161201090520.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Young, John E.</subfield>
+    <subfield code="q">(John Edward),</subfield>
+    <subfield code="d">1963-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Global network :</subfield>
+    <subfield code="b">computers in a sustainable society /</subfield>
+    <subfield code="c">John E. Young.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1993.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">57 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">115</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"September 1993."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 51-57).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">A new technology, a new industry -- Monitoring and modeling: the economy and the biosphere -- Networking for sustainable development -- Computers and developing countries -- The toxic price of the microchip -- The environmental consequences of computerization -- Computers and global thinking.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Computadores</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18057</subfield>
+    <subfield code="d">18057</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24344</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.816</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00676nam a2200205 a 4500</leader>
+  <controlfield tag="001">0013913</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Durning, Alan Thein.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Saving the forests :</subfield>
+    <subfield code="b">what will it take? /</subfield>
+    <subfield code="c">Alan Thein Durning ; Nancy Chege, staff researcher ; Carole Douglis, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1993.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">51 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">117</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"December 1993."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 47-51).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Florestas.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18052</subfield>
+    <subfield code="d">18052</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24339</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015 818</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00816nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013914</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Lowe, Marcia D.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Back on track :</subfield>
+    <subfield code="b">the global rail revival /</subfield>
+    <subfield code="c">Marcia D. Lowe ; Carole Douglis, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1994.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">54 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">118</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"April 1994."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 46-54).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Ten advantages of rail -- A transport turnaround -- Reinventing the rails -- Cars or trains: a closer look at costs -- Keeping the revival on track.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Estradas de Ferro</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18049</subfield>
+    <subfield code="d">18049</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24336</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.819</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00930nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013915</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Flavin, Christopher.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Powering the future :</subfield>
+    <subfield code="b">blueprint for a sustainable electricity industry /</subfield>
+    <subfield code="c">Christopher Flavin and Nicholas Lenssen.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1994.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">74 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">119</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"June 1994."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 62-74).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">End of the line -- Rise of the independents -- Earth, wind, and fire -- The demand-side revolution -- Decentralizing the power system -- The mirage of retail wheeling -- Blueprint for electricity's future.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Eletricidade</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Lenssen, Nicholas K.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18050</subfield>
+    <subfield code="d">18050</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24337</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.820</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00868nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013916</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Weber, Peter,</subfield>
+    <subfield code="d">1963-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Net loss :</subfield>
+    <subfield code="b">fish, jobs, and the marine environment /</subfield>
+    <subfield code="c">Peter Weber ; Anne Platt, staff researcher ; Carole Douglis, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1994.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">76 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">120</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"July 1994."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 63-76).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Limits of the sea -- Lost bounty -- Who will go fishing? -- Fruits of the sea: food and fairness -- Fencing the oceans -- Fishing within th e limits.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Recursos marinhos.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18055</subfield>
+    <subfield code="d">18055</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24342</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.821</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00660nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013918</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Denniston, Derek.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">High priorities :</subfield>
+    <subfield code="b">conserving mountain ecosystems and cultures /</subfield>
+    <subfield code="c">Derek Denniston.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1995.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">80 p. :</subfield>
+    <subfield code="b">ill., maps ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">123</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"February 1995."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 66-80).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Montanha.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18053</subfield>
+    <subfield code="d">18053</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24340</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.825</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00800nam a2200241 a 4500</leader>
+  <controlfield tag="001">0013919</controlfield>
+  <controlfield tag="005">20161201090519.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Roodman, David Malin.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="2">
+    <subfield code="a">A building revolution :</subfield>
+    <subfield code="b">how ecology and health concerns are transforming construction /</subfield>
+    <subfield code="c">David Malin Roodman and Nicholas Lenssen ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1995.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">67 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">124</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"March 1995."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 56-67)</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Prédios</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Lenssen, Nicholas K.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Peterson, Jane A.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18054</subfield>
+    <subfield code="d">18054</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24341</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.826</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00678nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013921</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Kane, Hal.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="4">
+    <subfield code="a">The hour of departure :</subfield>
+    <subfield code="b">forces that create refugees and migrants /</subfield>
+    <subfield code="c">Hal Kane ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1995.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">56 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">125</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"June 1995."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 50-56).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Emigração.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Imigração.</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18065</subfield>
+    <subfield code="d">18065</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24352</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.834</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00711nam a2200205 a 4500</leader>
+  <controlfield tag="001">0013924</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Abramovitz, Janet N.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Imperiled waters, impoverished future :</subfield>
+    <subfield code="b">the decline of freshwater ecosystems /</subfield>
+    <subfield code="c">Janet N. Abramovitz ; Anjali Acharaya, staff researcher ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1996.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">80 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">128</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Ecologia de água doce.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18067</subfield>
+    <subfield code="d">18067</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24354</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.844</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00886nam a2200205 a 4500</leader>
+  <controlfield tag="001">0013925</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Roodman, David Malin.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Getting the signals right :</subfield>
+    <subfield code="b">tax reform to protect the environment and the economy /</subfield>
+    <subfield code="c">David Malin Roodman ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">66 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">134</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 55-66).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">"Making the polluter pay" -- Environmental taxes, today and tomorrow -- When to tax, when to regulate -- Dealing a fair hand -- Tax reform for a sustainable society -- Tax cuts -- The political challenge.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Impacto ambiental</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18066</subfield>
+    <subfield code="d">18066</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24353</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.845</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00887nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013926</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Gardner, Gary T.,</subfield>
+    <subfield code="d">1958-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Recycling organic waste :</subfield>
+    <subfield code="b">from urban pollutant to farm resource /</subfield>
+    <subfield code="c">Gary Gardner ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">59 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">135</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"August 1997."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 51-59).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">The cost of breaking the loop. -- Organic material flows. -- Composting urban wastes. -- The potential and peril of human waste. -- Sustainability and scale. -- Returning to our organic roots.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Reclicagem</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18069</subfield>
+    <subfield code="d">18069</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24356</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.846</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00965nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013927</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Renner, Michael,</subfield>
+    <subfield code="d">1957-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Small arms, big impact :</subfield>
+    <subfield code="b">the next challenge of disarmament /</subfield>
+    <subfield code="c">Michael Renner ; Daniel Schwartz, research intern ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">77 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">137</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"October 1997."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 63-77).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Wars and privatized violence -- As easy as buying fish in the market -- Lethal harvests -- Feeding the habit -- The challenge of shrinking armies -- Taking weapons out of circulation -- Adopting the "orphans" of arms control.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Desarmamento.</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18068</subfield>
+    <subfield code="d">18068</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24355</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.847</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00678nam a2200205 a 4500</leader>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18059</subfield>
+    <subfield code="d">18059</subfield>
+  </datafield>
+  <controlfield tag="003">BR-MnINPA</controlfield>
+  <controlfield tag="005">20190904094648.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">19</subfield>
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Flavin, Christopher.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Rising sun, gathering winds :</subfield>
+    <subfield code="b">policies to stabilize the climate and strengthen economies /</subfield>
+    <subfield code="c">Christopher Flavin and Seth Dunn; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1997.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">84 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">138</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"November 1997."</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Mudanças climáticas.</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Dunn, Seth.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24346</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.848</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00872nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013929</controlfield>
+  <controlfield tag="005">20161201090520.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">French, Hilary F.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Investing in the future :</subfield>
+    <subfield code="b">harnessing private capital flows for environmentally sustainable development /</subfield>
+    <subfield code="c">Hilary F. French.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">68 p. :</subfield>
+    <subfield code="b">ill., map ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">139</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"February 1998."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 53-68).</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">Following the money -- Natural wealth--to squander or husband? -- The global factory -- The infrastructure boom -- The power of the purse -- Governance for a global economy.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Economia</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18058</subfield>
+    <subfield code="d">18058</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24345</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.849</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00930nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013930</controlfield>
+  <controlfield tag="005">20161201090520.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Abramovitz, Janet N.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Taking a stand :</subfield>
+    <subfield code="b">cultivating a new relationship with the world's forests /</subfield>
+    <subfield code="c">Janet N. Abramovitz ; Ashley T. Mattoon, staff researcher ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">84 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">140</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"April 1998."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="505" ind1="0" ind2=" ">
+    <subfield code="a">What forests do -- Assessing forest area and quality -- Rising pressures on forests -- What governments do -- Sustainable forest management -- Cultivating a new relationship.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Conservação florestal</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18061</subfield>
+    <subfield code="d">18061</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24348</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.850</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00713nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013931</controlfield>
+  <controlfield tag="005">20161201090520.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Tuxill, John D.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Losing strands in the web of life :</subfield>
+    <subfield code="b">vertebrate declines and the conservation of biological diversity /</subfield>
+    <subfield code="c">John Tuxill ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">88 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">141</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"May 1998."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 74-88).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Proteção ambiental.</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18060</subfield>
+    <subfield code="d">18060</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24347</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.851</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00708nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013932</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">McGinn, Anne Platt.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Rocking the boat :</subfield>
+    <subfield code="b">conserving fisheries and protecting jobs /</subfield>
+    <subfield code="c">Anne Platt McGinn ; Sophie Chou, research intern ; Jane A. Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, DC :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">92 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">142</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"June 1998."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 72-92).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Peixes.</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18063</subfield>
+    <subfield code="d">18063</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24350</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.852</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00742nam a2200229 a 4500</leader>
+  <controlfield tag="001">0013934</controlfield>
+  <controlfield tag="005">20161201090521.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Gardner, Gary T.,</subfield>
+    <subfield code="d">1958-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mind over matter :</subfield>
+    <subfield code="b">recasting the role of materials in our lives /</subfield>
+    <subfield code="c">Gary Gardner and Payal Sampat ; Jane Peterson, editor.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">c1998.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">60 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="440" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">144</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">"December 1998."</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references (p. 50-60).</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Sustentabilidade.</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="700" ind1="1" ind2=" ">
+    <subfield code="a">Sampat, Payal.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18064</subfield>
+    <subfield code="d">18064</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24351</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.854</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00618nam a2200217 a 4500</leader>
+  <controlfield tag="001">0013902</controlfield>
+  <controlfield tag="005">20161201090518.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Eckholm, Erik P.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Disappearing species :</subfield>
+    <subfield code="b">the social challenge /</subfield>
+    <subfield code="c">Erik Eckholm.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1978.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">38 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">22</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Proteção das espécies</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Extinção</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18039</subfield>
+    <subfield code="d">18039</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24401</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.730</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00635cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013903</controlfield>
+  <controlfield tag="005">20161201090518.0</controlfield>
+  <controlfield tag="008">150119s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Brown, Lester R.</subfield>
+    <subfield code="q">(Lester Russell),</subfield>
+    <subfield code="d">1934-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Resource trends and population policy :</subfield>
+    <subfield code="b">a time for reassessment /</subfield>
+    <subfield code="c">Lester R. Brown.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington :</subfield>
+    <subfield code="b">Worldwatch Institute],</subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">55 p. :</subfield>
+    <subfield code="b">ill. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;</subfield>
+    <subfield code="v">29</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Demográfia</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18038</subfield>
+    <subfield code="d">18038</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24412</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.731</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00665cam a2200229 a 4500</leader>
+  <controlfield tag="001">0013823</controlfield>
+  <controlfield tag="005">20161201090518.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Newland, Kathleen.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">International migration :</subfield>
+    <subfield code="b">the search for work /</subfield>
+    <subfield code="c">Kathleen Newland.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C.] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1979.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">31 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2="0">
+    <subfield code="a">Worldwatch paper ;v33</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Trabalhadores estrangeiros.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Imigração.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Emigração.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">18043</subfield>
+    <subfield code="d">18043</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24413</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.589</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00603cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013824</controlfield>
+  <controlfield tag="005">20161201090514.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Fuller, Robert.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Inflation, the rising cost of living on a small planet /</subfield>
+    <subfield code="c">Robert Fuller.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C.] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">48 p. :</subfield>
+    <subfield code="b">graphs ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;v 34</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Inflação</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17988</subfield>
+    <subfield code="d">17988</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24414</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.590</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00618cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013825</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Flavin, Christopher.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="4">
+    <subfield code="a">The future of synthetic materials, the petroleum connection /</subfield>
+    <subfield code="c">Christopher Flavin.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C.] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">55 p. :</subfield>
+    <subfield code="b">graphs ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="440" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ; v 36</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Petróleo</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17987</subfield>
+    <subfield code="d">17987</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24415</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.591</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00604cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013826</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Newland, Kathleen.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">City limits :</subfield>
+    <subfield code="b">emerging constraints on urban growth /</subfield>
+    <subfield code="c">Kathleen Newland.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C.] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">31 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="440" ind1=" " ind2="4">
+    <subfield code="a">The Worldwatch paper ;</subfield>
+    <subfield code="v">38</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Urbanização.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17986</subfield>
+    <subfield code="d">17986</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24416</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.592</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00624cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013827</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Norman, Colin,</subfield>
+    <subfield code="d">1946-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Microelectronics at work :</subfield>
+    <subfield code="b">productivity and jobs in the world economy /</subfield>
+    <subfield code="c">Colin Norman.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C.] :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">63 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;  v 39</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Microeletrônicos.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17985</subfield>
+    <subfield code="d">17985</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24417</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.593</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00627cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013828</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Flavin, Christopher.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Energy and architecture :</subfield>
+    <subfield code="b">the solar and conservation potential /</subfield>
+    <subfield code="c">Christopher Flavin.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">[Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute],</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">63 p. :</subfield>
+    <subfield code="b">graphs ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;  v 40</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Energia solar</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17984</subfield>
+    <subfield code="d">17984</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24418</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.594</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00571cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013829</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Stokes, Bruce.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Men and family planning /</subfield>
+    <subfield code="c">Bruce Stokes.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1980.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">48 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ;  v 41</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Planejamento familiar</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17983</subfield>
+    <subfield code="d">17983</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24419</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.595</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00585cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013830</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Smith, Nigel J. H.,</subfield>
+    <subfield code="d">1949-</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Wood, an ancient fuel with a new future /</subfield>
+    <subfield code="c">Nigel Smith.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1981.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">48 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2="0">
+    <subfield code="a">Worldwatch paper ;  v 42</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Madeira.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17982</subfield>
+    <subfield code="d">17982</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24420</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="h">ex. 2</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.597</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24421</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="h">ex. 1</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.596</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+<record>
+  <leader>00603cam a2200205 a 4500</leader>
+  <controlfield tag="001">0013831</controlfield>
+  <controlfield tag="005">20161201090513.0</controlfield>
+  <controlfield tag="008">150115s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1="0" ind2="0">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">W927</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Newland, Kathleen.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Refugees :</subfield>
+    <subfield code="b">the new international politics of displacement /</subfield>
+    <subfield code="c">Kathleen Newland.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Washington, D.C. :</subfield>
+    <subfield code="b">Worldwatch Institute,</subfield>
+    <subfield code="c">1981.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">35 p. ;</subfield>
+    <subfield code="c">22 cm.</subfield>
+  </datafield>
+  <datafield tag="490" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper ; v 43</subfield>
+  </datafield>
+  <datafield tag="504" ind1=" " ind2=" ">
+    <subfield code="a">Includes bibliographical references.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="0">
+    <subfield code="a">Refugiados.</subfield>
+  </datafield>
+  <datafield tag="830" ind1=" " ind2="0">
+    <subfield code="a">Worldwatch paper</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17981</subfield>
+    <subfield code="d">17981</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_W927</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24422</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-12-01</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 W927</subfield>
+    <subfield code="p">2015.598</subfield>
+    <subfield code="r">2016-12-01</subfield>
+    <subfield code="w">2016-12-01</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+
+</collection>
