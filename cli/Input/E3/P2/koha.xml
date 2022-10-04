@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--291-->
 <record>
   <leader>00567nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010353</controlfield>
@@ -30,7 +30,7 @@
   <datafield tag="260" ind1=" " ind2=" ">
     <subfield code="a">Brasília : </subfield>
     <subfield code="b">Assessoria de Comunicaçaõ social, </subfield>
-    <subfield code="c"> 1995.</subfield>
+    <subfield code="c">1995</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
     <subfield code="a">1 volume.</subfield>
@@ -64,7 +64,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--292-->
 <record>
   <leader>00817nam a2200253 i 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -156,7 +156,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--293-->
 <record>
   <leader>00515nam a22001691a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -217,7 +217,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--294-->
 <record>
   <leader>01365cas a2200361 a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -270,6 +270,7 @@
   <datafield tag="260" ind1=" " ind2=" ">
     <subfield code="a">São Paulo, SP :</subfield>
     <subfield code="b">Amigos da Terra Amazônia Brasileira.</subfield>
+    <subfield code="c">Sem Data</subfield>
   </datafield>
   <datafield tag="300" ind1=" " ind2=" ">
     <subfield code="b">illustrations ;</subfield>
@@ -355,7 +356,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--295-->
 <record>
   <leader>00635nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010235</controlfield>
@@ -424,7 +425,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--296-->
 <record>
   <leader>00623nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008477</controlfield>
@@ -490,7 +491,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--297-->
 <record>
   <leader>00884nam a22002534a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -654,7 +655,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--298-->
 <record>
   <leader>00552nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009340</controlfield>
@@ -718,7 +719,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--299-->
 <record>
   <leader>00705nam a2200205   4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -787,7 +788,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--300-->
 <record>
   <leader>00607nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010233</controlfield>
@@ -855,7 +856,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--301-->
 <record>
   <leader>00598nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010234</controlfield>
@@ -922,7 +923,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--302-->
 <record>
   <leader>00631nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010231</controlfield>
@@ -992,7 +993,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--303-->
 <record>
   <leader>00582nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010229</controlfield>
@@ -1059,6 +1060,130 @@
   </datafield>
 </record>
 
+<!--304-->
+<record>
+  <leader>00522nam a2200193   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010197</controlfield>
+  <controlfield tag="005">20161123142829.0</controlfield>
+  <controlfield tag="008">140211s2014    bl     f     0000 0 fre  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">101</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">101 </subfield>
+    <subfield code="b">J33l</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Jankélévitch, Vladimir.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">L'ironie / </subfield>
+    <subfield code="c">Vladimir Jankélévitch.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Paris : </subfield>
+    <subfield code="b">Librairie Félix Alcan, </subfield>
+    <subfield code="c">1936.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">146p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Nouvelle encyclopédie philosophique.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">La concience.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">La simulation.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16907</subfield>
+    <subfield code="d">16907</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">101_000000000000000_J33L</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23018</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">101 J33l</subfield>
+    <subfield code="p">78-0550</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--305-->
+<record>
+  <leader>00465nam a2200181   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010195</controlfield>
+  <controlfield tag="005">20161123142829.0</controlfield>
+  <controlfield tag="008">140211s2014    bl     f     0000 0 fre  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">101</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">101</subfield>
+    <subfield code="b">L439i</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Lefebvre, Henri.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Introduction a la modernité / </subfield>
+    <subfield code="c">Henri Lefebvre.</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Paris : </subfield>
+    <subfield code="b">Les éditions de Minuit, </subfield>
+    <subfield code="c">1962.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">373p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="0" ind2=" ">
+    <subfield code="a">Préludes.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">La moderne.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16905</subfield>
+    <subfield code="d">16905</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">101_000000000000000_L439I</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23016</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">101 L439i</subfield>
+    <subfield code="p">81-0950</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--306-->
 <record>
   <leader>00631nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010193</controlfield>
@@ -1135,130 +1260,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00522nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010197</controlfield>
-  <controlfield tag="005">20161123142829.0</controlfield>
-  <controlfield tag="008">140211s2014    bl     f     0000 0 fre  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">101</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">101 </subfield>
-    <subfield code="b">J33l</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Jankélévitch, Vladimir.</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">L'ironie / </subfield>
-    <subfield code="c">Vladimir Jankélévitch.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Paris : </subfield>
-    <subfield code="b">Librairie Félix Alcan, </subfield>
-    <subfield code="c">1936.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">146p.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="0" ind2=" ">
-    <subfield code="a">Nouvelle encyclopédie philosophique.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">La concience.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">La simulation.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16907</subfield>
-    <subfield code="d">16907</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">101_000000000000000_J33L</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23018</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">101 J33l</subfield>
-    <subfield code="p">78-0550</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00465nam a2200181   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010195</controlfield>
-  <controlfield tag="005">20161123142829.0</controlfield>
-  <controlfield tag="008">140211s2014    bl     f     0000 0 fre  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">101</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">101</subfield>
-    <subfield code="b">L439i</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Lefebvre, Henri.</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Introduction a la modernité / </subfield>
-    <subfield code="c">Henri Lefebvre.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Paris : </subfield>
-    <subfield code="b">Les éditions de Minuit, </subfield>
-    <subfield code="c">1962.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">373p.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="0" ind2=" ">
-    <subfield code="a">Préludes.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">La moderne.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16905</subfield>
-    <subfield code="d">16905</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">101_000000000000000_L439I</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23016</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">101 L439i</subfield>
-    <subfield code="p">81-0950</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--307-->
 <record>
   <leader>00673nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010340</controlfield>
@@ -1331,7 +1333,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--308-->
 <record>
   <leader>00776nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-004853</controlfield>
@@ -1407,7 +1409,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--309-->
 <record>
   <leader>00689nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010325</controlfield>
@@ -1481,139 +1483,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00597nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010327</controlfield>
-  <controlfield tag="005">20161123142846.0</controlfield>
-  <controlfield tag="008">140331s2014    bl     f     0000 0 fre  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">110</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">110</subfield>
-    <subfield code="b">B499l</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Bergson, Henri</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">La pensée et le mouvant : </subfield>
-    <subfield code="b">essais et conférences / </subfield>
-    <subfield code="c">Henri Bergson.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Paris : </subfield>
-    <subfield code="b">Universitaires de France, </subfield>
-    <subfield code="c">1969.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">291p. : </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="0" ind2=" ">
-    <subfield code="a">Bibliothèque de philosophie contemporaine</subfield>
-  </datafield>
-  <datafield tag="505" ind1=" " ind2="0">
-    <subfield code="a">Inclui índice.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Intuição.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Angústia metafísica.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17037</subfield>
-    <subfield code="d">17037</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">110_000000000000000_B499L</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23161</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">110 B499l</subfield>
-    <subfield code="p">76-3072</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00536nam a2200193   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010328</controlfield>
-  <controlfield tag="005">20161123142846.0</controlfield>
-  <controlfield tag="008">140331s2014    bl     f     0000 0 fre  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">110</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">110</subfield>
-    <subfield code="b">B499l</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Bergson, Henri</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">L'évolution créatrice / </subfield>
-    <subfield code="c">Henri Bergson</subfield>
-  </datafield>
-  <datafield tag="250" ind1=" " ind2=" ">
-    <subfield code="a">142. ed.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Paris : </subfield>
-    <subfield code="b">Universitaires de France, </subfield>
-    <subfield code="c">1969.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">xi, 372p. : </subfield>
-    <subfield code="b">il.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="0" ind2=" ">
-    <subfield code="a">Bibliothèque de Philosophie contemporaine</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Mecanismo conceitual.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17038</subfield>
-    <subfield code="d">17038</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">110_000000000000000_B499L</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23162</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">110 B499l</subfield>
-    <subfield code="p">76-3073</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--310-->
 <record>
   <leader>00620nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001521</controlfield>
@@ -1683,7 +1553,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--311-->
 <record>
   <leader>00618nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010322</controlfield>
@@ -1754,7 +1624,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--312-->
 <record>
   <leader>00462nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010307</controlfield>
@@ -1816,7 +1686,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--313-->
 <record>
   <leader>00756nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010305</controlfield>
@@ -1888,7 +1758,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--314-->
 <record>
   <leader>00563nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010342</controlfield>
@@ -1954,7 +1824,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--315-->
 <record>
   <leader>00627nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010349</controlfield>
@@ -2022,7 +1892,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--316-->
 <record>
   <leader>00517nam a22001811a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -2088,7 +1958,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--317-->
 <record>
   <leader>00582nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010346</controlfield>
@@ -2156,7 +2026,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--318-->
 <record>
   <leader>00838nam a2200277   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010302</controlfield>
@@ -2241,7 +2111,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--319-->
 <record>
   <leader>00601nam a2200217   4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -2313,7 +2183,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--320-->
 <record>
   <leader>00814nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010595</controlfield>
@@ -2393,7 +2263,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--321-->
 <record>
   <leader>00589nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010676</controlfield>

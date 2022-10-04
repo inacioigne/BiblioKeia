@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--322-->
 <record>
   <leader>00591nam a22002171a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -75,7 +75,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--323-->
 <record>
   <leader>00470nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010192</controlfield>
@@ -136,7 +136,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--324-->
 <record>
   <leader>00658nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010334</controlfield>
@@ -207,7 +207,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--325-->
 <record>
   <leader>00456nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010685</controlfield>
@@ -267,7 +267,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--326-->
 <record>
   <leader>00497nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010199</controlfield>
@@ -330,7 +330,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--327-->
 <record>
   <leader>00738nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010318</controlfield>
@@ -401,7 +401,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--328-->
 <record>
   <leader>00680nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010313</controlfield>
@@ -474,7 +474,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--329-->
 <record>
   <leader>00630nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-005947</controlfield>
@@ -550,7 +550,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--330-->
 <record>
   <leader>00809nam a2200277   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010370</controlfield>
@@ -633,7 +633,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--331-->
 <record>
   <leader>00549nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010412</controlfield>
@@ -699,7 +699,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--332-->
 <record>
   <leader>00663nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010368</controlfield>
@@ -772,7 +772,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--333-->
 <record>
   <leader>00648nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010375</controlfield>
@@ -850,7 +850,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--334-->
 <record>
   <leader>00578nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010410</controlfield>
@@ -921,7 +921,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--335-->
 <record>
   <leader>00693nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010411</controlfield>
@@ -997,7 +997,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--336-->
 <record>
   <leader>00639nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010647</controlfield>
@@ -1068,7 +1068,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--337-->
 <record>
   <leader>00699nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010646</controlfield>
@@ -1148,7 +1148,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--338-->
 <record>
   <leader>00593nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010653</controlfield>
@@ -1216,7 +1216,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--339-->
 <record>
   <leader>00569nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010689</controlfield>
@@ -1284,7 +1284,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--340-->
 <record>
   <leader>00629nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010418</controlfield>
@@ -1355,7 +1355,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--341-->
 <record>
   <leader>00631nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010417</controlfield>
@@ -1424,7 +1424,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--342-->
 <record>
   <leader>00726nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010227</controlfield>
@@ -1501,7 +1501,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--343-->
 <record>
   <leader>00753nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010658</controlfield>
@@ -1582,7 +1582,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--344-->
 <record>
   <leader>00574nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010707</controlfield>
@@ -1654,7 +1654,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--345-->
 <record>
   <leader>00580nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010651</controlfield>
@@ -1721,84 +1721,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00653nam a2200241   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010643</controlfield>
-  <controlfield tag="005">20161123142922.0</controlfield>
-  <controlfield tag="008">870611s1956    bl            000 0 por d</controlfield>
-  <datafield tag="035" ind1=" " ind2=" ">
-    <subfield code="z">900229536</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-    <subfield code="a">USP/SIBI</subfield>
-  </datafield>
-  <datafield tag="041" ind1="0" ind2=" ">
-    <subfield code="a">por</subfield>
-  </datafield>
-  <datafield tag="044" ind1=" " ind2=" ">
-    <subfield code="a">bl</subfield>
-  </datafield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">150</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">150</subfield>
-    <subfield code="b">F499p</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Fink, David Harold</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Para nervosos e angustiados : </subfield>
-    <subfield code="b">um guia médico / </subfield>
-    <subfield code="c">David Harold Fink.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro : </subfield>
-    <subfield code="b">Editora Científica, </subfield>
-    <subfield code="c">1956.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">270 p.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="7">
-    <subfield code="a">TRANSTORNOS NEURÓTICOS.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="7">
-    <subfield code="a">PSICOPATOLOGIA.</subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Loureiro Netto, Antonio Cid</subfield>
-    <subfield code="4">trad</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17353</subfield>
-    <subfield code="d">17353</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">150_000000000000000_F499P</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23559</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">150 F499p</subfield>
-    <subfield code="p">68-0372</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--346-->
 <record>
   <leader>00958nam a2200301   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010664</controlfield>
@@ -1893,7 +1816,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--347-->
 <record>
   <leader>00880nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010362</controlfield>
@@ -2076,7 +1999,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--348-->
 <record>
   <leader>00740nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010665</controlfield>
@@ -2163,7 +2086,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--349-->
 <record>
   <leader>00501nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010198</controlfield>
@@ -2226,224 +2149,4 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00612nam a2200229   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010642</controlfield>
-  <controlfield tag="005">20161123142922.0</controlfield>
-  <controlfield tag="008">820221s1960    xx            000 0 por d</controlfield>
-  <datafield tag="035" ind1=" " ind2=" ">
-    <subfield code="a">(OCoLC)ocm14592183</subfield>
-    <subfield code="z">903195069</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-    <subfield code="a">NLM</subfield>
-    <subfield code="c">NLM</subfield>
-  </datafield>
-  <datafield tag="041" ind1="0" ind2=" ">
-    <subfield code="a">por</subfield>
-  </datafield>
-  <datafield tag="044" ind1=" " ind2=" ">
-    <subfield code="a">bl</subfield>
-  </datafield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">150</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">150</subfield>
-    <subfield code="b">M671f</subfield>
-  </datafield>
-  <datafield tag="100" ind1="0" ind2=" ">
-    <subfield code="a">Mira y Lopez, Emilio</subfield>
-    <subfield code="d">1896-1964</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="3">
-    <subfield code="a">Os fundamentos da psicanálise / </subfield>
-    <subfield code="c">Emilio Mira y Lopes.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro : </subfield>
-    <subfield code="b">Editora Científica, </subfield>
-    <subfield code="c">[1960].</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">196 p.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Psychoanalysis.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="7">
-    <subfield code="a">PSICANÁLISE.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17352</subfield>
-    <subfield code="d">17352</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">150_000000000000000_M671F</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23558</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">150 M671f</subfield>
-    <subfield code="p">68-0371</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00619nam a2200241   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010641</controlfield>
-  <controlfield tag="005">20161123142922.0</controlfield>
-  <controlfield tag="008">880803s1951    bl            000 0 por d</controlfield>
-  <datafield tag="035" ind1=" " ind2=" ">
-    <subfield code="z">900266296</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-    <subfield code="a">USP/SIBI</subfield>
-  </datafield>
-  <datafield tag="041" ind1="0" ind2=" ">
-    <subfield code="a">por</subfield>
-  </datafield>
-  <datafield tag="044" ind1=" " ind2=" ">
-    <subfield code="a">bl</subfield>
-  </datafield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">150</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">150</subfield>
-    <subfield code="b">M671p</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Mira y Lopez, Emilio</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Problemas atuais de psicologia / </subfield>
-    <subfield code="c">Emilio Mira y Lopez.</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro : </subfield>
-    <subfield code="b">Editora Científica, </subfield>
-    <subfield code="c">1951.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">182 p.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="7">
-    <subfield code="a">PSICOLOGIA.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Psicopatologia.</subfield>
-  </datafield>
-  <datafield tag="700" ind1="1" ind2=" ">
-    <subfield code="a">Thomsen, Germano G.</subfield>
-    <subfield code="4">trad</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17351</subfield>
-    <subfield code="d">17351</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">150_000000000000000_M671P</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23557</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">150 M671p</subfield>
-    <subfield code="p">68-0368</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
-<record>
-  <leader>00589nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010659</controlfield>
-  <controlfield tag="005">20161123142924.0</controlfield>
-  <controlfield tag="008">140624s        bl     f     0000 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">150</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">150</subfield>
-    <subfield code="b">M671p</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">MIra y Lopez, Emilio </subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Psicologia evolutiva da criança e do adolescente / </subfield>
-    <subfield code="c">Emilio Mira  y Lopez. </subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Rio de Janeiro: </subfield>
-    <subfield code="b">Científica, </subfield>
-    <subfield code="c">1954.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">259p.</subfield>
-  </datafield>
-  <datafield tag="504" ind1=" " ind2=" ">
-    <subfield code="a">Inclui bibliografia.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Evolução</subfield>
-    <subfield code="x">Causalidade</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="x">Psíquica.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Higiene metal</subfield>
-    <subfield code="x">Adolescência.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17369</subfield>
-    <subfield code="d">17369</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">150_000000000000000_M671P</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23578</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">150 M671p</subfield>
-    <subfield code="p">68-0370</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
 </collection>

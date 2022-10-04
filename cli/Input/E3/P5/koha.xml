@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--378-->
 <record>
   <leader>00543nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010670</controlfield>
@@ -71,7 +71,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--379-->
 <record>
   <leader>00549nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010671</controlfield>
@@ -139,7 +139,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--380-->
 <record>
   <leader>00568nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010672</controlfield>
@@ -210,7 +210,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--381-->
 <record>
   <leader>00517nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010558</controlfield>
@@ -274,7 +274,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--382-->
 <record>
   <leader>00540nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010661</controlfield>
@@ -335,7 +335,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--383-->
 <record>
   <leader>00585nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010662</controlfield>
@@ -399,7 +399,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--384-->
 <record>
   <leader>00534nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010663</controlfield>
@@ -461,7 +461,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--385-->
 <record>
   <leader>00681nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010709</controlfield>
@@ -537,7 +537,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--386-->
 <record>
   <leader>00735nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010655</controlfield>
@@ -638,7 +638,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--387-->
 <record>
   <leader>00522nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-002492</controlfield>
@@ -698,7 +698,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--388-->
 <record>
   <leader>00862nam a2200277   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010648</controlfield>
@@ -785,7 +785,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--389-->
 <record>
   <leader>00673nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010654</controlfield>
@@ -857,7 +857,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--390-->
 <record>
   <leader>00610nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010656</controlfield>
@@ -925,7 +925,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--391-->
 <record>
   <leader>00646nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010407</controlfield>
@@ -993,7 +993,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--392-->
 <record>
   <leader>00493nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010657</controlfield>
@@ -1055,7 +1055,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--393-->
 <record>
   <leader>00679nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010669</controlfield>
@@ -1126,7 +1126,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--394-->
 <record>
   <leader>00821nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001710</controlfield>
@@ -1208,7 +1208,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--395-->
 <record>
   <leader>00681nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008218</controlfield>
@@ -1283,7 +1283,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--396-->
 <record>
   <leader>00560nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010683</controlfield>
@@ -1350,7 +1350,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--397-->
 <record>
   <leader>00664nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008489</controlfield>
@@ -1440,7 +1440,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--398-->
 <record>
   <leader>00705nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010673</controlfield>
@@ -1514,7 +1514,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--399-->
 <record>
   <leader>01267nam a2200337   4500</leader>
   <controlfield tag="001">BIBLIOPAC-004888</controlfield>
@@ -1623,7 +1623,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--400-->
 <record>
   <leader>00835nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010701</controlfield>
@@ -1706,7 +1706,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--401-->
 <record>
   <leader>00646nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010682</controlfield>
@@ -1774,7 +1774,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--402-->
 <record>
   <leader>00502nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010686</controlfield>
@@ -1831,7 +1831,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--403-->
 <record>
   <leader>00619nam a2200205   4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -1898,7 +1898,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--404-->
 <record>
   <leader>00706nam a2200241   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010675</controlfield>
@@ -1973,7 +1973,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--405-->
 <record>
   <leader>00659nam a2200217 a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
