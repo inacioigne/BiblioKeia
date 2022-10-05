@@ -705,7 +705,7 @@
   <controlfield tag="001">BIBLIOPAC-010368</controlfield>
   <controlfield tag="003">Br</controlfield>
   <controlfield tag="005">20161123142853.0</controlfield>
-  <controlfield tag="008">161121 1s1975    bl     f      000 0 por d</controlfield>
+  <controlfield tag="008">140415s1975    bl     f     0000 0 por  </controlfield>
   <datafield tag="082" ind1="0" ind2=" ">
     <subfield code="a">142.7</subfield>
   </datafield>

@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-
+<!--450-->
 <record>
   <leader>00461nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010734</controlfield>
@@ -61,7 +61,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--451-->
 <record>
   <leader>00794nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010706</controlfield>
@@ -148,7 +148,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--452-->
 <record>
   <leader>00943nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-006676</controlfield>
@@ -237,7 +237,7 @@
     <subfield code=" ">21,00</subfield>
   </datafield>
 </record>
-
+<!--453-->
 <record>
   <leader>00988nam a2200301   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010730</controlfield>
@@ -323,7 +323,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--454-->
 <record>
   <leader>00494nam a2200193Ia 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -403,7 +403,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--455-->
 <record>
   <leader>00761nam a22002291a 4500</leader>
   <controlfield tag="003">BR-MnINPA</controlfield>
@@ -480,7 +480,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--456-->
 <record>
   <leader>00799nam a2200289   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010731</controlfield>
@@ -565,7 +565,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--457-->
 <record>
   <leader>00554nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010698</controlfield>
@@ -632,7 +632,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--458-->
 <record>
   <leader>00577nam a2200205   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010714</controlfield>
@@ -698,7 +698,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--459-->
 <record>
   <leader>00733nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010716</controlfield>
@@ -798,7 +798,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--460-->
 <record>
   <leader>00762nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010218</controlfield>
@@ -877,7 +877,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--461-->
 <record>
   <leader>00657nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010219</controlfield>
@@ -951,7 +951,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--462-->
 <record>
   <leader>00612nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010752</controlfield>
@@ -1016,7 +1016,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--463-->
 <record>
   <leader>00720nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010216</controlfield>
@@ -1090,7 +1090,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--464-->
 <record>
   <leader>00898nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-008219</controlfield>
@@ -1195,73 +1195,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
-<record>
-  <leader>00590nam a2200205   4500</leader>
-  <controlfield tag="001">BIBLIOPAC-010212</controlfield>
-  <controlfield tag="005">20161123142831.0</controlfield>
-  <controlfield tag="008">140217s        bl     f     0000 0 por  </controlfield>
-  <datafield tag="082" ind1="1" ind2=" ">
-    <subfield code="a">301</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">301</subfield>
-    <subfield code="b">S714n</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Sorokin, Pitirim A. </subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Novas teorias sociológicas. / </subfield>
-    <subfield code="c">Potorim A. Sorokin ; trad. Leonel Valladro. </subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Porto Alegre : </subfield>
-    <subfield code="b">Globo, </subfield>
-    <subfield code="c">1969.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">xi,608p.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Sociologias gerais.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Teorias fisicistas.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Torias macrossociológicas.</subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2="4">
-    <subfield code="a">Taxonomias empíricas.</subfield>
-  </datafield>
-  <datafield tag="942" ind1=" " ind2=" ">
-    <subfield code="c">L</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">16922</subfield>
-    <subfield code="d">16922</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">301_000000000000000_S714N</subfield>
-    <subfield code="7">1</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">23033</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-23</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">301 S714n</subfield>
-    <subfield code="p">76-0993</subfield>
-    <subfield code="r">2016-11-23</subfield>
-    <subfield code="w">2016-11-23</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
+<!--465-->
 <record>
   <leader>00640nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010215</controlfield>
@@ -1333,7 +1267,73 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--466-->
+<record>
+  <leader>00590nam a2200205   4500</leader>
+  <controlfield tag="001">BIBLIOPAC-010212</controlfield>
+  <controlfield tag="005">20161123142831.0</controlfield>
+  <controlfield tag="008">140217s        bl     f     0000 0 por  </controlfield>
+  <datafield tag="082" ind1="1" ind2=" ">
+    <subfield code="a">301</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">301</subfield>
+    <subfield code="b">S714n</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Sorokin, Pitirim A. </subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Novas teorias sociológicas. / </subfield>
+    <subfield code="c">Potorim A. Sorokin ; trad. Leonel Valladro. </subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Porto Alegre : </subfield>
+    <subfield code="b">Globo, </subfield>
+    <subfield code="c">1969.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">xi,608p.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Sociologias gerais.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Teorias fisicistas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Torias macrossociológicas.</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2="4">
+    <subfield code="a">Taxonomias empíricas.</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="c">L</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">16922</subfield>
+    <subfield code="d">16922</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">301_000000000000000_S714N</subfield>
+    <subfield code="7">1</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">23033</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-23</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">301 S714n</subfield>
+    <subfield code="p">76-0993</subfield>
+    <subfield code="r">2016-11-23</subfield>
+    <subfield code="w">2016-11-23</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--467-->
 <record>
   <leader>00524nam a2200181   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010220</controlfield>
@@ -1393,7 +1393,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-
+<!--468-->
 <record>
   <leader>00676nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010763</controlfield>

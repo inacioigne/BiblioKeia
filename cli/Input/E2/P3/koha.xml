@@ -1734,8 +1734,7 @@
   <leader>00767nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-003737</controlfield>
   <controlfield tag="005">20161123102443.0</controlfield>
-  <controlfield tag="008">031031s1989    bpa000 f po              </controlfield>
-
+  <controlfield tag="008">030701s1989    bl     f      000 0 por  </controlfield>
   <datafield tag="010" ind1=" " ind2=" ">
     <subfield code="a">91151844 </subfield>
   </datafield>

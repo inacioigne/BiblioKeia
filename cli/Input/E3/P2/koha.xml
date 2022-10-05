@@ -501,6 +501,7 @@
   <controlfield tag="003">BR-MnINPA</controlfield>
   <controlfield tag="005">20180803170830.0</controlfield>
   <controlfield tag="008">161202s2015    bl a   g      000 0 por  </controlfield>
+  
   <datafield tag="020" ind1=" " ind2=" ">
     <subfield code="a">9788574017921 (broch.)</subfield>
   </datafield>
@@ -660,7 +661,7 @@
   <leader>00552nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-009340</controlfield>
   <controlfield tag="005">20161123142643.0</controlfield>
-  <controlfield tag="008">090828s2009    bl     f     0000 0      </controlfield>
+  <controlfield tag="008">140220s2009    bl     f     0000 0 por  </controlfield>
   <datafield tag="082" ind1="1" ind2=" ">
     <subfield code="a">080</subfield>
   </datafield>

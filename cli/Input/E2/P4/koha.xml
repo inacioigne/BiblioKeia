@@ -1244,7 +1244,7 @@
   </datafield>
   <datafield tag="650" ind1=" " ind2="0">
     <subfield code="a">Anfíbios</subfield>
-    <subfield code="x">Amazônia</subfield>
+    <subfield code="x">Amazônia</subfield> 
   </datafield>
   <datafield tag="650" ind1=" " ind2=" ">
     <subfield code="x">Bibliografia.</subfield>
@@ -1377,7 +1377,7 @@
     <subfield code="d">2016-11-23</subfield>
     <subfield code="l">0</subfield>
     <subfield code="o">016.5813320981 I38</subfield>
-    <subfield code="p">06-0239 | Doação do </subfield>
+    <subfield code="p">06-0239</subfield>
     <subfield code="r">2016-11-23</subfield>
     <subfield code="w">2016-11-23</subfield>
     <subfield code="y">L</subfield>

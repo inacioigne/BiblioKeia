@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
   xmlns="http://www.loc.gov/MARC21/slim">
-<!--406-->
+<!--406--> 
 <record>
   <leader>00835nam a2200265   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010380</controlfield>
@@ -296,6 +296,139 @@
 </record>
 <!--410-->
 <record>
+  <leader>00461cam a2200157 a 4500</leader>
+  <controlfield tag="001">0013805</controlfield>
+  <controlfield tag="005">20161128171414.0</controlfield>
+  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">205</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">205</subfield>
+    <subfield code="b">R382</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Peirone, Frederico José</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">A tribo Ajaua do alto niassa (Moçambique) e alguns aspectos da sua problemática neo-islâmica</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Lisboa:</subfield>
+    <subfield code="b">[s.n.],</subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">203 p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">Religiões e missões,</subfield>
+    <subfield code="v">1</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17965</subfield>
+    <subfield code="d">17965</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_R382</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24252</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 R382</subfield>
+    <subfield code="p">15-0347</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--411-->
+<record>
+  <leader>00530cam a2200169 a 4500</leader>
+  <controlfield tag="001">0013803</controlfield>
+  <controlfield tag="005">20161128171414.0</controlfield>
+  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
+  <datafield tag="082" ind1=" " ind2=" ">
+    <subfield code="2">205</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="a">205</subfield>
+    <subfield code="b">S586m</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Silva, António da</subfield>
+  </datafield>
+  <datafield tag="245" ind1="1" ind2="0">
+    <subfield code="a">Mentalidade missiológica dos jesuítas em moçambique antes de 1759:</subfield>
+    <subfield code="b">esboço ideológico a partir do núcleo documental</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Lisboa:</subfield>
+    <subfield code="b">[s.n.], </subfield>
+    <subfield code="c">1967.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">391 p.</subfield>
+  </datafield>
+  <datafield tag="490" ind1="1" ind2=" ">
+    <subfield code="a">Religiões e missões </subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">Missões jesuíticas</subfield>
+    <subfield code="z">Moçambique</subfield>
+  </datafield>
+  <datafield tag="999" ind1=" " ind2=" ">
+    <subfield code="c">17966</subfield>
+    <subfield code="d">17966</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_S586M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24250</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 S586m</subfield>
+    <subfield code="p">15-0330</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+  <datafield tag="952" ind1=" " ind2=" ">
+    <subfield code="0">0</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="2">ddc</subfield>
+    <subfield code="4">0</subfield>
+    <subfield code="6">205_000000000000000_S586M</subfield>
+    <subfield code="7">0</subfield>
+    <subfield code="8">G</subfield>
+    <subfield code="9">24251</subfield>
+    <subfield code="a">sdin</subfield>
+    <subfield code="b">sdin</subfield>
+    <subfield code="d">2016-11-28</subfield>
+    <subfield code="l">0</subfield>
+    <subfield code="o">205 S586m</subfield>
+    <subfield code="p">15-0329</subfield>
+    <subfield code="r">2016-11-28</subfield>
+    <subfield code="w">2016-11-28</subfield>
+    <subfield code="y">L</subfield>
+  </datafield>
+</record>
+<!--412-->
+<record>
   <leader>00533nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010695</controlfield>
   <controlfield tag="005">20161123142927.0</controlfield>
@@ -357,7 +490,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--411-->
+<!--413-->
 <record>
   <leader>00533nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010694</controlfield>
@@ -421,7 +554,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--412-->
+<!--414-->
 <record>
   <leader>00690nam a2200229   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010335</controlfield>
@@ -514,7 +647,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--413-->
+<!--415-->
 <record>
   <leader>00565nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010700</controlfield>
@@ -583,7 +716,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--414-->
+<!--416-->
 <record>
   <leader>00598nam a2200193   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010699</controlfield>
@@ -646,7 +779,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--415-->
+<!--417-->
 <record>
   <leader>00588cam a22002297a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -727,7 +860,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--416-->
+<!--418-->
 <record>
   <leader>00802cam a22002777a 4500</leader>
   <controlfield tag="003">BR-RjBN</controlfield>
@@ -817,7 +950,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--417-->
+<!--419-->
 <record>
   <leader>00506nam a2200217   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010726</controlfield>
@@ -886,7 +1019,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--418-->
+<!--420-->
 <record>
   <leader>00708nam a2200253   4500</leader>
   <controlfield tag="001">BIBLIOPAC-010702</controlfield>
@@ -967,7 +1100,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--419-->
+<!--421-->
 <record>
   <leader>00831cam a22002897a 4500</leader>
   <datafield tag="999" ind1=" " ind2=" ">
@@ -1063,7 +1196,7 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--420-->
+<!--422-->
 <record>
   <leader>00589nam a2200169   4500</leader>
   <controlfield tag="001">BIBLIOPAC-001071</controlfield>
@@ -1146,138 +1279,4 @@
     <subfield code="y">L</subfield>
   </datafield>
 </record>
-<!--421-->
-<record>
-  <leader>00461cam a2200157 a 4500</leader>
-  <controlfield tag="001">0013805</controlfield>
-  <controlfield tag="005">20161128171414.0</controlfield>
-  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
-  <datafield tag="082" ind1=" " ind2=" ">
-    <subfield code="2">205</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">205</subfield>
-    <subfield code="b">R382</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Peirone, Frederico José</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">A tribo Ajaua do alto niassa (Moçambique) e alguns aspectos da sua problemática neo-islâmica</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Lisboa:</subfield>
-    <subfield code="b">[s.n.],</subfield>
-    <subfield code="c">1967.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">203 p.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="1" ind2=" ">
-    <subfield code="a">Religiões e missões,</subfield>
-    <subfield code="v">1</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17965</subfield>
-    <subfield code="d">17965</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">205_000000000000000_R382</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">24252</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-28</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">205 R382</subfield>
-    <subfield code="p">15-0347</subfield>
-    <subfield code="r">2016-11-28</subfield>
-    <subfield code="w">2016-11-28</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-<!--422-->
-<record>
-  <leader>00530cam a2200169 a 4500</leader>
-  <controlfield tag="001">0013803</controlfield>
-  <controlfield tag="005">20161128171414.0</controlfield>
-  <controlfield tag="008">150112s||||     bl|||||||||||||||||por|u</controlfield>
-  <datafield tag="082" ind1=" " ind2=" ">
-    <subfield code="2">205</subfield>
-  </datafield>
-  <datafield tag="090" ind1=" " ind2=" ">
-    <subfield code="a">205</subfield>
-    <subfield code="b">S586m</subfield>
-  </datafield>
-  <datafield tag="100" ind1="1" ind2=" ">
-    <subfield code="a">Silva, António da</subfield>
-  </datafield>
-  <datafield tag="245" ind1="1" ind2="0">
-    <subfield code="a">Mentalidade missiológica dos jesuítas em moçambique antes de 1759:</subfield>
-    <subfield code="b">esboço ideológico a partir do núcleo documental</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-    <subfield code="a">Lisboa:</subfield>
-    <subfield code="b">[s.n.], </subfield>
-    <subfield code="c">1967.</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-    <subfield code="a">391 p.</subfield>
-  </datafield>
-  <datafield tag="490" ind1="1" ind2=" ">
-    <subfield code="a">Religiões e missões </subfield>
-  </datafield>
-  <datafield tag="650" ind1=" " ind2=" ">
-    <subfield code="a">Missões jesuíticas</subfield>
-    <subfield code="z">Moçambique</subfield>
-  </datafield>
-  <datafield tag="999" ind1=" " ind2=" ">
-    <subfield code="c">17966</subfield>
-    <subfield code="d">17966</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">205_000000000000000_S586M</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">24250</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-28</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">205 S586m</subfield>
-    <subfield code="p">15-0330</subfield>
-    <subfield code="r">2016-11-28</subfield>
-    <subfield code="w">2016-11-28</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-  <datafield tag="952" ind1=" " ind2=" ">
-    <subfield code="0">0</subfield>
-    <subfield code="1">0</subfield>
-    <subfield code="2">ddc</subfield>
-    <subfield code="4">0</subfield>
-    <subfield code="6">205_000000000000000_S586M</subfield>
-    <subfield code="7">0</subfield>
-    <subfield code="8">G</subfield>
-    <subfield code="9">24251</subfield>
-    <subfield code="a">sdin</subfield>
-    <subfield code="b">sdin</subfield>
-    <subfield code="d">2016-11-28</subfield>
-    <subfield code="l">0</subfield>
-    <subfield code="o">205 S586m</subfield>
-    <subfield code="p">15-0329</subfield>
-    <subfield code="r">2016-11-28</subfield>
-    <subfield code="w">2016-11-28</subfield>
-    <subfield code="y">L</subfield>
-  </datafield>
-</record>
-
 </collection>

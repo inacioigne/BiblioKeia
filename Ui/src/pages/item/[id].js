@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from "react";
 // Material UI
 import { Stack, Box, Container, Typography } from "@mui/material/";
+import Grid from "@mui/material/Unstable_Grid2";
 
 import Navbar from "src/components/Navbar/navbar_search";
 
@@ -18,18 +19,14 @@ const Item = () => {
 
   async function getData() {
     const bindingsStream = await fetcher.fetchBindings(
-      'http://localhost:3030/acervo', 'SELECT * WHERE{ GRAPH ?g {?s ?p ?name } } LIMIT 10');
-    bindingsStream.on('data', (bindings) => console.log(bindings));
-  } 
-  
+      "http://localhost:3030/bibframe",
+      "SELECT * WHERE{ GRAPH ?g {?s ?p ?name } } LIMIT 10"
+    );
+    bindingsStream.on("data", (bindings) => console.log(bindings));
+  }
 
-    
-  
-  
-  
   useEffect(() => {
-    getData()
-   
+    getData();
   }, []);
 
   return (
@@ -37,15 +34,25 @@ const Item = () => {
       {/* Navbar */}
       <Navbar />
       <Container maxWidth="xl">
-      <Image
-            src={
-              `http://localhost:8000/items/${id}/imagem`
-            }
-            width={150}
-            height={200}
-          />
-      
-      <p>Post: {id}</p>
+        <Grid container spacing={2}
+        sx={{
+          mt: 2
+        }}
+        >
+          <Grid xs={3} sx={{ 
+            //backgroundColor: grey[100] 
+            }}>
+            <Image
+              src={`http://localhost:8000/items/${id}/imagem`}
+              width={350}
+              height={400}
+            />
+          </Grid>
+          <Typography variant="h4" gutterBottom>
+            Título: subtitulo
+          </Typography>
+        </Grid>
+        <p>Post: {id}</p>
       </Container>
     </Box>
   );
