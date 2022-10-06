@@ -11,6 +11,7 @@ def Create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
         'publisher': instanceMarc.Publication().get('publisher'),
         'subject': [subject.get('label').removesuffix('.') for subject in workMarc.Subjects()],
         'type': type,
+        'language': workMarc.Language(),
         'items': [item.get('register') for item in itemsMarc.Items()]
     }
     if workMarc.PrimaryContribution():
@@ -19,6 +20,12 @@ def Create_doc(workMarc, instanceMarc, itemsMarc, type, shelf, count):
         doc.update(serie=instanceMarc.Serie())
     if instanceMarc.Publication().get('year') not in ['s.n.', '19--']:
         doc.update(year=instanceMarc.Publication().get('year'))
+    if workMarc.Note():
+        notes = list()
+        for note in workMarc.Note():
+            notes.append(note.get('label'))
+        doc.update(notes=notes)
+        
 
 
     return doc

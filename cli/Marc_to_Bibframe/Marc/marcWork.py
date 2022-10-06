@@ -205,6 +205,22 @@ class MarcWork:
 
         return mainTitle
 
+    def Note(self):
+        notes = self.marcxml.findall(f"datafield/[@tag='500']")
+        if len(notes) == 0:
+            return False
+        labels = list()
+        for note in notes:
+            label = {
+                'label':
+                note.find("subfield/[@code='a']").text
+                }
+            labels.append(label)
+        return labels
+            
+
+
+
     def Subjects(self):
         subjects = self.marcxml.findall(f"datafield/[@tag='650']")
         subjectsList = list() 

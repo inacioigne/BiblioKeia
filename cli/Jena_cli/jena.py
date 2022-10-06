@@ -45,7 +45,7 @@ def UpadateJena(path_marc, count, shelf, out):
         marcxml = etree.fromstring(record.toxml())
         workMarc = MarcWork(marcxml)
         instanceMarc = MarcInstance(marcxml)
-        itemsMarc = MarcItems(marcxml)
+        itemsMarc = MarcItems(marcxml) 
         print(count)
         print(workMarc.Title().get('title'))
 

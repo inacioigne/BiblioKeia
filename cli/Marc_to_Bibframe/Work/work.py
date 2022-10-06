@@ -13,6 +13,7 @@ from Marc_to_Bibframe.Work.subject import Subject
 from Marc_to_Bibframe.Work.subjectsPlace import SubjectsPlace
 from Marc_to_Bibframe.Work.type import Type
 from Marc_to_Bibframe.Work.contribution import Contributions
+from Marc_to_Bibframe.Work.note import Note
 
 def Work(count, workMarc, BFwork, BFinstance):
 
@@ -51,6 +52,11 @@ def Work(count, workMarc, BFwork, BFinstance):
         g = Contributions(g, BFwork, workMarc, count, uri, BF, BFLC)
     #Title
     g = Title(g, BFwork, workMarc, BF)
+    #Notes
+    if workMarc.Note():
+        for note in workMarc.Note():
+            g = Note(g, BFwork, note, BF)
+
     #BF.Topic
     g = Subject(g, BFwork, uri, count, workMarc, BF, MADSRDF, RDFS)
     if workMarc.SubjectsPlace():
