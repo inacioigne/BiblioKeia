@@ -8,6 +8,7 @@ import {
   Typography,
   Divider,
   Button,
+  Paper,
 } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import { LocationCity, CalendarMonth, SouthAmerica } from "@mui/icons-material";
@@ -71,27 +72,30 @@ const Item = () => {
     <Box sx={{ flexGrow: 1 }}>
       {/* Navbar */}
       <Navbar />
-      <Container maxWidth="xl">
+      <Container maxWidth="md">
         <Grid
           container
           spacing={4}
           sx={{
             mt: 2,
+            //border: 'solid'
           }}
         >
           <Grid
-            xs={2}
+            xs={3}
             sx={
               {
                 //backgroundColor: grey[100]
               }
             }
           >
-            <Image
-              src={`http://localhost:8000/items/${id}/imagem`}
-              width={250}
-              height={350}
-            />
+            <Box sx={{ boxShadow: 10 }}>
+              <Image
+                src={`http://localhost:8000/items/${id}/imagem`}
+                width={250}
+                height={350}
+              />
+            </Box>
           </Grid>
           {item && (
             <Grid xs={9}>
@@ -125,6 +129,11 @@ const Item = () => {
                   </Button>
                 ))}
               </Stack>
+              <Typography mt={3} variant="subtitle2" gutterBottom>
+                Autoria principal:
+              </Typography>
+              <Divider />
+              <Button sx={{textTransform: "none"}}>{item.author}</Button>
               <Typography mt={3} variant="subtitle2" gutterBottom>
                 Publicação:
               </Typography>
@@ -183,7 +192,7 @@ const Item = () => {
               </Typography>
               <Divider />
               <Stack mt={2} spacing={3} direction="row">
-                 {/* Idioma */}
+                {/* Idioma */}
                 <Details
                   label={"Idioma"}
                   icon={<SouthAmerica />}
@@ -205,6 +214,15 @@ const Item = () => {
             </Grid>
           )}
         </Grid>
+        <Typography
+                variant="h5"
+                gutterBottom
+                sx={{
+                  ...styleText,
+                }}
+              >
+               Obras similares
+              </Typography>
       </Container>
     </Box>
   );
