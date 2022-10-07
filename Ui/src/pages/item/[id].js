@@ -8,7 +8,7 @@ import {
   Typography,
   Divider,
   Button,
-  Paper,
+  Drawer,
 } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import { LocationCity, CalendarMonth, SouthAmerica } from "@mui/icons-material";
@@ -21,6 +21,8 @@ import Image from "next/image";
 
 import { SparqlEndpointFetcher } from "fetch-sparql-endpoint";
 import { api } from "src/services/solr";
+
+import Carousel from "src/components/Carousel";
 
 const styleText = {
   //fontFamily: "Alkalami"
@@ -45,7 +47,7 @@ const Item = () => {
       })
       .then((response) => {
         let [doc] = response.data.response.docs;
-        console.log("ITEM:", doc);
+        //console.log("ITEM:", doc);
         setItem(doc);
       });
   };
@@ -67,6 +69,17 @@ const Item = () => {
 
     getItem();
   }, [id]);
+  const [open, setOpen] = useState(false);
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setOpen(!open);
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -96,6 +109,12 @@ const Item = () => {
                 height={350}
               />
             </Box>
+            <Button sx={{ mt: 3 }} variant="text" onClick={toggleDrawer(open)}>
+              Obras similares
+            </Button>
+            <Drawer anchor={"bottom"} open={open} onClose={toggleDrawer(open)}>
+              <Carousel />
+            </Drawer>
           </Grid>
           {item && (
             <Grid xs={9}>
@@ -133,7 +152,7 @@ const Item = () => {
                 Autoria principal:
               </Typography>
               <Divider />
-              <Button sx={{textTransform: "none"}}>{item.author}</Button>
+              <Button sx={{ textTransform: "none" }}>{item.author}</Button>
               <Typography mt={3} variant="subtitle2" gutterBottom>
                 Publicação:
               </Typography>
@@ -214,15 +233,16 @@ const Item = () => {
             </Grid>
           )}
         </Grid>
-        <Typography
-                variant="h5"
-                gutterBottom
-                sx={{
-                  ...styleText,
-                }}
-              >
-               Obras similares
-              </Typography>
+        {/* <Typography
+          variant="h5"
+          gutterBottom
+          sx={{
+            ...styleText,
+          }}
+        >
+          Obras similares
+        </Typography>
+        <Carousel /> */}
       </Container>
     </Box>
   );
