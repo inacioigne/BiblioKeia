@@ -45,8 +45,10 @@ export default function Home() {
           <Box
             sx={{
               display: "flex",
+              justifyContent: "space-between",
               mx: "3rem",
               my: "2rem",
+              p: "3rem"
             }}
           >
             <Counters

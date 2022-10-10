@@ -1,66 +1,81 @@
-2022-10-09 10:51:47.920 INFO  (main) [] o.e.j.u.log Logging initialized @6372ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-10-09 10:51:48.233 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
-2022-10-09 10:51:49.101 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-10-09 10:51:49.117 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
-2022-10-09 10:51:49.117 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-10-09 10:51:49.117 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
-2022-10-09 10:51:49.125 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-10-09T10:51:49.125980Z
-2022-10-09 10:51:49.126 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
-2022-10-09 10:51:49.143 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
-2022-10-09 10:51:50.716 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2022-10-09 10:51:50.716 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-10-09 10:52:09.198 WARN  (main) [] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.380 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
-2022-10-09 10:52:09.539 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
-2022-10-09 10:52:09.539 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
-2022-10-09 10:52:09.554 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-10-09 10:52:09.607 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
-2022-10-09 10:52:09.686 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
-2022-10-09 10:52:10.259 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2022-10-09 10:52:10.259 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
-2022-10-09 10:52:10.310 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
-2022-10-09 10:52:10.425 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1eef9aef{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
-2022-10-09 10:52:10.449 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_10_09.request.log
-2022-10-09 10:52:10.460 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-10-09 10:52:10.460 INFO  (main) [] o.e.j.s.Server Started @28916ms
-2022-10-09 10:52:11.702 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=158
-2022-10-09 10:52:29.226 WARN  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.427 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
-2022-10-09 10:52:29.541 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2022-10-09 10:52:29.541 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2022-10-09 10:52:29.593 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2022-10-09 10:52:29.594 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2022-10-09 10:52:30.143 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
-2022-10-09 10:52:30.179 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
-2022-10-09 10:52:30.198 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2022-10-09 10:52:30.219 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-10-09 10:52:30.219 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2022-10-09 10:52:30.227 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2022-10-09 11:00:02.544 INFO  (qtp1355887174-27) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=year,memSize=7168,tindexSize=44,time=80,phase1=80,nTerms=80,bigTerms=0,termInstances=705,uses=0}
-2022-10-09 11:00:02.608 INFO  (qtp1355887174-27) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=13,phase1=13,nTerms=1,bigTerms=1,termInstances=0,uses=0}
-2022-10-09 11:00:02.626 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=1855
-2022-10-09 11:00:02.782 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=10
-2022-10-09 11:00:24.507 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=65
-2022-10-09 11:00:24.519 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 11:01:47.605 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=14
-2022-10-09 11:01:47.827 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=234
-2022-10-09 11:01:48.019 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=186
-2022-10-09 11:01:58.605 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=0
-2022-10-09 11:01:58.760 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=151
-2022-10-09 11:01:58.778 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1665313318598} status=0 QTime=13
-2022-10-09 11:01:58.816 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1665313318598} status=0 QTime=30
-2022-10-09 11:01:58.825 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1665313307407&ts=1665313307407} status=503 QTime=4
-2022-10-09 11:01:59.026 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1665313318598} status=0 QTime=206
-2022-10-09 11:02:38.981 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=0
-2022-10-09 11:02:39.125 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=140
-2022-10-09 11:02:41.396 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=0
-2022-10-09 11:02:41.398 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1665313358965} hits=709 status=0 QTime=1
-2022-10-09 11:02:41.592 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=197
-2022-10-09 11:04:07.699 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=2
-2022-10-09 11:04:07.813 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&indent=true&q.op=OR&_=1665313358965} hits=37 status=0 QTime=114
-2022-10-09 11:04:07.932 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=234
-2022-10-09 11:23:07.547 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=50
-2022-10-09 11:23:15.220 ERROR (qtp1355887174-20) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field $subject => org.apache.solr.common.SolrException: undefined field $subject
+2022-10-10 14:56:50.999 INFO  (main) [] o.e.j.u.log Logging initialized @2232ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-10-10 14:56:51.281 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-10-10 14:56:52.074 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-10-10 14:56:52.094 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-10-10 14:56:52.094 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-10-10 14:56:52.094 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-10-10 14:56:52.094 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-10-10T14:56:52.094949500Z
+2022-10-10 14:56:52.104 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-10-10 14:56:52.105 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-10-10 14:56:53.322 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-10-10 14:56:53.329 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-10-10 14:56:53.919 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-10-10 14:56:53.919 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
+2022-10-10 14:56:53.934 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-10-10 14:56:53.999 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-10-10 14:56:54.234 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-10-10 14:56:55.404 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-10-10 14:56:55.405 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
+2022-10-10 14:56:55.526 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-10-10 14:56:55.589 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@18cc679e{/solr,file:///C:/Users/Usu%C3%A1rio/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-10-10 14:56:55.614 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_10_10.request.log
+2022-10-10 14:56:55.636 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-10-10 14:56:55.636 INFO  (main) [] o.e.j.s.Server Started @6867ms
+2022-10-10 14:56:56.350 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=95
+2022-10-10 14:56:57.016 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-10-10 14:56:57.016 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-10-10 14:56:57.054 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-10-10 14:56:57.055 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-10-10 14:56:57.492 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-10-10 14:56:57.521 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-10-10 14:56:57.531 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-10-10 14:56:57.548 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-10-10 14:56:57.549 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-10-10 14:56:57.554 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-10-10 15:00:44.755 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=6
+2022-10-10 15:00:44.803 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=54
+2022-10-10 15:00:44.847 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=36
+2022-10-10 15:00:46.772 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 15:00:46.789 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1665414046766} status=0 QTime=13
+2022-10-10 15:00:46.826 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1665414046766} status=0 QTime=41
+2022-10-10 15:00:46.840 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1665414044688&ts=1665414044688} status=503 QTime=5
+2022-10-10 15:00:46.864 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=91
+2022-10-10 15:00:46.881 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1665414046766} status=0 QTime=79
+2022-10-10 15:00:50.781 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 15:00:50.817 INFO  (qtp1355887174-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=36
+2022-10-10 15:00:53.228 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 15:00:53.277 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=48
+2022-10-10 15:00:53.309 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1665414050764} hits=709 status=0 QTime=80
+2022-10-10 15:04:28.373 INFO  (qtp1355887174-27) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=year,memSize=7168,tindexSize=44,time=29,phase1=29,nTerms=80,bigTerms=0,termInstances=705,uses=0}
+2022-10-10 15:04:28.399 INFO  (qtp1355887174-27) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=9,phase1=9,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-10-10 15:04:28.405 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=344
+2022-10-10 15:04:28.421 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=8
+2022-10-10 15:04:48.549 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=19
+2022-10-10 15:04:48.555 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 15:17:46.142 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 15:40:15.737 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 15:41:34.790 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=3
+2022-10-10 15:51:37.844 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 15:54:15.809 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 15:55:11.772 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 15:55:21.581 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=4
+2022-10-10 15:56:50.578 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 15:57:48.066 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=37
+2022-10-10 16:00:40.177 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 16:07:45.939 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=346
+2022-10-10 16:07:45.976 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=1
+2022-10-10 16:11:58.879 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=56
+2022-10-10 16:11:58.899 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=10
+2022-10-10 16:12:02.041 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:12:02.044 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:13:20.263 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=3
+2022-10-10 16:13:20.276 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:14:29.783 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:22:56.039 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=16
+2022-10-10 16:22:56.076 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=2
+2022-10-10 16:23:39.194 ERROR (qtp1355887174-22) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Ciência--Metodologia => org.apache.solr.common.SolrException: undefined field Ciência--Metodologia
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
-org.apache.solr.common.SolrException: undefined field $subject
+org.apache.solr.common.SolrException: undefined field Ciência--Metodologia
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
@@ -132,10 +147,10 @@ org.apache.solr.common.SolrException: undefined field $subject
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-2022-10-09 11:23:15.223 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=$subject:Ciência--Metodologia&q.op=AND&wt=json} status=400 QTime=60
-2022-10-09 11:23:15.241 ERROR (qtp1355887174-26) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field $subject => org.apache.solr.common.SolrException: undefined field $subject
+2022-10-10 16:23:39.197 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=Ciência--Metodologia:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=36
+2022-10-10 16:23:39.209 ERROR (qtp1355887174-28) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Ciência--Metodologia => org.apache.solr.common.SolrException: undefined field Ciência--Metodologia
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
-org.apache.solr.common.SolrException: undefined field $subject
+org.apache.solr.common.SolrException: undefined field Ciência--Metodologia
 	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
 	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
 	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
@@ -207,110 +222,29 @@ org.apache.solr.common.SolrException: undefined field $subject
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-2022-10-09 11:23:15.241 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=$subject:Ciência--Metodologia&q.op=AND&wt=json} status=400 QTime=1
-2022-10-09 11:23:56.521 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 11:24:04.957 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=AND&wt=json} hits=3 status=0 QTime=242
-2022-10-09 11:24:04.971 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=AND&wt=json} hits=3 status=0 QTime=1
-2022-10-09 11:25:48.278 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&indent=true&q.op=AND&_=1665313358965} hits=3 status=0 QTime=2
-2022-10-09 11:25:48.288 INFO  (qtp1355887174-51) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=10
-2022-10-09 11:25:48.548 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=272
-2022-10-09 11:26:11.727 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=0
-2022-10-09 11:26:11.729 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&indent=true&q.op=OR&_=1665313358965} hits=37 status=0 QTime=2
-2022-10-09 11:26:11.889 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=157
-2022-10-09 11:26:55.212 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=4
-2022-10-09 11:28:05.421 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=2
-2022-10-09 11:28:05.441 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=3
-2022-10-09 11:33:54.304 INFO  (qtp1355887174-49) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=6
-2022-10-09 11:33:56.154 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=6
-2022-10-09 11:33:56.163 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&wt=json} hits=37 status=0 QTime=1
-2022-10-09 11:36:10.174 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&indent=true&q.op=OR&rows=20&_=1665313358965} hits=37 status=0 QTime=3
-2022-10-09 11:36:10.174 INFO  (qtp1355887174-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=2
-2022-10-09 11:36:10.383 INFO  (qtp1355887174-49) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=214
-2022-10-09 11:36:54.101 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=3
-2022-10-09 11:52:22.042 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=37
-2022-10-09 11:52:22.125 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=2
-2022-10-09 11:55:21.584 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=5
-2022-10-09 11:55:33.016 INFO  (qtp1355887174-57) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=3
-2022-10-09 11:55:33.035 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=7
-2022-10-09 12:00:05.024 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=43
-2022-10-09 12:00:51.152 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:00:51.171 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=7
-2022-10-09 12:01:19.941 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=20&wt=json} hits=37 status=0 QTime=6
-2022-10-09 12:01:45.212 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=421
-2022-10-09 12:01:45.245 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:04:07.967 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=8
-2022-10-09 12:04:10.477 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:04:10.499 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:04:40.833 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:04:41.697 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=4
-2022-10-09 12:04:41.710 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:08:14.622 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=5
-2022-10-09 12:08:16.272 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:08:16.287 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:10:50.113 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:11:09.540 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&indent=true&q.op=OR&rows=20&_=1665313358965} hits=37 status=0 QTime=2
-2022-10-09 12:11:09.556 INFO  (qtp1355887174-57) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=16
-2022-10-09 12:11:09.851 INFO  (qtp1355887174-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=312
-2022-10-09 12:13:18.034 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:13:30.360 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:13:30.387 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=0
-2022-10-09 12:15:06.843 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:75&wt=json} hits=1 status=0 QTime=39
-2022-10-09 12:16:38.392 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:16:38.404 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:17:17.446 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:17:18.486 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=4
-2022-10-09 12:17:18.491 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:19:07.398 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=4
-2022-10-09 12:19:07.418 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=8
-2022-10-09 12:19:59.772 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=4
-2022-10-09 12:20:04.672 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:20:04.681 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:23:48.126 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:362&wt=json} hits=1 status=0 QTime=16
-2022-10-09 12:27:41.738 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:362&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:29:16.447 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:362&wt=json} hits=1 status=0 QTime=13
-2022-10-09 12:29:47.451 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:29:54.932 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=25
-2022-10-09 12:29:54.975 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:32:14.043 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=160
-2022-10-09 12:32:14.098 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=12
-2022-10-09 12:32:19.421 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:2&wt=json} hits=1 status=0 QTime=19
-2022-10-09 12:32:19.429 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:2&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:32:23.446 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:32:23.457 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:32:41.742 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:32:41.743 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:310&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:33:03.660 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:33:03.672 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:33:09.930 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:33:09.932 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:33:17.649 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:708&wt=json} hits=1 status=0 QTime=3
-2022-10-09 12:33:17.651 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:33:24.653 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=3
-2022-10-09 12:33:24.663 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:34:13.333 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:34:13.342 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:34:25.958 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:34:25.959 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:310&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:40:55.414 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=9
-2022-10-09 12:40:55.414 INFO  (qtp1355887174-65) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:310&wt=json} hits=1 status=0 QTime=33
-2022-10-09 12:40:55.433 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:40:58.703 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:40:58.707 INFO  (qtp1355887174-55) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=6
-2022-10-09 12:45:02.901 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=70
-2022-10-09 12:45:02.901 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=69
-2022-10-09 12:45:02.937 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=1
-2022-10-09 12:46:11.339 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=5
-2022-10-09 12:46:38.299 INFO  (qtp1355887174-59) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=13
-2022-10-09 12:46:38.474 ERROR (qtp1355887174-64) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'subject:['Ciência--Metodologia', 'Teoria do conhecimento']': Encountered " <RANGE_GOOP> "\'Teoria "" at line 1, column 33.
-Was expecting:
-    "TO" ...
-     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'subject:['Ciência--Metodologia', 'Teoria do conhecimento']': Encountered " <RANGE_GOOP> "\'Teoria "" at line 1, column 33.
-Was expecting:
-org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'subject:['Ciência--Metodologia', 'Teoria do conhecimento']': Encountered " <RANGE_GOOP> "\'Teoria "" at line 1, column 33.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
+2022-10-10 16:23:39.209 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=Ciência--Metodologia:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=2
+2022-10-10 16:25:41.780 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:25:41.780 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:25:46.954 ERROR (qtp1355887174-20) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia => org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
+org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:184) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:256) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:517) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:66) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1129) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:845) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:291) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:171) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:141) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:384) ~[?:?]
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
@@ -365,22 +299,20 @@ Was expecting:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'subject:['Ciência--Metodologia', 'Teoria do conhecimento']': Encountered " <RANGE_GOOP> "\'Teoria "" at line 1, column 33.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:277) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "\'Teoria "" at line 1, column 33.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:959) ~[?:?]
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:827) ~[?:?]
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:490) ~[?:?]
+2022-10-10 16:25:46.955 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subjectCiência--Metodologia:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=2
+2022-10-10 16:25:46.960 ERROR (qtp1355887174-22) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia => org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
+org.apache.solr.common.SolrException: undefined field subjectCiência--Metodologia
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:184) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:256) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:517) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:66) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1129) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:845) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:291) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:171) ~[?:?]
 	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:141) ~[?:?]
@@ -388,50 +320,6 @@ Was expecting:
 	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
 	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
 	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-2022-10-09 12:46:38.475 INFO  (qtp1355887174-64) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:['Ciência--Metodologia',+'Teoria+do+conhecimento']&indent=true&q.op=OR&rows=20&_=1665313358965} status=400 QTime=191
-2022-10-09 12:46:38.571 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=286
-2022-10-09 12:46:56.688 INFO  (qtp1355887174-64) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=0
-2022-10-09 12:46:56.757 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:'Ciência--Metodologia',+'Teoria+do+conhecimento'&indent=true&q.op=OR&rows=20&_=1665313358965} hits=37 status=0 QTime=68
-2022-10-09 12:46:56.842 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=153
-2022-10-09 12:48:29.982 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=76
-2022-10-09 12:48:52.933 INFO  (qtp1355887174-64) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=4
-2022-10-09 12:49:01.959 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:49:08.666 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=37
-2022-10-09 12:49:08.692 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&q.op=OR&rows=21&wt=json} hits=37 status=0 QTime=2
-2022-10-09 12:49:55.463 INFO  (qtp1355887174-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=10
-2022-10-09 12:49:55.485 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento'&indent=true&q.op=OR&rows=20&_=1665313358965} hits=52 status=0 QTime=32
-2022-10-09 12:49:55.741 INFO  (qtp1355887174-55) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=286
-2022-10-09 12:51:56.193 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 12:51:56.213 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=37
-2022-10-09 12:52:00.321 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=2
-2022-10-09 12:52:00.339 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=9
-2022-10-09 12:52:55.038 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=102
-2022-10-09 12:52:55.090 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=10
-2022-10-09 12:53:08.150 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Computação"]}&q.op=AND&facet=true&wt=json} hits=28 status=0 QTime=200
-2022-10-09 12:53:12.656 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:58&wt=json} hits=1 status=0 QTime=2
-2022-10-09 12:53:12.660 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:58&wt=json} hits=1 status=0 QTime=0
-2022-10-09 12:53:17.531 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Computação,Demografia&q.op=OR&rows=21&wt=json} hits=29 status=0 QTime=4
-2022-10-09 12:53:17.545 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Computação,Demografia&q.op=OR&rows=21&wt=json} hits=29 status=0 QTime=3
-2022-10-09 12:53:57.062 INFO  (qtp1355887174-63) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Computação,Demografia&q.op=OR&rows=21&wt=json} hits=29 status=0 QTime=2
-2022-10-09 12:53:57.065 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:665&wt=json} hits=1 status=0 QTime=5
-2022-10-09 13:13:09.879 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:computação&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=28 status=0 QTime=169
-2022-10-09 13:13:09.917 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:computação&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=28 status=0 QTime=3
-2022-10-09 13:18:59.422 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:665&wt=json} hits=1 status=0 QTime=83
-2022-10-09 13:19:47.532 INFO  (qtp1355887174-71) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:665&wt=json} hits=1 status=0 QTime=8
-2022-10-09 13:19:55.763 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:665&wt=json} hits=1 status=0 QTime=2
-2022-10-09 13:20:11.360 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:search&wt=json} hits=0 status=0 QTime=17
-2022-10-09 13:24:49.950 INFO  (qtp1355887174-72) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=13
-2022-10-09 13:24:56.087 ERROR (qtp1355887174-73) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:384) ~[?:?]
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
@@ -486,22 +374,149 @@ Was expecting:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:277) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:959) ~[?:?]
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:827) ~[?:?]
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:490) ~[?:?]
+2022-10-10 16:25:46.960 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subjectCiência--Metodologia:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=1
+2022-10-10 16:26:30.447 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:26:30.452 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:26:42.605 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=3 status=0 QTime=182
+2022-10-10 16:26:42.617 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=3 status=0 QTime=4
+2022-10-10 16:27:08.823 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=4
+2022-10-10 16:27:08.829 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:27:11.173 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=6 status=0 QTime=4
+2022-10-10 16:27:11.184 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=6 status=0 QTime=2
+2022-10-10 16:27:48.931 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=6 status=0 QTime=4
+2022-10-10 16:28:00.037 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:392&wt=json} hits=1 status=0 QTime=3
+2022-10-10 16:28:00.042 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:392&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:28:16.867 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica+simbólica,Lógica+matemática&q.op=OR&rows=21&wt=json} hits=6 status=0 QTime=2
+2022-10-10 16:28:16.872 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica+simbólica,Lógica+matemática&q.op=OR&rows=21&wt=json} hits=6 status=0 QTime=0
+2022-10-10 16:28:31.675 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica+matemática&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=2
+2022-10-10 16:28:31.683 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Lógica+matemática&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=3
+2022-10-10 16:28:46.010 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=8
+2022-10-10 16:29:41.852 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=15
+2022-10-10 16:29:50.315 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=11&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=45
+2022-10-10 16:29:58.564 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:12&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:29:58.567 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:12&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:30:02.361 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Congressos&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=11&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=12 status=0 QTime=8
+2022-10-10 16:30:02.369 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Congressos&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=11&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=12 status=0 QTime=4
+2022-10-10 16:30:31.175 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=5
+2022-10-10 16:30:43.847 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["author:Flavin,+Christopher."]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=14
+2022-10-10 16:30:57.825 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=5
+2022-10-10 16:31:04.579 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:31:04.584 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:32:19.989 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:32:26.727 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=2
+2022-10-10 16:32:26.736 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=0
+2022-10-10 16:33:16.255 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&indent=true&q.op=OR&_=1665414050764} hits=3 status=0 QTime=8
+2022-10-10 16:33:16.262 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=12
+2022-10-10 16:33:16.367 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=121
+2022-10-10 16:33:24.301 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 16:33:24.302 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&indent=true&q.op=AND&_=1665414050764} hits=0 status=0 QTime=1
+2022-10-10 16:33:24.349 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=50
+2022-10-10 16:40:15.749 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=3
+2022-10-10 16:40:15.764 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 16:40:45.751 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=6
+2022-10-10 16:40:45.760 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=3
+2022-10-10 16:41:22.896 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=7
+2022-10-10 16:42:16.660 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=4
+2022-10-10 16:43:03.529 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=3
+2022-10-10 16:44:28.864 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=3
+2022-10-10 16:44:28.873 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=7
+2022-10-10 16:44:42.259 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:44:42.269 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:44:45.855 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=6
+2022-10-10 16:44:45.862 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=2
+2022-10-10 16:45:06.085 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=5
+2022-10-10 16:45:06.095 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=1
+2022-10-10 16:45:15.477 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Filosofia,Ciências+sociais--Filosofia&q.op=OR&rows=21&wt=json} hits=32 status=0 QTime=6
+2022-10-10 16:45:15.492 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Filosofia,Ciências+sociais--Filosofia&q.op=OR&rows=21&wt=json} hits=32 status=0 QTime=1
+2022-10-10 16:49:09.345 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:50:53.913 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=0
+2022-10-10 16:52:05.421 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=6
+2022-10-10 18:23:57.777 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:464&wt=json} hits=1 status=0 QTime=46
+2022-10-10 18:24:26.800 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 18:24:50.520 INFO  (qtp1355887174-57) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 18:25:24.179 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 18:26:45.135 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=10
+2022-10-10 18:26:45.213 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=88
+2022-10-10 18:26:45.667 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:26:45.672 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=AND&_=1665414050764} hits=709 status=0 QTime=3
+2022-10-10 18:26:45.717 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=50
+2022-10-10 18:27:30.817 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:27:30.829 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:Pensamento+científico&indent=true&q.op=AND&_=1665414050764} hits=0 status=0 QTime=11
+2022-10-10 18:27:30.872 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=53
+2022-10-10 18:27:35.141 INFO  (qtp1355887174-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:27:35.145 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:Pensamento+científico&indent=true&q.op=OR&_=1665414050764} hits=5 status=0 QTime=4
+2022-10-10 18:27:35.188 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=46
+2022-10-10 18:27:52.388 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:27:52.438 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=50
+2022-10-10 18:27:52.444 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&indent=true&q.op=OR&_=1665414050764} hits=0 status=0 QTime=56
+2022-10-10 18:28:00.420 INFO  (qtp1355887174-56) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665426480296} status=0 QTime=0
+2022-10-10 18:28:00.461 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1665426480400} status=0 QTime=32
+2022-10-10 18:28:00.461 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1665426480400} status=0 QTime=49
+2022-10-10 18:28:00.477 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665426480297} status=0 QTime=56
+2022-10-10 18:28:00.539 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1665426480400} status=0 QTime=21
+2022-10-10 18:28:06.755 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665426480296} status=0 QTime=0
+2022-10-10 18:28:06.757 INFO  (qtp1355887174-57) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1665426480400} status=0 QTime=0
+2022-10-10 18:28:06.759 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1665426480400} status=0 QTime=3
+2022-10-10 18:28:06.803 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665426480297} status=0 QTime=50
+2022-10-10 18:28:06.803 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1665426480400} status=0 QTime=13
+2022-10-10 18:28:21.891 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:28:21.894 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&indent=true&q.op=OR&_=1665414050764} hits=0 status=0 QTime=2
+2022-10-10 18:28:21.930 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=40
+2022-10-10 18:28:29.535 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:28:29.539 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&indent=true&q.op=AND&_=1665414050764} hits=0 status=0 QTime=2
+2022-10-10 18:28:29.580 INFO  (qtp1355887174-57) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=46
+2022-10-10 18:28:38.589 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:28:38.591 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:Pensamento+científico&indent=true&q.op=AND&_=1665414050764} hits=0 status=0 QTime=1
+2022-10-10 18:28:38.633 INFO  (qtp1355887174-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=44
+2022-10-10 18:28:52.212 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:28:52.213 INFO  (qtp1355887174-57) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:Pensamento+científico&indent=true&q.op=AND&_=1665414050764} hits=0 status=0 QTime=1
+2022-10-10 18:28:52.250 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=37
+2022-10-10 18:28:59.577 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:28:59.581 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:Pensamento+científico&indent=true&q.op=OR&_=1665414050764} hits=5 status=0 QTime=2
+2022-10-10 18:28:59.625 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=48
+2022-10-10 18:29:18.990 INFO  (qtp1355887174-57) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 18:29:19.023 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} hits=2 status=0 QTime=41
+2022-10-10 18:29:19.037 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=47
+2022-10-10 18:29:40.710 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=1
+2022-10-10 18:29:40.710 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=1
+2022-10-10 18:29:45.046 INFO  (qtp1355887174-56) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Teoria+do+conhecimento&q.op=OR&rows=21&wt=json} hits=52 status=0 QTime=1
+2022-10-10 18:29:45.047 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=2
+2022-10-10 18:33:20.105 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:04:09.651 INFO  (qtp1355887174-62) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} hits=709 status=0 QTime=30
+2022-10-10 19:04:09.653 INFO  (qtp1355887174-62) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} status=0 QTime=32
+2022-10-10 19:05:08.559 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=46
+2022-10-10 19:05:08.574 INFO  (qtp1355887174-65) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=4
+2022-10-10 19:08:09.574 INFO  (qtp1355887174-59) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-10-10 19:08:11.026 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-10-10 19:08:11.074 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 25 ms
+2022-10-10 19:08:11.219 INFO  (qtp1355887174-59) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[1 (1746328763337015296), 2 (1746328763536244736), 3 (1746328763539390464), 4 (1746328763540439040), 5 (1746328763543584768), 6 (1746328763544633344), 7 (1746328763545681920), 8 (1746328763547779072), 9 (1746328763549876224), 10 (1746328763553021952), ... (709 adds)], commit=} 0 3676
+2022-10-10 19:08:22.727 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=6
+2022-10-10 19:08:22.727 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} hits=2 status=0 QTime=15
+2022-10-10 19:08:22.813 INFO  (qtp1355887174-65) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=93
+2022-10-10 19:08:38.422 INFO  (qtp1355887174-65) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 19:08:38.432 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:10:46.457 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:10:53.394 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:10:56.130 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:11:28.039 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:11:53.322 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 19:11:53.322 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} hits=2 status=0 QTime=2
+2022-10-10 19:11:53.382 INFO  (qtp1355887174-59) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=59
+2022-10-10 19:12:02.231 INFO  (qtp1355887174-62) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=1
+2022-10-10 19:12:02.233 ERROR (qtp1355887174-53) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field serie_src => org.apache.solr.common.SolrException: undefined field serie_src
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
+org.apache.solr.common.SolrException: undefined field serie_src
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:184) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:256) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:517) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:66) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1129) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:861) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:598) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:291) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:171) ~[?:?]
 	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:141) ~[?:?]
@@ -509,18 +524,6 @@ Was expecting:
 	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
 	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
 	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-2022-10-09 13:24:56.088 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:[object+Object]&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=27
-2022-10-09 13:24:56.111 ERROR (qtp1355887174-73) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:384) ~[?:?]
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
@@ -575,22 +578,78 @@ Was expecting:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:[object Object]': Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:277) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "Object "" at line 1, column 23.
-Was expecting:
-    "TO" ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:959) ~[?:?]
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:827) ~[?:?]
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:490) ~[?:?]
+2022-10-10 19:12:02.233 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_src:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} status=400 QTime=1
+2022-10-10 19:12:02.284 INFO  (qtp1355887174-65) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=53
+2022-10-10 19:12:17.709 INFO  (qtp1355887174-65) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 19:12:17.718 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} hits=1 status=0 QTime=6
+2022-10-10 19:12:17.761 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=53
+2022-10-10 19:14:44.477 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:50:01.644 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=7
+2022-10-10 19:53:37.224 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=0 status=0 QTime=27
+2022-10-10 19:53:37.239 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=0 status=0 QTime=3
+2022-10-10 19:56:41.084 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:Pensamento+científico&indent=true&q.op=OR&_=1665414050764} hits=0 status=0 QTime=7
+2022-10-10 19:56:41.100 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=9
+2022-10-10 19:56:41.169 INFO  (qtp1355887174-69) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=76
+2022-10-10 19:57:52.307 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:57:52.311 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:57:57.993 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:'Pensamento+científico'&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=0 status=0 QTime=3
+2022-10-10 19:57:57.998 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:'Pensamento+científico'&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=0 status=0 QTime=1
+2022-10-10 19:58:31.588 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 19:58:31.590 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:'Pensamento+científico'&indent=true&q.op=OR&_=1665414050764} hits=0 status=0 QTime=2
+2022-10-10 19:58:31.635 INFO  (qtp1355887174-59) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=48
+2022-10-10 19:58:38.840 INFO  (qtp1355887174-52) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665414044688} status=0 QTime=0
+2022-10-10 19:58:38.841 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:"Pensamento+científico"&indent=true&q.op=OR&_=1665414050764} hits=1 status=0 QTime=1
+2022-10-10 19:58:38.892 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665414044688} status=0 QTime=51
+2022-10-10 19:59:02.711 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:02.718 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:05.086 INFO  (qtp1355887174-59) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=year,memSize=7168,tindexSize=44,time=6,phase1=6,nTerms=80,bigTerms=0,termInstances=705,uses=0}
+2022-10-10 19:59:05.100 INFO  (qtp1355887174-59) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=2,phase1=2,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-10-10 19:59:05.100 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:"Pensamento+científico"&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=31
+2022-10-10 19:59:05.109 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=serie_str:"Pensamento+científico"&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=3
+2022-10-10 19:59:22.399 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:22.403 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:59:29.084 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=5
+2022-10-10 19:59:29.092 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Popper,+Karl+Raimund&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=3 status=0 QTime=2
+2022-10-10 19:59:31.813 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:59:31.816 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:33.614 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=37 status=0 QTime=6
+2022-10-10 19:59:33.622 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=37 status=0 QTime=1
+2022-10-10 19:59:42.095 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:42.100 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:59:43.863 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Pesquisa--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=51 status=0 QTime=3
+2022-10-10 19:59:43.871 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Pesquisa--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=51 status=0 QTime=1
+2022-10-10 19:59:46.874 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:46.879 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 19:59:48.782 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Pourchet-Campos,+Maria+Aparecida&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=2
+2022-10-10 19:59:48.791 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=author:Pourchet-Campos,+Maria+Aparecida&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:59:50.865 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=1
+2022-10-10 19:59:50.868 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 20:03:30.820 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=1
+2022-10-10 20:04:25.779 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 20:04:25.976 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Pesquisa--Metodologia&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=2
+2022-10-10 20:04:25.980 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Pesquisa--Metodologia&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=1
+2022-10-10 20:06:06.109 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=2
+2022-10-10 20:06:28.429 INFO  (qtp1355887174-27) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Pesquisa--Metodologia&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=1
+2022-10-10 20:06:28.435 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência--Metodologia,Pesquisa--Metodologia&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=2
+2022-10-10 20:07:38.971 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 20:08:13.898 INFO  (qtp1355887174-75) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=1
+2022-10-10 20:08:39.880 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 20:08:56.285 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=0
+2022-10-10 20:09:12.887 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:24&wt=json} hits=1 status=0 QTime=1
+2022-10-10 20:15:37.543 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
+2022-10-10 21:06:35.784 ERROR (qtp1355887174-73) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Ciência => org.apache.solr.common.SolrException: undefined field Ciência
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
+org.apache.solr.common.SolrException: undefined field Ciência
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:184) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:256) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:517) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:66) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1129) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:845) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:291) ~[?:?]
 	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:171) ~[?:?]
 	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:141) ~[?:?]
@@ -598,78 +657,6 @@ Was expecting:
 	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
 	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
 	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 54 more
-2022-10-09 13:24:56.111 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:[object+Object]&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=1
-2022-10-09 13:25:45.769 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 13:25:45.781 INFO  (qtp1355887174-71) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=1
-2022-10-09 13:26:10.001 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=0
-2022-10-09 13:26:32.860 INFO  (qtp1355887174-71) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&wt=json} hits=1 status=0 QTime=2
-2022-10-09 13:26:33.031 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=3 status=0 QTime=164
-2022-10-09 13:26:33.054 INFO  (qtp1355887174-71) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência--Metodologia&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=3 status=0 QTime=10
-2022-10-09 13:27:06.785 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=1
-2022-10-09 13:27:06.789 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=0
-2022-10-09 13:27:08.835 INFO  (qtp1355887174-67) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Teoria+do+conhecimento&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=6
-2022-10-09 13:27:08.843 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Teoria+do+conhecimento&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=2
-2022-10-09 13:27:32.876 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=4
-2022-10-09 13:27:32.885 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:340&wt=json} hits=1 status=0 QTime=2
-2022-10-09 13:27:35.830 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Teoria+do+conhecimento&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=6
-2022-10-09 13:27:35.842 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Teoria+do+conhecimento&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=4
-2022-10-09 13:30:27.159 INFO  (qtp1355887174-75) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Teoria+do+conhecimento&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=25
-2022-10-09 13:30:52.512 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Ciência&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=30 status=0 QTime=16
-2022-10-09 13:34:16.390 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=82
-2022-10-09 13:34:16.423 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=709 status=0 QTime=8
-2022-10-09 13:34:48.958 INFO  (qtp1355887174-63) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665313307405} status=0 QTime=13
-2022-10-09 13:34:49.203 INFO  (qtp1355887174-59) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665313307407} status=0 QTime=259
-2022-10-09 13:40:17.144 ERROR (qtp1355887174-69) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:384) ~[?:?]
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
@@ -719,118 +706,27 @@ Was expecting one of:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:277) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 49 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:959) ~[?:?]
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:827) ~[?:?]
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:142) ~[?:?]
+2022-10-10 21:06:35.820 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=Ciência:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} status=400 QTime=107
+2022-10-10 21:06:35.867 ERROR (qtp1355887174-73) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Ciência => org.apache.solr.common.SolrException: undefined field Ciência
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468)
+org.apache.solr.common.SolrException: undefined field Ciência
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1468) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:499) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:83) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:184) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:256) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:517) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:66) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1129) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:845) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:452) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:291) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:171) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:141) ~[?:?]
 	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
 	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
 	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
 	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 49 more
-2022-10-09 13:40:17.155 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=297
-2022-10-09 13:40:17.203 ERROR (qtp1355887174-69) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
 	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:384) ~[?:?]
 	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
 	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
@@ -880,67 +776,70 @@ Was expecting one of:
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'general_search:*:*': Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:277) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 49 more
-Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 16.
-Was expecting one of:
-    <EOF> 
-    <AND> ...
-    <OR> ...
-    <NOT> ...
-    "+" ...
-    "-" ...
-    <BAREOPER> ...
-    "(" ...
-    "*" ...
-    "^" ...
-    <QUOTED> ...
-    <TERM> ...
-    <FUZZY_SLOP> ...
-    <PREFIXTERM> ...
-    <WILDTERM> ...
-    <REGEXPTERM> ...
-    "[" ...
-    "{" ...
-    <LPARAMS> ...
-    "filter(" ...
-    <NUMBER> ...
-    
-	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:959) ~[?:?]
-	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:827) ~[?:?]
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:142) ~[?:?]
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
-	at org.apache.solr.search.QParser.getQuery(QParser.java:176) ~[?:?]
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:168) ~[?:?]
-	... 49 more
-2022-10-09 13:40:17.203 INFO  (qtp1355887174-69) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} status=400 QTime=1
-2022-10-09 13:46:23.519 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=193
-2022-10-09 13:46:40.721 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=0 status=0 QTime=6
+2022-10-10 21:06:35.867 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=Ciência:undefined&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} status=400 QTime=1
+2022-10-10 21:07:23.850 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1665426480296} status=0 QTime=26
+2022-10-10 21:07:23.868 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1665426480400} status=0 QTime=50
+2022-10-10 21:07:23.926 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1665426480400} status=0 QTime=100
+2022-10-10 21:07:23.951 INFO  (qtp1355887174-76) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1665426480297} status=0 QTime=138
+2022-10-10 21:07:23.978 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1665426480400} status=0 QTime=29
+2022-10-10 21:07:58.171 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=40 status=0 QTime=33
+2022-10-10 21:07:58.192 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=40 status=0 QTime=4
+2022-10-10 21:08:16.355 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos} hits=709 status=0 QTime=4
+2022-10-10 21:08:31.246 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:08:31.253 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:08:37.312 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos&q.op[]=subject:Sociologia} hits=709 status=0 QTime=2
+2022-10-10 21:08:40.583 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos&q.op[]=subject:Sociologia} hits=709 status=0 QTime=1
+2022-10-10 21:08:51.471 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos&q.op[]=subject:Sociologia} hits=709 status=0 QTime=1
+2022-10-10 21:09:14.097 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos&q.op[]=subject:Sociologia} hits=709 status=0 QTime=1
+2022-10-10 21:10:31.950 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:10:31.995 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:10:40.373 INFO  (qtp1355887174-52) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos&q.op[]=subject:Sociologia&q.op[]=subject:Sociologia} hits=709 status=0 QTime=1
+2022-10-10 21:23:21.582 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&facet=true&wt=json&q.op[]=subject:Ciência--Amazonas--Congressos} hits=709 status=0 QTime=8
+2022-10-10 21:27:52.507 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Ciência--Amazonas--Congressos","subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=49
+2022-10-10 21:28:02.818 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Ciência--Amazonas--Congressos","subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=1
+2022-10-10 21:28:07.099 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Ciência--Amazonas--Congressos","subject:Sociologia","subject:Comportamento"]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=2
+2022-10-10 21:28:19.312 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:28:19.320 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=3
+2022-10-10 21:28:28.552 INFO  (qtp1355887174-68) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Ciência--Amazonas--Congressos","subject:Sociologia","subject:Comportamento","subject:Computação"]}&q.op=OR&facet=true&wt=json} hits=0 status=0 QTime=2
+2022-10-10 21:29:11.814 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Ciência--Amazonas--Congressos","subject:Sociologia","subject:Comportamento"]}&q.op=OR&facet=true&wt=json} hits=1 status=0 QTime=3
+2022-10-10 21:29:38.424 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=3
+2022-10-10 21:30:02.469 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=4
+2022-10-10 21:33:16.635 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=3
+2022-10-10 21:33:16.645 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:33:39.663 INFO  (qtp1355887174-53) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura"]}&q.op=OR&facet=true&wt=json} hits=22 status=0 QTime=3
+2022-10-10 21:34:22.733 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura"]}&q.op=OR&facet=true&wt=json} hits=22 status=0 QTime=1
+2022-10-10 21:34:48.108 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura"]}&q.op=OR&facet=true&wt=json} hits=22 status=0 QTime=2
+2022-10-10 21:35:15.423 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura","subject:Cultura"]}&q.op=OR&facet=true&wt=json} hits=22 status=0 QTime=2
+2022-10-10 21:35:27.130 INFO  (qtp1355887174-76) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura","subject:Cultura","subject:Civilização"]}&q.op=OR&facet=true&wt=json} hits=4 status=0 QTime=3
+2022-10-10 21:35:44.221 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Cultura","subject:Cultura"]}&q.op=OR&facet=true&wt=json} hits=22 status=0 QTime=1
+2022-10-10 21:38:03.416 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:38:03.421 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:38:21.690 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=3
+2022-10-10 21:38:42.040 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:38:53.611 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=2
+2022-10-10 21:38:58.917 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=5
+2022-10-10 21:39:03.102 INFO  (qtp1355887174-73) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia","subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=6 status=0 QTime=2
+2022-10-10 21:39:15.448 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=2
+2022-10-10 21:39:22.684 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:39:22.692 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:39:28.820 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=2
+2022-10-10 21:39:51.910 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=2
+2022-10-10 21:40:17.879 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=1
+2022-10-10 21:40:23.296 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=1
+2022-10-10 21:40:27.078 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Antropologia","subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=31 status=0 QTime=2
+2022-10-10 21:40:30.306 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=2
+2022-10-10 21:41:10.369 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=40 status=0 QTime=2
+2022-10-10 21:41:10.386 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Ciência&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=40 status=0 QTime=1
+2022-10-10 21:41:18.481 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["year:1999"]}&q.op=OR&facet=true&wt=json} hits=5 status=0 QTime=4
+2022-10-10 21:41:46.652 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=709 status=0 QTime=1
+2022-10-10 21:41:55.896 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=1
+2022-10-10 21:42:00.528 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia","subject:Antropologia"]}&q.op=OR&facet=true&wt=json} hits=6 status=0 QTime=3
+2022-10-10 21:42:03.997 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":["subject:Sociologia"]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=2
+2022-10-10 21:42:12.355 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:443&wt=json} hits=1 status=0 QTime=1
+2022-10-10 21:42:12.366 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:443&wt=json} hits=1 status=0 QTime=0
+2022-10-10 21:42:21.217 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Sociologia,Pisicanálise,Psicologia+social&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=3
+2022-10-10 21:42:21.227 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Sociologia,Pisicanálise,Psicologia+social&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=1
+2022-10-10 21:42:27.604 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:454&wt=json} hits=1 status=0 QTime=0
+2022-10-10 21:42:27.608 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:Sociologia,Pisicanálise,Psicologia+social&q.op=OR&rows=21&wt=json} hits=66 status=0 QTime=1
+2022-10-10 21:42:30.358 INFO  (qtp1355887174-77) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:SOCIOLOGIA&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=5
+2022-10-10 21:42:30.363 INFO  (qtp1355887174-81) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=subject:SOCIOLOGIA&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=OR&facet=true&wt=json} hits=35 status=0 QTime=2

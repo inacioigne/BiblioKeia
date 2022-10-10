@@ -43,7 +43,6 @@ class MarcWork:
         else:
             return self.cdd.text
 
-
     #Books
     def IllustrativeContent(self):
         code = self.tag008[18:22]
@@ -218,9 +217,6 @@ class MarcWork:
             labels.append(label)
         return labels
             
-
-
-
     def Subjects(self):
         subjects = self.marcxml.findall(f"datafield/[@tag='650']")
         subjectsList = list() 

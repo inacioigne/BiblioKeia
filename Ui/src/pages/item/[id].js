@@ -1,5 +1,11 @@
+// Next Components
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
+
+// React Hooks
 import { createContext, useEffect, useState } from "react";
+
 // Material UI
 import {
   Stack,
@@ -11,26 +17,34 @@ import {
   Drawer,
 } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
-import { LocationCity, CalendarMonth, SouthAmerica } from "@mui/icons-material";
+import {
+  LocationCity,
+  CalendarMonth,
+  SouthAmerica,
+  AutoStories,
+  EmojiTransportation,
+  LibraryBooks
+} from "@mui/icons-material";
 
+// Bibliokeia Components
 import Navbar from "src/components/Navbar/navbar_search";
 import Details from "src/components/CardItem/details";
+import Carousel from "src/components/ObrasSimilares";
+import Notes from "src/components/metadata/notes";
+import Serie from "src/components/metadata/serie";
+import Footer from "src/components/Footer";
 
-// Next Components
-import Image from "next/image";
-import Link from 'next/link'
-
-
-import { SparqlEndpointFetcher } from "fetch-sparql-endpoint";
+// Sparql
+//import { SparqlEndpointFetcher } from "fetch-sparql-endpoint";
 import { api } from "src/services/solr";
 
-import Carousel from "src/components/ObrasSimilares";
-
+// Style
 const styleText = {
   //fontFamily: "Alkalami"
   fontFamily: "Sarabun",
 };
 
+// Object Language
 const lang = { por: "Português" };
 
 const Item = () => {
@@ -49,12 +63,12 @@ const Item = () => {
       })
       .then((response) => {
         let [doc] = response.data.response.docs;
-        //console.log("ITEM:", doc);
+
         setItem(doc);
       });
   };
 
-  const fetcher = new SparqlEndpointFetcher();
+  //const fetcher = new SparqlEndpointFetcher();
 
   // async function getData() {
   //   const bindingsStream = await fetcher.fetchBindings(
@@ -87,14 +101,13 @@ const Item = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       {/* Navbar */}
-      <Navbar />
-      <Container maxWidth="md">
+      <Navbar mode={"dark"} />
+      <Container maxWidth="md" sx={{ height: '90vh'}}>
         <Grid
           container
           spacing={4}
           sx={{
             mt: 2,
-            //border: 'solid'
           }}
         >
           <Grid
@@ -119,141 +132,126 @@ const Item = () => {
               <Carousel setOpen={setOpen} subjects={item?.subject.toString()} />
             </Drawer>
           </Grid>
-          {item && (
-            <Grid xs={9}>
-              <Typography
-                variant="h4"
-                gutterBottom
-                sx={{
-                  ...styleText,
-                  fontWeight: "bold",
-                }}
-              >
-                {item.title}
-              </Typography>
-              <Typography
-                variant="h6"
-                gutterBottom
-                sx={{
-                  ...styleText,
-                }}
-              >
-                {item.responsibilities}
-              </Typography>
-              <Typography variant="subtitle2" gutterBottom>
-                Assuntos:
-              </Typography>
-              <Divider />
-              <Stack mt={2} spacing={2} direction="row">
-                {item.subject.map((subject, index) => (
-            
-                  <Button key={index} variant="outlined" 
+
+          <Grid xs={9}>
+            <Typography
+              variant="h4"
+              gutterBottom
+              sx={{
+                ...styleText,
+                fontWeight: "bold",
+              }}
+            >
+              {item?.title}
+            </Typography>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                ...styleText,
+              }}
+            >
+              {item?.responsibilities}
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Assuntos:
+            </Typography>
+            <Divider />
+            <Stack mt={2} spacing={2} direction="row">
+              {item?.subject.map((subject, index) => (
+                <Button
+                  key={index}
+                  variant="outlined"
                   onClick={() => {
-                    router.push(`/search?q=${subject}`);
-                  }}>
-                    {subject}
-                  </Button>
-                  
-                ))}
-                  
-                  
-              </Stack>
-              <Typography mt={3} variant="subtitle2" gutterBottom>
-                Autoria principal:
-              </Typography>
-              <Divider />
-              <Button sx={{ textTransform: "none" }}>{item.author}</Button>
-              <Typography mt={3} variant="subtitle2" gutterBottom>
-                Publicação:
-              </Typography>
-              <Divider />
-              <Stack mt={2} spacing={3} direction="row">
-                {/* Local */}
-                <Details
-                  label={"Local"}
-                  icon={<LocationCity />}
-                  value={item.place}
-                />
-                {/* Editora */}
-                <Details
-                  label={"Editora"}
-                  icon={<LocationCity />}
-                  value={item.publisher}
-                />
-                {/* Ano */}
-                <Details
-                  label={"Ano de Publicação"}
-                  icon={<CalendarMonth />}
-                  value={item.year}
-                />
-              </Stack>
-              {/* Série */}
-              <Typography mt={3} variant="subtitle2" gutterBottom>
-                Série:
-              </Typography>
-              <Divider />
-              <Typography
-                variant="body1"
-                gutterBottom
-                sx={{
-                  ...styleText,
-                }}
-              >
-                {item.serie}
-              </Typography>
-              {/* Série */}
-              <Typography mt={3} variant="subtitle2" gutterBottom>
-                Notas:
-              </Typography>
-              <Divider />
-              <Typography
-                variant="body1"
-                gutterBottom
-                sx={{
-                  ...styleText,
-                }}
-              >
-                {item.notes}
-              </Typography>
-              {/* Série */}
-              <Typography mt={3} variant="subtitle2" gutterBottom>
-                Detalhes:
-              </Typography>
-              <Divider />
-              <Stack mt={2} spacing={3} direction="row">
-                {/* Idioma */}
-                <Details
-                  label={"Idioma"}
-                  icon={<SouthAmerica />}
-                  value={lang[item.language]}
-                />
-                {/* Localização */}
-                <Details
-                  label={"Localização"}
-                  icon={<SouthAmerica />}
-                  value={item.shelf}
-                />
-                {/* Classificação */}
-                <Details
-                  label={"Classificação"}
-                  icon={<SouthAmerica />}
-                  value={item.call}
-                />
-              </Stack>
-            </Grid>
-          )}
+                    router.push(`/search?q=subject:${subject}`);
+                  }}
+                >
+                  {subject}
+                </Button>
+              ))}
+            </Stack>
+            <Typography mt={3} variant="subtitle2" gutterBottom>
+              Autoria principal:
+            </Typography>
+            <Divider />
+            <Button
+              onClick={() => {
+                router.push(`/search?q=author:${item.author}&op=OR`);
+              }}
+              sx={{ textTransform: "none" }}
+            >
+              {item?.author}
+            </Button>
+            <Typography mt={3} variant="subtitle2" gutterBottom>
+              Publicação:
+            </Typography>
+            <Divider />
+            <Stack mt={2} spacing={3} direction="row">
+              {/* Local */}
+              <Details
+                label={"Local"}
+                icon={<EmojiTransportation />}
+                value={item?.place}
+              />
+              {/* Editora */}
+              <Details
+                label={"Editora"}
+                icon={<LocationCity />}
+                value={item?.publisher}
+              />
+              {/* Ano */}
+              <Details
+                label={"Ano de Publicação"}
+                icon={<CalendarMonth />}
+                value={item?.year}
+              />
+            </Stack>
+            {/* Série */}
+            <Serie
+              serie={item?.serie}
+              numSerie={item?.numSerie}
+              styleText={styleText}
+            />
+
+            {/* Notas */}
+            <Notes notes={item?.notes} styleText={styleText} />
+
+            {/* Detalhes */}
+            <Typography mt={3} variant="subtitle2" gutterBottom>
+              Detalhes:
+            </Typography>
+            <Divider />
+            <Stack mt={2} spacing={5} direction="row">
+              {/* Paginas */}
+              <Details
+                label={"Páginas"}
+                icon={<AutoStories />}
+                value={item?.pages}
+              />
+
+              {/* Idioma */}
+              <Details
+                label={"Idioma"}
+                icon={<SouthAmerica />}
+                value={lang[item?.language]}
+              />
+              {/* Localização */}
+              <Details
+                label={"Localização"}
+                icon={<LibraryBooks />}
+                value={item?.shelf}
+              />
+              {/* Classificação */}
+              <Details
+                label={"Classificação"}
+                icon={<SouthAmerica />}
+                value={item?.call}
+              />
+            </Stack>
+          </Grid>
         </Grid>
-        {/* <Typography
-          variant="h5"
-          gutterBottom
-          sx={{
-            ...styleText,
-          }}
-        >
-          Obras similares
-        </Typography>
-        <Carousel /> */}
       </Container>
+      <Footer />
     </Box>
   );
 };

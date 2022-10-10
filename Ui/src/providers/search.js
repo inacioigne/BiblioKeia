@@ -29,9 +29,9 @@ export const SearchProvider = ({ children }) => {
   const [filter, setFilter] = useState([])
 
 
-  const getData = (field, term, page = 0, filter = []) => {
+  const getData = (field, term, page = 0, op = 'OR', filter = [] ) => {
 
-    console.log('PAGE:', page)
+    //console.log('PAGE:', page)
     const json_filter = {
       filter: filter,
     };
@@ -42,7 +42,7 @@ export const SearchProvider = ({ children }) => {
         params: {
           q: `${field}:${term}`,
           start: page,
-          "q.op": "AND",
+          "q.op": op,
           json: JSON.stringify(json_filter),
           facet: true,
           "json.facet": JSON.stringify(facet),

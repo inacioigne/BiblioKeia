@@ -49,14 +49,19 @@ class MarcInstance:
     def Serie(self):
         serie = self.marcxml.find("datafield/[@tag='490']"\
                                 "/subfield/[@code='a']")
+        
         volume = self.marcxml.find("datafield/[@tag='490']"\
                                 "/subfield/[@code='v']")
         if serie == None:
             return False
         else:
-            if volume == None:
-                return serie.text
-            return serie.text+volume.text
+            serie = serie.text
+            serie = serie.rstrip().removesuffix(';').rstrip()
+            d = {'serie': serie}
+            if volume != None:
+                d.update(volume=volume.text)
+            return d
+       
 
     def Note(self):
         note = self.marcxml.find("datafield/[@tag='500']"\

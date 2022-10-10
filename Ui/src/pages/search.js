@@ -25,7 +25,7 @@ import { useSearch } from "src/providers/search"
 
 export default function Search() {
   const router = useRouter();
-  const { q } = router.query;
+  const { q, op } = router.query;
   const [query, setQuery] = useState({ field: "*", term: "*" });
 
   //const [items, setItems] = useState(null);
@@ -34,7 +34,7 @@ export default function Search() {
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
 
-  const { getData, numFound, setNumFound, items, setItems, filter, page } = useSearch()
+  const { getData, numFound, setNumFound, items, setItems, filter,  setFilter, page } = useSearch()
 
 
   useEffect(() => {
@@ -43,23 +43,17 @@ export default function Search() {
       return;
     }
     let [field, term] = q.split(":")
-    //getData("general_search", q, page);
+    //setFilter([])
+   
+    getData(field, term, page, op)
 
-    console.log('SRH: ', field, term)
-
-    // if (q == "all") {
-    //   getData(query.field, query.term, page);
-    // } else {
-    //   setQuery({ field: "general_search", term: q });
-
-    //   getData("general_search", q, page);
-    // }
+    
   }, [q]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       {/* Navbar */}
-      <Navbar />
+      <Navbar mode={'dark'} />
       <Container maxWidth="xl">
         <AdvancedSearch getData={getData} />
 

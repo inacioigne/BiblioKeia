@@ -33,13 +33,23 @@ export default function Filters({
     facetAuthor,
     facetYear,
     facetType,
-    filter
+    filter,
+    setFilter
   } = useSearch();
 
   const onSubmit = () => {
 
-    getData(query.field, query.term, 0, filter);
+    getData(query.field, query.term, 0, 'OR', filter); 
   };
+
+  useEffect(() => {
+
+   
+    setFilter([])
+
+
+    
+  }, []);
 
   return (
     <Box sx={{ m: 2 }}>

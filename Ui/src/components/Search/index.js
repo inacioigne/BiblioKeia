@@ -2,6 +2,40 @@ import { Paper, InputBase, IconButton, Box } from "@mui/material/";
 import SearchIcon from "@mui/icons-material/Search";
 import { useForm, Controller } from "react-hook-form";
 import { useRouter } from "next/router";
+import { ThemeProvider, useTheme, createTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { red, green, blue } from '@mui/material/colors';
+
+import { styled } from '@mui/material/styles';
+
+// function useWidth() {
+//   const theme = useTheme();
+//   const keys = [...theme.breakpoints.keys].reverse();
+//   return (
+//     keys.reduce((output, key) => {
+//       // eslint-disable-next-line react-hooks/rules-of-hooks
+//       const matches = useMediaQuery(theme.breakpoints.up(key));
+//       return !output && matches ? key : output;
+//     }, null) || 'xs'
+//   );
+// }
+
+const RootSearch = styled('div')(({ theme }) => ({
+  padding: theme.spacing(1),
+  [theme.breakpoints.down('md')]: {
+    //backgroundColor: red[500],
+    width: 300,
+  },
+  [theme.breakpoints.up('md')]: {
+    //backgroundColor: blue[500],
+    width: 400,
+  },
+  [theme.breakpoints.up('lg')]: {
+    //backgroundColor: green[500],
+    width: 800,
+    //border: "solid"
+  },
+}));
 
 export default function SearchBox() {
   const router = useRouter();
@@ -16,9 +50,12 @@ export default function SearchBox() {
     if (data.search == "") {
       router.push(`/search?q=*:*`);
     } else {
-      router.push(`/search?q=${data.search}`);
+      router.push(`/search?q=general_search:${data.search}`);
     }
   };
+
+  
+
 
   return (
     <Box
@@ -28,6 +65,8 @@ export default function SearchBox() {
         flexDirection: "column",
         top: "30vh",
         width: "100%",
+        
+        
       }}
     >
       <Box
@@ -36,8 +75,10 @@ export default function SearchBox() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          
         }}
       >
+        <RootSearch>
         <Paper
           component="form"
           onSubmit={handleSubmit(onSubmit)}
@@ -45,8 +86,9 @@ export default function SearchBox() {
             p: "2px 4px",
             display: "flex",
             alignItems: "center",
-            width: 400,
-          }}
+            //width: 400,
+          }
+        }
         >
           <Controller
             name="search"
@@ -65,6 +107,7 @@ export default function SearchBox() {
             <SearchIcon />
           </IconButton>
         </Paper>
+        </RootSearch>
       </Box>
     </Box>
   );

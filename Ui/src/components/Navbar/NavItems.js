@@ -8,22 +8,41 @@ import {
 } from "@mui/icons-material/";
 import { useState } from "react";
 
-const NavItemsStyles = {
-  color: blueGrey[900],
-};
+// const NavItemsStyles = {
+//   color: blueGrey[900],
+//   //color: "white",
+//   //fontSize: "1.5rem"
+// };
 
 const NavLinks = {
   py: 1,
   px: 2,
   borderRadius: 2,
   "&:hover": {
-    backgroundColor: grey[200],
+    backgroundColor: grey[300],
     cursor: "pointer",
   },
 
 }
 
-export default function NavItems({item}) {
+export default function NavItems({mode, item}) {
+
+  function setMode(mode) {
+    if (mode == "dark") {
+      return {
+        //backgroundColor: "black",
+        color: "white",
+      };
+    } else if (mode == "light") {
+      return {
+        //backgroundColor: "white",
+        color: blueGrey[900],
+      };
+    }
+  }
+
+  const styleMode = setMode(mode);
+
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -44,17 +63,17 @@ export default function NavItems({item}) {
       >
         <LocalLibrary
           sx={{
-            ...NavItemsStyles,
-            fontSize: "1rem",
+            ...styleMode,
+            //fontSize: "1rem",
           }}
         />
-        <Typography variant="subtitle2" sx={{ ...NavItemsStyles }}>
+        <Typography variant="subtitle2" sx={{ ...styleMode }}>
           {item}
         </Typography>
         <KeyboardArrowDownOutlined
           sx={{
-            ...NavItemsStyles,
-            fontSize: "1rem",
+            ...styleMode,
+            //fontSize: "1rem",
           }}
         />
       </Box>
@@ -89,7 +108,8 @@ export default function NavItems({item}) {
                 mt={-3}
                 p={3}
                 sx={{
-                  bgcolor: "background.paper",
+                  //bgcolor: "background.paper",
+                  bgcolor: grey[100],
                   borderRadius: 3,
                 }}
               >
