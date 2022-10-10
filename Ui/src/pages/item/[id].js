@@ -18,11 +18,13 @@ import Details from "src/components/CardItem/details";
 
 // Next Components
 import Image from "next/image";
+import Link from 'next/link'
+
 
 import { SparqlEndpointFetcher } from "fetch-sparql-endpoint";
 import { api } from "src/services/solr";
 
-import Carousel from "src/components/Carousel";
+import Carousel from "src/components/ObrasSimilares";
 
 const styleText = {
   //fontFamily: "Alkalami"
@@ -69,6 +71,7 @@ const Item = () => {
 
     getItem();
   }, [id]);
+
   const [open, setOpen] = useState(false);
   const toggleDrawer = (open) => (event) => {
     if (
@@ -113,7 +116,7 @@ const Item = () => {
               Obras similares
             </Button>
             <Drawer anchor={"bottom"} open={open} onClose={toggleDrawer(open)}>
-              <Carousel />
+              <Carousel setOpen={setOpen} subjects={item?.subject.toString()} />
             </Drawer>
           </Grid>
           {item && (
@@ -143,10 +146,17 @@ const Item = () => {
               <Divider />
               <Stack mt={2} spacing={2} direction="row">
                 {item.subject.map((subject, index) => (
-                  <Button key={index} variant="outlined">
+            
+                  <Button key={index} variant="outlined" 
+                  onClick={() => {
+                    router.push(`/search?q=${subject}`);
+                  }}>
                     {subject}
                   </Button>
+                  
                 ))}
+                  
+                  
               </Stack>
               <Typography mt={3} variant="subtitle2" gutterBottom>
                 Autoria principal:

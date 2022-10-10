@@ -31,7 +31,7 @@ export const SearchProvider = ({ children }) => {
 
   const getData = (field, term, page = 0, filter = []) => {
 
-    //console.log('PAGE:', page)
+    console.log('PAGE:', page)
     const json_filter = {
       filter: filter,
     };

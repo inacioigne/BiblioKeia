@@ -11,11 +11,10 @@ import Counters from "../components/Counters";
 import Footer from "../components/Footer";
 
 // BiblioKeia Hooks
-import { useSearch } from "src/providers/search"
+//import { useSearch } from "src/providers/search"
 
 export default function Home() {
 
-  //const { getData } = useSearch()
   
   return (
     <Box>

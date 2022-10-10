@@ -14,7 +14,7 @@ export default function SearchBox() {
 
   const onSubmit = (data) => {
     if (data.search == "") {
-      router.push(`/search?q=all`);
+      router.push(`/search?q=*:*`);
     } else {
       router.push(`/search?q=${data.search}`);
     }

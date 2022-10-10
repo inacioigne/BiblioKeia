@@ -1,70 +1,50 @@
-2022-09-25 21:04:44.967 INFO  (main) [] o.e.j.u.log Logging initialized @8812ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-09-25 21:04:45.295 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
-2022-09-25 21:04:46.306 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-09-25 21:04:46.336 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
-2022-09-25 21:04:46.338 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-09-25 21:04:46.338 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0
-2022-09-25 21:04:46.338 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-25T21:04:46.338106300Z
-2022-09-25 21:04:46.346 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
-2022-09-25 21:04:46.354 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
-2022-09-25 21:04:47.545 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
-2022-09-25 21:04:47.559 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-09-25 21:05:06.245 WARN  (main) [] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.526 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
-2022-09-25 21:05:06.672 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
-2022-09-25 21:05:06.672 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
-2022-09-25 21:05:06.680 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-09-25 21:05:06.734 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
-2022-09-25 21:05:06.824 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
-2022-09-25 21:05:07.418 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2022-09-25 21:05:07.418 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
-2022-09-25 21:05:07.474 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
-2022-09-25 21:05:07.729 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1eef9aef{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
-2022-09-25 21:05:07.743 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_25.request.log
-2022-09-25 21:05:07.759 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-25 21:05:07.759 INFO  (main) [] o.e.j.s.Server Started @31601ms
-2022-09-25 21:05:11.114 INFO  (qtp1355887174-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=144
-2022-09-25 21:05:26.464 WARN  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.410 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
-2022-09-25 21:05:26.641 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2022-09-25 21:05:26.641 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2022-09-25 21:05:26.669 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2022-09-25 21:05:26.669 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2022-09-25 21:05:27.019 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
-2022-09-25 21:05:27.043 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
-2022-09-25 21:05:27.057 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2022-09-25 21:05:27.078 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-09-25 21:05:27.078 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2022-09-25 21:05:27.087 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
-2022-09-25 21:06:33.568 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664139993487} status=0 QTime=6
-2022-09-25 21:06:33.755 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664139993488} status=0 QTime=179
-2022-09-25 21:06:33.919 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664139993488} status=0 QTime=157
-2022-09-25 21:06:36.994 INFO  (qtp1355887174-20) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664139993487} status=0 QTime=0
-2022-09-25 21:06:37.003 INFO  (qtp1355887174-24) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1664139996988} status=0 QTime=6
-2022-09-25 21:06:37.035 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1664139996988} status=0 QTime=20
-2022-09-25 21:06:37.307 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664139993488} status=0 QTime=306
-2022-09-25 21:06:37.313 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1664139993488&ts=1664139993488} status=503 QTime=6
-2022-09-25 21:06:37.349 INFO  (qtp1355887174-24) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1664139996988} status=0 QTime=308
-2022-09-25 21:10:56.278 INFO  (qtp1355887174-23) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=91,phase1=91,nTerms=1,bigTerms=1,termInstances=0,uses=0}
-2022-09-25 21:10:56.334 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=144 status=0 QTime=1688
-2022-09-25 21:10:56.446 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=144 status=0 QTime=7
-2022-09-25 21:11:09.671 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=141&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=144 status=0 QTime=25
-2022-09-25 21:15:59.703 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} hits=144 status=0 QTime=190
-2022-09-25 21:15:59.709 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} status=0 QTime=201
-2022-09-25 21:46:22.159 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-09-25 21:46:22.299 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 28 ms
-2022-09-25 21:46:22.389 INFO  (qtp1355887174-24) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[145 (1744979760990126080), 146 (1744979761521754112), 147 (1744979761526996992), 148 (1744979761532239872), 149 (1744979761539579904), 150 (1744979761542725632), 151 (1744979761544822784), 152 (1744979761547968512), 153 (1744979761552162816), 154 (1744979761555308544), ... (35 adds)], commit=} 0 2387
-2022-09-25 21:46:56.428 INFO  (qtp1355887174-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664139993487} status=0 QTime=10
-2022-09-25 21:46:56.707 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664139993488} status=0 QTime=292
-2022-09-25 21:46:58.714 INFO  (qtp1355887174-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664139993487} status=0 QTime=0
-2022-09-25 21:46:58.728 INFO  (qtp1355887174-24) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1664142416076} hits=179 status=0 QTime=13
-2022-09-25 21:46:58.870 INFO  (qtp1355887174-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664139993488} status=0 QTime=157
-2022-09-25 22:41:26.767 INFO  (qtp1355887174-45) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=38,phase1=38,nTerms=1,bigTerms=1,termInstances=0,uses=0}
-2022-09-25 22:41:26.816 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=179 status=0 QTime=449
-2022-09-25 22:41:53.296 INFO  (qtp1355887174-25) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=171&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=179 status=0 QTime=27
-2022-09-25 23:13:55.084 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=179 status=0 QTime=359
-2022-09-25 23:36:04.254 INFO  (qtp1355887174-23) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[180 (1744986663957823488), 181 (1744986664131887104), 182 (1744986664140275712), 183 (1744986664157052928), 184 (1744986664161247232), 185 (1744986664165441536), 186 (1744986664167538688), 187 (1744986664168587264), 188 (1744986664171732992)]} 0 477
-2022-09-25 23:36:04.269 ERROR (qtp1355887174-23) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=189] Error adding field 'year'='1977. -' msg=For input string: "1977. -" => org.apache.solr.common.SolrException: ERROR: [doc=189] Error adding field 'year'='1977. -' msg=For input string: "1977. -"
+2022-09-26 15:12:16.731 INFO  (main) [] o.e.j.u.log Logging initialized @1901ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-09-26 15:12:17.028 INFO  (main) [] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2022-09-26 15:12:18.005 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-09-26 15:12:18.022 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.0.0
+2022-09-26 15:12:18.022 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-09-26 15:12:18.022 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0
+2022-09-26 15:12:18.022 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-09-26T15:12:18.022349100Z
+2022-09-26 15:12:18.034 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr (source: system property: solr.solr.home)
+2022-09-26 15:12:18.037 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\solr.xml
+2022-09-26 15:12:19.964 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-09-26 15:12:19.974 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-09-26 15:12:20.354 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr
+2022-09-26 15:12:20.354 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [search]
+2022-09-26 15:12:20.363 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-09-26 15:12:20.417 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-26 15:12:20.516 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-26 15:12:21.202 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@18cc679e{/solr,file:///C:/Users/Usu%C3%A1rio/Desktop/BiblioKeia/Solr/solr-9.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+2022-09-26 15:12:21.224 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\logs\2022_09_26.request.log
+2022-09-26 15:12:21.243 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-26 15:12:21.243 INFO  (main) [] o.e.j.s.Server Started @6418ms
+2022-09-26 15:12:21.273 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-26 15:12:21.273 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.CoreContainer Creating SolrCore 'search' using configuration from instancedir C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search, trusted=true
+2022-09-26 15:12:21.363 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-26 15:12:22.077 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=95
+2022-09-26 15:12:22.497 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-09-26 15:12:22.497 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-09-26 15:12:22.535 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-26 15:12:22.536 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-26 15:12:23.154 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-26 15:12:23.195 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2022-09-26 15:12:23.220 INFO  (coreLoadExecutor-10-thread-1) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-26 15:12:23.299 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 15:12:23.299 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-26 15:12:23.325 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-26 15:13:17.273 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=6
+2022-09-26 15:13:17.317 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=49
+2022-09-26 15:13:17.362 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=38
+2022-09-26 15:13:19.936 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=0
+2022-09-26 15:13:19.945 INFO  (qtp1355887174-20) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1664205199929} status=0 QTime=10
+2022-09-26 15:13:19.980 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1664205199930} status=0 QTime=35
+2022-09-26 15:13:19.992 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1664205197212&ts=1664205197212} status=503 QTime=4
+2022-09-26 15:13:20.032 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=97
+2022-09-26 15:13:20.043 INFO  (qtp1355887174-22) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1664205199929} status=0 QTime=88
+2022-09-26 15:22:53.372 INFO  (qtp1355887174-47) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[205 (1745046232880906240), 206 (1745046232984715264), 207 (1745046232988909568), 208 (1745046232989958144), 209 (1745046232992055296), 210 (1745046232994152448), 211 (1745046232996249600), 212 (1745046232997298176), 213 (1745046233000443904), 214 (1745046233002541056), ... (18 adds)]} 0 174
+2022-09-26 15:22:53.372 ERROR (qtp1355887174-47) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=223] Error adding field 'year'='19--' msg=For input string: "19--" => org.apache.solr.common.SolrException: ERROR: [doc=223] Error adding field 'year'='19--' msg=For input string: "19--"
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247)
-org.apache.solr.common.SolrException: ERROR: [doc=189] Error adding field 'year'='1977. -' msg=For input string: "1977. -"
+org.apache.solr.common.SolrException: ERROR: [doc=223] Error adding field 'year'='19--' msg=For input string: "19--"
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247) ~[?:?]
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:97) ~[?:?]
 	at org.apache.solr.update.AddUpdateCommand.lambda$makeLuceneDocs$0(AddUpdateCommand.java:233) ~[?:?]
@@ -164,7 +144,7 @@ org.apache.solr.common.SolrException: ERROR: [doc=189] Error adding field 'year'
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: java.lang.NumberFormatException: For input string: "1977. -"
+Caused by: java.lang.NumberFormatException: For input string: "19--"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
 	at java.lang.Long.parseLong(Long.java:711) ~[?:?]
 	at java.lang.Long.parseLong(Long.java:834) ~[?:?]
@@ -174,10 +154,39 @@ Caused by: java.lang.NumberFormatException: For input string: "1977. -"
 	at org.apache.solr.update.DocumentBuilder.addOriginalField(DocumentBuilder.java:291) ~[?:?]
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:207) ~[?:?]
 	... 98 more
-2022-09-25 23:37:06.766 INFO  (qtp1355887174-50) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[180 (1744986729831464960), 181 (1744986729848242176), 182 (1744986729850339328), 183 (1744986729852436480), 184 (1744986729856630784), 185 (1744986729858727936), 186 (1744986729859776512), 187 (1744986729860825088), 188 (1744986729865019392), 189 (1744986729865019393), ... (21 adds)]} 0 57
-2022-09-25 23:37:06.766 ERROR (qtp1355887174-50) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=201] Error adding field 'year'='s.a.' msg=For input string: "s.a." => org.apache.solr.common.SolrException: ERROR: [doc=201] Error adding field 'year'='s.a.' msg=For input string: "s.a."
+2022-09-26 15:25:57.182 INFO  (qtp1355887174-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205957098} status=0 QTime=0
+2022-09-26 15:25:57.192 INFO  (qtp1355887174-29) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1664205957163} status=0 QTime=9
+2022-09-26 15:25:57.195 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1664205957164} status=0 QTime=7
+2022-09-26 15:25:57.265 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205957099} status=0 QTime=82
+2022-09-26 15:25:57.309 INFO  (qtp1355887174-26) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1664205957163} status=0 QTime=34
+2022-09-26 15:26:19.293 INFO  (qtp1355887174-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205957098} status=0 QTime=0
+2022-09-26 15:26:19.295 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1664205957163} status=0 QTime=2
+2022-09-26 15:26:19.297 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1664205957164} status=0 QTime=0
+2022-09-26 15:26:19.324 INFO  (qtp1355887174-21) [ x:search] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1664205957163} status=0 QTime=7
+2022-09-26 15:26:19.342 INFO  (qtp1355887174-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205957099} status=0 QTime=49
+2022-09-26 15:30:47.080 INFO  (qtp1355887174-54) [ x:search] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf\managed-schema.xml
+2022-09-26 15:30:47.102 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.0.0
+2022-09-26 15:30:47.120 INFO  (qtp1355887174-54) [ x:search] o.a.s.s.IndexSchema Schema name=default-config
+2022-09-26 15:30:47.286 INFO  (qtp1355887174-54) [ x:search] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-09-26 15:30:47.286 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.CoreContainer Reloading SolrCore 'search' using configuration from instancedir C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search
+2022-09-26 15:30:47.366 INFO  (qtp1355887174-54) [ x:search] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search], dataDir=[C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\data\]
+2022-09-26 15:30:47.520 INFO  (qtp1355887174-54) [ x:search] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-09-26 15:30:47.521 INFO  (qtp1355887174-54) [ x:search] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-09-26 15:30:47.536 INFO  (qtp1355887174-54) [ x:search] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server\solr\search\conf
+2022-09-26 15:30:47.537 INFO  (qtp1355887174-54) [ x:search] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2022-09-26 15:30:47.541 INFO  (qtp1355887174-54) [ x:search] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-09-26 15:30:47.546 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 15:30:47.546 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-09-26 15:30:47.569 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-26 15:30:47.598 INFO  (qtp1355887174-54) [ x:search] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2022-09-26 15:30:47.717 INFO  (qtp1355887174-54) [] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@5a6a7e6 search
+2022-09-26 15:30:47.717 INFO  (qtp1355887174-54) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@5a6a7e6
+2022-09-26 15:30:47.729 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 15:30:47.737 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 11 ms
+2022-09-26 15:34:38.737 INFO  (qtp1355887174-54) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[205 (1745046972561096704), 206 (1745046972588359680), 207 (1745046972595699712), 208 (1745046972599894016), 209 (1745046972601991168), 210 (1745046972604088320), 211 (1745046972606185472), 212 (1745046972607234048), 213 (1745046972609331200), 214 (1745046972612476928), ... (35 adds)]} 0 87
+2022-09-26 15:34:38.737 ERROR (qtp1355887174-54) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=240] Error adding field 'year'='1981]' msg=For input string: "1981]" => org.apache.solr.common.SolrException: ERROR: [doc=240] Error adding field 'year'='1981]' msg=For input string: "1981]"
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247)
-org.apache.solr.common.SolrException: ERROR: [doc=201] Error adding field 'year'='s.a.' msg=For input string: "s.a."
+org.apache.solr.common.SolrException: ERROR: [doc=240] Error adding field 'year'='1981]' msg=For input string: "1981]"
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247) ~[?:?]
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:97) ~[?:?]
 	at org.apache.solr.update.AddUpdateCommand.lambda$makeLuceneDocs$0(AddUpdateCommand.java:233) ~[?:?]
@@ -274,15 +283,10 @@ org.apache.solr.common.SolrException: ERROR: [doc=201] Error adding field 'year'
 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-Caused by: java.lang.NumberFormatException: For input string: "s.a."
+Caused by: java.lang.NumberFormatException: For input string: "1981]"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
 	at java.lang.Long.parseLong(Long.java:711) ~[?:?]
 	at java.lang.Long.parseLong(Long.java:834) ~[?:?]
@@ -291,22 +295,164 @@ Caused by: java.lang.NumberFormatException: For input string: "s.a."
 	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:66) ~[?:?]
 	at org.apache.solr.update.DocumentBuilder.addOriginalField(DocumentBuilder.java:291) ~[?:?]
 	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:207) ~[?:?]
-	... 103 more
-2022-09-25 23:39:24.382 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-09-25 23:39:24.411 INFO  (searcherExecutor-12-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 3 ms
-2022-09-25 23:39:24.416 INFO  (qtp1355887174-20) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[180 (1744986873595428864), 181 (1744986873613254656), 182 (1744986873614303232), 183 (1744986873616400384), 184 (1744986873618497536), 185 (1744986873619546112), 186 (1744986873620594688), 187 (1744986873621643264), 188 (1744986873622691840), 189 (1744986873628983296), ... (25 adds)], commit=} 0 602
-2022-09-25 23:39:41.968 INFO  (qtp1355887174-51) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=5,phase1=5,nTerms=1,bigTerms=1,termInstances=0,uses=0}
-2022-09-25 23:39:41.971 INFO  (qtp1355887174-51) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=204 status=0 QTime=55
-2022-09-25 23:40:08.207 INFO  (qtp1355887174-48) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=201&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=204 status=0 QTime=8
-2022-09-25 23:44:29.899 INFO  (qtp1355887174-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664149469754} status=0 QTime=32
-2022-09-25 23:44:29.933 INFO  (qtp1355887174-50) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1664149469813} hits=204 status=0 QTime=9
-2022-09-25 23:44:30.263 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664149469754} status=0 QTime=399
-2022-09-25 23:44:50.633 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
-2022-09-25 23:44:50.665 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1196716338
-2022-09-25 23:44:50.698 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@1ba84426 search
-2022-09-25 23:44:50.702 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@1ba84426
-2022-09-25 23:44:50.775 INFO  (coreCloseExecutor-18-thread-1) [ x:search] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2022-09-25 23:44:50.857 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2022-09-25 23:44:50.873 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2022-09-25 23:44:50.889 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2022-09-25 23:44:50.986 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1eef9aef{/solr,null,STOPPED}{C:\Users\inaci\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}
+	... 98 more
+2022-09-26 15:40:31.317 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 15:40:31.325 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-26 15:40:31.340 INFO  (qtp1355887174-21) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[205 (1745047342139047936), 206 (1745047342158970880), 207 (1745047342161068032), 208 (1745047342163165184), 209 (1745047342165262336), 210 (1745047342166310912), 211 (1745047342167359488), 212 (1745047342168408064), 213 (1745047342169456640), 214 (1745047342169456641), ... (36 adds)], commit=} 0 231
+2022-09-26 15:40:44.309 INFO  (qtp1355887174-23) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=0
+2022-09-26 15:40:44.348 INFO  (qtp1355887174-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=39
+2022-09-26 15:40:46.066 INFO  (qtp1355887174-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=0
+2022-09-26 15:40:46.117 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=50
+2022-09-26 15:40:46.146 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1664206843977} hits=240 status=0 QTime=80
+2022-09-26 15:45:21.264 INFO  (qtp1355887174-58) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=21,phase1=21,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-26 15:45:21.295 INFO  (qtp1355887174-58) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=240 status=0 QTime=304
+2022-09-26 15:45:21.311 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=240 status=0 QTime=4
+2022-09-26 15:46:06.558 INFO  (qtp1355887174-28) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=231&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=240 status=0 QTime=11
+2022-09-26 16:22:48.911 INFO  (qtp1355887174-45) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[241 (1745050003116654592), 242 (1745050003186909184), 243 (1745050003191103488), 244 (1745050003195297792), 245 (1745050003196346368), 246 (1745050003196346369), 247 (1745050003198443520), 248 (1745050003199492096), 249 (1745050003200540672), 250 (1745050003201589248), ... (16 adds)]} 0 165
+2022-09-26 16:22:48.912 ERROR (qtp1355887174-45) [ x:search] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=257] Error adding field 'year'='1978-' msg=For input string: "1978-" => org.apache.solr.common.SolrException: ERROR: [doc=257] Error adding field 'year'='1978-' msg=For input string: "1978-"
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247)
+org.apache.solr.common.SolrException: ERROR: [doc=257] Error adding field 'year'='1978-' msg=For input string: "1978-"
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:247) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:97) ~[?:?]
+	at org.apache.solr.update.AddUpdateCommand.lambda$makeLuceneDocs$0(AddUpdateCommand.java:233) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.lambda$initPartialTraversalState$0(StreamSpliterators.java:292) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.fillBuffer(StreamSpliterators.java:206) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.doAdvance(StreamSpliterators.java:161) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:298) ~[?:?]
+	at java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocuments(DocumentsWriterPerThread.java:231) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriter.updateDocuments(DocumentsWriter.java:432) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1530) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1519) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:1046) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:416) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:369) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:300) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:71) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:78) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:267) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:542) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:354) ~[?:?]
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:49) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:351) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:233) ~[?:?]
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:535) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:71) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:111) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:82) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleAdds(JsonLoader.java:552) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:183) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:158) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:101) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:84) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:207) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2866) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:887) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:606) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:239) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:207) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:257) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:202) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.NumberFormatException: For input string: "1978-"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Long.parseLong(Long.java:711) ~[?:?]
+	at java.lang.Long.parseLong(Long.java:834) ~[?:?]
+	at org.apache.solr.schema.LongPointField.createField(LongPointField.java:161) ~[?:?]
+	at org.apache.solr.schema.PointField.createFields(PointField.java:270) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:66) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.addOriginalField(DocumentBuilder.java:291) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:207) ~[?:?]
+	... 98 more
+2022-09-26 16:23:57.280 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 16:23:57.322 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 3 ms
+2022-09-26 16:23:57.365 INFO  (qtp1355887174-47) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[241 (1745050074627440640), 242 (1745050074649460736), 243 (1745050074650509312), 244 (1745050074652606464), 245 (1745050074654703616), 246 (1745050074656800768), 247 (1745050074657849344), 248 (1745050074657849345), 249 (1745050074658897920), 250 (1745050074659946496), ... (17 adds)], commit=} 0 350
+2022-09-26 16:24:05.509 INFO  (qtp1355887174-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=4
+2022-09-26 16:24:05.515 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1664206843977} hits=257 status=0 QTime=6
+2022-09-26 16:24:05.611 INFO  (qtp1355887174-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=105
+2022-09-26 16:24:16.073 INFO  (qtp1355887174-23) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=3,phase1=3,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-26 16:24:16.081 INFO  (qtp1355887174-23) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=59
+2022-09-26 16:24:52.086 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=251&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=5
+2022-09-26 16:27:05.990 INFO  (qtp1355887174-45) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&start=241&q.op=OR&_=1664206843977} hits=257 status=0 QTime=0
+2022-09-26 16:27:05.991 INFO  (qtp1355887174-54) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=0
+2022-09-26 16:27:06.043 INFO  (qtp1355887174-60) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=53
+2022-09-26 16:30:31.720 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-09-26 16:30:31.729 INFO  (searcherExecutor-18-thread-1-processing-search) [ x:search] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-09-26 16:30:31.878 INFO  (qtp1355887174-61) [ x:search] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[241 (1745050488288575488), 242 (1745050488310595584), 243 (1745050488312692736), 244 (1745050488313741312), 245 (1745050488314789888), 246 (1745050488315838464), 247 (1745050488316887040), 248 (1745050488317935616), 249 (1745050488317935617), 250 (1745050488318984192), ... (17 adds)], commit=} 0 366
+2022-09-26 16:30:40.837 INFO  (qtp1355887174-58) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1664205197211} status=0 QTime=0
+2022-09-26 16:30:40.839 INFO  (qtp1355887174-62) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&start=241&q.op=OR&_=1664206843977} hits=257 status=0 QTime=1
+2022-09-26 16:30:40.886 INFO  (qtp1355887174-60) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1664205197212} status=0 QTime=48
+2022-09-26 16:30:59.986 INFO  (qtp1355887174-58) [ x:search] o.a.s.s.f.UnInvertedField UnInverted multi-valued field {field=type,memSize=4430,tindexSize=45,time=2,phase1=2,nTerms=1,bigTerms=1,termInstances=0,uses=0}
+2022-09-26 16:30:59.988 INFO  (qtp1355887174-58) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=26
+2022-09-26 16:31:10.448 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=251&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=4
+2022-09-26 16:34:13.396 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=4
+2022-09-26 16:34:27.897 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=251&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=8
+2022-09-26 18:31:57.794 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=77
+2022-09-26 18:31:57.827 INFO  (qtp1355887174-59) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=0&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=3
+2022-09-26 18:32:23.087 INFO  (qtp1355887174-47) [ x:search] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&json.facet={"subject":{"field":"subject_str"},"author":{"field":"author_str"},"year":{"field":"year"},"type":{"field":"type"}}&start=251&json={"filter":[]}&q.op=AND&facet=true&wt=json} hits=257 status=0 QTime=14
+2022-09-26 20:35:19.091 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@62dae540{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-09-26 20:35:19.150 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=208539442
+2022-09-26 20:35:19.183 INFO  (coreCloseExecutor-23-thread-1) [ x:search] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@2b89f8f2 search
+2022-09-26 20:35:19.184 INFO  (coreCloseExecutor-23-thread-1) [ x:search] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.search tag=SolrCore@2b89f8f2
+2022-09-26 20:35:19.246 INFO  (coreCloseExecutor-23-thread-1) [ x:search] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2022-09-26 20:35:19.324 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-09-26 20:35:19.342 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-09-26 20:35:19.351 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-09-26 20:35:19.433 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@18cc679e{/solr,null,STOPPED}{C:\Users\Usuário\Desktop\BiblioKeia\Solr\solr-9.0.0\server/solr-webapp/webapp}

@@ -38,17 +38,22 @@ export default function Search() {
 
 
   useEffect(() => {
+
     if (!q) {
       return;
     }
+    let [field, term] = q.split(":")
+    //getData("general_search", q, page);
 
-    if (q == "all") {
-      getData(query.field, query.term, page);
-    } else {
-      setQuery({ field: "general_search", term: q });
+    console.log('SRH: ', field, term)
 
-      getData("general_search", q, page);
-    }
+    // if (q == "all") {
+    //   getData(query.field, query.term, page);
+    // } else {
+    //   setQuery({ field: "general_search", term: q });
+
+    //   getData("general_search", q, page);
+    // }
   }, [q]);
 
   return (
