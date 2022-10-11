@@ -40,16 +40,18 @@ export default function Filters({
   const onSubmit = () => {
 
     getData(query.field, query.term, 0, 'OR', filter); 
+    //Limpa Filtro
+    //setFilter([])
   };
 
-  useEffect(() => {
+  // useEffect(() => {
 
    
-    setFilter([])
+  //   //setFilter([])
 
 
     
-  }, []);
+  // }, []);
 
   return (
     <Box sx={{ m: 2 }}>
