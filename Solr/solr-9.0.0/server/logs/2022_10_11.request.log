@@ -36,3 +36,6 @@
 127.0.0.1 - - [11/out./2022:14:43:51 +0000] "GET /solr/admin/cores?_=1665499422790&indexInfo=false&wt=json HTTP/1.1" 200 481
 127.0.0.1 - - [11/out./2022:14:43:51 +0000] "GET /solr/search/select?_=1665499428850&indent=true&q=*:*&q.op=OR HTTP/1.1" 200 1710
 127.0.0.1 - - [11/out./2022:14:43:51 +0000] "GET /solr/admin/info/system?_=1665499422791&wt=json HTTP/1.1" 200 1382
+127.0.0.1 - - [11/out./2022:18:01:05 +0000] "GET /solr/admin/info/system?wt=json HTTP/1.1" 200 3878
+127.0.0.1 - - [11/out./2022:18:12:34 +0000] "GET /solr/search/select?q=*:*&start=0&q.op=OR&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2254
+127.0.0.1 - - [11/out./2022:18:12:36 +0000] "GET /solr/search/select?q=*:*&start=0&q.op=OR&json=%7B%22filter%22:[]%7D&facet=true&json.facet=%7B%22subject%22:%7B%22field%22:%22subject_str%22%7D,%22author%22:%7B%22field%22:%22author_str%22%7D,%22year%22:%7B%22field%22:%22year%22%7D,%22type%22:%7B%22field%22:%22type%22%7D%7D&wt=json HTTP/1.1" 200 2252
