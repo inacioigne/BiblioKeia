@@ -25,15 +25,8 @@ export default function Editor() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container //spacing={2}
-      >
-        <Grid
-          xs={2}
-          
-          bgcolor={grey[900]}
-          sx={{ color: "white" }}
-        >
+      <Grid container>
+        <Grid xs={2} bgcolor={grey[900]} sx={{ color: "white" }}>
           <Box p={"1rem"}>
             <Typography variant="h5" gutterBottom sx={{ mb: 0 }}>
               BiblioKeia

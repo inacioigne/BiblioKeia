@@ -9,18 +9,36 @@ import {
   InputAdornment,
   Stack,
   IconButton,
-  Button
+  Button,
 } from "@mui/material/";
 import { grey } from "@mui/material/colors/";
 import { useState } from "react";
 import { Search } from "@mui/icons-material";
 import { useForm, Controller } from "react-hook-form";
-import SearchLCNAF from "src/admin/components/bibframe/search_LCNAF"
+import SearchLCNAF from "src/admin/components/bibframe/search_LCNAF";
+import { api } from "src/services/lcnfa";
 
 export default function CreateWork() {
   const [type, setType] = useState("person");
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(null);
+  const [hits, setHits] = useState([]);
+
+  const getData = (data) => {
+    api
+      .get('suggest2',{
+        params: {
+          q: `${data.authority}`,
+        },
+      })
+      .then((response) => {
+        console.log("LCNFA: ", response.data);
+        setHits(response.data.hits)
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -38,14 +56,15 @@ export default function CreateWork() {
     defaultValues: {
       type: "person",
       authority: "",
-      relationship: ""
+      relationship: "",
     },
   });
 
   const handleSearch = (data) => {
-    setOpen(true)
-    setSearch(data)
-    console.log("SEARCH: ", data);
+    setOpen(true);
+    //setSearch(data)
+    //console.log("SEARCH: ", data);
+    getData(data)
   };
 
   return (
@@ -107,7 +126,6 @@ export default function CreateWork() {
                 <TextField
                   {...field}
                   label="Relationship Designator"
-                  
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end">
@@ -118,14 +136,20 @@ export default function CreateWork() {
                 />
               )}
             />
-
-           
           </form>
         </Stack>
         <Button variant="outlined" onClick={handleClickOpen}>
-        Open max-width dialog
-      </Button>
-        <SearchLCNAF open={open} setOpen={setOpen} search={search}/>
+          Open max-width dialog
+        </Button>
+        <SearchLCNAF
+          open={open}
+          setOpen={setOpen}
+          search={search}
+          control={control}
+          handleSearch={handleSearch}
+          handleSubmit={handleSubmit}
+          hits={hits}
+        />
       </Box>
     </Box>
   );
