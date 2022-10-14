@@ -1,0 +1,294 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97027235" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Graeber, David</madsrdf:authoritativeLabel>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:FullNameElement>
+	<madsrdf:elementValue>Graeber, David</madsrdf:elementValue>
+      </madsrdf:FullNameElement>
+    </madsrdf:elementList>
+    <wrap>
+      <madsrdf:hasRelatedAuthority>
+	<madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n80038497">
+	  <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	  <madsrdf:authoritativeLabel>London School of Economics and Political Science</madsrdf:authoritativeLabel>
+	  <madsrdf:elementList rdf:parseType="Collection">
+	    <madsrdf:NameElement>
+	      <madsrdf:elementValue>London School of Economics and Political Science</madsrdf:elementValue>
+	    </madsrdf:NameElement>
+	  </madsrdf:elementList>
+	</madsrdf:CorporateName>
+      </madsrdf:hasRelatedAuthority>
+      <madsrdf:hasCloseExternalAuthority>
+	<madsrdf:Authority rdf:about="http://www.wikidata.org/entity/Q1174579">
+	  <madsrdf:authoritativeLabel>David Graeber</madsrdf:authoritativeLabel>
+	</madsrdf:Authority>
+      </madsrdf:hasCloseExternalAuthority>
+    </wrap>
+    <madsrdf:hasRelatedAuthority>
+      <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n80038497">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel>London School of Economics and Political Science</madsrdf:authoritativeLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:NameElement>
+	    <madsrdf:elementValue>London School of Economics and Political Science</madsrdf:elementValue>
+	  </madsrdf:NameElement>
+	</madsrdf:elementList>
+      </madsrdf:CorporateName>
+    </madsrdf:hasRelatedAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://www.wikidata.org/entity/Q1174579">
+	<madsrdf:authoritativeLabel>David Graeber</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/names/collection_LCNAF"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://viaf.org/viaf/sourceID/LC%7Cno+97027235#skos:Concept"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.wikidata.org/entity/Q1174579"/>
+    <madsrdf:identifiesRWO>
+      <madsrdf:RWO rdf:about="http://id.loc.gov/rwo/agents/no97027235">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:label>Graeber, David</rdfs:label>
+	<madsrdf:birthDate>
+	  <skos:Concept>
+	    <rdfs:label>(edtf) 1961-02-12</rdfs:label>
+	  </skos:Concept>
+	</madsrdf:birthDate>
+	<madsrdf:deathDate>
+	  <skos:Concept>
+	    <rdfs:label>(edtf) 2020-09-02</rdfs:label>
+	  </skos:Concept>
+	</madsrdf:deathDate>
+	<madsrdf:hasAffiliation>
+	  <madsrdf:Affiliation>
+	    <madsrdf:organization>
+	      <madsrdf:Organization rdf:about="http://id.loc.gov/authorities/names/n80038497">
+		<madsrdf:authoritativeLabel>London School of Economics and Political Science</madsrdf:authoritativeLabel>
+	      </madsrdf:Organization>
+	    </madsrdf:organization>
+	  </madsrdf:Affiliation>
+	</madsrdf:hasAffiliation>
+	<madsrdf:associatedLocale>
+	  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n78095330">
+	    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	</madsrdf:associatedLocale>
+	<madsrdf:associatedLocale>
+	  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79005665">
+	    <madsrdf:authoritativeLabel>London (England)</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	</madsrdf:associatedLocale>
+	<madsrdf:fieldOfActivity>
+	  <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85041065">
+	    <madsrdf:authoritativeLabel>Education, Higher</madsrdf:authoritativeLabel>
+	  </skos:Concept>
+	</madsrdf:fieldOfActivity>
+	<madsrdf:fieldOfActivity>
+	  <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85040766">
+	    <madsrdf:authoritativeLabel>Economic anthropology</madsrdf:authoritativeLabel>
+	  </skos:Concept>
+	</madsrdf:fieldOfActivity>
+	<madsrdf:fieldOfActivity>
+	  <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85045198">
+	    <madsrdf:authoritativeLabel>Ethnology</madsrdf:authoritativeLabel>
+	  </skos:Concept>
+	</madsrdf:fieldOfActivity>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85028378">
+	    <madsrdf:authoritativeLabel>College teachers</madsrdf:authoritativeLabel>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85005579">
+	    <madsrdf:authoritativeLabel>Anthropologists</madsrdf:authoritativeLabel>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85004813">
+	    <madsrdf:authoritativeLabel>Anarchists</madsrdf:authoritativeLabel>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:occupation>
+	  <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85009793">
+	    <madsrdf:authoritativeLabel>Authors</madsrdf:authoritativeLabel>
+	  </madsrdf:Occupation>
+	</madsrdf:occupation>
+	<madsrdf:associatedLanguage>
+	  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <madsrdf:authoritativeLabel xml:lang="en">English</madsrdf:authoritativeLabel>
+	  </madsrdf:Language>
+	</madsrdf:associatedLanguage>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/15039986">
+	    <bflc:aap>Graeber, David Direct action</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/18977893">
+	    <bflc:aap>Graeber, David On kings</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/20837780">
+	    <bflc:aap>Graeber, David. Building free life : dialogues with Ocalan</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/18607446">
+	    <bflc:aap>Graeber, David. Comme si nous étions déjà libres</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/16522011">
+	    <bflc:aap>Graeber, David. Debt : the first 5,000 years</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/18354469">
+	    <bflc:aap>Graeber, David. Debt : the first 5,000 years</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/17568301">
+	    <bflc:aap>Graeber, David. DEBT : THE FIRST 5,000 YEARS</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/17423948">
+	    <bflc:aap>Graeber, David. Democracy Project : a history, a crisis, a movement</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/13676954">
+	    <bflc:aap>Graeber, David. Fragments of an anarchist anthropology</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/14724198">
+	    <bflc:aap>Graeber, David. Lost people : magic and the legacy of slavery in Madagascar</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/21866210">
+	    <bflc:aap>Graeber, David. On kings</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/22265415">
+	    <bflc:aap>Graeber, David. On kings</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/14840644">
+	    <bflc:aap>Graeber, David. Possibilities : essays on hierarchy, rebellion, and desire</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/12382397">
+	    <bflc:aap>Graeber, David. Toward an anthropological theory of value : the false coin of our own dreams</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+	<bflc:contributorTo>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/14304168">
+	    <bflc:aap>Shukaitis, Stevphen. Constituent imagination : militant investigations//collective theorization</bflc:aap>
+	  </bf:Work>
+	</bflc:contributorTo>
+      </madsrdf:RWO>
+    </madsrdf:identifiesRWO>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/names"/>
+    <madsrdf:fullerName>
+      <madsrdf:PersonalName>
+	<rdfs:label>David Rolfe</rdfs:label>
+      </madsrdf:PersonalName>
+    </madsrdf:fullerName>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">no 97027235</identifiers:lccn>
+    <identifiers:local xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">(OCoLC)oca04330968</identifiers:local>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationSource>Graeber, David. The disastrous ordeal of 1987, 1996:</madsrdf:citationSource>
+	<madsrdf:citationNote>title page (David Graeber)</madsrdf:citationNote>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationSource>The utopia of rules, 2015:</madsrdf:citationSource>
+	<madsrdf:citationNote>title page (David Graeber)</madsrdf:citationNote>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationSource>Wikipedia, viewed August 10, 2015</madsrdf:citationSource>
+	<madsrdf:citationSource rdf:resource="https://en.wikipedia.org/wiki/David_Graeber"/>
+	<madsrdf:citationNote>(David Rolfe Graeber, born 12 February 1961; Residence: London, England; He is Professor of Anthropology at the London School of Economics)</madsrdf:citationNote>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationSource>Guardian, viewed September 4, 2020</madsrdf:citationSource>
+	<madsrdf:citationSource rdf:resource="https://www.theguardian.com/books/2020/sep/03/david-graeber-anthropologist-and-author-of-bullshit-jobs-dies-aged-59"/>
+	<madsrdf:citationNote>(David Graeber ; died in a Venice hospital on Wednesday [09/02/2020] at 59 ; anarchist and author of bestselling books on capitalism and bureaucracy ; anthropologist and anarchist author of bestselling books on bureaucracy and economics)</madsrdf:citationNote>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+	<madsrdf:citationSource>Canadiana, May 27, 2021</madsrdf:citationSource>
+	<madsrdf:citationNote>(access point: Graeber, David)</madsrdf:citationNote>
+	<madsrdf:citationStatus>found</madsrdf:citationStatus>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-05-01T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/ien"/>
+	<ri:languageOfCataloging rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T06:45:56</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/gvas"/>
+	<ri:languageOfCataloging rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Graeber, David</skos:prefLabel>
+    <skos:semanticRelation>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n80038497">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>London School of Economics and Political Science</skos:prefLabel>
+      </rdf:Description>
+    </skos:semanticRelation>
+    <skos:exactMatch rdf:resource="http://viaf.org/viaf/sourceID/LC%7Cno+97027235#skos:Concept"/>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q1174579">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>David Graeber</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q1174579"/>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/names"/>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/names/no97027235"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/ien"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-05-01T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/names/no97027235"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/gvas"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-04T06:45:56</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:PersonalName>
+</rdf:RDF>

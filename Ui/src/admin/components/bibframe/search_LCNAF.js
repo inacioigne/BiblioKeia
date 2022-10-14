@@ -20,7 +20,9 @@ import { useForm, Controller } from "react-hook-form";
 import { Search } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 import { api } from "src/services/lcnfa";
-//import { SparqlEndpointFetcher } from "fetch-sparql-endpoint";
+import ParserJsonLd from "src/services/parser_jsonld";
+import { useState } from "react";
+import CardLCNAF from 'src/admin/components/bibframe/cardLCNAF'
 
 export default function SearchLCNAF({
   open,
@@ -31,32 +33,17 @@ export default function SearchLCNAF({
   handleSubmit,
   hits,
 }) {
+
+  const [authorityDetails, setAuthorityDetails] = useState(null)
+
   const handleClose = () => {
     setOpen(false);
   };
 
   const getDetails = (token) => {
-    api
-      .get(`${token}.madsrdf_raw.jsonld`)
-      .then((response) => {
-        console.log("getDetails: ", response);
-      })
-      .catch(function (error) {
-        console.log("ERROOO!!", error);
-      });
+    //console.log("Dateais", token);
+    ParserJsonLd(token, setAuthorityDetails);
   };
-
-  //const fetcher = new SparqlEndpointFetcher();
-
-  // async function getData() {
-  //   const bindingsStream = await fetcher.fetchBindings(
-  //     "http://localhost:3030/bibframe",
-  //     "SELECT * WHERE{ GRAPH ?g {?s ?p ?name } } LIMIT 10"
-  //   );
-  //   bindingsStream.on("data", (bindings) => console.log(bindings));
-  // }
-
-
 
   return (
     <Dialog fullWidth={true} maxWidth={"xl"} open={open} onClose={handleClose}>
@@ -122,14 +109,12 @@ export default function SearchLCNAF({
             </Typography>
             <List>
               {hits?.map((hit, index) => (
-                <ListItem disablePadding>
+                <ListItem key={index} disablePadding>
                   <Button
-                    key={index}
                     sx={{ textTransform: "none" }}
                     onClick={() => {
                       let token = hit.uri.split("/")[5];
-                      console.log("Dateais", token);
-                      getData()
+                      getDetails(token);
                     }}
                   >
                     {" "}
@@ -143,6 +128,8 @@ export default function SearchLCNAF({
             <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
               LC Name Authority File (LCNAF)
             </Typography>
+            <CardLCNAF authorityDetails={authorityDetails}/>
+         
           </Grid>
         </Grid>
       </DialogContent>

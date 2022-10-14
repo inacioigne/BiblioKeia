@@ -1,0 +1,194 @@
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Graeber, David" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#elementList> _:b7iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b7iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b8iddOtlocdOtgovauthoritiesnamesno97027235 . 
+_:b7iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b8iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b8iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#elementValue> "Graeber, David" .
+<http://id.loc.gov/authorities/names/no97027235> <wrap> _:b11iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b11iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#hasRelatedAuthority> .
+_:b11iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#CorporateName> _:b13iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b13iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:b13iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> .
+_:b13iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#elementList> .
+_:b13iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#NameElement> _:b18iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b18iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#elementValue> .
+_:b11iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> .
+_:b11iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#Authority> _:b22iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b22iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasRelatedAuthority> <http://id.loc.gov/authorities/names/n80038497> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#CorporateName> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "London School of Economics and Political Science" .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.loc.gov/mads/rdf/v1#elementList> _:b30iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b30iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b31iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b30iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b31iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#NameElement> .
+_:b31iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#elementValue> "London School of Economics and Political Science" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q1174579> .
+<http://www.wikidata.org/entity/Q1174579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://www.wikidata.org/entity/Q1174579> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "David Graeber" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_LCNAF> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://viaf.org/viaf/sourceID/LC%7Cno+97027235#skos:Concept> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q1174579> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://id.loc.gov/rwo/agents/no97027235> .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.w3.org/2000/01/rdf-schema#label> "Graeber, David" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#birthDate> _:b48iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b48iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b48iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1961-02-12" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#deathDate> _:b52iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b52iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b52iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 2020-09-02" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:b56iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b56iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Affiliation> .
+_:b56iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#organization> <http://id.loc.gov/authorities/names/n80038497> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Organization> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "London School of Economics and Political Science" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n78095330> .
+<http://id.loc.gov/authorities/names/n78095330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/authorities/names/n78095330> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "United States" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n79005665> .
+<http://id.loc.gov/authorities/names/n79005665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/authorities/names/n79005665> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "London (England)" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> <http://id.loc.gov/authorities/subjects/sh85041065> .
+<http://id.loc.gov/authorities/subjects/sh85041065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85041065> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Education, Higher" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> <http://id.loc.gov/authorities/subjects/sh85040766> .
+<http://id.loc.gov/authorities/subjects/sh85040766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85040766> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Economic anthropology" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> <http://id.loc.gov/authorities/subjects/sh85045198> .
+<http://id.loc.gov/authorities/subjects/sh85045198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/subjects/sh85045198> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Ethnology" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85028378> .
+<http://id.loc.gov/authorities/subjects/sh85028378> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85028378> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "College teachers" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85005579> .
+<http://id.loc.gov/authorities/subjects/sh85005579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85005579> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Anthropologists" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85004813> .
+<http://id.loc.gov/authorities/subjects/sh85004813> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85004813> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Anarchists" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85009793> .
+<http://id.loc.gov/authorities/subjects/sh85009793> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85009793> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Authors" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Language> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "English"@en .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15039986> .
+<http://id.loc.gov/resources/works/15039986> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15039986> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David Direct action" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18977893> .
+<http://id.loc.gov/resources/works/18977893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18977893> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David On kings" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/20837780> .
+<http://id.loc.gov/resources/works/20837780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20837780> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Building free life : dialogues with Ocalan" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18607446> .
+<http://id.loc.gov/resources/works/18607446> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18607446> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Comme si nous étions déjà libres" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16522011> .
+<http://id.loc.gov/resources/works/16522011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16522011> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Debt : the first 5,000 years" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18354469> .
+<http://id.loc.gov/resources/works/18354469> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18354469> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Debt : the first 5,000 years" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17568301> .
+<http://id.loc.gov/resources/works/17568301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17568301> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. DEBT : THE FIRST 5,000 YEARS" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17423948> .
+<http://id.loc.gov/resources/works/17423948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17423948> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Democracy Project : a history, a crisis, a movement" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13676954> .
+<http://id.loc.gov/resources/works/13676954> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13676954> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Fragments of an anarchist anthropology" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14724198> .
+<http://id.loc.gov/resources/works/14724198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14724198> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Lost people : magic and the legacy of slavery in Madagascar" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/21866210> .
+<http://id.loc.gov/resources/works/21866210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/21866210> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. On kings" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/22265415> .
+<http://id.loc.gov/resources/works/22265415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/22265415> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. On kings" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14840644> .
+<http://id.loc.gov/resources/works/14840644> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14840644> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Possibilities : essays on hierarchy, rebellion, and desire" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12382397> .
+<http://id.loc.gov/resources/works/12382397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12382397> <http://id.loc.gov/ontologies/bflc/aap> "Graeber, David. Toward an anthropological theory of value : the false coin of our own dreams" .
+<http://id.loc.gov/rwo/agents/no97027235> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14304168> .
+<http://id.loc.gov/resources/works/14304168> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14304168> <http://id.loc.gov/ontologies/bflc/aap> "Shukaitis, Stevphen. Constituent imagination : militant investigations//collective theorization" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#fullerName> _:b163iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b163iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b163iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/2000/01/rdf-schema#label> "David Rolfe" .
+<http://id.loc.gov/authorities/names/no97027235> <http://id.loc.gov/vocabulary/identifiers/lccn> "no 97027235" .
+<http://id.loc.gov/authorities/names/no97027235> <http://id.loc.gov/vocabulary/identifiers/local> "(OCoLC)oca04330968" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b171iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b171iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b171iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> "Graeber, David. The disastrous ordeal of 1987, 1996:" .
+_:b171iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationNote> "title page (David Graeber)" .
+_:b171iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b179iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b179iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b179iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> "The utopia of rules, 2015:" .
+_:b179iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationNote> "title page (David Graeber)" .
+_:b179iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b187iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b187iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b187iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> "Wikipedia, viewed August 10, 2015" .
+_:b187iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> <https://en.wikipedia.org/wiki/David_Graeber> .
+_:b187iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationNote> "(David Rolfe Graeber, born 12 February 1961; Residence: London, England; He is Professor of Anthropology at the London School of Economics)" .
+_:b187iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b196iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b196iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b196iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> "Guardian, viewed September 4, 2020" .
+_:b196iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> <https://www.theguardian.com/books/2020/sep/03/david-graeber-anthropologist-and-author-of-bullshit-jobs-dies-aged-59> .
+_:b196iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationNote> "(David Graeber ; died in a Venice hospital on Wednesday [09/02/2020] at 59 ; anarchist and author of bestselling books on capitalism and bureaucracy ; anthropologist and anarchist author of bestselling books on bureaucracy and economics)" .
+_:b196iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b205iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b205iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b205iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationSource> "Canadiana, May 27, 2021" .
+_:b205iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationNote> "(access point: Graeber, David)" .
+_:b205iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b213iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b213iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b213iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1997-05-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b213iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b213iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/ien> .
+_:b213iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b221iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b221iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b221iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "2022-05-04T06:45:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b221iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b221iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/gvas> .
+_:b221iddOtlocdOtgovauthoritiesnamesno97027235 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#prefLabel> "Graeber, David" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://id.loc.gov/authorities/names/n80038497> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/names/n80038497> <http://www.w3.org/2004/02/skos/core#prefLabel> "London School of Economics and Political Science" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://viaf.org/viaf/sourceID/LC%7Cno+97027235#skos:Concept> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.wikidata.org/entity/Q1174579> .
+<http://www.wikidata.org/entity/Q1174579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.wikidata.org/entity/Q1174579> <http://www.w3.org/2004/02/skos/core#prefLabel> "David Graeber" .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.wikidata.org/entity/Q1174579> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#changeNote> _:b245iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b245iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b245iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/no97027235> .
+_:b245iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/ien> .
+_:b245iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#createdDate> "1997-05-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b245iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://id.loc.gov/authorities/names/no97027235> <http://www.w3.org/2004/02/skos/core#changeNote> _:b253iddOtlocdOtgovauthoritiesnamesno97027235 .
+_:b253iddOtlocdOtgovauthoritiesnamesno97027235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b253iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/no97027235> .
+_:b253iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/gvas> .
+_:b253iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#createdDate> "2022-05-04T06:45:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b253iddOtlocdOtgovauthoritiesnamesno97027235 <http://purl.org/vocab/changeset/schema#changeReason> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .
