@@ -1,0 +1,760 @@
+[
+  {
+    "@id": "_:b155iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "Xiu dao yuan ji shi, 1996:"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "t.p. (Ruoze Salamage)"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b203iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo"
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2016-07-07T07:53:19"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "revised"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/organizations/upb"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      }
+    ]
+  },
+  {
+    "@id": "_:b75iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "Saramago, Zhoze"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b81iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b108iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "סאראמאגו, ז׳וזה. טבעון, מרים"
+      }
+    ]
+  },
+  {
+    "@id": "_:b129iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "ジョゼ・サラマーゴ"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b135iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b147iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "Hia Baltasar and Blimunda, c1987:"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "t.p. (José Saramago) jkt. (b. 1922)"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b29iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(edtf) 2010-06-18"
+      }
+    ]
+  },
+  {
+    "@id": "_:b163iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "Evangelie ot Iisusa, 2003:"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "t.p. (Zhoze Saramago) t.p. verso (José Saramago [in rom.])"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b171iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "Nobelprize website, September 3, 2009"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "José Saramago autobiography page (José de Sousa Saramago; b. November 16, 1922)"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b62iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "José de Sousa"
+      }
+    ]
+  },
+  {
+    "@id": "_:b37iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Geographic"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(naf) Lanzarote (Canary Islands)"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/rwo/agents/n85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#RWO",
+      "http://id.loc.gov/ontologies/bibframe/Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Saramago, José"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#birthDate": [
+      {
+        "@id": "_:b25iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#deathDate": [
+      {
+        "@id": "_:b29iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#birthPlace": [
+      {
+        "@id": "_:b33iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#deathPlace": [
+      {
+        "@id": "_:b37iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#occupation": [
+      {
+        "@id": "_:b41iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b45iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b49iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b53iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#gender": [
+      {
+        "@id": "_:b57iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#associatedLanguage": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/languages/por"
+      }
+    ]
+  },
+  {
+    "@id": "_:b81iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "Saramago, Zhoze"
+      }
+    ]
+  },
+  {
+    "@id": "_:b120iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "De Sousa Saramago, José"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b126iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b135iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "ジョゼ・サラマーゴ"
+      }
+    ]
+  },
+  {
+    "@id": "_:b179iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "Wikipedia WWW site, June 18, 2010"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "(under José Saramago: José de Sousa Saramago, GColSE; b. Nov. 16, 1922, Azinhaga, Ribatejo, Portugal; d. June 18, 2010, Lanzarote, Canary Islands; Nobel-laureate Portuguese novelist, playwright, and journalist)"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b53iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Occupation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(lcsh) Nobel Prize winners"
+      }
+    ]
+  },
+  {
+    "@id": "_:b11iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://id.loc.gov/ontologies/lcc#ClassNumber"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#code": [
+      {
+        "@value": "PQ9281.A66"
+      }
+    ],
+    "http://id.loc.gov/ontologies/bibframe/assigner": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      }
+    ]
+  },
+  {
+    "@id": "_:b93iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "סאראמאגו, ז׳וזה"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b99iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b111iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "Sousa Saramago, José de"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b117iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b99iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "סאראמאגו, ז׳וזה"
+      }
+    ]
+  },
+  {
+    "@id": "_:b102iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "סאראמאגו, ז׳וזה. טבעון, מרים"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b108iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b117iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "Sousa Saramago, José de"
+      }
+    ]
+  },
+  {
+    "@id": "_:b66iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant" 
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "Salamage, Ruoze"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b72iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:b72iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "Salamage, Ruoze"
+      }
+    ]
+  },
+  {
+    "@id": "_:b8iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "Saramago, José"
+      }
+    ]
+  },
+  {
+    "@id": "http://id.loc.gov/authorities/names/n85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Authority"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": [
+      {
+        "@value": "Saramago, José"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b8iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#classification": [
+      {
+        "@id": "_:b11iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection": [
+      {
+        "@id": "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/collection_LCNAF"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme": [
+      {
+        "@id": "http://id.loc.gov/authorities/names"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#identifiesRWO": [
+      {
+        "@id": "http://id.loc.gov/rwo/agents/n85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#fullerName": [
+      {
+        "@id": "_:b62iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#hasVariant": [
+      {
+        "@id": "_:b66iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b75iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b84iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b93iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b102iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b111iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b120iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b129iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority": [
+      {
+        "@id": "http://viaf.org/viaf/sourceID/LC%7Cn++85130797#skos:Concept"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#hasSource": [
+      {
+        "@id": "_:b139iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b147iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b155iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b163iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b171iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b179iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#editorialNote": [
+      {
+        "@value": "[Machine-derived non-Latin script reference project.]"
+      },
+      {
+        "@value": "[Non-Latin script references not evaluated.]"
+      }
+    ],
+    "http://id.loc.gov/vocabulary/identifiers/lccn": [
+      {
+        "@value": "n 85130797"
+      }
+    ],
+    "http://id.loc.gov/vocabulary/identifiers/local": [
+      {
+        "@value": "(OCoLC)oca01486483"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#adminMetadata": [
+      {
+        "@id": "_:b195iddOtlocdOtgovauthoritiesnamesn85130797"
+      },
+      {
+        "@id": "_:b203iddOtlocdOtgovauthoritiesnamesn85130797"
+      }
+    ]
+  },
+  {
+    "@id": "_:b25iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(edtf) 1922-11-16"
+      }
+    ]
+  },
+  {
+    "@id": "_:b45iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Occupation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(lcsh) Dramatists"
+      }
+    ]
+  },
+  {
+    "@id": "_:b57iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "male"
+      }
+    ]
+  },
+  {
+    "@id": "_:b33iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Geographic"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(naf) Ribatejo (Portugal)"
+      }
+    ]
+  },
+  {
+    "@id": "_:b90iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "Сарамаго, Жозе"
+      }
+    ]
+  },
+  {
+    "@id": "_:b126iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#FullNameElement"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementValue": [
+      {
+        "@value": "De Sousa Saramago, José"
+      }
+    ]
+  },
+  {
+    "@id": "_:b139iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Source"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationSource": [
+      {
+        "@value": "His Viagem a Portugal, 1985?:"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationNote": [
+      {
+        "@value": "t.p. (José Saramago) jkt. (b. in Azinhaga)"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#citationStatus": [
+      {
+        "@value": "found"
+      }
+    ]
+  },
+  {
+    "@id": "_:b195iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://id.loc.gov/ontologies/RecordInfo#RecordInfo"
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "1985-10-25T00:00:00"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordStatus": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "new"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      }
+    ],
+    "http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging": [
+      {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      }
+    ]
+  },
+  {
+    "@id": "_:b41iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Occupation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(lcsh) Novelists"
+      }
+    ]
+  },
+  {
+    "@id": "_:b49iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#Occupation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "(lcsh) Journalists"
+      }
+    ]
+  },
+  {
+    "@id": "_:b84iddOtlocdOtgovauthoritiesnamesn85130797",
+    "@type": [
+      "http://www.loc.gov/mads/rdf/v1#PersonalName",
+      "http://www.loc.gov/mads/rdf/v1#Variant"
+    ],
+    "http://www.loc.gov/mads/rdf/v1#variantLabel": [
+      {
+        "@value": "Сарамаго, Жозе"
+      }
+    ],
+    "http://www.loc.gov/mads/rdf/v1#elementList": [
+      {
+        "@list": [
+          {
+            "@id": "_:b90iddOtlocdOtgovauthoritiesnamesn85130797"
+          }
+        ]
+      }
+    ]
+  }
+]

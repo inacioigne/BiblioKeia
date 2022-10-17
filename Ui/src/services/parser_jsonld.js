@@ -3,8 +3,9 @@ import namespace from "@rdfjs/namespace";
 import cf from "clownface";
 
 async function ParserJsonLd(token, setAuthorityDetails) {
-  console.log(token);
-  const jsonld = `https://id.loc.gov/authorities/names/no97027235.madsrdf_raw.jsonld`;
+  //console.log(token);
+  const AuthorityDetails = {}
+  const jsonld = `https://id.loc.gov/authorities/names/${token}.madsrdf_raw.jsonld`;
   const dataset = await fetch(jsonld).then((response) => response.dataset());
 
   const ns = {
@@ -23,7 +24,7 @@ async function ParserJsonLd(token, setAuthorityDetails) {
   const tbbt = cf({ dataset });
 
   const authority = tbbt.namedNode(
-    "http://id.loc.gov/authorities/names/no97027235"
+    `http://id.loc.gov/authorities/names/${token}`
   );
   //PersonalName
   const [personalName] = authority.out(ns.madsrdf.authoritativeLabel).values;
@@ -32,48 +33,94 @@ async function ParserJsonLd(token, setAuthorityDetails) {
     const label = name.out(ns.rdfs.label).values;
     return label;
   });
+  AuthorityDetails['personalName'] = personalName
 
   //identifiesRWO
   const identifiesRWO = authority.out(ns.madsrdf.identifiesRWO).value;
   const RWO = cf({ dataset }).namedNode(identifiesRWO);
 
   //birthDate
-  const birthDate = RWO.out(ns.madsrdf.birthDate).out(ns.rdfs.label).value;
+  const birthD = RWO.out(ns.madsrdf.birthDate).out(ns.rdfs.label).value;
+  if (birthD) {
+    let birthDate = birthD.split(") ")[1];
+    AuthorityDetails['birthDate'] = birthDate
+  } else {
+    AuthorityDetails['birthDate'] = false
+  }
+  
+  //birthPlace
+  const birthP = RWO.out(ns.madsrdf.birthPlace).out(ns.rdfs.label).value;
+  if (birthP) {
+    let birthPlace = birthP.split(") ")[1];
+    AuthorityDetails['birthPlace'] = birthPlace
+  } else {
+    //let birthPlace = false;
+    AuthorityDetails['birthPlace'] = false
+  }
 
   //Death Date
-  const deathDate = RWO.out(ns.madsrdf.deathDate).out(ns.rdfs.label).value;
+  const deathD = RWO.out(ns.madsrdf.deathDate).out(ns.rdfs.label).value;
+  if (deathD) {
+    let deathDate = deathD.split(") ")[1];
+    AuthorityDetails['deathDate'] = deathDate
+  } else {
+    AuthorityDetails['deathDate'] = false
+  }
+  //Death Place
+  const deathP = RWO.out(ns.madsrdf.deathPlace).out(ns.rdfs.label).value;
+  if (deathP) {
+    let deathPlace = deathP.split(") ")[1];
+    AuthorityDetails['deathPlace'] = deathPlace
+  } else {
+    AuthorityDetails['deathPlace'] = false
+  }
 
   //associatedLocale
   const associatedLocales = RWO.out(ns.madsrdf.associatedLocale).map(
     (associatedLocale) => {
       let label = associatedLocale.out(ns.rdfs.label).value;
-      return label.split(')', 1)[1];
+      return label.split(") ")[1];
     }
   );
+  AuthorityDetails['associatedLocales'] = associatedLocales
+  //Variants
+  const variants = authority.out(ns.madsrdf.hasVariant).map((variant) => {
+    let label = variant.out(ns.madsrdf.variantLabel);
+    return label.value;
+  });
+  AuthorityDetails['variants'] = variants
+
 
   //Field of Activity
   const fieldOfActivity = RWO.out(ns.madsrdf.fieldOfActivity).map(
     (activity) => {
       let label = activity.out(ns.rdfs.label).value;
-      return label.split(')')[1];
+      return label.split(")")[1];
     }
   );
+  AuthorityDetails['fieldOfActivity'] = fieldOfActivity
 
   //Occupation
   const occupations = RWO.out(ns.madsrdf.occupation).map((occupation) => {
     let label = occupation.out(ns.rdfs.label).value;
-    return label.split(')')[1];
+    return label.split(")")[1];
   });
+  AuthorityDetails['occupations'] = occupations
+  console.log(AuthorityDetails)
+  setAuthorityDetails(AuthorityDetails)
 
-  setAuthorityDetails({
-    personalName: personalName,
-    fullerName: fullerName,
-    birthDate: birthDate.split(')')[1],
-    deathDate: deathDate.split(')')[1],
-    associatedLocales: associatedLocales,
-    fieldOfActivity: fieldOfActivity,
-    occupations: occupations
-  })
+  // setAuthorityDetails({
+  //   personalName: personalName,
+  //   fullerName: fullerName,
+  //   birthDate: birthDate.split(")")[1],
+  //   birthPlace: birthPlace,
+  //   deathDate: deathDate,
+  //   deathPlace: deathPlace.split(") ")[1],
+  //   associatedLocales: associatedLocales,
+  //   variants: variants,
+  //   fieldOfActivity: fieldOfActivity,
+  //   occupations: occupations,
+  // });
 
 }
 

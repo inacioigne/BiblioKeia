@@ -29,10 +29,11 @@ export default function CreateWork() {
       .get('suggest2',{
         params: {
           q: `${data.authority}`,
+          rdftype: `${data.type}`
         },
       })
       .then((response) => {
-        console.log("LCNFA: ", response.data);
+        //console.log("LCNFA: ", response.data);
         setHits(response.data.hits)
       })
       .catch(function (error) {
@@ -54,7 +55,7 @@ export default function CreateWork() {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      type: "person",
+      type: "PersonalName",
       authority: "",
       relationship: "",
     },
@@ -63,7 +64,7 @@ export default function CreateWork() {
   const handleSearch = (data) => {
     setOpen(true);
     //setSearch(data)
-    //console.log("SEARCH: ", data);
+    console.log("SEARCH: ", data);
     getData(data)
   };
 
@@ -82,11 +83,12 @@ export default function CreateWork() {
                 <FormControl>
                   <InputLabel id="type">Tipo</InputLabel>
                   <Select {...field} label="Tipo">
-                    <MenuItem value={"person"}>Person</MenuItem>
+                    <MenuItem value={"PersonalName"}>Person</MenuItem>
                     <MenuItem value={"family"}>Family</MenuItem>
-                    <MenuItem value={"corporate"}>Corporate</MenuItem>
+                    <MenuItem value={"CorporateName"}>Corporate</MenuItem>
                     <MenuItem value={"jurisdiction"}>Jurisdiction</MenuItem>
                     <MenuItem value={"conference"}>Conference</MenuItem>
+                    <MenuItem value={"NameTitle"}>Name Title</MenuItem>
                   </Select>
                 </FormControl>
               )}

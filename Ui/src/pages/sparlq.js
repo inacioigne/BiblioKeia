@@ -1,78 +1,74 @@
 import { api } from "src/services/lcnfa";
-import { Button, Box } from "@mui/material/";
+import {
+  Button,
+  Box,
+  TextField,
+  InputAdornment,
+  IconButton,
+} from "@mui/material/";
 import fetch from "@rdfjs/fetch";
 import namespace from "@rdfjs/namespace";
 import cf from "clownface";
+import { useForm, Controller } from "react-hook-form";
+import { Search } from "@mui/icons-material";
+//import  fromFile  from "rdf-utils-fs";
+//import {relators} from "src/services/relators.madsrdf.jsonld"
+import SparqlClient from "sparql-http-client";
 
-export default function Sparql() {
-  async function getData() {
-    const jsonld =
-      "https://id.loc.gov/authorities/names/no97027235.madsrdf_raw.jsonld";
-    const dataset = await fetch(jsonld).then((response) => response.dataset());
+export default function Sparql(props) {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      relationship: "",
+    },
+  });
 
-    const ns = {
-      rdf: namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
-      rdfs: namespace("http://www.w3.org/2000/01/rdf-schema#"),
-      bf: namespace("http://id.loc.gov/ontologies/bibframe/"),
-      bflc: namespace("http://id.loc.gov/ontologies/bflc/"),
-      owl: namespace("http://www.w3.org/2002/07/owl#"),
-      skos: namespace("http://www.w3.org/2004/02/skos/core#"),
-      dcterms: namespace("http://purl.org/dc/terms/"),
-      cc: namespace("http://creativecommons.org/ns#"),
-      foaf: namespace("http://xmlns.com/foaf/0.1/"),
-      madsrdf: namespace("http://www.loc.gov/mads/rdf/v1#"),
-    };
-
-    const tbbt = cf({ dataset });
-
-    const authority = tbbt.namedNode(
-      "http://id.loc.gov/authorities/names/no97027235"
-    );
-    //PersonalName
-    const [PersonalName] = authority.out(ns.madsrdf.authoritativeLabel).values;
-    //fullerName
-    const [fullerName] = authority.out(ns.madsrdf.fullerName).map((name) => {
-      const label = name.out(ns.rdfs.label).values;
-      return label;
+  async function getData(data) {
+    const client = new SparqlClient({
+      endpointUrl: "http://localhost:3030/relators/sparql",
     });
+    const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    SELECT ?object
+    WHERE {
+      ?subject madsrdf:authoritativeLabel ?object
+      FILTER regex(?object, "^${data}") 
+    }
+    LIMIT 10`;
 
-    //identifiesRWO
-    const identifiesRWO = authority.out(ns.madsrdf.identifiesRWO).value;
-    const RWO = cf({ dataset }).namedNode(identifiesRWO);
-
-    //birthDate
-    const birthDate = RWO.out(ns.madsrdf.birthDate).out(ns.rdfs.label).value;
-
-    //Death Date
-    const deathDate = RWO.out(ns.madsrdf.deathDate).out(ns.rdfs.label).value;
-
-    //associatedLocale
-    const associatedLocales = RWO.out(ns.madsrdf.associatedLocale).map(
-      (associatedLocale) => {
-        let label = associatedLocale.out(ns.rdfs.label).value;
-        return label;
-      }
-    );
-
-    //Field of Activity
-    const fieldOfActivity = RWO.out(ns.madsrdf.fieldOfActivity).map(
-      (activity) => {
-        let label = activity.out(ns.rdfs.label).value;
-        return label;
-      }
-    );
-
-    //Occupation
-    const occupations = RWO.out(ns.madsrdf.occupation).map((occupation) => {
-      let label = occupation.out(ns.rdfs.label).value;
-      return label;
-    });
-
-    console.log("P:", occupations);
+    const stream = await client.query.select(query)
+    stream.on('data', row => {
+      console.log(row.object.value)
+    })
+    //console.log(stream);
   }
 
+
+  const handleSearch = (data) => {
+    console.log("SEARCH: ", data);
+    //getData(data.relationship)
+  };
+
+  const handleOnChange = (str) => {
+    let data = str.charAt(0).toUpperCase() + str.slice(1)
+    getData(data)
+    //console.log(data)
+
+  }
+
+
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", mt: "5rem" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        mt: "5rem",
+        width: "50rem",
+      }}
+    >
       <Button
         variant="outlined"
         onClick={() => {
@@ -82,6 +78,48 @@ export default function Sparql() {
       >
         Sparql
       </Button>
+      {/** Relationship Designator */}
+      <form onSubmit={handleSubmit(handleSearch)}>
+        <Controller
+        
+          control={control}
+          name="relationship"
+          rules={{ required: true }}
+          render={({ field }) => (
+            <TextField
+              {...field}
+              label="Relationship Designator"
+              onChange={(e) => {
+                field.onChange(e)
+                //console.log(e.target.value)
+                handleOnChange(e.target.value)
+               
+                }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      color="primary"
+                      aria-label="search"
+                      component="button"
+                      type="submit"
+                    >
+                      <Search />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+            />
+          )}
+        />
+      </form>
     </Box>
   );
 }
+
+// export function getStaticProps() {
+
+//   const dataset =  getData()
+
+//   return { props: {msg: "dataset"} }
+// }

@@ -15,6 +15,7 @@ import {
   Button,
   List,
   ListItem,
+  Box,
 } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { Search } from "@mui/icons-material";
@@ -22,7 +23,8 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { api } from "src/services/lcnfa";
 import ParserJsonLd from "src/services/parser_jsonld";
 import { useState } from "react";
-import CardLCNAF from 'src/admin/components/bibframe/cardLCNAF'
+import CardLCNAF from "src/admin/components/bibframe/cardLCNAF";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export default function SearchLCNAF({
   open,
@@ -33,8 +35,7 @@ export default function SearchLCNAF({
   handleSubmit,
   hits,
 }) {
-
-  const [authorityDetails, setAuthorityDetails] = useState(null)
+  const [authorityDetails, setAuthorityDetails] = useState(null);
 
   const handleClose = () => {
     setOpen(false);
@@ -46,12 +47,19 @@ export default function SearchLCNAF({
   };
 
   return (
-    <Dialog fullWidth={true} maxWidth={"xl"} open={open} onClose={handleClose}>
-      <DialogTitle>Search LCNAF: {search?.authority}</DialogTitle>
+    <Dialog fullWidth={true} maxWidth={"md"} open={open} onClose={handleClose}>
+      <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Typography variant="div">Search LCNAF: {search?.authority}</Typography>
+        <IconButton color="primary" component="label" 
+        onClick={handleClose}
+        >
+          <ClearIcon />
+        </IconButton>
+      </DialogTitle>
       <Divider />
       <DialogContent>
         <Grid container>
-          <Grid xs={5} sx={{ borderRight: "solid" }}>
+          <Grid xs={6} sx={{ borderRight: "solid 1px" }}>
             <form onSubmit={handleSubmit(handleSearch)}>
               <Controller
                 name="type"
@@ -60,11 +68,12 @@ export default function SearchLCNAF({
                   <FormControl>
                     <InputLabel id="type">Tipo</InputLabel>
                     <Select {...field} label="Tipo">
-                      <MenuItem value={"person"}>Person</MenuItem>
+                      <MenuItem value={"PersonalName"}>Person</MenuItem>
                       <MenuItem value={"family"}>Family</MenuItem>
-                      <MenuItem value={"corporate"}>Corporate</MenuItem>
+                      <MenuItem value={"CorporateName"}>Corporate</MenuItem>
                       <MenuItem value={"jurisdiction"}>Jurisdiction</MenuItem>
                       <MenuItem value={"conference"}>Conference</MenuItem>
+                      <MenuItem value={"NameTitle"}>Name Title</MenuItem>
                     </Select>
                   </FormControl>
                 )}
@@ -124,12 +133,14 @@ export default function SearchLCNAF({
               ))}
             </List>
           </Grid>
-          <Grid xs={7}>
+          {/* <Divider orientation="vertical"/> */}
+          <Grid xs={6}>
             <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
               LC Name Authority File (LCNAF)
             </Typography>
-            <CardLCNAF authorityDetails={authorityDetails}/>
-         
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <CardLCNAF authorityDetails={authorityDetails} />
+            </Box>
           </Grid>
         </Grid>
       </DialogContent>
