@@ -1,28 +1,26 @@
 import {
   Box,
   Typography,
-  Select,
-  FormControl,
-  InputLabel,
   TextField,
   InputAdornment,
-  Stack,
   IconButton,
-  Button,
   Paper,
-  Menu,
   MenuItem,
   MenuList,
-  Popover,
 } from "@mui/material/";
 import { useState } from "react";
-import { Search } from "@mui/icons-material";
+import { Search, Close } from "@mui/icons-material";
+import { blue } from "@mui/material/colors/";
+
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
 
 export default function Relationship() {
   const [openMenu, setOpenMenu] = useState(null);
   const [relators, setRelators] = useState(null);
+  const [disabled, setDisabled] = useState(true);
+  const [value, setValue] = useState("Lorem ipsum");
+  const [name, setName] = useState("");
 
   async function getRelators(data) {
     const client = new SparqlClient({
@@ -45,22 +43,66 @@ export default function Relationship() {
       r.push(quad.object.value);
     }
     if (r.length != 0) {
-      console.log("T:", r);
       setRelators(r);
     } else {
       setRelators(null);
-      console.log("0: ", r);
     }
   }
 
   const handleOnChange = (str) => {
     let data = str.charAt(0).toUpperCase() + str.slice(1);
     getRelators(data);
-    // console.log(relators)
   };
 
-  const handleCloseMenu = () => {
+  const handleCloseMenu = (relator) => {
     setOpenMenu(false);
+    setDisabled(true);
+    setValue(relator.target.innerText);
+    setName("");
+  };
+
+  const inputPros = {
+    disabled: disabled,
+    startAdornment: disabled ? (
+      <InputAdornment position="start">
+        <Typography
+          variant="subtitle2"
+          gutterBottom
+          sx={{
+            backgroundColor: blue[200],
+            display: "flex",
+            px: "5px",
+            borderRadius: "5px",
+          }}
+        >
+          <Box sx={{ borderRight: "solid 1px", pr: "5px" }}>{value}</Box>
+
+          <Close
+            sx={{
+              fontSize: "25px",
+              pl: "5px",
+              color: blue[800],
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              setDisabled(false);
+            }}
+          />
+        </Typography>
+      </InputAdornment>
+    ) : null,
+    endAdornment: (
+      <InputAdornment position="end">
+        <IconButton
+          color="primary"
+          aria-label="search"
+          component="button"
+          type="submit"
+        >
+          <Search />
+        </IconButton>
+      </InputAdornment>
+    ),
   };
 
   return (
@@ -71,23 +113,11 @@ export default function Relationship() {
           setOpenMenu(rect.top + rect.height);
         }}
         onChange={(e) => {
-          console.log(e.target.value);
           handleOnChange(e.target.value);
+          setName(e.target.value);
         }}
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                color="primary"
-                aria-label="search"
-                component="button"
-                type="submit"
-              >
-                <Search />
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
+        value={name}
+        InputProps={inputPros}
       />
       <Paper
         sx={
@@ -96,7 +126,7 @@ export default function Relationship() {
                 display: "block",
                 position: "absolute",
                 zIndex: "100",
-                top: openMenu, //202.859375 + 56,
+                top: openMenu,
               }
             : { display: "none", position: "absolute", zIndex: "100" }
         }

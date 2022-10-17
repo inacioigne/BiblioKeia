@@ -23,6 +23,7 @@ import { api } from "src/services/lcnfa";
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
 import Relationship from "./relationship";
+import Authority from "./authority";
 
 export default function CreateWork() {
   const [type, setType] = useState("person");
@@ -90,40 +91,40 @@ export default function CreateWork() {
     getData(data);
   };
 
-  async function getRelators(data) {
-    const client = new SparqlClient({
-      endpointUrl: "http://localhost:3030/relators/sparql",
-    });
-    const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-    SELECT ?object
-    WHERE {
-      ?subject madsrdf:authoritativeLabel ?object
-      FILTER regex(?object, "^${data}") 
-    }
-    LIMIT 10`;
+  // async function getRelators(data) {
+  //   const client = new SparqlClient({
+  //     endpointUrl: "http://localhost:3030/relators/sparql",
+  //   });
+  //   const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+  //   SELECT ?object
+  //   WHERE {
+  //     ?subject madsrdf:authoritativeLabel ?object
+  //     FILTER regex(?object, "^${data}") 
+  //   }
+  //   LIMIT 10`;
 
-    const stream = await client.query.select(query);
+  //   const stream = await client.query.select(query);
 
-    const dataset = rdf.dataset();
-    await dataset.import(stream);
-    let r = [];
-    for (const quad of dataset) {
-      r.push(quad.object.value);
-    }
-    if (r.length != 0) {
-      console.log("T:", r);
-      setRelators(r);
-    } else {
-      setRelators(null);
-      console.log("0: ", r);
-    }
-  }
+  //   const dataset = rdf.dataset();
+  //   await dataset.import(stream);
+  //   let r = [];
+  //   for (const quad of dataset) {
+  //     r.push(quad.object.value);
+  //   }
+  //   if (r.length != 0) {
+  //     console.log("T:", r);
+  //     setRelators(r);
+  //   } else {
+  //     setRelators(null);
+  //     console.log("0: ", r);
+  //   }
+  // }
 
-  const handleOnChange = (str) => {
-    let data = str.charAt(0).toUpperCase() + str.slice(1);
-    getRelators(data);
-    // console.log(relators)
-  };
+  // const handleOnChange = (str) => {
+  //   let data = str.charAt(0).toUpperCase() + str.slice(1);
+  //   getRelators(data);
+  //   // console.log(relators)
+  // };
 
   return (
     <Box bgcolor={grey[100]} onMouseLeave={handleCloseMenu}>
@@ -132,7 +133,8 @@ export default function CreateWork() {
           Creator of Work
         </Typography>
         <Paper sx={{ p: "1rem", width: "30rem" }}>
-          <form onSubmit={handleSubmit(handleSearch)}>
+          <form //onSubmit={handleSubmit(handleSearch)}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -158,7 +160,7 @@ export default function CreateWork() {
                 )}
               />
 
-              <Controller
+              {/* <Controller
                 control={control}
                 name="authority"
                 rules={{ required: true }}
@@ -182,65 +184,12 @@ export default function CreateWork() {
                     }}
                   />
                 )}
-              />
+              /> */}
+                 {/** Authority*/}
+              <Authority />
               {/** Relationship Designator */}
               <Relationship />
-              {/* <Controller
-                control={control}
-                name="relationship"
-                rules={{ required: true }}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    onClick={(e) => {
-                      let rect = e.currentTarget.getBoundingClientRect();
-                      console.log(rect.top + rect.height);
-                      setopenMenu(rect.top + rect.height);
-                      //let menu = document.getElementById('menu')
-                      //setAnchorEl(menu);
-                    }}
-                    onChange={(e) => {
-                      field.onChange(e);
-                      handleOnChange(e.target.value);
-                    }}
-                    label="Relationship Designator"
-                    InputProps={{
-                      endAdornment: (
-                        <InputAdornment position="end">
-                          <Search />
-                        </InputAdornment>
-                      ),
-                    }}
-                  />
-                )}
-              />
-
-              <Paper
-                sx={
-                  openMenu
-                    ? {
-                        display: "block",
-                        position: "absolute",
-                        zIndex: "100",
-                        top: 202.859375 + 56,
-                      }
-                    : { display: "none", position: "absolute", zIndex: "100" }
-                }
-              >
-               
-                <MenuList>
-                  {relators ? (
-                    relators?.map((relator, index) => (
-                      <MenuItem key={index} onClick={handleCloseMenu}>
-                        {relator}
-                      </MenuItem>
-                    ))
-                  ) : (
-                    <MenuItem>Nenhum resultado encontrado</MenuItem>
-                  )}
-                </MenuList>
-               
-              </Paper> */}
+              
             </Box>
           </form>
         </Paper>
