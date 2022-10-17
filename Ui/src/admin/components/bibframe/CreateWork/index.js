@@ -22,8 +22,7 @@ import SearchLCNAF from "src/admin/components/bibframe/search_LCNAF";
 import { api } from "src/services/lcnfa";
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
-
-//onst rdf = require('rdf-ext')
+import Relationship from "./relationship";
 
 export default function CreateWork() {
   const [type, setType] = useState("person");
@@ -64,7 +63,7 @@ export default function CreateWork() {
 
   const handleCloseMenu = () => {
     // console.log("close");
-     setAnchorEl(null);
+    setAnchorEl(null);
     setopenMenu(false);
   };
 
@@ -118,7 +117,6 @@ export default function CreateWork() {
       setRelators(null);
       console.log("0: ", r);
     }
-
   }
 
   const handleOnChange = (str) => {
@@ -128,18 +126,13 @@ export default function CreateWork() {
   };
 
   return (
-    <Box
-      bgcolor={grey[100]} //onClick={() => {setopenMenu(false)}}
-      onMouseLeave={handleCloseMenu}
-    >
-      <Box p={"2rem"} 
-      
-      >
+    <Box bgcolor={grey[100]} onMouseLeave={handleCloseMenu}>
+      <Box p={"2rem"}>
         <Typography variant="subtitle2" gutterBottom>
           Creator of Work
         </Typography>
-        <Paper sx={{ p: "1rem", width: "30rem" }} >
-          <form onSubmit={handleSubmit(handleSearch)} >
+        <Paper sx={{ p: "1rem", width: "30rem" }}>
+          <form onSubmit={handleSubmit(handleSearch)}>
             <Box
               sx={{
                 display: "flex",
@@ -191,7 +184,8 @@ export default function CreateWork() {
                 )}
               />
               {/** Relationship Designator */}
-              <Controller
+              <Relationship />
+              {/* <Controller
                 control={control}
                 name="relationship"
                 rules={{ required: true }}
@@ -204,13 +198,11 @@ export default function CreateWork() {
                       setopenMenu(rect.top + rect.height);
                       //let menu = document.getElementById('menu')
                       //setAnchorEl(menu);
-                      
                     }}
                     onChange={(e) => {
                       field.onChange(e);
                       handleOnChange(e.target.value);
                     }}
-                    
                     label="Relationship Designator"
                     InputProps={{
                       endAdornment: (
@@ -222,7 +214,6 @@ export default function CreateWork() {
                   />
                 )}
               />
-          
 
               <Paper
                 sx={
@@ -236,29 +227,20 @@ export default function CreateWork() {
                     : { display: "none", position: "absolute", zIndex: "100" }
                 }
               >
-              {/* <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={openMenu1}
-                onClose={handleCloseMenu}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
-              > */}
-              <MenuList>
-                {relators ? (
-                  relators?.map((relator, index) => (
-                    <MenuItem key={index} onClick={handleCloseMenu}>
-                      {relator}
-                    </MenuItem>
-                  ))
-                ) : (
-                  <MenuItem>Nenhum resultado encontrado</MenuItem>
-                )}
-              </MenuList>
-              {/* </Menu> */}
-       
-              </Paper>
+               
+                <MenuList>
+                  {relators ? (
+                    relators?.map((relator, index) => (
+                      <MenuItem key={index} onClick={handleCloseMenu}>
+                        {relator}
+                      </MenuItem>
+                    ))
+                  ) : (
+                    <MenuItem>Nenhum resultado encontrado</MenuItem>
+                  )}
+                </MenuList>
+               
+              </Paper> */}
             </Box>
           </form>
         </Paper>
