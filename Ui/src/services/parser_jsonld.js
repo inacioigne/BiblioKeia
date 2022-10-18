@@ -3,7 +3,7 @@ import namespace from "@rdfjs/namespace";
 import cf from "clownface";
 
 async function ParserJsonLd(token, setAuthorityDetails) {
-  //console.log(token);
+
   const AuthorityDetails = {}
   const jsonld = `https://id.loc.gov/authorities/names/${token}.madsrdf_raw.jsonld`;
   const dataset = await fetch(jsonld).then((response) => response.dataset());
@@ -106,21 +106,10 @@ async function ParserJsonLd(token, setAuthorityDetails) {
     return label.split(")")[1];
   });
   AuthorityDetails['occupations'] = occupations
-  console.log(AuthorityDetails)
+
   setAuthorityDetails(AuthorityDetails)
 
-  // setAuthorityDetails({
-  //   personalName: personalName,
-  //   fullerName: fullerName,
-  //   birthDate: birthDate.split(")")[1],
-  //   birthPlace: birthPlace,
-  //   deathDate: deathDate,
-  //   deathPlace: deathPlace.split(") ")[1],
-  //   associatedLocales: associatedLocales,
-  //   variants: variants,
-  //   fieldOfActivity: fieldOfActivity,
-  //   occupations: occupations,
-  // });
+ 
 
 }
 

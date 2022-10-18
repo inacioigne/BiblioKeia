@@ -10,7 +10,7 @@ import {
 } from "@mui/material/";
 import { useState } from "react";
 import { Search, Close } from "@mui/icons-material";
-import { blue } from "@mui/material/colors/";
+import { blue, red } from "@mui/material/colors/";
 
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
@@ -18,7 +18,7 @@ import rdf from "rdf-ext";
 export default function Relationship() {
   const [openMenu, setOpenMenu] = useState(null);
   const [relators, setRelators] = useState(null);
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("Lorem ipsum");
   const [name, setName] = useState("");
 
@@ -53,6 +53,14 @@ export default function Relationship() {
     let data = str.charAt(0).toUpperCase() + str.slice(1);
     getRelators(data);
   };
+  const handleClick = (e) => {
+   
+    if (disabled == false) {
+      let rect = e.currentTarget.getBoundingClientRect();
+      setOpenMenu(rect.top + rect.height);
+      getRelators("");
+    }
+  };
 
   const handleCloseMenu = (relator) => {
     setOpenMenu(false);
@@ -69,23 +77,36 @@ export default function Relationship() {
           variant="subtitle2"
           gutterBottom
           sx={{
-            backgroundColor: blue[200],
             display: "flex",
-            px: "5px",
-            borderRadius: "5px",
           }}
         >
-          <Box sx={{ borderRight: "solid 1px", pr: "5px" }}>{value}</Box>
+          <Box
+            sx={{
+              borderRight: "solid 1px",
+              borderTopLeftRadius: "5px",
+              borderBottomLeftRadius: "5px",
+              px: "5px",
+              pt: "2px",
+              backgroundColor: blue[200],
+            }}
+          >
+            {value}
+          </Box>
 
           <Close
             sx={{
               fontSize: "25px",
-              pl: "5px",
+              px: "5px",
               color: blue[800],
+              backgroundColor: red[200],
               cursor: "pointer",
+              borderTopRightRadius: "5px",
+              borderBottomRightRadius: "5px",
             }}
-            onClick={() => {
+            onClick={(e) => {
               setDisabled(false);
+              let rect = e.currentTarget.getBoundingClientRect();
+              setOpenMenu(rect.top + rect.height + 19);
             }}
           />
         </Typography>
@@ -108,15 +129,18 @@ export default function Relationship() {
   return (
     <>
       <TextField
-        onClick={(e) => {
-          let rect = e.currentTarget.getBoundingClientRect();
-          setOpenMenu(rect.top + rect.height);
-        }}
+        // onClick={(e) => {
+        //   let rect = e.currentTarget.getBoundingClientRect();
+        //   setOpenMenu(rect.top + rect.height);
+        //   getRelators("")
+        // }}
+        onClick={handleClick}
         onChange={(e) => {
           handleOnChange(e.target.value);
           setName(e.target.value);
         }}
         value={name}
+        label="Relationship Designator"
         InputProps={inputPros}
       />
       <Paper
