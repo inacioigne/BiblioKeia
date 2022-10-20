@@ -4,9 +4,7 @@ import {
   TextField,
   InputAdornment,
   IconButton,
-  Paper,
   MenuItem,
-  MenuList,
   FormControl,
   InputLabel,
   Select,
@@ -14,7 +12,6 @@ import {
 import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
 import SearchLCNAF from "./search_LCNAF";
-import { useForm, Controller } from "react-hook-form";
 import { api } from "src/services/lcnfa";
 import { blue, red } from "@mui/material/colors/";
 
@@ -45,9 +42,8 @@ export default function Authority() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log(name, type);
+    //console.log(name, type);
     setOpen(true);
-    // setSearch(data);
     getData(name, type);
   };
 
@@ -60,7 +56,6 @@ export default function Authority() {
           gutterBottom
           sx={{
             display: "flex",
-            
           }}
         >
           <Box
@@ -135,9 +130,10 @@ export default function Authority() {
               <MenuItem value={"NameTitle"}>Name Title</MenuItem>
             </Select>
           </FormControl>
+
           <TextField
             onChange={(e) => {
-              setName(e.target.value);
+              setName(e.target.value); 
             }}
             value={name}
             fullWidth
@@ -155,9 +151,7 @@ export default function Authority() {
         type={type}
         setType={setType}
         search={search}
-        //control={control}
         handleSearch={handleSearch}
-        //handleSubmit={handleSubmit}
         hits={hits}
         setValue={setValue}
         setDisabled={setDisabled}

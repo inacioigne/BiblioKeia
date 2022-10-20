@@ -129,11 +129,6 @@ export default function Relationship() {
   return (
     <>
       <TextField
-        // onClick={(e) => {
-        //   let rect = e.currentTarget.getBoundingClientRect();
-        //   setOpenMenu(rect.top + rect.height);
-        //   getRelators("")
-        // }}
         onClick={handleClick}
         onChange={(e) => {
           handleOnChange(e.target.value);

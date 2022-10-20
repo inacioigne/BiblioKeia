@@ -1,0 +1,116 @@
+<http://id.loc.gov/resources/works/1893399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bflc/aap> "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bflc/aap-normalized> "popperkarlr(karlraimund)19021994conjecturesandrefutations:thegrowthofscientificknowledge" .
+<http://id.loc.gov/resources/works/1893399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Text> .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/content> <http://id.loc.gov/vocabulary/contentTypes/txt> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Content> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.w3.org/2000/01/rdf-schema#label> "text" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/language> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Language> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/2000/01/rdf-schema#label> "English" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/supplementaryContent> <http://id.loc.gov/vocabulary/msupplcont/bibliography> .
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/SupplementaryContent> .
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> <http://www.w3.org/2000/01/rdf-schema#label> "bibliography" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/supplementaryContent> <http://id.loc.gov/vocabulary/msupplcont/index> .
+<http://id.loc.gov/vocabulary/msupplcont/index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/SupplementaryContent> .
+<http://id.loc.gov/vocabulary/msupplcont/index> <http://www.w3.org/2000/01/rdf-schema#label> "index" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/classification> _:b49iddOtlocdOtgovresourcesworks1893399 .
+_:b49iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
+_:b49iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "BD241" .
+_:b49iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/itemPortion> ".P65x 1968" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/contribution> _:b61iddOtlocdOtgovresourcesworks1893399 .
+_:b61iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution> .
+_:b61iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/PrimaryContribution> .
+_:b61iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/rwo/agents/n80032184> .
+<http://id.loc.gov/rwo/agents/n80032184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+<http://id.loc.gov/rwo/agents/n80032184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n80032184> <http://www.w3.org/2000/01/rdf-schema#label> "Popper, Karl R. (Karl Raimund), 1902-1994." .
+<http://id.loc.gov/rwo/agents/n80032184> <http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority> <http://id.loc.gov/authorities/names/n80032184> .
+_:b61iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/ctb> .
+<http://id.loc.gov/vocabulary/relators/ctb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Role> .
+<http://id.loc.gov/vocabulary/relators/ctb> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor" .
+<http://id.loc.gov/resources/works/1893399> <http://www.w3.org/2000/01/rdf-schema#label> "Conjectures and refutations : the growth of scientific knowledge" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/title> _:b88iddOtlocdOtgovresourcesworks1893399 .
+_:b88iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b88iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Conjectures and refutations : the growth of scientific knowledge" .
+_:b88iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Conjectures and refutations : the growth of scientific knowledge" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/supplementaryContent> _:b100iddOtlocdOtgovresourcesworks1893399 .
+_:b100iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/SupplementaryContent> .
+_:b100iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Includes bibliographical references and indexes." .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/subject> _:b109iddOtlocdOtgovresourcesworks1893399 .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Topic> .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Methodology." .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Methodology." .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/subjects> .
+_:b109iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bflc/aap-normalized> "methodology" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/subject> _:b128iddOtlocdOtgovresourcesworks1893399 .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Topic> .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Knowledge, Theory of." .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Knowledge, Theory of." .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/subjects> .
+_:b128iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bflc/aap-normalized> "knowledgetheoryof" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/subject> _:b147iddOtlocdOtgovresourcesworks1893399 .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Topic> .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#ComplexSubject> .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Science--Methodology." .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Science--Methodology." .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/subjects> .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#componentList> _:b161iddOtlocdOtgovresourcesworks1893399 .
+_:b161iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b163iddOtlocdOtgovresourcesworks1893399 .
+_:b161iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0167 .
+_:b163iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+_:b163iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Science" .
+_:b0167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b169iddOtlocdOtgovresourcesworks1893399 .
+_:b0167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b169iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+_:b169iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Methodology" .
+_:b147iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bflc/aap-normalized> "sciencemethodology" .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/subject> _:b181iddOtlocdOtgovresourcesworks1893399 .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Topic> .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Prediction (Logic)" .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Prediction (Logic)" .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/subjects> .
+_:b181iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bflc/aap-normalized> "prediction(logic)" .
+<http://id.loc.gov/resources/works/1893399> <http://purl.org/dc/terms/isPartOf> <http://id.loc.gov/resources/works> .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/hasInstance> <http://id.loc.gov/resources/instances/1893399> .
+<http://id.loc.gov/resources/instances/1893399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Instance> .
+<http://id.loc.gov/resources/instances/1893399> <http://id.loc.gov/ontologies/bibframe/title> _:b204iddOtlocdOtgovresourcesworks1893399 .
+_:b204iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b204iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "Conjectures and refutations : the growth of scientific knowledge" .
+_:b204iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Conjectures and refutations" .
+_:b204iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/subtitle> "the growth of scientific knowledge" .
+<http://id.loc.gov/resources/instances/1893399> <http://id.loc.gov/ontologies/bibframe/provisionActivityStatement> "New York : Harper & Row, 1968, c1965." .
+<http://id.loc.gov/resources/works/1893399> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b221iddOtlocdOtgovresourcesworks1893399 .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/generationProcess> _:b225iddOtlocdOtgovresourcesworks1893399 .
+_:b225iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/GenerationProcess> .
+_:b225iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/2000/01/rdf-schema#label> "DLC marc2bibframe2 v1.7.0-SNAPSHOT" .
+_:b225iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/generationDate> "2021-08-04T20:33:57-04:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/status> <http://id.loc.gov/vocabulary/mstatus/c> .
+<http://id.loc.gov/vocabulary/mstatus/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Status> .
+<http://id.loc.gov/vocabulary/mstatus/c> <http://www.w3.org/2000/01/rdf-schema#label> "corrected or revised" .
+<http://id.loc.gov/vocabulary/mstatus/c> <http://id.loc.gov/ontologies/bibframe/code> "c" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bflc/encodingLevel> <http://id.loc.gov/vocabulary/menclvl/f> .
+<http://id.loc.gov/vocabulary/menclvl/f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/EncodingLevel> .
+<http://id.loc.gov/vocabulary/menclvl/f> <http://www.w3.org/2000/01/rdf-schema#label> "full" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/descriptionConventions> <http://id.loc.gov/vocabulary/descriptionConventions/aacr> .
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/DescriptionConventions> .
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> <http://www.w3.org/2000/01/rdf-schema#label> "aacr" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b264iddOtlocdOtgovresourcesworks1893399 .
+_:b264iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:b264iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1893399" .
+_:b264iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/assigner> <http://id.loc.gov/vocabulary/organizations/dlc> .
+<http://id.loc.gov/vocabulary/organizations/dlc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+<http://id.loc.gov/vocabulary/organizations/dlc> <http://id.loc.gov/ontologies/bibframe/code> "DLC" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/changeDate> "2008-05-09T11:03:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/creationDate> "1983-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/lclocal/d906> "=906 $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/assigner> _:b291iddOtlocdOtgovresourcesworks1893399 .
+_:b291iddOtlocdOtgovresourcesworks1893399 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b291iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/code> "MH" .
+_:b221iddOtlocdOtgovresourcesworks1893399 <http://id.loc.gov/ontologies/bibframe/descriptionModifier> <http://id.loc.gov/vocabulary/organizations/dlc> .
+<http://id.loc.gov/vocabulary/organizations/dlc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+<http://id.loc.gov/vocabulary/organizations/dlc> <http://id.loc.gov/ontologies/bibframe/code> "DLC" .

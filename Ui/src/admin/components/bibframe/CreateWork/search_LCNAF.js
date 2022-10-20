@@ -17,7 +17,7 @@ import {
   ListItem,
   Box,
 } from "@mui/material";
-import { useForm, Controller } from "react-hook-form";
+//import { useForm, Controller } from "react-hook-form";
 import { Search } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 import { api } from "src/services/lcnfa";
@@ -101,52 +101,7 @@ export default function SearchLCNAF({
                 }}
               />
             </form>
-            {/* <form onSubmit={handleSubmit(handleSearch)}>
-              <Controller
-                name="type"
-                control={control}
-                render={({ field }) => (
-                  <FormControl>
-                    <InputLabel id="type">Tipo</InputLabel>
-                    <Select {...field} label="Tipo">
-                      <MenuItem value={"PersonalName"}>Person</MenuItem>
-                      <MenuItem value={"family"}>Family</MenuItem>
-                      <MenuItem value={"CorporateName"}>Corporate</MenuItem>
-                      <MenuItem value={"jurisdiction"}>Jurisdiction</MenuItem>
-                      <MenuItem value={"conference"}>Conference</MenuItem>
-                      <MenuItem value={"NameTitle"}>Name Title</MenuItem>
-                    </Select>
-                  </FormControl>
-                )}
-              />
-              <Controller
-                control={control}
-                name="authority"
-                rules={{ required: true }}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    //value={search?.authority}
-                    //defaultValue={search?.authority}
-                    label="Search LCNAF"
-                    InputProps={{
-                      endAdornment: (
-                        <InputAdornment position="end">
-                          <IconButton
-                            color="primary"
-                            aria-label="search"
-                            component="button"
-                            type="submit"
-                          >
-                            <Search />
-                          </IconButton>
-                        </InputAdornment>
-                      ),
-                    }}
-                  />
-                )}
-              />
-            </form> */}
+            
             <Typography
               variant="subtitle2"
               gutterBottom
@@ -174,7 +129,7 @@ export default function SearchLCNAF({
               ))}
             </List>
           </Grid>
-          {/* <Divider orientation="vertical"/> */}
+
           <Grid xs={6}>
             <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
               LC Name Authority File (LCNAF)
