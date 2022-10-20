@@ -24,7 +24,7 @@ export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisa
     gap: "0.5rem",
   };
   const handleChoose = () => {
-    console.log('ok', authorityDetails?.personalName)
+    //console.log('ok', authorityDetails?.personalName)
     setDisabled(true);
     setOpen(false)
     setName("")

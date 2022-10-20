@@ -11,6 +11,7 @@ import {
 } from "@mui/material/";
 //import { useState } from "react";
 import { Search, Close } from "@mui/icons-material";
+import { blue, red } from "@mui/material/colors/";
 
 export default function SearchSubject({
   setSubject,
@@ -39,7 +40,7 @@ export default function SearchSubject({
               backgroundColor: blue[200],
             }}
           >
-            {value}
+            {subject}
           </Box>
 
           <Close

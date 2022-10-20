@@ -112,5 +112,5 @@ async function ParserJsonLd(token, setAuthorityDetails) {
  
 
 }
-
+ 
 export default ParserJsonLd;

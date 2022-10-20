@@ -22,24 +22,26 @@ import { useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import Type from "./type";
 import SearchSubject from "./searchSubject";
+import ParserLCSH from "src/services/thesaurus/parser_lcsh";
+import CardSubject from "./cardSubject";
 
 export default function Thesaurus({
   open,
   setOpen,
-  search,
-  name,
+  // search,
+  // name,
   handleSearch,
   hits,
   setValue,
   setDisabled,
-  setName,
+  //setName,
   setType,
   type,
   setSubject,
   subject,
   disabled,
 }) {
-  const [authorityDetails, setAuthorityDetails] = useState(null);
+  const [subjectDetails, setSubjectDetails] = useState(null);
 
   const handleClose = () => {
     setOpen(false);
@@ -47,6 +49,7 @@ export default function Thesaurus({
 
   const getDetails = (token) => {
     //ParserJsonLd(token, setAuthorityDetails);
+    ParserLCSH(token, setSubjectDetails);
   };
 
   return (
@@ -60,7 +63,9 @@ export default function Thesaurus({
       <Divider />
       <DialogContent>
         <Grid container>
-          <Grid item xs={6} //sx={{ borderRight: "solid 1px" }}
+          <Grid
+            item
+            xs={6} //sx={{ borderRight: "solid 1px" }}
           >
             <form onSubmit={handleSearch}>
               <Box
@@ -95,8 +100,8 @@ export default function Thesaurus({
                     sx={{ textTransform: "none" }}
                     onClick={() => {
                       let token = hit.uri.split("/")[5];
-                      console.log(token)
-                      //getDetails(token);
+
+                      getDetails(token);
                     }}
                   >
                     {" "}
@@ -108,8 +113,11 @@ export default function Thesaurus({
           </Grid>
           <Grid item xs={6}>
             <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
-              LC Name Authority File (LCNAF)
+              LC Subject Headings (LCSH)
             </Typography>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <CardSubject subjectDetails={subjectDetails} setDisabled={setDisabled} setOpen={setOpen} subject={subject} setSubject={setSubject} />
+            </Box>
           </Grid>
         </Grid>
       </DialogContent>

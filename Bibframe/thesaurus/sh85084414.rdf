@@ -1,0 +1,822 @@
+<rdf:RDF 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:bf="http://id.loc.gov/ontologies/bibframe/" 
+xmlns:bflc="http://id.loc.gov/ontologies/bflc/" 
+xmlns:owl="http://www.w3.org/2002/07/owl#" 
+xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+xmlns:dcterms="http://purl.org/dc/terms/" 
+xmlns:cc="http://creativecommons.org/ns#" 
+xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85084414" 
+  xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel xml:lang="en">Methodology</madsrdf:authoritativeLabel>
+
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:TopicElement>
+	      <madsrdf:elementValue xml:lang="en">Methodology</madsrdf:elementValue>
+      </madsrdf:TopicElement>
+    </madsrdf:elementList>
+    <madsrdf:hasVariant>
+      <madsrdf:ComplexSubject>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="en">Philosophy--Methodology</madsrdf:variantLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	    <madsrdf:variantLabel xml:lang="en">Philosophy</madsrdf:variantLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Philosophy</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	    <madsrdf:variantLabel xml:lang="en">Methodology</madsrdf:variantLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Methodology</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+      </madsrdf:ComplexSubject>
+    </madsrdf:hasVariant>
+    <madsrdf:classification>
+      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+	<madsrdf:code>BD240-BD241</madsrdf:code>
+	<madsrdf:hasExactExternalAuthority rdf:resource="http://id.loc.gov/authorities/classification/BD240-BD241"/>
+      </lcc:ClassNumber>
+    </madsrdf:classification>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://data.bnf.fr/ark:/12148/cb11932499z">
+	<madsrdf:authoritativeLabel xml:lang="fr">Méthodologie</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh94000124">
+	<madsrdf:authoritativeLabel xml:lang="en">Genealogy (Philosophy)</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasReciprocalAuthority>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85113021">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	<madsrdf:authoritativeLabel xml:lang="en">Research</madsrdf:authoritativeLabel>
+	<madsrdf:elementList rdf:parseType="Collection">
+	  <madsrdf:TopicElement>
+	    <madsrdf:elementValue xml:lang="en">Research</madsrdf:elementValue>
+	  </madsrdf:TopicElement>
+	</madsrdf:elementList>
+      </madsrdf:Topic>
+    </madsrdf:hasReciprocalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85050813">
+	<madsrdf:authoritativeLabel xml:lang="en">Formalization (Philosophy)</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85099817">
+	<madsrdf:authoritativeLabel xml:lang="en">Performative (Philosophy)</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh00002301">
+	<madsrdf:authoritativeLabel xml:lang="en">Thought experiments</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85067232">
+	<madsrdf:authoritativeLabel xml:lang="en">Interdisciplinary approach to knowledge</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85004780">
+	<madsrdf:authoritativeLabel xml:lang="en">Analysis (Philosophy)</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasExactExternalAuthority>
+      <madsrdf:Authority rdf:about="http://lod.nal.usda.gov/nalt/5079">
+	<madsrdf:authoritativeLabel xml:lang="en">methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasExactExternalAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://d-nb.info/gnd/4139716-2">
+	<madsrdf:authoritativeLabel xml:lang="de">Methodologie</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://data.bnf.fr/ark:/12148/cb131942840">
+	<madsrdf:authoritativeLabel xml:lang="fr">Philosophie -- Méthodologie</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85026813">
+	<madsrdf:authoritativeLabel xml:lang="en">Classification of sciences</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85078296">
+	<madsrdf:authoritativeLabel xml:lang="en">Longitudinal method</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://www.wikidata.org/entity/Q185698">
+	<madsrdf:authoritativeLabel>methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85060556">
+	<madsrdf:authoritativeLabel xml:lang="en">Heuristic</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://id.worldcat.org/fast/1018722">
+	<madsrdf:authoritativeLabel>Methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://www.yso.fi/onto/yso/p7509">
+	<madsrdf:authoritativeLabel xml:lang="fi">metodologia</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh85107109">
+	<madsrdf:authoritativeLabel xml:lang="en">Problem solving</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSH_General"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://aims.fao.org/aos/agrovoc/c_12522"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://d-nb.info/gnd/4139716-2"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://id.worldcat.org/fast/1018722"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.wikidata.org/entity/Q185698"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11264831">
+	<bflc:aap>Andhra Pradesh Agricultural University Annual report</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12715852">
+	<bflc:aap>Anisimov, O. S. (Oleg Sergeevich) Ontologii v refleksivnom prostranstve</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12663990">
+	<bflc:aap>Baggini, Julian. philosopher's toolkit : a compendium of philosophical concepts and methods</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12443622">
+	<bflc:aap>Beli︠a︡ev, E. I. (Evgenii̐ Ivanovich) Filosofskiĭ analiz : teoreticheskie aspekty</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10153787">
+	<bflc:aap>Benjamin, Harold Raymond Wayne, 1893-1969. Man, the problem-solver,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11482260">
+	<bflc:aap>Biotechnology techniques</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10306590">
+	<bflc:aap>Bloch, Kurt, physician. Zur Theorie der naturwissenschaftlichen Systematik unter besonderer Berücksichtigung der Biologie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11857444">
+	<bflc:aap>Borisov, V. N. (Vladimir Nikolaevich) Problemy metodologii : sbornik nauchnykh stateĭ, posvi︠a︡shchennykh pami︠a︡ti professora V.N. Borisova</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12603069">
+	<bflc:aap>Bostrom, Nick, 1973- Anthropic bias : observation selection effects in science and philosophy</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1198547">
+	<bflc:aap>Carspecken, Phil Francis, 1950- Four scenes for posing the question of meaning and other essays in critical philosophy and critical methodology</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10276074">
+	<bflc:aap>Cartia Poidomani, Giorgia. El metodo naturale nel mio pensiero e nelle mie esperienze</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10348929">
+	<bflc:aap>Caude, Roland. Méthodologie, vers une science de l'action</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10360966">
+	<bflc:aap>Ceccato, Silvio. tecnico fra i filosofi</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10406024">
+	<bflc:aap>Černík, Václav. Myšlienkový experiment a produkcia ideí</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10241442">
+	<bflc:aap>Churchman, Charles West, 1913- Methods of inquiry</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11167958">
+	<bflc:aap>Classification Society The Classification Society bulletin</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10165529">
+	<bflc:aap>Collingwood, R. G. (Robin George), 1889-1943. essay on philosophical method,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10113669">
+	<bflc:aap>Cooper, Lane, 1875-1959. Methods and aims in the study of literature; a series of extracts and illustrations,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1061066">
+	<bflc:aap>Danneberg, Lutz Methodologien</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12606469">
+	<bflc:aap>De Natale, Ferruccio. Forme di scrittura filosofica : elementi di teoria e didattica</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10184899">
+	<bflc:aap>DeLacy, Estelle Allen, 1911- Meaning and methodology in Hellenistic philosophy ..</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/103174">
+	<bflc:aap>Denisov, S. F. Razum i rassudok v strukture chelovecheskoĭ aktivnosti</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12365204">
+	<bflc:aap>Denshi media wa kenkyū o kaeru no ka 電子メディアは研究を変えるのか</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10065493">
+	<bflc:aap>Descartes, René, 1596-1650 The method, meditations and philosophy of Descartes</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1108629">
+	<bflc:aap>Descartes, René, 1596-1650. Discours de la méthode : pour bein [sic] conduire sa raison et chercher la verité dans les sciences = Discourse on the method : of conducting one's reason well and of seeking the truth in the sciences : a bilingual edition and an interpretation of René Descartes' philosophy of method</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12032036">
+	<bflc:aap>Descartes, René, 1596-1650. Discourse on method, and related writings</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1160969">
+	<bflc:aap>Descartes, René, 1596-1650. Discourse on the method ; and, Meditations on first philosophy</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11422502">
+	<bflc:aap>Deutsche Forschungsgemeinschaft Jahresbericht Aufgaben und Ergebnisse</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/106130">
+	<bflc:aap>Domański, Juliusz. philosophie, théorie ou manière de vivre? : les controverses de l'antiquité à la renaissance</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10191809">
+	<bflc:aap>Ducasse, Curt John, 1881- Philosophy as a science, its matter and its method,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1038428">
+	<bflc:aap>Erickson, Glenn W., 1951- Negative dialectics and the end of philosophy</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11212320">
+	<bflc:aap>Evaluation quarterly</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1230484">
+	<bflc:aap>Farber, Marvin, 1901-1980. Basic issues of philosophy: experience, reality, and human values</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10408035">
+	<bflc:aap>Frey, Gerhard, 1915- Philosophie und Wissenschaft; eine Methodenlehre</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10247032">
+	<bflc:aap>Froe, Arie de. Van waarneming tot oordeel. Een bezinning op de werkwijze en de betekenis van de wetenschap voor maatschappij en geestesleven</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10337339">
+	<bflc:aap>García Bacca, Juan David, 1901-1992. Siete modelos de filosofar; [conferencias</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1057308">
+	<bflc:aap>Gorskiĭ, D. P. Problemy logiki i metodologii nauchnogo poznanii︠a︡</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1040629">
+	<bflc:aap>Griffero, Tonino. Interpretare : la teoria di Emilio Betti e il suo contesto</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12566673">
+	<bflc:aap>Hacking, Ian. Historical ontology</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1207310">
+	<bflc:aap>Hauskeller, Christine, 1964- "--was die Welt im Innersten zusammenhält" : 34 Wege zur Philosophie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10435314">
+	<bflc:aap>Hirsh, Wolfgang, 1904- Über die Grundlagen einer universalen Methode der Philosophie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1279465">
+	<bflc:aap>Hönigswald, Richard, 1875-1947. Grundlagen der allgemeinen Methodenlehre</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11955264">
+	<bflc:aap>Jacobs, Jonathan A. philosopher's compass</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10358969">
+	<bflc:aap>Jørgensen, Jørgen, 1894- Indledning til logikken og metoldelæren</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1229480">
+	<bflc:aap>Khaleque, Md. Abdul, M.A. Students' problems of philosophy,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1035791">
+	<bflc:aap>Kmita, Jerzy. Essays on the theory of scientific cognition</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10446108">
+	<bflc:aap>Kompaneet︠s︡, A. I. Metodologii︠a︡ nauchnogo poznanii︠a︡</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12494841">
+	<bflc:aap>Koomey, Jon. Turning numbers into knowledge : mastering the art of problem solving</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10399388">
+	<bflc:aap>Kraszewski, Zdzisław. Metodologia filozofii</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1144937">
+	<bflc:aap>Lacour, Claudia Brodsky, 1955- Lines of thought : discourse, architectonics, and the origin of modern philosophy</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1095533">
+	<bflc:aap>Landman, C. (Christina) Europe's role in a South African methodology</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12345146">
+	<bflc:aap>Lao, Siguang Si xiang fang fa wu jiang xin bian 思想方法五講新編</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12571954">
+	<bflc:aap>Lessing, Hans-Ulrich, 1953- Wilhelm Diltheys "Einleitung in die Geisteswissenschaften"</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11404774">
+	<bflc:aap>Logiko-filosofskie issledovanii︠a Логико-философские исследования</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/100743">
+	<bflc:aap>Markov, B. V. (Boris Vasilʹevich) Nauka i alternativnye formy znanii︠a︡ : mezhvuzovskiĭ sbornik</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1106371">
+	<bflc:aap>Masters, Roger D. Beyond relativism : science and human values</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11274534">
+	<bflc:aap>Method</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11145381">
+	<bflc:aap>Methodos</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12747501">
+	<bflc:aap>Methodos</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1099716">
+	<bflc:aap>Movia, Giancarlo, 1937- Apparenze, essere e verità : commentario storico-filosofico al "Sofista" di Platone</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11805461">
+	<bflc:aap>Munck, Jean de L'institution sociale de l'esprit</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11278610">
+	<bflc:aap>National Council for Science and Technology (Kenya) Report of the National Council for Science and Technology for the year ending ..</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10137425">
+	<bflc:aap>Niceforo, Alfredo, 1876-1960. méthode statistique et ses applications aux sciences naturelles aux sciences sociales et à l'art,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1024928">
+	<bflc:aap>Oĭzerman, T. I. (Teodor Ilʹich) Problemy marksistsko-leninskoĭ metodologii istorii filosofii</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12356788">
+	<bflc:aap>Ostasz, Lech, 1958- Homo methodicus : między filozofią, humanistyką i naukami ścisłymi</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12595357">
+	<bflc:aap>Ouyang, Kang, 1953- Zhe xue yan jiu fang fa lun 哲学研究方法论</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11225040">
+	<bflc:aap>Overseas Development Institute (London, England) Annual report - Overseas Development Institute</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10392959">
+	<bflc:aap>Pinto, Alvaro Vieira. Ciência e existência; problemas filosóficos da pesquisa científica</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1053753">
+	<bflc:aap>Plato. Plato's Sophist</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12787984">
+	<bflc:aap>Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12023446">
+	<bflc:aap>Précis de philosophie analytique</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12340629">
+	<bflc:aap>Rescher, Nicholas. Philosophical reasoning : a study in the methodology of philosophizing</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10222178">
+	<bflc:aap>Robinson, Daniel Sommer, 1888- principles of reasoning, an introduction to logic and scientific method</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10152788">
+	<bflc:aap>Robinson, Daniel Sommer, 1888- prinicples of reasoning; an introduction to logic and scientific method,</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1212257">
+	<bflc:aap>Rosen, Stanley, 1929-2014. Plato's Sophist : the drama of original and image</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10226008">
+	<bflc:aap>Rothacker, Erich, 1888- Logik und Systematik der Geistewissenschaften</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11860000">
+	<bflc:aap>Röttges, Heinz, 1938- Problem der Wissenschaftlichkeit der Philosophie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12485964">
+	<bflc:aap>Rozin, V. M. Tipy i diskursy nauchnogo myshlenii︠a︡</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10260271">
+	<bflc:aap>Sabarini, Raniero. Criticismo e metafisica</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10372556">
+	<bflc:aap>Scabelloni, Antonio, Massimo, 1906- logica contro l'uomo. Il mito della scienza e la via del pensiero</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12572131">
+	<bflc:aap>Schulte, Joachim. Was ist ein "philosophisches Problem"?</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10272631">
+	<bflc:aap>Searles, Herbert L. (Herbert Leon), 1891- Logic and scientific methods, an introductory course</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1230769">
+	<bflc:aap>Searles, Herbert L. (Herbert Leon), 1891- Logic and scientific methods, an introductory course</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12394517">
+	<bflc:aap>Sinaĭskiĭ, V. (Vasiliĭ), 1876-1949. Tekhnika i︠u︡ridicheskoĭ metodologii v svi︠a︡zi s obshchim ucheniem o metodologii</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1257461">
+	<bflc:aap>Sokołowski, Stanisław Józef. Logika w dowodzeniu i kierowaniu. Ze słowem wstępnym Tadeusza Kotarbinskiego</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10420919">
+	<bflc:aap>Stepin, V. S. (Vi︠a︡cheslav Semenovich) Metody nauchnogo poznanii︠a︡</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11160172">
+	<bflc:aap>Studia i materiały z dziejów nauki polskiej Zagadnienia ogólne</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10606382">
+	<bflc:aap>Studia metodologiczne</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12469853">
+	<bflc:aap>Subbotin, A. L. Klassifikat︠s︡ii︠a︡</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11425990">
+	<bflc:aap>Sugar Industry Pension Fund Board (Mauritius) Rapport du Conseil d'administration et états financiers pour l'exercice annuel arrêté au ..</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11346449">
+	<bflc:aap>Untersuchungen zur Logik und zur Methodologie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/104879">
+	<bflc:aap>Valdinoci, Serge. traversée de l'immanence : l'europanalyse ou la méthode de la phénoménologie</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11993943">
+	<bflc:aap>Volobuev, V. A. (Viktor Alekseevich) Metodologii︠a︡ issledovanii︠a︡ iskusstva v zapadnoĭ ėstetike</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12158827">
+	<bflc:aap>Wittenberg, David. Philosophy, revision, critique : rereading practices in Heidegger, Nietzsche, and Emerson</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10262889">
+	<bflc:aap>Wollheim, Günther, 1896- Schematologie; ein wirtschaftswissenschaftlicher Beitrag zum Studium generale</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/1027000">
+	<bflc:aap>Zemelman, Hugo, 1931- Uso crítico de la teoría : en torno a las funciones analíticas de la totalidad</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11807174">
+	<bflc:aap>Zhe xue yu dang dai wen hua 哲学与当代文化</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/11907650">
+	<bflc:aap>Zhi dao Zhongguo ge ming zhan zheng di ren shi lun fang fa lun 指导中国革命战争的认识论方法论</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/12000069">
+	<bflc:aap>Zhong yi jiao yu 中医敎育</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <bflc:subjectOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/10289533">
+	<bflc:aap>Zuri, Jacob Samuel, -1943 Toldot darkhe ha-limud</bflc:aap>
+      </bf:Work>
+    </bflc:subjectOf>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <madsrdf:editorialNote>subdivision [Methodology] under names of disciplines for works on both the theory and practice of procedures to be followed, e.g. [Science--Methodology; Theology--Methodology]</madsrdf:editorialNote>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">sh 85084414</identifiers:lccn>
+    <owl:sameAs rdf:resource="info:lc/authorities/sh85084414"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/sh85084414#concept"/>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-07-20T12:27:49</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Methodology</skos:prefLabel>
+    <skosxl:altLabel xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#">
+      <rdf:Description>
+	<rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+	<skosxl:literalForm xml:lang="en">Philosophy--Methodology</skosxl:literalForm>
+      </rdf:Description>
+    </skosxl:altLabel>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh94000124">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Genealogy (Philosophy)</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85050813">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Formalization (Philosophy)</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85099817">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Performative (Philosophy)</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh00002301">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Thought experiments</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85067232">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Interdisciplinary approach to knowledge</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85004780">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Analysis (Philosophy)</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85026813">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Classification of sciences</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85078296">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Longitudinal method</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85060556">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Heuristic</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85107109">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Problem solving</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:related>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85113021">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Research</skos:prefLabel>
+      </rdf:Description>
+    </skos:related>
+    <skos:exactMatch>
+      <rdf:Description rdf:about="http://lod.nal.usda.gov/nalt/5079">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:exactMatch>
+    <skos:exactMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_12522"/>
+    <skos:exactMatch rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://data.bnf.fr/ark:/12148/cb11932499z">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fr">Méthodologie</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://d-nb.info/gnd/4139716-2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="de">Methodologie</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://data.bnf.fr/ark:/12148/cb131942840">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fr">Philosophie -- Méthodologie</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q185698">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://id.worldcat.org/fast/1018722">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel>Methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://www.yso.fi/onto/yso/p7509">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fi">metodologia</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch rdf:resource="http://d-nb.info/gnd/4139716-2"/>
+    <skos:closeMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <skos:closeMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <skos:closeMatch rdf:resource="http://id.worldcat.org/fast/1018722"/>
+    <skos:closeMatch rdf:resource="http://www.wikidata.org/entity/Q185698"/>
+    <skos:closeMatch rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <skos:editorial>subdivision [Methodology] under names of disciplines for works on both the theory and practice of procedures to be followed, e.g. [Science--Methodology; Theology--Methodology]</skos:editorial>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <skos:altLabel xml:lang="en">Philosophy--Methodology</skos:altLabel>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh85084414"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh85084414"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-07-20T12:27:49</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:Topic>
+</rdf:RDF>

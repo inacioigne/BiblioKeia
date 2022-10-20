@@ -24,7 +24,7 @@ export default function SubjectField() {
   const [type, setType] = useState("SimpleType");
 
   const getData = (subject, type) => {
-    console.log(subject, type);
+    //console.log(subject, type);
     api
       .get("authorities/subjects/suggest2/", {
         params: {
@@ -33,7 +33,7 @@ export default function SubjectField() {
         },
       })
       .then((response) => {
-        console.log(response);
+        //console.log(response);
         setHits(response.data.hits);
       })
       .catch(function (error) {
