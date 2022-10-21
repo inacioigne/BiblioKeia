@@ -5,13 +5,11 @@ import {
   TextField,
   InputAdornment,
   IconButton,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
+  // FormControl,
+  // Select,
+  // MenuItem,
   Divider,
   Typography,
-  Stack,
   Button,
   List,
   ListItem,
@@ -24,17 +22,15 @@ import Type from "./type";
 import SearchSubject from "./searchSubject";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 import CardSubject from "./cardSubject";
+//import { Search, Close } from "@mui/icons-material";
 
 export default function Thesaurus({
   open,
   setOpen,
-  // search,
-  // name,
   handleSearch,
   hits,
-  setValue,
   setDisabled,
-  //setName,
+  setName,
   setType,
   type,
   setSubject,
@@ -65,7 +61,7 @@ export default function Thesaurus({
         <Grid container>
           <Grid
             item
-            xs={6} //sx={{ borderRight: "solid 1px" }}
+            xs={5} sx={{ borderRight: "solid 1px" }}
           >
             <form onSubmit={handleSearch}>
               <Box
@@ -73,6 +69,7 @@ export default function Thesaurus({
                   display: "flex",
                   flexDirection: "column",
                   gap: "1rem",
+                  p: '1rem'
                 }}
               >
                 <Type setType={setType} type={type} />
@@ -111,12 +108,19 @@ export default function Thesaurus({
               ))}
             </List>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={7}>
             <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
               LC Subject Headings (LCSH)
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <CardSubject subjectDetails={subjectDetails} setDisabled={setDisabled} setOpen={setOpen} subject={subject} setSubject={setSubject} />
+              <CardSubject
+                subjectDetails={subjectDetails}
+                setDisabled={setDisabled}
+                setOpen={setOpen}
+                subject={subject}
+                setSubject={setSubject}
+                setName={setName}
+              />
             </Box>
           </Grid>
         </Grid>

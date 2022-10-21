@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse
 
 router = APIRouter()
 
-@router.post("/{item_id}/imagem", status_code=201)
+@router.post("/{item_id}/imagem", status_code=201) 
 async def upload_imagem(
     item_id: int, file: UploadFile):
     # item = session.query(Item).filter_by(id = item_id).first()

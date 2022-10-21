@@ -47,10 +47,16 @@ async function ParserLCSH(token, setSubjectDetails) {
   });
   SubjectDetails["narrowerAuthority"] = narrowerLabels;
 
-  console.log("ParserLCSH", narrowerLabels);
+  //hasReciprocalAuthority
+  const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
+  if (hasReciprocalAuthority._context.length > 0) {
+    SubjectDetails["reciprocalAuthority"] = hasReciprocalAuthority.out(ns.madsrdf.authoritativeLabel).value;
+  }
+
+  //console.log("ParserLCSH", hasReciprocalAuthority.out(ns.madsrdf.authoritativeLabel));
 
   setSubjectDetails(SubjectDetails);
-  console.log("ParserLCSH", setSubjectDetails);
+
 }
 
 export default ParserLCSH;

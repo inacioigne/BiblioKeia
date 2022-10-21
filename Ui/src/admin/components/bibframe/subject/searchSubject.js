@@ -4,12 +4,11 @@ import {
   TextField,
   InputAdornment,
   IconButton,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Select,
+  // MenuItem,
+  // FormControl,
+  // InputLabel,
+  // Select,
 } from "@mui/material/";
-//import { useState } from "react";
 import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
 
@@ -17,7 +16,9 @@ export default function SearchSubject({
   setSubject,
   subject,
   disabled,
+  setDisabled,
   handleSearch,
+  name,
 }) {
   const inputPros = {
     disabled: disabled,
@@ -40,7 +41,7 @@ export default function SearchSubject({
               backgroundColor: blue[200],
             }}
           >
-            {subject}
+            {name}
           </Box>
 
           <Close
@@ -61,6 +62,7 @@ export default function SearchSubject({
       </InputAdornment>
     ) : null,
     endAdornment: (
+      // disabled ?
       <InputAdornment position="end">
         <IconButton
           color="primary"
@@ -69,10 +71,15 @@ export default function SearchSubject({
           type="submit"
           onSubmit={handleSearch}
         >
-          <Search />
+          <Search
+          // onClick={() => {
+          //     setDisabled(false);
+          //   }}
+          />
         </IconButton>
       </InputAdornment>
     ),
+    // : null,
   };
 
   return (

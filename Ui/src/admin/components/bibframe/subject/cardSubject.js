@@ -4,28 +4,25 @@ import {
   Box,
   Typography,
   Divider,
-  Stack,
+  Dialog,
   IconButton,
   List,
   ListItem,
   ListItemText,
   Tooltip,
 } from "@mui/material";
-import {
-  LocalHospital,
-  ChildFriendly,
-  FileDownloadDone,
-} from "@mui/icons-material";
+import { Translate, FileDownloadDone } from "@mui/icons-material";
+import { useState } from "react";
+import TranslateSubject from "./translate";
 
 export default function CardSubject({
   subjectDetails,
   setOpen,
-  setValue,
   setDisabled,
-  //setName,
-  subject,
-  setSubject
+  setName,
+  setSubject,
 }) {
+  const [openTranslate, setOpenTranslate] = useState(false);
   const styleIformation = {
     p: "0.5rem",
     display: "flex",
@@ -33,34 +30,54 @@ export default function CardSubject({
   };
 
   const handleChoose = () => {
-    //console.log("ok", authorityDetails?.personalName);
     setDisabled(true);
     setOpen(false);
-    setSubject(subjectDetails?.label);
-    //setValue(subjectDetails?.label);
+    setSubject("");
+    setName(subjectDetails?.label);
   };
 
   if (subjectDetails) {
     return (
-        <Card sx={{ minWidth: 350 }}>
+      <>
+        <Card sx={{ minWidth: 350, width: 450 }}>
           <CardContent>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               <Typography variant="h6">{subjectDetails?.label}</Typography>
-              <Tooltip title="Escolher">
+              <Box>
                 <IconButton
                   color="primary"
                   component="label"
-                  onClick={handleChoose}
+                  onClick={() => setOpenTranslate(true)}
                 >
-                  <FileDownloadDone />
+                  <Translate />
                 </IconButton>
-              </Tooltip>
+
+                <Tooltip title="Escolher">
+                  <IconButton
+                    color="primary"
+                    component="label"
+                    onClick={handleChoose}
+                  >
+                    <FileDownloadDone />
+                  </IconButton>
+                </Tooltip>
+              </Box>
             </Box>
             <Divider />
-            <Box sx={{ ...styleIformation }}>
+            <Box sx={{ display: 'flex', justifyContent: "space-between" }}>
+              {/* Variantes */}
+            <Box sx={{ ...styleIformation, flexDirection: 'column' }}>
               <Typography variant="subtitle2">Variantes:</Typography>
               <Typography variant="body1">{subjectDetails?.variant}</Typography>
             </Box>
+            {/* Termo Relacionado */}
+            <Box sx={{ ...styleIformation, flexDirection: 'column' }}>
+              <Typography variant="subtitle2">Termo Relacionado:</Typography>
+              <Typography variant="body1">{subjectDetails?.reciprocalAuthority}</Typography>
+            </Box>
+
+            </Box>
+            
             {/* narrowerAuthorit */}
             {subjectDetails?.narrowerAuthority?.length !== 0 && (
               <Box sx={{ ...styleIformation, flexDirection: "column" }}>
@@ -78,10 +95,14 @@ export default function CardSubject({
             )}
           </CardContent>
         </Card>
-      );
-
+        <TranslateSubject
+          open={openTranslate}
+          setOpen={setOpenTranslate}
+          subjectDetails={subjectDetails}
+        />
+      </>
+    );
   } else {
     null;
   }
-
 }

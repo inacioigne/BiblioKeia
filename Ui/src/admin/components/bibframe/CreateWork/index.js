@@ -14,25 +14,12 @@ export default function CreateWork() {
   const [anchorEl, setAnchorEl] = useState(null);
   // const openMenu1 = Boolean(anchorEl);
   const [openMenu, setopenMenu] = useState(null);
-  // const [relators, setRelators] = useState(null);
 
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
-
-  // const handleOpenMenu = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  //   console.log(event.currentTarget.position);
-  // };
 
   const handleCloseMenu = () => {
     setAnchorEl(null);
     setopenMenu(false);
   };
-
-  // const handleChange = (event) => {
-  //   setType(event.target.value);
-  // };
 
   return (
     <Box bgcolor={grey[100]} onMouseLeave={handleCloseMenu}>

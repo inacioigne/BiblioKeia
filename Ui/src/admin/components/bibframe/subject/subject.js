@@ -22,6 +22,7 @@ export default function SubjectField() {
   const [open, setOpen] = useState(false);
   const [hits, setHits] = useState([]);
   const [type, setType] = useState("SimpleType");
+  const [name, setName] = useState("");
 
   const getData = (subject, type) => {
     //console.log(subject, type);
@@ -43,9 +44,9 @@ export default function SubjectField() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-
     setOpen(true);
     getData(subject, type);
+    setDisabled(false);
   };
 
   return (
@@ -69,20 +70,22 @@ export default function SubjectField() {
             setSubject={setSubject}
             subject={subject}
             disabled={disabled}
+            setDisabled={setDisabled}
             handleSearch={handleSearch}
+            name={name}
           />
         </Box>
       </form>
       <Thesaurus
         open={open}
         setOpen={setOpen}
-        //name={name}
-        //setName={setName}
+        name={name}
+        setName={setName}
         setSubject={setSubject}
         subject={subject}
         disabled={disabled}
         type={type}
-        setType={setType}
+        setType={setType} 
         //search={search}
         handleSearch={handleSearch}
         hits={hits}
