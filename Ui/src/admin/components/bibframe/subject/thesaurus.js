@@ -115,6 +115,7 @@ export default function Thesaurus({
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <CardSubject
                 subjectDetails={subjectDetails}
+                setSubjectDetails={setSubjectDetails}
                 setDisabled={setDisabled}
                 setOpen={setOpen}
                 subject={subject}

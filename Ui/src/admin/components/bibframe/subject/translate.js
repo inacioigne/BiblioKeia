@@ -7,9 +7,9 @@ import {
   Tooltip,
   DialogTitle,
   DialogContent,
-  TextField,
+  Button,
   Stack,
-  InputAdornment,
+  DialogActions,
   Grid,
 } from "@mui/material";
 
@@ -18,15 +18,14 @@ import { api } from "src/services/translate/api";
 import { blue, red, green } from "@mui/material/colors/";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import TranslateField from "./translateSubject";
+import { useForm, Controller } from "react-hook-form";
 
-export default function TranslateSubject({ open, setOpen, subjectDetails }) {
-  const [objectTranslate, setObjectTranslate] = useState({
-    //authoritativeLabel: "",
-  });
+export default function TranslateSubject({ open, setOpen, subjectDetails, setSubjectDetails }) {
+  const [objectTranslate, setObjectTranslate] = useState({});
 
   useEffect(() => {
     const arr = Object.entries(subjectDetails);
-    //console.log(Object.entries(subjectDetails))
+    console.log(Object.entries(subjectDetails))
     arr.forEach(([k, v]) => {
       if (!Array.isArray(v)) {
         getTranslate(v, k);
@@ -66,6 +65,24 @@ export default function TranslateSubject({ open, setOpen, subjectDetails }) {
     cursor: "pointer",
   };
 
+  const handleSalve = () => {
+    console.log(objectTranslate)
+    alert(JSON.stringify(objectTranslate))
+  }
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const data = new FormData(e.target.va)
+  //   console.log(data)
+    
+  // }
+
+
+  const { control, handleSubmit, reset } = useForm({});
+
+  const onSubmit = data => console.log(data);
+ 
+
   return (
     <Dialog fullWidth={true} maxWidth={"lg"} open={open} onClose={handleClose}>
       <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -75,14 +92,18 @@ export default function TranslateSubject({ open, setOpen, subjectDetails }) {
         </IconButton>
       </DialogTitle>
       <Divider />
+      <form onSubmit={handleSubmit(onSubmit)}>
       <DialogContent>
-    
+       
         <TranslateField
-          translate={objectTranslate?.label}
+          translate={objectTranslate}
           subject={subjectDetails.label}
           label={"authoritativeLabel"}
+          metadata={'label'}
+          control={control}
+          reset={reset}
+          setObjectTranslate={setObjectTranslate}
         />
-
         <Box
           sx={{
             display: "flex",
@@ -93,16 +114,25 @@ export default function TranslateSubject({ open, setOpen, subjectDetails }) {
         >
           {/* variant */}
           <TranslateField
-            translate={objectTranslate?.variant}
+            translate={objectTranslate}
             subject={subjectDetails.variant}
             label={"Variante"}
+            metadata={'variant'}
+            control={control}
+            reset={reset}
           />
 
           {/* Termo Relacionado */}
           <TranslateField
-            translate={objectTranslate?.reciprocalAuthority}
+            translate={objectTranslate}
             subject={subjectDetails.reciprocalAuthority}
+            setSubjectDetails={setSubjectDetails}
             label={"Termo Relacionado"}
+            setObjectTranslate={setObjectTranslate}
+            metadata={'reciprocalAuthority'}
+            control={control}
+            reset={reset}
+
           />
         </Box>
         <Grid container>
@@ -115,23 +145,32 @@ export default function TranslateSubject({ open, setOpen, subjectDetails }) {
                 <Stack spacing={2}>
                   {subjectDetails?.narrowerAuthority.map(
                     (narrowerAuthority, index) => (
-                        <TranslateField
+                      <TranslateField
                         key={index}
-                        translate={objectTranslate[`narrowerAuthority_${index}`]
-                       // `${objectTranslate.narrowerAuthority}_${index}`
-                      }
+                        translate={
+                          objectTranslate}
                         subject={narrowerAuthority}
                         label={"Termo Restrito"}
+                        metadata={`narrowerAuthority_${index}`}
+                        control={control}
+                        reset={reset}
                       />
-               
                     )
                   )}
                 </Stack>
               </Box>
+
             </Grid>
           )}
         </Grid>
+       
       </DialogContent>
+      <DialogActions>
+      <Button //onClick={handleSalve} 
+      type="submit"
+      >Salvar</Button>
+      </DialogActions>
+      </form>
     </Dialog>
   );
 }

@@ -17,6 +17,7 @@ import TranslateSubject from "./translate";
 
 export default function CardSubject({
   subjectDetails,
+  setSubjectDetails,
   setOpen,
   setDisabled,
   setName,
@@ -99,6 +100,8 @@ export default function CardSubject({
           open={openTranslate}
           setOpen={setOpenTranslate}
           subjectDetails={subjectDetails}
+          setSubjectDetails={setSubjectDetails}
+          
         />
       </>
     );
