@@ -38,13 +38,14 @@ export default function Thesaurus({
   disabled,
 }) {
   const [subjectDetails, setSubjectDetails] = useState(null);
+  const [tokenLSCH, setToken] = useState(null);
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const getDetails = (token) => {
-    //ParserJsonLd(token, setAuthorityDetails);
+  const getDetails = (token) => { 
+    setToken(token)
     ParserLCSH(token, setSubjectDetails);
   };
 
@@ -121,6 +122,8 @@ export default function Thesaurus({
                 subject={subject}
                 setSubject={setSubject}
                 setName={setName}
+                tokenLSCH={tokenLSCH}
+
               />
             </Box>
           </Grid>

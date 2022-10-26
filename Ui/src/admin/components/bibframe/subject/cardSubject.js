@@ -16,21 +16,15 @@ import { useState } from "react";
 import TranslateSubject from "./translate";
 
 export default function CardSubject({
-<<<<<<< HEAD
   subjectDetails, 
-=======
-  subjectDetails,
->>>>>>> 52c596276c4c77b53ee9ca1be805a83fc233b8c7
   setSubjectDetails,
   setOpen,
   setDisabled,
   setName,
   setSubject,
+  tokenLSCH
 }) {
-<<<<<<< HEAD
   
-=======
->>>>>>> 52c596276c4c77b53ee9ca1be805a83fc233b8c7
   const [openTranslate, setOpenTranslate] = useState(false);
   const styleIformation = {
     p: "0.5rem",
@@ -46,10 +40,7 @@ export default function CardSubject({
   };
 
   if (subjectDetails) {
-<<<<<<< HEAD
     
-=======
->>>>>>> 52c596276c4c77b53ee9ca1be805a83fc233b8c7
     return (
       <>
         <Card sx={{ minWidth: 350, width: 450 }}>
@@ -112,7 +103,8 @@ export default function CardSubject({
           open={openTranslate}
           setOpen={setOpenTranslate}
           subjectDetails={subjectDetails}
-          setSubjectDetails={setSubjectDetails}
+          setSubjectDetails={setSubjectDetails} 
+          tokenLSCH={tokenLSCH}
           
         />
       </>

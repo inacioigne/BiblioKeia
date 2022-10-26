@@ -32,7 +32,7 @@ async function ParserLCSH(token, setSubjectDetails) {
 
   //   //Label
   const label = subject.out(ns.madsrdf.authoritativeLabel).value;
-  SubjectDetails["label"] = label;
+  SubjectDetails["authority"] = label;
 
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);

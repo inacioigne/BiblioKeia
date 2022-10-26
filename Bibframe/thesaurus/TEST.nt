@@ -1,0 +1,6 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:authoritativeLabel "Metodologia"@pt .
+

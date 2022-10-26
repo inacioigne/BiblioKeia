@@ -34,7 +34,7 @@ export default function TranslateField({
   control,
   reset,
   objOriginal,
-  setObjOriginal
+  setObjOriginal,
 }) {
   const [value, setValue] = useState(subject);
   const [disabled, setDisabled] = useState(true);
@@ -42,22 +42,17 @@ export default function TranslateField({
   const handleAgree = () => {
     console.log("TR", translate[`${metadata}`]);
     setDisabled(false);
-    //setValue("zvcxvfdsf");
+
     setObjOriginal((prevState) => ({
       ...prevState,
       [`${metadata}`]: translate[`${metadata}`],
     }));
-    //reset(objOriginal)
-    
   };
   const handleRecuse = () => {
-    console.log(translate);
-    setValue("");
     setDisabled(false);
   };
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setObjOriginal((prevState) => ({
       ...prevState,
       [`${metadata}`]: e.target.value,
@@ -65,7 +60,7 @@ export default function TranslateField({
   };
 
   const inputPros = {
-    startAdornment: (
+    startAdornment: disabled ? (
       <InputAdornment position="start">
         <Box
           sx={{
@@ -108,39 +103,11 @@ export default function TranslateField({
           </Tooltip>
         </Box>
       </InputAdornment>
-    ),
+    ) : null,
   };
   return (
-    // <Controller
-    //   name={metadata}
-    //   control={control}
-    //   // defaultValue={value}
-    //   // value={value}
-    //   // onChange={handleChange}
-    //   //render={({ field }) => 
-    //   render={({
-    //     field: { onChange, onBlur, value, name, ref },
-    //     fieldState: { invalid, isTouched, isDirty, error },
-    //     formState,
-    //   }) =>   (
-    //     <TextField
-    //       //{...field}
-    //       disabled={disabled}
-    //       onChange={onChange} 
-    //       //onChange={handleChange}
-    //       value={value}
-    //       fullWidth
-    //       label={label}
-    //       //name={metadata}
-    //       InputProps={inputPros}
-    //       //onChange={handleChange}
-    //     />
-    //   )}
-    // />
-
     <TextField
       disabled={disabled}
-      //defaultValue={objOriginal[`${metadata}`]}
       value={objOriginal[`${metadata}`]}
       fullWidth
       label={label}

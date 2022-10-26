@@ -86,10 +86,8 @@ export default function SubjectField() {
         disabled={disabled}
         type={type}
         setType={setType} 
-        //search={search}
         handleSearch={handleSearch}
         hits={hits}
-        //setValue={setValue}
         setDisabled={setDisabled}
       />
     </Box>
