@@ -1,0 +1,92 @@
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#MADSScheme> .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tdf> .
+<http://id.loc.gov/vocabulary/contentTypes/tdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tdf> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "three-dimensional form" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tcm> .
+<http://id.loc.gov/vocabulary/contentTypes/tcm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tcm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "tactile notated music" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tcn> .
+<http://id.loc.gov/vocabulary/contentTypes/tcn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tcn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "tactile notated movement" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/ntm> .
+<http://id.loc.gov/vocabulary/contentTypes/ntm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/ntm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "notated music" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/spw> .
+<http://id.loc.gov/vocabulary/contentTypes/spw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/spw> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "spoken word" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tct> .
+<http://id.loc.gov/vocabulary/contentTypes/tct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tct> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "tactile text" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/txt> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "text" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/cod> .
+<http://id.loc.gov/vocabulary/contentTypes/cod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/cod> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "computer dataset" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/cop> .
+<http://id.loc.gov/vocabulary/contentTypes/cop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/cop> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "computer program" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/cri> .
+<http://id.loc.gov/vocabulary/contentTypes/cri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/cri> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/crm> .
+<http://id.loc.gov/vocabulary/contentTypes/crm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/crm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic moving image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/zzz> .
+<http://id.loc.gov/vocabulary/contentTypes/zzz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/zzz> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "unspecified" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/crd> .
+<http://id.loc.gov/vocabulary/contentTypes/crd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/crd> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic dataset" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tcf> .
+<http://id.loc.gov/vocabulary/contentTypes/tcf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tcf> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "tactile three-dimensional form" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/prm> .
+<http://id.loc.gov/vocabulary/contentTypes/prm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/prm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "performed music" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tdi> .
+<http://id.loc.gov/vocabulary/contentTypes/tdi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tdi> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "two-dimensional moving image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/crn> .
+<http://id.loc.gov/vocabulary/contentTypes/crn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/crn> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic tactile three-dimensional form" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/sti> .
+<http://id.loc.gov/vocabulary/contentTypes/sti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/sti> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "still image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tci> .
+<http://id.loc.gov/vocabulary/contentTypes/tci> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tci> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "tactile image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/crt> .
+<http://id.loc.gov/vocabulary/contentTypes/crt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/crt> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic tactile image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/ntv> .
+<http://id.loc.gov/vocabulary/contentTypes/ntv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/ntv> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "notated movement" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/tdm> .
+<http://id.loc.gov/vocabulary/contentTypes/tdm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/tdm> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "three-dimensional moving image" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/crf> .
+<http://id.loc.gov/vocabulary/contentTypes/crf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/crf> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "cartographic three-dimensional form" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/xxx> .
+<http://id.loc.gov/vocabulary/contentTypes/xxx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/xxx> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "other" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#hasMADSSchemeMember> <http://id.loc.gov/vocabulary/contentTypes/snd> .
+<http://id.loc.gov/vocabulary/contentTypes/snd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/contentTypes/snd> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "sounds" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Content Types Scheme"@en .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#definitionNote> "The Content Types Scheme is derived from a controlled list of values representing the form of communication through which a work is expressed, which is principally used in RDA cataloging."@en .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b110iddOtlocdOtgovvocabularycontentTypes .
+_:b110iddOtlocdOtgovvocabularycontentTypes <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b110iddOtlocdOtgovvocabularycontentTypes <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b110iddOtlocdOtgovvocabularycontentTypes <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "2021-08-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b110iddOtlocdOtgovvocabularycontentTypes <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <https://id.loc.gov/vocabulary/organizations/dlc> .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/2004/02/skos/core#definition> "The Content Types Scheme is derived from a controlled list of values representing the form of communication through which a work is expressed, which is principally used in RDA cataloging."@en .
+<http://id.loc.gov/vocabulary/contentTypes> <http://www.w3.org/2004/02/skos/core#changeNote> _:b125iddOtlocdOtgovvocabularycontentTypes .
+_:b125iddOtlocdOtgovvocabularycontentTypes <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b125iddOtlocdOtgovvocabularycontentTypes <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/vocabulary/contentTypes> .
+_:b125iddOtlocdOtgovvocabularycontentTypes <http://purl.org/vocab/changeset/schema#creatorName> <https://id.loc.gov/vocabulary/organizations/dlc> .
+_:b125iddOtlocdOtgovvocabularycontentTypes <http://purl.org/vocab/changeset/schema#createdDate> "2021-08-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b125iddOtlocdOtgovvocabularycontentTypes <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> .

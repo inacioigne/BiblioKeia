@@ -26,7 +26,7 @@ export default function AdvancedSearch({ getData }) {
     e.preventDefault()
     console.log(field, search)
     getData(field, search)
-    //alert('SUMBITE')
+
   }
   return (
     <Box sx={{ m: "2rem" }}>

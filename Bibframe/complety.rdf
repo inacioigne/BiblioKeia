@@ -1,0 +1,242 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/22516091">
+    <bflc:aap>Graeber, David Bullshit jobs</bflc:aap>
+    <bflc:aap-normalized>graeberdavidbullshitjobs</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+      </bf:Content>
+
+    </bf:content>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	<rdfs:label>English</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/bibliography">
+	<rdfs:label>bibliography</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:assigner>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	</bf:assigner>
+	<bf:classificationPortion>HF5549.5.J63</bf:classificationPortion>
+	<bf:itemPortion>G73 2019</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationDdc>
+	<bf:classificationPortion>331.7</bf:classificationPortion>
+	<bf:source>
+	  <bf:Source>
+	    <bf:code>23</bf:code>
+	  </bf:Source>
+	</bf:source>
+	<bf:edition>full</bf:edition>
+	<bf:assigner>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	</bf:assigner>
+      </bf:ClassificationDdc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no97027235">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Graeber, David</rdfs:label>
+	    <madsrdf:isIdentifiedByAuthority rdf:resource="http://id.loc.gov/authorities/names/no97027235" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+	    <rdfs:label>author</rdfs:label>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Bullshit jobs</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
+
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Job satisfaction--Social aspects.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Job satisfaction--Social aspects.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Job satisfaction</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Social aspects</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>jobsatisfactionsocialaspects</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+	
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85095526">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label>Organizational effectiveness.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Organizational effectiveness.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<bflc:aap-normalized>organizationaleffectiveness</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Bureaucracy--Social aspects.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Bureaucracy--Social aspects.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Bureaucracy</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Social aspects</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>bureaucracysocialaspects</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85124078">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label>Social structure.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Social structure.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<bflc:aap-normalized>socialstructure</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008113752">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Work--Social aspects.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Work--Social aspects.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Work</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Social aspects</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>worksocialaspects</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85148135">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Work--Psychological aspects.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Work--Psychological aspects.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Work</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Psychological aspects</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>workpsychologicalaspects</bflc:aap-normalized>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:hasInstance>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/22516091">
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>Bullshit jobs</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:generationProcess>
+	  <bf:GenerationProcess>
+	    <rdfs:label>DLC marc2bibframe2 v1.7.0</rdfs:label>
+	    <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-21T01:33:24.311397-04:00</bf:generationDate>
+	  </bf:GenerationProcess>
+	</bf:generationProcess>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	  </bf:Status>
+	</bf:status>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>22516091</rdf:value>
+	    <bf:assigner>
+	      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<bf:code>DLC</bf:code>
+	      </bf:Agent>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-20T14:42:59</bf:changeDate>
+	<bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-20</bf:creationDate>
+	<lclocal:d906 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=906     $a 7 $b cbc $c orignew $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<lclocal:d925 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<lclocal:d955 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=955     $b rm06 2022-04-20 $i rm06 2022-04-20 to PresSrvs</lclocal:d955>
+	<bf:assigner>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <bf:code>DLC</bf:code>
+	  </bf:Agent>
+	</bf:assigner>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label>English</rdfs:label>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+	    <bf:code>pcc</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+</rdf:RDF>

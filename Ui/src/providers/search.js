@@ -4,7 +4,7 @@ import { api } from "src/services/solr";
 export const SearchContext = createContext({});
 
 const facet = {
-  subject: { 
+  subject: {
     field: "subject_str",
   },
   author: {
@@ -26,16 +26,12 @@ export const SearchProvider = ({ children }) => {
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
   const [page, setPage] = useState(0);
-  const [filter, setFilter] = useState([])
+  const [filter, setFilter] = useState([]);
 
-
-  const getData = (field, term, page = 0, op = 'OR', filter = [] ) => {
-
-    //console.log('PAGE:', page)
+  const getData = (field, term, page = 0, op = "OR", filter = []) => {
     const json_filter = {
       filter: filter,
     };
-
 
     api
       .get("select", {
@@ -73,8 +69,10 @@ export const SearchProvider = ({ children }) => {
         facetAuthor,
         facetYear,
         facetType,
-        filter, setFilter,
-        page, setPage
+        filter,
+        setFilter,
+        page,
+        setPage,
       }}
     >
       {children}

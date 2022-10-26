@@ -8,17 +8,7 @@ import { red, green, blue } from '@mui/material/colors';
 
 import { styled } from '@mui/material/styles';
 
-// function useWidth() {
-//   const theme = useTheme();
-//   const keys = [...theme.breakpoints.keys].reverse();
-//   return (
-//     keys.reduce((output, key) => {
-//       // eslint-disable-next-line react-hooks/rules-of-hooks
-//       const matches = useMediaQuery(theme.breakpoints.up(key));
-//       return !output && matches ? key : output;
-//     }, null) || 'xs'
-//   );
-// }
+
 
 const RootSearch = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
@@ -54,21 +44,9 @@ export default function SearchBox() {
     }
   };
 
-  
-
 
   return (
-    <Box
-      sx={{
-        position: "absolute",
-        display: "flex",
-        flexDirection: "column",
-        top: "30vh",
-        width: "100%",
-        
-        
-      }}
-    >
+
       <Box
         sx={{
           width: "100%",
@@ -109,6 +87,5 @@ export default function SearchBox() {
         </Paper>
         </RootSearch>
       </Box>
-    </Box>
   );
 }

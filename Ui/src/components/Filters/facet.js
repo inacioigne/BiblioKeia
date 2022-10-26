@@ -37,6 +37,11 @@ export default function Facet({
     }
 
   }
+
+  // useEffect(() => {
+
+    
+  // }, []);
  
   return (
     <Accordion>
@@ -54,7 +59,7 @@ export default function Facet({
 
         <Stack spacing={1}>
           {facetSuject?.map((termo, index) => (
-            <Box key={index} sx={{ display: "flex" }}>
+            <Box key={termo.val} sx={{ display: "flex" }}>
               <Checkbox
                 // onChange={(event) => {
                 //   if (event.target.checked) {

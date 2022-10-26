@@ -1,0 +1,187 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99001902" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel xml:lang="en">Methodology</madsrdf:authoritativeLabel>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:TopicElement>
+	<madsrdf:elementValue xml:lang="en">Methodology</madsrdf:elementValue>
+      </madsrdf:TopicElement>
+    </madsrdf:elementList>
+    <madsrdf:hasExactExternalAuthority>
+      <madsrdf:Authority rdf:about="http://lod.nal.usda.gov/nalt/5079">
+	<madsrdf:authoritativeLabel xml:lang="en">methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasExactExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh99005303">
+	<madsrdf:authoritativeLabel xml:lang="en">Simulation methods</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://data.bnf.fr/ark:/12148/cb131942840">
+	<madsrdf:authoritativeLabel xml:lang="fr">Philosophie -- Méthodologie</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh00005984">
+	<madsrdf:authoritativeLabel xml:lang="en">Graphic methods</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasBroaderExternalAuthority>
+      <madsrdf:Authority rdf:about="http://www.yso.fi/onto/yso/p7509">
+	<madsrdf:authoritativeLabel xml:lang="fi">metodologia</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasBroaderExternalAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh99001898">
+	<madsrdf:authoritativeLabel xml:lang="en">Bibliography--Methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh2001008679">
+	<madsrdf:authoritativeLabel xml:lang="en">Statistical methods</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh99003021">
+	<madsrdf:authoritativeLabel xml:lang="en">Discography--Methodology</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh00005679">
+	<madsrdf:authoritativeLabel xml:lang="en">Fieldwork</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasNarrowerAuthority>
+      <madsrdf:Authority rdf:about="http://id.loc.gov/authorities/subjects/sh99005284">
+	<madsrdf:authoritativeLabel xml:lang="en">Comparative method</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasNarrowerAuthority>
+    <madsrdf:hasCloseExternalAuthority>
+      <madsrdf:Authority rdf:about="http://data.bnf.fr/ark:/12148/cb11932499z">
+	<madsrdf:authoritativeLabel xml:lang="fr">Méthodologie</madsrdf:authoritativeLabel>
+      </madsrdf:Authority>
+    </madsrdf:hasCloseExternalAuthority>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_Subdivisions"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_TopicSubdivisions"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSH_General"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_PatternHeadingH1095"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <madsrdf:hasBroaderExternalAuthority rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <madsrdf:note>Use as a topical subdivision under disciplines for works on both the theory and practice of procedures to be followed.</madsrdf:note>
+    <madsrdf:exampleNote>Reference under the heading [Methodology]</madsrdf:exampleNote>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">sh 99001902</identifiers:lccn>
+    <owl:sameAs rdf:resource="info:lc/authorities/sh99001902"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/sh99001902#concept"/>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-03-04T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/ien"/>
+	<ri:languageOfCataloging rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-05-08T12:02:33</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<ri:languageOfCataloging rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Methodology</skos:prefLabel>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh99005303">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Simulation methods</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh00005984">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Graphic methods</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh99001898">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bibliography--Methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2001008679">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Statistical methods</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh99003021">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Discography--Methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh00005679">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Fieldwork</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:narrower>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh99005284">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Comparative method</skos:prefLabel>
+      </rdf:Description>
+    </skos:narrower>
+    <skos:exactMatch>
+      <rdf:Description rdf:about="http://lod.nal.usda.gov/nalt/5079">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">methodology</skos:prefLabel>
+      </rdf:Description>
+    </skos:exactMatch>
+    <skos:exactMatch rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://data.bnf.fr/ark:/12148/cb131942840">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fr">Philosophie -- Méthodologie</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch>
+      <rdf:Description rdf:about="http://data.bnf.fr/ark:/12148/cb11932499z">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fr">Méthodologie</skos:prefLabel>
+      </rdf:Description>
+    </skos:closeMatch>
+    <skos:closeMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <skos:closeMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <skos:broadMatch>
+      <rdf:Description rdf:about="http://www.yso.fi/onto/yso/p7509">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="fi">metodologia</skos:prefLabel>
+      </rdf:Description>
+    </skos:broadMatch>
+    <skos:broadMatch rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <skos:note>Use as a topical subdivision under disciplines for works on both the theory and practice of procedures to be followed.</skos:note>
+    <skos:example>Reference under the heading [Methodology]</skos:example>
+    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh99001902"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/ien"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-03-04T00:00:00</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+    <skos:changeNote>
+      <cs:ChangeSet xmlns:cs="http://purl.org/vocab/changeset/schema#">
+	<cs:subjectOfChange rdf:resource="http://id.loc.gov/authorities/subjects/sh99001902"/>
+	<cs:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<cs:createdDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-05-08T12:02:33</cs:createdDate>
+	<cs:changeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</cs:changeReason>
+      </cs:ChangeSet>
+    </skos:changeNote>
+  </madsrdf:Topic>
+</rdf:RDF>

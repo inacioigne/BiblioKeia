@@ -2,9 +2,15 @@ import { Box, Typography } from "@mui/material/";
 import { indigo } from "@mui/material/colors";
 import CountUp from "react-countup";
 
+
 export default function Counters({ counter, title, description }) {
   return (
-    <Box p={2} textAlign="center" lineHeight={1}>
+    <Box p={2} textAlign="center" lineHeight={1}
+    sx={{
+      
+      width: "20rem"
+    }}
+    >
       <Typography
         sx={{ fontWeight: "bold" }}
         variant="h4"
