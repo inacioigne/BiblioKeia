@@ -1,0 +1,190 @@
+<rdf:RDF xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85084414">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel xml:lang="en">Methodology</madsrdf:authoritativeLabel>
+    <madsrdf:elementList rdf:parseType="Collection">
+      <madsrdf:TopicElement>
+	<madsrdf:elementValue xml:lang="en">Methodology</madsrdf:elementValue>
+      </madsrdf:TopicElement>
+    </madsrdf:elementList>
+    <madsrdf:hasVariant>
+      <madsrdf:ComplexSubject>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	<madsrdf:variantLabel xml:lang="en">Philosophy--Methodology</madsrdf:variantLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	    <madsrdf:variantLabel xml:lang="en">Philosophy</madsrdf:variantLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Philosophy</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Variant"/>
+	    <madsrdf:variantLabel xml:lang="en">Methodology</madsrdf:variantLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Methodology</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+      </madsrdf:ComplexSubject>
+    </madsrdf:hasVariant>
+    <madsrdf:classification>
+      <lcc:ClassNumber xmlns:lcc="http://id.loc.gov/ontologies/lcc#">
+	<madsrdf:code>BD240-BD241</madsrdf:code>
+	<madsrdf:hasExactExternalAuthority rdf:resource="http://id.loc.gov/authorities/classification/BD240-BD241"/>
+      </lcc:ClassNumber>
+    </madsrdf:classification>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh94000124"/>
+    <madsrdf:hasReciprocalAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85113021"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85050813"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85099817"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh00002301"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85067232"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85004780"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://d-nb.info/gnd/4139716-2"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85026813"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85078296"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.wikidata.org/entity/Q185698"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85060556"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://id.worldcat.org/fast/1018722"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <madsrdf:hasNarrowerAuthority rdf:resource="http://id.loc.gov/authorities/subjects/sh85107109"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings"/>
+    <madsrdf:isMemberOfMADSCollection rdf:resource="http://id.loc.gov/authorities/subjects/collection_LCSH_General"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://aims.fao.org/aos/agrovoc/c_12522"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://d-nb.info/gnd/4139716-2"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb11932499z"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://data.bnf.fr/ark:/12148/cb131942840"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://id.worldcat.org/fast/1018722"/>
+    <madsrdf:hasExactExternalAuthority rdf:resource="http://lod.nal.usda.gov/nalt/5079"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.wikidata.org/entity/Q185698"/>
+    <madsrdf:hasCloseExternalAuthority rdf:resource="http://www.yso.fi/onto/yso/p7509"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11264831" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12715852" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12663990" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12443622" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10153787" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11482260" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10306590" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11857444" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12603069" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1198547" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10276074" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10348929" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10360966" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10406024" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10241442" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11167958" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10165529" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10113669" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1061066" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12606469" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10184899" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/103174" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12365204" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10065493" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1108629" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12032036" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1160969" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11422502" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/106130" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10191809" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1038428" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11212320" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1230484" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10408035" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10247032" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10337339" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1057308" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1040629" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12566673" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1207310" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10435314" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1279465" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11955264" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10358969" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1229480" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1035791" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10446108" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12494841" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10399388" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1144937" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1095533" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12345146" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12571954" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11404774" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/100743" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1106371" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11274534" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11145381" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12747501" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1099716" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11805461" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11278610" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10137425" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1024928" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12356788" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12595357" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11225040" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10392959" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1053753" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12787984" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12023446" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12340629" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10222178" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10152788" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1212257" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10226008" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11860000" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12485964" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10260271" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10372556" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12572131" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10272631" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1230769" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12394517" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1257461" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10420919" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11160172" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10606382" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12469853" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11425990" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11346449" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/104879" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11993943" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12158827" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10262889" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/1027000" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11807174" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/11907650" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/12000069" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <bflc:subjectOf rdf:resource="http://id.loc.gov/resources/works/10289533" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+    <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <madsrdf:editorialNote>subdivision [Methodology] under names of disciplines for works on both the theory and practice of procedures to be followed, e.g. [Science--Methodology; Theology--Methodology]</madsrdf:editorialNote>
+    <identifiers:lccn xmlns:identifiers="http://id.loc.gov/vocabulary/identifiers/">sh 85084414</identifiers:lccn>
+    <owl:sameAs rdf:resource="info:lc/authorities/sh85084414"/>
+    <owl:sameAs rdf:resource="http://id.loc.gov/authorities/sh85084414#concept"/>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-02-11T00:00:00</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+    <madsrdf:adminMetadata>
+      <ri:RecordInfo xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+	<ri:recordChangeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-07-20T12:27:49</ri:recordChangeDate>
+	<ri:recordStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">revised</ri:recordStatus>
+	<ri:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </ri:RecordInfo>
+    </madsrdf:adminMetadata>
+  </madsrdf:Topic>
+</rdf:RDF>

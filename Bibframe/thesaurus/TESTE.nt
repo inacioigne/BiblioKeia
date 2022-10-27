@@ -4,12 +4,62 @@
 <https://id.loc.gov/authorities/subjects/sh85084414> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:authoritativeLabel "Metodologia"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Metodologia"@pt ] ) ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00002301>,
+        <http://id.loc.gov/authorities/subjects/sh85004780>,
+        <http://id.loc.gov/authorities/subjects/sh85026813>,
+        <http://id.loc.gov/authorities/subjects/sh85050813>,
+        <http://id.loc.gov/authorities/subjects/sh85060556>,
+        <http://id.loc.gov/authorities/subjects/sh85067232>,
+        <http://id.loc.gov/authorities/subjects/sh85078296>,
+        <http://id.loc.gov/authorities/subjects/sh85099817>,
+        <http://id.loc.gov/authorities/subjects/sh85107109>,
+        <http://id.loc.gov/authorities/subjects/sh94000124> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85113021> ;
     madsrdf:hasVariant [ a madsrdf:ComplexSubject,
                 madsrdf:Variant ;
             madsrdf:componentList ( [ a madsrdf:Topic,
                             madsrdf:Variant ;
-                        madsrdf:variantLabel "Philosophy"@pt ] [ a madsrdf:Topic,
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Filosofia"@pt ] ) ;
+                        madsrdf:variantLabel "Filosofia"@pt ] [ a madsrdf:Topic,
                             madsrdf:Variant ;
-                        madsrdf:variantLabel "Methodology"@pt ] ) ;
-            madsrdf:variantLabel "Philosophy--Methodology"@pt ] .
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Metodologia"@pt ] ) ;
+                        madsrdf:variantLabel "Metodologia"@pt ] ) ;
+            madsrdf:variantLabel "Filosofia - Metodologia"@pt ] .
+
+<http://id.loc.gov/authorities/subjects/sh00002301> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Formalização (Filosofia)"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85004780> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Análise (Filosofia)"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85026813> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Método longitudinal"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85050813> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Experiências mentais"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85060556> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Heurística"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85067232> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Abordagem interdisciplinar do conhecimento"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85078296> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Classificação das ciências"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85099817> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Performativo (Filosofia)"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85107109> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Solução de problemas"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh85113021> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pesquisar"@pt .
+
+<http://id.loc.gov/authorities/subjects/sh94000124> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Genealogia (Filosofia)"@pt .
 

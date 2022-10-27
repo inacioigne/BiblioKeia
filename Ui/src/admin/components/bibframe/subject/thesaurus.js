@@ -38,6 +38,7 @@ export default function Thesaurus({
   disabled,
 }) {
   const [subjectDetails, setSubjectDetails] = useState(null);
+  const [uris, setUris] = useState(null);
   const [tokenLSCH, setToken] = useState(null);
 
   const handleClose = () => {
@@ -46,7 +47,7 @@ export default function Thesaurus({
 
   const getDetails = (token) => { 
     setToken(token)
-    ParserLCSH(token, setSubjectDetails);
+    ParserLCSH(token, setSubjectDetails, setUris);
   };
 
   return (
@@ -123,6 +124,7 @@ export default function Thesaurus({
                 setSubject={setSubject}
                 setName={setName}
                 tokenLSCH={tokenLSCH}
+                uris={uris}
 
               />
             </Box>

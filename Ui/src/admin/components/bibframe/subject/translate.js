@@ -25,11 +25,13 @@ export default function TranslateSubject({
   setOpen,
   subjectDetails,
   setSubjectDetails,
-  tokenLSCH
+  tokenLSCH,
+  uris
 }) {
   const [objTranslate, setObjectTranslate] = useState({});
   const [objOriginal, setObjOriginal] = useState({});
   function getTranslate(termo, metadata) {
+    //console.log('T', termo)
     api
       .post(`/${termo}`)
       .then((response) => {
@@ -85,12 +87,30 @@ export default function TranslateSubject({
     const objParse = { tokenLSCH: tokenLSCH }
     objParse['authority'] = objOriginal.authority
     objParse['variant'] = objOriginal.variant
-    
+    objParse['reciprocalAuthority'] = {
+      value: objOriginal.reciprocalAuthority,
+      uri: uris.reciprocalAuthority}
+    const arr = Object.entries(objOriginal);
+    const narrowerAuthority = []
+    arr.forEach(([k, v]) => {
+      if (k.includes('narrowerAuthority')) {
+        narrowerAuthority.push(v)
+      }      
+    })
+    //objParse['narrowerAuthority'] = narrowerAuthority
+    const narrower = []
+    narrowerAuthority.forEach((v, i) => {
+      narrower.push({
+        value: v,
+        uri: uris.narrowerUris[i]
+      })
+    })
+    objParse['narrowerAuthority'] = narrower
+
+    console.log(objParse)
     
    
-    console.log(objParse);
-  
-  };
+  }
 
   const formSubmit = (event) => {
     event.preventDefault();
@@ -169,8 +189,6 @@ export default function TranslateSubject({
                           subject={narrowerAuthority}
                           label={"Termo Restrito"}
                           metadata={`narrowerAuthority_${index}`}
-                          //control={control}
-                          //reset={reset}
                           objOriginal={objOriginal}
                           setObjOriginal={setObjOriginal}
                         />

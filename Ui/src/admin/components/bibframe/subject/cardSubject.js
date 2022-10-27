@@ -22,7 +22,8 @@ export default function CardSubject({
   setDisabled,
   setName,
   setSubject,
-  tokenLSCH
+  tokenLSCH,
+  uris
 }) {
   
   const [openTranslate, setOpenTranslate] = useState(false);
@@ -105,6 +106,7 @@ export default function CardSubject({
           subjectDetails={subjectDetails}
           setSubjectDetails={setSubjectDetails} 
           tokenLSCH={tokenLSCH}
+          uris={uris}
           
         />
       </>
