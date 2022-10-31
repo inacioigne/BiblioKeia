@@ -22,7 +22,7 @@ def Make_Graph(nt, bf, count ):
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-    INSERT DATA {
+    INSERT DATA { 
         GRAPH bk:"""
 
     G2 = " {"

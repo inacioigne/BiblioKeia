@@ -14,7 +14,8 @@ import {
 } from "@mui/material";
 
 import { useState, useEffect } from "react";
-import { api } from "src/services/translate/api";
+import { api } from "src/services/translate/api"; 
+import { apiSubject } from "src/services/thesaurus/creater"; 
 import { blue, red, green } from "@mui/material/colors/";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import TranslateField from "./translateField";
@@ -107,7 +108,15 @@ export default function TranslateSubject({
     })
     objParse['narrowerAuthority'] = narrower
 
-    console.log(objParse)
+    apiSubject.post('subject', objParse)
+    .then((response) => {
+      console.log('r', response)
+    })
+    .catch(function (error) {
+      console.log("ERROOO!!", error);
+    });
+
+    //console.log(objParse)
     
    
   }

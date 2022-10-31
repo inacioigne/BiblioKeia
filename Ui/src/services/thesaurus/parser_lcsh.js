@@ -47,7 +47,7 @@ async function ParserLCSH(token, setSubjectDetails, setUris) {
   })
   Uris['narrowerUris'] = narrowerUris
   const narrowerLabels = hasNarrowerAuthority.map((narrowerAuthorit) => {
-    console.log("ParserLCSH", narrowerAuthorit.value)
+    //console.log("ParserLCSH", narrowerAuthorit.value)
     let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
     return label;
   });
