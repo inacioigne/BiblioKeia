@@ -1,0 +1,110 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/1893399" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
+    <bflc:aap xmlns:bflc="http://id.loc.gov/ontologies/bflc/">Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge</bflc:aap>
+    <bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">popperkarlr(karlraimund)19021994conjecturesandrefutations:thegrowthofscientificknowledge</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:supplementaryContent rdf:resource="http://id.loc.gov/vocabulary/msupplcont/bibliography"/>
+    <bf:supplementaryContent rdf:resource="http://id.loc.gov/vocabulary/msupplcont/index"/>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>BD241</bf:classificationPortion>
+	<bf:itemPortion>.P65x 1968</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+	<bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n80032184"/>
+	<bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Conjectures and refutations : the growth of scientific knowledge</rdfs:label>
+    <bf:title>
+      <bf:Title>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Conjectures and refutations : the growth of scientific knowledge</rdfs:label>
+	<bf:mainTitle>Conjectures and refutations : the growth of scientific knowledge</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Includes bibliographical references and indexes.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Methodology.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Methodology.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">methodology</bflc:aap-normalized>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Knowledge, Theory of.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Knowledge, Theory of.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">knowledgetheoryof</bflc:aap-normalized>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Science--Methodology.</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Science--Methodology.</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<madsrdf:componentList rdf:parseType="Collection" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Science</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Methodology</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">sciencemethodology</bflc:aap-normalized>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Prediction (Logic)</rdfs:label>
+	<madsrdf:authoritativeLabel xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#">Prediction (Logic)</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"/>
+	<bflc:aap-normalized xmlns:bflc="http://id.loc.gov/ontologies/bflc/">prediction(logic)</bflc:aap-normalized>
+      </bf:Topic>
+    </bf:subject>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works" xmlns:dcterms="http://purl.org/dc/terms/"/>
+    <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/1893399"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:generationProcess>
+	  <bf:GenerationProcess>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC marc2bibframe2 v1.7.0-SNAPSHOT</rdfs:label>
+	    <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-04T20:33:57-04:00</bf:generationDate>
+	  </bf:GenerationProcess>
+	</bf:generationProcess>
+	<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/c"/>
+	<bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+	<bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>1893399</rdf:value>
+	    <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-05-09T11:03:06</bf:changeDate>
+	<bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-12-01</bf:creationDate>
+	<lclocal:d906 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bf:assigner>
+	  <bf:Agent>
+	    <bf:code>MH</bf:code>
+	  </bf:Agent>
+	</bf:assigner>
+	<bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+</rdf:RDF>

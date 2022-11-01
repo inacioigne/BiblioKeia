@@ -4,7 +4,7 @@ import TitleInformation from "./titleInfornation"
 
 export default function Title() {
   return (
-    <Box bgcolor={grey[100]}>
+    <Box bgcolor={grey[100]}> 
       <Box p={"2rem"}>
         <Typography variant="subtitle2" gutterBottom>
           Title Information

@@ -1,10 +1,12 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import {
-  //Box,
+  Box,
   Typography,
   MenuList,
   MenuItem,
   ListItemText,
+  Button,
+  Divider,
 } from "@mui/material/";
 import { grey } from "@mui/material/colors/";
 import { useState } from "react";
@@ -50,6 +52,20 @@ const metadadas = [
 
 export default function Monograph() {
   const [visible, setVisible] = useState(0);
+  const [values, setValues] = useState(
+    { 
+      contentType: "",
+      mainTitle: ""
+     });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Submit", values);
+    // setValues((prevState) => ({
+    //   ...prevState,
+    //   contentType: "text",
+    // }));
+  };
   return (
     <Grid container>
       <Grid item xs={3} bgcolor={grey[900]} sx={{ color: "white", p: "1rem" }}>
@@ -76,17 +92,52 @@ export default function Monograph() {
           ))}
         </MenuList>
       </Grid>
-      <Grid xs={9}>
-        {/* Content Type*/}
-        {visible === 0 && <Content />}
-        {/* Title */}
-        {visible === 1 && <Title />}
-        {/* Creator of Work */}
-        {visible === 2 && <CreateWork />}
-        {/* Subject */}
-        {visible === 3 && <Subject />}
-        
-        
+
+      <Grid xs={5} bgcolor={grey[100]}>
+        <form onSubmit={handleSubmit}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {/* Content Type*/}
+            {visible === 0 && <Content values={values} setValues={setValues} />}
+            {/* Title */}
+            {visible === 1 && <Title values={values} setValues={setValues} />}
+            {/* Creator of Work */}
+            {visible === 2 && <CreateWork />}
+            {/* Subject */}
+            {visible === 3 && <Subject />}
+          </Box>
+
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              mr: "2rem",
+            }}
+          >
+            <Button variant="outlined" type="submit">
+              Salvar
+            </Button>
+          </Box>
+        </form>
+      </Grid>
+
+      <Grid xs={4} bgcolor={grey[200]}>
+        <Typography variant="h4" sx={{ p: "1rem" }}>
+          Work
+        </Typography>
+        <Divider />
+        <Box sx={{ p: "1rem" }}>
+          <Typography variant="subtitle2" gutterBottom>
+            Tipo de conteúdo
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            {values?.contentType}
+          </Typography>
+        </Box>
       </Grid>
     </Grid>
   );

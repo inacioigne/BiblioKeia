@@ -3,9 +3,10 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from src.routes.users import login
 from src.routes.users import users
-from src.routes.cataloguing import images
+from src.routes.cataloguing import images, generateId
 from src.routes.translate import translate
 from src.routes.thesaurus import subjects
+#from src.routes.cataloguing import generateId
 import uvicorn
 
 initializeDatabase()
@@ -38,6 +39,7 @@ app.add_middleware(
 app.include_router(login.router, tags=['Login'])
 app.include_router(users.router, prefix='/user', tags=['Users'])
 app.include_router(images.router, prefix='/items', tags=['Images'])
+app.include_router(generateId.router, prefix='/items', tags=['Cataloguing'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 app.include_router(subjects.router, prefix='/thesaurus', tags=['Thesaurus'])
 

@@ -28,10 +28,18 @@ const inputPros = {
   ),
 };
 
-export default function TitleInformation() {
+export default function TitleInformation( { values, setValues } ) {
   const [type, setType] = useState("Title");
-  const [mainTitle, setMainTitle] = useState("");
+  //const [mainTitle, setMainTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
+
+  const handleOnChangeMainTitle = (str) => {
+    setValues((prevState) => ({
+      ...prevState,
+      mainTitle: e.target.value,
+    }));
+  };
+
   return (
     <Box
       sx={{
@@ -55,10 +63,13 @@ export default function TitleInformation() {
       </FormControl>
 
       <TextField
-        onChange={(e) => {
-          setMainTitle(e.target.value);
-        }}
-        value={mainTitle}
+        // onChange={(e) => {
+        //   setMainTitle(e.target.value);
+          
+        // }}
+        onChange={handleOnChangeMainTitle}
+        //value={mainTitle}
+        value={values.mainTitle}
         fullWidth
         label="Titulo principal"
         InputProps={inputPros}

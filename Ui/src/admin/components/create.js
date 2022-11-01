@@ -28,12 +28,13 @@ export default function Create() {
             }}
           >
             <Typography variant="subtitle1">Momografia</Typography>
-            <IconButton color="primary" aria-label="book"
-            onClick={() => {
-                router.replace('/admin/templates/monograph')
-            }}
+            <IconButton
+              color="primary"
+              aria-label="book"
+              onClick={() => {
+                router.replace("/admin/templates/monograph");
+              }}
             >
-
               <AutoStories
                 sx={{
                   fontSize: "3rem",
