@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { SearchProvider } from "src/providers/search";
 import { AuthProvider } from "src/admin/auth/authContext";
+import { BfProvider } from "src/providers/bibframe";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
@@ -8,11 +9,13 @@ function MyApp({ Component, pageProps }) {
   return getLayout(
     <AuthProvider>
       <SearchProvider>
-      <Component {...pageProps} />
-    </SearchProvider>
+        <BfProvider>
+        <Component {...pageProps} />
 
+        </BfProvider>
+        
+      </SearchProvider>
     </AuthProvider>
-    
   );
 }
 

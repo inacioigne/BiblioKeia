@@ -94,8 +94,9 @@ export default function Authority() {
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
-          onSubmit={handleSearch}
+         // type="submit"
+         // onSubmit={handleSearch}
+         onClick={handleSearch}
         >
           <Search />
         </IconButton>
@@ -105,7 +106,7 @@ export default function Authority() {
 
   return (
     <>
-      <form onSubmit={handleSearch}>
+      {/* <form onSubmit={handleSearch}> */}
         <Box
           sx={{
             display: "flex",
@@ -141,7 +142,7 @@ export default function Authority() {
             InputProps={inputPros}
           />
         </Box>
-      </form>
+      {/* </form> */}
 
       <SearchLCNAF
         open={open}

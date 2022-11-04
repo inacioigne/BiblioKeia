@@ -25,7 +25,7 @@ export default function CreateWork() {
     <Box bgcolor={grey[100]} onMouseLeave={handleCloseMenu}>
       <Box p={"2rem"}>
         <Typography variant="subtitle2" gutterBottom>
-          Creator of Work
+          Autor:
         </Typography>
         <Paper sx={{ p: "1rem", width: "30rem" }}>
           <Box

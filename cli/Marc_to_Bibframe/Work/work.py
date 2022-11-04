@@ -35,7 +35,6 @@ def Work(count, workMarc, BFwork, BFinstance):
     g.add((BFwork, RDF.type, BF.Work)) 
     
     #AdminMetadata
-
     g = WorkAdmin(g, BFwork, count, workMarc, BF) 
     #Language
     g = Language(g, BFwork, workMarc, BF)

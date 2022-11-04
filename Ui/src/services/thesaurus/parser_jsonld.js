@@ -34,6 +34,8 @@ async function ParserJsonLd(token, setAuthorityDetails) {
     return label;
   });
   AuthorityDetails['personalName'] = personalName
+  AuthorityDetails['token'] = token
+
 
   //identifiesRWO
   const identifiesRWO = authority.out(ns.madsrdf.identifiesRWO).value;

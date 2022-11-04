@@ -21,7 +21,7 @@ import {
 import { Search } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 import { api } from "src/services/lcnfa";
-import ParserJsonLd from "src/services/parser_jsonld";
+import ParserJsonLd from "src/services/thesaurus/parser_jsonld";
 import { useState } from "react";
 import CardLCNAF from "src/admin/components/bibframe/CreateWork/cardLCNAF";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -61,7 +61,7 @@ export default function SearchLCNAF({
       <DialogContent>
         <Grid container>
           <Grid xs={6} sx={{ borderRight: "solid 1px" }}>
-            <form onSubmit={handleSearch}>
+            {/* <form onSubmit={handleSearch}> */}
               <FormControl >
                 <InputLabel id="type">Tipo</InputLabel>
                 <Select
@@ -92,7 +92,8 @@ export default function SearchLCNAF({
                         color="primary"
                         aria-label="search"
                         component="button"
-                        type="submit"
+                        //type="submit"
+                        onClick={handleSearch}
                       >
                         <Search />
                       </IconButton>
@@ -100,7 +101,7 @@ export default function SearchLCNAF({
                   ),
                 }}
               />
-            </form>
+            {/* </form> */}
             
             <Typography
               variant="subtitle2"

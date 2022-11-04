@@ -16,19 +16,28 @@ import {
   ChildFriendly,
   FileDownloadDone,
 } from "@mui/icons-material";
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe"
 
 export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisabled, setName}) {
+  const { bf, setBf } = useBf()
+
   const styleIformation = {
     p: "0.5rem",
     display: "flex",
     gap: "0.5rem",
   };
   const handleChoose = () => {
-    //console.log('ok', authorityDetails?.personalName)
+    console.log('ok', authorityDetails)
     setDisabled(true);
     setOpen(false)
     setName("")
     setValue(authorityDetails?.personalName)
+    setBf((prevState) => ({
+      ...prevState,
+      contributionAgent: authorityDetails?.personalName,
+      contributionID: authorityDetails.token
+    }));
   }
   if (authorityDetails) {
     return (

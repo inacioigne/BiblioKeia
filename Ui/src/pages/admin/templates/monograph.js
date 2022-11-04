@@ -14,6 +14,11 @@ import Content from "src/admin/components/bibframe/content";
 import CreateWork from "src/admin/components/bibframe/CreateWork";
 import Title from "src/admin/components/bibframe/title";
 import Subject from "src/admin/components/bibframe/subject";
+import Preview from "src/admin/components/preview"
+import { CataloguingApi } from "src/services/cataloguing/create";
+
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe"
 
 const styleItemMenun = {
   borderRadius: "5px",
@@ -52,20 +57,26 @@ const metadadas = [
 
 export default function Monograph() {
   const [visible, setVisible] = useState(0);
-  const [values, setValues] = useState(
-    { 
-      contentType: "",
-      mainTitle: ""
-     });
+  // const [values, setValues] = useState(
+  //   { 
+  //     contentType: "",
+  //     mainTitle: ""
+  //    });
+  const { bf, setBf } = useBf()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit", values);
-    // setValues((prevState) => ({
-    //   ...prevState,
-    //   contentType: "text",
-    // }));
+    console.log("Submit", bf);
+    CataloguingApi.post("work", bf)
+    .then((response) => {
+      console.log('Api', response)
+    })
+    .catch( function (error) {
+      console.log('ER', error)
+    })
+
   };
+
   return (
     <Grid container>
       <Grid item xs={3} bgcolor={grey[900]} sx={{ color: "white", p: "1rem" }}>
@@ -102,9 +113,13 @@ export default function Monograph() {
             }}
           >
             {/* Content Type*/}
-            {visible === 0 && <Content values={values} setValues={setValues} />}
+            {visible === 0 && <Content 
+            //values={bf} setValues={setBf} 
+            />}
             {/* Title */}
-            {visible === 1 && <Title values={values} setValues={setValues} />}
+            {visible === 1 && <Title 
+            //values={bf} setValues={setBf} 
+            />}
             {/* Creator of Work */}
             {visible === 2 && <CreateWork />}
             {/* Subject */}
@@ -124,8 +139,11 @@ export default function Monograph() {
           </Box>
         </form>
       </Grid>
+      <Preview 
+      //values={bf} 
+      />
 
-      <Grid xs={4} bgcolor={grey[200]}>
+      {/* <Grid xs={4} bgcolor={grey[200]}>
         <Typography variant="h4" sx={{ p: "1rem" }}>
           Work
         </Typography>
@@ -138,7 +156,7 @@ export default function Monograph() {
             {values?.contentType}
           </Typography>
         </Box>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }

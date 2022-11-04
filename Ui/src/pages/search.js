@@ -17,11 +17,10 @@ import CardItem from "src/components/CardItem";
 import Filters from "src/components/Filters";
 import Navbar from "src/components/Navbar/navbar_search";
 import AdvancedSearch from "src/components/Search/advanced_search";
-import NavPages  from "src/components/Search/navPages"
+import NavPages from "src/components/Search/navPages";
 
 // BiblioKeia Hooks
-import { useSearch } from "src/providers/search"
-
+import { useSearch } from "src/providers/search";
 
 export default function Search() {
   const router = useRouter();
@@ -34,26 +33,31 @@ export default function Search() {
   const [facetYear, setfacetYear] = useState(null);
   const [facetType, setfacetType] = useState(null);
 
-  const { getData, numFound, setNumFound, items, setItems, filter,  setFilter, page } = useSearch()
-
+  const {
+    getData,
+    numFound,
+    setNumFound,
+    items,
+    setItems,
+    filter,
+    setFilter,
+    page,
+  } = useSearch();
 
   useEffect(() => {
-
     if (!q) {
       return;
     }
-    let [field, term] = q.split(":")
+    let [field, term] = q.split(":");
     //setFilter([])
-   
-    getData(field, term, page, op)
 
-    
+    getData(field, term, page, op);
   }, [q]);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       {/* Navbar */}
-      <Navbar mode={'dark'} />
+      <Navbar mode={"dark"} />
       <Container maxWidth="xl">
         <AdvancedSearch getData={getData} />
 
@@ -82,17 +86,15 @@ export default function Search() {
               p: 3,
             }}
           >
-          <Box sx={{ display: 'flex', gap: "0.5rem"}}>
-          <Typography variant="h6" gutterBottom>
-              <CountUp separator="." end={numFound} duration={1} /> 
-            </Typography>
-            <Typography variant="h6" gutterBottom>
-               item encontrados
-            </Typography>
-          
+            <Box sx={{ display: "flex", gap: "0.5rem" }}>
+              <Typography variant="h6" gutterBottom>
+                <CountUp separator="." end={numFound} duration={1} />
+              </Typography>
+              <Typography variant="h6" gutterBottom>
+                item encontrados
+              </Typography>
+            </Box>
 
-          </Box>
-            
             <Stack spacing={2}>
               {items?.map((item) => (
                 <CardItem
@@ -107,7 +109,7 @@ export default function Search() {
                 />
               ))}
             </Stack>
-     
+
             <NavPages query={query} />
           </Grid>
         </Grid>

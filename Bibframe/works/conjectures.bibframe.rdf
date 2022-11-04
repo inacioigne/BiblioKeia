@@ -13,6 +13,7 @@
 	<bf:itemPortion>.P65x 1968</bf:itemPortion>
       </bf:ClassificationLcc>
     </bf:classification>
+
     <bf:contribution>
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
@@ -20,6 +21,7 @@
 	<bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
       </bf:Contribution>
     </bf:contribution>
+	
     <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Conjectures and refutations : the growth of scientific knowledge</rdfs:label>
     <bf:title>
       <bf:Title>

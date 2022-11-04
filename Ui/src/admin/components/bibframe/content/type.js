@@ -15,7 +15,14 @@ import { blue, red } from "@mui/material/colors/";
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
 
-export default function Type({ values, setValues }) {
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe"
+
+export default function Type(
+  //{ values, setValues }
+  ) {
+
+  const { bf, setBf } = useBf()
 
   const [openMenu, setOpenMenu] = useState(null);
   const [contentTypes, setContentTypes] = useState(null);
@@ -24,7 +31,7 @@ export default function Type({ values, setValues }) {
   //const [name, setName] = useState("");
 
   async function getContentTypes(data) {
-    console.log('getContentTypes', data)
+    //console.log('getContentTypes', data)
     const client = new SparqlClient({
       endpointUrl: "http://localhost:3030/contentTypes/sparql",
     });
@@ -74,7 +81,11 @@ export default function Type({ values, setValues }) {
     setDisabled(true);
     setValue("");
     //setName("");
-    setValues((prevState) => ({
+    // setValues((prevState) => ({
+    //   ...prevState,
+    //   contentType: relator.target.innerText,
+    // }));
+    setBf((prevState) => ({
       ...prevState,
       contentType: relator.target.innerText,
     }));
@@ -102,7 +113,7 @@ export default function Type({ values, setValues }) {
               backgroundColor: blue[200],
             }}
           >
-            {values.contentType}
+            {bf.contentType}
           </Box>
 
           <Close

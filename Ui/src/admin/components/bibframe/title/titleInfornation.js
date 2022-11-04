@@ -12,6 +12,9 @@ import {
 import { useState } from "react";
 import { Search, Close } from "@mui/icons-material";
 
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe"
+
 const inputPros = {
   endAdornment: (
     <InputAdornment position="end">
@@ -28,15 +31,25 @@ const inputPros = {
   ),
 };
 
-export default function TitleInformation( { values, setValues } ) {
+export default function TitleInformation( 
+  //{ values, setValues } 
+  ) {
+
+  const { bf, setBf } = useBf()
   const [type, setType] = useState("Title");
   //const [mainTitle, setMainTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
 
-  const handleOnChangeMainTitle = (str) => {
-    setValues((prevState) => ({
+  const handleOnChangeMainTitle = (e) => {
+    setBf((prevState) => ({
       ...prevState,
       mainTitle: e.target.value,
+    }));
+  };
+  const handleChangeSubtitle = (e) => {
+    setBf((prevState) => ({
+      ...prevState,
+      subtitle: e.target.value,
     }));
   };
 
@@ -69,17 +82,16 @@ export default function TitleInformation( { values, setValues } ) {
         // }}
         onChange={handleOnChangeMainTitle}
         //value={mainTitle}
-        value={values.mainTitle}
+        value={bf.mainTitle}
         fullWidth
         label="Titulo principal"
         InputProps={inputPros}
       />
 
       <TextField
-        onChange={(e) => {
-          setSubtitle(e.target.value);
-        }}
-        value={subtitle}
+        onChange={handleChangeSubtitle}
+        //value={subtitle}
+        value={bf.subtitle}
         fullWidth
         label="Subtítulo"
         InputProps={inputPros}
