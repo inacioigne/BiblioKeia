@@ -7,4 +7,6 @@ class Work_Schema(BaseModel):
     subtitle: Optional[str]
     contributionAgent: str
     contributionRole: str
+    contributionRoleUri: str
     contributionID: str
+    

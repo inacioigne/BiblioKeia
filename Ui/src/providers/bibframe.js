@@ -9,7 +9,8 @@ export const BfProvider = ({ children }) => {
     subtitle: "",
     contributionAgent: "",
     contributionRole: "",
-    contributionID: ""
+    contributionID: "",
+    contributionRoleUri: ""
   });
 
   return (

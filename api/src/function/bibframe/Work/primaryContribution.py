@@ -5,7 +5,7 @@ def PrimaryContribution(g, request, work_uri, BF, BFLC):
 
     contribution = BNode()
     agent = URIRef(f"http://id.loc.gov/authorities/names/{request.contributionID}")
-    role = URIRef("http://id.loc.gov/vocabulary/relators/ctb")
+    role = URIRef(request.uri)
     g.add((work_uri, BF.contribution, contribution))
     g.add((contribution, RDF.type, BFLC.PrimaryContribution))
     g.add((contribution, RDF.type, BF.Contribution))

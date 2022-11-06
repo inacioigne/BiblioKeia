@@ -28,10 +28,10 @@ export default function Type(
   const [contentTypes, setContentTypes] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("");
-  //const [name, setName] = useState("");
+
 
   async function getContentTypes(data) {
-    //console.log('getContentTypes', data)
+
     const client = new SparqlClient({
       endpointUrl: "http://localhost:3030/contentTypes/sparql",
     });
@@ -59,12 +59,9 @@ export default function Type(
   }
 
   const handleOnChange = (str) => {
-    //console.log('OnChange', str)
+
     getContentTypes(str);
-    // setValues((prevState) => ({
-    //   ...prevState,
-    //   contentType: e.target.value,
-    // }));
+
   };
 
   const handleClick = (e) => {
@@ -76,15 +73,10 @@ export default function Type(
   };
 
   const handleCloseMenu = (relator) => {
-    console.log('OnChange', relator.target.innerText)
+    //console.log('OnChange', relator.target.innerText)
     setOpenMenu(false);
     setDisabled(true);
     setValue("");
-    //setName("");
-    // setValues((prevState) => ({
-    //   ...prevState,
-    //   contentType: relator.target.innerText,
-    // }));
     setBf((prevState) => ({
       ...prevState,
       contentType: relator.target.innerText,
