@@ -1,5 +1,6 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -7,20 +8,25 @@
 <http://bibliokeia.com/bibframe/work/bk-22-3> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2022-11-03"^^xsd:date ;
+            bf:creationDate "2022-11-07"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2022-11-03T16:07:58.353531"^^xsd:dateTime ] ;
+                    bf:generationDate "2022-11-07T16:38:47.691345"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-22-3" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
-            bf:agent <http://id.loc.gov/authorities/names/n80032184> ;
+            rdfs:label "" ;
+            bf:agent <http://id.loc.gov/authorities/names/> ;
             bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:subject [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Methodology" ;
+            madsrdf:authoritativeLabel "Methodology"@en ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ] ;
     bf:title [ a bf:Title ;
-            rdfs:label "Conjectures and refutations" ;
-            bf:mainTitle "Conjectures and refutations" ] .
+            rdfs:label "Saramago" ;
+            bf:mainTitle "Saramago" ] .
 

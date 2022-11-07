@@ -5,6 +5,7 @@ from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Work.title import Title
 from src.function.bibframe.Work.primaryContribution import PrimaryContribution
+from src.function.bibframe.Work.subject import Subject
 
 def BfWork(request, work_id):
 
@@ -39,6 +40,10 @@ def BfWork(request, work_id):
 
     #PrimaryContribution
     g = PrimaryContribution(g, request, work_uri, BF, BFLC)
+
+    #Subject
+    for subject in request.subjects:
+        g = Subject(g, subject, work_uri, BF, MADSRDF)
 
 
     return g

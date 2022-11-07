@@ -5,10 +5,10 @@ import {
   MenuItem 
 } from "@mui/material/";
 
-export default function Thesaurus({ setType, type }) {
+export default function Type({ setType, type }) {
 
   return (
-    <FormControl fullWidth>
+    <FormControl sx={{width: "15rem"}}>
       <InputLabel id="type">Tipo</InputLabel>
       <Select
         label="Tipo"

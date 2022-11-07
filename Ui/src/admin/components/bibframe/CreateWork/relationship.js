@@ -49,17 +49,16 @@ export default function Relationship() {
       
       
       const relator = {uri: quad.subject.value, relator: quad.object.value}
-      //r.push(relator);
+      r.push(relator);
       
-      setRelators(prevState => [...prevState, relator])
+      //setRelators(prevState => [...prevState, relator])
     }
-    // if (r.length != 0) {
-    //   console.log('RELATOR: ', relators)
-    //   //console.log('RELATOR: ', r)
-    //   //setRelators(r);
-    // } else {
-    //   /setRelators(null);
-    // }
+    if (r.length != 0) {
+      ///console.log('RELATOR: ', relators)
+      setRelators(r);
+    } else {
+      setRelators(null);
+    }
   }
 
   const handleOnChange = (str) => {
@@ -76,15 +75,19 @@ export default function Relationship() {
   };
 
   const handleCloseMenu = (relator) => {
+    
     setOpenMenu(false);
     setDisabled(true);
     setValue(relator.target.innerText);
     setName("");
     setBf((prevState) => ({
       ...prevState,
-      contributionRole: relator.target.innerText
+      contributionRole: relator.target.innerText,
+      contributionRoleUri: relator.target.id
     }));
+    // console.log(relator.target.id)
   };
+
 
   const inputPros = {
     disabled: disabled,
@@ -170,7 +173,7 @@ export default function Relationship() {
         <MenuList>
           {relators ? (
             relators?.map((relator, index) => (
-              <MenuItem key={index} onClick={handleCloseMenu}>
+              <MenuItem key={index} id={relator.uri} onClick={handleCloseMenu}>
                 {relator.relator}
               </MenuItem>
             ))

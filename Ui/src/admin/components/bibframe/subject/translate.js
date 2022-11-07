@@ -27,7 +27,13 @@ export default function TranslateSubject({
   subjectDetails,
   setSubjectDetails,
   tokenLSCH,
-  uris
+  uris,
+  SetListSubject,
+  setName,
+  setSubject,
+  setDisabled,
+  setOpenThesaurus,
+  type
 }) {
   const [objTranslate, setObjectTranslate] = useState({});
   const [objOriginal, setObjOriginal] = useState({});
@@ -87,6 +93,7 @@ export default function TranslateSubject({
   const handleSalve = () => {
     const objParse = { tokenLSCH: tokenLSCH }
     objParse['authority'] = objOriginal.authority
+    setName(objOriginal.authority)
     objParse['variant'] = objOriginal.variant
     objParse['reciprocalAuthority'] = {
       value: objOriginal.reciprocalAuthority,
@@ -98,7 +105,7 @@ export default function TranslateSubject({
         narrowerAuthority.push(v)
       }      
     })
-    //objParse['narrowerAuthority'] = narrowerAuthority
+ 
     const narrower = []
     narrowerAuthority.forEach((v, i) => {
       narrower.push({
@@ -111,12 +118,24 @@ export default function TranslateSubject({
     apiSubject.post('subject', objParse)
     .then((response) => {
       console.log('r', response)
+      setSubject("");
+      setDisabled(true);
+      setOpen(false)
+      setOpenThesaurus(false)
+      
+      SetListSubject((prevState) => [
+        ...prevState,
+        {
+          label: objParse?.authority,
+          lang: 'pt',
+          type: type,
+          schema: "https://bibliokeia.com/authorities/subjects/",
+        },
+      ]);
     })
     .catch(function (error) {
       console.log("ERROOO!!", error);
     });
-
-    //console.log(objParse)
     
    
   }
@@ -213,7 +232,6 @@ export default function TranslateSubject({
         <DialogActions>
         <Button onClick={handleAceptAll}>Aceitar Todos</Button>
           <Button 
-          //type="submit"
           onClick={handleSalve}
           >Salvar</Button>
         </DialogActions>

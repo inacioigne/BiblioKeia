@@ -6,5 +6,25 @@ class Work_Schema(BaseModel):
     mainTitle: str
     subtitle: Optional[str]
     contributionAgent: str
-    contributionRole: str
     contributionID: str
+    contributionRole: str
+    contributionRoleUri: str
+    subjects: list
+    
+test = {
+  "contentType": "text",
+  "mainTitle": "Conjecturas e refutações",
+  "subtitle": "refutações",
+  "contributionAgent": "Inácio Oliveira",
+  "contributionID": "n80032184",
+  "contributionRole": "Autor",
+  "contributionRoleUri": "http://id.loc.gov/vocabulary/relators/ctb",
+  "subjects": [
+    {
+    "label": "Methodology"
+    },
+    {
+    "label": "Philosofy"
+    }
+  ]
+}

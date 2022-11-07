@@ -2,8 +2,8 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  TextField,
-  InputAdornment,
+  //TextField,
+  //InputAdornment,
   IconButton,
   // FormControl,
   // Select,
@@ -36,6 +36,8 @@ export default function Thesaurus({
   setSubject,
   subject,
   disabled,
+  SetListSubject,
+  listSubject
 }) {
   const [subjectDetails, setSubjectDetails] = useState(null);
   const [uris, setUris] = useState(null);
@@ -125,7 +127,10 @@ export default function Thesaurus({
                 setName={setName}
                 tokenLSCH={tokenLSCH}
                 uris={uris}
-
+                SetListSubject={SetListSubject}
+                listSubject={listSubject}
+                setOpenThesaurus={setOpen}
+                type={type}
               />
             </Box>
           </Grid>

@@ -35,6 +35,7 @@ export default function TranslateField({
   reset,
   objOriginal,
   setObjOriginal,
+  type
 }) {
   const [value, setValue] = useState(subject);
   const [disabled, setDisabled] = useState(true);

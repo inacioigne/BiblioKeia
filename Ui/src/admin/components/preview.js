@@ -54,7 +54,7 @@ export default function Preview({ values }) {
         <Typography variant="subtitle1" gutterBottom>
           {bf?.contributionRole}
         </Typography>
-        <code> {bf?.contributionID}</code>
+        <code> {bf?.contributionRoleUri}</code>
       </Box>
     </Grid>
   );

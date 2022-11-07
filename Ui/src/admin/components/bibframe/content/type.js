@@ -31,7 +31,6 @@ export default function Type(
   //const [name, setName] = useState("");
 
   async function getContentTypes(data) {
-    //console.log('getContentTypes', data)
     const client = new SparqlClient({
       endpointUrl: "http://localhost:3030/contentTypes/sparql",
     });
@@ -59,7 +58,6 @@ export default function Type(
   }
 
   const handleOnChange = (str) => {
-    //console.log('OnChange', str)
     getContentTypes(str);
     // setValues((prevState) => ({
     //   ...prevState,
@@ -76,7 +74,7 @@ export default function Type(
   };
 
   const handleCloseMenu = (relator) => {
-    console.log('OnChange', relator.target.innerText)
+
     setOpenMenu(false);
     setDisabled(true);
     setValue("");

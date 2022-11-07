@@ -6,10 +6,10 @@ import {
   MenuItem,
   ListItemText,
   Button,
-  Divider,
+  //Divider,
 } from "@mui/material/";
 import { grey } from "@mui/material/colors/";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Content from "src/admin/components/bibframe/content";
 import CreateWork from "src/admin/components/bibframe/CreateWork";
 import Title from "src/admin/components/bibframe/title";
@@ -57,16 +57,29 @@ const metadadas = [
 
 export default function Monograph() {
   const [visible, setVisible] = useState(0);
-  // const [values, setValues] = useState(
-  //   { 
-  //     contentType: "",
-  //     mainTitle: ""
-  //    });
+  const [listSubject, SetListSubject] = useState([])
+
   const { bf, setBf } = useBf()
+
+  useEffect(() => {
+    setBf((prevState) => ({
+        ...prevState,
+        subjects: listSubject
+       
+      }));
+  }, [listSubject])
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit", bf);
+    // setBf((prevState) => ({
+    //   ...prevState,
+    //   subjects: listSubject
+     
+    // }));
+    console.log("Submit", bf, listSubject);
+    
     CataloguingApi.post("work", bf)
     .then((response) => {
       console.log('Api', response)
@@ -123,7 +136,7 @@ export default function Monograph() {
             {/* Creator of Work */}
             {visible === 2 && <CreateWork />}
             {/* Subject */}
-            {visible === 3 && <Subject />}
+            {visible === 3 && <Subject listSubject={listSubject} SetListSubject={SetListSubject} />}
           </Box>
 
           <Box
