@@ -15,6 +15,7 @@ import CreateWork from "src/admin/components/bibframe/CreateWork";
 import Title from "src/admin/components/bibframe/title";
 import Subject from "src/admin/components/bibframe/subject";
 import Preview from "src/admin/components/preview"
+import Language from "src/admin/components/bibframe/language"
 import { CataloguingApi } from "src/services/cataloguing/create";
 
 // BiblioKeia Hooks
@@ -47,7 +48,7 @@ const metadadas = [
   "Título",
   "Autor",
   "Assunto",
-  "Date of Work",
+  "Idioma",
   "Place of Origin of the Work",
   "(Geographic) Coverage of the Content",
   "(Time) Coverage of the Content",
@@ -73,11 +74,6 @@ export default function Monograph() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setBf((prevState) => ({
-    //   ...prevState,
-    //   subjects: listSubject
-     
-    // }));
     console.log("Submit", bf, listSubject);
     
     CataloguingApi.post("work", bf)
@@ -137,6 +133,8 @@ export default function Monograph() {
             {visible === 2 && <CreateWork />}
             {/* Subject */}
             {visible === 3 && <Subject listSubject={listSubject} SetListSubject={SetListSubject} />}
+             {/* Idioma */}
+             {visible === 4 && <Language />}
           </Box>
 
           <Box

@@ -54,7 +54,15 @@ export default function Preview({ values }) {
         <Typography variant="subtitle1" gutterBottom>
           {bf?.contributionRole}
         </Typography>
-        <code> {bf?.contributionRoleUri}</code>
+
+      </Box>
+      <Box sx={{ ...styles }}>
+        <Typography variant="subtitle2" gutterBottom>
+          Idioma:
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {bf?.language}
+        </Typography>
       </Box>
     </Grid>
   );

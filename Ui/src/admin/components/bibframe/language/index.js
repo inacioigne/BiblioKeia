@@ -1,43 +1,46 @@
 import {
   Box,
   Typography,
-  TextField,
-  InputAdornment,
-  IconButton,
   Paper,
-  MenuItem,
+  TextField,
   MenuList,
+  MenuItem,
+  InputAdornment,
+  IconButton
 } from "@mui/material/";
+import SparqlClient from "sparql-http-client";
+import rdf from "rdf-ext";
 import { useState } from "react";
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
 import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
 
-import SparqlClient from "sparql-http-client";
-import rdf from "rdf-ext";
-
-// BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe";
-
-export default function Type() {
-
+export default function Language({}) {
   const { bf, setBf } = useBf();
-
+  const [languages, setLanguages] = useState(null);
   const [openMenu, setOpenMenu] = useState(null);
-  const [contentTypes, setContentTypes] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("");
 
-  async function getContentTypes(data) {
+  async function getLanguage(data) {
     const client = new SparqlClient({
-      endpointUrl: "http://localhost:3030/contentTypes/sparql",
+      endpointUrl: "http://localhost:3030/language/sparql",
     });
-    const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-      SELECT ?object
-      WHERE {
-        ?subject madsrdf:authoritativeLabel ?object
-        FILTER regex(?object, "^${data}") 
-      }
-      LIMIT 10`;
+    // const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    // SELECT ?language ?code
+    //  WHERE { 
+    //      ?subject madsrdf:authoritativeLabel ?language .
+    //   FILTER regex(?language, "^${data}") 
+    //   ?subject madsrdf:code ?code }
+    // LIMIT 10`;
+    const query =  `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    SELECT ?language 
+     WHERE { 
+         ?subject madsrdf:authoritativeLabel ?language .
+   
+  }
+    LIMIT 10`
 
     const stream = await client.query.select(query);
 
@@ -45,34 +48,37 @@ export default function Type() {
     await dataset.import(stream);
     let r = [];
     for (const quad of dataset) {
-      r.push(quad.object.value);
+        console.log(quad)
+      r.push( quad.language.value  );
+      
     }
     if (r.length != 0) {
-      setContentTypes(r);
+      setLanguages(r);
     } else {
-      setContentTypes(null);
+      setLanguages(null);
     }
   }
 
   const handleOnChange = (str) => {
-    getContentTypes(str);
+    setValue(str)
+    getLanguage(str);
   };
 
   const handleClick = (e) => {
     if (disabled == false) {
       let rect = e.currentTarget.getBoundingClientRect();
       setOpenMenu(rect.top + rect.height);
-      getContentTypes("");
+      getLanguage("");
     }
   };
 
-  const handleCloseMenu = (relator) => {
+  const handleCloseMenu = (language) => {
     setOpenMenu(false);
     setDisabled(true);
     setValue("");
     setBf((prevState) => ({
       ...prevState,
-      contentType: relator.target.innerText,
+      language: language.target.innerText,
     }));
   };
 
@@ -97,7 +103,7 @@ export default function Type() {
               backgroundColor: blue[200],
             }}
           >
-            {bf.contentType}
+            {bf.language}
           </Box>
 
           <Close
@@ -125,7 +131,7 @@ export default function Type() {
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
+          //type="submit"
         >
           <Search />
         </IconButton>
@@ -134,47 +140,45 @@ export default function Type() {
   };
 
   return (
-    <>
-      <TextField
-        name="contentType"
-        fullWidth
-        onClick={handleClick}
-        onChange={(e) => {
-          handleOnChange(e.target.value);
-          //setName(e.target.value);
-          // setValues((prevState) => ({
-          //   ...prevState,
-          //   contentType: e.target.value,
-          // }));
-        }}
-        value={value}
-        label="Conteúdo"
-        InputProps={inputPros}
-      />
-      <Paper
-        sx={
-          openMenu
-            ? {
-                display: "block",
-                position: "absolute",
-                zIndex: "100",
-                top: openMenu,
-              }
-            : { display: "none", position: "absolute", zIndex: "100" }
-        }
-      >
-        <MenuList>
-          {contentTypes ? (
-            contentTypes?.map((type, index) => (
-              <MenuItem key={index} onClick={handleCloseMenu}>
-                {type}
-              </MenuItem>
-            ))
-          ) : (
-            <MenuItem>Nenhum resultado encontrado</MenuItem>
-          )}
-        </MenuList>
+    <Box p={"2rem"}>
+      <Typography variant="subtitle2">Idioma</Typography>
+      <Paper sx={{ p: "1rem", width: "30rem" }}>
+        <TextField
+          name="language"
+          fullWidth
+          onClick={handleClick}
+          onChange={(e) => {
+            handleOnChange(e.target.value);
+          }}
+          value={value}
+          label="Idioma"
+          InputProps={inputPros}
+        />
+        <Paper
+          sx={
+            openMenu
+              ? {
+                  display: "block",
+                  position: "absolute",
+                  zIndex: "100",
+                  top: openMenu,
+                }
+              : { display: "none", position: "absolute", zIndex: "100" }
+          }
+        >
+          <MenuList>
+            {languages ? (
+              languages?.map((language, index) => (
+                <MenuItem key={index} onClick={handleCloseMenu}>
+                  {language.language}
+                </MenuItem>
+              ))
+            ) : (
+              <MenuItem>Nenhum resultado encontrado</MenuItem>
+            )}
+          </MenuList>
+        </Paper>
       </Paper>
-    </>
+    </Box>
   );
 }

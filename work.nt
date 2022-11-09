@@ -8,25 +8,34 @@
 <http://bibliokeia.com/bibframe/work/bk-22-3> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2022-11-07"^^xsd:date ;
+            bf:creationDate "2022-11-08"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2022-11-07T16:38:47.691345"^^xsd:dateTime ] ;
+                    bf:generationDate "2022-11-08T14:38:40.508023"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-22-3" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "" ;
-            bf:agent <http://id.loc.gov/authorities/names/> ;
+            rdfs:label "Inácio Oliveira" ;
+            bf:agent <http://id.loc.gov/authorities/names/n80032184> ;
             bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
     bf:subject [ a bf:Topic,
                 madsrdf:Topic ;
             rdfs:label "Methodology" ;
             madsrdf:authoritativeLabel "Methodology"@en ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Science--Methodology"@en ;
+            madsrdf:authoritativeLabel "Science--Methodology"@en ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Science"@en ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Methodology"@en ] ) ;
             madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ] ;
     bf:title [ a bf:Title ;
-            rdfs:label "Saramago" ;
-            bf:mainTitle "Saramago" ] .
+            rdfs:label "Conjecturas e refutaçõesrefutações" ;
+            bf:mainTitle "Conjecturas e refutações" ;
+            bf:subtitle "refutações" ] .
 

@@ -21,10 +21,14 @@ test = {
   "contributionRoleUri": "http://id.loc.gov/vocabulary/relators/ctb",
   "subjects": [
     {
-    "label": "Methodology"
+    "label": "Methodology",
+     "lang": "en", 
+     "type": "SimpleType", "schema": "http://id.loc.gov/authorities/subjects"
     },
-    {
-    "label": "Philosofy"
+     {
+    "label": "Science--Methodology",
+     "lang": "en", 
+     "type": "ComplexType", "schema": "http://id.loc.gov/authorities/subjects"
     }
   ]
 }

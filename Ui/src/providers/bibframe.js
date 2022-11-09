@@ -11,7 +11,10 @@ export const BfProvider = ({ children }) => {
     contributionRole: "",
     contributionRoleUri: "",
     contributionID: "",
-    subjects: []
+    subjects: [],
+    language: "",
+    languageCode: ""
+
   });
 
   return (
