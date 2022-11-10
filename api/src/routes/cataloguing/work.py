@@ -21,4 +21,4 @@ async def create_work(request: Work_Schema):
     
     
 
-    return request.dict()
+    return request.subjects

@@ -39,10 +39,8 @@ export default function Preview({ values }) {
           {bf?.mainTitle}
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-        {bf?.subtitle}
-      </Typography>
-        
-        
+          {bf?.subtitle}
+        </Typography>
       </Box>
       <Box sx={{ ...styles }}>
         <Typography variant="subtitle2" gutterBottom>
@@ -54,7 +52,43 @@ export default function Preview({ values }) {
         <Typography variant="subtitle1" gutterBottom>
           {bf?.contributionRole}
         </Typography>
-        <code> {bf?.contributionID}</code>
+      </Box>
+      <Box sx={{ ...styles }}>
+        <Typography variant="subtitle2" gutterBottom>
+          Idioma:
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {bf?.language}
+        </Typography>
+      </Box>
+      <Box sx={{ ...styles }}>
+        <Typography variant="subtitle2" gutterBottom>
+          Classificação:
+        </Typography>
+        <Typography variant="subtitle1" >
+          {bf?.cdd} {bf?.cutter}
+        </Typography>
+      </Box>
+      <Typography variant="h4" sx={{ p: "1rem" }}>
+        Instância
+      </Typography>
+      <Divider sx={{ mb: "0.5rem" }} />
+      <Box sx={{ ...styles }}>
+      <Typography variant="subtitle2" gutterBottom>
+          Instance de:
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {bf?.work_id}
+        </Typography>
+        <Typography variant="subtitle2" gutterBottom>
+          Título:
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {bf?.mainTitle}
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {bf?.subtitle}
+        </Typography>
       </Box>
     </Grid>
   );

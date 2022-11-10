@@ -20,6 +20,7 @@ export default function SearchSubject({
   handleSearch,
   name,
 }) {
+  
   const inputPros = {
     disabled: disabled,
     startAdornment: disabled ? (
@@ -68,8 +69,9 @@ export default function SearchSubject({
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
-          onSubmit={handleSearch}
+          //type="submit"
+          //onSubmit={handleSearch}
+          onClick={handleSearch}
         >
           <Search
           // onClick={() => {

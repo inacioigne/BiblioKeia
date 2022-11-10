@@ -5,6 +5,9 @@ from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Work.title import Title
 from src.function.bibframe.Work.primaryContribution import PrimaryContribution
+from src.function.bibframe.Work.subject import Subject
+from src.function.bibframe.Work.language import Language
+from src.function.bibframe.Work.classification import Classification
 
 def BfWork(request, work_id):
 
@@ -34,11 +37,23 @@ def BfWork(request, work_id):
     #AdminMetadata
     g = WorkAdmin(g, work_uri, work_id, BF) 
 
+    #Classification
+    g = Classification(g, request, work_uri, BF)
+
+
+    #Language
+    g = Language(g, request, work_uri, BF) 
+
     #Title
     g = Title(g, request, work_uri, BF)
 
     #PrimaryContribution
     g = PrimaryContribution(g, request, work_uri, BF, BFLC)
+
+    #Subject
+    for subject in request.subjects:
+        g = Subject(g, subject, work_uri, BF, MADSRDF)
+    
 
 
     return g

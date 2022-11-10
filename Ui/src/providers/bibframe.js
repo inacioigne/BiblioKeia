@@ -4,13 +4,25 @@ export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
   const [bf, setBf] = useState({
+    work_id: "",
     contentType: "",
     mainTitle: "",
     subtitle: "",
     contributionAgent: "",
     contributionRole: "",
+<<<<<<< HEAD
     contributionID: "",
     contributionRoleUri: ""
+=======
+    contributionRoleUri: "",
+    contributionID: "",
+    subjects: [],
+    language: "",
+    languageCode: "",
+    cdd: "",
+    cutter: ""
+
+>>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
   });
 
   return (

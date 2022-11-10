@@ -45,12 +45,24 @@ export default function Relationship() {
     await dataset.import(stream);
     let r = [];
     for (const quad of dataset) {
+<<<<<<< HEAD
       const relator = { uri: quad.subject.value, relator: quad.object.value };
       r.push(relator);
 
       //setRelators(prevState => [...prevState, relator])
     }
     if (r.length != 0) {
+=======
+      
+      
+      const relator = {uri: quad.subject.value, relator: quad.object.value}
+      r.push(relator);
+      
+      //setRelators(prevState => [...prevState, relator])
+    }
+    if (r.length != 0) {
+      ///console.log('RELATOR: ', relators)
+>>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
       setRelators(r);
     } else {
       setRelators(null);
@@ -71,18 +83,29 @@ export default function Relationship() {
   };
 
   const handleCloseMenu = (relator) => {
+<<<<<<< HEAD
     const obj = relators[relator.target.id]
     console.log('R', relators[relator.target.id])
+=======
+    
+>>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
     setOpenMenu(false);
     setDisabled(true);
     setValue(relator.target.innerText);
     setName("");
     setBf((prevState) => ({
       ...prevState,
+<<<<<<< HEAD
       contributionRole: obj.relator,
       contributionRoleUri: obj.uri,
+=======
+      contributionRole: relator.target.innerText,
+      contributionRoleUri: relator.target.id
+>>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
     }));
+    // console.log(relator.target.id)
   };
+
 
   const inputPros = {
     disabled: disabled,
@@ -168,7 +191,11 @@ export default function Relationship() {
         <MenuList>
           {relators ? (
             relators?.map((relator, index) => (
+<<<<<<< HEAD
               <MenuItem key={index} id={index} onClick={handleCloseMenu}>
+=======
+              <MenuItem key={index} id={relator.uri} onClick={handleCloseMenu}>
+>>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
                 {relator.relator}
               </MenuItem>
             ))

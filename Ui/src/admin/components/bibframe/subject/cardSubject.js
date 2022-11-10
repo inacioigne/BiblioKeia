@@ -14,18 +14,24 @@ import {
 import { Translate, FileDownloadDone } from "@mui/icons-material";
 import { useState } from "react";
 import TranslateSubject from "./translate";
+import { useBf } from "src/providers/bibframe";
 
 export default function CardSubject({
-  subjectDetails, 
+  subjectDetails,
   setSubjectDetails,
   setOpen,
   setDisabled,
   setName,
   setSubject,
   tokenLSCH,
-  uris
+  uris,
+  SetListSubject,
+  listSubject,
+  setOpenThesaurus,
+  type
 }) {
-  
+  const { bf, setBf } = useBf();
+
   const [openTranslate, setOpenTranslate] = useState(false);
   const styleIformation = {
     p: "0.5rem",
@@ -33,29 +39,58 @@ export default function CardSubject({
     gap: "0.5rem",
   };
 
+  const handleTranslate = () => {
+    
+    SetListSubject((prevState) => [
+      ...prevState,
+      {
+        label: subjectDetails?.authority,
+        lang: 'en',
+        type: type,
+        schema: "http://id.loc.gov/authorities/subjects",
+      },
+    ]);
+    setOpenTranslate(true)
+
+  }
+
+
   const handleChoose = () => {
     setDisabled(true);
     setOpen(false);
     setSubject("");
-    setName(subjectDetails?.label);
+    setName(subjectDetails?.authority);
+    SetListSubject((prevState) => [
+      ...prevState,
+      {
+        label: subjectDetails?.authority,
+        lang: 'en',
+        type: type,
+        schema: "http://id.loc.gov/authorities/subjects",
+      },
+    ]);
+    //console.log("LS", listSubject);
   };
 
   if (subjectDetails) {
-    
     return (
       <>
         <Card sx={{ minWidth: 350, width: 450 }}>
           <CardContent>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Typography variant="h6">{subjectDetails?.label}</Typography>
+              <Typography variant="h6">{subjectDetails?.authority}</Typography>
               <Box>
-                <IconButton
+              <Tooltip title="Clonar e Traduzir">
+              <IconButton
                   color="primary"
                   component="label"
-                  onClick={() => setOpenTranslate(true)}
+                  onClick={handleTranslate}
                 >
                   <Translate />
                 </IconButton>
+
+              </Tooltip>
+                
 
                 <Tooltip title="Escolher">
                   <IconButton
@@ -69,20 +104,23 @@ export default function CardSubject({
               </Box>
             </Box>
             <Divider />
-            <Box sx={{ display: 'flex', justifyContent: "space-between" }}>
+            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               {/* Variantes */}
-            <Box sx={{ ...styleIformation, flexDirection: 'column' }}>
-              <Typography variant="subtitle2">Variantes:</Typography>
-              <Typography variant="body1">{subjectDetails?.variant}</Typography>
-            </Box>
-            {/* Termo Relacionado */}
-            <Box sx={{ ...styleIformation, flexDirection: 'column' }}>
-              <Typography variant="subtitle2">Termo Relacionado:</Typography>
-              <Typography variant="body1">{subjectDetails?.reciprocalAuthority}</Typography>
+              <Box sx={{ ...styleIformation, flexDirection: "column" }}>
+                <Typography variant="subtitle2">Variantes:</Typography>
+                <Typography variant="body1">
+                  {subjectDetails?.variant}
+                </Typography>
+              </Box>
+              {/* Termo Relacionado */}
+              <Box sx={{ ...styleIformation, flexDirection: "column" }}>
+                <Typography variant="subtitle2">Termo Relacionado:</Typography>
+                <Typography variant="body1">
+                  {subjectDetails?.reciprocalAuthority}
+                </Typography>
+              </Box>
             </Box>
 
-            </Box>
-            
             {/* narrowerAuthorit */}
             {subjectDetails?.narrowerAuthority?.length !== 0 && (
               <Box sx={{ ...styleIformation, flexDirection: "column" }}>
@@ -104,10 +142,15 @@ export default function CardSubject({
           open={openTranslate}
           setOpen={setOpenTranslate}
           subjectDetails={subjectDetails}
-          setSubjectDetails={setSubjectDetails} 
+          setSubjectDetails={setSubjectDetails}
           tokenLSCH={tokenLSCH}
           uris={uris}
-          
+          SetListSubject={SetListSubject}
+          setName={setName}
+          setSubject={setSubject}
+          setDisabled={setDisabled}
+          setOpenThesaurus={setOpenThesaurus}
+          type={type}
         />
       </>
     );

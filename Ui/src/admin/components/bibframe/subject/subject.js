@@ -1,13 +1,13 @@
 import {
   Box,
-  Typography,
-  TextField,
-  InputAdornment,
-  IconButton,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Select,
+  //Typography,
+  // TextField,
+  // InputAdornment,
+  // IconButton,
+  // MenuItem,
+  // FormControl,
+  // InputLabel,
+  // Select,
 } from "@mui/material/";
 import { useState } from "react";
 //import { Search, Close } from "@mui/icons-material";
@@ -16,7 +16,7 @@ import Type from "./type";
 import SearchSubject from "./searchSubject";
 import { api } from "src/services/loc";
 
-export default function SubjectField() {
+export default function SubjectField({ listSubject, SetListSubject }) {
   const [disabled, setDisabled] = useState(false);
   const [subject, setSubject] = useState("");
   const [open, setOpen] = useState(false);
@@ -25,7 +25,6 @@ export default function SubjectField() {
   const [name, setName] = useState("");
 
   const getData = (subject, type) => {
-    //console.log(subject, type);
     api
       .get("authorities/subjects/suggest2/", {
         params: {
@@ -34,7 +33,6 @@ export default function SubjectField() {
         },
       })
       .then((response) => {
-        //console.log(response);
         setHits(response.data.hits);
       })
       .catch(function (error) {
@@ -57,25 +55,23 @@ export default function SubjectField() {
         gap: "1rem",
       }}
     >
-      <form onSubmit={handleSearch}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem",
-          }}
-        >
-          <Type setType={setType} type={type} />
-          <SearchSubject
-            setSubject={setSubject}
-            subject={subject}
-            disabled={disabled}
-            setDisabled={setDisabled}
-            handleSearch={handleSearch}
-            name={name}
-          />
-        </Box>
-      </form>
+      <Box
+        sx={{
+          display: "flex",
+          gap: "1rem",
+        }}
+      >
+        <Type setType={setType} type={type} />
+        <SearchSubject
+          setSubject={setSubject}
+          subject={subject}
+          disabled={disabled}
+          setDisabled={setDisabled}
+          handleSearch={handleSearch}
+          name={name}
+        />
+      </Box>
+
       <Thesaurus
         open={open}
         setOpen={setOpen}
@@ -85,10 +81,12 @@ export default function SubjectField() {
         subject={subject}
         disabled={disabled}
         type={type}
-        setType={setType} 
+        setType={setType}
         handleSearch={handleSearch}
         hits={hits}
         setDisabled={setDisabled}
+        SetListSubject={SetListSubject}
+        listSubject={listSubject}
       />
     </Box>
   );
