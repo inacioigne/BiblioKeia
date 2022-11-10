@@ -10,6 +10,11 @@ class Work_Schema(BaseModel):
     contributionRole: str
     contributionRoleUri: str
     subjects: list
+    language: str
+    languageCode: str
+    cdd: str
+    cutter: str
+
     
 test = {
   "contentType": "text",
@@ -30,5 +35,9 @@ test = {
      "lang": "en", 
      "type": "ComplexType", "schema": "http://id.loc.gov/authorities/subjects"
     }
-  ]
+  ],
+  "language": "Portugues",
+  "languageCode": "por",
+  "cdd": "584.6",
+  "cutter": "A586w"
 }

@@ -4,6 +4,7 @@ export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
   const [bf, setBf] = useState({
+    work_id: "",
     contentType: "",
     mainTitle: "",
     subtitle: "",
@@ -13,7 +14,9 @@ export const BfProvider = ({ children }) => {
     contributionID: "",
     subjects: [],
     language: "",
-    languageCode: ""
+    languageCode: "",
+    cdd: "",
+    cutter: ""
 
   });
 

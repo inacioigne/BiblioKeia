@@ -30,7 +30,7 @@
             lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg" ] ;
     bf:classification [ a bf:ClassificationLcc ;
             bf:classificationPortion "BD241" ;
-            bf:itemPortion ".P65x 1968" ] ;
+            bf:itemPortion ".P65x 1968" ] ; 
     bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;

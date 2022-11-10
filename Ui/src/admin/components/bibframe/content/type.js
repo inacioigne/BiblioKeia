@@ -141,11 +141,7 @@ export default function Type() {
         onClick={handleClick}
         onChange={(e) => {
           handleOnChange(e.target.value);
-          //setName(e.target.value);
-          // setValues((prevState) => ({
-          //   ...prevState,
-          //   contentType: e.target.value,
-          // }));
+
         }}
         value={value}
         label="Conteúdo"

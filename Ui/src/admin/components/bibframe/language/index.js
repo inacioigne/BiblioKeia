@@ -6,7 +6,7 @@ import {
   MenuList,
   MenuItem,
   InputAdornment,
-  IconButton
+  IconButton,
 } from "@mui/material/";
 import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
@@ -16,7 +16,7 @@ import { useBf } from "src/providers/bibframe";
 import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
 
-export default function Language({}) {
+export default function Language() {
   const { bf, setBf } = useBf();
   const [languages, setLanguages] = useState(null);
   const [openMenu, setOpenMenu] = useState(null);
@@ -27,20 +27,15 @@ export default function Language({}) {
     const client = new SparqlClient({
       endpointUrl: "http://localhost:3030/language/sparql",
     });
-    // const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-    // SELECT ?language ?code
-    //  WHERE { 
-    //      ?subject madsrdf:authoritativeLabel ?language .
-    //   FILTER regex(?language, "^${data}") 
-    //   ?subject madsrdf:code ?code }
-    // LIMIT 10`;
-    const query =  `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-    SELECT ?language 
-     WHERE { 
-         ?subject madsrdf:authoritativeLabel ?language .
-   
-  }
-    LIMIT 10`
+
+    const query = `PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+      SELECT ?object ?code
+      WHERE {
+        ?subject madsrdf:authoritativeLabel ?object
+        FILTER regex(?object, "^${data}") 
+        ?subject madsrdf:code ?code
+      }
+      LIMIT 10`;
 
     const stream = await client.query.select(query);
 
@@ -48,9 +43,8 @@ export default function Language({}) {
     await dataset.import(stream);
     let r = [];
     for (const quad of dataset) {
-        console.log(quad)
-      r.push( quad.language.value  );
-      
+      let obj = { language: quad.object.value, code: quad.code.value };
+      r.push(obj);
     }
     if (r.length != 0) {
       setLanguages(r);
@@ -60,7 +54,7 @@ export default function Language({}) {
   }
 
   const handleOnChange = (str) => {
-    setValue(str)
+    setValue(str);
     getLanguage(str);
   };
 
@@ -72,15 +66,16 @@ export default function Language({}) {
     }
   };
 
-  const handleCloseMenu = (language) => {
+  function handleCloseMenu(language) {
     setOpenMenu(false);
     setDisabled(true);
     setValue("");
     setBf((prevState) => ({
       ...prevState,
-      language: language.target.innerText,
+      language: language.language,
+      languageCode: language.code,
     }));
-  };
+  }
 
   const inputPros = {
     disabled: disabled,
@@ -169,7 +164,12 @@ export default function Language({}) {
           <MenuList>
             {languages ? (
               languages?.map((language, index) => (
-                <MenuItem key={index} onClick={handleCloseMenu}>
+                <MenuItem
+                  key={index}
+                  onClick={() => {
+                    handleCloseMenu(language);
+                  }}
+                >
                   {language.language}
                 </MenuItem>
               ))
