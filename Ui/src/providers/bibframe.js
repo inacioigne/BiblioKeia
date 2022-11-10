@@ -10,10 +10,6 @@ export const BfProvider = ({ children }) => {
     subtitle: "",
     contributionAgent: "",
     contributionRole: "",
-<<<<<<< HEAD
-    contributionID: "",
-    contributionRoleUri: ""
-=======
     contributionRoleUri: "",
     contributionID: "",
     subjects: [],
@@ -22,7 +18,6 @@ export const BfProvider = ({ children }) => {
     cdd: "",
     cutter: ""
 
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
   });
 
   return (
