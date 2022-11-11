@@ -1,0 +1,24 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/bibframe/instance/bk-22-3> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Conjectures and refutations: the growth of scientific" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2022-11-11"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-11-11T16:13:34.873078"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-22-3" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "417 p." ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations: the growth of scientific" ;
+            bf:mainTitle "Conjectures and refutations" ;
+            bf:subtitle "the growth of scientific" ] .
+

@@ -35,19 +35,20 @@ export default function TitleInformation(
   //{ values, setValues } 
   ) {
 
-  const { bf, setBf } = useBf()
+  const { work, setWork } = useBf()
+  
   const [type, setType] = useState("Title");
   //const [mainTitle, setMainTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
 
   const handleOnChangeMainTitle = (e) => {
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       mainTitle: e.target.value,
     }));
   };
   const handleChangeSubtitle = (e) => {
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       subtitle: e.target.value,
     }));
@@ -76,13 +77,9 @@ export default function TitleInformation(
       </FormControl>
 
       <TextField
-        // onChange={(e) => {
-        //   setMainTitle(e.target.value);
-          
-        // }}
+        
         onChange={handleOnChangeMainTitle}
-        //value={mainTitle}
-        value={bf.mainTitle}
+        value={work.mainTitle}
         fullWidth
         label="Titulo principal"
         InputProps={inputPros}
@@ -91,7 +88,7 @@ export default function TitleInformation(
       <TextField
         onChange={handleChangeSubtitle}
         //value={subtitle}
-        value={bf.subtitle}
+        value={work.subtitle}
         fullWidth
         label="Subtítulo"
         InputProps={inputPros}

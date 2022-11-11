@@ -15,13 +15,13 @@ const styles = { px: "1rem" };
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
 
-export default function Preview({ values }) {
-  const { bf } = useBf();
+export default function WorkPreview() {
+  const { work } = useBf();
   return (
     <Grid xs={4} bgcolor={grey[200]}>
       <Box sx={{ p: "1rem" }}>
         <Typography variant="h4">Work</Typography>
-        <Typography variant="subtitle2">{bf?.work_id}</Typography>
+        <Typography variant="subtitle2">{work.work_id}</Typography>
       </Box>
 
       <Divider sx={{ mb: "0.5rem" }} />
@@ -30,7 +30,7 @@ export default function Preview({ values }) {
           Tipo de conteúdo:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.contentType}
+          {work?.contentType}
         </Typography>
       </Box>
       <Box sx={{ ...styles }}>
@@ -38,10 +38,10 @@ export default function Preview({ values }) {
           Título:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.mainTitle}
+          {work?.mainTitle}
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.subtitle}
+          {work?.subtitle}
         </Typography>
       </Box>
       <Box sx={{ ...styles }}>
@@ -49,10 +49,10 @@ export default function Preview({ values }) {
           Auhtor:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.contributionAgent}
+          {work?.contributionAgent}
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.contributionRole}
+          {work?.contributionRole}
         </Typography>
       </Box>
       <Box sx={{ ...styles }}>
@@ -60,7 +60,7 @@ export default function Preview({ values }) {
           Idioma:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.language}
+          {work?.language}
         </Typography>
       </Box>
       <Box sx={{ ...styles }}>
@@ -68,10 +68,10 @@ export default function Preview({ values }) {
           Classificação:
         </Typography>
         <Typography variant="subtitle1">
-          {bf?.cdd} {bf?.cutter}
+          {work?.cdd} {work?.cutter}
         </Typography>
       </Box>
-      <Typography variant="h4" sx={{ p: "1rem" }}>
+      {/* <Typography variant="h4" sx={{ p: "1rem" }}>
         Instância
       </Typography>
       <Divider sx={{ mb: "0.5rem" }} />
@@ -80,18 +80,18 @@ export default function Preview({ values }) {
           Instance de:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.work_id}
+          {work?.work_id}
         </Typography>
         <Typography variant="subtitle2" gutterBottom>
           Título:
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.mainTitle}
+          {work?.mainTitle}
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
-          {bf?.subtitle}
+          {work?.subtitle}
         </Typography>
-      </Box>
+      </Box> */}
     </Grid>
   );
 }

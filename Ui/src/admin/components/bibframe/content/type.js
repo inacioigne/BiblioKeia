@@ -19,8 +19,7 @@ import rdf from "rdf-ext";
 import { useBf } from "src/providers/bibframe";
 
 export default function Type() {
-
-  const { bf, setBf } = useBf();
+  const { work, setWork } = useBf();
 
   const [openMenu, setOpenMenu] = useState(null);
   const [contentTypes, setContentTypes] = useState(null);
@@ -70,62 +69,121 @@ export default function Type() {
     setOpenMenu(false);
     setDisabled(true);
     setValue("");
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       contentType: relator.target.innerText,
     }));
   };
 
+  // const inputPros = {
+  //   disabled: disabled,
+  //   startAdornment: disabled ? (
+  //     <InputAdornment position="start">
+  //       <Typography
+  //         variant="subtitle2"
+  //         gutterBottom
+  //         sx={{
+  //           display: "flex",
+  //         }}
+  //       >
+  //         <Box
+  //           sx={{
+  //             borderRight: "solid 1px",
+  //             borderTopLeftRadius: "5px",
+  //             borderBottomLeftRadius: "5px",
+  //             px: "5px",
+  //             pt: "2px",
+  //             backgroundColor: blue[200],
+  //           }}
+  //         >
+  //           {work.contentType}
+  //         </Box>
+  //         <Close
+  //           sx={{
+  //             fontSize: "25px",
+  //             px: "5px",
+  //             color: blue[800],
+  //             backgroundColor: red[200],
+  //             cursor: "pointer",
+  //             borderTopRightRadius: "5px",
+  //             borderBottomRightRadius: "5px",
+  //           }}
+  //           onClick={(e) => {
+  //             setDisabled(false);
+  //             let rect = e.currentTarget.getBoundingClientRect();
+  //             setOpenMenu(rect.top + rect.height + 19);
+  //           }}
+  //         />
+  //       </Typography>
+  //     </InputAdornment>
+  //   ) : null,
+  //   endAdornment: (
+  //     <InputAdornment position="end">
+  //       <IconButton
+  //         color="primary"
+  //         aria-label="search"
+  //         component="button"
+  //         type="submit"
+  //       >
+  //         <Search />
+  //       </IconButton>
+  //     </InputAdornment>
+  //   ),
+  // };
+
   const inputPros = {
     disabled: disabled,
-    startAdornment: disabled ? (
-      <InputAdornment position="start">
-        <Typography
-          variant="subtitle2"
-          gutterBottom
-          sx={{
-            display: "flex",
-          }}
-        >
-          <Box
+    startAdornment:
+      work.contentType !== "" ? (
+        <InputAdornment position="start">
+          <Typography
+            variant="subtitle2"
+            gutterBottom
             sx={{
-              borderRight: "solid 1px",
-              borderTopLeftRadius: "5px",
-              borderBottomLeftRadius: "5px",
-              px: "5px",
-              pt: "2px",
-              backgroundColor: blue[200],
+              display: "flex",
             }}
           >
-            {bf.contentType}
-          </Box>
-
-          <Close
-            sx={{
-              fontSize: "25px",
-              px: "5px",
-              color: blue[800],
-              backgroundColor: red[200],
-              cursor: "pointer",
-              borderTopRightRadius: "5px",
-              borderBottomRightRadius: "5px",
-            }}
-            onClick={(e) => {
-              setDisabled(false);
-              let rect = e.currentTarget.getBoundingClientRect();
-              setOpenMenu(rect.top + rect.height + 19);
-            }}
-          />
-        </Typography>
-      </InputAdornment>
-    ) : null,
+            <Box
+              sx={{
+                borderRight: "solid 1px",
+                borderTopLeftRadius: "5px",
+                borderBottomLeftRadius: "5px",
+                px: "5px",
+                pt: "2px",
+                backgroundColor: blue[200],
+              }}
+            >
+              {work.contentType}
+            </Box>
+            <Close
+              sx={{
+                fontSize: "25px",
+                px: "5px",
+                color: blue[800],
+                backgroundColor: red[200],
+                cursor: "pointer",
+                borderTopRightRadius: "5px",
+                borderBottomRightRadius: "5px",
+              }}
+              onClick={(e) => {
+                setDisabled(false);
+                setWork((prevState) => ({
+                  ...prevState,
+                  contentType: "",
+                }));
+                let rect = e.currentTarget.getBoundingClientRect();
+                setOpenMenu(rect.top + rect.height + 19);
+              }}
+            />
+          </Typography>
+        </InputAdornment>
+      ) : null,
     endAdornment: (
       <InputAdornment position="end">
         <IconButton
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
         >
           <Search />
         </IconButton>
@@ -141,7 +199,6 @@ export default function Type() {
         onClick={handleClick}
         onChange={(e) => {
           handleOnChange(e.target.value);
-
         }}
         value={value}
         label="Conteúdo"

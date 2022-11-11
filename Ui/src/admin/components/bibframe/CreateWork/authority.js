@@ -14,8 +14,11 @@ import { useState } from "react";
 import SearchLCNAF from "./search_LCNAF";
 import { api } from "src/services/lcnfa";
 import { blue, red } from "@mui/material/colors/";
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
 
 export default function Authority() {
+  const { work, setWork } = useBf();
   const [value, setValue] = useState("Lorem ipsum");
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(null);
@@ -49,7 +52,8 @@ export default function Authority() {
 
   const inputPros = {
     disabled: disabled,
-    startAdornment: disabled ? (
+    startAdornment: 
+    work.contributionAgent !== "" ? (
       <InputAdornment position="start">
         <Typography
           variant="subtitle2"
@@ -68,7 +72,7 @@ export default function Authority() {
               backgroundColor: blue[200],
             }}
           >
-            {value}
+            {work.contributionAgent}
           </Box>
 
           <Close
@@ -83,6 +87,10 @@ export default function Authority() {
             }}
             onClick={() => {
               setDisabled(false);
+              setWork((prevState) => ({
+                ...prevState,
+                contributionAgent: "",
+              }));
             }}
           />
         </Typography>
@@ -120,6 +128,7 @@ export default function Authority() {
               label="Tipo"
               onChange={(event) => {
                 setType(event.target.value);
+                
               }}
               value={type}
             >
@@ -135,8 +144,13 @@ export default function Authority() {
           <TextField
             onChange={(e) => {
               setName(e.target.value); 
+              // setWork((prevState) => ({
+              //   ...prevState,
+              //   contributionAgent: event.target.value,
+              // }));
             }}
             value={name}
+            //value={work.contributionAgent}
             fullWidth
             label="Search LCNAF"
             InputProps={inputPros}

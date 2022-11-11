@@ -20,7 +20,7 @@ import {
 import { useBf } from "src/providers/bibframe"
 
 export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisabled, setName}) {
-  const { bf, setBf } = useBf()
+  const { setWork } = useBf()
 
   const styleIformation = {
     p: "0.5rem",
@@ -33,7 +33,7 @@ export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisa
     setOpen(false)
     setName("")
     setValue(authorityDetails?.personalName)
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       contributionAgent: authorityDetails?.personalName,
       contributionID: authorityDetails.token

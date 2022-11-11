@@ -27,15 +27,7 @@ export default function Subject({ listSubject, SetListSubject }) {
                   listSubject={listSubject}  
                   SetListSubject={SetListSubject}
                 />
-                {/* <IconButton
-                  color="primary"
-                  component="label"
-                  onClick={() =>
-                    console.log(field)
-                  }
-                >
-                  <RemoveIcon />
-                </IconButton> */}
+               
               </Box>
             ))}
             <Button
@@ -46,24 +38,10 @@ export default function Subject({ listSubject, SetListSubject }) {
             >
               Mais Assuntos
             </Button>
-            {/* <code>{fields}</code> */}
-
-            {/* <IconButton
-              color="primary"
-              component="label"
-              onClick={() =>
-                setFields((prevState) => [...prevState, [fields] + 1])
-              }
-            >
-              <AddIcon />
-            </IconButton> */}
+            
           </Box>
         </Paper>
-        {listSubject.map((subject, index) => (
-          <code key={index}>
-            List{index}: {subject.label}
-          </code>
-        ))}
+        
       </Box>
     </Box>
   );

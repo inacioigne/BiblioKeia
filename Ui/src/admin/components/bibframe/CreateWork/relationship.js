@@ -20,7 +20,7 @@ import { useBf } from "src/providers/bibframe"
 
 export default function Relationship() {
 
-  const { bf, setBf } = useBf()
+  const { work, setWork } = useBf()
 
   const [openMenu, setOpenMenu] = useState(null);
   const [relators, setRelators] = useState([]);
@@ -80,7 +80,7 @@ export default function Relationship() {
     setDisabled(true);
     setValue(relator.target.innerText);
     setName("");
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       contributionRole: relator.target.innerText,
       contributionRoleUri: relator.target.id
@@ -91,7 +91,8 @@ export default function Relationship() {
 
   const inputPros = {
     disabled: disabled,
-    startAdornment: disabled ? (
+    startAdornment: 
+    work.contributionRole !== "" ? (
       <InputAdornment position="start">
         <Typography
           variant="subtitle2"
@@ -110,7 +111,7 @@ export default function Relationship() {
               backgroundColor: blue[200],
             }}
           >
-            {value}
+             {work.contributionRole}
           </Box>
 
           <Close
@@ -125,6 +126,10 @@ export default function Relationship() {
             }}
             onClick={(e) => {
               setDisabled(false);
+              setWork((prevState) => ({
+                ...prevState,
+                contributionRole: "",
+              }));
               let rect = e.currentTarget.getBoundingClientRect();
               setOpenMenu(rect.top + rect.height + 19);
             }}
@@ -138,7 +143,7 @@ export default function Relationship() {
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
+          //type="submit"
         >
           <Search />
         </IconButton>

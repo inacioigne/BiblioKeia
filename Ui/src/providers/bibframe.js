@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
-  const [bf, setBf] = useState({
+  const [work, setWork] = useState({
     work_id: "",
     contentType: "",
     mainTitle: "",
@@ -16,15 +16,20 @@ export const BfProvider = ({ children }) => {
     language: "",
     languageCode: "",
     cdd: "",
-    cutter: ""
+    cutter: "",
+  });
 
+  const [instance, setInstances] = useState({
+    instanceOf: null,
+    mainTitle: "",
+    
   });
 
   return (
-    <BfContext.Provider value={{ bf, setBf}}>
-        { children}
+    <BfContext.Provider value={{ work, setWork, instance, setInstances }}>
+      {children}
     </BfContext.Provider>
-  )
+  );
 };
 
 export const useBf = () => useContext(BfContext);

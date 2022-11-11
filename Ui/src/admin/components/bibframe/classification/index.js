@@ -13,17 +13,17 @@ import { useState } from "react";
 import { useBf } from "src/providers/bibframe";
 
 export default function Classification() {
-  const { bf, setBf } = useBf();
+  const { work, setWork } = useBf();
 
   const handleOnChangeCdd = (str) => {
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       cdd: str,
     }));
   };
 
   const handleOnChangeCutter = (str) => {
-    setBf((prevState) => ({
+    setWork((prevState) => ({
         ...prevState,
         cutter: str,
       }));
@@ -38,7 +38,7 @@ export default function Classification() {
           onChange={(e) => {
             handleOnChangeCdd(e.target.value);
           }}
-          value={bf.cdd}
+          value={work.cdd}
           label="CDD"
         />
         <TextField
@@ -46,7 +46,7 @@ export default function Classification() {
           onChange={(e) => {
             handleOnChangeCutter(e.target.value);
           }}
-          value={bf.cutter}
+          value={work.cutter}
           label="Cutter"
         />
       </Paper>

@@ -3,7 +3,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from src.routes.users import login
 from src.routes.users import users
-from src.routes.cataloguing import images, generateId, work
+from src.routes.cataloguing import images, generateId, work, instances
 from src.routes.translate import translate
 from src.routes.thesaurus import subjects
 #from src.routes.cataloguing import generateId
@@ -41,6 +41,7 @@ app.include_router(users.router, prefix='/user', tags=['Users'])
 app.include_router(images.router, prefix='/items', tags=['Images'])
 app.include_router(generateId.router, prefix='/items', tags=['Cataloguing'])
 app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work'])
+app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing Instances'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 app.include_router(subjects.router, prefix='/thesaurus', tags=['Thesaurus'])
 

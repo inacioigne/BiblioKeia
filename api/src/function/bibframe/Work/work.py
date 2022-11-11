@@ -1,5 +1,5 @@
 
-from rdflib import Graph, Namespace, URIRef
+from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, RDFS
 
 from src.function.bibframe.Work.workAdmin import WorkAdmin
@@ -9,7 +9,7 @@ from src.function.bibframe.Work.subject import Subject
 from src.function.bibframe.Work.language import Language
 from src.function.bibframe.Work.classification import Classification
 
-def BfWork(request, work_id):
+def BfWork(request, work_id): 
 
     work_uri = URIRef(f"http://bibliokeia.com/bibframe/work/{work_id}") 
     g = Graph(identifier=work_uri)
@@ -44,8 +44,13 @@ def BfWork(request, work_id):
     #Language
     g = Language(g, request, work_uri, BF) 
 
+    if request.subtitle: 
+        label = Literal(f'{request.mainTitle}: {request.subtitle}')
+    else:
+        label = Literal(request.mainTitle)
+
     #Title
-    g = Title(g, request, work_uri, BF)
+    g = Title(g, request, work_uri, label, BF)
 
     #PrimaryContribution
     g = PrimaryContribution(g, request, work_uri, BF, BFLC)

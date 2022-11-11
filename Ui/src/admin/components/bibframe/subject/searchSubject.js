@@ -18,12 +18,14 @@ export default function SearchSubject({
   disabled,
   setDisabled,
   handleSearch,
-  name,
+  name, 
+  setName
 }) {
   
   const inputPros = {
     disabled: disabled,
-    startAdornment: disabled ? (
+    startAdornment: 
+    name !== "" ? (
       <InputAdornment position="start">
         <Typography
           variant="subtitle2"
@@ -57,6 +59,7 @@ export default function SearchSubject({
             }}
             onClick={() => {
               setDisabled(false);
+              setName("")
             }}
           />
         </Typography>

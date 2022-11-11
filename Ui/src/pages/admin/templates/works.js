@@ -6,7 +6,6 @@ import {
   MenuItem,
   ListItemText,
   Button,
-  //Divider,
 } from "@mui/material/";
 import { grey } from "@mui/material/colors/";
 import { useState, useEffect } from "react";
@@ -14,11 +13,12 @@ import Content from "src/admin/components/bibframe/content";
 import CreateWork from "src/admin/components/bibframe/CreateWork";
 import Title from "src/admin/components/bibframe/title";
 import Subject from "src/admin/components/bibframe/subject";
-import Preview from "src/admin/components/preview";
+import Preview from "src/admin/components/work_preview";
 import Language from "src/admin/components/bibframe/language";
 import Classification from "src/admin/components/bibframe/classification";
 import { CataloguingApi } from "src/services/cataloguing/create";
 import { api } from "src/services/api";
+import { useRouter } from "next/router";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
@@ -54,43 +54,43 @@ const metadado_work = [
   "Classificação",
 ];
 
-const metadado_instance = [
-  "Título",
-  
-];
+export default function Works() {
+  const router = useRouter();
 
-export default function Monograph() {
   const [visible, setVisible] = useState(0);
   const [listSubject, SetListSubject] = useState([]);
-  const [id, setId] = useState(null)
+  const [id, setId] = useState(null);
 
-  const { bf, setBf } = useBf();
-  
+  const { work, setWork } = useBf();
 
   useEffect(() => {
-
-    api.get("/items/next_id")
+    api
+      .get("/items/next_id")
       .then((response) => {
         console.log("Api", response.data.id);
-        setId(response.data.id)
+        //setId(response.data.id);
+        setWork((prevState) => ({
+          ...prevState,
+          work_id: response.data.id,
+        }));
       })
       .catch(function (error) {
         console.log("ER", error);
       });
 
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
-      work_id: id,
       subjects: listSubject,
     }));
-  }, [listSubject]);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit", bf);
-    setVisible(6)
+    console.log("Submit", work);
+    //setVisible(6)
+    router.push(`/admin/templates/instances?workid=${work.work_id}`);
 
-    // CataloguingApi.post("work", bf)
+    // CataloguingApi.post("work", work)
     //   .then((response) => {
     //     console.log("Api", response);
     //   })
@@ -124,7 +124,7 @@ export default function Monograph() {
             </MenuItem>
           ))}
         </MenuList>
-        <Typography variant="h5" gutterBottom>
+        {/* <Typography variant="h5" gutterBottom>
           Instância
         </Typography>
         <MenuList>
@@ -132,20 +132,20 @@ export default function Monograph() {
             <MenuItem
               key={index}
               sx={
-                visible == index+6
+                visible == index + 6
                   ? {
                       ...styleItemMenunActive,
                     }
                   : { ...styleItemMenun }
               }
               onClick={() => {
-                setVisible(index+6);
+                setVisible(index + 6);
               }}
             >
               <ListItemText>{metadata}</ListItemText>
             </MenuItem>
           ))}
-        </MenuList>
+        </MenuList> */}
       </Grid>
 
       <Grid xs={5} bgcolor={grey[100]}>
@@ -157,30 +157,28 @@ export default function Monograph() {
             }}
           >
             {/* Content Type*/}
-            {visible === 0 && (
-              <Content
-              //values={bf} setValues={setBf}
-              />
-            )}
+            {visible === 0 && <Content />}
             {/* Title */}
-            {visible === 1 && (
-              <Title />
-            )}
+            {visible === 1 && <Title />}
             {/* Creator of Work */}
             {visible === 2 && <CreateWork />}
             {/* Subject */}
-            {visible === 3 && (
+
+            <Box
+              sx={visible === 3 ? { display: "block" } : { display: "none" }}
+            >
               <Subject
                 listSubject={listSubject}
                 SetListSubject={SetListSubject}
               />
-            )}
+            </Box>
+
             {/* Idioma */}
             {visible === 4 && <Language />}
             {/* Classification */}
             {visible === 5 && <Classification />}
             {/* Instance */}
-            {visible === 6 && <Title /> }
+            {visible === 6 && <Title />}
           </Box>
 
           <Box

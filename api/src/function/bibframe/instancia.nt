@@ -1,0 +1,57 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+<http://id.loc.gov/resources/instances/1893399> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "MH" ] ;
+            bf:changeDate "2008-05-09T11:03:06"^^xsd:dateTime ;
+            bf:creationDate "1983-12-01"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T20:33:57-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "1893399" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:copyrightDate "1965"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "21 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiii, 417 p." ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "   83672449 " ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/1893399> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Harper & Row" ] ;
+            bf:date "1968, c1965" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1968"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:provisionActivityStatement "New York : Harper & Row, 1968, c1965." ;
+    bf:responsibilityStatement "by Karl R. Popper" ;
+    bf:seriesStatement "Harper torchbooks ; TB 1376" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations" ;
+            bf:subtitle "the growth of scientific knowledge" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+

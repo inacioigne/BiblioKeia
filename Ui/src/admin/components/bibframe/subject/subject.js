@@ -69,6 +69,7 @@ export default function SubjectField({ listSubject, SetListSubject }) {
           setDisabled={setDisabled}
           handleSearch={handleSearch}
           name={name}
+          setName={setName}
         />
       </Box>
 

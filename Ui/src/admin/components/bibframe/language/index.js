@@ -17,7 +17,7 @@ import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
 
 export default function Language() {
-  const { bf, setBf } = useBf();
+  const { work, setWork } = useBf();
   const [languages, setLanguages] = useState(null);
   const [openMenu, setOpenMenu] = useState(null);
   const [disabled, setDisabled] = useState(false);
@@ -70,7 +70,7 @@ export default function Language() {
     setOpenMenu(false);
     setDisabled(true);
     setValue("");
-    setBf((prevState) => ({
+    setWork((prevState) => ({
       ...prevState,
       language: language.language,
       languageCode: language.code,
@@ -79,7 +79,8 @@ export default function Language() {
 
   const inputPros = {
     disabled: disabled,
-    startAdornment: disabled ? (
+    startAdornment: 
+    work.language !== "" ? (
       <InputAdornment position="start">
         <Typography
           variant="subtitle2"
@@ -98,7 +99,7 @@ export default function Language() {
               backgroundColor: blue[200],
             }}
           >
-            {bf.language}
+            {work.language}
           </Box>
 
           <Close
@@ -113,6 +114,10 @@ export default function Language() {
             }}
             onClick={(e) => {
               setDisabled(false);
+              setWork((prevState) => ({
+                ...prevState,
+                language: "",
+              }));
               let rect = e.currentTarget.getBoundingClientRect();
               setOpenMenu(rect.top + rect.height + 19);
             }}
