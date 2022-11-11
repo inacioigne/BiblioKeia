@@ -18,6 +18,7 @@ import Preview from "src/admin/components/preview";
 import Language from "src/admin/components/bibframe/language";
 import Classification from "src/admin/components/bibframe/classification";
 import { CataloguingApi } from "src/services/cataloguing/create";
+import { api } from "src/services/api";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
@@ -61,28 +62,41 @@ const metadado_instance = [
 export default function Monograph() {
   const [visible, setVisible] = useState(0);
   const [listSubject, SetListSubject] = useState([]);
+  const [id, setId] = useState(null)
 
   const { bf, setBf } = useBf();
+  
 
   useEffect(() => {
+
+    api.get("/items/next_id")
+      .then((response) => {
+        console.log("Api", response.data.id);
+        setId(response.data.id)
+      })
+      .catch(function (error) {
+        console.log("ER", error);
+      });
+
     setBf((prevState) => ({
       ...prevState,
-      work_id: "bk-22-3",
+      work_id: id,
       subjects: listSubject,
     }));
   }, [listSubject]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit", bf, listSubject);
+    console.log("Submit", bf);
+    setVisible(6)
 
-    CataloguingApi.post("work", bf)
-      .then((response) => {
-        console.log("Api", response);
-      })
-      .catch(function (error) {
-        console.log("ER", error);
-      });
+    // CataloguingApi.post("work", bf)
+    //   .then((response) => {
+    //     console.log("Api", response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log("ER", error);
+    //   });
   };
 
   return (
@@ -177,7 +191,7 @@ export default function Monograph() {
             }}
           >
             <Button variant="outlined" type="submit">
-              Salvar
+              Salvar e Adicionar Instância
             </Button>
           </Box>
         </form>

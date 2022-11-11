@@ -16,16 +16,17 @@ import SparqlClient from "sparql-http-client";
 import rdf from "rdf-ext";
 
 // BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe";
+import { useBf } from "src/providers/bibframe"
 
 export default function Relationship() {
-  const { bf, setBf } = useBf();
+
+  const { bf, setBf } = useBf()
 
   const [openMenu, setOpenMenu] = useState(null);
-  const [relators, setRelators] = useState(null);
+  const [relators, setRelators] = useState([]);
   const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("Lorem ipsum");
-  const [name, setName] = useState("");
+  const [name, setName] = useState(""); 
 
   async function getRelators(data) {
     const client = new SparqlClient({
@@ -45,14 +46,6 @@ export default function Relationship() {
     await dataset.import(stream);
     let r = [];
     for (const quad of dataset) {
-<<<<<<< HEAD
-      const relator = { uri: quad.subject.value, relator: quad.object.value };
-      r.push(relator);
-
-      //setRelators(prevState => [...prevState, relator])
-    }
-    if (r.length != 0) {
-=======
       
       
       const relator = {uri: quad.subject.value, relator: quad.object.value}
@@ -62,7 +55,6 @@ export default function Relationship() {
     }
     if (r.length != 0) {
       ///console.log('RELATOR: ', relators)
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
       setRelators(r);
     } else {
       setRelators(null);
@@ -71,10 +63,10 @@ export default function Relationship() {
 
   const handleOnChange = (str) => {
     let data = str.charAt(0).toUpperCase() + str.slice(1);
-
     getRelators(data);
   };
   const handleClick = (e) => {
+   
     if (disabled == false) {
       let rect = e.currentTarget.getBoundingClientRect();
       setOpenMenu(rect.top + rect.height);
@@ -83,25 +75,15 @@ export default function Relationship() {
   };
 
   const handleCloseMenu = (relator) => {
-<<<<<<< HEAD
-    const obj = relators[relator.target.id]
-    console.log('R', relators[relator.target.id])
-=======
     
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
     setOpenMenu(false);
     setDisabled(true);
     setValue(relator.target.innerText);
     setName("");
     setBf((prevState) => ({
       ...prevState,
-<<<<<<< HEAD
-      contributionRole: obj.relator,
-      contributionRoleUri: obj.uri,
-=======
       contributionRole: relator.target.innerText,
       contributionRoleUri: relator.target.id
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
     }));
     // console.log(relator.target.id)
   };
@@ -191,11 +173,7 @@ export default function Relationship() {
         <MenuList>
           {relators ? (
             relators?.map((relator, index) => (
-<<<<<<< HEAD
-              <MenuItem key={index} id={index} onClick={handleCloseMenu}>
-=======
               <MenuItem key={index} id={relator.uri} onClick={handleCloseMenu}>
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
                 {relator.relator}
               </MenuItem>
             ))

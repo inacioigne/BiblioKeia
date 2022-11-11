@@ -10,4 +10,4 @@ function Create() {
     return api;
   }
   
-export const CataloguingApi = Create()
+export const CataloguingApi = Create() 

@@ -9,10 +9,6 @@ class Work_Schema(BaseModel):
     contributionID: str
     contributionRole: str
     contributionRoleUri: str
-<<<<<<< HEAD
-    contributionID: str
-    
-=======
     subjects: list
     language: str
     languageCode: str
@@ -45,4 +41,3 @@ test = {
   "cdd": "584.6",
   "cutter": "A586w"
 }
->>>>>>> 8c140787b0eb12d34c23f730070687a8acce2908
