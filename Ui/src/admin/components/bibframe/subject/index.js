@@ -17,7 +17,7 @@ export default function Subject({ listSubject, SetListSubject }) {
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "column", 
               rowGap: "1rem",
             }}
           >

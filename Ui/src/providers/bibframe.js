@@ -22,7 +22,13 @@ export const BfProvider = ({ children }) => {
   const [instance, setInstances] = useState({
     instanceOf: null,
     mainTitle: "",
-    
+    subtitle: "",
+    extent: "",
+    publication: "",
+    place: "",
+    date: "",
+    responsibility: "",
+    series: ""
   });
 
   return (

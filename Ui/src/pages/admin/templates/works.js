@@ -67,8 +67,8 @@ export default function Works() {
     api
       .get("/items/next_id")
       .then((response) => {
-        console.log("Api", response.data.id);
-        //setId(response.data.id);
+        //console.log("Api", response.data.id);
+
         setWork((prevState) => ({
           ...prevState,
           work_id: response.data.id,
@@ -88,7 +88,17 @@ export default function Works() {
     e.preventDefault();
     console.log("Submit", work);
     //setVisible(6)
+    api
+      .post('/cataloguing/work', work)
+      .then((response) => {
+            console.log("Api", response);
+          })
+          .catch(function (error) {
+            console.log("ER", error);
+          });
+
     router.push(`/admin/templates/instances?workid=${work.work_id}`);
+    
 
     // CataloguingApi.post("work", work)
     //   .then((response) => {

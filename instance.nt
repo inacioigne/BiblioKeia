@@ -5,20 +5,27 @@
 
 <http://bibliokeia.com/bibframe/instance/bk-22-3> a bf:Instance,
         bf:Print ;
-    rdfs:label "Conjectures and refutations: the growth of scientific" ;
+    rdfs:label "Philosophy" ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2022-11-11"^^xsd:date ;
+            bf:creationDate "2022-11-16"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2022-11-11T16:13:34.873078"^^xsd:dateTime ] ;
+                    bf:generationDate "2022-11-16T16:05:42.159178"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-22-3" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "417 p." ] ;
+            rdfs:label "345 páginas" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Editora do INPA" ] ;
+            bf:date "2022" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Manaus" ] ] ;
+    bf:responsibilityStatement "Popper, Karl R. (Karl Raimund)" ;
     bf:title [ a bf:Title ;
-            rdfs:label "Conjectures and refutations: the growth of scientific" ;
-            bf:mainTitle "Conjectures and refutations" ;
-            bf:subtitle "the growth of scientific" ] .
+            rdfs:label "Philosophy" ;
+            bf:mainTitle "Philosophy" ] .
 

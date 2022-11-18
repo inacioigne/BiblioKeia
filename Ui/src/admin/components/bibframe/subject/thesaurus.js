@@ -2,12 +2,7 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  //TextField,
-  //InputAdornment,
   IconButton,
-  // FormControl,
-  // Select,
-  // MenuItem,
   Divider,
   Typography,
   Button,
@@ -22,7 +17,6 @@ import Type from "./type";
 import SearchSubject from "./searchSubject";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 import CardSubject from "./cardSubject";
-//import { Search, Close } from "@mui/icons-material";
 
 export default function Thesaurus({
   open,

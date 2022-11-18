@@ -11,7 +11,7 @@ class Work_Schema(BaseModel):
     contributionRoleUri: str
     subjects: list
     language: str
-    languageCode: str
+    languageCode: str 
     cdd: str
     cutter: str
 

@@ -24,6 +24,14 @@ export default function Title() {
       mainTitle: e.target.value,
     }));
   };
+
+  const handleOnChangeSubtitle = (e) => {
+    setInstances((prevState) => ({
+      ...prevState,
+      subtitle: e.target.value,
+    }));
+  };
+
   return (
     <Box bgcolor={grey[100]} p={"2rem"}>
       <Typography variant="subtitle2">Title</Typography>
@@ -50,12 +58,17 @@ export default function Title() {
           </FormControl>
           <TextField
             onChange={handleOnChangeMainTitle}
-            //defaultValue="mainTitle"
             value={instance.mainTitle}
             fullWidth
             label="Titulo principal"
           />
-        </Box>
+          <TextField
+            onChange={handleOnChangeSubtitle}
+            value={instance.subtitle}
+            fullWidth
+            label="Subtítulo"
+          />
+        </Box> 
       </Paper>
     </Box>
   );
