@@ -50,8 +50,6 @@ def BfInstance(request):
     #seriesStatement
     g = SeriesStatement(g, request, instance_uri, BF)
 
-
-
     return g
 
 
