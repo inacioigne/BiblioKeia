@@ -3,7 +3,7 @@ from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Item.shelfMark import ShelfMarkDdc
 
-def BfItem(item, instance): 
+def BfItem(item): 
     item_uri = URIRef(
         f"http://bibliokeia.com/bibframe/item/{item.barcode}")
     g = Graph(identifier=item_uri)
@@ -27,10 +27,12 @@ def BfItem(item, instance):
     g.add((item_uri, BF.heldBy, heldBy)) 
 
     #itemOf
-    itemOf = URIRef(f"http://bibliokeia.com/bibframe/instance/{item.itemOf}")
+    itemOf = URIRef(item.itemOf)
     g.add((item_uri, BF.itemOf, itemOf)) 
 
     g = ShelfMarkDdc(g, item, item_uri, BF)
+
+    return g
 
     
 

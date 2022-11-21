@@ -1,0 +1,56 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Item rdf:about="http://id.loc.gov/resources/items/748300-050-10" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
+    <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:shelfMark>
+      <bf:ShelfMarkLcc>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">PZ3.H3736 Ol</rdfs:label>
+	<bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ShelfMarkLcc>
+    </bf:shelfMark>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n91075066"/>
+	<bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n2021051449"/>
+	<bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Source: Copyright deposit, Sept. 12, 1952.</rdfs:label>
+	<bflc:applicableInstitution rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+      </bf:Note>
+    </bf:note>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/items" xmlns:dcterms="http://purl.org/dc/terms/"/>
+    <bf:itemOf rdf:resource="http://id.loc.gov/resources/instances/748300"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:generationProcess>
+	  <bf:GenerationProcess>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC marc2bibframe2 v1.7.0-SNAPSHOT</rdfs:label>
+	    <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-21T01:30:06.415662-04:00</bf:generationDate>
+	  </bf:GenerationProcess>
+	</bf:generationProcess>
+	<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/c"/>
+	<bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/1" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+	<bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/local"/>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>748300</rdf:value>
+	    <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-20T13:33:01</bf:changeDate>
+	<bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-01-02</bf:creationDate>
+	<lclocal:d906 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=906     $a 7 $b cbc $c orignew $d u $e ocip $f 19 $g y-gencatlg</lclocal:d906>
+	<bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	<bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Item>
+</rdf:RDF>

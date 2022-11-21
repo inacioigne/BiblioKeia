@@ -1,0 +1,20 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/bibframe/item/22-4553> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2022-11-19"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2022-11-19T09:06:49.411489"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "22-4553" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:heldBy <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+    bf:itemOf <http://bibliokeia.com/bibframe/instance/http://bibliokeia.com/bibframe/instance/2> ;
+    bf:shelfMark [ a bf:ShelfMarkDdc ;
+            rdfs:label "654.5 B352a" ] .
+
