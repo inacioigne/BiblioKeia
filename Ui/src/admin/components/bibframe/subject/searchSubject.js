@@ -18,73 +18,64 @@ export default function SearchSubject({
   disabled,
   setDisabled,
   handleSearch,
-  name, 
-  setName
+  name,
+  setName,
 }) {
-  
   const inputPros = {
     disabled: disabled,
-    startAdornment: 
-    name !== "" ? (
-      <InputAdornment position="start">
-        <Typography
-          variant="subtitle2"
-          gutterBottom
-          sx={{
-            display: "flex",
-          }}
-        >
-          <Box
+    startAdornment:
+      name !== "" ? (
+        <InputAdornment position="start">
+          <Typography
+            variant="subtitle2"
+            gutterBottom
             sx={{
-              borderRight: "solid 1px",
-              borderTopLeftRadius: "5px",
-              borderBottomLeftRadius: "5px",
-              px: "5px",
-              pt: "2px",
-              backgroundColor: blue[200],
+              display: "flex",
             }}
           >
-            {name}
-          </Box>
+            <Box
+              sx={{
+                borderRight: "solid 1px",
+                borderTopLeftRadius: "5px",
+                borderBottomLeftRadius: "5px",
+                px: "5px",
+                pt: "2px",
+                backgroundColor: blue[200],
+              }}
+            >
+              {name}
+            </Box>
 
-          <Close
-            sx={{
-              fontSize: "25px",
-              px: "5px",
-              color: blue[800],
-              backgroundColor: red[200],
-              cursor: "pointer",
-              borderTopRightRadius: "5px",
-              borderBottomRightRadius: "5px",
-            }}
-            onClick={() => {
-              setDisabled(false);
-              setName("")
-            }}
-          />
-        </Typography>
-      </InputAdornment>
-    ) : null,
+            <Close
+              sx={{
+                fontSize: "25px",
+                px: "5px",
+                color: blue[800],
+                backgroundColor: red[200],
+                cursor: "pointer",
+                borderTopRightRadius: "5px",
+                borderBottomRightRadius: "5px",
+              }}
+              onClick={() => {
+                setDisabled(false);
+                setName("");
+              }}
+            />
+          </Typography>
+        </InputAdornment>
+      ) : null,
     endAdornment: (
-      // disabled ?
       <InputAdornment position="end">
         <IconButton
           color="primary"
           aria-label="search"
           component="button"
-          //type="submit"
-          //onSubmit={handleSearch}
           onClick={handleSearch}
         >
-          <Search
-          // onClick={() => {
-          //     setDisabled(false);
-          //   }}
-          />
+          <Search />
         </IconButton>
       </InputAdornment>
     ),
-    // : null,
   };
 
   return (

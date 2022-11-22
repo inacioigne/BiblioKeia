@@ -8,7 +8,20 @@ import {
   Button,
 } from "@mui/material/";
 import { grey } from "@mui/material/colors/";
+
+// React Hooks
 import { useState, useEffect } from "react";
+
+// Nextjs Hooks
+import { useRouter } from "next/router";
+
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
+
+// BiblioKeia API
+import { api } from "src/services/api";
+
+// BiblioKeia Components
 import Content from "src/admin/components/bibframe/content";
 import CreateWork from "src/admin/components/bibframe/CreateWork";
 import Title from "src/admin/components/bibframe/title";
@@ -16,12 +29,6 @@ import Subject from "src/admin/components/bibframe/subject";
 import Preview from "src/admin/components/work_preview";
 import Language from "src/admin/components/bibframe/language";
 import Classification from "src/admin/components/bibframe/classification";
-import { CataloguingApi } from "src/services/cataloguing/create";
-import { api } from "src/services/api";
-import { useRouter } from "next/router";
-
-// BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe";
 
 const styleItemMenun = {
   borderRadius: "5px",
@@ -87,7 +94,7 @@ export default function Works() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Submit", work);
-    //setVisible(6)
+
     api
       .post('/cataloguing/work', work)
       .then((response) => {
@@ -99,14 +106,6 @@ export default function Works() {
 
     router.push(`/admin/templates/instances?workid=${work.work_id}`);
     
-
-    // CataloguingApi.post("work", work)
-    //   .then((response) => {
-    //     console.log("Api", response);
-    //   })
-    //   .catch(function (error) {
-    //     console.log("ER", error);
-    //   });
   };
 
   return (
@@ -134,28 +133,7 @@ export default function Works() {
             </MenuItem>
           ))}
         </MenuList>
-        {/* <Typography variant="h5" gutterBottom>
-          Instância
-        </Typography>
-        <MenuList>
-          {metadado_instance.map((metadata, index) => (
-            <MenuItem
-              key={index}
-              sx={
-                visible == index + 6
-                  ? {
-                      ...styleItemMenunActive,
-                    }
-                  : { ...styleItemMenun }
-              }
-              onClick={() => {
-                setVisible(index + 6);
-              }}
-            >
-              <ListItemText>{metadata}</ListItemText>
-            </MenuItem>
-          ))}
-        </MenuList> */}
+  
       </Grid>
 
       <Grid xs={5} bgcolor={grey[100]}>

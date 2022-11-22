@@ -2,8 +2,9 @@ from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Item.shelfMark import ShelfMarkDdc
+from src.function.bibframe.Item.sublocation import Sublocation
 
-def BfItem(item): 
+def BfItem(item, itemOf): 
     item_uri = URIRef(
         f"http://bibliokeia.com/bibframe/item/{item.barcode}")
     g = Graph(identifier=item_uri)
@@ -19,7 +20,7 @@ def BfItem(item):
     g.bind('madsrdf', MADSRDF)
 
     g.add((item_uri, RDF.type, BF.Item)) 
-
+ 
     #AdminMetadata
     g = WorkAdmin(g, item_uri, item.barcode, BF) 
 
@@ -27,10 +28,13 @@ def BfItem(item):
     g.add((item_uri, BF.heldBy, heldBy)) 
 
     #itemOf
-    itemOf = URIRef(item.itemOf)
-    g.add((item_uri, BF.itemOf, itemOf)) 
+    itemOf_uri = URIRef(f"http://bibliokeia.com/bibframe/instance/{itemOf}")
+    g.add((item_uri, BF.itemOf, itemOf_uri)) 
 
     g = ShelfMarkDdc(g, item, item_uri, BF)
+
+    #Sublocation
+    g = Sublocation(g, item, item_uri, BF)
 
     return g
 

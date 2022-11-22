@@ -24,7 +24,7 @@ export const BfProvider = ({ children }) => {
     mainTitle: "",
     subtitle: "",
     extent: "",
-    publication: "",
+    publication: "", 
     place: "",
     date: "",
     responsibility: "",

@@ -5,25 +5,24 @@ class Item(BaseModel):
     shelfMark: str
     sublocation: str
     barcode: str
-    itemOf: str
 
 class Items_Schema(BaseModel):
-    items: List[Item]
+  itemOf: str
+  items: List[Item]
 
 
 {
+  "itemOf": "bk-123",
   "items": [
     {
       "shelfMark": "545.5 B352a",
       "sublocation": "E1.P2",
-      "barcode": "22-4553",
-      "itemOf": "http://bibliokeia.com/bibframe/instance/2"
+      "barcode": "22-4553"
     },
-    {
-      "shelfMark": "545.5 B352a",
+{
+      "shelfMark": "653.5 C563k",
       "sublocation": "E1.P2",
-      "barcode": "22-4553",
-      "itemOf": "http://bibliokeia.com/bibframe/instance/2"
+      "barcode": "22-6532"
     }
   ]
 }

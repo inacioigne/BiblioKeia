@@ -17,21 +17,38 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import ClearIcon from "@mui/icons-material/Clear";
 import { useState } from "react";
 import Field from "src/admin/components/bibframe/items/field";
-import { useForm, useFieldArray, Controller, useWatch } from "react-hook-form";
+import { useForm, useFieldArray, Controller } from "react-hook-form";
+import { api } from "src/services/api";
+
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
 
 export default function Items({ open, setOpen }) {
+  const { instance } = useBf();
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      items: [{ callnumber: "", location: "", register: "" }],
+      items: [{ shelfMark: "", sublocation: "", barcode: "" }],
     },
   });
   const { fields, append, remove } = useFieldArray({ control, name: "items" });
 
-  const onSubmit = (data) => console.log("data", data);
+  const onSubmit = (data) => {
+    data["itemOf"] = instance.instanceOf;
+    //console.log("data", data)
+    api
+      .post("/cataloguing/items", data)
+      .then((response) => {
+        console.log("Api", response);
+        setOpen(false);
+      })
+      .catch(function (error) {
+        console.log("ER", error);
+      });
+  };
 
   const handleClose = () => {
-    //setOpen(false);
-    handleSubmit(onSubmit);
+    // handleSubmit(onSubmit);
+    setOpen(false);
   };
 
   return (
@@ -45,45 +62,40 @@ export default function Items({ open, setOpen }) {
       <Divider />
       <DialogContent>
         <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-         
-            {fields.map((item, index) => (
-              <Box key={item.id} sx={{ display: "flex", gap: "1rem" }}>
-                <Controller
-                  name={`items.${index}.callnumber`}
-                  control={control}
-                  render={({ field }) => (
-                    <TextField {...field} label="Chamada" />
-                  )}
-                />
-                <Controller
-                  name={`items.${index}.location`}
-                  control={control}
-                  render={({ field }) => (
-                    <TextField {...field} label="Localização" />
-                  )}
-                />
+          {fields.map((item, index) => (
+            <Box key={item.id} sx={{ display: "flex", gap: "1rem" }}>
+              <Controller
+                name={`items.${index}.shelfMark`}
+                control={control}
+                render={({ field }) => <TextField {...field} label="Chamada" />}
+              />
+              <Controller
+                name={`items.${index}.sublocation`}
+                control={control}
+                render={({ field }) => (
+                  <TextField {...field} label="Localização" />
+                )}
+              />
 
-                <Controller
-                  name={`items.${index}.register`}
-                  control={control}
-                  render={({ field }) => (
-                    <TextField {...field} label="Registro" />
-                  )}
-                />
-                <IconButton onClick={() => remove(index)}>
-                  <RemoveIcon />
-                </IconButton>
-              </Box>
-            ))}
-       
+              <Controller
+                name={`items.${index}.barcode`}
+                control={control}
+                render={({ field }) => (
+                  <TextField {...field} label="Registro" />
+                )}
+              />
+              <IconButton onClick={() => remove(index)}>
+                <RemoveIcon />
+              </IconButton>
+            </Box>
+          ))}
         </Box>
       </DialogContent>
       <Divider />
       <DialogActions>
         <Button
-    
           onClick={() => {
-            append({ callnumber: "", location: "", register: "" });
+            append({ shelfMark: "", sublocation: "", barcode: "" });
           }}
         >
           Adicionar Item

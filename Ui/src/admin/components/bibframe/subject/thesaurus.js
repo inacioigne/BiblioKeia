@@ -24,6 +24,7 @@ export default function Thesaurus({
   handleSearch,
   hits,
   setDisabled,
+  name,
   setName,
   setType,
   type,
@@ -71,11 +72,12 @@ export default function Thesaurus({
                 }}
               >
                 <Type setType={setType} type={type} />
-                <SearchSubject
+                <SearchSubject 
                   setSubject={setSubject}
                   subject={subject}
                   disabled={disabled}
                   handleSearch={handleSearch}
+                  name={name}
                 />
               </Box>
             </form>

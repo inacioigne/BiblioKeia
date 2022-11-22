@@ -19,7 +19,6 @@ import { apiSubject } from "src/services/thesaurus/creater";
 import { blue, red, green } from "@mui/material/colors/";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import TranslateField from "./translateField";
-//import { useForm, Controller } from "react-hook-form";
 
 export default function TranslateSubject({
   open,
@@ -114,6 +113,7 @@ export default function TranslateSubject({
       })
     })
     objParse['narrowerAuthority'] = narrower
+    console.log(objParse)
 
     apiSubject.post('subject', objParse)
     .then((response) => {
@@ -121,7 +121,7 @@ export default function TranslateSubject({
       setSubject("");
       setDisabled(true);
       setOpen(false)
-      setOpenThesaurus(false)
+      //setOpenThesaurus(false)
       
       SetListSubject((prevState) => [
         ...prevState,

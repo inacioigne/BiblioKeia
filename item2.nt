@@ -3,18 +3,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://bibliokeia.com/bibframe/item/22-4553> a bf:Item ;
+<http://bibliokeia.com/bibframe/item/22-5462> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2022-11-19"^^xsd:date ;
+            bf:creationDate "2022-11-21"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2022-11-19T09:06:49.411489"^^xsd:dateTime ] ;
+                    bf:generationDate "2022-11-21T10:17:52.008113"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "22-4553" ] ;
+                    rdf:value "22-5462" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:heldBy <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-    bf:itemOf <http://bibliokeia.com/bibframe/instance/http://bibliokeia.com/bibframe/instance/2> ;
+    bf:itemOf <http://bibliokeia.com/bibframe/instance/bk-22-3> ;
     bf:shelfMark [ a bf:ShelfMarkDdc ;
-            rdfs:label "654.5 B352a" ] .
+            rdfs:label "632.2" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ] ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "E1.P1" ] .
 
