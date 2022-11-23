@@ -23,7 +23,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { api } from "src/services/lcnfa";
 import ParserJsonLd from "src/services/thesaurus/parser_jsonld";
 import { useState } from "react";
-import CardLCNAF from "src/admin/components/bibframe/CreateWork/cardLCNAF";
+import CardLCNAF from "src/admin/components/bibframe/works/contribution/cardLCNAF";
 import ClearIcon from "@mui/icons-material/Clear";
 
 export default function SearchLCNAF({

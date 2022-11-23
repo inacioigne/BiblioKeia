@@ -1,3 +1,4 @@
+// Material UI
 import Grid from "@mui/material/Unstable_Grid2";
 import {
   Box,
@@ -22,14 +23,15 @@ import { useBf } from "src/providers/bibframe";
 import { api } from "src/services/api";
 
 // BiblioKeia Components
-import Content from "src/admin/components/bibframe/content";
-import CreateWork from "src/admin/components/bibframe/CreateWork";
-import Title from "src/admin/components/bibframe/title";
-import Subject from "src/admin/components/bibframe/subject";
+import Content from "src/admin/components/bibframe/works/content";
+import CreateWork from "src/admin/components/bibframe/works/contribution";
+import Title from "src/admin/components/bibframe/works/title";
+import Subject from "src/admin/components/bibframe/works/subject";
 import Preview from "src/admin/components/work_preview";
-import Language from "src/admin/components/bibframe/language";
-import Classification from "src/admin/components/bibframe/classification";
+import Language from "src/admin/components/bibframe/works/language";
+import Classification from "src/admin/components/bibframe/works/classification";
 
+// Styles
 const styleItemMenun = {
   borderRadius: "5px",
   mx: "0.5rem",
@@ -52,6 +54,7 @@ const styleItemMenunActive = {
   },
 };
 
+// Metadata
 const metadado_work = [
   "Tipo",
   "Título",
@@ -74,8 +77,6 @@ export default function Works() {
     api
       .get("/items/next_id")
       .then((response) => {
-        //console.log("Api", response.data.id);
-
         setWork((prevState) => ({
           ...prevState,
           work_id: response.data.id,
@@ -96,16 +97,15 @@ export default function Works() {
     console.log("Submit", work);
 
     api
-      .post('/cataloguing/work', work)
+      .post("/cataloguing/work", work)
       .then((response) => {
-            console.log("Api", response);
-          })
-          .catch(function (error) {
-            console.log("ER", error);
-          });
+        console.log("Api", response);
+      })
+      .catch(function (error) {
+        console.log("ER", error);
+      });
 
     router.push(`/admin/templates/instances?workid=${work.work_id}`);
-    
   };
 
   return (
@@ -133,11 +133,10 @@ export default function Works() {
             </MenuItem>
           ))}
         </MenuList>
-  
       </Grid>
 
       <Grid xs={5} bgcolor={grey[100]}>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}> */}
           <Box
             sx={{
               display: "flex",
@@ -155,10 +154,11 @@ export default function Works() {
             <Box
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
-              <Subject
+              <Subject />
+              {/* <Subject
                 listSubject={listSubject}
                 SetListSubject={SetListSubject}
-              />
+              /> */}
             </Box>
 
             {/* Idioma */}
@@ -176,11 +176,13 @@ export default function Works() {
               mr: "2rem",
             }}
           >
-            <Button variant="outlined" type="submit">
+            <Button variant="outlined" //type="submit"
+            onClick={handleSubmit}
+            >
               Salvar e Adicionar Instância
             </Button>
           </Box>
-        </form>
+        {/* </form> */}
       </Grid>
       <Preview />
     </Grid>
