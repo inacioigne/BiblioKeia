@@ -1,0 +1,1277 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/10003495> a bf:Work ;
+    bflc:aap "Ozaki, Masanao, 1924- Nijuisseiki e no josō" .
+
+<http://id.loc.gov/resources/works/1005987> a bf:Work ;
+    bflc:aap "Balsley, Howard Lloyd, 1913- Research for business decisions" .
+
+<http://id.loc.gov/resources/works/10117886> a bf:Work ;
+    bflc:aap "Little, Arthur D. (Arthur Dehon), 1863-1935. \"Industrial research,\" an address by President Arthur D. Little of the American chemical society. President Scherer's address to the freshmen" .
+
+<http://id.loc.gov/resources/works/10150310> a bf:Work ;
+    bflc:aap "National Industrial Conference Board. Public education as affecting the adjustment of youth to life" .
+
+<http://id.loc.gov/resources/works/10152126> a bf:Work ;
+    bflc:aap "Engineering Foundation (U.S.) Popular research narratives" .
+
+<http://id.loc.gov/resources/works/10157610> a bf:Work ;
+    bflc:aap "Geneva Research Center. International research in Geneva .." .
+
+<http://id.loc.gov/resources/works/10162559> a bf:Work ;
+    bflc:aap "Hockett, Homer C. (Homer Carey), 1875- Introduction to research in American history," .
+
+<http://id.loc.gov/resources/works/101679> a bf:Work ;
+    bflc:aap "La recherche clinique en psychopathologie" .
+
+<http://id.loc.gov/resources/works/10184032> a bf:Work ;
+    bflc:aap "Carnegie Institution of Washington. Cooperation in research," .
+
+<http://id.loc.gov/resources/works/10184688> a bf:Work ;
+    bflc:aap "Haynes, Benjamin Rudolph, 1897- Research applied to business education," .
+
+<http://id.loc.gov/resources/works/10185694> a bf:Work ;
+    bflc:aap "Ratcliff, John Drury, 1903- Modern miracle men," .
+
+<http://id.loc.gov/resources/works/10185974> a bf:Work ;
+    bflc:aap "Evans, Luther Harris, 1902-1981. WPA fashions new tools for research" .
+
+<http://id.loc.gov/resources/works/10187279> a bf:Work ;
+    bflc:aap "Abbott laboratories. Addresses; dedication of Research building, Abbott laboratories, North Chicago, Illinois, October seventh, nineteen hundred and thirty-eight" .
+
+<http://id.loc.gov/resources/works/10190678> a bf:Work ;
+    bflc:aap "Universidad de Buenos Aires. Facultad de Agronomía y Veterinaria. profesor Bernardo A. Houssay (discursos pronunciados con motivo de su designación como profesor honorario)" .
+
+<http://id.loc.gov/resources/works/1019127> a bf:Work ;
+    bflc:aap "Fennell, Mary L. diffusion of medical innovations : an applied network analysis" .
+
+<http://id.loc.gov/resources/works/10191458> a bf:Work ;
+    bflc:aap "Schwarz, Sanford. Research in international economics by federal agencies," .
+
+<http://id.loc.gov/resources/works/1019352> a bf:Work ;
+    bflc:aap "Notter, Lucille E. (Lucille Elizabeth), 1907-1993. Essentials of nursing research" .
+
+<http://id.loc.gov/resources/works/10194382> a bf:Work ;
+    bflc:aap "Stevens, Sylvester K., Manual for newspaper transcription" .
+
+<http://id.loc.gov/resources/works/10202443> a bf:Work ;
+    bflc:aap "Russell, Edward J. (Edward John), 1872-1965. Methods in scientific research:" .
+
+<http://id.loc.gov/resources/works/10210998> a bf:Work ;
+    bflc:aap "Baker, John R. (John Randal), 1900-1984. Science and the planned state," .
+
+<http://id.loc.gov/resources/works/10212099> a bf:Work ;
+    bflc:aap "Purdue research foundation. Purdue research foundation, its organization and purpose .." .
+
+<http://id.loc.gov/resources/works/10223444> a bf:Work ;
+    bflc:aap "McCollum, Elmer Verner, 1879- business value of research; address at the sixth annual fact finding conference of the Institute of American poultry industries, Medinah athletic club, Chicago, Illinois, January 16, 1933" .
+
+<http://id.loc.gov/resources/works/10224245> a bf:Work ;
+    bflc:aap "Minnesota. University. Graduate School. Hormel Institute. Report" .
+
+<http://id.loc.gov/resources/works/10226110> a bf:Work ;
+    bflc:aap "Collacott, Ralph A. (Ralph Albert), 1918- Research as a career" .
+
+<http://id.loc.gov/resources/works/10226408> a bf:Work ;
+    bflc:aap "Holmstrom, John Edwin, 1898- Records and research in engineering and industrial science, a guide to the sources, processing and storekeeping of technical knowledge, with a chapter on translating" .
+
+<http://id.loc.gov/resources/works/10227186> a bf:Work ;
+    bflc:aap "Lewis, Thomas, Sir, 1881- Research in medicine, and other addresses" .
+
+<http://id.loc.gov/resources/works/10229152> a bf:Work ;
+    bflc:aap "Brydon, Anne Page, 1904- Technical services to Virginia government; a directory of agencies providing assistance to state and local governments" .
+
+<http://id.loc.gov/resources/works/10244161> a bf:Work ;
+    bflc:aap "Borries, Gustav Valdemar Theodor, 1887- Tekniken ved udarbejdelsen og udgivelsen af videnskabelige afhandlinger" .
+
+<http://id.loc.gov/resources/works/10254653> a bf:Work ;
+    bflc:aap "Lowry, Howard Foster, 1901-1967. Research, creative activity and teaching; a report" .
+
+<http://id.loc.gov/resources/works/10285184> a bf:Work ;
+    bflc:aap "Shanan, Joel, 1919- investigation of some personality correlates of creativity in research scientists" .
+
+<http://id.loc.gov/resources/works/10285600> a bf:Work ;
+    bflc:aap "Luszki, Margaret B., 1907- Interdisciplinary team research: methods and problems" .
+
+<http://id.loc.gov/resources/works/10304899> a bf:Work ;
+    bflc:aap "International Development Center. Scientific research and progress in newly developing countries, an exploration of ways in which basic and applied research can be used more effectively to speed socio-economic development in Africa, Asia, and Latin America; staff paper," .
+
+<http://id.loc.gov/resources/works/10305488> a bf:Work ;
+    bflc:aap "Short, Raymond W. (Raymond Wright), 1903- Subjects and sources for research writing," .
+
+<http://id.loc.gov/resources/works/10307044> a bf:Work ;
+    bflc:aap "Studia źródłoznawcze" .
+
+<http://id.loc.gov/resources/works/10319005> a bf:Work ;
+    bflc:aap "Williams, Cecil B. (Cecil Brown), 1901- A research manual for college studies and papers" .
+
+<http://id.loc.gov/resources/works/10347790> a bf:Work ;
+    bflc:aap "Klappacher, Willibald, 1928- Was geschieht für die Wissenschaft?" .
+
+<http://id.loc.gov/resources/works/10357913> a bf:Work ;
+    bflc:aap "Heyde, Johannes Erich, 1892- Technik des wissenschaftlichen Arbeitens" .
+
+<http://id.loc.gov/resources/works/1035801> a bf:Work ;
+    bflc:aap "Biomedical science and the Third World" .
+
+<http://id.loc.gov/resources/works/10358283> a bf:Work ;
+    bflc:aap "Stoltenberg, Gerhard. Forschungsplanung, Möglichkeiten und Grenzen" .
+
+<http://id.loc.gov/resources/works/10364882> a bf:Work ;
+    bflc:aap "Hadibroto, Suhadji. Methode research" .
+
+<http://id.loc.gov/resources/works/10365795> a bf:Work ;
+    bflc:aap "Pieter, Józef. Nauka i wiedza" .
+
+<http://id.loc.gov/resources/works/10374447> a bf:Work ;
+    bflc:aap "Paulson, Eilif Wolff, 1892- Forskning og fremtid" .
+
+<http://id.loc.gov/resources/works/10386824> a bf:Work ;
+    bflc:aap "Zaruba, Ernst, 1940- Organisation, Instrumente und Probleme der Forschungspolitik. Ein internat. Vergleich" .
+
+<http://id.loc.gov/resources/works/1038756> a bf:Work ;
+    bflc:aap "National Academy of Sciences (U.S.). Committee on the Conduct of Science. On being a scientist" .
+
+<http://id.loc.gov/resources/works/10392959> a bf:Work ;
+    bflc:aap "Pinto, Alvaro Vieira. Ciência e existência; problemas filosóficos da pesquisa científica" .
+
+<http://id.loc.gov/resources/works/10395697> a bf:Work ;
+    bflc:aap "Tōa Kenkyūjo, Tokyo. Tōken seika tekiyō" .
+
+<http://id.loc.gov/resources/works/10401524> a bf:Work ;
+    bflc:aap "Meurers, Joseph. Wissen nährt Nichtwissen; Naturforschung heute" .
+
+<http://id.loc.gov/resources/works/10416024> a bf:Work ;
+    bflc:aap "Menéndez Pidal, Ramón, 1869-1968. Non omnis moriar; dos lecciones" .
+
+<http://id.loc.gov/resources/works/10453377> a bf:Work ;
+    bflc:aap "Georgiev-Bizhkov, Georgi. Podgotovka i oformi︠a︡ne na diplomna rabota" .
+
+<http://id.loc.gov/resources/works/10462055> a bf:Work ;
+    bflc:aap "Gi︠u︡rov, Dimitŭr Stoi︠a︡nov. Intenzifikat︠s︡ii︠a︡ i efektivnost na nauchnoizsledovatelskata deĭnost : [izsledvane]" .
+
+<http://id.loc.gov/resources/works/10462931> a bf:Work ;
+    bflc:aap "Kröber, Walter. Kunst und Technik der geistigen Arbeit" .
+
+<http://id.loc.gov/resources/works/10471168> a bf:Work ;
+    bflc:aap "Nukiyama, Heiichi. Kagaku, gijutsu seikatsu" .
+
+<http://id.loc.gov/resources/works/10477573> a bf:Work ;
+    bflc:aap "Mishima, Tadayoshi, 1932- Gakumonron" .
+
+<http://id.loc.gov/resources/works/1052003> a bf:Work ;
+    bflc:aap "Troidl, Hans, 1938- Principles and practice of research : strategies for surgical investigators" .
+
+<http://id.loc.gov/resources/works/10543404> a bf:Work ;
+    bflc:aap "American University of Beirut Annual research report" .
+
+<http://id.loc.gov/resources/works/10543755> a bf:Work ;
+    bflc:aap "Journal of scientific research of the Benares Hindu University" .
+
+<http://id.loc.gov/resources/works/1054473> a bf:Work ;
+    bflc:aap "Wilson, E. Bright (Edgar Bright), 1908- introduction to scientific research" .
+
+<http://id.loc.gov/resources/works/1054841> a bf:Work ;
+    bflc:aap "Coyle, William. Research papers" .
+
+<http://id.loc.gov/resources/works/10559863> a bf:Work ;
+    bflc:aap "Christiana Albertina" .
+
+<http://id.loc.gov/resources/works/10561805> a bf:Work ;
+    bflc:aap "Computers and biomedical research" .
+
+<http://id.loc.gov/resources/works/10570140> a bf:Work ;
+    bflc:aap "German research" .
+
+<http://id.loc.gov/resources/works/1057171> a bf:Work ;
+    bflc:aap "Dixon, Bernard. science of science : changing the way we think" .
+
+<http://id.loc.gov/resources/works/10578688> a bf:Work ;
+    bflc:aap "El investigador venezolano" .
+
+<http://id.loc.gov/resources/works/10578938> a bf:Work ;
+    bflc:aap "John and Mary R. Markle Foundation Annual report" .
+
+<http://id.loc.gov/resources/works/10579278> a bf:Work ;
+    bflc:aap "Kagaku Gijutsuchō geppō 科学技術庁月報" .
+
+<http://id.loc.gov/resources/works/10600127> a bf:Work ;
+    bflc:aap "Memórias do Instituto Oswaldo Cruz" .
+
+<http://id.loc.gov/resources/works/10604228> a bf:Work ;
+    bflc:aap "Science bulletin" .
+
+<http://id.loc.gov/resources/works/10609930> a bf:Work ;
+    bflc:aap "United Nations Institute for Training and Research Report of the Executive Director of the United Nations Institute for Training and Research" .
+
+<http://id.loc.gov/resources/works/10611008> a bf:Work ;
+    bflc:aap "Research in progress" .
+
+<http://id.loc.gov/resources/works/10611731> a bf:Work ;
+    bflc:aap "Technical bulletin" .
+
+<http://id.loc.gov/resources/works/10615303> a bf:Work ;
+    bflc:aap "Washington technology" .
+
+<http://id.loc.gov/resources/works/10626067> a bf:Work ;
+    bflc:aap "Battelle-Institut. Information" .
+
+<http://id.loc.gov/resources/works/1063542> a bf:Work ;
+    bflc:aap "Camaioni, Luigia. Metodi di ricerca in psicologia dello sviluppo" .
+
+<http://id.loc.gov/resources/works/10638124> a bf:Work ;
+    bflc:aap "Cawthron, Institute of Scientific Research, Nelson, N.Z. Publication" .
+
+<http://id.loc.gov/resources/works/10640185> a bf:Work ;
+    bflc:aap "Centre voltaïque de la recherche scientifique. Travaux" .
+
+<http://id.loc.gov/resources/works/10640556> a bf:Work ;
+    bflc:aap "China. National agricultural research bureau. Special publication no. 1-" .
+
+<http://id.loc.gov/resources/works/10670184> a bf:Work ;
+    bflc:aap "Forschung, Lehre, Praxis" .
+
+<http://id.loc.gov/resources/works/10681928> a bf:Work ;
+    bflc:aap "Health education research" .
+
+<http://id.loc.gov/resources/works/10688964> a bf:Work ;
+    bflc:aap "Hyderabad, India. Regional Research Laboratory. Report" .
+
+<http://id.loc.gov/resources/works/1069858> a bf:Work ;
+    bflc:aap "Oliver, J. E. (Jack Ertle), 1923-2011. incomplete guide to the art of discovery" .
+
+<http://id.loc.gov/resources/works/10734721> a bf:Work ;
+    bflc:aap "National research council, Canada. Bulletin" .
+
+<http://id.loc.gov/resources/works/10734761> a bf:Work ;
+    bflc:aap "National research council, Canada. Report" .
+
+<http://id.loc.gov/resources/works/10736521> a bf:Work ;
+    bflc:aap "Leningrad. Universitet. Nekotorye voprosy metodologii nauchnogo issledovanii︠a︡" .
+
+<http://id.loc.gov/resources/works/10763890> a bf:Work ;
+    bflc:aap "Punjab, India (State) University Research bulletin Science section" .
+
+<http://id.loc.gov/resources/works/10766404> a bf:Work ;
+    bflc:aap "The U.P. research digest" .
+
+<http://id.loc.gov/resources/works/10768836> a bf:Work ;
+    bflc:aap "Research council of Alberta. Annual report. 1st- 1920-" .
+
+<http://id.loc.gov/resources/works/10775239> a bf:Work ;
+    bflc:aap "Register of research in the human sciences in South Africa" .
+
+<http://id.loc.gov/resources/works/10782208> a bf:Work ;
+    bflc:aap "Univerzitet vo Skopje Bilten na Univerzitetot vo Skopje Билтен на Универзитетот во Скопје" .
+
+<http://id.loc.gov/resources/works/10788550> a bf:Work ;
+    bflc:aap "South Africa. National Council for Social Research. Register van huidige navorsing in die humaniora aan die universiteite. Register of current research in the humanities at the universities" .
+
+<http://id.loc.gov/resources/works/10814119> a bf:Work ;
+    bflc:aap "Research relating to special groups of children" .
+
+<http://id.loc.gov/resources/works/10817043> a bf:Work ;
+    bflc:aap "Southern Forest Experiment Station (New Orleans, La.) U.S. Forest Service research note SO" .
+
+<http://id.loc.gov/resources/works/10841240> a bf:Work ;
+    bflc:aap "Howard Hughes Medical Institute Annual scientific report" .
+
+<http://id.loc.gov/resources/works/10853535> a bf:Work ;
+    bflc:aap "American College Testing Program Annual report" .
+
+<http://id.loc.gov/resources/works/10904460> a bf:Work ;
+    bflc:aap "Conseil de recherches scientifiques de l'Indochine. Comptes rendus des séances du Conseil de recherches scientifiques de l'Indochine .." .
+
+<http://id.loc.gov/resources/works/10904933> a bf:Work ;
+    bflc:aap "Conference of research organisations, London, 1919- Report of Conference of research organisations" .
+
+<http://id.loc.gov/resources/works/10935351> a bf:Work ;
+    bflc:aap "France. Conseil supérieur de la recherche scientifique. Conseil supérieur de la recherche scientifique" .
+
+<http://id.loc.gov/resources/works/10940104> a bf:Work ;
+    bflc:aap "Germany (West). Bundesministerium für Wissenschaftliche Forschung. Forschung und Bildung" .
+
+<http://id.loc.gov/resources/works/10967279> a bf:Work ;
+    bflc:aap "Kagaku gijutsu dantai yōran 科学技術団体要覧" .
+
+<http://id.loc.gov/resources/works/10967280> a bf:Work ;
+    bflc:aap "Kagaku gijutsu kankei kenkyū kikan yōran 科学技術関係研究機関要覧" .
+
+<http://id.loc.gov/resources/works/10984132> a bf:Work ;
+    bflc:aap "Massachusetts Institute of Technology. Visiting Committee for Sponsored Research. Report" .
+
+<http://d-nb.info/gnd/4017894-8> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Forschung"@de ;
+    skos:prefLabel "Forschung"@de .
+
+<http://d-nb.info/gnd/4131708-7> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Grundlagenforschung"@de ;
+    skos:prefLabel "Grundlagenforschung"@de .
+
+<http://data.bnf.fr/ark:/12148/cb11938467s> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Recherche"@fr ;
+    skos:prefLabel "Recherche"@fr .
+
+<http://id.loc.gov/authorities/subjects/sh2002010603> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Internet research"@en ;
+    skos:prefLabel "Internet research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2006004688> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Narrative inquiry (Research method)"@en ;
+    skos:prefLabel "Narrative inquiry (Research method)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2007000909> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Quantitative research"@en ;
+    skos:prefLabel "Quantitative research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2007003908> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research and development projects"@en ;
+    skos:prefLabel "Research and development projects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2010001158> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Mixed methods research"@en ;
+    skos:prefLabel "Mixed methods research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2013002574> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Reproducible research"@en ;
+    skos:prefLabel "Reproducible research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021006131> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Libraries--Special collections--Research"@en ;
+    skos:prefLabel "Libraries--Special collections--Research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85005173> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Animal experimentation"@en ;
+    skos:prefLabel "Animal experimentation"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85005212> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Animal models in research"@en ;
+    skos:prefLabel "Animal models in research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85006988> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Area studies"@en ;
+    skos:prefLabel "Area studies"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85045926> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Evaluation"@en ;
+    skos:prefLabel "Evaluation"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85046439> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Experiential research"@en ;
+    skos:prefLabel "Experiential research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85046441> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Experimental design"@en ;
+    skos:prefLabel "Experimental design"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85060783> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Highway research"@en ;
+    skos:prefLabel "Highway research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066157> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information services"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Information services"@en ] ) ;
+    skos:prefLabel "Information services"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066301> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information theory in research"@en ;
+    skos:prefLabel "Information theory in research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85067175> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Intelligence service"@en ;
+    skos:prefLabel "Intelligence service"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85074304> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Land research"@en ;
+    skos:prefLabel "Land research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85075529> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Learning and scholarship"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Learning and scholarship"@en ] ) ;
+    skos:prefLabel "Learning and scholarship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85075767> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Legal research"@en ;
+    skos:prefLabel "Legal research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85078296> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Longitudinal method"@en ;
+    skos:prefLabel "Longitudinal method"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85078652> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Low temperature research"@en ;
+    skos:prefLabel "Low temperature research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85081350> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Marketing research"@en ;
+    skos:prefLabel "Marketing research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85084414> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Methodology"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Methodology"@en ] ) ;
+    skos:prefLabel "Methodology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85085281> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Military research"@en ;
+    skos:prefLabel "Military research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85087568> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Motivation research (Marketing)"@en ;
+    skos:prefLabel "Motivation research (Marketing)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85090404> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Naval research"@en ;
+    skos:prefLabel "Naval research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85093748> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Observatories"@en ;
+    skos:prefLabel "Observatories"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85095020> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Operations research"@en ;
+    skos:prefLabel "Operations research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85098354> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Participant observation"@en ;
+    skos:prefLabel "Participant observation"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85106389> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Preprints"@en ;
+    skos:prefLabel "Preprints"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85107550> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Proposal writing in research"@en ;
+    skos:prefLabel "Proposal writing in research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85110756> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Radioisotopes in research"@en ;
+    skos:prefLabel "Radioisotopes in research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85113021> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/10003495>,
+        <http://id.loc.gov/resources/works/1005987>,
+        <http://id.loc.gov/resources/works/10117886>,
+        <http://id.loc.gov/resources/works/10150310>,
+        <http://id.loc.gov/resources/works/10152126>,
+        <http://id.loc.gov/resources/works/10157610>,
+        <http://id.loc.gov/resources/works/10162559>,
+        <http://id.loc.gov/resources/works/101679>,
+        <http://id.loc.gov/resources/works/10184032>,
+        <http://id.loc.gov/resources/works/10184688>,
+        <http://id.loc.gov/resources/works/10185694>,
+        <http://id.loc.gov/resources/works/10185974>,
+        <http://id.loc.gov/resources/works/10187279>,
+        <http://id.loc.gov/resources/works/10190678>,
+        <http://id.loc.gov/resources/works/1019127>,
+        <http://id.loc.gov/resources/works/10191458>,
+        <http://id.loc.gov/resources/works/1019352>,
+        <http://id.loc.gov/resources/works/10194382>,
+        <http://id.loc.gov/resources/works/10202443>,
+        <http://id.loc.gov/resources/works/10210998>,
+        <http://id.loc.gov/resources/works/10212099>,
+        <http://id.loc.gov/resources/works/10223444>,
+        <http://id.loc.gov/resources/works/10224245>,
+        <http://id.loc.gov/resources/works/10226110>,
+        <http://id.loc.gov/resources/works/10226408>,
+        <http://id.loc.gov/resources/works/10227186>,
+        <http://id.loc.gov/resources/works/10229152>,
+        <http://id.loc.gov/resources/works/10244161>,
+        <http://id.loc.gov/resources/works/10254653>,
+        <http://id.loc.gov/resources/works/10285184>,
+        <http://id.loc.gov/resources/works/10285600>,
+        <http://id.loc.gov/resources/works/10304899>,
+        <http://id.loc.gov/resources/works/10305488>,
+        <http://id.loc.gov/resources/works/10307044>,
+        <http://id.loc.gov/resources/works/10319005>,
+        <http://id.loc.gov/resources/works/10347790>,
+        <http://id.loc.gov/resources/works/10357913>,
+        <http://id.loc.gov/resources/works/1035801>,
+        <http://id.loc.gov/resources/works/10358283>,
+        <http://id.loc.gov/resources/works/10364882>,
+        <http://id.loc.gov/resources/works/10365795>,
+        <http://id.loc.gov/resources/works/10374447>,
+        <http://id.loc.gov/resources/works/10386824>,
+        <http://id.loc.gov/resources/works/1038756>,
+        <http://id.loc.gov/resources/works/10392959>,
+        <http://id.loc.gov/resources/works/10395697>,
+        <http://id.loc.gov/resources/works/10401524>,
+        <http://id.loc.gov/resources/works/10416024>,
+        <http://id.loc.gov/resources/works/10453377>,
+        <http://id.loc.gov/resources/works/10462055>,
+        <http://id.loc.gov/resources/works/10462931>,
+        <http://id.loc.gov/resources/works/10471168>,
+        <http://id.loc.gov/resources/works/10477573>,
+        <http://id.loc.gov/resources/works/1052003>,
+        <http://id.loc.gov/resources/works/10543404>,
+        <http://id.loc.gov/resources/works/10543755>,
+        <http://id.loc.gov/resources/works/1054473>,
+        <http://id.loc.gov/resources/works/1054841>,
+        <http://id.loc.gov/resources/works/10559863>,
+        <http://id.loc.gov/resources/works/10561805>,
+        <http://id.loc.gov/resources/works/10570140>,
+        <http://id.loc.gov/resources/works/1057171>,
+        <http://id.loc.gov/resources/works/10578688>,
+        <http://id.loc.gov/resources/works/10578938>,
+        <http://id.loc.gov/resources/works/10579278>,
+        <http://id.loc.gov/resources/works/10600127>,
+        <http://id.loc.gov/resources/works/10604228>,
+        <http://id.loc.gov/resources/works/10609930>,
+        <http://id.loc.gov/resources/works/10611008>,
+        <http://id.loc.gov/resources/works/10611731>,
+        <http://id.loc.gov/resources/works/10615303>,
+        <http://id.loc.gov/resources/works/10626067>,
+        <http://id.loc.gov/resources/works/1063542>,
+        <http://id.loc.gov/resources/works/10638124>,
+        <http://id.loc.gov/resources/works/10640185>,
+        <http://id.loc.gov/resources/works/10640556>,
+        <http://id.loc.gov/resources/works/10670184>,
+        <http://id.loc.gov/resources/works/10681928>,
+        <http://id.loc.gov/resources/works/10688964>,
+        <http://id.loc.gov/resources/works/1069858>,
+        <http://id.loc.gov/resources/works/10734721>,
+        <http://id.loc.gov/resources/works/10734761>,
+        <http://id.loc.gov/resources/works/10736521>,
+        <http://id.loc.gov/resources/works/10763890>,
+        <http://id.loc.gov/resources/works/10766404>,
+        <http://id.loc.gov/resources/works/10768836>,
+        <http://id.loc.gov/resources/works/10775239>,
+        <http://id.loc.gov/resources/works/10782208>,
+        <http://id.loc.gov/resources/works/10788550>,
+        <http://id.loc.gov/resources/works/10814119>,
+        <http://id.loc.gov/resources/works/10817043>,
+        <http://id.loc.gov/resources/works/10841240>,
+        <http://id.loc.gov/resources/works/10853535>,
+        <http://id.loc.gov/resources/works/10904460>,
+        <http://id.loc.gov/resources/works/10904933>,
+        <http://id.loc.gov/resources/works/10935351>,
+        <http://id.loc.gov/resources/works/10940104>,
+        <http://id.loc.gov/resources/works/10967279>,
+        <http://id.loc.gov/resources/works/10967280>,
+        <http://id.loc.gov/resources/works/10984132> ;
+    identifiers:lccn "sh 85113021" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "2019-12-19T14:38:08"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Research"@en ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "ZA3075-ZA3085" ],
+        [ a lcc:ClassNumber ;
+            madsrdf:code "Q179.9-Q180.7" ;
+            madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/Q179.9-Q180.7> ] ;
+    madsrdf:editorialNote "subdivision [Research] under names of countries, cities, etc.; and under subjects" ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Research"@en ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4017894-8>,
+        <http://d-nb.info/gnd/4131708-7>,
+        <http://data.bnf.fr/ark:/12148/cb11938467s>,
+        <http://id.worldcat.org/fast/1095153>,
+        <http://www.wikidata.org/entity/Q42240>,
+        <http://www.yso.fi/onto/yso/p183> ;
+    madsrdf:hasExactExternalAuthority <http://lod.nal.usda.gov/nalt/5458> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2002010603>,
+        <http://id.loc.gov/authorities/subjects/sh2006004688>,
+        <http://id.loc.gov/authorities/subjects/sh2007000909>,
+        <http://id.loc.gov/authorities/subjects/sh2007003908>,
+        <http://id.loc.gov/authorities/subjects/sh2010001158>,
+        <http://id.loc.gov/authorities/subjects/sh2013002574>,
+        <http://id.loc.gov/authorities/subjects/sh2021006131>,
+        <http://id.loc.gov/authorities/subjects/sh85005173>,
+        <http://id.loc.gov/authorities/subjects/sh85005212>,
+        <http://id.loc.gov/authorities/subjects/sh85006988>,
+        <http://id.loc.gov/authorities/subjects/sh85045926>,
+        <http://id.loc.gov/authorities/subjects/sh85046439>,
+        <http://id.loc.gov/authorities/subjects/sh85046441>,
+        <http://id.loc.gov/authorities/subjects/sh85060783>,
+        <http://id.loc.gov/authorities/subjects/sh85066301>,
+        <http://id.loc.gov/authorities/subjects/sh85067175>,
+        <http://id.loc.gov/authorities/subjects/sh85074304>,
+        <http://id.loc.gov/authorities/subjects/sh85075767>,
+        <http://id.loc.gov/authorities/subjects/sh85078296>,
+        <http://id.loc.gov/authorities/subjects/sh85078652>,
+        <http://id.loc.gov/authorities/subjects/sh85081350>,
+        <http://id.loc.gov/authorities/subjects/sh85085281>,
+        <http://id.loc.gov/authorities/subjects/sh85087568>,
+        <http://id.loc.gov/authorities/subjects/sh85090404>,
+        <http://id.loc.gov/authorities/subjects/sh85093748>,
+        <http://id.loc.gov/authorities/subjects/sh85095020>,
+        <http://id.loc.gov/authorities/subjects/sh85098354>,
+        <http://id.loc.gov/authorities/subjects/sh85106389>,
+        <http://id.loc.gov/authorities/subjects/sh85107550>,
+        <http://id.loc.gov/authorities/subjects/sh85110756>,
+        <http://id.loc.gov/authorities/subjects/sh85113031>,
+        <http://id.loc.gov/authorities/subjects/sh85118694>,
+        <http://id.loc.gov/authorities/subjects/sh85141124>,
+        <http://id.loc.gov/authorities/subjects/sh85144279>,
+        <http://id.loc.gov/authorities/subjects/sh88005724>,
+        <http://id.loc.gov/authorities/subjects/sh88006165>,
+        <http://id.loc.gov/authorities/subjects/sh93003312>,
+        <http://id.loc.gov/authorities/subjects/sh97004129>,
+        <http://id.loc.gov/authorities/subjects/sh99004969> ;
+    madsrdf:hasNarrowerExternalAuthority <http://id.worldcat.org/fast/1095155>,
+        <http://id.worldcat.org/fast/1095156>,
+        <http://id.worldcat.org/fast/1095158>,
+        <http://id.worldcat.org/fast/1095159>,
+        <http://id.worldcat.org/fast/1095160>,
+        <http://id.worldcat.org/fast/1095161>,
+        <http://id.worldcat.org/fast/1095162>,
+        <http://id.worldcat.org/fast/1095164>,
+        <http://id.worldcat.org/fast/1095165>,
+        <http://id.worldcat.org/fast/1095166>,
+        <http://id.worldcat.org/fast/1095168>,
+        <http://id.worldcat.org/fast/1095169>,
+        <http://id.worldcat.org/fast/1095170>,
+        <http://id.worldcat.org/fast/1095171>,
+        <http://id.worldcat.org/fast/1095172>,
+        <http://id.worldcat.org/fast/1095173>,
+        <http://id.worldcat.org/fast/1095174>,
+        <http://id.worldcat.org/fast/1095176>,
+        <http://id.worldcat.org/fast/1095177>,
+        <http://id.worldcat.org/fast/1095178>,
+        <http://id.worldcat.org/fast/1095182>,
+        <http://id.worldcat.org/fast/1095183>,
+        <http://id.worldcat.org/fast/1095184>,
+        <http://id.worldcat.org/fast/1095185>,
+        <http://id.worldcat.org/fast/1095187>,
+        <http://id.worldcat.org/fast/1095188>,
+        <http://id.worldcat.org/fast/1095195>,
+        <http://id.worldcat.org/fast/1095196>,
+        <http://id.worldcat.org/fast/1095198>,
+        <http://id.worldcat.org/fast/1095201>,
+        <http://id.worldcat.org/fast/1095202>,
+        <http://id.worldcat.org/fast/1095206>,
+        <http://id.worldcat.org/fast/1095207>,
+        <http://id.worldcat.org/fast/1095215>,
+        <http://id.worldcat.org/fast/1095227>,
+        <http://id.worldcat.org/fast/1095228>,
+        <http://id.worldcat.org/fast/1095230>,
+        <http://id.worldcat.org/fast/1095231>,
+        <http://id.worldcat.org/fast/1095232>,
+        <http://id.worldcat.org/fast/1095234>,
+        <http://id.worldcat.org/fast/1095235>,
+        <http://id.worldcat.org/fast/1095236>,
+        <http://id.worldcat.org/fast/1095237>,
+        <http://id.worldcat.org/fast/1095238>,
+        <http://id.worldcat.org/fast/1095240>,
+        <http://id.worldcat.org/fast/1095241>,
+        <http://id.worldcat.org/fast/1095243>,
+        <http://id.worldcat.org/fast/1095244>,
+        <http://id.worldcat.org/fast/1095245>,
+        <http://id.worldcat.org/fast/1095246>,
+        <http://id.worldcat.org/fast/1095247>,
+        <http://id.worldcat.org/fast/1095248>,
+        <http://id.worldcat.org/fast/1095249>,
+        <http://id.worldcat.org/fast/1095250>,
+        <http://id.worldcat.org/fast/1095251>,
+        <http://id.worldcat.org/fast/1095252>,
+        <http://id.worldcat.org/fast/1095253>,
+        <http://id.worldcat.org/fast/1095254>,
+        <http://id.worldcat.org/fast/1095255>,
+        <http://id.worldcat.org/fast/1354435>,
+        <http://id.worldcat.org/fast/1354436> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85066157>,
+        <http://id.loc.gov/authorities/subjects/sh85075529>,
+        <http://id.loc.gov/authorities/subjects/sh85084414>,
+        <http://id.loc.gov/authorities/subjects/sh85113055> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Science research"@en ] ) ;
+            madsrdf:variantLabel "Science research"@en ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Scientific research"@en ] ) ;
+            madsrdf:variantLabel "Scientific research"@en ],
+        [ a madsrdf:ComplexSubject,
+                madsrdf:Variant ;
+            madsrdf:componentList ( [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Science"@en ] ) ;
+                        madsrdf:variantLabel "Science"@en ] [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Research"@en ] ) ;
+                        madsrdf:variantLabel "Research"@en ] ) ;
+            madsrdf:variantLabel "Science--Research"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    madsrdf:note "Here are entered general works on research, and with local subdivision, works on research carried out in specific places. Works on research about a particular region, country, etc. are entered under the name of the region, country, etc. with the subdivision [Research.]" ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85113021#concept>,
+        <info:lc/authorities/sh85113021> ;
+    skos:altLabel "Science research"@en,
+        "Science--Research"@en,
+        "Scientific research"@en ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2019-12-19T14:38:08"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85113021> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85113021> ] ;
+    skos:closeMatch <http://d-nb.info/gnd/4017894-8>,
+        <http://d-nb.info/gnd/4131708-7>,
+        <http://data.bnf.fr/ark:/12148/cb11938467s>,
+        <http://id.worldcat.org/fast/1095153>,
+        <http://www.wikidata.org/entity/Q42240>,
+        <http://www.yso.fi/onto/yso/p183> ;
+    skos:editorial "subdivision [Research] under names of countries, cities, etc.; and under subjects" ;
+    skos:exactMatch <http://lod.nal.usda.gov/nalt/5458> ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:narrowMatch <http://id.worldcat.org/fast/1095155>,
+        <http://id.worldcat.org/fast/1095156>,
+        <http://id.worldcat.org/fast/1095158>,
+        <http://id.worldcat.org/fast/1095159>,
+        <http://id.worldcat.org/fast/1095160>,
+        <http://id.worldcat.org/fast/1095161>,
+        <http://id.worldcat.org/fast/1095162>,
+        <http://id.worldcat.org/fast/1095164>,
+        <http://id.worldcat.org/fast/1095165>,
+        <http://id.worldcat.org/fast/1095166>,
+        <http://id.worldcat.org/fast/1095168>,
+        <http://id.worldcat.org/fast/1095169>,
+        <http://id.worldcat.org/fast/1095170>,
+        <http://id.worldcat.org/fast/1095171>,
+        <http://id.worldcat.org/fast/1095172>,
+        <http://id.worldcat.org/fast/1095173>,
+        <http://id.worldcat.org/fast/1095174>,
+        <http://id.worldcat.org/fast/1095176>,
+        <http://id.worldcat.org/fast/1095177>,
+        <http://id.worldcat.org/fast/1095178>,
+        <http://id.worldcat.org/fast/1095182>,
+        <http://id.worldcat.org/fast/1095183>,
+        <http://id.worldcat.org/fast/1095184>,
+        <http://id.worldcat.org/fast/1095185>,
+        <http://id.worldcat.org/fast/1095187>,
+        <http://id.worldcat.org/fast/1095188>,
+        <http://id.worldcat.org/fast/1095195>,
+        <http://id.worldcat.org/fast/1095196>,
+        <http://id.worldcat.org/fast/1095198>,
+        <http://id.worldcat.org/fast/1095201>,
+        <http://id.worldcat.org/fast/1095202>,
+        <http://id.worldcat.org/fast/1095206>,
+        <http://id.worldcat.org/fast/1095207>,
+        <http://id.worldcat.org/fast/1095215>,
+        <http://id.worldcat.org/fast/1095227>,
+        <http://id.worldcat.org/fast/1095228>,
+        <http://id.worldcat.org/fast/1095230>,
+        <http://id.worldcat.org/fast/1095231>,
+        <http://id.worldcat.org/fast/1095232>,
+        <http://id.worldcat.org/fast/1095234>,
+        <http://id.worldcat.org/fast/1095235>,
+        <http://id.worldcat.org/fast/1095236>,
+        <http://id.worldcat.org/fast/1095237>,
+        <http://id.worldcat.org/fast/1095238>,
+        <http://id.worldcat.org/fast/1095240>,
+        <http://id.worldcat.org/fast/1095241>,
+        <http://id.worldcat.org/fast/1095243>,
+        <http://id.worldcat.org/fast/1095244>,
+        <http://id.worldcat.org/fast/1095245>,
+        <http://id.worldcat.org/fast/1095246>,
+        <http://id.worldcat.org/fast/1095247>,
+        <http://id.worldcat.org/fast/1095248>,
+        <http://id.worldcat.org/fast/1095249>,
+        <http://id.worldcat.org/fast/1095250>,
+        <http://id.worldcat.org/fast/1095251>,
+        <http://id.worldcat.org/fast/1095252>,
+        <http://id.worldcat.org/fast/1095253>,
+        <http://id.worldcat.org/fast/1095254>,
+        <http://id.worldcat.org/fast/1095255>,
+        <http://id.worldcat.org/fast/1354435>,
+        <http://id.worldcat.org/fast/1354436> ;
+    skos:narrower <http://id.loc.gov/authorities/subjects/sh2002010603>,
+        <http://id.loc.gov/authorities/subjects/sh2006004688>,
+        <http://id.loc.gov/authorities/subjects/sh2007000909>,
+        <http://id.loc.gov/authorities/subjects/sh2007003908>,
+        <http://id.loc.gov/authorities/subjects/sh2010001158>,
+        <http://id.loc.gov/authorities/subjects/sh2013002574>,
+        <http://id.loc.gov/authorities/subjects/sh2021006131>,
+        <http://id.loc.gov/authorities/subjects/sh85005173>,
+        <http://id.loc.gov/authorities/subjects/sh85005212>,
+        <http://id.loc.gov/authorities/subjects/sh85006988>,
+        <http://id.loc.gov/authorities/subjects/sh85045926>,
+        <http://id.loc.gov/authorities/subjects/sh85046439>,
+        <http://id.loc.gov/authorities/subjects/sh85046441>,
+        <http://id.loc.gov/authorities/subjects/sh85060783>,
+        <http://id.loc.gov/authorities/subjects/sh85066301>,
+        <http://id.loc.gov/authorities/subjects/sh85067175>,
+        <http://id.loc.gov/authorities/subjects/sh85074304>,
+        <http://id.loc.gov/authorities/subjects/sh85075767>,
+        <http://id.loc.gov/authorities/subjects/sh85078296>,
+        <http://id.loc.gov/authorities/subjects/sh85078652>,
+        <http://id.loc.gov/authorities/subjects/sh85081350>,
+        <http://id.loc.gov/authorities/subjects/sh85085281>,
+        <http://id.loc.gov/authorities/subjects/sh85087568>,
+        <http://id.loc.gov/authorities/subjects/sh85090404>,
+        <http://id.loc.gov/authorities/subjects/sh85093748>,
+        <http://id.loc.gov/authorities/subjects/sh85095020>,
+        <http://id.loc.gov/authorities/subjects/sh85098354>,
+        <http://id.loc.gov/authorities/subjects/sh85106389>,
+        <http://id.loc.gov/authorities/subjects/sh85107550>,
+        <http://id.loc.gov/authorities/subjects/sh85110756>,
+        <http://id.loc.gov/authorities/subjects/sh85113031>,
+        <http://id.loc.gov/authorities/subjects/sh85118694>,
+        <http://id.loc.gov/authorities/subjects/sh85141124>,
+        <http://id.loc.gov/authorities/subjects/sh85144279>,
+        <http://id.loc.gov/authorities/subjects/sh88005724>,
+        <http://id.loc.gov/authorities/subjects/sh88006165>,
+        <http://id.loc.gov/authorities/subjects/sh93003312>,
+        <http://id.loc.gov/authorities/subjects/sh97004129>,
+        <http://id.loc.gov/authorities/subjects/sh99004969> ;
+    skos:note "Here are entered general works on research, and with local subdivision, works on research carried out in specific places. Works on research about a particular region, country, etc. are entered under the name of the region, country, etc. with the subdivision [Research.]" ;
+    skos:prefLabel "Research"@en ;
+    skos:related <http://id.loc.gov/authorities/subjects/sh85066157>,
+        <http://id.loc.gov/authorities/subjects/sh85075529>,
+        <http://id.loc.gov/authorities/subjects/sh85084414>,
+        <http://id.loc.gov/authorities/subjects/sh85113055> ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Scientific research"@en ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Science research"@en ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Science--Research"@en ] .
+
+<http://id.loc.gov/authorities/subjects/sh85113031> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research, Industrial"@en ;
+    skos:prefLabel "Research, Industrial"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85113055> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research teams"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Research teams"@en ] ) ;
+    skos:prefLabel "Research teams"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85118694> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Scientific surveys"@en ;
+    skos:prefLabel "Scientific surveys"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85141124> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Universities and colleges--Graduate work"@en ;
+    skos:prefLabel "Universities and colleges--Graduate work"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85144279> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Volcanological research"@en ;
+    skos:prefLabel "Volcanological research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88005724> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Group work in research"@en ;
+    skos:prefLabel "Group work in research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88006165> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Interdisciplinary research"@en ;
+    skos:prefLabel "Interdisciplinary research"@en .
+
+<http://id.loc.gov/authorities/subjects/sh93003312> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Discoveries in science"@en ;
+    skos:prefLabel "Discoveries in science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh97004129> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Group-randomized trials"@en ;
+    skos:prefLabel "Group-randomized trials"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99004969> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Qualitative research"@en ;
+    skos:prefLabel "Qualitative research"@en .
+
+<http://id.worldcat.org/fast/1095153> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research" ;
+    skos:prefLabel "Research" .
+
+<http://id.worldcat.org/fast/1095155> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Abstracts" ;
+    skos:prefLabel "Research--Abstracts" .
+
+<http://id.worldcat.org/fast/1095156> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Administration" ;
+    skos:prefLabel "Research--Administration" .
+
+<http://id.worldcat.org/fast/1095158> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Archival resources" ;
+    skos:prefLabel "Research--Archival resources" .
+
+<http://id.worldcat.org/fast/1095159> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Audio-visual aids" ;
+    skos:prefLabel "Research--Audio-visual aids" .
+
+<http://id.worldcat.org/fast/1095160> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Auditing" ;
+    skos:prefLabel "Research--Auditing" .
+
+<http://id.worldcat.org/fast/1095161> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Authorship" ;
+    skos:prefLabel "Research--Authorship" .
+
+<http://id.worldcat.org/fast/1095162> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Automation" ;
+    skos:prefLabel "Research--Automation" .
+
+<http://id.worldcat.org/fast/1095164> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Bibliography" ;
+    skos:prefLabel "Research--Bibliography" .
+
+<http://id.worldcat.org/fast/1095165> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--British colonies" ;
+    skos:prefLabel "Research--British colonies" .
+
+<http://id.worldcat.org/fast/1095166> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Citizen participation" ;
+    skos:prefLabel "Research--Citizen participation" .
+
+<http://id.worldcat.org/fast/1095168> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Communication systems" ;
+    skos:prefLabel "Research--Communication systems" .
+
+<http://id.worldcat.org/fast/1095169> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Comparative method" ;
+    skos:prefLabel "Research--Comparative method" .
+
+<http://id.worldcat.org/fast/1095170> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Competitions" ;
+    skos:prefLabel "Research--Competitions" .
+
+<http://id.worldcat.org/fast/1095171> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Computer network resources" ;
+    skos:prefLabel "Research--Computer network resources" .
+
+<http://id.worldcat.org/fast/1095172> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Computer programs" ;
+    skos:prefLabel "Research--Computer programs" .
+
+<http://id.worldcat.org/fast/1095173> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Computer simulation" ;
+    skos:prefLabel "Research--Computer simulation" .
+
+<http://id.worldcat.org/fast/1095174> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Computer-assisted instruction" ;
+    skos:prefLabel "Research--Computer-assisted instruction" .
+
+<http://id.worldcat.org/fast/1095176> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Corrupt practices" ;
+    skos:prefLabel "Research--Corrupt practices" .
+
+<http://id.worldcat.org/fast/1095177> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Cost effectiveness" ;
+    skos:prefLabel "Research--Cost effectiveness" .
+
+<http://id.worldcat.org/fast/1095178> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Costs" ;
+    skos:prefLabel "Research--Costs" .
+
+<http://id.worldcat.org/fast/1095182> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Databases" ;
+    skos:prefLabel "Research--Databases" .
+
+<http://id.worldcat.org/fast/1095183> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Decision making" ;
+    skos:prefLabel "Research--Decision making" .
+
+<http://id.worldcat.org/fast/1095184> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Directories" ;
+    skos:prefLabel "Research--Directories" .
+
+<http://id.worldcat.org/fast/1095185> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Econometric models" ;
+    skos:prefLabel "Research--Econometric models" .
+
+<http://id.worldcat.org/fast/1095187> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Economic aspects--Mathematical models" ;
+    skos:prefLabel "Research--Economic aspects--Mathematical models" .
+
+<http://id.worldcat.org/fast/1095188> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Employees" ;
+    skos:prefLabel "Research--Employees" .
+
+<http://id.worldcat.org/fast/1095195> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Forecasting" ;
+    skos:prefLabel "Research--Forecasting" .
+
+<http://id.worldcat.org/fast/1095196> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--French colonies" ;
+    skos:prefLabel "Research--French colonies" .
+
+<http://id.worldcat.org/fast/1095198> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Government policy" ;
+    skos:prefLabel "Research--Government policy" .
+
+<http://id.worldcat.org/fast/1095201> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Industries" ;
+    skos:prefLabel "Research--Industries" .
+
+<http://id.worldcat.org/fast/1095202> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Information services" ;
+    skos:prefLabel "Research--Information services" .
+
+<http://id.worldcat.org/fast/1095206> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Library resources" ;
+    skos:prefLabel "Research--Library resources" .
+
+<http://id.worldcat.org/fast/1095207> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Licenses" ;
+    skos:prefLabel "Research--Licenses" .
+
+<http://id.worldcat.org/fast/1095215> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Mathematical models" ;
+    skos:prefLabel "Research--Mathematical models" .
+
+<http://id.worldcat.org/fast/1095227> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Periodicals" ;
+    skos:prefLabel "Research--Periodicals" .
+
+<http://id.worldcat.org/fast/1095228> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Personnel management" ;
+    skos:prefLabel "Research--Personnel management" .
+
+<http://id.worldcat.org/fast/1095230> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Planning" ;
+    skos:prefLabel "Research--Planning" .
+
+<http://id.worldcat.org/fast/1095231> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Political aspects" ;
+    skos:prefLabel "Research--Political aspects" .
+
+<http://id.worldcat.org/fast/1095232> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Portuguese colonies" ;
+    skos:prefLabel "Research--Portuguese colonies" .
+
+<http://id.worldcat.org/fast/1095234> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Public opinion" ;
+    skos:prefLabel "Research--Public opinion" .
+
+<http://id.worldcat.org/fast/1095235> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Research" ;
+    skos:prefLabel "Research--Research" .
+
+<http://id.worldcat.org/fast/1095236> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Research grants" ;
+    skos:prefLabel "Research--Research grants" .
+
+<http://id.worldcat.org/fast/1095237> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Scholarships, fellowships, etc." ;
+    skos:prefLabel "Research--Scholarships, fellowships, etc." .
+
+<http://id.worldcat.org/fast/1095238> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Social aspects" ;
+    skos:prefLabel "Research--Social aspects" .
+
+<http://id.worldcat.org/fast/1095240> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Societies, etc." ;
+    skos:prefLabel "Research--Societies, etc." .
+
+<http://id.worldcat.org/fast/1095241> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Standards" ;
+    skos:prefLabel "Research--Standards" .
+
+<http://id.worldcat.org/fast/1095243> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Statistical methods--Data processing" ;
+    skos:prefLabel "Research--Statistical methods--Data processing" .
+
+<http://id.worldcat.org/fast/1095244> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Statistics" ;
+    skos:prefLabel "Research--Statistics" .
+
+<http://id.worldcat.org/fast/1095245> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching" ;
+    skos:prefLabel "Research--Study and teaching" .
+
+<http://id.worldcat.org/fast/1095246> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching (Elementary)" ;
+    skos:prefLabel "Research--Study and teaching (Elementary)" .
+
+<http://id.worldcat.org/fast/1095247> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching (Higher)" ;
+    skos:prefLabel "Research--Study and teaching (Higher)" .
+
+<http://id.worldcat.org/fast/1095248> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching (Middle school)" ;
+    skos:prefLabel "Research--Study and teaching (Middle school)" .
+
+<http://id.worldcat.org/fast/1095249> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching (Primary)" ;
+    skos:prefLabel "Research--Study and teaching (Primary)" .
+
+<http://id.worldcat.org/fast/1095250> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Study and teaching (Secondary)" ;
+    skos:prefLabel "Research--Study and teaching (Secondary)" .
+
+<http://id.worldcat.org/fast/1095251> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Taxation" ;
+    skos:prefLabel "Research--Taxation" .
+
+<http://id.worldcat.org/fast/1095252> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Technological innovations" ;
+    skos:prefLabel "Research--Technological innovations" .
+
+<http://id.worldcat.org/fast/1095253> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--U.S. states" ;
+    skos:prefLabel "Research--U.S. states" .
+
+<http://id.worldcat.org/fast/1095254> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--U.S. states--Finance" ;
+    skos:prefLabel "Research--U.S. states--Finance" .
+
+<http://id.worldcat.org/fast/1095255> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Vocational guidance" ;
+    skos:prefLabel "Research--Vocational guidance" .
+
+<http://id.worldcat.org/fast/1354435> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Environmental aspects" ;
+    skos:prefLabel "Research--Environmental aspects" .
+
+<http://id.worldcat.org/fast/1354436> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Research--Sources" ;
+    skos:prefLabel "Research--Sources" .
+
+<http://lod.nal.usda.gov/nalt/5458> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "research"@en ;
+    skos:prefLabel "research"@en .
+
+<http://www.wikidata.org/entity/Q42240> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "research" ;
+    skos:prefLabel "research" .
+
+<http://www.yso.fi/onto/yso/p183> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "tutkimus"@fi ;
+    skos:prefLabel "tutkimus"@fi .
+

@@ -81,7 +81,7 @@ export default function Thesaurus({
                 />
               </Box>
             </form>
-            <Typography
+            <Typography 
               variant="subtitle2"
               gutterBottom
               sx={{

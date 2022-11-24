@@ -1,0 +1,127 @@
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.bnf.fr/ark:/12148/cb11932499z> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Méthodologie"@fr ;
+    skos:prefLabel "Méthodologie"@fr .
+
+<http://data.bnf.fr/ark:/12148/cb131942840> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Philosophie -- Méthodologie"@fr ;
+    skos:prefLabel "Philosophie -- Méthodologie"@fr .
+
+<http://id.loc.gov/authorities/subjects/sh00005679> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Fieldwork"@en ;
+    skos:prefLabel "Fieldwork"@en .
+
+<http://id.loc.gov/authorities/subjects/sh00005984> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Graphic methods"@en ;
+    skos:prefLabel "Graphic methods"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2001008679> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Statistical methods"@en ;
+    skos:prefLabel "Statistical methods"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99001898> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Bibliography--Methodology"@en ;
+    skos:prefLabel "Bibliography--Methodology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99001902> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    identifiers:lccn "sh 99001902" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2006-05-08T12:02:33"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1999-03-04T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/ien> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Methodology"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Methodology"@en ] ) ;
+    madsrdf:exampleNote "Reference under the heading [Methodology]" ;
+    madsrdf:hasBroaderExternalAuthority <http://www.yso.fi/onto/yso/p7509> ;
+    madsrdf:hasCloseExternalAuthority <http://data.bnf.fr/ark:/12148/cb11932499z>,
+        <http://data.bnf.fr/ark:/12148/cb131942840> ;
+    madsrdf:hasExactExternalAuthority <http://lod.nal.usda.gov/nalt/5079> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00005679>,
+        <http://id.loc.gov/authorities/subjects/sh00005984>,
+        <http://id.loc.gov/authorities/subjects/sh2001008679>,
+        <http://id.loc.gov/authorities/subjects/sh99001898>,
+        <http://id.loc.gov/authorities/subjects/sh99003021>,
+        <http://id.loc.gov/authorities/subjects/sh99005284>,
+        <http://id.loc.gov/authorities/subjects/sh99005303> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_PatternHeadingH1095>,
+        <http://id.loc.gov/authorities/subjects/collection_Subdivisions>,
+        <http://id.loc.gov/authorities/subjects/collection_TopicSubdivisions> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    madsrdf:note "Use as a topical subdivision under disciplines for works on both the theory and practice of procedures to be followed." ;
+    owl:sameAs <http://id.loc.gov/authorities/sh99001902#concept>,
+        <info:lc/authorities/sh99001902> ;
+    skos:broadMatch <http://www.yso.fi/onto/yso/p7509> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2006-05-08T12:02:33"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh99001902> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1999-03-04T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/ien> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh99001902> ] ;
+    skos:closeMatch <http://data.bnf.fr/ark:/12148/cb11932499z>,
+        <http://data.bnf.fr/ark:/12148/cb131942840> ;
+    skos:exactMatch <http://lod.nal.usda.gov/nalt/5079> ;
+    skos:example "Reference under the heading [Methodology]" ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:narrower <http://id.loc.gov/authorities/subjects/sh00005679>,
+        <http://id.loc.gov/authorities/subjects/sh00005984>,
+        <http://id.loc.gov/authorities/subjects/sh2001008679>,
+        <http://id.loc.gov/authorities/subjects/sh99001898>,
+        <http://id.loc.gov/authorities/subjects/sh99003021>,
+        <http://id.loc.gov/authorities/subjects/sh99005284>,
+        <http://id.loc.gov/authorities/subjects/sh99005303> ;
+    skos:note "Use as a topical subdivision under disciplines for works on both the theory and practice of procedures to be followed." ;
+    skos:prefLabel "Methodology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99003021> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Discography--Methodology"@en ;
+    skos:prefLabel "Discography--Methodology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99005284> a madsrdf:Authority,
+        skos:Concept ; 
+    madsrdf:authoritativeLabel "Comparative method"@en ;
+    skos:prefLabel "Comparative method"@en .
+
+<http://id.loc.gov/authorities/subjects/sh99005303> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Simulation methods"@en ;
+    skos:prefLabel "Simulation methods"@en .
+
+<http://lod.nal.usda.gov/nalt/5079> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "methodology"@en ;
+    skos:prefLabel "methodology"@en .
+
+<http://www.yso.fi/onto/yso/p7509> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "metodologia"@fi ;
+    skos:prefLabel "metodologia"@fi .
+

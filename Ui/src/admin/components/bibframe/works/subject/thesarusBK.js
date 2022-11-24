@@ -17,11 +17,13 @@ import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import queryThesaurusBK from "src/services/thesaurus/thesaurusBk";
+import ThesaurusLCSH from "./thesaurusLCSH"
 
 export default function ThesarusBK() {
   const [subject, setSubject] = useState("");
   const [response, setResponse] = useState([]);
   const [open, setOpen] = useState(false);
+  const [openLCSH, setOpenLCSH] = useState(false);
 
   const handleClose = () => {
     setOpen(false);
@@ -134,7 +136,7 @@ export default function ThesarusBK() {
               </Box>): (
               <Box pt={"0.5rem"}>
                 <i>Nenhum registro encontrado:</i> 
-                <Button>Importar registros</Button>
+                <Button onClick={() => {setOpenLCSH(true)}}>Importar registros</Button>
 
                 </Box>)}
               
@@ -142,6 +144,7 @@ export default function ThesarusBK() {
           </Grid>
         </DialogContent>
       </Dialog>
+      <ThesaurusLCSH open={openLCSH} setOpen={setOpenLCSH} />
     </Box>
   );
 }

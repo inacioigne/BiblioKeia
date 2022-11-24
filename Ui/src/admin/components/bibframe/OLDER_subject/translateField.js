@@ -114,7 +114,7 @@ export default function TranslateField({
       label={label}
       name={metadata}
       InputProps={inputPros}
-      onChange={handleChange}
+      onChange={handleChange} 
     />
   );
 }
