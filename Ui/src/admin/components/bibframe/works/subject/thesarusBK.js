@@ -31,7 +31,7 @@ export default function ThesarusBK() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log(subject);
+    //console.log(subject);
     setOpen(true);
     queryThesaurusBK(subject, setResponse);
   };

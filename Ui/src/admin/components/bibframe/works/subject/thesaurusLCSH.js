@@ -168,7 +168,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                       sx={{ textTransform: "none" }}
                       onClick={() => {
                         let token = hit.uri.split("/")[5];
-                        console.log(token);
+                        //console.log(token);
                         getDetails(token);
                       }}
                     >
@@ -271,7 +271,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                         </Box>
 
                         {/* narrowerAuthorit */}
-                        {subjectDetails?.narrowerAuthority?.length !== 0 && (
+                        {subjectDetails?.narrower && (
                           <Box
                             sx={{ ...styleIformation, flexDirection: "column" }}
                           >
@@ -279,10 +279,10 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                               Termos Restritos:
                             </Typography>
                             <List dense={true}>
-                              {subjectDetails?.narrower.map(
+                              {subjectDetails.narrower.map(
                                 (narrower, index) => (
                                   <ListItem key={index}>
-                                    {/* <ListItemText primary={narrower.label} /> */}
+                                  
                                     <Typography variant="body1">
                                       <Button
                                         sx={{ textTransform: "none" }}

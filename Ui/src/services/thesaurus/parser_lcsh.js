@@ -57,11 +57,11 @@ async function ParserLCSH(token, setSubjectDetails, setUris) {
     return narrowerAuthorit.value
   })
   Uris['narrowerUris'] = narrowerUris
-  const narrowerLabels = hasNarrowerAuthority.map((narrowerAuthorit) => {
-    //console.log("ParserLCSH", narrowerAuthorit.value)
-    let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
-    return label;
-  });
+  // const narrowerLabels = hasNarrowerAuthority.map((narrowerAuthorit) => {
+  //   //console.log("ParserLCSH", narrowerAuthorit.value)
+  //   let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
+  //   return label;
+  // });
   const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
    
     let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
@@ -69,10 +69,10 @@ async function ParserLCSH(token, setSubjectDetails, setUris) {
 
     return {label:label, uri: uri};
   });
-  console.log('LOC: ', narrower)
+  //console.log('LOC: ', narrower)
   SubjectDetails["narrower"] = narrower
 
-  SubjectDetails["narrowerAuthority"] = narrowerLabels;
+  //SubjectDetails["narrowerAuthority"] = narrowerLabels;
 
   //hasReciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);

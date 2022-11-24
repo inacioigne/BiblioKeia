@@ -12,9 +12,9 @@ import {
   DialogActions,
   Grid,
   TextField,
-  InputAdornment,
+  ListItem,
   TextareaAutosize,
-  alertTitleClasses,
+  List,
 } from "@mui/material";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import MakeTranslate from "./makeTranslate";
@@ -23,8 +23,7 @@ import { api } from "src/services/translate/api";
 
 export default function Translate({ open, setOpen, subjectDetails }) {
   const [translate, setTranslate] = useState({});
-
-  //   const [translateNote, setTranslate] = useState(null);
+  const [sugestTranslate, setSugestTranslate] = useState({});
 
   function getTranslate(termo) {
     api
@@ -41,7 +40,12 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   }
 
   useEffect(() => {
+    console.log(subjectDetails.narrower);
     getTranslate(subjectDetails?.note);
+    setTranslate((prevState) => ({
+      ...prevState,
+      note: sugestTranslate.note,
+    }));
   }, []);
 
   const handleClose = () => {
@@ -53,7 +57,7 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   };
 
   const handleSalve = () => {
-    //setObjOriginal(objTranslate)
+
     alert(JSON.stringify(translate));
   };
 
@@ -67,32 +71,59 @@ export default function Translate({ open, setOpen, subjectDetails }) {
       </DialogTitle>
       <Divider />
       <DialogContent>
-        {/* <Box sx={{display: "flex", justifyContent: "space-between"}}> */}
         <Grid container>
           <Grid
             item
             xs={6} //sx={{ borderRight: "solid 1px" }}
           >
-            <MakeTranslate
+            {/* <MakeTranslate
               termo={subjectDetails?.authority}
               metadata={"authority"}
               setTranslate={setTranslate}
               translate={translate}
-              subjectDetails={subjectDetails}
+              sugestTranslate={sugestTranslate}
+              //subjectDetails={subjectDetails}
+              setSugestTranslate={setSugestTranslate}
               label={"Assunto"}
-            />
+            /> */}
           </Grid>
           <Grid item xs={6}>
             <TextareaAutosize
               aria-label="note"
               minRows={3}
-              placeholder={translate.note}
+              value={translate.note}
+              onChange={(e) => {
+                setTranslate((prevState) => ({
+                  ...prevState,
+                  note: e.target.value,
+                }));
+              }}
               style={{ width: "100%" }}
             />
           </Grid>
         </Grid>
-
-        {/* </Box> */}
+        {/* Termos Restritos */}
+        {subjectDetails?.narrower && (
+          <Box pt={"0.5rem"}>
+            <Typography variant="subtitle2">Termos Restritos:</Typography>
+            <List dense={true}>
+              {subjectDetails.narrower.map((narrower, index) => (
+                <ListItem key={index}>
+                  <MakeTranslate
+                    termo={narrower.label}
+                    metadata={"narrower"}
+                    setTranslate={setTranslate}
+                    translate={translate}
+                    sugestTranslate={sugestTranslate}
+                    //subjectDetails={subjectDetails}
+                    setSugestTranslate={setSugestTranslate}
+                    label={"Termo restrito"}
+                  />
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        )}
       </DialogContent>
       <Divider />
       <DialogActions>
