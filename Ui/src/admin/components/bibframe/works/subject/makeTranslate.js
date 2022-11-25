@@ -18,7 +18,6 @@ const styleIcon = {
 };
 
 export default function MakeTranslate({
-
   termo,
   setTranslate,
   translate,
@@ -26,10 +25,12 @@ export default function MakeTranslate({
   label,
   setSugestTranslate,
   sugestTranslate,
+  uri
 }) {
-  console.log("M", termo)
   const [sugest, setSugest] = useState(true);
-  const [test, setTest] = useState({});
+  
+
+
 
   function getTranslate(termo) {
     api
@@ -37,7 +38,7 @@ export default function MakeTranslate({
       .then((response) => {
         setSugestTranslate((prevState) => ({
           ...prevState,
-          [`${metadata}`]: response.data.translate,
+          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri }
         }));
       })
       .catch(function (error) {
@@ -46,35 +47,37 @@ export default function MakeTranslate({
   }
 
   useEffect(() => {
-
-    // setTranslate((prevState) => ({
-    //   ...prevState,
-    //   [`${metadata}`]: termo,
-    // }));
-    setTest(prevState => ({
-      meta: [...prevState.meta, termo],
-    }));
-    //getTranslate(termo);
-  }, []);
-
-
-  const handleAgree = () => {
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: sugestTranslate[`${metadata}`],
+      [`${metadata}`]: {value: termo, lang: "eng"}
+    }));
+
+    getTranslate(termo);
+   
+   
+  }, []);
+
+  const handleAgree = () => {
+    // setTranslate((prevState) => ({
+    //   ...prevState,
+    //   [`${metadata}`]: sugestTranslate[`${metadata}`],
+    // }));
+    setTranslate((prevState) => ({
+      ...prevState,
+      [`${metadata}`]: sugestTranslate[`${metadata}`]
     }));
     setSugest(false);
   };
 
   const handleRecuse = () => {
-  
     setSugest(false);
   };
 
   const handleChange = (e) => {
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: e.target.value,
+      [`${metadata}`]: {value: e.target.value, lang: "pt"}
+      
     }));
   };
 
@@ -97,7 +100,7 @@ export default function MakeTranslate({
             }}
           >
             <Typography variant="subtitle2" p={0}>
-              {sugestTranslate[`${metadata}`]}
+              {sugestTranslate[`${metadata}`]?.value}
             </Typography>
           </Box>
           <Tooltip title="Aceitar">
@@ -126,20 +129,23 @@ export default function MakeTranslate({
   };
   if (translate[`${metadata}`]) {
     return (
+      <>
+     
       <TextField
+        
+        fullWidth
         disabled={sugest}
-        name={termo}
+        id={metadata}
+        name={metadata}
         label={label}
-        value={translate[`${metadata}`]}
+        value={translate[`${metadata}`]['value']}
         InputProps={inputProps}
         onChange={handleChange}
       />
+     
+       </>
     );
-
   } else {
-    return (<div>
-      {test.meta.map((item, index) => (<code>{item}</code>))}
-    </div>)
+    return <div>esperando...</div>;
   }
-  
 }

@@ -31,7 +31,7 @@ import Translate from "src/admin/components/bibframe/works/subject/translate";
 const styleIformation = {
   p: "0.5rem",
   display: "flex",
-  gap: "0.5rem",
+  gap: "0.5rem", 
 };
 
 export default function ThesaurusLCSH({ open, setOpen }) {
