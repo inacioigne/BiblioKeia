@@ -20,10 +20,11 @@ import {
   CardContent,
   Tooltip,
   ListItemText,
+  Pagination,
 } from "@mui/material/";
 import { Search, Clear, FileDownloadDone } from "@mui/icons-material/";
 import TranslateIcon from "@mui/icons-material/Translate";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { api } from "src/services/loc";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 import Translate from "src/admin/components/bibframe/works/subject/translate";
@@ -31,28 +32,29 @@ import Translate from "src/admin/components/bibframe/works/subject/translate";
 const styleIformation = {
   p: "0.5rem",
   display: "flex",
-  gap: "0.5rem", 
+  gap: "0.5rem",
 };
 
 export default function ThesaurusLCSH({ open, setOpen }) {
-  const [type, setType] = useState("SimpleType");
+  const [type, setType] = useState("");
   const [subject, setSubject] = useState("");
+  const [page, setPage] = useState(1);
   const [hits, setHits] = useState([]);
   const [subjectDetails, setSubjectDetails] = useState(null);
   const [uris, setUris] = useState(null);
   const [openTranslate, setOpenTranslate] = useState(false);
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const getData = (subject, type) => {
+  const getData = (subject = "", type = "", page = "", memberOf="") => {
+    let params = {
+      q: `${subject}`,
+      offset: page,
+      rdftype: `${type}`,
+      memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
+    }
+    console.log('q',params )
     api
       .get("authorities/subjects/suggest2/", {
-        params: {
-          q: `${subject}`,
-          rdftype: `${type}`,
-        },
+        params: params
       })
       .then((response) => {
         setHits(response.data.hits);
@@ -60,7 +62,31 @@ export default function ThesaurusLCSH({ open, setOpen }) {
       .catch(function (error) {
         console.log("ERROOO!!", error);
       });
+
   };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleChange = (event) => {
+    setPage(1)
+    getData(event.target.value, type, 1);
+    setSubject(event.target.value);
+  };
+
+  const handlePagination = (event, value) => {
+    let p = value == 1 ? 1 : value * 10 - 9;
+    console.log("p", p);
+    setPage(value);
+    getData(subject, type, p);
+  };
+
+  
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   const getDetails = (token) => {
     //setToken(token)
@@ -137,14 +163,13 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                       }}
                       value={type}
                     >
+                      <MenuItem value={""}>Geral</MenuItem>
                       <MenuItem value={"SimpleType"}>Tipo Simples</MenuItem>
                       <MenuItem value={"ComplexType"}>Tipo Complexo</MenuItem>
                     </Select>
                   </FormControl>
                   <TextField
-                    onChange={(e) => {
-                      setSubject(e.target.value);
-                    }}
+                    onChange={handleChange}
                     value={subject}
                     fullWidth
                     label="Assunto"
@@ -152,32 +177,54 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                   />
                 </Box>
               </form>
-              <Typography
-                variant="subtitle2"
-                gutterBottom
-                sx={{
-                  mt: "0.5rem",
-                }}
-              >
-                <i>Resultados:</i>
-              </Typography>
-              <List>
-                {hits?.map((hit, index) => (
-                  <ListItem key={index} disablePadding>
-                    <Button
-                      sx={{ textTransform: "none" }}
-                      onClick={() => {
-                        let token = hit.uri.split("/")[5];
-                        //console.log(token);
-                        getDetails(token);
-                      }}
-                    >
-                      {" "}
-                      {hit.aLabel}
-                    </Button>
-                  </ListItem>
-                ))}
-              </List>
+              {/* {hits.length > 0 && ( */}
+              <Box>
+                <Typography
+                  variant="subtitle2"
+                  gutterBottom
+                  sx={{
+                    mt: "0.5rem",
+                  }}
+                >
+                  <i>Resultados:</i>
+                </Typography>
+                <List>
+                  {hits?.map((hit, index) => (
+                    <ListItem key={index} disablePadding>
+                      <Button
+                        sx={{ textTransform: "none" }}
+                        onClick={() => {
+                          let token = hit.uri.split("/")[5];
+                          //console.log(token);
+                          getDetails(token);
+                        }}
+                      >
+                        {" "}
+                        {hit.aLabel}
+                      </Button>
+                    </ListItem>
+                  ))}
+                </List>
+                <Pagination
+                  count={4}
+                  page={page}
+                  onChange={handlePagination}
+                  color="primary"
+                />
+              </Box>
+
+              {/* ) 
+              // :
+              // (<Typography
+              //   variant="subtitle2"
+              //   gutterBottom
+              //   sx={{
+              //     mt: "0.5rem",
+              //   }}
+              // >
+              //   <i>Nenhum resuldado encontrado, refaça sua busca</i>
+              // </Typography>)
+              } */}
             </Grid>
             <Grid item xs={7}>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -282,7 +329,6 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                               {subjectDetails.narrower.map(
                                 (narrower, index) => (
                                   <ListItem key={index}>
-                                  
                                     <Typography variant="body1">
                                       <Button
                                         sx={{ textTransform: "none" }}
