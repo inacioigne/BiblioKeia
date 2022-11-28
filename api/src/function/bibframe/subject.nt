@@ -65,7 +65,7 @@
         <http://id.loc.gov/authorities/subjects/sh99001898>,
         <http://id.loc.gov/authorities/subjects/sh99003021>,
         <http://id.loc.gov/authorities/subjects/sh99005284>,
-        <http://id.loc.gov/authorities/subjects/sh99005303> ;
+        <http://id.loc.gov/authorities/subjects/sh99005303> ; 
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
         <http://id.loc.gov/authorities/subjects/collection_PatternHeadingH1095>,
         <http://id.loc.gov/authorities/subjects/collection_Subdivisions>,

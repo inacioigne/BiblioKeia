@@ -37,6 +37,7 @@ const styleIformation = {
 
 export default function ThesaurusLCSH({ open, setOpen }) {
   const [type, setType] = useState("");
+  const [collection, setCollection] = useState("LCSH_General");
   const [subject, setSubject] = useState("");
   const [page, setPage] = useState(1);
   const [hits, setHits] = useState([]);
@@ -44,17 +45,19 @@ export default function ThesaurusLCSH({ open, setOpen }) {
   const [uris, setUris] = useState(null);
   const [openTranslate, setOpenTranslate] = useState(false);
 
-  const getData = (subject = "", type = "", page = "", memberOf="") => {
+  const getData = (subject = "", type = "", memberOf = "LCSH_General", page = 1) => {
     let params = {
       q: `${subject}`,
       offset: page,
       rdftype: `${type}`,
-      memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
-    }
-    console.log('q',params )
+      memberOf:
+        `http://id.loc.gov/authorities/subjects/collection_${memberOf}`,
+      //memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
+    };
+    console.log("q", params);
     api
       .get("authorities/subjects/suggest2/", {
-        params: params
+        params: params,
       })
       .then((response) => {
         setHits(response.data.hits);
@@ -62,7 +65,6 @@ export default function ThesaurusLCSH({ open, setOpen }) {
       .catch(function (error) {
         console.log("ERROOO!!", error);
       });
-
   };
 
   const handleClose = () => {
@@ -70,8 +72,8 @@ export default function ThesaurusLCSH({ open, setOpen }) {
   };
 
   const handleChange = (event) => {
-    setPage(1)
-    getData(event.target.value, type, 1);
+    setPage(1);
+    getData(event.target.value, type, collection, 1);
     setSubject(event.target.value);
   };
 
@@ -79,10 +81,8 @@ export default function ThesaurusLCSH({ open, setOpen }) {
     let p = value == 1 ? 1 : value * 10 - 9;
     console.log("p", p);
     setPage(value);
-    getData(subject, type, p);
+    getData(subject, type, collection, p);
   };
-
-  
 
   useEffect(() => {
     getData();
@@ -95,7 +95,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    getData(subject, type);
+    getData(subject, type, collection);
   };
 
   const handleTranslate = () => {
@@ -154,20 +154,46 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                     p: "1rem",
                   }}
                 >
-                  <FormControl>
-                    <InputLabel id="type">Tipo</InputLabel>
-                    <Select
-                      label="Tipo"
-                      onChange={(event) => {
-                        setType(event.target.value);
-                      }}
-                      value={type}
-                    >
-                      <MenuItem value={""}>Geral</MenuItem>
-                      <MenuItem value={"SimpleType"}>Tipo Simples</MenuItem>
-                      <MenuItem value={"ComplexType"}>Tipo Complexo</MenuItem>
-                    </Select>
-                  </FormControl>
+                  <Box sx={{ display: 'flex', gap: '0.5rem'}}>
+                    {/* Tipo */}
+                    <FormControl fullWidth>
+                      <InputLabel id="type">Tipo</InputLabel>
+                      <Select
+                        label="Tipo"
+                        onChange={(event) => {
+                          setType(event.target.value);
+                        }}
+                        value={type}
+                      >
+                        <MenuItem value={""}>Todos</MenuItem>
+                        <MenuItem value={"Topic"}>Topic</MenuItem>
+                        <MenuItem value={"SimpleType"}>Tipo Simples</MenuItem>
+                        <MenuItem value={"ComplexType"}>Tipo Complexo</MenuItem>
+                        <MenuItem value={"Geographic"}>Geographic</MenuItem>
+                        <MenuItem value={"CorporateName"}>Corporate Name</MenuItem>
+
+                      </Select>
+                    </FormControl>
+                    {/* Collection */}
+                    <FormControl fullWidth>
+                      <InputLabel id="collection">Coleção</InputLabel>
+                      <Select
+                        label="Coleção"
+                        onChange={(event) => {
+                          setCollection(event.target.value);
+                        }}
+                        value={collection}
+                      >
+                        <MenuItem value={"LCSH_General"}>Geral</MenuItem>
+                        <MenuItem value={"Subdivisions"}>LCSH - Subdivisions</MenuItem>
+                        <MenuItem value={"GeographicSubdivisions"}>LCSH - Geographic</MenuItem>
+                        <MenuItem value={"GenreFormSubdivisions"}>LCSH - GenreForm</MenuItem>
+                        <MenuItem value={"Geographic"}>LCSH - Temporal</MenuItem>
+                        
+                      </Select>
+                    </FormControl>
+                  </Box>
+
                   <TextField
                     onChange={handleChange}
                     value={subject}
