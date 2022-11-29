@@ -1,0 +1,21 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2022-11-29T14:21:32.100519"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Metodologia"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Metodologia"@pt ] ) ;
+    madsrdf:hasCloseExternalAuthority "http://d-nb.info/gnd/4139716-2",
+        "http://data.bnf.fr/ark:/12148/cb11932499z",
+        "http://data.bnf.fr/ark:/12148/cb131942840",
+        "http://id.worldcat.org/fast/1018722",
+        "http://www.wikidata.org/entity/Q185698",
+        "http://www.yso.fi/onto/yso/p7509" .
+

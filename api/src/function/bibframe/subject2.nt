@@ -360,7 +360,7 @@
         skos:Concept ;
     madsrdf:authoritativeLabel "Longitudinal method"@en ;
     skos:prefLabel "Longitudinal method"@en .
-
+ 
 <http://id.loc.gov/authorities/subjects/sh85084414> a madsrdf:Authority,
         madsrdf:Topic,
         skos:Concept ;

@@ -12,7 +12,7 @@ def HasNarrowerAuthority(g, objParser, subject, MADSRDF):
         g.add((uri, MADSRDF.authoritativeLabel, value))
     return g
 
-def CreateSubject(objParser):
+def CreateSubject(objParser): 
 
     MADSRDF = Namespace("http://www.loc.gov/mads/rdf/v1#")
 
@@ -32,6 +32,7 @@ def CreateSubject(objParser):
     g.add((subject, RDF.type, MADSRDF.Authority))
     g.add((subject, RDF.type, MADSRDF.Topic))
     g.add((subject, MADSRDF.authoritativeLabel, authorityLit))
+    
     elementListAuthority = BNode()
     g.add((subject, MADSRDF.elementList, elementListAuthority))
     elementAuthority = BNode()

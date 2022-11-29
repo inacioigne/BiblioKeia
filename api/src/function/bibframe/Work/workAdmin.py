@@ -18,4 +18,4 @@ def WorkAdmin(g, uri, ID, BF):
     g.add((identifiedBy, RDF.value, Literal(ID)))
     g.add((adm, BF.status, URIRef(f"http://id.loc.gov/vocabulary/mstatus/n")))
 
-    return g
+    return g 

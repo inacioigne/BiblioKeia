@@ -46,8 +46,10 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   }
 
   useEffect(() => {
-    console.log(subjectDetails.narrower)
-    getTranslate(subjectDetails?.note);
+    //console.log(subjectDetails);
+    if (subjectDetails?.note) {
+      getTranslate(subjectDetails?.note);
+    }
   }, []);
 
   const handleClose = () => {
@@ -66,9 +68,8 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   };
   const handleSalve = (e) => {
     e.preventDefault();
-
     const values = Object.values(translate);
-    //values.forEach((item) => console.log(item.lang))
+
     const langs = values.filter(function (item) {
       return item.lang == "eng";
     });
@@ -77,21 +78,26 @@ export default function Translate({ open, setOpen, subjectDetails }) {
     } else {
       const entries = Object.entries(translate);
 
-   
       const narrowers = new Array();
-      //const data = new Object(translate)
+      const variants = new Array();
       let data = Object.assign({}, translate);
       entries.forEach(([k, v]) => {
         if (k.includes("narrower")) {
           narrowers.push(v);
-          delete data[`${k}`]
+          delete data[`${k}`];
+        } else if (k.includes("variant")) {
+          variants.push(v)
+          delete data[`${k}`];
         }
       });
-      data["narrower"] = narrowers
-      console.log(data);
 
-      //const result = keys.filter(key => key.includes("narrower"))
-      //
+      data["narrower"] = narrowers;
+      data["variant"] = variants
+      data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
+      data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
+      data["tokenLSCH"] = subjectDetails.tokenLSCH
+
+      console.log(data);
     }
 
     //alert(JSON.stringify(translate));
@@ -121,22 +127,63 @@ export default function Translate({ open, setOpen, subjectDetails }) {
                 agree={agree}
               />
             </Grid>
+
             <Grid item xs={6}>
-              <TextareaAutosize
-                aria-label="note"
-                minRows={3}
-                value={translate.note?.value}
-                onChange={(e) => {
-                  setTranslate((prevState) => ({
-                    ...prevState,
-                    note: { value: e.target.value, lang: "pt" },
-                  }));
-                }}
-                style={{ width: "100%" }}
-              />
+              {/* Termo relacionado */}
+              {subjectDetails?.reciprocalAuthority && (
+                <MakeTranslate
+                  termo={subjectDetails?.reciprocalAuthority.label}
+                  uri={subjectDetails?.reciprocalAuthority.uri}
+                  metadata={"reciprocalAuthority"}
+                  setTranslate={setTranslate}
+                  translate={translate}
+                  sugestTranslate={sugestTranslate}
+                  setSugestTranslate={setSugestTranslate}
+                  label={"Termo relacionado"}
+                  agree={agree}
+                />
+              )}
+              {subjectDetails?.note && (
+                <TextareaAutosize
+                  aria-label="note"
+                  minRows={3}
+                  value={translate.note?.value}
+                  onChange={(e) => {
+                    setTranslate((prevState) => ({
+                      ...prevState,
+                      note: { value: e.target.value, lang: "pt" },
+                    }));
+                  }}
+                  style={{ width: "100%" }}
+                />
+              )}
             </Grid>
             <Grid item xs={6}>
-              {/* Termos Restritos */}
+              {subjectDetails?.variant.length > 0 && (
+                <Box pt={"0.5rem"}>
+                  <Typography variant="subtitle2">Variantes:</Typography>
+                  <List dense={true}>
+                    {subjectDetails.variant.map((variant, index) => (
+                      <ListItem key={index} sx={{ p: "0.5rem" }}>
+                        <MakeTranslate
+                          termo={variant}
+                          //uri={narrower.uri}
+                          metadata={`variant.${index}`}
+                          setTranslate={setTranslate}
+                          translate={translate}
+                          sugestTranslate={sugestTranslate}
+                          setSugestTranslate={setSugestTranslate}
+                          label={"Variante"}
+                          agree={agree}
+                        />
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              )}
+            </Grid>
+            {/* Termos Restritos */}
+            <Grid item xs={6}>
               {subjectDetails?.narrower && (
                 <Box pt={"0.5rem"}>
                   <Typography variant="subtitle2">Termos Restritos:</Typography>

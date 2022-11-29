@@ -36,7 +36,7 @@ const styleIformation = {
 };
 
 export default function ThesaurusLCSH({ open, setOpen }) {
-  const [type, setType] = useState("");
+  const [type, setType] = useState("all");
   const [collection, setCollection] = useState("LCSH_General");
   const [subject, setSubject] = useState("");
   const [page, setPage] = useState(1);
@@ -54,7 +54,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
         `http://id.loc.gov/authorities/subjects/collection_${memberOf}`,
       //memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
     };
-    console.log("q", params);
+    //console.log("q", params);
     api
       .get("authorities/subjects/suggest2/", {
         params: params,
@@ -85,6 +85,8 @@ export default function ThesaurusLCSH({ open, setOpen }) {
   };
 
   useEffect(() => {
+    console.log(subjectDetails?.variant.length)
+    
     getData();
   }, []);
 
@@ -125,6 +127,8 @@ export default function ThesaurusLCSH({ open, setOpen }) {
         </IconButton>
       </InputAdornment>
     ),
+
+    
   };
 
   return (
@@ -165,7 +169,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                         }}
                         value={type}
                       >
-                        <MenuItem value={""}>Todos</MenuItem>
+                        <MenuItem value={"all"}>Todos</MenuItem>
                         <MenuItem value={"Topic"}>Topic</MenuItem>
                         <MenuItem value={"SimpleType"}>Tipo Simples</MenuItem>
                         <MenuItem value={"ComplexType"}>Tipo Complexo</MenuItem>
@@ -336,7 +340,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                                     getDetails(token);
                                   }}
                                 >
-                                  {subjectDetails.reciprocalAuthority}
+                                  {subjectDetails.reciprocalAuthority.label}
                                 </Button>
                               </Typography>
                             </Box>
