@@ -3,6 +3,9 @@ from rdflib.namespace import RDF, RDFS
 from src.function.thesaurus.subjectAdmin import SubjectAdmin
 from src.function.thesaurus.elementList import ElementList
 from src.function.thesaurus.closeExternalAuthority import CloseExternalAuthority
+from src.function.thesaurus.exactExternalAuthority import ExactExternalAuthority
+from src.function.thesaurus.narrowerAuthority import NarrowerAuthority
+from src.function.thesaurus.reciprocalAuthority import ReciprocalAuthority
 
 def CreateSubject(request):
 
@@ -24,9 +27,19 @@ def CreateSubject(request):
     label = Literal(request.authority.value, lang='pt')
     g.add((uri, MADSRDF.authoritativeLabel, label))
 
-    g = ElementList(g, uri, label, MADSRDF )
+    g = ElementList(g, uri, label, MADSRDF)
 
+    #CloseExternalAuthority
     g = CloseExternalAuthority(g, uri, MADSRDF, request.closeExternalAuthority)
+
+    #ExactExternalAuthority
+    g = ExactExternalAuthority(g, uri, MADSRDF, request.exactExternalAuthority)
+
+    #NarrowerAuthority
+    g = NarrowerAuthority(g, uri, MADSRDF, request.narrower)
+
+    #ReciprocalAuthority
+    g = ReciprocalAuthority(g, uri, MADSRDF, request.reciprocalAuthority)
 
     g.serialize('subject_bk.nt')
 

@@ -4,7 +4,7 @@ from datetime import datetime, date
 
 def SubjectAdmin(g, uri, MADSRDF, RI):
 
-    RecordInfo = BNode()
+    RecordInfo = BNode() 
 
     g.add((uri, MADSRDF.adminMetadata, RecordInfo))
     g.add((RecordInfo, RDF.type, RI.RecordInfo))

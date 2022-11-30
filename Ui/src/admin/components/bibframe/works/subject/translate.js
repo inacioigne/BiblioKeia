@@ -19,7 +19,8 @@ import {
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
-import { api } from "src/services/translate/api";
+//import { api } from "src/services/translate/api"; 
+import { api } from "src/services/api"
 
 export default function Translate({ open, setOpen, subjectDetails }) {
   const [translate, setTranslate] = useState({});
@@ -29,7 +30,7 @@ export default function Translate({ open, setOpen, subjectDetails }) {
 
   function getTranslate(termo) {
     api
-      .post(`/${termo}`)
+      .post(`/translate/${termo}`)
       .then((response) => {
         setTranslate((prevState) => ({
           ...prevState,
@@ -46,7 +47,7 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   }
 
   useEffect(() => {
-    //console.log(subjectDetails);
+ 
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -66,6 +67,7 @@ export default function Translate({ open, setOpen, subjectDetails }) {
     e.preventDefault();
     console.log(e);
   };
+
   const handleSalve = (e) => {
     e.preventDefault();
     const values = Object.values(translate);
@@ -97,7 +99,16 @@ export default function Translate({ open, setOpen, subjectDetails }) {
       data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
       data["tokenLSCH"] = subjectDetails.tokenLSCH
 
-      console.log(data);
+      api.post("/thesaurus/subject", data)
+      .then((response) => {
+        console.log('Sb:', response)
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
+
+
+      //console.log(data);
     }
 
     //alert(JSON.stringify(translate));

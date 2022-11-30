@@ -1,5 +1,5 @@
-from rdflib import Graph, URIRef, BNode, Literal, Namespace
-from rdflib.namespace import RDF, RDFS
+from rdflib import URIRef
+
 
 def CloseExternalAuthority(g, uri, MADSRDF, ExternalAuthority):
 

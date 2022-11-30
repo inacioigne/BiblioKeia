@@ -6,7 +6,7 @@ from pyfuseki import FusekiUpdate
 
 router = APIRouter()
 
-@router.post("/thesaurus/subject", status_code=201) 
+@router.post("/subject", status_code=201) 
 async def create_subject(
     request: Subject_Schema):
 

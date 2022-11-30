@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, BNode, Literal, Namespace
+from rdflib import Graph, URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 
 def ElementList(g, uri, label, MADSRDF ):

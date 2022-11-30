@@ -329,7 +329,7 @@
 <http://id.loc.gov/authorities/subjects/sh00002301> a madsrdf:Authority,
         skos:Concept ;
     madsrdf:authoritativeLabel "Thought experiments"@en ;
-    skos:prefLabel "Thought experiments"@en .
+    skos:prefLabel "Thought experiments"@en . 
 
 <http://id.loc.gov/authorities/subjects/sh85004780> a madsrdf:Authority,
         skos:Concept ;
@@ -473,7 +473,7 @@
             ri:recordChangeDate "1987-07-20T12:27:49"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ri:recordStatus "revised"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Methodology"@en ;
+    madsrdf:authoritativeLabel "Methodology"@en ; 
     madsrdf:classification [ a lcc:ClassNumber ;
             madsrdf:code "BD240-BD241" ;
             madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/BD240-BD241> ] ;
