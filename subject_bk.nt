@@ -6,7 +6,7 @@
 <https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-11-30T11:07:30.786617"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-11-30T16:09:18.773003"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Metodologia"@pt ;
@@ -31,7 +31,20 @@
         <http://id.loc.gov/authorities/subjects/sh85099817>,
         <http://id.loc.gov/authorities/subjects/sh85107109>,
         <http://id.loc.gov/authorities/subjects/sh94000124> ;
-    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85113021> .
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85113021> ;
+    madsrdf:hasVariant [ a madsrdf:ComplexSubject,
+                madsrdf:Variant ;
+            madsrdf:componentList ( [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Filosofia"@pt ] ) ;
+                        madsrdf:variantLabel "Filosofia"@pt ] [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Metodologia"@pt ] ) ;
+                        madsrdf:variantLabel "Metodologia"@pt ] ) ;
+            madsrdf:variantLabel "Filosofia - Metodologia"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh00002301> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "experimentos mentais"@pt .

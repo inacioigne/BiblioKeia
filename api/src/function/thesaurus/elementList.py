@@ -1,7 +1,7 @@
 from rdflib import Graph, URIRef, BNode, Literal
-from rdflib.namespace import RDF, RDFS
+from rdflib.namespace import RDF
 
-def ElementList(g, uri, label, MADSRDF ):
+def ElementList(g, uri, label, MADSRDF):
 
     elementList = BNode()
     g.add((uri, MADSRDF.elementList, elementList))

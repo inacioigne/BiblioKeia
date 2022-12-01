@@ -19,10 +19,10 @@ import {
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
-//import { api } from "src/services/translate/api"; 
-import { api } from "src/services/api"
+//import { api } from "src/services/translate/api";
+import { api } from "src/services/api";
 
-export default function Translate({ open, setOpen, subjectDetails }) {
+export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subjectDetails }) {
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
@@ -47,7 +47,6 @@ export default function Translate({ open, setOpen, subjectDetails }) {
   }
 
   useEffect(() => {
- 
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -88,27 +87,31 @@ export default function Translate({ open, setOpen, subjectDetails }) {
           narrowers.push(v);
           delete data[`${k}`];
         } else if (k.includes("variant")) {
-          variants.push(v)
+          variants.push(v);
           delete data[`${k}`];
         }
       });
 
       data["narrower"] = narrowers;
-      data["variant"] = variants
+      data["variant"] = variants;
       data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
       data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
-      data["tokenLSCH"] = subjectDetails.tokenLSCH
+      data["tokenLSCH"] = subjectDetails.tokenLSCH;
 
-      api.post("/thesaurus/subject", data)
-      .then((response) => {
-        console.log('Sb:', response)
-      })
-      .catch(function (error) {
-        console.log("ERROOO!!", error);
-      });
-
-
-      //console.log(data);
+      api
+        .post("/thesaurus/subject", data)
+        .then((response) => {
+          //console.log('Sb:', response.status)
+          if (response.status == 201) {
+            setOpen(false);
+            setOpenLCSH(false)
+            setOpenBK(false)
+            alert(JSON.stringify("Assunto salvo com sucesso!!"));
+          }
+        })
+        .catch(function (error) {
+          console.log("ERROOO!!", error);
+        });
     }
 
     //alert(JSON.stringify(translate));

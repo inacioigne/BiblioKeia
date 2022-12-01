@@ -17,7 +17,7 @@ import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import queryThesaurusBK from "src/services/thesaurus/thesaurusBk";
-import ThesaurusLCSH from "./thesaurusLCSH"
+import ThesaurusLCSH from "./thesaurusLCSH";
 
 export default function ThesarusBK() {
   const [subject, setSubject] = useState("");
@@ -102,8 +102,8 @@ export default function ThesarusBK() {
         </DialogTitle>
         <Divider />
         <DialogContent>
-          <Grid container>
-            <Grid item xs={5} sx={{ borderRight: "solid 1px" }}>
+          <Grid container spacing={2}>
+            <Grid item xs={5} sx={{ pr: "0.5rem", borderRight: "solid 1px" }} >
               <form onSubmit={handleSearchAdv}>
                 <TextField
                   onChange={(e) => {
@@ -116,35 +116,49 @@ export default function ThesarusBK() {
                 />
               </form>
               {response.length > 0 ? (
-              <Box>
-                <Typography
-                variant="subtitle2"
-                gutterBottom
-                sx={{
-                  mt: "0.5rem",
-                }}
-              >
-                <i>Resultados:</i>
-              </Typography>
-              <List>
-                {response.map((subject, index) => (
-                  <ListItem key={index} disablePadding>
-                    <Button>{subject}</Button>
-                  </ListItem>
-                ))}
-              </List>
-              </Box>): (
-              <Box pt={"0.5rem"}>
-                <i>Nenhum registro encontrado:</i> 
-                <Button onClick={() => {setOpenLCSH(true)}}>Importar registros</Button>
-
-                </Box>)}
-              
+                <Box>
+                  <Typography
+                    variant="subtitle2"
+                    gutterBottom
+                    sx={{
+                      mt: "0.5rem",
+                    }}
+                  >
+                    <i>Resultados:</i>
+                  </Typography>
+                  <List>
+                    {response.map((subject, index) => (
+                      <ListItem key={index} disablePadding>
+                        <Button onClick={() => {console.log("S:", subject)}}>{subject}</Button>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              ) : (
+                <Box pt={"0.5rem"}>
+                  <i>Nenhum registro encontrado:</i>
+                  <Button
+                    onClick={() => {
+                      setOpenLCSH(true);
+                    }}
+                  >
+                    Importar registros
+                  </Button>
+                </Box>
+              )}
             </Grid>
+            <Grid item xs={7}>
+              card
+            </Grid>
+
           </Grid>
         </DialogContent>
       </Dialog>
-      <ThesaurusLCSH open={openLCSH} setOpen={setOpenLCSH} />
+      <ThesaurusLCSH
+        open={openLCSH}
+        setOpen={setOpenLCSH}
+        setOpenBK={setOpen}
+      />
     </Box>
   );
 }

@@ -6,6 +6,7 @@ from src.function.thesaurus.closeExternalAuthority import CloseExternalAuthority
 from src.function.thesaurus.exactExternalAuthority import ExactExternalAuthority
 from src.function.thesaurus.narrowerAuthority import NarrowerAuthority
 from src.function.thesaurus.reciprocalAuthority import ReciprocalAuthority
+from src.function.thesaurus.variant import Variant
 
 def CreateSubject(request):
 
@@ -41,6 +42,12 @@ def CreateSubject(request):
     #ReciprocalAuthority
     g = ReciprocalAuthority(g, uri, MADSRDF, request.reciprocalAuthority)
 
-    g.serialize('subject_bk.nt')
+    #Variant
+    g = Variant(g, uri, MADSRDF, request.variant)
+    
+    collection = URIRef("https://bibliokeia.com/authorities/subjects/collection_BKSH_General")
+    g.add((uri, MADSRDF.isMemberOfMADSCollection, collection))
 
-    return {'msg': request.authority.value}
+    nt = g.serialize(format='nt')
+ 
+    return nt

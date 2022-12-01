@@ -35,7 +35,7 @@ const styleIformation = {
   gap: "0.5rem",
 };
 
-export default function ThesaurusLCSH({ open, setOpen }) {
+export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
   const [type, setType] = useState("all");
   const [collection, setCollection] = useState("LCSH_General");
   const [subject, setSubject] = useState("");
@@ -45,13 +45,17 @@ export default function ThesaurusLCSH({ open, setOpen }) {
   const [uris, setUris] = useState(null);
   const [openTranslate, setOpenTranslate] = useState(false);
 
-  const getData = (subject = "", type = "", memberOf = "LCSH_General", page = 1) => {
+  const getData = (
+    subject = "",
+    type = "",
+    memberOf = "LCSH_General",
+    page = 1
+  ) => {
     let params = {
       q: `${subject}`,
       offset: page,
       rdftype: `${type}`,
-      memberOf:
-        `http://id.loc.gov/authorities/subjects/collection_${memberOf}`,
+      memberOf: `http://id.loc.gov/authorities/subjects/collection_${memberOf}`,
       //memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
     };
     //console.log("q", params);
@@ -85,13 +89,12 @@ export default function ThesaurusLCSH({ open, setOpen }) {
   };
 
   useEffect(() => {
-    console.log(subjectDetails?.variant.length)
-    
+    console.log(subjectDetails?.variant.length);
+
     getData();
   }, []);
 
   const getDetails = (token) => {
-    //setToken(token)
     ParserLCSH(token, setSubjectDetails, setUris);
   };
 
@@ -102,15 +105,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
 
   const handleTranslate = () => {
     setOpenTranslate(true);
-    // SetListSubject((prevState) => [
-    //   ...prevState,
-    //   {
-    //     label: subjectDetails?.authority,
-    //     lang: 'en',
-    //     type: type,
-    //     schema: "http://id.loc.gov/authorities/subjects",
-    //   },
-    // ]);
+
   };
 
   const inputPros = {
@@ -119,16 +114,12 @@ export default function ThesaurusLCSH({ open, setOpen }) {
         <IconButton
           color="primary"
           aria-label="search"
-          //component="button"
           type="submit"
-          //onClick={handleSearch}
         >
           <Search />
         </IconButton>
       </InputAdornment>
     ),
-
-    
   };
 
   return (
@@ -158,7 +149,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                     p: "1rem",
                   }}
                 >
-                  <Box sx={{ display: 'flex', gap: '0.5rem'}}>
+                  <Box sx={{ display: "flex", gap: "0.5rem" }}>
                     {/* Tipo */}
                     <FormControl fullWidth>
                       <InputLabel id="type">Tipo</InputLabel>
@@ -174,8 +165,9 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                         <MenuItem value={"SimpleType"}>Tipo Simples</MenuItem>
                         <MenuItem value={"ComplexType"}>Tipo Complexo</MenuItem>
                         <MenuItem value={"Geographic"}>Geographic</MenuItem>
-                        <MenuItem value={"CorporateName"}>Corporate Name</MenuItem>
-
+                        <MenuItem value={"CorporateName"}>
+                          Corporate Name
+                        </MenuItem>
                       </Select>
                     </FormControl>
                     {/* Collection */}
@@ -189,11 +181,18 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                         value={collection}
                       >
                         <MenuItem value={"LCSH_General"}>Geral</MenuItem>
-                        <MenuItem value={"Subdivisions"}>LCSH - Subdivisions</MenuItem>
-                        <MenuItem value={"GeographicSubdivisions"}>LCSH - Geographic</MenuItem>
-                        <MenuItem value={"GenreFormSubdivisions"}>LCSH - GenreForm</MenuItem>
-                        <MenuItem value={"Geographic"}>LCSH - Temporal</MenuItem>
-                        
+                        <MenuItem value={"Subdivisions"}>
+                          LCSH - Subdivisions
+                        </MenuItem>
+                        <MenuItem value={"GeographicSubdivisions"}>
+                          LCSH - Geographic
+                        </MenuItem>
+                        <MenuItem value={"GenreFormSubdivisions"}>
+                          LCSH - GenreForm
+                        </MenuItem>
+                        <MenuItem value={"Geographic"}>
+                          LCSH - Temporal
+                        </MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
@@ -207,7 +206,7 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                   />
                 </Box>
               </form>
-              {/* {hits.length > 0 && ( */}
+           
               <Box>
                 <Typography
                   variant="subtitle2"
@@ -225,7 +224,6 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                         sx={{ textTransform: "none" }}
                         onClick={() => {
                           let token = hit.uri.split("/")[5];
-                          //console.log(token);
                           getDetails(token);
                         }}
                       >
@@ -242,19 +240,6 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                   color="primary"
                 />
               </Box>
-
-              {/* ) 
-              // :
-              // (<Typography
-              //   variant="subtitle2"
-              //   gutterBottom
-              //   sx={{
-              //     mt: "0.5rem",
-              //   }}
-              // >
-              //   <i>Nenhum resuldado encontrado, refaça sua busca</i>
-              // </Typography>)
-              } */}
             </Grid>
             <Grid item xs={7}>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -385,6 +370,8 @@ export default function ThesaurusLCSH({ open, setOpen }) {
                       open={openTranslate}
                       setOpen={setOpenTranslate}
                       subjectDetails={subjectDetails}
+                      setOpenLCSH={setOpen}
+                      setOpenBK={setOpenBK}
                     />
                   </>
                 )}
