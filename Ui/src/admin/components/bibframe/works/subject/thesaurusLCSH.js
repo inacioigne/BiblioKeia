@@ -28,6 +28,7 @@ import { useState, useEffect } from "react";
 import { api } from "src/services/loc";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 import Translate from "src/admin/components/bibframe/works/subject/translate";
+import CardSubject from "src/admin/components/bibframe/works/subject/cardSubject";
 
 const styleIformation = {
   p: "0.5rem",
@@ -105,17 +106,12 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
 
   const handleTranslate = () => {
     setOpenTranslate(true);
-
   };
 
   const inputPros = {
     endAdornment: (
       <InputAdornment position="end">
-        <IconButton
-          color="primary"
-          aria-label="search"
-          type="submit"
-        >
+        <IconButton color="primary" aria-label="search" type="submit">
           <Search />
         </IconButton>
       </InputAdornment>
@@ -206,7 +202,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                   />
                 </Box>
               </form>
-           
+
               <Box>
                 <Typography
                   variant="subtitle2"
@@ -256,7 +252,6 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                           <Typography variant="h6">
                             {subjectDetails?.authority}
                           </Typography>
-
                           <Tooltip title="Traduzir">
                             <IconButton
                               color="primary"
@@ -282,7 +277,6 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                             justifyContent: "space-between",
                           }}
                         >
-                          {/* Variantes */}
                           {subjectDetails?.variant.length > 0 && (
                             <Box
                               sx={{
@@ -304,7 +298,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                               </List>
                             </Box>
                           )}
-                          {/* Termo Relacionado */}
+
                           {subjectDetails?.reciprocalAuthority && (
                             <Box
                               sx={{
@@ -332,7 +326,6 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                           )}
                         </Box>
 
-                        {/* narrowerAuthorit */}
                         {subjectDetails?.narrower && (
                           <Box
                             sx={{ ...styleIformation, flexDirection: "column" }}
@@ -362,7 +355,6 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                             </List>
                           </Box>
                         )}
-                        {/* <code>{subjectDetails?.variant}</code> */}
                       </CardContent>
                     </Card>
 

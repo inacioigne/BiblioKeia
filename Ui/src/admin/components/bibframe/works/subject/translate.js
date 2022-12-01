@@ -101,7 +101,7 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
       api
         .post("/thesaurus/subject", data)
         .then((response) => {
-          //console.log('Sb:', response.status)
+          //console.log(data)
           if (response.status == 201) {
             setOpen(false);
             setOpenLCSH(false)
@@ -110,7 +110,9 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
           }
         })
         .catch(function (error) {
+          //console.log(data)
           console.log("ERROOO!!", error);
+          alert(JSON.stringify("Problema ao salvar este registro"));
         });
     }
 

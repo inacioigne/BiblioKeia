@@ -14,7 +14,7 @@ export default async function queryThesaurusBK(data, setResponse) {
       {?s rdf:type madsrdf:Topic .
         ?s madsrdf:authoritativeLabel ?topic
         FILTER regex(?topic, "^${data}") 
-       
+        
          }
     }
     LIMIT 10`;
@@ -23,7 +23,7 @@ export default async function queryThesaurusBK(data, setResponse) {
   const dataset = rdf.dataset();
   await dataset.import(stream);
   for (const quad of dataset) {
-    setResponse((prevState) => [...prevState, quad.topic.value]);
+    setResponse((prevState) => [...prevState, {value: quad.topic.value, uri: quad.s.value}]);
   }
 
 

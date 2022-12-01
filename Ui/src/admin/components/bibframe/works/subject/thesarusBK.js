@@ -12,15 +12,28 @@ import {
   List,
   ListItem,
   Button,
+  Card,
+  CardContent,
+  Tooltip,
+  ListItemText
 } from "@mui/material/";
 import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import queryThesaurusBK from "src/services/thesaurus/thesaurusBk";
 import ThesaurusLCSH from "./thesaurusLCSH";
+import ParserBK from "src/services/thesaurus/parser_bk";
+import { FileDownloadDone } from "@mui/icons-material";
+
+const styleIformation = {
+  p: "0.5rem",
+  display: "flex",
+  gap: "0.5rem",
+};
 
 export default function ThesarusBK() {
   const [subject, setSubject] = useState("");
+  const [subjectBK, setSubjectBK] = useState(null);
   const [response, setResponse] = useState([]);
   const [open, setOpen] = useState(false);
   const [openLCSH, setOpenLCSH] = useState(false);
@@ -87,7 +100,7 @@ export default function ThesarusBK() {
           InputProps={inputPros}
         />
       </form>
-      {/* <code>{response}</code> */}
+      {/* <code>{response}</code>  */}
       <Dialog
         fullWidth={true}
         maxWidth={"md"}
@@ -103,7 +116,7 @@ export default function ThesarusBK() {
         <Divider />
         <DialogContent>
           <Grid container spacing={2}>
-            <Grid item xs={5} sx={{ pr: "0.5rem", borderRight: "solid 1px" }} >
+            <Grid item xs={5} sx={{ pr: "0.5rem", borderRight: "solid 1px" }}>
               <form onSubmit={handleSearchAdv}>
                 <TextField
                   onChange={(e) => {
@@ -129,7 +142,13 @@ export default function ThesarusBK() {
                   <List>
                     {response.map((subject, index) => (
                       <ListItem key={index} disablePadding>
-                        <Button onClick={() => {console.log("S:", subject)}}>{subject}</Button>
+                        <Button
+                          onClick={() => {
+                            ParserBK(subject.uri, setSubjectBK);
+                          }}
+                        >
+                          {subject.value}
+                        </Button>
                       </ListItem>
                     ))}
                   </List>
@@ -148,9 +167,60 @@ export default function ThesarusBK() {
               )}
             </Grid>
             <Grid item xs={7}>
-              card
+              {subjectBK && (
+                <Card sx={{ minWidth: 350, width: 450 }}>
+                  <CardContent>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Typography variant="h6">
+                        {subjectBK.authority}
+                      </Typography>
+                      <Tooltip title="Escolher">
+                        <IconButton
+                          color="primary"
+                          component="label"
+                          //onClick={handleChoose}
+                        >
+                          <FileDownloadDone />
+                        </IconButton>
+                      </Tooltip>
+                    </Box>
+                    <Divider />
+                    {/* variant */}
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      {subjectBK.variant.length > 0 && (
+                        <Box
+                          sx={{
+                            ...styleIformation,
+                            flexDirection: "column",
+                          }}
+                        >
+                          <Typography variant="subtitle2">
+                            Variantes:
+                          </Typography>
+                          <List dense={true}>
+                            {subjectDetails.variant.map((variant, index) => (
+                              <ListItem key={index}>
+                                <ListItemText primary={variant} />
+                              </ListItem>
+                            ))}
+                          </List>
+                        </Box>
+                      )}
+                    </Box>
+                  </CardContent>
+                </Card>
+              )}
             </Grid>
-
           </Grid>
         </DialogContent>
       </Dialog>

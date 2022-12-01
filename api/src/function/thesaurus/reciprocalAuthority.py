@@ -12,8 +12,8 @@ def ReciprocalAuthority(g, uri, MADSRDF, reciprocalAuthority):
         authority))
     
     g.add((authority, RDF.type, MADSRDF.Authority))
-    g.add((authority, RDF.type, MADSRDF.Topic))
+    #g.add((authority, RDF.type, MADSRDF.Topic))
     g.add((authority, MADSRDF.authoritativeLabel, label))
-    g = ElementList(g, authority, label, MADSRDF)
+    #g = ElementList(g, authority, label, MADSRDF)
 
     return g

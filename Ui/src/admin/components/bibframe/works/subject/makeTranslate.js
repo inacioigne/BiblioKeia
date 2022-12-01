@@ -76,7 +76,7 @@ export default function MakeTranslate({
   const handleChange = (e) => {
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: {value: e.target.value, lang: "pt"}
+      [`${metadata}`]: {value: e.target.value, lang: "pt", uri: sugestTranslate[`${metadata}`].uri}
       
     }));
   };

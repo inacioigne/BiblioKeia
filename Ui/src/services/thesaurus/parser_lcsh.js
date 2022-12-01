@@ -4,8 +4,8 @@ import cf from "clownface";
 
 async function ParserLCSH(token, setSubjectDetails, setUris) {
   const SubjectDetails = {};
-  const Uris = {};
-  const jsonld = `https://id.loc.gov/authorities/subjects/${token}.madsrdf_raw.jsonld`;
+  //const Uris = {};
+  //const jsonld = `https://id.loc.gov/authorities/subjects/${token}.madsrdf_raw.jsonld`;
   const rdf = `http://id.loc.gov/authorities/subjects/${token}.rdf`;
   const dataset = await fetch(rdf).then((response) => response.dataset());
 
@@ -13,7 +13,7 @@ async function ParserLCSH(token, setSubjectDetails, setUris) {
     rdf: namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
     rdfs: namespace("http://www.w3.org/2000/01/rdf-schema#"),
     bf: namespace("http://id.loc.gov/ontologies/bibframe/"),
-    bflc: namespace("http://id.loc.gov/ontologies/bflc/"),
+    bflc: namespace("http://id.loc.gov/ontologies/bflc/"), 
     owl: namespace("http://www.w3.org/2002/07/owl#"),
     skos: namespace("http://www.w3.org/2004/02/skos/core#"),
     dcterms: namespace("http://purl.org/dc/terms/"),
@@ -92,7 +92,7 @@ async function ParserLCSH(token, setSubjectDetails, setUris) {
 
   setSubjectDetails(SubjectDetails);
 
-  console.log("P:", SubjectDetails)
+  //console.log("P:", SubjectDetails)
 
 
 }
