@@ -6,7 +6,7 @@
 <https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-01T12:50:19.480503"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-01T19:35:28.969682"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Metodologia"@pt ;
@@ -74,7 +74,7 @@
     madsrdf:authoritativeLabel "Solução de problemas"@pt .
 
 <http://id.loc.gov/authorities/subjects/sh85113021> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa"@pt .
+    madsrdf:authoritativeLabel "Pesquisar"@pt .
 
 <http://id.loc.gov/authorities/subjects/sh94000124> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Genealogia (Filosofia)"@pt .
