@@ -1,4 +1,4 @@
-import { TextField, Box, Button, IconButton  } from "@mui/material/";
+import { TextField, Box, Button, IconButton } from "@mui/material/";
 import { useForm, useFieldArray, Controller, useWatch } from "react-hook-form";
 import ThesarusBK from "./thesarusBK";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -16,8 +16,7 @@ export default function Field() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
       {fields.map((subject, index) => (
-        <Box key={subject.id} sx={{ display: "flex", gap: "1rem"}}
-        >
+        <Box key={subject.id} sx={{ display: "flex", gap: "1rem" }}>
           <ThesarusBK />
           <IconButton onClick={() => remove(index)}>
             <RemoveIcon />

@@ -4,16 +4,21 @@ from src.function.thesaurus.elementList import ElementList
 
 def ReciprocalAuthority(g, uri, MADSRDF, reciprocalAuthority):
 
-    authority = URIRef(reciprocalAuthority.uri)
-    label = Literal(reciprocalAuthority.value, lang=reciprocalAuthority.lang)
+    for authority in reciprocalAuthority:
+        
 
-    g.add((uri, 
-        MADSRDF.hasReciprocalAuthority, 
-        authority))
-    
-    g.add((authority, RDF.type, MADSRDF.Authority))
-    #g.add((authority, RDF.type, MADSRDF.Topic))
-    g.add((authority, MADSRDF.authoritativeLabel, label))
-    #g = ElementList(g, authority, label, MADSRDF)
+        authority_uri = URIRef(authority.uri)
+        label = Literal(authority.value, lang=authority.lang)
+        
+
+        g.add((uri, 
+            MADSRDF.hasReciprocalAuthority, 
+            authority_uri)) 
+        
+        g.add((authority_uri, RDF.type, MADSRDF.Authority))
+        g.add((authority_uri, MADSRDF.authoritativeLabel, label)) 
+        collection = URIRef(
+            "http://id.loc.gov/authorities/subjects/collection_LCSH_General")
+        g.add((authority_uri, MADSRDF.isMemberOfMADSCollection, collection))
 
     return g

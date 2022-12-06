@@ -75,7 +75,7 @@
 
 <http://id.loc.gov/authorities/subjects/sh85113021> a madsrdf:Authority,
         madsrdf:Topic ;
-    madsrdf:authoritativeLabel "Pesquisar"@pt ;
+    madsrdf:authoritativeLabel "Pesquisar"@pt ; 
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
                 madsrdf:elementValue "Pesquisar"@pt ] ) .
 

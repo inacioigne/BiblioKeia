@@ -22,7 +22,13 @@ import { useEffect, useState, useRef } from "react";
 //import { api } from "src/services/translate/api";
 import { api } from "src/services/api";
 
-export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subjectDetails }) {
+export default function Translate({
+  open,
+  setOpen,
+  setOpenLCSH,
+  setOpenBK,
+  subjectDetails,
+}) {
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
@@ -47,10 +53,11 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
   }
 
   useEffect(() => {
+
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
-  }, []);
+  }, [subjectDetails?.note]);
 
   const handleClose = () => {
     setOpen(false);
@@ -81,6 +88,8 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
 
       const narrowers = new Array();
       const variants = new Array();
+      const reciprocalAuthority = new Array()
+
       let data = Object.assign({}, translate);
       entries.forEach(([k, v]) => {
         if (k.includes("narrower")) {
@@ -89,11 +98,15 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
         } else if (k.includes("variant")) {
           variants.push(v);
           delete data[`${k}`];
+        } else if (k.includes("reciprocalAuthority")) {
+          reciprocalAuthority.push(v)
+          delete data[`${k}`];
         }
       });
 
       data["narrower"] = narrowers;
       data["variant"] = variants;
+      data["reciprocalAuthority"] = reciprocalAuthority;
       data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
       data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
       data["tokenLSCH"] = subjectDetails.tokenLSCH;
@@ -101,11 +114,11 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
       api
         .post("/thesaurus/subject", data)
         .then((response) => {
-          //console.log(data)
+          console.log(data)
           if (response.status == 201) {
             setOpen(false);
-            setOpenLCSH(false)
-            setOpenBK(false)
+            setOpenLCSH(false);
+            setOpenBK(false);
             alert(JSON.stringify("Assunto salvo com sucesso!!"));
           }
         })
@@ -131,6 +144,24 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
       <form ref={form} onSubmit={handleSalve}>
         <DialogContent>
           <Grid container spacing={2}>
+            {/* Notas */}
+            {subjectDetails?.note && (
+              <Box sx={{ width: "100%", p: "0.5rem" }}>
+                <Typography variant="subtitle2">Nota:</Typography>
+                <TextareaAutosize
+                  aria-label="note"
+                  minRows={3}
+                  value={translate.note?.value}
+                  onChange={(e) => {
+                    setTranslate((prevState) => ({
+                      ...prevState,
+                      note: { value: e.target.value, lang: "pt" },
+                    }));
+                  }}
+                  style={{ width: "100%" }}
+                />
+              </Box>
+            )}
             <Grid item xs={6}>
               <MakeTranslate
                 termo={subjectDetails?.authority}
@@ -147,33 +178,33 @@ export default function Translate({ open, setOpen, setOpenLCSH, setOpenBK, subje
             <Grid item xs={6}>
               {/* Termo relacionado */}
               {subjectDetails?.reciprocalAuthority && (
-                <MakeTranslate
-                  termo={subjectDetails?.reciprocalAuthority.label}
-                  uri={subjectDetails?.reciprocalAuthority.uri}
-                  metadata={"reciprocalAuthority"}
-                  setTranslate={setTranslate}
-                  translate={translate}
-                  sugestTranslate={sugestTranslate}
-                  setSugestTranslate={setSugestTranslate}
-                  label={"Termo relacionado"}
-                  agree={agree}
-                />
-              )}
-              {subjectDetails?.note && (
-                <TextareaAutosize
-                  aria-label="note"
-                  minRows={3}
-                  value={translate.note?.value}
-                  onChange={(e) => {
-                    setTranslate((prevState) => ({
-                      ...prevState,
-                      note: { value: e.target.value, lang: "pt" },
-                    }));
-                  }}
-                  style={{ width: "100%" }}
-                />
+                <Box pt={"0.5rem"}>
+                  <Typography variant="subtitle2">
+                    Termo relacionado:
+                  </Typography>
+                  <List dense={true}>
+                    {subjectDetails.reciprocalAuthority.map(
+                      (reciprocalAuthority, index) => (
+                        <ListItem key={index} sx={{ p: "0.5rem" }}>
+                          <MakeTranslate
+                            termo={reciprocalAuthority.label}
+                            uri={reciprocalAuthority.uri}
+                            metadata={`reciprocalAuthority.${index}`}
+                            setTranslate={setTranslate}
+                            translate={translate}
+                            sugestTranslate={sugestTranslate}
+                            setSugestTranslate={setSugestTranslate}
+                            label={"Termo relacionado"}
+                            agree={agree}
+                          />
+                        </ListItem>
+                      )
+                    )}
+                  </List>
+                </Box>
               )}
             </Grid>
+            {/* Variantes */}
             <Grid item xs={6}>
               {subjectDetails?.variant.length > 0 && (
                 <Box pt={"0.5rem"}>

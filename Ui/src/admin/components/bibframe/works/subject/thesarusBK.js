@@ -15,7 +15,9 @@ import {
   Card,
   CardContent,
   Tooltip,
-  ListItemText
+  ListItemText,
+  Badge,
+  ListItemButton,
 } from "@mui/material/";
 import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
@@ -24,6 +26,10 @@ import queryThesaurusBK from "src/services/thesaurus/thesaurusBk";
 import ThesaurusLCSH from "./thesaurusLCSH";
 import ParserBK from "src/services/thesaurus/parser_bk";
 import { FileDownloadDone } from "@mui/icons-material";
+import ParserLCSH from "src/services/thesaurus/parser_lcsh";
+import TranslateIcon from "@mui/icons-material/Translate";
+import Translate from "src/admin/components/bibframe/works/subject/translate";
+import { blue, red } from "@mui/material/colors/";
 
 const styleIformation = {
   p: "0.5rem",
@@ -37,6 +43,10 @@ export default function ThesarusBK() {
   const [response, setResponse] = useState([]);
   const [open, setOpen] = useState(false);
   const [openLCSH, setOpenLCSH] = useState(false);
+  const [openTranslate, setOpenTranslate] = useState(false);
+  const [choise, setChoise] = useState(false);
+  const [active, setActive] = useState(false);
+
 
   const handleClose = () => {
     setOpen(false);
@@ -55,7 +65,60 @@ export default function ThesarusBK() {
     //setOpen(true);
   };
 
+  const handleCollection = (collection) => {
+    console.log(collection);
+  };
+
+  const handleChoose = () => {
+    setChoise(subjectBK.authority);
+    setSubject("")
+    setOpen(false);
+    setActive(true)
+  };
+
+  const handleRecuse = () => {
+    setChoise(false);
+    setActive(false)
+
+  };
+
   const inputPros = {
+    startAdornment: choise && (
+      <InputAdornment position="start">
+        <Typography
+          variant="subtitle2"
+          gutterBottom
+          sx={{
+            display: "flex",
+          }}
+        >
+          <Box
+            sx={{
+              borderRight: "solid 1px",
+              borderTopLeftRadius: "5px",
+              borderBottomLeftRadius: "5px",
+              px: "5px",
+              pt: "2px",
+              backgroundColor: blue[200],
+            }}
+          >
+            {subjectBK.authority}
+          </Box>
+          <Close
+            sx={{
+              fontSize: "25px",
+              px: "5px",
+              color: blue[800],
+              backgroundColor: red[200],
+              cursor: "pointer",
+              borderTopRightRadius: "5px",
+              borderBottomRightRadius: "5px",
+            }}
+            onClick={handleRecuse}
+          />
+        </Typography>
+      </InputAdornment>
+    ),
     endAdornment: (
       <InputAdornment position="end">
         <IconButton
@@ -91,6 +154,7 @@ export default function ThesarusBK() {
     <Box sx={{ width: "100%" }}>
       <form onSubmit={handleSearch}>
         <TextField
+        disabled={active}
           onChange={(e) => {
             setSubject(e.target.value);
           }}
@@ -100,7 +164,7 @@ export default function ThesarusBK() {
           InputProps={inputPros}
         />
       </form>
-      {/* <code>{response}</code>  */}
+
       <Dialog
         fullWidth={true}
         maxWidth={"md"}
@@ -168,57 +232,159 @@ export default function ThesarusBK() {
             </Grid>
             <Grid item xs={7}>
               {subjectBK && (
-                <Card sx={{ minWidth: 350, width: 450 }}>
-                  <CardContent>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <Typography variant="h6">
-                        {subjectBK.authority}
-                      </Typography>
-                      <Tooltip title="Escolher">
-                        <IconButton
-                          color="primary"
-                          component="label"
-                          //onClick={handleChoose}
-                        >
-                          <FileDownloadDone />
-                        </IconButton>
-                      </Tooltip>
-                    </Box>
-                    <Divider />
-                    {/* variant */}
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      {subjectBK.variant.length > 0 && (
+                <>
+                  <Card sx={{ minWidth: 350, width: 500 }}>
+                    <CardContent>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Typography variant="h6">
+                          {subjectBK.authority}
+                        </Typography>
+                        {subjectBK.thesarus == "BKSH" ? (
+                          <Tooltip title="Escolher">
+                            <IconButton
+                              color="primary"
+                              component="label"
+                              onClick={handleChoose}
+                            >
+                              <FileDownloadDone />
+                            </IconButton>
+                          </Tooltip>
+                        ) : (
+                          <Tooltip title="Traduzir">
+                            <IconButton
+                              color="primary"
+                              component="label"
+                              onClick={() => {
+                                setOpenTranslate(true);
+                              }}
+                            >
+                              <TranslateIcon />
+                            </IconButton>
+                          </Tooltip>
+                        )}
+                      </Box>
+                      <Divider />
+                      {/* variant */}
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        {subjectBK.variant.length > 0 && (
+                          <Box
+                            sx={{
+                              ...styleIformation,
+                              flexDirection: "column",
+                            }}
+                          >
+                            <Typography variant="subtitle2">
+                              Variantes:
+                            </Typography>
+                            <List dense={true}>
+                              {subjectBK.variant.map((variant, index) => (
+                                <ListItem key={index}>
+                                  <ListItemText primary={variant} />
+                                </ListItem>
+                              ))}
+                            </List>
+                          </Box>
+                        )}
+                        {/* reciprocalAuthority */}
+                        {subjectBK?.reciprocalAuthority.length > 0 && (
+                          <Box
+                            sx={{
+                              ...styleIformation,
+                              flexDirection: "column",
+                            }}
+                          >
+                            <Typography variant="subtitle2">
+                              Termo Relacionado:
+                            </Typography>
+                            <List dense={true}>
+                              {subjectBK.reciprocalAuthority.map(
+                                (reciprocalAuthority, index) => (
+                                  <ListItem key={index}>
+                                    <Badge
+                                      badgeContent={
+                                        reciprocalAuthority.collection
+                                      }
+                                      color="secondary"
+                                    >
+                                      <Button
+                                        variant="outlined"
+                                        sx={{ textTransform: "none" }}
+                                        onClick={() => {
+                                          let token =
+                                            reciprocalAuthority.uri.split(
+                                              "/"
+                                            )[5];
+                                          console.log(token);
+                                          ParserLCSH(token, setSubjectBK);
+                                        }}
+                                      >
+                                        {reciprocalAuthority.label}
+                                      </Button>
+                                    </Badge>
+                                  </ListItem>
+                                )
+                              )}
+                            </List>
+                          </Box>
+                        )}
+                      </Box>
+                      {/* narrower */}
+                      {subjectBK?.narrower && (
                         <Box
-                          sx={{
-                            ...styleIformation,
-                            flexDirection: "column",
-                          }}
+                          sx={{ ...styleIformation, flexDirection: "column" }}
                         >
                           <Typography variant="subtitle2">
-                            Variantes:
+                            Termos Restritos:
                           </Typography>
                           <List dense={true}>
-                            {subjectDetails.variant.map((variant, index) => (
-                              <ListItem key={index}>
-                                <ListItemText primary={variant} />
+                            {subjectBK.narrower.map((narrower, index) => (
+                              <ListItem key={index} sx={{ pb: "1rem" }}>
+                                {/* <ListItemButton> */}
+                                <Badge
+                                  badgeContent={narrower.collection}
+                                  color="secondary"
+                                >
+                                  <Button
+                                    sx={{
+                                      textTransform: "none", //pb: "0.5rem"
+                                    }}
+                                    variant="outlined"
+                                    onClick={() => {
+                                      // let token =
+                                      //   narrower.uri.split("/")[5];
+                                      // getDetails(token);
+                                    }}
+                                  >
+                                    {narrower.label}
+                                  </Button>
+                                </Badge>
+                                {/* </ListItemButton> */}
                               </ListItem>
                             ))}
                           </List>
                         </Box>
                       )}
-                    </Box>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+
+                  <Translate
+                    open={openTranslate}
+                    setOpen={setOpenTranslate}
+                    subjectDetails={subjectBK}
+                    setOpenLCSH={setOpen}
+                    setOpenBK={setOpen}
+                  />
+                </>
               )}
             </Grid>
           </Grid>

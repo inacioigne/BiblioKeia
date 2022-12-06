@@ -277,6 +277,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                             justifyContent: "space-between",
                           }}
                         >
+                          {/* variant */}
                           {subjectDetails?.variant.length > 0 && (
                             <Box
                               sx={{
@@ -298,8 +299,8 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                               </List>
                             </Box>
                           )}
-
-                          {subjectDetails?.reciprocalAuthority && (
+                          {/* reciprocalAuthority */}
+                          {subjectDetails.reciprocalAuthority && (
                             <Box
                               sx={{
                                 ...styleIformation,
@@ -309,13 +310,38 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                               <Typography variant="subtitle2">
                                 Termo Relacionado:
                               </Typography>
+                              <List dense={true}>
+                                {subjectDetails.reciprocalAuthority.map(
+                                  (reciprocalAuthority, index) => (
+                                    <ListItem key={index}>
+                                      <Button
+                                        variant="outlined"
+                                        sx={{ textTransform: "none" }}
+                                        onClick={() => {
+                                          let token =
+                                            reciprocalAuthority.uri.split(
+                                              "/"
+                                            )[5];
+                                          console.log(token);
+                                          ParserLCSH(token, setSubjectDetails);
+                                        }}
+                                      >
+                                        {reciprocalAuthority.label}
+                                      </Button>
+                                    </ListItem>
+                                  )
+                                )}
+                              </List>
                               <Typography variant="body1">
                                 <Button
                                   sx={{ textTransform: "none" }}
                                   onClick={() => {
+                                    // let token =
+                                    //   uris.reciprocalAuthority.split("/")[5];
                                     let token =
-                                      uris.reciprocalAuthority.split("/")[5];
-                                    //console.log(token);
+                                      subjectDetails.reciprocalAuthority.uri.split(
+                                        "/"
+                                      )[5];
                                     getDetails(token);
                                   }}
                                 >
@@ -325,7 +351,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                             </Box>
                           )}
                         </Box>
-
+                        {/* narrower */}
                         {subjectDetails?.narrower && (
                           <Box
                             sx={{ ...styleIformation, flexDirection: "column" }}
@@ -357,14 +383,6 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
                         )}
                       </CardContent>
                     </Card>
-
-                    <Translate
-                      open={openTranslate}
-                      setOpen={setOpenTranslate}
-                      subjectDetails={subjectDetails}
-                      setOpenLCSH={setOpen}
-                      setOpenBK={setOpenBK}
-                    />
                   </>
                 )}
               </Box>
@@ -372,6 +390,14 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
           </Grid>
         </DialogContent>
       </Dialog>
+
+      <Translate
+        open={openTranslate}
+        setOpen={setOpenTranslate}
+        subjectDetails={subjectDetails}
+        setOpenLCSH={setOpen}
+        setOpenBK={setOpenBK}
+      />
     </>
   );
 }

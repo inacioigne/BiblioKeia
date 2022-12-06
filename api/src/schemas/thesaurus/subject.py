@@ -16,7 +16,7 @@ class Subject_Schema(BaseModel):
     tokenLSCH: str
     variant: list[Authority]
     narrower: list[AuthorityExternal]
-    reciprocalAuthority: Optional[AuthorityExternal]
+    reciprocalAuthority: Optional[list[AuthorityExternal]]
     exactExternalAuthority: Optional[list]
     closeExternalAuthority: Optional[list]
 
@@ -25,11 +25,13 @@ class Subject_Schema(BaseModel):
         "value": "Metodologia",
         "lang": "pt"
     },
-    "reciprocalAuthority": {
+    "reciprocalAuthority": [
+        {
         "value": "Pesquisar",
         "lang": "pt",
         "uri": "http://id.loc.gov/authorities/subjects/sh85113021"
-    },
+    }
+    ],
     "narrower": [
         {
             "value": "experimentos mentais",

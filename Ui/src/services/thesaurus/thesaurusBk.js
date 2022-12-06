@@ -9,22 +9,40 @@ export default async function queryThesaurusBK(data, setResponse) {
 
   const query = `PREFIX madsrdf:  <http://www.loc.gov/mads/rdf/v1#> 
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    SELECT *
+    SELECT ?uri ?topic
     WHERE { GRAPH  ?G 
-      {?s rdf:type madsrdf:Topic .
-        ?s madsrdf:authoritativeLabel ?topic
-        FILTER regex(?topic, "^${data}") 
-        
+      {?uri rdf:type madsrdf:Topic .
+        ?uri madsrdf:authoritativeLabel ?topic
+        FILTER regex(?topic, "^${data}")        
          }
     }
     LIMIT 10`;
 
   const stream = await client.query.select(query);
-  const dataset = rdf.dataset();
-  await dataset.import(stream);
-  for (const quad of dataset) {
-    setResponse((prevState) => [...prevState, {value: quad.topic.value, uri: quad.s.value}]);
-  }
+  stream.on('data', row => {
+   
+    setResponse((prevState) => [
+          ...prevState,
+          { value: row.topic.value, 
+            uri: row.uri.value },
+        ]);
+  
+  })
+ 
+  // const dataset = rdf.dataset();
+  // await dataset.import(stream);
+  
+  // for (const quad of dataset) {
+     
+  //   setResponse((prevState) => [
+  //     ...prevState,
+  //     { value: quad.topic.value, uri: quad.s.value },
+  //   ]);
+  // }
 
-
+  // stream.on('data', row => {
+  //   Object.entries(row).forEach(([key, value]) => {
+  //     console.log("on", value)
+  //   })
+  // })
 }

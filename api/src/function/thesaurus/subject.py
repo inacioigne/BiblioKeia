@@ -49,6 +49,6 @@ def CreateSubject(request):
     g.add((uri, MADSRDF.isMemberOfMADSCollection, collection))
 
     nt = g.serialize(format='nt')
-    g.serialize('subjects.nt')
+    g.serialize('subject.nt')
  
     return nt

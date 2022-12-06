@@ -3,7 +3,7 @@ import namespace from "@rdfjs/namespace";
 import cf from "clownface";
 
 async function ParserBK(uri, setSubjectBK) {
-    const SubjectDetails = {};
+  const SubjectDetails = {};
 
   let graph = `http://localhost:3030/thesaurus?graph=${uri}`;
   const dataset = await fetch(graph).then((response) => response.dataset());
@@ -26,6 +26,7 @@ async function ParserBK(uri, setSubjectBK) {
   //  Label
   const label = subject.out(ns.madsrdf.authoritativeLabel).value;
   SubjectDetails["authority"] = label;
+  SubjectDetails["thesarus"] = "BKSH";
 
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
@@ -34,9 +35,38 @@ async function ParserBK(uri, setSubjectBK) {
   });
   SubjectDetails["variant"] = variants;
 
-  setSubjectBK(SubjectDetails)
+  // reciprocalAuthority
+  const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
+  if (hasReciprocalAuthority._context.length > 0) {
+    let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
+      let uri = authority.out(ns.madsrdf.isMemberOfMADSCollection).value;
 
-  console.log("P:", variants);
+      let ra = {
+        label: authority.out(ns.madsrdf.authoritativeLabel).value,
+        collection: uri.split("_")[1],
+        uri: authority.value,
+      };
+      return ra;
+    });
+    SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
+  }
+
+  //NarrowerAuthority
+  const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
+  const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
+    let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
+    let uri = narrowerAuthorit.out(ns.madsrdf.isMemberOfMADSCollection).value;
+
+    return {
+      label: label,
+      uri: narrowerAuthorit.value,
+      collection: uri.split("_")[1],
+    };
+  });
+  SubjectDetails["narrower"] = narrower;
+  console.log('P:', narrower)
+
+  setSubjectBK(SubjectDetails);
 }
 
 export default ParserBK;

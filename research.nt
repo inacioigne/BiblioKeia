@@ -6,7 +6,7 @@
 <https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-01T19:35:28.969682"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-05T16:53:00.205325"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Metodologia"@pt ;
@@ -47,35 +47,46 @@
     madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh00002301> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "experimentos mentais"@pt .
+    madsrdf:authoritativeLabel "experimentos mentais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85004780> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Análise (Filosofia)"@pt .
+    madsrdf:authoritativeLabel "Análise (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85026813> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Classificação das ciências"@pt .
+    madsrdf:authoritativeLabel "Classificação das ciências"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85050813> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Formalização (Filosofia)"@pt .
+    madsrdf:authoritativeLabel "Formalização (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85060556> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Heurística"@pt .
+    madsrdf:authoritativeLabel "Heurística"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85067232> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Abordagem interdisciplinar do conhecimento"@pt .
+    madsrdf:authoritativeLabel "Abordagem interdisciplinar do conhecimento"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85078296> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "método longitudinal"@pt .
+    madsrdf:authoritativeLabel "método longitudinal"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85099817> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Performativo (Filosofia)"@pt .
+    madsrdf:authoritativeLabel "Performativo (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85107109> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Solução de problemas"@pt .
+    madsrdf:authoritativeLabel "Solução de problemas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85113021> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisar"@pt .
+    madsrdf:authoritativeLabel "Pesquisar"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh94000124> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Genealogia (Filosofia)"@pt .
+    madsrdf:authoritativeLabel "Genealogia (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
