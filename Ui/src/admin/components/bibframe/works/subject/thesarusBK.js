@@ -17,7 +17,6 @@ import {
   Tooltip,
   ListItemText,
   Badge,
-  ListItemButton,
 } from "@mui/material/";
 import { Search, Close } from "@mui/icons-material";
 import { useState } from "react";
@@ -47,22 +46,20 @@ export default function ThesarusBK() {
   const [choise, setChoise] = useState(false);
   const [active, setActive] = useState(false);
 
-
   const handleClose = () => {
     setOpen(false);
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
-    //console.log(subject);
     setOpen(true);
     queryThesaurusBK(subject, setResponse);
   };
 
   const handleSearchAdv = (e) => {
     e.preventDefault();
-    console.log(subject);
-    //setOpen(true);
+    //console.log(subject);
+    queryThesaurusBK(subject, setResponse);
   };
 
   const handleCollection = (collection) => {
@@ -71,15 +68,14 @@ export default function ThesarusBK() {
 
   const handleChoose = () => {
     setChoise(subjectBK.authority);
-    setSubject("")
+    setSubject("");
     setOpen(false);
-    setActive(true)
+    setActive(true);
   };
 
   const handleRecuse = () => {
     setChoise(false);
-    setActive(false)
-
+    setActive(false);
   };
 
   const inputPros = {
@@ -154,7 +150,7 @@ export default function ThesarusBK() {
     <Box sx={{ width: "100%" }}>
       <form onSubmit={handleSearch}>
         <TextField
-        disabled={active}
+          disabled={active}
           onChange={(e) => {
             setSubject(e.target.value);
           }}
@@ -167,7 +163,7 @@ export default function ThesarusBK() {
 
       <Dialog
         fullWidth={true}
-        maxWidth={"md"}
+        maxWidth={"lg"}
         open={open}
         onClose={handleClose}
       >
@@ -185,6 +181,7 @@ export default function ThesarusBK() {
                 <TextField
                   onChange={(e) => {
                     setSubject(e.target.value);
+                    queryThesaurusBK(e.target.value, setResponse);
                   }}
                   value={subject}
                   fullWidth
@@ -208,6 +205,7 @@ export default function ThesarusBK() {
                       <ListItem key={index} disablePadding>
                         <Button
                           onClick={() => {
+                            //console.log(subject.uri)
                             ParserBK(subject.uri, setSubjectBK);
                           }}
                         >
@@ -233,7 +231,7 @@ export default function ThesarusBK() {
             <Grid item xs={7}>
               {subjectBK && (
                 <>
-                  <Card sx={{ minWidth: 350, width: 500 }}>
+                  <Card sx={{ minWidth: 350, width: "100%" }}>
                     <CardContent>
                       <Box
                         sx={{
@@ -296,7 +294,7 @@ export default function ThesarusBK() {
                           </Box>
                         )}
                         {/* reciprocalAuthority */}
-                        {subjectBK?.reciprocalAuthority.length > 0 && (
+                        {subjectBK?.reciprocalAuthority && (
                           <Box
                             sx={{
                               ...styleIformation,
@@ -360,9 +358,9 @@ export default function ThesarusBK() {
                                     }}
                                     variant="outlined"
                                     onClick={() => {
-                                      // let token =
-                                      //   narrower.uri.split("/")[5];
-                                      // getDetails(token);
+                                      let token = narrower.uri.split("/")[5];
+                                      //console.log(token);
+                                      ParserLCSH(token, setSubjectBK);
                                     }}
                                   >
                                     {narrower.label}
@@ -376,14 +374,6 @@ export default function ThesarusBK() {
                       )}
                     </CardContent>
                   </Card>
-
-                  <Translate
-                    open={openTranslate}
-                    setOpen={setOpenTranslate}
-                    subjectDetails={subjectBK}
-                    setOpenLCSH={setOpen}
-                    setOpenBK={setOpen}
-                  />
                 </>
               )}
             </Grid>
@@ -394,6 +384,15 @@ export default function ThesarusBK() {
         open={openLCSH}
         setOpen={setOpenLCSH}
         setOpenBK={setOpen}
+        setSubjectBK={setSubjectBK}
+      />
+      <Translate
+        open={openTranslate}
+        setOpen={setOpenTranslate}
+        subjectDetails={subjectBK}
+        setOpenLCSH={setOpen}
+        setOpenBK={setOpen}
+        setSubjectBK={setSubjectBK}
       />
     </Box>
   );

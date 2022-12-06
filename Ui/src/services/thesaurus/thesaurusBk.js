@@ -13,7 +13,7 @@ export default async function queryThesaurusBK(data, setResponse) {
     WHERE { GRAPH  ?G 
       {?uri rdf:type madsrdf:Topic .
         ?uri madsrdf:authoritativeLabel ?topic
-        FILTER regex(?topic, "^${data}")        
+        FILTER regex(?topic, "^${data}", "i")        
          }
     }
     LIMIT 10`;

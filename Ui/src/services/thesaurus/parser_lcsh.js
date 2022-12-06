@@ -35,7 +35,7 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   if (note) {
     SubjectDetails["note"] = note;
   }
-  console.log(SubjectDetails)
+  //console.log(SubjectDetails)
 
 
   //hasVariant

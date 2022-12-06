@@ -15,9 +15,10 @@ async def create_subject(request: Subject_Schema):
     nt = CreateSubject(request)
     G = Make_Graph(nt, request.tokenLSCH)
 
-    fuseki_update.run_sparql(G)
+    #fuseki_update.run_sparql(G)
 
-    return {'subject': f'http://localhost:3030/thesaurus?graph=https:%2F%2Fbibliokeia.com%2Fauthorities%2Fsubjects%2F{request.tokenLSCH}'}
+    return {'uri': f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
+    
 
 @router.get("/subject/{tokenBK}", status_code=200) 
 async def get_subject(tokenBK: str):

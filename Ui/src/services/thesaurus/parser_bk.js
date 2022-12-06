@@ -64,7 +64,7 @@ async function ParserBK(uri, setSubjectBK) {
     };
   });
   SubjectDetails["narrower"] = narrower;
-  console.log('P:', narrower)
+  //console.log('P:', narrower)
 
   setSubjectBK(SubjectDetails);
 }

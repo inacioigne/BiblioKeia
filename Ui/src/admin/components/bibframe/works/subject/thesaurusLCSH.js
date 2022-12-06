@@ -36,7 +36,7 @@ const styleIformation = {
   gap: "0.5rem",
 };
 
-export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
+export default function ThesaurusLCSH({ open, setOpen, setOpenBK, setSubjectBK }) {
   const [type, setType] = useState("all");
   const [collection, setCollection] = useState("LCSH_General");
   const [subject, setSubject] = useState("");
@@ -90,7 +90,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
   };
 
   useEffect(() => {
-    console.log(subjectDetails?.variant.length);
+    //console.log(subjectDetails?.variant.length);
 
     getData();
   }, []);
@@ -397,6 +397,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK }) {
         subjectDetails={subjectDetails}
         setOpenLCSH={setOpen}
         setOpenBK={setOpenBK}
+        setSubjectBK={setSubjectBK}
       />
     </>
   );

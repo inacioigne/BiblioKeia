@@ -19,7 +19,7 @@ import {
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
-//import { api } from "src/services/translate/api";
+import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
 
 export default function Translate({
@@ -28,10 +28,12 @@ export default function Translate({
   setOpenLCSH,
   setOpenBK,
   subjectDetails,
+  setSubjectBK,
 }) {
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
+  const [uri, setUri] = useState(null)
   const form = useRef(null);
 
   function getTranslate(termo) {
@@ -53,6 +55,15 @@ export default function Translate({
   }
 
   useEffect(() => {
+    
+    //ParserBK(uri, setSubjectBK);
+    // if (uri) {
+    //   console.log("uri", uri, setSubjectBK);
+    // }
+
+    // if (setSubjectBK & uri) {
+    //   console.log("SBK", uri, setSubjectBK);
+    // }
 
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
@@ -88,7 +99,7 @@ export default function Translate({
 
       const narrowers = new Array();
       const variants = new Array();
-      const reciprocalAuthority = new Array()
+      const reciprocalAuthority = new Array();
 
       let data = Object.assign({}, translate);
       entries.forEach(([k, v]) => {
@@ -99,7 +110,7 @@ export default function Translate({
           variants.push(v);
           delete data[`${k}`];
         } else if (k.includes("reciprocalAuthority")) {
-          reciprocalAuthority.push(v)
+          reciprocalAuthority.push(v);
           delete data[`${k}`];
         }
       });
@@ -109,28 +120,36 @@ export default function Translate({
       data["reciprocalAuthority"] = reciprocalAuthority;
       data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
       data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
-      data["tokenLSCH"] = subjectDetails.tokenLSCH;
+      data["tokenLSCH"] = subjectDetails.tokenLSCH;    
 
-      api
-        .post("/thesaurus/subject", data)
-        .then((response) => {
-          console.log(data)
-          if (response.status == 201) {
-            setOpen(false);
-            setOpenLCSH(false);
-            setOpenBK(false);
-            alert(JSON.stringify("Assunto salvo com sucesso!!"));
-          }
-        })
-        .catch(function (error) {
-          //console.log(data)
-          console.log("ERROOO!!", error);
-          alert(JSON.stringify("Problema ao salvar este registro"));
-        });
-    }
+  
+      api.post("/thesaurus/subject", data)
+          .then((response) => {
+            if (response.status == 201) {
+              //console.log("PR", setSubjectBK);
+              setUri(response.data.uri)
+              setOpen(false);
+              setOpenLCSH(false);
+              //setOpenBK(false);
+              ParserBK(response.data.uri, setSubjectBK);
 
-    //alert(JSON.stringify(translate));
+              alert(JSON.stringify("Assunto salvo com sucesso!!"));
+             
+            }
+          })
+          .catch(function (error) {
+            //console.log(data)
+            console.log("ERROOO!!", error);
+            alert(JSON.stringify("Problema ao salvar este registro"));
+          });
+      }
+
+      //ParserBK(uri, setSubjectBK)
+
+      //alert(JSON.stringify(translate));
+    
   };
+  
 
   return (
     <Dialog fullWidth={true} maxWidth={"lg"} open={open} onClose={handleClose}>
