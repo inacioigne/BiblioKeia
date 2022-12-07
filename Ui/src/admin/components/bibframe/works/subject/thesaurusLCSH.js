@@ -59,7 +59,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK, setSubjectBK }
       memberOf: `http://id.loc.gov/authorities/subjects/collection_${memberOf}`,
       //memberOf: "http://id.loc.gov/authorities/subjects/collection_Subdivisions"
     };
-    //console.log("q", params);
+    
     api
       .get("authorities/subjects/suggest2/", {
         params: params,
@@ -322,7 +322,7 @@ export default function ThesaurusLCSH({ open, setOpen, setOpenBK, setSubjectBK }
                                             reciprocalAuthority.uri.split(
                                               "/"
                                             )[5];
-                                          console.log(token);
+                                         
                                           ParserLCSH(token, setSubjectDetails);
                                         }}
                                       >

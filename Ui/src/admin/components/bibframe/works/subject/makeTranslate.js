@@ -58,10 +58,7 @@ export default function MakeTranslate({
   }, []);
 
   const handleAgree = () => {
-    // setTranslate((prevState) => ({
-    //   ...prevState,
-    //   [`${metadata}`]: sugestTranslate[`${metadata}`],
-    // }));
+
     setTranslate((prevState) => ({
       ...prevState,
       [`${metadata}`]: sugestTranslate[`${metadata}`]

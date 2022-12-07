@@ -21,6 +21,7 @@ import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
 import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
+import CountGraph from "src/services/thesaurus/countGraph";
 
 export default function Translate({
   open,
@@ -55,15 +56,6 @@ export default function Translate({
   }
 
   useEffect(() => {
-    
-    //ParserBK(uri, setSubjectBK);
-    // if (uri) {
-    //   console.log("uri", uri, setSubjectBK);
-    // }
-
-    // if (setSubjectBK & uri) {
-    //   console.log("SBK", uri, setSubjectBK);
-    // }
 
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
@@ -76,7 +68,6 @@ export default function Translate({
 
   const handleAceptAll = () => {
     setTranslate(sugestTranslate);
-
     setAgree(true);
   };
 
@@ -85,7 +76,7 @@ export default function Translate({
     console.log(e);
   };
 
-  const handleSalve = (e) => {
+  const  handleSalve = async (e) => {
     e.preventDefault();
     const values = Object.values(translate);
 
@@ -110,10 +101,18 @@ export default function Translate({
           variants.push(v);
           delete data[`${k}`];
         } else if (k.includes("reciprocalAuthority")) {
+          let token = v.uri.split("/")[5]
+          //console.log(token)
           reciprocalAuthority.push(v);
           delete data[`${k}`];
         }
       });
+      let stream = await CountGraph('sh85084414')
+      stream.on("data", (row) => {
+        console.log("X", row.count)
+
+      })
+      
 
       data["narrower"] = narrowers;
       data["variant"] = variants;
@@ -121,33 +120,27 @@ export default function Translate({
       data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
       data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
       data["tokenLSCH"] = subjectDetails.tokenLSCH;    
+      
 
   
-      api.post("/thesaurus/subject", data)
-          .then((response) => {
-            if (response.status == 201) {
-              //console.log("PR", setSubjectBK);
-              setUri(response.data.uri)
-              setOpen(false);
-              setOpenLCSH(false);
-              //setOpenBK(false);
-              ParserBK(response.data.uri, setSubjectBK);
-
-              alert(JSON.stringify("Assunto salvo com sucesso!!"));
-             
-            }
-          })
-          .catch(function (error) {
-            //console.log(data)
-            console.log("ERROOO!!", error);
-            alert(JSON.stringify("Problema ao salvar este registro"));
-          });
-      }
-
-      //ParserBK(uri, setSubjectBK)
-
-      //alert(JSON.stringify(translate));
-    
+      // api.post("/thesaurus/subject", data)
+      //     .then((response) => {
+      //       if (response.status == 201) {
+      //         //console.log("PR", setSubjectBK);
+      //         setUri(response.data.uri)
+      //         setOpen(false);
+      //         setOpenLCSH(false);
+      //         //setOpenBK(false);
+      //         ParserBK(response.data.uri, setSubjectBK);
+      //         alert(JSON.stringify("Assunto salvo com sucesso!!"));
+      //       }
+      //     })
+      //     .catch(function (error) {
+      //       //console.log(data)
+      //       console.log("ERROOO!!", error);
+      //       alert(JSON.stringify("Problema ao salvar este registro"));
+      //     });
+      }    
   };
   
 

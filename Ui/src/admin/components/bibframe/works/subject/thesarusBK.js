@@ -63,7 +63,7 @@ export default function ThesarusBK() {
   };
 
   const handleCollection = (collection) => {
-    console.log(collection);
+    console.log("col", collection);
   };
 
   const handleChoose = () => {
@@ -322,7 +322,6 @@ export default function ThesarusBK() {
                                             reciprocalAuthority.uri.split(
                                               "/"
                                             )[5];
-                                          console.log(token);
                                           ParserLCSH(token, setSubjectBK);
                                         }}
                                       >

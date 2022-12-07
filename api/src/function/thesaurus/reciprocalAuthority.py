@@ -17,7 +17,7 @@ def ReciprocalAuthority(g, uri, MADSRDF, reciprocalAuthority):
         
         g.add((authority_uri, RDF.type, MADSRDF.Authority))
         g.add((authority_uri, MADSRDF.authoritativeLabel, label)) 
-        collection = URIRef(
+        collection = URIRef( 
             "http://id.loc.gov/authorities/subjects/collection_LCSH_General")
         g.add((authority_uri, MADSRDF.isMemberOfMADSCollection, collection))
 

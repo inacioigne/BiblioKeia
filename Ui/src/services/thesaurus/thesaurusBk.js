@@ -19,30 +19,11 @@ export default async function queryThesaurusBK(data, setResponse) {
     LIMIT 10`;
 
   const stream = await client.query.select(query);
-  stream.on('data', row => {
-   
+  stream.on("data", (row) => {
     setResponse((prevState) => [
-          ...prevState,
-          { value: row.topic.value, 
-            uri: row.uri.value },
-        ]);
-  
-  })
- 
-  // const dataset = rdf.dataset();
-  // await dataset.import(stream);
-  
-  // for (const quad of dataset) {
-     
-  //   setResponse((prevState) => [
-  //     ...prevState,
-  //     { value: quad.topic.value, uri: quad.s.value },
-  //   ]);
-  // }
-
-  // stream.on('data', row => {
-  //   Object.entries(row).forEach(([key, value]) => {
-  //     console.log("on", value)
-  //   })
-  // })
+      ...prevState,
+      { value: row.topic.value, uri: row.uri.value },
+    ]);
+  });
 }
+

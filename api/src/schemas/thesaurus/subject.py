@@ -9,6 +9,7 @@ class AuthorityExternal(BaseModel):
     value: str
     lang: str
     uri: str
+    colletion: str
 
 
 class Subject_Schema(BaseModel):

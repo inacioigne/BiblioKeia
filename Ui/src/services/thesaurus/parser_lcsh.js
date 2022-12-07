@@ -62,10 +62,7 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
   
   if (hasReciprocalAuthority._context.length > 0) {
-    // let reciprocalAuthority = {
-    //   label: hasReciprocalAuthority.out(ns.madsrdf.authoritativeLabel).value,
-    //   uri: hasReciprocalAuthority.value,
-    // };
+
     let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
       let ra = {
         label: authority.out(ns.madsrdf.authoritativeLabel).value,
@@ -73,6 +70,7 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
       };
       return ra
     });
+    console.log('R', hasReciprocalAuthority )
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
   }
 
