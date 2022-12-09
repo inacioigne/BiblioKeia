@@ -19,7 +19,7 @@ import {
   Badge,
 } from "@mui/material/";
 import { Search, Close } from "@mui/icons-material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import queryThesaurusBK from "src/services/thesaurus/thesaurusBk";
 import ThesaurusLCSH from "./thesaurusLCSH";
@@ -29,12 +29,26 @@ import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 import TranslateIcon from "@mui/icons-material/Translate";
 import Translate from "src/admin/components/bibframe/works/subject/translate";
 import { blue, red } from "@mui/material/colors/";
+import SparqlClient from "sparql-http-client";
 
 const styleIformation = {
   p: "0.5rem",
   display: "flex",
   gap: "0.5rem",
 };
+
+async function GraphExist(token) {
+  const client = new SparqlClient({
+    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+  });
+
+  const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
+  ASK WHERE { GRAPH bk:${token} { ?s ?p ?o } }`;
+
+  const ask = await client.query.ask(ask_query);
+
+  return ask;
+}
 
 export default function ThesarusBK() {
   const [subject, setSubject] = useState("");
@@ -45,6 +59,28 @@ export default function ThesarusBK() {
   const [openTranslate, setOpenTranslate] = useState(false);
   const [choise, setChoise] = useState(false);
   const [active, setActive] = useState(false);
+  const [autorityBK, setautorityBK] = useState(null);
+
+  useEffect(() => {
+    if (subjectBK?.tokenLSCH) {
+      (async () => {
+        // console.log("tem");
+        let graph = await GraphExist(subjectBK?.tokenLSCH);
+        if (graph) {
+          let uri = `https://bibliokeia.com/authorities/subjects/${subjectBK.tokenLSCH}`;
+          setautorityBK(uri);
+          // console.log(uri, graph);
+          return;
+        } else {
+          setautorityBK(null);
+          return;
+        }
+      })();
+    } else {
+      setautorityBK(null);
+      // console.log("nada");
+    }
+  });
 
   const handleClose = () => {
     setOpen(false);
@@ -76,6 +112,19 @@ export default function ThesarusBK() {
   const handleRecuse = () => {
     setChoise(false);
     setActive(false);
+  };
+
+  const getThesarus = (uri) => {
+    let uris = uri.split("/");
+    let thesarus = uris[2];
+    let token = uris[5];
+    if (thesarus == "bibliokeia.com") {
+      //console.log(thesarus, uri);
+      ParserBK(uri, setSubjectBK);
+    } else {
+      console.log(thesarus, token);
+      ParserLCSH(token, setSubjectBK);
+    }
   };
 
   const inputPros = {
@@ -169,6 +218,7 @@ export default function ThesarusBK() {
       >
         <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="div">Thesaurus BiblioKeia</Typography>
+   
           <IconButton color="primary" component="label" onClick={handleClose}>
             <ClearIcon />
           </IconButton>
@@ -241,6 +291,15 @@ export default function ThesarusBK() {
                       >
                         <Typography variant="h6">
                           {subjectBK.authority}
+                          {/* {autorityBK && (
+                            <Button
+                              onClick={() => {
+                                getThesarus(autorityBK);
+                              }}
+                            >
+                              BKSH
+                            </Button>
+                          )} */}
                         </Typography>
                         {subjectBK.thesarus == "BKSH" ? (
                           <Tooltip title="Escolher">
@@ -252,6 +311,18 @@ export default function ThesarusBK() {
                               <FileDownloadDone />
                             </IconButton>
                           </Tooltip>
+                        ) : autorityBK ? (
+                          // <Tooltip title="Ir para termo correspondente">
+                             <Button
+                              onClick={() => {
+                                getThesarus(autorityBK);
+                              }}
+                            >
+                              BKSH
+                            </Button>
+
+                          // </Tooltip>
+                         
                         ) : (
                           <Tooltip title="Traduzir">
                             <IconButton
@@ -305,12 +376,12 @@ export default function ThesarusBK() {
                               Termo Relacionado:
                             </Typography>
                             <List dense={true}>
-                              {subjectBK.reciprocalAuthority.map(
+                              {subjectBK?.reciprocalAuthority?.map(
                                 (reciprocalAuthority, index) => (
                                   <ListItem key={index}>
                                     <Badge
                                       badgeContent={
-                                        reciprocalAuthority.collection 
+                                        reciprocalAuthority.collection
                                       }
                                       color="secondary"
                                     >
@@ -318,11 +389,12 @@ export default function ThesarusBK() {
                                         variant="outlined"
                                         sx={{ textTransform: "none" }}
                                         onClick={() => {
-                                          let token =
-                                            reciprocalAuthority.uri.split(
-                                              "/"
-                                            )[5];
-                                          ParserLCSH(token, setSubjectBK);
+                                          getThesarus(reciprocalAuthority.uri);
+                                          // let token =
+                                          //   reciprocalAuthority.uri.split(
+                                          //     "/"
+                                          //   )[5];
+                                          // ParserLCSH(token, setSubjectBK);
                                         }}
                                       >
                                         {reciprocalAuthority.label}

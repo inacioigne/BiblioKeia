@@ -26,7 +26,7 @@ export default function MakeTranslate({
   setSugestTranslate,
   sugestTranslate,
   uri,
-  collection
+  //collection
 }) {
   const [sugest, setSugest] = useState(true);
   
@@ -39,7 +39,8 @@ export default function MakeTranslate({
       .then((response) => {
         setSugestTranslate((prevState) => ({
           ...prevState,
-          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri, collection: collection }
+          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri, //collection: collection 
+        }
         }));
       })
       .catch(function (error) {
@@ -48,6 +49,7 @@ export default function MakeTranslate({
   }
 
   useEffect(() => {
+    //console.log("MT",collection )
     setTranslate((prevState) => ({
       ...prevState,
       [`${metadata}`]: {value: termo, lang: "eng"}

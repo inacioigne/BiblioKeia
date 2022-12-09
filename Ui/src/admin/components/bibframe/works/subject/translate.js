@@ -23,8 +23,8 @@ import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
 import CountGraph from "src/services/thesaurus/countGraph";
 import SparqlClient from "sparql-http-client";
-import SimpleClient from "sparql-http-client/SimpleClient";
-import rdf from "rdf-ext";
+//import SimpleClient from "sparql-http-client/SimpleClient";
+//import rdf from "rdf-ext";
 
 async function GraphExist(data) {
   const client = new SparqlClient({
@@ -74,31 +74,34 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       delete data[`${k}`];
     } else if (k.includes("reciprocalAuthority")) {
       let token = v.uri.split("/")[5];
+      reciprocalAuthority.push(v)
 
-      GraphExist(token).then((graph) => {
-        if (graph) {
-          v["collection"] =
-            "http://id.loc.gov/authorities/subjects/collection_BKSH_General";
-          v["uri"] = `https://bibliokeia.com/authorities/subjects/${token}`;
-          autorityBK.data.push({
-            token: token,
-            metadata: "hasReciprocalAuthority",
-          });
-          reciprocalAuthority.push({
-            collection:
-              "http://id.loc.gov/authorities/subjects/collection_BKSH_General",
-            label: v.value,
-            uri: v.uri,
-          });
-        } else {
-          reciprocalAuthority.push({
-            collection:
-              "http://id.loc.gov/authorities/subjects/collection_LCSH_General",
-            label: v.value,
-            uri: v.uri,
-          });
-        }
-      });
+
+      // GraphExist(token).then((graph) => {
+      //   if (graph) {
+       
+      //     autorityBK.data.push({
+      //       token: token,
+      //       metadata: "hasReciprocalAuthority",
+      //     });
+      //     // reciprocalAuthority.push({
+      //     //   collection:
+      //     //     "http://id.loc.gov/authorities/subjects/collection_BKSH_General",
+      //     //   value: v.value,
+      //     //   uri: v.uri,
+      //     //   lang: "pt"
+      //     // });
+      //   } 
+      //   // else {
+      //   //   reciprocalAuthority.push({
+      //   //     collection:
+      //   //       "http://id.loc.gov/authorities/subjects/collection_LCSH_General",
+      //   //       value: v.value,
+      //   //       uri: v.uri,
+      //   //       lang: "pt"
+      //   //   });
+      //   // }
+      // });
       delete data[`${k}`];
     }
   });
@@ -112,6 +115,10 @@ async function ParserData(translate, subjectDetails, autorityBK) {
 
   return data;
 }
+
+// async function RAuthority(translate, subjectDetails, autorityBK) {
+
+// }
 
 export default function Translate({
   open,
@@ -180,44 +187,61 @@ export default function Translate({
     if (langs.length > 0) {
       alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
     } else {
-      ParserData(translate, subjectDetails, autorityBK)
-      .then((data) => {
-        console.log(data)
-         api
-        .post("/thesaurus/subject", data)
+      
+      
+      const data = await ParserData(translate, subjectDetails, autorityBK)
+      //console.log(autorityBK)
+      api.post("/thesaurus/subject", await data)
         .then((response) => {
           if (response.status == 201) {
-            console.log("msg", response.data);
-
-            if (autorityBK.data.length > 0) {
-              api
-                .put("/thesaurus/update", autorityBK)
-                .then((response) => {
-                  if (response.status == 201) {
-                    console.log("UP", response);
-                    // setOpen(false);
-                    // setOpenLCSH(false);
-                  }
-                })
-                .catch(function (error) {
-                  console.log("ERROOO!!", error);
-                });
-            } else {
-              // setOpen(false);
-              // setOpenLCSH(false);
-              //console.log("não autualiza");
-            }
-
-            // ParserBK(response.data.uri, setSubjectBK);
+            ParserBK(response.data.uri, setSubjectBK);
+            setOpen(false);
+            setOpenLCSH(false)
             alert(JSON.stringify("Assunto salvo com sucesso!!"));
-          }
-        })
-        .catch(function (error) {
-          console.log("ERROOO!!", error);
-          alert(JSON.stringify("Problema ao salvar este registro"));
-        });
+          }})
+            .catch(function (error) {
+                  console.log("ERROOO!!", error);
+                  alert(JSON.stringify("Problema ao salvar este registro"));
+                });
 
-      })
+      //console.log(await data)
+      // .then((data) => {
+      //   console.log(data)
+      //    api
+      //   .post("/thesaurus/subject", data)
+      //   .then((response) => {
+      //     if (response.status == 201) {
+      //       console.log("msg", response.data);
+
+      //       if (autorityBK.data.length > 0) {
+      //         api
+      //           .put("/thesaurus/update", autorityBK)
+      //           .then((response) => {
+      //             if (response.status == 201) {
+      //               console.log("UP", response);
+      //               // setOpen(false);
+      //               // setOpenLCSH(false);
+      //             }
+      //           })
+      //           .catch(function (error) {
+      //             console.log("ERROOO!!", error);
+      //           });
+      //       } else {
+      //         // setOpen(false);
+      //         // setOpenLCSH(false);
+      //         //console.log("não autualiza");
+      //       }
+
+      //       // ParserBK(response.data.uri, setSubjectBK);
+      //       alert(JSON.stringify("Assunto salvo com sucesso!!"));
+      //     }
+      //   })
+      //   .catch(function (error) {
+      //     console.log("ERROOO!!", error);
+      //     alert(JSON.stringify("Problema ao salvar este registro"));
+      //   });
+
+      // })
       
 
       // api
@@ -312,7 +336,7 @@ export default function Translate({
                         <ListItem key={index} sx={{ p: "0.5rem" }}>
                           <MakeTranslate
                             termo={reciprocalAuthority.label}
-                            collection={reciprocalAuthority.collection}
+                            //collection={reciprocalAuthority.collection}
                             uri={reciprocalAuthority.uri}
                             metadata={`reciprocalAuthority.${index}`}
                             setTranslate={setTranslate}

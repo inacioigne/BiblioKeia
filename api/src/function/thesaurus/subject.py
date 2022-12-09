@@ -40,7 +40,7 @@ def CreateSubject(request):
     g = NarrowerAuthority(g, uri, MADSRDF, request.narrower)
 
     #ReciprocalAuthority
-    g = ReciprocalAuthority(g, uri, MADSRDF, request.reciprocalAuthority)
+    g = ReciprocalAuthority(g, uri, MADSRDF, request)
 
     #Variant
     g = Variant(g, uri, MADSRDF, request.variant)

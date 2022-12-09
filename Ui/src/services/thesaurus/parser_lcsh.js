@@ -1,8 +1,22 @@
 import fetch from "@rdfjs/fetch";
 import namespace from "@rdfjs/namespace";
 import cf from "clownface";
+import SparqlClient from "sparql-http-client";
 
-async function ParserLCSH(token, setSubjectDetails, //setUris
+async function GraphExist(token) {
+  const client = new SparqlClient({
+    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+  });
+
+  const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
+  ASK WHERE { GRAPH bk:${token} { ?s ?p ?o } }`;
+
+  const ask = await client.query.ask(ask_query);
+
+  return ask;
+}
+
+async function ParserLCSH(token, setSubjectDetails, 
   ) {
   const SubjectDetails = {};
   const rdf = `http://id.loc.gov/authorities/subjects/${token}.rdf`;
@@ -36,8 +50,6 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
     SubjectDetails["note"] = note;
   }
 
-
-
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
   const variants = hasVariant.map((variant) => {
@@ -62,22 +74,41 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
   
   if (hasReciprocalAuthority._context.length > 0) {
+
     let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
-      let uri = authority.out(ns.madsrdf.isMemberOfMADSCollection).value;
-      console.log(uri)
+      let tokenRA = authority.value.split("/")[5]
       let ra = {
-        label: authority.out(ns.madsrdf.authoritativeLabel).value,
-        uri: authority.value,
-        //collection: "http://id.loc.gov/authorities/subjects/collection_LCSH_General"
-        //collection: uri.split("_")[1]
-      };
+            label: authority.out(ns.madsrdf.authoritativeLabel).value,
+            uri: authority.value,
+            collection: "LCSH"
+          };
       return ra
+
+      //let graph = await GraphExist(tokenRA)
+      // if (graph) {
+        
+      //   let ra = {
+      //     label: authority.out(ns.madsrdf.authoritativeLabel).value,
+      //     uri: `https://bibliokeia.com/authorities/subjects/${tokenRA}`,
+      //     collection: "BKSH"
+      //   };
+      //   return ra
+      // } else {
+      //   let ra = {
+      //     label: authority.out(ns.madsrdf.authoritativeLabel).value,
+      //     uri: authority.value,
+      //     collection: "LCSH"
+      //   };
+      //   return ra
+      // }      
+      
     });
-    //console.log('R', hasReciprocalAuthority )
-    SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
+
+    SubjectDetails["reciprocalAuthority"] = reciprocalAuthority
+
+    
   }
-
-
+  
 
   // hasExactExternalAuthority
   const hasExactExternalAuthority = subject.out(ns.madsrdf.hasExactExternalAuthority);
@@ -96,10 +127,16 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   SubjectDetails["closeExternalAuthority"] = closeExternalAuthority
   SubjectDetails['tokenLSCH'] = token
 
+  // (async () => {
+  //   SubjectDetails['tokenLSCH'] = token
+  //   SubjectDetails["closeExternalAuthority"] = closeExternalAuthority
+  //   const sub = await Promise.all(SubjectDetails);
+    
+  //   setSubjectDetails(sub);
+  //   console.log('R', sub )
+  // })();
 
-  setSubjectDetails(SubjectDetails);
-
-  
+  setSubjectDetails(SubjectDetails)
 
 
 }

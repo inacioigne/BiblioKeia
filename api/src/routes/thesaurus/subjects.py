@@ -10,16 +10,13 @@ fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
 
 @router.post("/subject", status_code=201) 
 async def create_subject(request: Subject_Schema):
-    print("PIIIRRRII", request.reciprocalAuthority)
-
-    #fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
 
     nt = CreateSubject(request)
     G = Make_Graph(nt, request.tokenLSCH)
 
-    #fuseki_update.run_sparql(G)
+    fuseki_update.run_sparql(G)
 
-    return {'uri': request.dict()['reciprocalAuthority']}#f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
+    return {'uri': f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
     
 
 @router.get("/subject/{tokenBK}", status_code=200) 

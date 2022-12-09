@@ -6,12 +6,12 @@
 <https://bibliokeia.com/authorities/subjects/sh85113021> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-08T17:52:03.345210"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-09T11:57:20.927774"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Pesquisar"@pt ;
+    madsrdf:authoritativeLabel "Pesquisa"@pt ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Pesquisar"@pt ] ) ;
+                madsrdf:elementValue "Pesquisa"@pt ] ) ;
     madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4017894-8>,
         <http://d-nb.info/gnd/4131708-7>,
         <http://data.bnf.fr/ark:/12148/cb11938467s>,
@@ -59,6 +59,10 @@
         <http://id.loc.gov/authorities/subjects/sh93003312>,
         <http://id.loc.gov/authorities/subjects/sh97004129>,
         <http://id.loc.gov/authorities/subjects/sh99004969> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85066157>,
+        <http://id.loc.gov/authorities/subjects/sh85075529>,
+        <http://id.loc.gov/authorities/subjects/sh85113055>,
+        <https://bibliokeia.com/authorities/subjects/sh85084414> ;
     madsrdf:hasVariant [ a madsrdf:ComplexSubject,
                 madsrdf:Variant ;
             madsrdf:componentList ( [ a madsrdf:Topic,
@@ -129,6 +133,10 @@
     madsrdf:authoritativeLabel "pesquisa rodoviária"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
+<http://id.loc.gov/authorities/subjects/sh85066157> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Serviços de informação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
 <http://id.loc.gov/authorities/subjects/sh85066301> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Teoria da informação em pesquisa"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
@@ -139,6 +147,10 @@
 
 <http://id.loc.gov/authorities/subjects/sh85074304> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "pesquisa de terreno"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85075529> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aprendizado e bolsa de estudos"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85075767> a madsrdf:Authority ;
@@ -197,6 +209,10 @@
     madsrdf:authoritativeLabel "Pesquisa, Indústria"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
+<http://id.loc.gov/authorities/subjects/sh85113055> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Equipes de pesquisa"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
 <http://id.loc.gov/authorities/subjects/sh85118694> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Pesquisas científicas"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
@@ -228,4 +244,8 @@
 <http://id.loc.gov/authorities/subjects/sh99004969> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Pesquisa qualitativa"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Metodologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
