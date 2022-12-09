@@ -25,7 +25,8 @@ export default function MakeTranslate({
   label,
   setSugestTranslate,
   sugestTranslate,
-  uri
+  uri,
+  collection
 }) {
   const [sugest, setSugest] = useState(true);
   
@@ -38,7 +39,7 @@ export default function MakeTranslate({
       .then((response) => {
         setSugestTranslate((prevState) => ({
           ...prevState,
-          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri }
+          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri, collection: collection }
         }));
       })
       .catch(function (error) {

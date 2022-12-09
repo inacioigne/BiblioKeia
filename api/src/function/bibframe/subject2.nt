@@ -11,6 +11,7 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
 <http://id.loc.gov/resources/works/10065493> a bf:Work ;
     bflc:aap "Descartes, René, 1596-1650 The method, meditations and philosophy of Descartes" .
 

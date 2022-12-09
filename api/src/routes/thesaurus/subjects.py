@@ -1,23 +1,25 @@
 from fastapi import APIRouter
-from src.schemas.thesaurus.subject import Subject_Schema
+from src.schemas.thesaurus.subject import Subject_Schema, Update_Thesarus
 from src.function.thesaurus.makeGraph import Make_Graph
 from src.function.thesaurus.subject import CreateSubject
 from pyfuseki import FusekiUpdate
 
 
 router = APIRouter()
+fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
 
 @router.post("/subject", status_code=201) 
 async def create_subject(request: Subject_Schema):
+    print("PIIIRRRII", request.reciprocalAuthority)
 
-    fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
+    #fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
 
     nt = CreateSubject(request)
     G = Make_Graph(nt, request.tokenLSCH)
 
     #fuseki_update.run_sparql(G)
 
-    return {'uri': f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
+    return {'uri': request.dict()['reciprocalAuthority']}#f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
     
 
 @router.get("/subject/{tokenBK}", status_code=200) 
@@ -31,6 +33,46 @@ async def get_subject(tokenBK: str):
         }
         LIMIT 10"""
     return {'subject': tokenBK}
+
+@router.put("/update", status_code=201) 
+async def update(request: Update_Thesarus):
+
+    prefix = "PREFIX madsrdf:  <http://www.loc.gov/mads/rdf/v1#>\n \
+        PREFIX bk: <https://bibliokeia.com/authorities/subjects/>\n \
+        PREFIX lc: <http://id.loc.gov/authorities/subjects/>\n"
+
+    for data in request.data:
+        
+        q1 = prefix + "WITH bk:" + request.graph + "\n \
+        DELETE {?s madsrdf:" + data.metadata + " lc:" + data.token + "}\n \
+        INSERT { ?s madsrdf:" + data.metadata + " bk:" + data.token + "}\n \
+        WHERE { ?s madsrdf:" + data.metadata + " lc:" + data.token + "}\n"
+
+        fuseki_update.run_sparql(q1)
+
+        q2 = prefix + "WITH bk:" + request.graph + "\n \
+            DELETE { lc:" + data.metadata + " ?p ?o }\n \
+                INSERT { bk:" + data.metadata + " ?p ?o }\n \
+                    WHERE { lc:" + data.metadata + "?p ?o }"
+
+        fuseki_update.run_sparql(q2)
+
+        q3 = prefix + "WITH bk:" + request.graph + "\n \
+            DELETE { lc:" + data.metadata + " madsrdf:isMemberOfMADSCollection ?o }\n \
+                INSERT { bk:" + data.metadata + " madsrdf:isMemberOfMADSCollection bk:collection_BKSH_General }\n \
+                    WHERE { lc:" + data.metadata + " madsrdf:isMemberOfMADSCollection ?o }"
+        
+        fuseki_update.run_sparql(q3)
+                    
+
+
+
+    # nt = CreateSubject(request)
+    # G = Make_Graph(nt, request.tokenLSCH)
+
+    #fuseki_update.run_sparql(q)
+
+    return {'msg': "registro atualizado com sucesso"}
     
  
   

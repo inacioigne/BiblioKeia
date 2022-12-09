@@ -310,7 +310,7 @@ export default function ThesarusBK() {
                                   <ListItem key={index}>
                                     <Badge
                                       badgeContent={
-                                        reciprocalAuthority.collection
+                                        reciprocalAuthority.collection 
                                       }
                                       color="secondary"
                                     >

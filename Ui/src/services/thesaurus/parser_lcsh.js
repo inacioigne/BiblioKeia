@@ -35,7 +35,7 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   if (note) {
     SubjectDetails["note"] = note;
   }
-  //console.log(SubjectDetails)
+
 
 
   //hasVariant
@@ -62,15 +62,18 @@ async function ParserLCSH(token, setSubjectDetails, //setUris
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
   
   if (hasReciprocalAuthority._context.length > 0) {
-
     let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
+      let uri = authority.out(ns.madsrdf.isMemberOfMADSCollection).value;
+      console.log(uri)
       let ra = {
         label: authority.out(ns.madsrdf.authoritativeLabel).value,
         uri: authority.value,
+        //collection: "http://id.loc.gov/authorities/subjects/collection_LCSH_General"
+        //collection: uri.split("_")[1]
       };
       return ra
     });
-    console.log('R', hasReciprocalAuthority )
+    //console.log('R', hasReciprocalAuthority )
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
   }
 

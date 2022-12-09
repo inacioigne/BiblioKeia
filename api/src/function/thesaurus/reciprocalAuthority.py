@@ -5,6 +5,7 @@ from src.function.thesaurus.elementList import ElementList
 def ReciprocalAuthority(g, uri, MADSRDF, reciprocalAuthority):
 
     for authority in reciprocalAuthority:
+        print("AAA: ", authority)
         
 
         authority_uri = URIRef(authority.uri)
@@ -14,11 +15,10 @@ def ReciprocalAuthority(g, uri, MADSRDF, reciprocalAuthority):
         g.add((uri, 
             MADSRDF.hasReciprocalAuthority, 
             authority_uri)) 
-        
         g.add((authority_uri, RDF.type, MADSRDF.Authority))
         g.add((authority_uri, MADSRDF.authoritativeLabel, label)) 
-        collection = URIRef( 
-            "http://id.loc.gov/authorities/subjects/collection_LCSH_General")
+        collection = URIRef(authority.collection)  
+        #    # "http://id.loc.gov/authorities/subjects/collection_LCSH_General")
         g.add((authority_uri, MADSRDF.isMemberOfMADSCollection, collection))
 
     return g

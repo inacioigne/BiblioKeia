@@ -22,6 +22,96 @@ import { useEffect, useState, useRef } from "react";
 import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
 import CountGraph from "src/services/thesaurus/countGraph";
+import SparqlClient from "sparql-http-client";
+import SimpleClient from "sparql-http-client/SimpleClient";
+import rdf from "rdf-ext";
+
+async function GraphExist(data) {
+  const client = new SparqlClient({
+    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+  });
+
+  const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
+  ASK WHERE { GRAPH bk:${data} { ?s ?p ?o } }`;
+
+  const ask = await client.query.ask(ask_query);
+
+  return ask;
+}
+
+async function AuthorityExist(graph, metadata, token) {
+  const client = new SparqlClient({
+    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+  });
+
+  const ask_query = `PREFIX madsrdf:  <http://www.loc.gov/mads/rdf/v1#> 
+      PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
+      PREFIX lc: <http://id.loc.gov/authorities/subjects/>
+      ASK WHERE { GRAPH  bk:${graph} 
+            {?s madsrdf:${metadata} lc:${token}
+        }}`;
+
+  const ask = await client.query.ask(ask_query);
+
+  return ask;
+}
+
+async function ParserData(translate, subjectDetails, autorityBK) {
+  const entries = Object.entries(translate);
+
+  const narrowers = new Array();
+  const variants = new Array();
+  const reciprocalAuthority = new Array();
+
+  let data = Object.assign({}, translate);
+
+  entries.forEach(([k, v]) => {
+    if (k.includes("narrower")) {
+      narrowers.push(v);
+      delete data[`${k}`];
+    } else if (k.includes("variant")) {
+      variants.push(v);
+      delete data[`${k}`];
+    } else if (k.includes("reciprocalAuthority")) {
+      let token = v.uri.split("/")[5];
+
+      GraphExist(token).then((graph) => {
+        if (graph) {
+          v["collection"] =
+            "http://id.loc.gov/authorities/subjects/collection_BKSH_General";
+          v["uri"] = `https://bibliokeia.com/authorities/subjects/${token}`;
+          autorityBK.data.push({
+            token: token,
+            metadata: "hasReciprocalAuthority",
+          });
+          reciprocalAuthority.push({
+            collection:
+              "http://id.loc.gov/authorities/subjects/collection_BKSH_General",
+            label: v.value,
+            uri: v.uri,
+          });
+        } else {
+          reciprocalAuthority.push({
+            collection:
+              "http://id.loc.gov/authorities/subjects/collection_LCSH_General",
+            label: v.value,
+            uri: v.uri,
+          });
+        }
+      });
+      delete data[`${k}`];
+    }
+  });
+
+  data["narrower"] = narrowers;
+  data["variant"] = variants;
+  data["reciprocalAuthority"] = reciprocalAuthority;
+  data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
+  data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
+  data["tokenLSCH"] = subjectDetails.tokenLSCH;
+
+  return data;
+}
 
 export default function Translate({
   open,
@@ -34,7 +124,6 @@ export default function Translate({
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
-  const [uri, setUri] = useState(null)
   const form = useRef(null);
 
   function getTranslate(termo) {
@@ -56,7 +145,6 @@ export default function Translate({
   }
 
   useEffect(() => {
-
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -76,73 +164,97 @@ export default function Translate({
     console.log(e);
   };
 
-  const  handleSalve = async (e) => {
-    e.preventDefault();
-    const values = Object.values(translate);
+  const handleSalve = async (e) => {
+    const autorityBK = { graph: subjectDetails.tokenLSCH, data: [] };
 
+    e.preventDefault();
+
+    const client = new SparqlClient({
+      endpointUrl: "http://localhost:3030/thesaurus/sparql",
+    });
+
+    const values = Object.values(translate);
     const langs = values.filter(function (item) {
       return item.lang == "eng";
     });
     if (langs.length > 0) {
       alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
     } else {
-      const entries = Object.entries(translate);
+      ParserData(translate, subjectDetails, autorityBK)
+      .then((data) => {
+        console.log(data)
+         api
+        .post("/thesaurus/subject", data)
+        .then((response) => {
+          if (response.status == 201) {
+            console.log("msg", response.data);
 
-      const narrowers = new Array();
-      const variants = new Array();
-      const reciprocalAuthority = new Array();
+            if (autorityBK.data.length > 0) {
+              api
+                .put("/thesaurus/update", autorityBK)
+                .then((response) => {
+                  if (response.status == 201) {
+                    console.log("UP", response);
+                    // setOpen(false);
+                    // setOpenLCSH(false);
+                  }
+                })
+                .catch(function (error) {
+                  console.log("ERROOO!!", error);
+                });
+            } else {
+              // setOpen(false);
+              // setOpenLCSH(false);
+              //console.log("não autualiza");
+            }
 
-      let data = Object.assign({}, translate);
-      entries.forEach(([k, v]) => {
-        if (k.includes("narrower")) {
-          narrowers.push(v);
-          delete data[`${k}`];
-        } else if (k.includes("variant")) {
-          variants.push(v);
-          delete data[`${k}`];
-        } else if (k.includes("reciprocalAuthority")) {
-          let token = v.uri.split("/")[5]
-          //console.log(token)
-          reciprocalAuthority.push(v);
-          delete data[`${k}`];
-        }
-      });
-      let stream = await CountGraph('sh85084414')
-      stream.on("data", (row) => {
-        console.log("X", row.count)
+            // ParserBK(response.data.uri, setSubjectBK);
+            alert(JSON.stringify("Assunto salvo com sucesso!!"));
+          }
+        })
+        .catch(function (error) {
+          console.log("ERROOO!!", error);
+          alert(JSON.stringify("Problema ao salvar este registro"));
+        });
 
       })
       
 
-      data["narrower"] = narrowers;
-      data["variant"] = variants;
-      data["reciprocalAuthority"] = reciprocalAuthority;
-      data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
-      data["closeExternalAuthority"] = subjectDetails.closeExternalAuthority;
-      data["tokenLSCH"] = subjectDetails.tokenLSCH;    
-      
+      // api
+      //   .post("/thesaurus/subject", data)
+      //   .then((response) => {
+      //     if (response.status == 201) {
+      //       console.log("msg", response.data);
 
-  
-      // api.post("/thesaurus/subject", data)
-      //     .then((response) => {
-      //       if (response.status == 201) {
-      //         //console.log("PR", setSubjectBK);
-      //         setUri(response.data.uri)
-      //         setOpen(false);
-      //         setOpenLCSH(false);
-      //         //setOpenBK(false);
-      //         ParserBK(response.data.uri, setSubjectBK);
-      //         alert(JSON.stringify("Assunto salvo com sucesso!!"));
+      //       if (autorityBK.data.length > 0) {
+      //         api
+      //           .put("/thesaurus/update", autorityBK)
+      //           .then((response) => {
+      //             if (response.status == 201) {
+      //               console.log("UP", response);
+      //               // setOpen(false);
+      //               // setOpenLCSH(false);
+      //             }
+      //           })
+      //           .catch(function (error) {
+      //             console.log("ERROOO!!", error);
+      //           });
+      //       } else {
+      //         // setOpen(false);
+      //         // setOpenLCSH(false);
+      //         //console.log("não autualiza");
       //       }
-      //     })
-      //     .catch(function (error) {
-      //       //console.log(data)
-      //       console.log("ERROOO!!", error);
-      //       alert(JSON.stringify("Problema ao salvar este registro"));
-      //     });
-      }    
+
+      //       // ParserBK(response.data.uri, setSubjectBK);
+      //       alert(JSON.stringify("Assunto salvo com sucesso!!"));
+      //     }
+      //   })
+      //   .catch(function (error) {
+      //     console.log("ERROOO!!", error);
+      //     alert(JSON.stringify("Problema ao salvar este registro"));
+      //   });
+    }
   };
-  
 
   return (
     <Dialog fullWidth={true} maxWidth={"lg"} open={open} onClose={handleClose}>
@@ -200,6 +312,7 @@ export default function Translate({
                         <ListItem key={index} sx={{ p: "0.5rem" }}>
                           <MakeTranslate
                             termo={reciprocalAuthority.label}
+                            collection={reciprocalAuthority.collection}
                             uri={reciprocalAuthority.uri}
                             metadata={`reciprocalAuthority.${index}`}
                             setTranslate={setTranslate}
