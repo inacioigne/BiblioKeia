@@ -74,12 +74,11 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       delete data[`${k}`];
     } else if (k.includes("reciprocalAuthority")) {
       let token = v.uri.split("/")[5];
-      reciprocalAuthority.push(v)
-
+      reciprocalAuthority.push(v);
 
       // GraphExist(token).then((graph) => {
       //   if (graph) {
-       
+
       //     autorityBK.data.push({
       //       token: token,
       //       metadata: "hasReciprocalAuthority",
@@ -91,7 +90,7 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       //     //   uri: v.uri,
       //     //   lang: "pt"
       //     // });
-      //   } 
+      //   }
       //   // else {
       //   //   reciprocalAuthority.push({
       //   //     collection:
@@ -115,10 +114,6 @@ async function ParserData(translate, subjectDetails, autorityBK) {
 
   return data;
 }
-
-// async function RAuthority(translate, subjectDetails, autorityBK) {
-
-// }
 
 export default function Translate({
   open,
@@ -187,22 +182,22 @@ export default function Translate({
     if (langs.length > 0) {
       alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
     } else {
-      
-      
-      const data = await ParserData(translate, subjectDetails, autorityBK)
+      const data = await ParserData(translate, subjectDetails, autorityBK);
       //console.log(autorityBK)
-      api.post("/thesaurus/subject", await data)
+      api
+        .post("/thesaurus/subject", await data)
         .then((response) => {
           if (response.status == 201) {
             ParserBK(response.data.uri, setSubjectBK);
             setOpen(false);
-            setOpenLCSH(false)
+            setOpenLCSH(false);
             alert(JSON.stringify("Assunto salvo com sucesso!!"));
-          }})
-            .catch(function (error) {
-                  console.log("ERROOO!!", error);
-                  alert(JSON.stringify("Problema ao salvar este registro"));
-                });
+          }
+        })
+        .catch(function (error) {
+          console.log("ERROOO!!", error);
+          alert(JSON.stringify("Problema ao salvar este registro"));
+        });
 
       //console.log(await data)
       // .then((data) => {
@@ -242,7 +237,6 @@ export default function Translate({
       //   });
 
       // })
-      
 
       // api
       //   .post("/thesaurus/subject", data)
@@ -310,8 +304,11 @@ export default function Translate({
                 />
               </Box>
             )}
-            <Grid item xs={6}>
-              <MakeTranslate
+            <Grid item xs={6} >
+            <Box pt={"0.5rem"}>
+            <Typography variant="subtitle2">Termo principal:</Typography>
+            <Box sx={{ p: "1rem" }}>
+            <MakeTranslate
                 termo={subjectDetails?.authority}
                 metadata={"authority"}
                 setTranslate={setTranslate}
@@ -321,6 +318,13 @@ export default function Translate({
                 label={"Assunto"}
                 agree={agree}
               />
+
+            </Box>
+           
+
+            </Box>
+         
+             
             </Grid>
 
             <Grid item xs={6}>

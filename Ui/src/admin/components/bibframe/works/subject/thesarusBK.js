@@ -31,6 +31,9 @@ import Translate from "src/admin/components/bibframe/works/subject/translate";
 import { blue, red } from "@mui/material/colors/";
 import SparqlClient from "sparql-http-client";
 
+// BiblioKeia Components
+import Narrower from "src/admin/components/thesaurus/narrower"
+
 const styleIformation = {
   p: "0.5rem",
   display: "flex",
@@ -408,6 +411,9 @@ export default function ThesarusBK() {
                         )}
                       </Box>
                       {/* narrower */}
+                      
+            
+                      
                       {subjectBK?.narrower && (
                         <Box
                           sx={{ ...styleIformation, flexDirection: "column" }}

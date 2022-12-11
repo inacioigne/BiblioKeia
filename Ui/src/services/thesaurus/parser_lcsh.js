@@ -16,8 +16,7 @@ async function GraphExist(token) {
   return ask;
 }
 
-async function ParserLCSH(token, setSubjectDetails, 
-  ) {
+async function ParserLCSH(token, setSubjectDetails) {
   const SubjectDetails = {};
   const rdf = `http://id.loc.gov/authorities/subjects/${token}.rdf`;
   const dataset = await fetch(rdf).then((response) => response.dataset());
@@ -26,7 +25,7 @@ async function ParserLCSH(token, setSubjectDetails,
     rdf: namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
     rdfs: namespace("http://www.w3.org/2000/01/rdf-schema#"),
     bf: namespace("http://id.loc.gov/ontologies/bibframe/"),
-    bflc: namespace("http://id.loc.gov/ontologies/bflc/"), 
+    bflc: namespace("http://id.loc.gov/ontologies/bflc/"),
     owl: namespace("http://www.w3.org/2002/07/owl#"),
     skos: namespace("http://www.w3.org/2004/02/skos/core#"),
     dcterms: namespace("http://purl.org/dc/terms/"),
@@ -34,9 +33,9 @@ async function ParserLCSH(token, setSubjectDetails,
     foaf: namespace("http://xmlns.com/foaf/0.1/"),
     madsrdf: namespace("http://www.loc.gov/mads/rdf/v1#"),
   };
- 
+
   const tbbt = cf({ dataset });
-  const uri =  `http://id.loc.gov/authorities/subjects/${token}`
+  const uri = `http://id.loc.gov/authorities/subjects/${token}`;
   const subject = tbbt.namedNode(uri);
 
   //  Label
@@ -58,13 +57,24 @@ async function ParserLCSH(token, setSubjectDetails,
 
   SubjectDetails["variant"] = variants;
 
+  // hasBroaderAuthority
+  const hasBroaderAuthority = subject.out(ns.madsrdf.hasBroaderAuthority);
+  const broader = hasBroaderAuthority.map((broaderAuthority) => {
+    let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
+    let uri = broaderAuthority.value;
+    return { label: label, uri: uri };
+  });
+
+  SubjectDetails["broader"] = broader;
+
+
+
   //NarrowerAuthority
   const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
 
   const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
     let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
     let uri = narrowerAuthorit.value;
-
     return { label: label, uri: uri };
   });
 
@@ -72,21 +82,20 @@ async function ParserLCSH(token, setSubjectDetails,
 
   // reciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
-  
-  if (hasReciprocalAuthority._context.length > 0) {
 
+  if (hasReciprocalAuthority._context.length > 0) {
     let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
-      let tokenRA = authority.value.split("/")[5]
+      let tokenRA = authority.value.split("/")[5];
       let ra = {
-            label: authority.out(ns.madsrdf.authoritativeLabel).value,
-            uri: authority.value,
-            collection: "LCSH"
-          };
-      return ra
+        label: authority.out(ns.madsrdf.authoritativeLabel).value,
+        uri: authority.value,
+        collection: "LCSH",
+      };
+      return ra;
 
       //let graph = await GraphExist(tokenRA)
       // if (graph) {
-        
+
       //   let ra = {
       //     label: authority.out(ns.madsrdf.authoritativeLabel).value,
       //     uri: `https://bibliokeia.com/authorities/subjects/${tokenRA}`,
@@ -100,45 +109,43 @@ async function ParserLCSH(token, setSubjectDetails,
       //     collection: "LCSH"
       //   };
       //   return ra
-      // }      
-      
+      // }
     });
 
-    SubjectDetails["reciprocalAuthority"] = reciprocalAuthority
-
-    
+    SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
   }
-  
 
   // hasExactExternalAuthority
-  const hasExactExternalAuthority = subject.out(ns.madsrdf.hasExactExternalAuthority);
+  const hasExactExternalAuthority = subject.out(
+    ns.madsrdf.hasExactExternalAuthority
+  );
   const exactExternalAuthority = hasExactExternalAuthority.map((authority) => {
-    return authority.value
+    return authority.value;
   });
-  exactExternalAuthority.unshift(uri)
-  SubjectDetails["exactExternalAuthority"] = exactExternalAuthority
+  exactExternalAuthority.unshift(uri);
+  SubjectDetails["exactExternalAuthority"] = exactExternalAuthority;
 
   // CloseExternalAuthority
-  const hasCloseExternalAuthority = subject.out(ns.madsrdf.hasCloseExternalAuthority);
+  const hasCloseExternalAuthority = subject.out(
+    ns.madsrdf.hasCloseExternalAuthority
+  );
   const closeExternalAuthority = hasCloseExternalAuthority.map((authority) => {
-    return authority.value
+    return authority.value;
   });
 
-  SubjectDetails["closeExternalAuthority"] = closeExternalAuthority
-  SubjectDetails['tokenLSCH'] = token
+  SubjectDetails["closeExternalAuthority"] = closeExternalAuthority;
+  SubjectDetails["tokenLSCH"] = token;
 
   // (async () => {
   //   SubjectDetails['tokenLSCH'] = token
   //   SubjectDetails["closeExternalAuthority"] = closeExternalAuthority
   //   const sub = await Promise.all(SubjectDetails);
-    
+
   //   setSubjectDetails(sub);
   //   console.log('R', sub )
   // })();
 
-  setSubjectDetails(SubjectDetails)
-
-
+  setSubjectDetails(SubjectDetails);
 }
 
 export default ParserLCSH;
