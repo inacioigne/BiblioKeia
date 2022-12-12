@@ -13,7 +13,8 @@ const styleIformation = {
 
 export default function Broader({ authoritys, setSubjectDetails }) {
   return (
-    <Box sx={{ ...styleIformation, flexDirection: "column" }}>
+    <Box sx={{ //...styleIformation, 
+    flexDirection: "column" }}>
       <Typography variant="subtitle2">Termos Genéricos:</Typography>
       <List dense={true}>
         {authoritys.map((authority, index) => (

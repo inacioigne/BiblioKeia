@@ -51,6 +51,16 @@ async function ParserBK(uri, setSubjectBK) {
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
   }
 
+   // hasBroaderAuthority
+   const hasBroaderAuthority = subject.out(ns.madsrdf.hasBroaderAuthority);
+   const broader = hasBroaderAuthority.map((broaderAuthority) => {
+     let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
+     let uri = broaderAuthority.value;
+     return { label: label, uri: uri };
+   });
+ 
+   SubjectDetails["broader"] = broader;
+
   //NarrowerAuthority
   const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
   const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {

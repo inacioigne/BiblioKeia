@@ -67,8 +67,6 @@ async function ParserLCSH(token, setSubjectDetails) {
 
   SubjectDetails["broader"] = broader;
 
-
-
   //NarrowerAuthority
   const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
 
@@ -93,23 +91,7 @@ async function ParserLCSH(token, setSubjectDetails) {
       };
       return ra;
 
-      //let graph = await GraphExist(tokenRA)
-      // if (graph) {
 
-      //   let ra = {
-      //     label: authority.out(ns.madsrdf.authoritativeLabel).value,
-      //     uri: `https://bibliokeia.com/authorities/subjects/${tokenRA}`,
-      //     collection: "BKSH"
-      //   };
-      //   return ra
-      // } else {
-      //   let ra = {
-      //     label: authority.out(ns.madsrdf.authoritativeLabel).value,
-      //     uri: authority.value,
-      //     collection: "LCSH"
-      //   };
-      //   return ra
-      // }
     });
 
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
