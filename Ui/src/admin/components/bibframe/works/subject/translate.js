@@ -78,7 +78,7 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       reciprocalAuthority.push(v);
       delete data[`${k}`];
     } else if (k.includes("broader")) {
-      broaders.push(v)
+      broaders.push(v);
       delete data[`${k}`];
     }
   });
@@ -177,7 +177,6 @@ export default function Translate({
           console.log("ERROOO!!", error);
           alert(JSON.stringify("Problema ao salvar este registro"));
         });
-
     }
   };
 
@@ -308,9 +307,9 @@ export default function Translate({
               </Grid>
             )}
             {/* Termos Restritos */}
-           
-              {subjectDetails?.narrower && (
-                <Grid item xs={6}>
+
+            {subjectDetails?.narrower && (
+              <Grid item xs={6}>
                 <Box pt={"0.5rem"}>
                   <Typography variant="subtitle2">
                     Termos Especifíco:
@@ -334,19 +333,15 @@ export default function Translate({
                     ))}
                   </List>
                 </Box>
-                </Grid>
-              )}
-            
+              </Grid>
+            )}
           </Grid>
         </DialogContent>
         <Divider />
         <DialogActions>
+          <Button onClick={handleClose}>Cancelar</Button>
           <Button onClick={handleAceptAll}>Aceitar Todos</Button>
-          <Button //onClick={handleSalve}
-            type="submit"
-          >
-            Salvar
-          </Button>
+          <Button type="submit">Salvar</Button>
         </DialogActions>
       </form>
     </Dialog>

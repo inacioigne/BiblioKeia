@@ -28,7 +28,7 @@ import {
 import ParserBK from "src/services/thesaurus/parser_bk";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 
-export default function ReciprocalAuthority({ authoritys, setSubjectDetails}) {
+export default function ReciprocalAuthority({ authoritys, setSubjectDetails }) {
   return (
     <Box
       sx={{
@@ -53,7 +53,6 @@ export default function ReciprocalAuthority({ authoritys, setSubjectDetails}) {
                 sx={{ textTransform: "none" }}
                 onClick={() => {
                   let token = reciprocalAuthority.uri.split("/")[5];
-
                   ParserLCSH(token, setSubjectDetails);
                 }}
               >

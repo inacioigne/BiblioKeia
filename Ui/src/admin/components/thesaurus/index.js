@@ -42,6 +42,7 @@ import ReciprocalAuthority from "src/admin/components/thesaurus/reciprocalAuthor
 import Broader from "src/admin/components/thesaurus/broader";
 import Narrower from "src/admin/components/thesaurus/narrower";
 import Translate from "src/admin/components/bibframe/works/subject/translate";
+import Authorities from "src/admin/components/thesaurus/listAuthority";
 
 async function GraphExist(token) {
   const client = new SparqlClient({
@@ -109,7 +110,7 @@ export default function CardThesaurus({
     }
   };
 
-  console.log(subjectDetails);
+  console.log("card", subjectDetails);
   return (
     <>
       <Card
@@ -176,11 +177,12 @@ export default function CardThesaurus({
               )}
 
               {/* reciprocalAuthority */}
-              {subjectDetails.reciprocalAuthority && (
+              {subjectDetails?.reciprocalAuthority.length > 0 && (
                 <Grid item xs={6}>
-                  <ReciprocalAuthority
-                    authoritys={subjectDetails.reciprocalAuthority}
+                  <Authorities
+                    label={"Termos Relacionados"}
                     setSubjectDetails={setSubjectDetails}
+                    authorities={subjectDetails.reciprocalAuthority}
                   />
                 </Grid>
               )}
@@ -188,9 +190,10 @@ export default function CardThesaurus({
               {/* broader Term */}
               {subjectDetails?.broader.length > 0 && (
                 <Grid item xs={6}>
-                  <Broader
+                  <Authorities
+                    label={"Termos Genéricos"}
                     setSubjectDetails={setSubjectDetails}
-                    authoritys={subjectDetails.broader}
+                    authorities={subjectDetails.broader}
                   />
                 </Grid>
               )}
@@ -198,9 +201,10 @@ export default function CardThesaurus({
               {/* narrower */}
               {subjectDetails?.narrower.length > 0 && (
                 <Grid item xs={6}>
-                  <Narrower
+                  <Authorities
+                    label={"Termos especifícos"}
                     setSubjectDetails={setSubjectDetails}
-                    authoritys={subjectDetails.narrower}
+                    authorities={subjectDetails.narrower}
                   />
                 </Grid>
               )}
@@ -208,14 +212,6 @@ export default function CardThesaurus({
           </Box>
         </CardContent>
       </Card>
-      {/* <Translate
-        open={openTranslate}
-        setOpen={setOpenTranslate}
-        subjectDetails={subjectDetails}
-        setOpenLCSH={setOpen}
-        setOpenBK={setOpenBK}
-        setSubjectBK={setSubjectBK}
-      /> */}
     </>
   );
 }

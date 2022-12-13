@@ -87,7 +87,7 @@ async function ParserLCSH(token, setSubjectDetails) {
       let ra = {
         label: authority.out(ns.madsrdf.authoritativeLabel).value,
         uri: authority.value,
-        collection: "LCSH",
+        //collection: "LCSH",
       };
       return ra;
 
@@ -118,14 +118,6 @@ async function ParserLCSH(token, setSubjectDetails) {
   SubjectDetails["closeExternalAuthority"] = closeExternalAuthority;
   SubjectDetails["tokenLSCH"] = token;
 
-  // (async () => {
-  //   SubjectDetails['tokenLSCH'] = token
-  //   SubjectDetails["closeExternalAuthority"] = closeExternalAuthority
-  //   const sub = await Promise.all(SubjectDetails);
-
-  //   setSubjectDetails(sub);
-  //   console.log('R', sub )
-  // })();
 
   setSubjectDetails(SubjectDetails);
 }

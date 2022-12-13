@@ -48,7 +48,9 @@ def CreateSubject(request):
     g = ReciprocalAuthority(g, uri, MADSRDF, request)
 
     #Variant
-    g = Variant(g, uri, MADSRDF, request.variant)
+    if len(request.variant) > 0:
+        print("VARIAMTE: ", request.variant)
+        g = Variant(g, uri, MADSRDF, request.variant)
     
     collection = URIRef("https://bibliokeia.com/authorities/subjects/collection_BKSH_General")
     g.add((uri, MADSRDF.isMemberOfMADSCollection, collection))
@@ -56,4 +58,4 @@ def CreateSubject(request):
     nt = g.serialize(format='nt')
     g.serialize('subject.nt')
  
-    return nt
+    return nt 

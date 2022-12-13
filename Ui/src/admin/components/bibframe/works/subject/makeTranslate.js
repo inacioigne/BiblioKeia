@@ -25,12 +25,9 @@ export default function MakeTranslate({
   label,
   setSugestTranslate,
   sugestTranslate,
-  uri
+  uri,
 }) {
   const [sugest, setSugest] = useState(true);
-  
-
-
 
   function getTranslate(termo) {
     api
@@ -38,7 +35,11 @@ export default function MakeTranslate({
       .then((response) => {
         setSugestTranslate((prevState) => ({
           ...prevState,
-          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri }
+          [`${metadata}`]: {
+            value: response.data.translate,
+            lang: "pt",
+            uri: uri,
+          },
         }));
       })
       .catch(function (error) {
@@ -49,19 +50,16 @@ export default function MakeTranslate({
   useEffect(() => {
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: {value: termo, lang: "eng"}
+      [`${metadata}`]: { value: termo, lang: "eng" },
     }));
 
     getTranslate(termo);
-   
-   
   }, []);
 
   const handleAgree = () => {
-
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: sugestTranslate[`${metadata}`]
+      [`${metadata}`]: sugestTranslate[`${metadata}`],
     }));
     setSugest(false);
   };
@@ -73,74 +71,110 @@ export default function MakeTranslate({
   const handleChange = (e) => {
     setTranslate((prevState) => ({
       ...prevState,
-      [`${metadata}`]: {value: e.target.value, lang: "pt", uri: sugestTranslate[`${metadata}`].uri}
-      
+      [`${metadata}`]: {
+        value: e.target.value,
+        lang: "pt",
+        uri: sugestTranslate[`${metadata}`].uri,
+      },
     }));
   };
 
   const inputProps = {
     startAdornment: sugest && (
       <InputAdornment position="start">
-        <Box
-          sx={{
-            display: "flex",
-          }}
-        >
+        {sugestTranslate[`${metadata}`]?.value ? (
+          <Box
+            sx={{
+              display: "flex",
+            }}
+          >
+            <Box
+              sx={{
+                borderRight: "solid 1px",
+                borderTopLeftRadius: "5px",
+                borderBottomLeftRadius: "5px",
+                px: "5px",
+                pt: "2px",
+                backgroundColor: blue[200],
+              }}
+            >
+              <Typography variant="subtitle2" p={0}>
+                {sugestTranslate[`${metadata}`]?.value}
+              </Typography>
+            </Box>
+            <Tooltip title="Aceitar">
+              <FileDownloadDone
+                sx={{
+                  ...styleIcon,
+                  backgroundColor: green[400],
+                }}
+                onClick={handleAgree}
+              />
+            </Tooltip>
+            <Tooltip title="Recusar">
+              <Close
+                sx={{
+                  ...styleIcon,
+                  backgroundColor: red[200],
+                  borderTopRightRadius: "5px",
+                  borderBottomRightRadius: "5px",
+                }}
+                onClick={handleRecuse}
+              />
+            </Tooltip>
+          </Box>
+        ) : (
           <Box
             sx={{
               borderRight: "solid 1px",
-              borderTopLeftRadius: "5px",
-              borderBottomLeftRadius: "5px",
+              borderRadius: "5px",
+              //borderBottomLeftRadius: "5px",
               px: "5px",
               pt: "2px",
-              backgroundColor: blue[200],
+              backgroundColor: red[300],
             }}
           >
-            <Typography variant="subtitle2" p={0}>
-              {sugestTranslate[`${metadata}`]?.value}
-            </Typography>
+           <Typography variant="subtitle2" p={0}> Traduzindo termo...</Typography>
+           
           </Box>
-          <Tooltip title="Aceitar">
-            <FileDownloadDone
-              sx={{
-                ...styleIcon,
-                backgroundColor: green[400],
-              }}
-              onClick={handleAgree}
-            />
-          </Tooltip>
-          <Tooltip title="Recusar">
-            <Close
-              sx={{
-                ...styleIcon,
-                backgroundColor: red[200],
-                borderTopRightRadius: "5px",
-                borderBottomRightRadius: "5px",
-              }}
-              onClick={handleRecuse}
-            />
-          </Tooltip>
-        </Box>
+        )}
       </InputAdornment>
     ),
   };
+
+  // if (translate[`${metadata}`]) {
+  //   return (
+  //     <>
+  //     <TextField
+  //       fullWidth
+  //       disabled={sugest}
+  //       id={metadata}
+  //       name={metadata}
+  //       label={label}
+  //       value={translate[`${metadata}`]['value']}
+  //       InputProps={inputProps}
+  //       onChange={handleChange}
+  //     />
+
+  //      </>
+  //   );
+  // } else {
+  //   return <div>esperando...</div>;
+  // }
   if (translate[`${metadata}`]) {
     return (
-      <>
       <TextField
         fullWidth
         disabled={sugest}
         id={metadata}
         name={metadata}
         label={label}
-        value={translate[`${metadata}`]['value']}
+        value={translate[`${metadata}`]["value"]}
         InputProps={inputProps}
         onChange={handleChange}
       />
-     
-       </>
     );
   } else {
-    return <div>esperando...</div>;
+    return null;
   }
 }

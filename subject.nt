@@ -3,249 +3,110 @@
 @prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/authorities/subjects/sh85113021> a madsrdf:Authority,
+<https://bibliokeia.com/authorities/subjects/sh85066150> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-12T21:20:21.145243"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-13T12:32:39.236327"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Pesquisa"@pt ;
+    madsrdf:authoritativeLabel "Ciência da Informação"@pt ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Pesquisa"@pt ] ) ;
-    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4017894-8>,
-        <http://d-nb.info/gnd/4131708-7>,
-        <http://data.bnf.fr/ark:/12148/cb11938467s>,
-        <http://id.worldcat.org/fast/1095153>,
-        <http://www.wikidata.org/entity/Q42240>,
-        <http://www.yso.fi/onto/yso/p183> ;
-    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85113021>,
-        <http://lod.nal.usda.gov/nalt/5458> ;
-    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2002010603>,
-        <http://id.loc.gov/authorities/subjects/sh2006004688>,
-        <http://id.loc.gov/authorities/subjects/sh2007000909>,
-        <http://id.loc.gov/authorities/subjects/sh2007003908>,
-        <http://id.loc.gov/authorities/subjects/sh2010001158>,
-        <http://id.loc.gov/authorities/subjects/sh2013002574>,
-        <http://id.loc.gov/authorities/subjects/sh2021006131>,
-        <http://id.loc.gov/authorities/subjects/sh85005173>,
-        <http://id.loc.gov/authorities/subjects/sh85005212>,
-        <http://id.loc.gov/authorities/subjects/sh85006988>,
-        <http://id.loc.gov/authorities/subjects/sh85045926>,
-        <http://id.loc.gov/authorities/subjects/sh85046439>,
-        <http://id.loc.gov/authorities/subjects/sh85046441>,
-        <http://id.loc.gov/authorities/subjects/sh85060783>,
-        <http://id.loc.gov/authorities/subjects/sh85066301>,
-        <http://id.loc.gov/authorities/subjects/sh85067175>,
-        <http://id.loc.gov/authorities/subjects/sh85074304>,
-        <http://id.loc.gov/authorities/subjects/sh85075767>,
-        <http://id.loc.gov/authorities/subjects/sh85078296>,
-        <http://id.loc.gov/authorities/subjects/sh85078652>,
-        <http://id.loc.gov/authorities/subjects/sh85081350>,
-        <http://id.loc.gov/authorities/subjects/sh85085281>,
-        <http://id.loc.gov/authorities/subjects/sh85087568>,
-        <http://id.loc.gov/authorities/subjects/sh85090404>,
-        <http://id.loc.gov/authorities/subjects/sh85093748>,
-        <http://id.loc.gov/authorities/subjects/sh85095020>,
-        <http://id.loc.gov/authorities/subjects/sh85098354>,
-        <http://id.loc.gov/authorities/subjects/sh85106389>,
-        <http://id.loc.gov/authorities/subjects/sh85107550>,
-        <http://id.loc.gov/authorities/subjects/sh85110756>,
-        <http://id.loc.gov/authorities/subjects/sh85113031>,
-        <http://id.loc.gov/authorities/subjects/sh85118694>,
-        <http://id.loc.gov/authorities/subjects/sh85141124>,
-        <http://id.loc.gov/authorities/subjects/sh85144279>,
-        <http://id.loc.gov/authorities/subjects/sh88005724>,
-        <http://id.loc.gov/authorities/subjects/sh88006165>,
-        <http://id.loc.gov/authorities/subjects/sh93003312>,
-        <http://id.loc.gov/authorities/subjects/sh97004129>,
-        <http://id.loc.gov/authorities/subjects/sh99004969> ;
-    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85066157>,
-        <http://id.loc.gov/authorities/subjects/sh85075529>,
-        <http://id.loc.gov/authorities/subjects/sh85113055>,
-        <https://bibliokeia.com/authorities/subjects/sh85084414> ;
-    madsrdf:hasVariant [ a madsrdf:ComplexSubject,
-                madsrdf:Variant ;
-            madsrdf:componentList ( [ a madsrdf:Topic,
-                            madsrdf:Variant ;
-                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                                    madsrdf:elementValue "Ciência"@pt ] ) ;
-                        madsrdf:variantLabel "Ciência"@pt ] [ a madsrdf:Topic,
-                            madsrdf:Variant ;
-                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                                    madsrdf:elementValue ""@pt ] ) ;
-                        madsrdf:variantLabel ""@pt ] ) ;
-            madsrdf:variantLabel "Ciência -- Pesquisa"@pt ] ;
+                madsrdf:elementValue "Ciência da Informação"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85029027> ;
+    madsrdf:hasCloseExternalAuthority <http://data.bnf.fr/ark:/12148/cb11965196f>,
+        <http://id.worldcat.org/fast/972640>,
+        <http://www.wikidata.org/entity/Q16387>,
+        <http://www.yso.fi/onto/yso/p17836> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85066150>,
+        <http://lod.nal.usda.gov/nalt/17411> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00003585>,
+        <http://id.loc.gov/authorities/subjects/sh2002000243>,
+        <http://id.loc.gov/authorities/subjects/sh2003001403>,
+        <http://id.loc.gov/authorities/subjects/sh2021005267>,
+        <http://id.loc.gov/authorities/subjects/sh2021005976>,
+        <http://id.loc.gov/authorities/subjects/sh85029072>,
+        <http://id.loc.gov/authorities/subjects/sh85038731>,
+        <http://id.loc.gov/authorities/subjects/sh85066148>,
+        <http://id.loc.gov/authorities/subjects/sh85066157>,
+        <http://id.loc.gov/authorities/subjects/sh85147580>,
+        <http://id.loc.gov/authorities/subjects/sh89005069>,
+        <http://id.loc.gov/authorities/subjects/sh96008049>,
+        <http://id.loc.gov/authorities/subjects/sh97004947>,
+        <http://id.loc.gov/authorities/subjects/sh99001059>,
+        <http://id.loc.gov/authorities/subjects/sh99004272> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh00007046>,
+        <http://id.loc.gov/authorities/subjects/sh85076723> ;
     madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2002010603> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa na internet"@pt ;
+<http://id.loc.gov/authorities/subjects/sh00003585> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bioinformática"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2006004688> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Investigação narrativa (método de pesquisa)"@pt ;
+<http://id.loc.gov/authorities/subjects/sh00007046> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Literacia da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2007000909> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa quantitativa"@pt ;
+<http://id.loc.gov/authorities/subjects/sh2002000243> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Visualização de informações"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2007003908> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Projetos de Pesquisa e Desenvolvimento"@pt ;
+<http://id.loc.gov/authorities/subjects/sh2003001403> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "quimioinformática"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2010001158> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa de métodos mistos"@pt ;
+<http://id.loc.gov/authorities/subjects/sh2021005267> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Classificação--Livros--Ciência da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2013002574> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa reprodutível"@pt ;
+<http://id.loc.gov/authorities/subjects/sh2021005976> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliotecas--Coleções especiais--Ciência da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh2021006131> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Bibliotecas--Coleções especiais--Pesquisa"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85029027> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Comunicação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85005173> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "experimentação animal"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85029072> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "A comunicação na ciência da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85005212> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Modelos animais em pesquisa"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85038731> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Documentação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85006988> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Estudo sobre as areas"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85045926> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Avaliação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85046439> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa experiencial"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85046441> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Design experimental"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85060783> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa rodoviária"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85066148> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Recuperação de informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85066157> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Serviços de informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85066301> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Teoria da informação em pesquisa"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85076723> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Biblioteconomia"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85067175> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Serviço de inteligência"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85147580> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mulheres na ciência da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85074304> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa de terreno"@pt ;
+<http://id.loc.gov/authorities/subjects/sh89005069> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "informática médica"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85075529> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Aprendizado e bolsa de estudos"@pt ;
+<http://id.loc.gov/authorities/subjects/sh96008049> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Recursos de informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85075767> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa legal"@pt ;
+<http://id.loc.gov/authorities/subjects/sh97004947> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "informática agrícola"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85078296> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "método longitudinal"@pt ;
+<http://id.loc.gov/authorities/subjects/sh99001059> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "organização da informação"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh85078652> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa de baixa temperatura"@pt ;
+<http://id.loc.gov/authorities/subjects/sh99004272> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "geomática"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85081350> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa de marketing"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85085281> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa militar"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85087568> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa de motivação (Marketing)"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85090404> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa naval"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85093748> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Observatórios"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85095020> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "pesquisa operacional"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85098354> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Observação do participante"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85106389> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pré-impressões"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85107550> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Redação de proposta em pesquisa"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85110756> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Radioisótopos em pesquisa"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85113031> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa, Indústria"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85113055> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Equipes de pesquisa"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85118694> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisas científicas"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85141124> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Universidades e faculdades - Trabalho de pós-graduação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85144279> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa vulcanológica"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh88005724> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Trabalho em grupo de pesquisa"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh88006165> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa interdisciplinar"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh93003312> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Descobertas na ciência"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh97004129> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Ensaios clínicos randomizados em grupo"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh99004969> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Pesquisa qualitativa"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Metodologia"@pt ;
-    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 

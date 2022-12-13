@@ -30,6 +30,18 @@ async function ParserBK(uri, setSubjectBK) {
 
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
+  
+  if (hasVariant._context.length > 0) {
+    const variants = hasVariant.map((variant) => {
+      return variant.out(ns.madsrdf.variantLabel).value;
+    });
+    SubjectDetails["variant"] = variants;
+    
+  } else {
+    console.log("parser", variants )
+    SubjectDetails["variant"] = false
+
+  }
   const variants = hasVariant.map((variant) => {
     return variant.out(ns.madsrdf.variantLabel).value;
   });
@@ -56,7 +68,8 @@ async function ParserBK(uri, setSubjectBK) {
    const broader = hasBroaderAuthority.map((broaderAuthority) => {
      let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
      let uri = broaderAuthority.value;
-     return { label: label, uri: uri };
+     let collection = broaderAuthority.out(ns.madsrdf.isMemberOfMADSCollection).value;
+     return { label: label, uri: uri, collection: collection.split("_")[1] };
    });
  
    SubjectDetails["broader"] = broader;
@@ -74,8 +87,7 @@ async function ParserBK(uri, setSubjectBK) {
     };
   });
   SubjectDetails["narrower"] = narrower;
-  //console.log('P:', narrower)
-
+  
   setSubjectBK(SubjectDetails);
 }
 

@@ -32,7 +32,9 @@ import { blue, red } from "@mui/material/colors/";
 import SparqlClient from "sparql-http-client";
 
 // BiblioKeia Components
-import Narrower from "src/admin/components/thesaurus/narrower"
+import Narrower from "src/admin/components/thesaurus/narrower";
+import CardThesaurusBKSH from "src/admin/components/thesaurus/cardBKSH";
+
 
 const styleIformation = {
   p: "0.5rem",
@@ -117,18 +119,7 @@ export default function ThesarusBK() {
     setActive(false);
   };
 
-  const getThesarus = (uri) => {
-    let uris = uri.split("/");
-    let thesarus = uris[2];
-    let token = uris[5];
-    if (thesarus == "bibliokeia.com") {
-      //console.log(thesarus, uri);
-      ParserBK(uri, setSubjectBK);
-    } else {
-      console.log(thesarus, token);
-      ParserLCSH(token, setSubjectBK);
-    }
-  };
+
 
   const inputPros = {
     startAdornment: choise && (
@@ -221,7 +212,7 @@ export default function ThesarusBK() {
       >
         <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="div">Thesaurus BiblioKeia</Typography>
-   
+
           <IconButton color="primary" component="label" onClick={handleClose}>
             <ClearIcon />
           </IconButton>
@@ -229,7 +220,7 @@ export default function ThesarusBK() {
         <Divider />
         <DialogContent>
           <Grid container spacing={2}>
-            <Grid item xs={5} sx={{ pr: "0.5rem", borderRight: "solid 1px" }}>
+            <Grid item xs={4} sx={{ pr: "0.5rem", borderRight: "solid 1px" }}>
               <form onSubmit={handleSearchAdv}>
                 <TextField
                   onChange={(e) => {
@@ -258,7 +249,6 @@ export default function ThesarusBK() {
                       <ListItem key={index} disablePadding>
                         <Button
                           onClick={() => {
-                            //console.log(subject.uri)
                             ParserBK(subject.uri, setSubjectBK);
                           }}
                         >
@@ -281,182 +271,21 @@ export default function ThesarusBK() {
                 </Box>
               )}
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={8}>
               {subjectBK && (
-                <>
-                  <Card sx={{ minWidth: 350, width: "100%" }}>
-                    <CardContent>
-                      <Box
-                        sx={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        <Typography variant="h6">
-                          {subjectBK.authority}
-                          {/* {autorityBK && (
-                            <Button
-                              onClick={() => {
-                                getThesarus(autorityBK);
-                              }}
-                            >
-                              BKSH
-                            </Button>
-                          )} */}
-                        </Typography>
-                        {subjectBK.thesarus == "BKSH" ? (
-                          <Tooltip title="Escolher">
-                            <IconButton
-                              color="primary"
-                              component="label"
-                              onClick={handleChoose}
-                            >
-                              <FileDownloadDone />
-                            </IconButton>
-                          </Tooltip>
-                        ) : autorityBK ? (
-                          // <Tooltip title="Ir para termo correspondente">
-                             <Button
-                              onClick={() => {
-                                getThesarus(autorityBK);
-                              }}
-                            >
-                              BKSH
-                            </Button>
-
-                          // </Tooltip>
-                         
-                        ) : (
-                          <Tooltip title="Traduzir">
-                            <IconButton
-                              color="primary"
-                              component="label"
-                              onClick={() => {
-                                setOpenTranslate(true);
-                              }}
-                            >
-                              <TranslateIcon />
-                            </IconButton>
-                          </Tooltip>
-                        )}
-                      </Box>
-                      <Divider />
-                      {/* variant */}
-                      <Box
-                        sx={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                        }}
-                      >
-                        {subjectBK.variant.length > 0 && (
-                          <Box
-                            sx={{
-                              ...styleIformation,
-                              flexDirection: "column",
-                            }}
-                          >
-                            <Typography variant="subtitle2">
-                              Variantes:
-                            </Typography>
-                            <List dense={true}>
-                              {subjectBK.variant.map((variant, index) => (
-                                <ListItem key={index}>
-                                  <ListItemText primary={variant} />
-                                </ListItem>
-                              ))}
-                            </List>
-                          </Box>
-                        )}
-                        {/* reciprocalAuthority */}
-                        {subjectBK?.reciprocalAuthority && (
-                          <Box
-                            sx={{
-                              ...styleIformation,
-                              flexDirection: "column",
-                            }}
-                          >
-                            <Typography variant="subtitle2">
-                              Termo Relacionado:
-                            </Typography>
-                            <List dense={true}>
-                              {subjectBK?.reciprocalAuthority?.map(
-                                (reciprocalAuthority, index) => (
-                                  <ListItem key={index}>
-                                    <Badge
-                                      badgeContent={
-                                        reciprocalAuthority.collection
-                                      }
-                                      color="secondary"
-                                    >
-                                      <Button
-                                        variant="outlined"
-                                        sx={{ textTransform: "none" }}
-                                        onClick={() => {
-                                          getThesarus(reciprocalAuthority.uri);
-                                          // let token =
-                                          //   reciprocalAuthority.uri.split(
-                                          //     "/"
-                                          //   )[5];
-                                          // ParserLCSH(token, setSubjectBK);
-                                        }}
-                                      >
-                                        {reciprocalAuthority.label}
-                                      </Button>
-                                    </Badge>
-                                  </ListItem>
-                                )
-                              )}
-                            </List>
-                          </Box>
-                        )}
-                      </Box>
-                      {/* narrower */}
-                      
-            
-                      
-                      {subjectBK?.narrower && (
-                        <Box
-                          sx={{ ...styleIformation, flexDirection: "column" }}
-                        >
-                          <Typography variant="subtitle2">
-                            Termos Restritos:
-                          </Typography>
-                          <List dense={true}>
-                            {subjectBK.narrower.map((narrower, index) => (
-                              <ListItem key={index} sx={{ pb: "1rem" }}>
-                                {/* <ListItemButton> */}
-                                <Badge
-                                  badgeContent={narrower.collection}
-                                  color="secondary"
-                                >
-                                  <Button
-                                    sx={{
-                                      textTransform: "none", //pb: "0.5rem"
-                                    }}
-                                    variant="outlined"
-                                    onClick={() => {
-                                      let token = narrower.uri.split("/")[5];
-                                      //console.log(token);
-                                      ParserLCSH(token, setSubjectBK);
-                                    }}
-                                  >
-                                    {narrower.label}
-                                  </Button>
-                                </Badge>
-                                {/* </ListItemButton> */}
-                              </ListItem>
-                            ))}
-                          </List>
-                        </Box>
-                      )}
-                    </CardContent>
-                  </Card>
-                </>
+                <CardThesaurusBKSH
+                  subjectDetails={subjectBK}
+                  setSubjectDetails={setSubjectBK}
+                  setOpenBK={setOpen}
+                  setOpenTranslate={setOpenTranslate}
+                  handleChoose={handleChoose}
+                />
               )}
             </Grid>
           </Grid>
         </DialogContent>
       </Dialog>
+
       <ThesaurusLCSH
         open={openLCSH}
         setOpen={setOpenLCSH}

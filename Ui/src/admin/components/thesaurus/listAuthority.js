@@ -23,27 +23,28 @@ import {
 // BiblioKeia Services
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 
-export default function Narrower({ authoritys, setSubjectDetails }) {
+export default function Authorities({ label, authorities, setSubjectDetails }) {
   return (
     <Box
       sx={{
-        //...styleIformation,
         flexDirection: "column",
       }}
     >
-      <Typography variant="subtitle2">Termos Específicos:</Typography>
+      <Typography variant="subtitle2">{label}:</Typography>
       <List dense={true}>
-        {authoritys.map((authority, index) => (
+        {authorities.map((authority, index) => (
           <ListItem key={index} sx={{ pb: "1rem" }}>
-            <Badge badgeContent={authority.collection} color="secondary">
+            <Badge badgeContent={authority.collection} color={
+                authority.collection == "LCSH" ?
+            "secondary" : "success"}>
               <Button
                 variant="outlined"
                 size="small"
-                sx={{ 
-                  textTransform: "none", 
-                textAlign: "left",
-                wordBreak: "break-word"
-                 }}
+                sx={{
+                  textTransform: "none",
+                  textAlign: "left",
+                  wordBreak: "break-word",
+                }}
                 onClick={() => {
                   let token = authority.uri.split("/")[5];
                   console.log("N", token);
