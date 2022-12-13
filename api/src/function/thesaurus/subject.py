@@ -5,6 +5,7 @@ from src.function.thesaurus.elementList import ElementList
 from src.function.thesaurus.closeExternalAuthority import CloseExternalAuthority
 from src.function.thesaurus.exactExternalAuthority import ExactExternalAuthority
 from src.function.thesaurus.narrowerAuthority import NarrowerAuthority
+from src.function.thesaurus.broader import Broader
 from src.function.thesaurus.reciprocalAuthority import ReciprocalAuthority
 from src.function.thesaurus.variant import Variant
 
@@ -35,6 +36,10 @@ def CreateSubject(request):
 
     #ExactExternalAuthority
     g = ExactExternalAuthority(g, uri, MADSRDF, request.exactExternalAuthority)
+
+    #Broader
+    if len(request.broader) > 0:
+        g = Broader(g, uri, MADSRDF, request.broader)
 
     #NarrowerAuthority
     g = NarrowerAuthority(g, uri, MADSRDF, request.narrower)

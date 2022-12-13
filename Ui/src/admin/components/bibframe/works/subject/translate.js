@@ -60,6 +60,7 @@ async function ParserData(translate, subjectDetails, autorityBK) {
   const entries = Object.entries(translate);
 
   const narrowers = new Array();
+  const broaders = new Array();
   const variants = new Array();
   const reciprocalAuthority = new Array();
 
@@ -73,39 +74,17 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       variants.push(v);
       delete data[`${k}`];
     } else if (k.includes("reciprocalAuthority")) {
-      let token = v.uri.split("/")[5];
+      //let token = v.uri.split("/")[5];
       reciprocalAuthority.push(v);
-
-      // GraphExist(token).then((graph) => {
-      //   if (graph) {
-
-      //     autorityBK.data.push({
-      //       token: token,
-      //       metadata: "hasReciprocalAuthority",
-      //     });
-      //     // reciprocalAuthority.push({
-      //     //   collection:
-      //     //     "http://id.loc.gov/authorities/subjects/collection_BKSH_General",
-      //     //   value: v.value,
-      //     //   uri: v.uri,
-      //     //   lang: "pt"
-      //     // });
-      //   }
-      //   // else {
-      //   //   reciprocalAuthority.push({
-      //   //     collection:
-      //   //       "http://id.loc.gov/authorities/subjects/collection_LCSH_General",
-      //   //       value: v.value,
-      //   //       uri: v.uri,
-      //   //       lang: "pt"
-      //   //   });
-      //   // }
-      // });
+      delete data[`${k}`];
+    } else if (k.includes("broader")) {
+      broaders.push(v)
       delete data[`${k}`];
     }
   });
 
   data["narrower"] = narrowers;
+  data["broader"] = broaders;
   data["variant"] = variants;
   data["reciprocalAuthority"] = reciprocalAuthority;
   data["exactExternalAuthority"] = subjectDetails.exactExternalAuthority;
@@ -183,7 +162,7 @@ export default function Translate({
       alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
     } else {
       const data = await ParserData(translate, subjectDetails, autorityBK);
-      //console.log(autorityBK)
+      //console.log(data)
       api
         .post("/thesaurus/subject", await data)
         .then((response) => {
@@ -199,78 +178,6 @@ export default function Translate({
           alert(JSON.stringify("Problema ao salvar este registro"));
         });
 
-      //console.log(await data)
-      // .then((data) => {
-      //   console.log(data)
-      //    api
-      //   .post("/thesaurus/subject", data)
-      //   .then((response) => {
-      //     if (response.status == 201) {
-      //       console.log("msg", response.data);
-
-      //       if (autorityBK.data.length > 0) {
-      //         api
-      //           .put("/thesaurus/update", autorityBK)
-      //           .then((response) => {
-      //             if (response.status == 201) {
-      //               console.log("UP", response);
-      //               // setOpen(false);
-      //               // setOpenLCSH(false);
-      //             }
-      //           })
-      //           .catch(function (error) {
-      //             console.log("ERROOO!!", error);
-      //           });
-      //       } else {
-      //         // setOpen(false);
-      //         // setOpenLCSH(false);
-      //         //console.log("não autualiza");
-      //       }
-
-      //       // ParserBK(response.data.uri, setSubjectBK);
-      //       alert(JSON.stringify("Assunto salvo com sucesso!!"));
-      //     }
-      //   })
-      //   .catch(function (error) {
-      //     console.log("ERROOO!!", error);
-      //     alert(JSON.stringify("Problema ao salvar este registro"));
-      //   });
-
-      // })
-
-      // api
-      //   .post("/thesaurus/subject", data)
-      //   .then((response) => {
-      //     if (response.status == 201) {
-      //       console.log("msg", response.data);
-
-      //       if (autorityBK.data.length > 0) {
-      //         api
-      //           .put("/thesaurus/update", autorityBK)
-      //           .then((response) => {
-      //             if (response.status == 201) {
-      //               console.log("UP", response);
-      //               // setOpen(false);
-      //               // setOpenLCSH(false);
-      //             }
-      //           })
-      //           .catch(function (error) {
-      //             console.log("ERROOO!!", error);
-      //           });
-      //       } else {
-      //         // setOpen(false);
-      //         // setOpenLCSH(false);
-      //         //console.log("não autualiza");
-      //       }
-
-      //       // ParserBK(response.data.uri, setSubjectBK);
-      //       alert(JSON.stringify("Assunto salvo com sucesso!!"));
-      //     }
-      //   })
-      //   .catch(function (error) {
-      //     console.log("ERROOO!!", error);
-      //     alert(JSON.stringify("Problema ao salvar este registro"));
-      //   });
     }
   };
 
@@ -304,27 +211,22 @@ export default function Translate({
                 />
               </Box>
             )}
-            <Grid item xs={6} >
-            <Box pt={"0.5rem"}>
-            <Typography variant="subtitle2">Termo principal:</Typography>
-            <Box sx={{ p: "1rem" }}>
-            <MakeTranslate
-                termo={subjectDetails?.authority}
-                metadata={"authority"}
-                setTranslate={setTranslate}
-                translate={translate}
-                sugestTranslate={sugestTranslate}
-                setSugestTranslate={setSugestTranslate}
-                label={"Assunto"}
-                agree={agree}
-              />
-
-            </Box>
-           
-
-            </Box>
-         
-             
+            <Grid item xs={6}>
+              <Box pt={"0.5rem"}>
+                <Typography variant="subtitle2">Termo principal:</Typography>
+                <Box sx={{ p: "1rem" }}>
+                  <MakeTranslate
+                    termo={subjectDetails?.authority}
+                    metadata={"authority"}
+                    setTranslate={setTranslate}
+                    translate={translate}
+                    sugestTranslate={sugestTranslate}
+                    setSugestTranslate={setSugestTranslate}
+                    label={"Assunto"}
+                    agree={agree}
+                  />
+                </Box>
+              </Box>
             </Grid>
 
             <Grid item xs={6}>
@@ -340,7 +242,6 @@ export default function Translate({
                         <ListItem key={index} sx={{ p: "0.5rem" }}>
                           <MakeTranslate
                             termo={reciprocalAuthority.label}
-                            //collection={reciprocalAuthority.collection}
                             uri={reciprocalAuthority.uri}
                             metadata={`reciprocalAuthority.${index}`}
                             setTranslate={setTranslate}
@@ -367,7 +268,6 @@ export default function Translate({
                       <ListItem key={index} sx={{ p: "0.5rem" }}>
                         <MakeTranslate
                           termo={variant}
-                          //uri={narrower.uri}
                           metadata={`variant.${index}`}
                           setTranslate={setTranslate}
                           translate={translate}
@@ -382,11 +282,39 @@ export default function Translate({
                 </Box>
               )}
             </Grid>
-            {/* Termos Restritos */}
-            <Grid item xs={6}>
-              {subjectDetails?.narrower && (
+            {/* Termos Generico */}
+            {subjectDetails?.broader.length > 0 && (
+              <Grid item xs={6}>
                 <Box pt={"0.5rem"}>
-                  <Typography variant="subtitle2">Termos Restritos:</Typography>
+                  <Typography variant="subtitle2">Termos Generico:</Typography>
+                  <List dense={true}>
+                    {subjectDetails.broader.map((broader, index) => (
+                      <ListItem key={index} sx={{ p: "0.5rem" }}>
+                        <MakeTranslate
+                          termo={broader.label}
+                          uri={broader.uri}
+                          metadata={`broader.${index}`}
+                          setTranslate={setTranslate}
+                          translate={translate}
+                          sugestTranslate={sugestTranslate}
+                          setSugestTranslate={setSugestTranslate}
+                          label={"Termo genérico"}
+                          agree={agree}
+                        />
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              </Grid>
+            )}
+            {/* Termos Restritos */}
+           
+              {subjectDetails?.narrower && (
+                <Grid item xs={6}>
+                <Box pt={"0.5rem"}>
+                  <Typography variant="subtitle2">
+                    Termos Especifíco:
+                  </Typography>
                   <List dense={true}>
                     {subjectDetails.narrower.map((narrower, index) => (
                       <ListItem key={index} sx={{ p: "0.5rem" }}>
@@ -406,8 +334,9 @@ export default function Translate({
                     ))}
                   </List>
                 </Box>
+                </Grid>
               )}
-            </Grid>
+            
           </Grid>
         </DialogContent>
         <Divider />

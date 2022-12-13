@@ -6,7 +6,7 @@
 <https://bibliokeia.com/authorities/subjects/sh85113021> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-09T11:57:20.927774"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-12T21:20:21.145243"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Pesquisa"@pt ;

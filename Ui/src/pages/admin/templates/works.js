@@ -155,10 +155,7 @@ export default function Works() {
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
               <Subject />
-              {/* <Subject
-                listSubject={listSubject}
-                SetListSubject={SetListSubject}
-              /> */}
+   
             </Box>
 
             {/* Idioma */}

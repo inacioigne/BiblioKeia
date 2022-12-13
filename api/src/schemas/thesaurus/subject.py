@@ -9,13 +9,13 @@ class AuthorityExternal(BaseModel):
     value: str
     lang: str
     uri: str
-    #collection: Optional[str]
 
 
 class Subject_Schema(BaseModel):
     authority: Authority
     tokenLSCH: str
     variant: list[Authority]
+    broader: list[AuthorityExternal]
     narrower: list[AuthorityExternal]
     reciprocalAuthority: Optional[list[AuthorityExternal]]
     exactExternalAuthority: Optional[list]

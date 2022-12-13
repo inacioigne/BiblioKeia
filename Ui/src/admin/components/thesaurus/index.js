@@ -41,6 +41,7 @@ import Variants from "src/admin/components/thesaurus/variant";
 import ReciprocalAuthority from "src/admin/components/thesaurus/reciprocalAuthority";
 import Broader from "src/admin/components/thesaurus/broader";
 import Narrower from "src/admin/components/thesaurus/narrower";
+import Translate from "src/admin/components/bibframe/works/subject/translate";
 
 async function GraphExist(token) {
   const client = new SparqlClient({
@@ -55,12 +56,17 @@ async function GraphExist(token) {
   return ask;
 }
 
-export default function CardThesaurus({ subjectDetails, setSubjectDetails }) {
+export default function CardThesaurus({
+  subjectDetails,
+  setSubjectDetails,
+  setOpenBK,
+  setOpenTranslate,
+}) {
   const [choise, setChoise] = useState(false);
   const [subject, setSubject] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
-  const [openTranslate, setOpenTranslate] = useState(false);
+  //const [openTranslate, setOpenTranslate] = useState(false);
   const [autorityBK, setAutorityBK] = useState(null);
 
   const [subjectBK, setSubjectBK] = useState(null);
@@ -94,9 +100,9 @@ export default function CardThesaurus({ subjectDetails, setSubjectDetails }) {
     let uris = uri.split("/");
     let thesarus = uris[2];
     let token = uris[5];
-    
+
     if (thesarus == "bibliokeia.com") {
-        console.log(thesarus)
+      console.log(thesarus);
       ParserBK(uri, setSubjectDetails);
     } else {
       ParserLCSH(token, setSubjectBK);
@@ -105,101 +111,111 @@ export default function CardThesaurus({ subjectDetails, setSubjectDetails }) {
 
   console.log(subjectDetails);
   return (
-    <Card
-      sx={{
-        width: "100%",
-      }}
-    >
-      <CardContent>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <Typography variant="h6">{subjectDetails?.authority}</Typography>
-          {subjectDetails.thesarus == "BKSH" ? (
-            <Tooltip title="Escolher">
-              <IconButton
-                color="primary"
-                component="label"
-                onClick={handleChoose}
-              >
-                <FileDownloadDone />
-              </IconButton>
-            </Tooltip>
-          ) : autorityBK ? (
-            <Button
-              onClick={() => {
-                getThesarus(autorityBK);
-              }}
-            >
-              BKSH
-            </Button>
-          ) : (
-            <Tooltip title="Traduzir">
-              <IconButton
-                color="primary"
-                component="label"
+    <>
+      <Card
+        sx={{
+          width: "100%",
+        }}
+      >
+        <CardContent>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography variant="h6">{subjectDetails?.authority}</Typography>
+            {subjectDetails.thesarus == "BKSH" ? (
+              <Tooltip title="Escolher">
+                <IconButton
+                  color="primary"
+                  component="label"
+                  onClick={handleChoose}
+                >
+                  <FileDownloadDone />
+                </IconButton>
+              </Tooltip>
+            ) : autorityBK ? (
+              <Button
                 onClick={() => {
-                  setOpenTranslate(true);
+                  getThesarus(autorityBK);
                 }}
               >
-                <TranslateIcon />
-              </IconButton>
-            </Tooltip>
-          )}
-        </Box>
-        <Divider />
-        <Box px={"1rem"}>
-          <Typography
-            pt={"10px"}
-            variant="caption"
-            display="block"
-            gutterBottom
-          >
-            {subjectDetails?.note}
-          </Typography>
-          <Grid container spacing={2}>
-            {subjectDetails.variant.length > 0 && (
-              <Grid item xs={6}>
-                {/* variant */}
-                <Variants authoritys={subjectDetails.variant} />
-              </Grid>
+                BKSH
+              </Button>
+            ) : (
+              <Tooltip title="Traduzir">
+                <IconButton
+                  color="primary"
+                  component="label"
+                  onClick={() => {
+                    setOpenTranslate(true);
+                  }}
+                >
+                  <TranslateIcon />
+                </IconButton>
+              </Tooltip>
             )}
+          </Box>
+          <Divider />
+          <Box px={"1rem"}>
+            <Typography
+              pt={"10px"}
+              variant="caption"
+              display="block"
+              gutterBottom
+            >
+              {subjectDetails?.note}
+            </Typography>
+            <Grid container spacing={2}>
+              {subjectDetails.variant.length > 0 && (
+                <Grid item xs={6}>
+                  {/* variant */}
+                  <Variants authoritys={subjectDetails.variant} />
+                </Grid>
+              )}
 
-            {/* reciprocalAuthority */}
-            {subjectDetails.reciprocalAuthority && (
-              <Grid item xs={6}>
-                <ReciprocalAuthority
-                  authoritys={subjectDetails.reciprocalAuthority}
-                  setSubjectDetails={setSubjectDetails}
-                />
-              </Grid>
-            )}
+              {/* reciprocalAuthority */}
+              {subjectDetails.reciprocalAuthority && (
+                <Grid item xs={6}>
+                  <ReciprocalAuthority
+                    authoritys={subjectDetails.reciprocalAuthority}
+                    setSubjectDetails={setSubjectDetails}
+                  />
+                </Grid>
+              )}
 
-            {/* broader Term */}
-            {subjectDetails?.broader.length > 0 && (
-              <Grid item xs={6}>
-                <Broader
-                  setSubjectDetails={setSubjectDetails}
-                  authoritys={subjectDetails.broader}
-                />
-              </Grid>
-            )}
+              {/* broader Term */}
+              {subjectDetails?.broader.length > 0 && (
+                <Grid item xs={6}>
+                  <Broader
+                    setSubjectDetails={setSubjectDetails}
+                    authoritys={subjectDetails.broader}
+                  />
+                </Grid>
+              )}
 
-            {/* narrower */}
-            {subjectDetails?.narrower.length > 0 && (
-              <Grid item xs={6}>
-                <Narrower
-                  setSubjectDetails={setSubjectDetails}
-                  authoritys={subjectDetails.narrower}
-                />
-              </Grid>
-            )}
-          </Grid>
-        </Box>
-      </CardContent>
-    </Card>
+              {/* narrower */}
+              {subjectDetails?.narrower.length > 0 && (
+                <Grid item xs={6}>
+                  <Narrower
+                    setSubjectDetails={setSubjectDetails}
+                    authoritys={subjectDetails.narrower}
+                  />
+                </Grid>
+              )}
+            </Grid>
+          </Box>
+        </CardContent>
+      </Card>
+      {/* <Translate
+        open={openTranslate}
+        setOpen={setOpenTranslate}
+        subjectDetails={subjectDetails}
+        setOpenLCSH={setOpen}
+        setOpenBK={setOpenBK}
+        setSubjectBK={setSubjectBK}
+      /> */}
+    </>
   );
 }

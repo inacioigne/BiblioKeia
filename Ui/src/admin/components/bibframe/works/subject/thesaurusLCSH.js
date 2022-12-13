@@ -256,6 +256,8 @@ export default function ThesaurusLCSH({
                     <CardThesaurus
                       subjectDetails={subjectDetails}
                       setSubjectDetails={setSubjectDetails}
+                      setOpenBK={setOpenBK}
+                      setOpenTranslate={setOpenTranslate}
                     />
                   </>
                 )}

@@ -25,8 +25,7 @@ export default function MakeTranslate({
   label,
   setSugestTranslate,
   sugestTranslate,
-  uri,
-  //collection
+  uri
 }) {
   const [sugest, setSugest] = useState(true);
   
@@ -39,8 +38,7 @@ export default function MakeTranslate({
       .then((response) => {
         setSugestTranslate((prevState) => ({
           ...prevState,
-          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri, //collection: collection 
-        }
+          [`${metadata}`]: {value: response.data.translate, lang:"pt", uri: uri }
         }));
       })
       .catch(function (error) {
@@ -49,7 +47,6 @@ export default function MakeTranslate({
   }
 
   useEffect(() => {
-    //console.log("MT",collection )
     setTranslate((prevState) => ({
       ...prevState,
       [`${metadata}`]: {value: termo, lang: "eng"}
@@ -130,9 +127,7 @@ export default function MakeTranslate({
   if (translate[`${metadata}`]) {
     return (
       <>
-     
       <TextField
-        
         fullWidth
         disabled={sugest}
         id={metadata}
