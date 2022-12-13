@@ -66,6 +66,7 @@ export default function CardThesaurusBKSH({
 
   useEffect(() => {
     if (subjectDetails?.tokenLSCH) {
+      
       (async () => {
         let graph = await GraphExist(subjectDetails?.tokenLSCH);
         if (graph) {
@@ -81,6 +82,7 @@ export default function CardThesaurusBKSH({
       setAutorityBK(null);
     }
   });
+  console.log("BKS", subjectDetails)
 
   const getThesarus = (uri) => {
     let uris = uri.split("/");
@@ -88,7 +90,6 @@ export default function CardThesaurusBKSH({
     let token = uris[5];
 
     if (thesarus == "bibliokeia.com") {
-      //console.log(thesarus);
       ParserBK(uri, setSubjectDetails);
     } else {
       ParserLCSH(token, setSubjectBK);
@@ -160,7 +161,7 @@ export default function CardThesaurusBKSH({
             )}
 
             {/* reciprocalAuthority */}
-            {subjectDetails?.reciprocalAuthority.length > 0 && (
+            {subjectDetails?.reciprocalAuthority && (
               <Grid item xs={6}>
                 <Authorities
                   label={"Termos Relacionados"}

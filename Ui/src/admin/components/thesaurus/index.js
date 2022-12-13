@@ -103,14 +103,14 @@ export default function CardThesaurus({
     let token = uris[5];
 
     if (thesarus == "bibliokeia.com") {
-      console.log(thesarus);
+      //console.log(thesarus);
       ParserBK(uri, setSubjectDetails);
     } else {
       ParserLCSH(token, setSubjectBK);
     }
   };
 
-  console.log("card", subjectDetails);
+ // console.log("card", subjectDetails);
   return (
     <>
       <Card
@@ -169,7 +169,7 @@ export default function CardThesaurus({
               {subjectDetails?.note}
             </Typography>
             <Grid container spacing={2}>
-              {subjectDetails.variant.length > 0 && (
+              {subjectDetails?.variant && (
                 <Grid item xs={6}>
                   {/* variant */}
                   <Variants authoritys={subjectDetails.variant} />

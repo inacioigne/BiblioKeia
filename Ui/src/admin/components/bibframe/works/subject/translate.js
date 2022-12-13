@@ -102,6 +102,7 @@ export default function Translate({
   subjectDetails,
   setSubjectBK,
 }) {
+  //console.log("T", subjectDetails)
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
@@ -126,6 +127,7 @@ export default function Translate({
   }
 
   useEffect(() => {
+    console.log("T", subjectDetails)
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -259,7 +261,7 @@ export default function Translate({
             </Grid>
             {/* Variantes */}
             <Grid item xs={6}>
-              {subjectDetails?.variant.length > 0 && (
+              {subjectDetails?.variant && (
                 <Box pt={"0.5rem"}>
                   <Typography variant="subtitle2">Variantes:</Typography>
                   <List dense={true}>

@@ -3,110 +3,30 @@
 @prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/authorities/subjects/sh85066150> a madsrdf:Authority,
+<https://bibliokeia.com/authorities/subjects/sh94000124> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-13T12:32:39.236327"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-13T16:01:34.676540"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Ciência da Informação"@pt ;
+    madsrdf:authoritativeLabel "Genealogia (Filosofia)"@pt ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Ciência da Informação"@pt ] ) ;
-    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85029027> ;
-    madsrdf:hasCloseExternalAuthority <http://data.bnf.fr/ark:/12148/cb11965196f>,
-        <http://id.worldcat.org/fast/972640>,
-        <http://www.wikidata.org/entity/Q16387>,
-        <http://www.yso.fi/onto/yso/p17836> ;
-    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85066150>,
-        <http://lod.nal.usda.gov/nalt/17411> ;
-    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00003585>,
-        <http://id.loc.gov/authorities/subjects/sh2002000243>,
-        <http://id.loc.gov/authorities/subjects/sh2003001403>,
-        <http://id.loc.gov/authorities/subjects/sh2021005267>,
-        <http://id.loc.gov/authorities/subjects/sh2021005976>,
-        <http://id.loc.gov/authorities/subjects/sh85029072>,
-        <http://id.loc.gov/authorities/subjects/sh85038731>,
-        <http://id.loc.gov/authorities/subjects/sh85066148>,
-        <http://id.loc.gov/authorities/subjects/sh85066157>,
-        <http://id.loc.gov/authorities/subjects/sh85147580>,
-        <http://id.loc.gov/authorities/subjects/sh89005069>,
-        <http://id.loc.gov/authorities/subjects/sh96008049>,
-        <http://id.loc.gov/authorities/subjects/sh97004947>,
-        <http://id.loc.gov/authorities/subjects/sh99001059>,
-        <http://id.loc.gov/authorities/subjects/sh99004272> ;
-    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh00007046>,
-        <http://id.loc.gov/authorities/subjects/sh85076723> ;
+                madsrdf:elementValue "Genealogia (Filosofia)"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85084414>,
+        <http://id.loc.gov/authorities/subjects/sh85100960> ;
+    madsrdf:hasCloseExternalAuthority <http://data.bnf.fr/ark:/12148/cb11965632k>,
+        <http://id.worldcat.org/fast/939692>,
+        <http://www.wikidata.org/entity/Q2265584>,
+        <http://www.yso.fi/onto/yso/p24288> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh94000124> ;
+    madsrdf:hasVariant [ ] ;
     madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh00003585> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Bioinformática"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85084414> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Metodologia"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh00007046> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Literacia da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh2002000243> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Visualização de informações"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh2003001403> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "quimioinformática"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh2021005267> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Classificação--Livros--Ciência da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh2021005976> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Bibliotecas--Coleções especiais--Ciência da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85029027> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Comunicação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85029072> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "A comunicação na ciência da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85038731> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Documentação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85066148> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Recuperação de informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85066157> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Serviços de informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85076723> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Biblioteconomia"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85147580> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Mulheres na ciência da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh89005069> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "informática médica"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh96008049> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Recursos de informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh97004947> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "informática agrícola"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh99001059> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "organização da informação"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh99004272> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "geomática"@pt ;
+<http://id.loc.gov/authorities/subjects/sh85100960> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Filosofia, Moderna"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 

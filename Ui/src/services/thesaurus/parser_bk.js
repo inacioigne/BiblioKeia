@@ -30,29 +30,19 @@ async function ParserBK(uri, setSubjectBK) {
 
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
-  
+
   if (hasVariant._context.length > 0) {
     const variants = hasVariant.map((variant) => {
       return variant.out(ns.madsrdf.variantLabel).value;
     });
     SubjectDetails["variant"] = variants;
-    
-  } else {
-    console.log("parser", variants )
-    SubjectDetails["variant"] = false
-
   }
-  const variants = hasVariant.map((variant) => {
-    return variant.out(ns.madsrdf.variantLabel).value;
-  });
-  SubjectDetails["variant"] = variants;
 
-  // reciprocalAuthority
+  // hasReciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
   if (hasReciprocalAuthority._context.length > 0) {
     let reciprocalAuthority = hasReciprocalAuthority.map((authority) => {
       let uri = authority.out(ns.madsrdf.isMemberOfMADSCollection).value;
-
       let ra = {
         label: authority.out(ns.madsrdf.authoritativeLabel).value,
         collection: uri.split("_")[1],
@@ -61,25 +51,42 @@ async function ParserBK(uri, setSubjectBK) {
       return ra;
     });
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
+  } else {
+    SubjectDetails["reciprocalAuthority"] = false;
   }
 
-   // hasBroaderAuthority
-   const hasBroaderAuthority = subject.out(ns.madsrdf.hasBroaderAuthority);
-   const broader = hasBroaderAuthority.map((broaderAuthority) => {
-     let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
-     let uri = broaderAuthority.value;
-     let collection = broaderAuthority.out(ns.madsrdf.isMemberOfMADSCollection).value;
-     return { label: label, uri: uri, collection: collection.split("_")[1] };
-   });
- 
-   SubjectDetails["broader"] = broader;
+  // hasBroaderAuthority
+  const hasBroaderAuthority = subject.out(ns.madsrdf.hasBroaderAuthority);
+
+  const broader = hasBroaderAuthority.map((broaderAuthority) => {
+    let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
+    let uri = broaderAuthority.value;
+    let collection = broaderAuthority.out(
+      ns.madsrdf.isMemberOfMADSCollection
+    ).value;
+    return { label: label, uri: uri, collection: collection.split("_")[1] };
+  });
+
+  SubjectDetails["broader"] = broader;
 
   //NarrowerAuthority
   const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
+  if (hasNarrowerAuthority._context.length > 0) {
+    const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
+      let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
+      let uri = narrowerAuthorit.out(ns.madsrdf.isMemberOfMADSCollection).value;
+      return {
+        label: label,
+        uri: narrowerAuthorit.value,
+        collection: uri.split("_")[1],
+      };
+    });
+    SubjectDetails["narrower"] = narrower;
+  }
+  
   const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
     let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
     let uri = narrowerAuthorit.out(ns.madsrdf.isMemberOfMADSCollection).value;
-
     return {
       label: label,
       uri: narrowerAuthorit.value,
@@ -87,7 +94,7 @@ async function ParserBK(uri, setSubjectBK) {
     };
   });
   SubjectDetails["narrower"] = narrower;
-  
+
   setSubjectBK(SubjectDetails);
 }
 

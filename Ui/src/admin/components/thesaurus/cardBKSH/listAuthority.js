@@ -30,7 +30,7 @@ import ParserBK from "src/services/thesaurus/parser_bk";
 export default function Authorities({ label, authorities, setSubjectDetails }) {
 
   const getThesarus = (uri) => {
-    console.log(uri)
+    //console.log(uri)
     let uris = uri.split("/");
     let thesarus = uris[2];
     let token = uris[5];
@@ -38,7 +38,7 @@ export default function Authorities({ label, authorities, setSubjectDetails }) {
       //console.log(thesarus, uri);
       ParserBK(uri, setSubjectDetails);
     } else {
-      console.log(thesarus, token);
+      //console.log(thesarus, token);
       ParserLCSH(token, setSubjectDetails);
     }
   };
