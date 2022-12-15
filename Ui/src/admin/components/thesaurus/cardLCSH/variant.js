@@ -44,7 +44,7 @@ export default function Variants({ authoritys }) {
         <List dense={true}>
           {authoritys.map((variant, index) => (
             <ListItem key={index}>
-              <ListItemText primary={variant} />
+              <ListItemText primary={variant.label} />
             </ListItem>
           ))}
         </List>

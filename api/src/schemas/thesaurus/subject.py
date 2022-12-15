@@ -4,6 +4,7 @@ from typing import Optional
 class Authority(BaseModel):
     value: str
     lang: str
+    type: Optional[str]
 
 class AuthorityExternal(BaseModel):
     value: str
@@ -29,117 +30,264 @@ class Update_Thesarus(BaseModel):
     graph: str
     data: list[Authority_Update]
 
+
 {
+    "note": {
+        "value": "Aqui são inseridos trabalhos gerais de pesquisa, e com subdivisão local, trabalhos de pesquisa realizados em locais específicos. Trabalhos de pesquisa sobre uma determinada região, país, etc. são inseridos sob o nome da região, país, etc. com a subdivisão [Pesquisa.]",
+        "lang": "pt"
+    },
     "authority": {
-        "value": "Ciência da Informação",
+        "value": "Pesquisar",
         "lang": "pt"
     },
     "narrower": [
         {
-            "value": "geomática",
+            "value": "pesquisa militar",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh99004272"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85085281"
         },
         {
-            "value": "informática agrícola",
+            "value": "Pesquisa de marketing",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh97004947"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85081350"
         },
         {
-            "value": "Documentação",
+            "value": "Trabalho em grupo de pesquisa",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85038731"
+            "uri": "http://id.loc.gov/authorities/subjects/sh88005724"
         },
+        {
+            "value": "pesquisa na internet",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2002010603"
+        },
+        {
+            "value": "Pré-impressões",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85106389"
+        },
+        {
+            "value": "pesquisa rodoviária",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85060783"
+        },
+        {
+            "value": "Pesquisa de baixa temperatura",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85078652"
+        },
+        {
+            "value": "Teoria da informação em pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85066301"
+        },
+        {
+            "value": "Observação do participante",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85098354"
+        },
+        {
+            "value": "Pesquisa de motivação (Marketing)",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85087568"
+        },
+        {
+            "value": "Pesquisa, Indústria",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85113031"
+        },
+        {
+            "value": "Pesquisa de métodos mistos",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2010001158"
+        },
+        {
+            "value": "Universidades e faculdades - Trabalho de pós-graduação",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85141124"
+        },
+        {
+            "value": "Pesquisas científicas",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85118694"
+        },
+        {
+            "value": "experimentação animal",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85005173"
+        },
+        {
+            "value": "Modelos animais em pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85005212"
+        },
+        {
+            "value": "Avaliação",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85045926"
+        },
+        {
+            "value": "Pesquisa experiencial",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85046439"
+        },
+        {
+            "value": "Pesquisa quantitativa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2007000909"
+        },
+        {
+            "value": "pesquisa de terreno",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85074304"
+        },
+        {
+            "value": "Pesquisa qualitativa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh99004969"
+        },
+        {
+            "value": "pesquisa operacional",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85095020"
+        },
+        {
+            "value": "Pesquisa reprodutível",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2013002574"
+        },
+        {
+            "value": "Design experimental",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85046441"
+        },
+        {
+            "value": "Projetos de Pesquisa e Desenvolvimento",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2007003908"
+        },
+        {
+            "value": "Pesquisa legal",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85075767"
+        },
+        {
+            "value": "método longitudinal",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85078296"
+        },
+        {
+            "value": "Ensaios clínicos randomizados em grupo",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh97004129"
+        },
+        {
+            "value": "Observatórios",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85093748"
+        },
+        {
+            "value": "pesquisa naval",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85090404"
+        },
+        {
+            "value": "Bibliotecas--Coleções especiais--Pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2021006131"
+        },
+        {
+            "value": "Pesquisa interdisciplinar",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh88006165"
+        },
+        {
+            "value": "Descobertas na ciência",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh93003312"
+        },
+        {
+            "value": "Serviço de inteligência",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85067175"
+        },
+        {
+            "value": "Pesquisa vulcanológica",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85144279"
+        },
+        {
+            "value": "Estudo sobre as areas",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85006988"
+        },
+        {
+            "value": "Radioisótopos em pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85110756"
+        },
+        {
+            "value": "Investigação narrativa (método de pesquisa)",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh2006004688"
+        },
+        {
+            "value": "Redação de proposta em pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85107550"
+        }
+    ],
+    "broader": [],
+    "variant": [
+        {
+            "value": "Ciência -- Pesquisa",
+            "lang": "pt",
+            "type": "ComplexSubject"
+        },
+        {
+            "value": "pesquisa científica",
+            "lang": "pt",
+            "type": "Topic"
+        },
+        {
+            "value": "Pesquisa científica",
+            "lang": "pt",
+            "type": "Topic"
+        }
+    ],
+    "reciprocalAuthority": [
         {
             "value": "Serviços de informação",
             "lang": "pt",
             "uri": "http://id.loc.gov/authorities/subjects/sh85066157"
         },
         {
-            "value": "Recuperação de informação",
+            "value": "Equipes de pesquisa",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85066148"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85113055"
         },
         {
-            "value": "Bibliotecas--Coleções especiais--Ciência da informação",
+            "value": "Aprendizado e bolsa de estudos",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2021005976"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85075529"
         },
         {
-            "value": "informática médica",
+            "value": "Metodologia",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh89005069"
-        },
-        {
-            "value": "A comunicação na ciência da informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85029072"
-        },
-        {
-            "value": "Bioinformática",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh00003585"
-        },
-        {
-            "value": "Visualização de informações",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2002000243"
-        },
-        {
-            "value": "quimioinformática",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2003001403"
-        },
-        {
-            "value": "organização da informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh99001059"
-        },
-        {
-            "value": "Mulheres na ciência da informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85147580"
-        },
-        {
-            "value": "Recursos de informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh96008049"
-        },
-        {
-            "value": "Classificação--Livros--Ciência da informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2021005267"
-        }
-    ],
-    "broader": [
-        {
-            "value": "Comunicação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85029027"
-        }
-    ],
-    "variant": [],
-    "reciprocalAuthority": [
-        {
-            "value": "Literacia da informação",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh00007046"
-        },
-        {
-            "value": "Biblioteconomia",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85076723"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85084414"
         }
     ],
     "exactExternalAuthority": [
-        "http://id.loc.gov/authorities/subjects/sh85066150",
-        "http://lod.nal.usda.gov/nalt/17411"
+        "http://id.loc.gov/authorities/subjects/sh85113021",
+        "http://lod.nal.usda.gov/nalt/5458"
     ],
     "closeExternalAuthority": [
-        "http://www.yso.fi/onto/yso/p17836",
-        "http://data.bnf.fr/ark:/12148/cb11965196f",
-        "http://www.wikidata.org/entity/Q16387",
-        "http://id.worldcat.org/fast/972640"
+        "http://data.bnf.fr/ark:/12148/cb11938467s",
+        "http://www.yso.fi/onto/yso/p183",
+        "http://www.wikidata.org/entity/Q42240",
+        "http://id.worldcat.org/fast/1095153",
+        "http://d-nb.info/gnd/4017894-8",
+        "http://d-nb.info/gnd/4131708-7"
     ],
-    "tokenLSCH": "sh85066150"
+    "tokenLSCH": "sh85113021"
 }

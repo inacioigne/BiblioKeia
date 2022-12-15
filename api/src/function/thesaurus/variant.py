@@ -7,10 +7,12 @@ def Variant(g, uri, MADSRDF, variants):
     variantList = BNode()    
     g.add((uri, MADSRDF.hasVariant, variantList))
 
-    for variant in variants:
+    for variant in variants: 
         
-        if "-" in variant.value:
+        if variant.type == "ComplexSubject":
+            
             complexSubject = variant.value.split("-")
+            print("VARIANT:", complexSubject)
             label1 = Literal(
                 complexSubject[0].rstrip(), 
                 lang=variant.lang)
@@ -50,35 +52,12 @@ def Variant(g, uri, MADSRDF, variants):
                 MADSRDF.variantLabel, 
                 Literal(variant.value, lang="pt")
                 ))
-
-
-           
-
-
-            # complexSubject = variant.value.split("-")
-            # label1 = Literal(
-            #     complexSubject[0].rstrip(), 
-            #     lang=variant.lang)
-            # label2 = Literal(
-            #     complexSubject[1].rstrip(), 
-            #     lang=variant.lang)   
-
-            # component1 = BNode()
-            # g.add((componentList, RDF.first, component1))
-            # g.add((component1, RDF.type, MADSRDF.Topic))
-            # g.add((component1, RDF.type, MADSRDF.Variant))            
-            # g = ElementList(g, component1, label1, MADSRDF)
-            # g.add((component1, MADSRDF.variantLabel, label1)) 
-
-            # component2 = BNode()
-            # g.add((component1, RDF.rest, component2))
-            # element2 = BNode()
-            # g.add((component2, RDF.first, element2))
-            # g.add((element2, RDF.type, MADSRDF.Topic))
-            # g.add((element2, RDF.type, MADSRDF.Variant))            
-            # g = ElementList(g, element2, label2, MADSRDF)
-            # g.add((component2, MADSRDF.variantLabel, label2)) 
-            # g.add((component2, RDF.rest, RDF.nil))
+        else:
+            label = Literal(variant.value, lang='pt')
+            g.add((variantList, RDF.type, MADSRDF.Topic))
+            g.add((variantList, RDF.type, MADSRDF.Variant))
+            g = ElementList(g, variantList, label, MADSRDF)
+            g.add((variantList, MADSRDF.variantLabel, label))
 
 
     return g

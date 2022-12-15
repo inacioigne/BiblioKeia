@@ -5,8 +5,8 @@ import {
   Typography,
   Divider,
   Grid,
-  List,
-  ListItem,
+  // List,
+  // ListItem,
   Button,
   FormControl,
   InputLabel,
@@ -32,11 +32,7 @@ import ParserBK from "src/services/thesaurus/parser_bk";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 
 // BiblioKeia Components
-import Variants from "src/admin/components/thesaurus/variant";
-// import ReciprocalAuthority from "src/admin/components/thesaurus/reciprocalAuthority";
-// import Broader from "src/admin/components/thesaurus/broader";
-// import Narrower from "src/admin/components/thesaurus/narrower";
-// import Translate from "src/admin/components/bibframe/works/subject/translate";
+import Variants from "src/admin/components/thesaurus/cardLCSH/variant";
 import Authorities from "src/admin/components/thesaurus/cardBKSH/listAuthority";
 
 async function GraphExist(token) {
@@ -58,10 +54,8 @@ export default function CardThesaurusBKSH({
   setOpenTranslate,
   handleChoose,
 }) {
-  //console.log('card',subjectDetails)
 
   const [autorityBK, setAutorityBK] = useState(null);
-
   const [subjectBK, setSubjectBK] = useState(null);
 
   useEffect(() => {

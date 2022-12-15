@@ -39,10 +39,10 @@ def CreateSubject(request):
 
     #Broader
     if len(request.broader) > 0:
-        g = Broader(g, uri, MADSRDF, request.broader)
+        g = Broader(g, uri, MADSRDF, request)
 
     #NarrowerAuthority
-    g = NarrowerAuthority(g, uri, MADSRDF, request.narrower)
+    g = NarrowerAuthority(g, uri, MADSRDF, request)
 
     #ReciprocalAuthority
     g = ReciprocalAuthority(g, uri, MADSRDF, request)
@@ -50,7 +50,7 @@ def CreateSubject(request):
     #Variant
     if len(request.variant) > 0:
         print("VARIAMTE: ", request.variant)
-        g = Variant(g, uri, MADSRDF, request.variant)
+        g = Variant(g, uri, MADSRDF, request.variant) 
     
     collection = URIRef("https://bibliokeia.com/authorities/subjects/collection_BKSH_General")
     g.add((uri, MADSRDF.isMemberOfMADSCollection, collection))

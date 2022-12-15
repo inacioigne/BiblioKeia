@@ -19,6 +19,7 @@ const styleIcon = {
 
 export default function MakeTranslate({
   termo,
+  type,
   setTranslate,
   translate,
   metadata,
@@ -39,6 +40,7 @@ export default function MakeTranslate({
             value: response.data.translate,
             lang: "pt",
             uri: uri,
+            type: type
           },
         }));
       })

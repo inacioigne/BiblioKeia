@@ -102,7 +102,6 @@ export default function Translate({
   subjectDetails,
   setSubjectBK,
 }) {
-  //console.log("T", subjectDetails)
   const [translate, setTranslate] = useState({});
   const [sugestTranslate, setSugestTranslate] = useState({});
   const [agree, setAgree] = useState(false);
@@ -127,7 +126,7 @@ export default function Translate({
   }
 
   useEffect(() => {
-    console.log("T", subjectDetails)
+    console.log("T", subjectDetails);
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -164,22 +163,22 @@ export default function Translate({
       alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
     } else {
       const data = await ParserData(translate, subjectDetails, autorityBK);
-      //console.log(data)
-      api
-        .post("/thesaurus/subject", await data)
-        .then((response) => {
-          if (response.status == 201) {
-            ParserBK(response.data.uri, setSubjectBK);
-            setOpen(false);
-            setOpenLCSH(false);
-            alert(JSON.stringify("Assunto salvo com sucesso!!"));
-          }
-        })
-        .catch(function (error) {
-          console.log("ERROOO!!", error);
-          alert(JSON.stringify("Problema ao salvar este registro"));
-        });
-    }
+      console.log(data);
+    //   api
+    //     .post("/thesaurus/subject", await data)
+    //     .then((response) => {
+    //       if (response.status == 201) {
+    //         ParserBK(response.data.uri, setSubjectBK);
+    //         setOpen(false);
+    //         //setOpenLCSH(false);
+    //         alert(JSON.stringify("Assunto salvo com sucesso!!"));
+    //       }
+    //     })
+    //     .catch(function (error) {
+    //       console.log("ERROOO!!", error);
+    //       alert(JSON.stringify("Problema ao salvar este registro"));
+    //     });
+     }
   };
 
   return (
@@ -230,9 +229,9 @@ export default function Translate({
               </Box>
             </Grid>
 
-            <Grid item xs={6}>
-              {/* Termo relacionado */}
-              {subjectDetails?.reciprocalAuthority && (
+            {/* Termo relacionado */}
+            {subjectDetails?.reciprocalAuthority && (
+              <Grid item xs={6}>
                 <Box pt={"0.5rem"}>
                   <Typography variant="subtitle2">
                     Termo relacionado:
@@ -257,8 +256,9 @@ export default function Translate({
                     )}
                   </List>
                 </Box>
-              )}
-            </Grid>
+              </Grid>
+            )}
+
             {/* Variantes */}
             <Grid item xs={6}>
               {subjectDetails?.variant && (
@@ -267,8 +267,9 @@ export default function Translate({
                   <List dense={true}>
                     {subjectDetails.variant.map((variant, index) => (
                       <ListItem key={index} sx={{ p: "0.5rem" }}>
-                        <MakeTranslate
-                          termo={variant}
+                        <MakeTranslate 
+                          termo={variant.label}
+                          type={variant.type}
                           metadata={`variant.${index}`}
                           setTranslate={setTranslate}
                           translate={translate}
@@ -326,7 +327,6 @@ export default function Translate({
                           setTranslate={setTranslate}
                           translate={translate}
                           sugestTranslate={sugestTranslate}
-                          //subjectDetails={subjectDetails}
                           setSugestTranslate={setSugestTranslate}
                           label={"Termo restrito"}
                           agree={agree}

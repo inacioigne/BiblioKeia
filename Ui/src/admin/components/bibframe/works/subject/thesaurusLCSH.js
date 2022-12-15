@@ -31,15 +31,14 @@ import Translate from "src/admin/components/bibframe/works/subject/translate";
 import CardSubject from "src/admin/components/bibframe/works/subject/cardSubject";
 
 // BiblioKeia Components
-import CardThesaurus from "src/admin/components/thesaurus";
-// import Narrower from "src/admin/components/thesaurus/narrower";
-// import Broader from "src/admin/components/thesaurus/broader";
+import CardThesaurus from "src/admin/components/thesaurus/cardLCSH";
 
-const styleIformation = {
-  p: "0.5rem",
-  display: "flex",
-  gap: "0.5rem",
-};
+
+// const styleIformation = {
+//   p: "0.5rem",
+//   display: "flex",
+//   gap: "0.5rem",
+// };
 
 export default function ThesaurusLCSH({
   open,

@@ -47,7 +47,7 @@ export default function Authorities({ label, authorities, setSubjectDetails }) {
                 }}
                 onClick={() => {
                   let token = authority.uri.split("/")[5];
-                  console.log("N", token);
+                  //console.log("N", token);
                   ParserLCSH(token, setSubjectDetails);
                 }}
               >

@@ -37,12 +37,12 @@ import ParserBK from "src/services/thesaurus/parser_bk";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 
 // BiblioKeia Components
-import Variants from "src/admin/components/thesaurus/variant";
-import ReciprocalAuthority from "src/admin/components/thesaurus/reciprocalAuthority";
-import Broader from "src/admin/components/thesaurus/broader";
-import Narrower from "src/admin/components/thesaurus/narrower";
-import Translate from "src/admin/components/bibframe/works/subject/translate";
-import Authorities from "src/admin/components/thesaurus/listAuthority";
+import Variants from "src/admin/components/thesaurus/cardLCSH/variant";
+// import ReciprocalAuthority from "src/admin/components/thesaurus/reciprocalAuthority";
+// import Broader from "src/admin/components/thesaurus/broader";
+// import Narrower from "src/admin/components/thesaurus/narrower";
+// import Translate from "src/admin/components/bibframe/works/subject/translate";
+import Authorities from "src/admin/components/thesaurus/cardLCSH/listAuthority";
 
 async function GraphExist(token) {
   const client = new SparqlClient({
@@ -67,7 +67,6 @@ export default function CardThesaurus({
   const [subject, setSubject] = useState("");
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(false);
-  //const [openTranslate, setOpenTranslate] = useState(false);
   const [autorityBK, setAutorityBK] = useState(null);
 
   const [subjectBK, setSubjectBK] = useState(null);
@@ -103,14 +102,15 @@ export default function CardThesaurus({
     let token = uris[5];
 
     if (thesarus == "bibliokeia.com") {
-      //console.log(thesarus);
+    
       ParserBK(uri, setSubjectDetails);
     } else {
-      ParserLCSH(token, setSubjectBK);
+  
+      ParserLCSH(token, setSubjectDetails)
     }
   };
 
- // console.log("card", subjectDetails);
+  console.log("card", subjectDetails);
   return (
     <>
       <Card
@@ -177,7 +177,7 @@ export default function CardThesaurus({
               )}
 
               {/* reciprocalAuthority */}
-              {subjectDetails?.reciprocalAuthority.length > 0 && (
+              {subjectDetails?.reciprocalAuthority && (
                 <Grid item xs={6}>
                   <Authorities
                     label={"Termos Relacionados"}
@@ -199,7 +199,7 @@ export default function CardThesaurus({
               )}
 
               {/* narrower */}
-              {subjectDetails?.narrower.length > 0 && (
+              {subjectDetails.narrower && (
                 <Grid item xs={6}>
                   <Authorities
                     label={"Termos especifícos"}

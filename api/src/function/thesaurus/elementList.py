@@ -8,7 +8,7 @@ def ElementList(g, uri, label, MADSRDF):
     element = BNode()
     g.add((elementList, RDF.first, element))
     g.add((element, RDF.type, MADSRDF.TopicElement))
-    g.add((element, MADSRDF.elementValue, Literal(label)))
+    g.add((element, MADSRDF.elementValue, label))
     g.add((elementList, RDF.rest, RDF.nil))
 
     return g

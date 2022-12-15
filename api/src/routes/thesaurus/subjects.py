@@ -14,7 +14,7 @@ async def create_subject(request: Subject_Schema):
     nt = CreateSubject(request)
     G = Make_Graph(nt, request.tokenLSCH)
 
-    fuseki_update.run_sparql(G)
+    #fuseki_update.run_sparql(G)
 
     return {'uri': f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
     

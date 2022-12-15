@@ -51,9 +51,15 @@ async function ParserLCSH(token, setSubjectDetails) {
 
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
+  
+
   const variants = hasVariant.map((variant) => {
-    return variant.out(ns.madsrdf.variantLabel).value;
+    let type = variant.out(ns.rdf.type).values[0].split("#")[1]
+    let label = variant.out(ns.madsrdf.variantLabel).value
+
+    return {label: label, type: type}
   });
+  //console.log("VARIANT: ", variants)
 
   SubjectDetails["variant"] = variants;
 
@@ -63,20 +69,27 @@ async function ParserLCSH(token, setSubjectDetails) {
     let label = broaderAuthority.out(ns.madsrdf.authoritativeLabel).value;
     let uri = broaderAuthority.value;
     return { label: label, uri: uri };
-  });
+  }); 
 
   SubjectDetails["broader"] = broader;
 
   //NarrowerAuthority
   const hasNarrowerAuthority = subject.out(ns.madsrdf.hasNarrowerAuthority);
 
-  const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
-    let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
-    let uri = narrowerAuthorit.value;
-    return { label: label, uri: uri };
-  });
-
-  SubjectDetails["narrower"] = narrower;
+  if (hasNarrowerAuthority._context.length > 0) {
+    const narrower = hasNarrowerAuthority.map((narrowerAuthorit) => {
+      let label = narrowerAuthorit.out(ns.madsrdf.authoritativeLabel).value;
+      //let uri = narrowerAuthorit.out(ns.madsrdf.isMemberOfMADSCollection).value;
+      return {
+        label: label,
+        uri: narrowerAuthorit.value,
+        //collection: uri.split("_")[1],
+      };
+    });
+    SubjectDetails["narrower"] = narrower;
+  } else {
+    SubjectDetails["narrower"] = false
+  }
 
   // reciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);
@@ -90,8 +103,6 @@ async function ParserLCSH(token, setSubjectDetails) {
         //collection: "LCSH",
       };
       return ra;
-
-
     });
 
     SubjectDetails["reciprocalAuthority"] = reciprocalAuthority;
