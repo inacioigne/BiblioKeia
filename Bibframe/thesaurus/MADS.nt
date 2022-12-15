@@ -612,7 +612,7 @@
             ri:recordChangeDate "2019-12-19T14:38:08"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ri:recordStatus "revised"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Research"@en ;
+    madsrdf:authoritativeLabel "Research"@en ; 
     madsrdf:classification [ a lcc:ClassNumber ;
             madsrdf:code "Q179.9-Q180.7" ;
             madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/Q179.9-Q180.7> ],

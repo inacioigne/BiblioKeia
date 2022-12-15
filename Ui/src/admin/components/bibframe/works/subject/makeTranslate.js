@@ -30,8 +30,28 @@ export default function MakeTranslate({
 }) {
   const [sugest, setSugest] = useState(true);
 
-  function getTranslate(termo) {
-    api
+  async function getTranslate(termo) {
+    if (type == "ComplexSubject") {
+      let ComplexSubject = termo.split("--")
+
+      let cs1 = await api.post(`/${ComplexSubject[0]}`)
+        .then((response) => {return response.data.translate})
+      
+      let cs2 = await api.post(`/${ComplexSubject[1]}`)
+        .then((response) => {return response.data.translate})
+
+      console.log("Trans", `${cs1}--${cs2}`)
+      setSugestTranslate((prevState) => ({
+        ...prevState,
+        [`${metadata}`]: {
+          value: `${cs1}--${cs2}`,
+          lang: "pt",
+          uri: uri,
+          type: type
+        },
+      }));
+    } else {
+      api
       .post(`/${termo}`)
       .then((response) => {
         setSugestTranslate((prevState) => ({
@@ -47,9 +67,11 @@ export default function MakeTranslate({
       .catch(function (error) {
         console.log("ERROOO!!", error);
       });
+    }    
   }
 
   useEffect(() => {
+    //console.log("MT", type, metadata)
     setTranslate((prevState) => ({
       ...prevState,
       [`${metadata}`]: { value: termo, lang: "eng" },
@@ -77,6 +99,8 @@ export default function MakeTranslate({
         value: e.target.value,
         lang: "pt",
         uri: sugestTranslate[`${metadata}`].uri,
+        type: type
+
       },
     }));
   };
@@ -144,26 +168,8 @@ export default function MakeTranslate({
     ),
   };
 
-  // if (translate[`${metadata}`]) {
-  //   return (
-  //     <>
-  //     <TextField
-  //       fullWidth
-  //       disabled={sugest}
-  //       id={metadata}
-  //       name={metadata}
-  //       label={label}
-  //       value={translate[`${metadata}`]['value']}
-  //       InputProps={inputProps}
-  //       onChange={handleChange}
-  //     />
-
-  //      </>
-  //   );
-  // } else {
-  //   return <div>esperando...</div>;
-  // }
   if (translate[`${metadata}`]) {
+    
     return (
       <TextField
         fullWidth

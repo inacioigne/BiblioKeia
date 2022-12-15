@@ -74,7 +74,6 @@ async function ParserData(translate, subjectDetails, autorityBK) {
       variants.push(v);
       delete data[`${k}`];
     } else if (k.includes("reciprocalAuthority")) {
-      //let token = v.uri.split("/")[5];
       reciprocalAuthority.push(v);
       delete data[`${k}`];
     } else if (k.includes("broader")) {
@@ -126,7 +125,7 @@ export default function Translate({
   }
 
   useEffect(() => {
-    console.log("T", subjectDetails);
+    //console.log("T", subjectDetails);
     if (subjectDetails?.note) {
       getTranslate(subjectDetails?.note);
     }
@@ -266,6 +265,7 @@ export default function Translate({
                   <Typography variant="subtitle2">Variantes:</Typography>
                   <List dense={true}>
                     {subjectDetails.variant.map((variant, index) => (
+                      
                       <ListItem key={index} sx={{ p: "0.5rem" }}>
                         <MakeTranslate 
                           termo={variant.label}
@@ -276,7 +276,7 @@ export default function Translate({
                           sugestTranslate={sugestTranslate}
                           setSugestTranslate={setSugestTranslate}
                           label={"Variante"}
-                          agree={agree}
+                          agree={agree} 
                         />
                       </ListItem>
                     ))}

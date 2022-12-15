@@ -6,14 +6,16 @@
 <https://bibliokeia.com/authorities/subjects/sh85113021> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2022-12-14T14:26:26.450578"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-12-15T16:01:47.572162"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Pesquisar"@pt ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Pesquisar"@pt ] ) ;
-    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85100960>,
-        <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+                madsrdf:elementValue "Scientific research"@pt ] ),
+        ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Pesquisar"@pt ] ),
+        ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "pesquisa científica"@pt ] ) ;
     madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4017894-8>,
         <http://d-nb.info/gnd/4131708-7>,
         <http://data.bnf.fr/ark:/12148/cb11938467s>,
@@ -63,27 +65,14 @@
         <http://id.loc.gov/authorities/subjects/sh99004969> ;
     madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85066157>,
         <http://id.loc.gov/authorities/subjects/sh85075529>,
-        <http://id.loc.gov/authorities/subjects/sh85113055>,
-        <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+        <http://id.loc.gov/authorities/subjects/sh85084414>,
+        <http://id.loc.gov/authorities/subjects/sh85113055> ;
     madsrdf:hasVariant [ a madsrdf:ComplexSubject,
-                madsrdf:Topic,
-                madsrdf:Variant ;
-            madsrdf:componentList ( [ a madsrdf:Topic,
-                            madsrdf:Variant ;
-                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                                    madsrdf:elementValue "Ciência"@pt ] ) ;
-                        madsrdf:variantLabel "Ciência"@pt ] [ a madsrdf:Topic,
-                            madsrdf:Variant ;
-                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                                    madsrdf:elementValue ""@pt ] ) ;
-                        madsrdf:variantLabel ""@pt ] ) ;
-            madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "pesquisa científica"@pt ] ),
-                ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "Pesquisa científica"@pt ] ) ;
-            madsrdf:variantLabel "Ciência -- Pesquisa"@pt,
-                "Pesquisa científica"@pt,
-                "pesquisa científica"@pt ] ;  
+                madsrdf:Variant ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ] ;
     madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh2002010603> a madsrdf:Authority ;
@@ -178,6 +167,10 @@
     madsrdf:authoritativeLabel "Pesquisa de marketing"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
+<http://id.loc.gov/authorities/subjects/sh85084414> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Metodologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
 <http://id.loc.gov/authorities/subjects/sh85085281> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "pesquisa militar"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
@@ -200,10 +193,6 @@
 
 <http://id.loc.gov/authorities/subjects/sh85098354> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Observação do participante"@pt ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh85100960> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Filosofia, Moderna"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 
 <http://id.loc.gov/authorities/subjects/sh85106389> a madsrdf:Authority ;
@@ -257,8 +246,4 @@
 <http://id.loc.gov/authorities/subjects/sh99004969> a madsrdf:Authority ;
     madsrdf:authoritativeLabel "Pesquisa qualitativa"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
-
-<https://bibliokeia.com/authorities/subjects/sh85084414> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Metodologia"@pt ;
-    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 

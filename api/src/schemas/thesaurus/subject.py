@@ -30,7 +30,6 @@ class Update_Thesarus(BaseModel):
     graph: str
     data: list[Authority_Update]
 
-
 {
     "note": {
         "value": "Aqui são inseridos trabalhos gerais de pesquisa, e com subdivisão local, trabalhos de pesquisa realizados em locais específicos. Trabalhos de pesquisa sobre uma determinada região, país, etc. são inseridos sob o nome da região, país, etc. com a subdivisão [Pesquisa.]",
@@ -42,11 +41,6 @@ class Update_Thesarus(BaseModel):
     },
     "narrower": [
         {
-            "value": "pesquisa militar",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85085281"
-        },
-        {
             "value": "Pesquisa de marketing",
             "lang": "pt",
             "uri": "http://id.loc.gov/authorities/subjects/sh85081350"
@@ -57,14 +51,19 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh88005724"
         },
         {
+            "value": "pesquisa militar",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85085281"
+        },
+        {
+            "value": "Teoria da informação em pesquisa",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85066301"
+        },
+        {
             "value": "pesquisa na internet",
             "lang": "pt",
             "uri": "http://id.loc.gov/authorities/subjects/sh2002010603"
-        },
-        {
-            "value": "Pré-impressões",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85106389"
         },
         {
             "value": "pesquisa rodoviária",
@@ -77,9 +76,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85078652"
         },
         {
-            "value": "Teoria da informação em pesquisa",
+            "value": "Pré-impressões",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85066301"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85106389"
         },
         {
             "value": "Observação do participante",
@@ -87,9 +86,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85098354"
         },
         {
-            "value": "Pesquisa de motivação (Marketing)",
+            "value": "Universidades e faculdades - Trabalho de pós-graduação",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85087568"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85141124"
         },
         {
             "value": "Pesquisa, Indústria",
@@ -102,9 +101,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh2010001158"
         },
         {
-            "value": "Universidades e faculdades - Trabalho de pós-graduação",
+            "value": "Pesquisa de motivação (Marketing)",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85141124"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85087568"
         },
         {
             "value": "Pesquisas científicas",
@@ -112,9 +111,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85118694"
         },
         {
-            "value": "experimentação animal",
+            "value": "Pesquisa experiencial",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85005173"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85046439"
         },
         {
             "value": "Modelos animais em pesquisa",
@@ -127,9 +126,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85045926"
         },
         {
-            "value": "Pesquisa experiencial",
+            "value": "experimentação animal",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85046439"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85005173"
         },
         {
             "value": "Pesquisa quantitativa",
@@ -137,9 +136,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh2007000909"
         },
         {
-            "value": "pesquisa de terreno",
+            "value": "Pesquisa reprodutível",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85074304"
+            "uri": "http://id.loc.gov/authorities/subjects/sh2013002574"
         },
         {
             "value": "Pesquisa qualitativa",
@@ -152,9 +151,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85095020"
         },
         {
-            "value": "Pesquisa reprodutível",
+            "value": "pesquisa de terreno",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2013002574"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85074304"
         },
         {
             "value": "Design experimental",
@@ -162,9 +161,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85046441"
         },
         {
-            "value": "Projetos de Pesquisa e Desenvolvimento",
+            "value": "Ensaios clínicos randomizados em grupo",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh2007003908"
+            "uri": "http://id.loc.gov/authorities/subjects/sh97004129"
         },
         {
             "value": "Pesquisa legal",
@@ -177,9 +176,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85078296"
         },
         {
-            "value": "Ensaios clínicos randomizados em grupo",
+            "value": "Projetos de Pesquisa e Desenvolvimento",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh97004129"
+            "uri": "http://id.loc.gov/authorities/subjects/sh2007003908"
         },
         {
             "value": "Observatórios",
@@ -187,9 +186,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85093748"
         },
         {
-            "value": "pesquisa naval",
+            "value": "Descobertas na ciência",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85090404"
+            "uri": "http://id.loc.gov/authorities/subjects/sh93003312"
         },
         {
             "value": "Bibliotecas--Coleções especiais--Pesquisa",
@@ -202,14 +201,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh88006165"
         },
         {
-            "value": "Descobertas na ciência",
+            "value": "pesquisa naval",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh93003312"
-        },
-        {
-            "value": "Serviço de inteligência",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85067175"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85090404"
         },
         {
             "value": "Pesquisa vulcanológica",
@@ -217,9 +211,9 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85144279"
         },
         {
-            "value": "Estudo sobre as areas",
+            "value": "Serviço de inteligência",
             "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85006988"
+            "uri": "http://id.loc.gov/authorities/subjects/sh85067175"
         },
         {
             "value": "Radioisótopos em pesquisa",
@@ -232,6 +226,11 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh2006004688"
         },
         {
+            "value": "Estudo sobre as areas",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85006988"
+        },
+        {
             "value": "Redação de proposta em pesquisa",
             "lang": "pt",
             "uri": "http://id.loc.gov/authorities/subjects/sh85107550"
@@ -240,9 +239,9 @@ class Update_Thesarus(BaseModel):
     "broader": [],
     "variant": [
         {
-            "value": "Ciência -- Pesquisa",
+            "value": "Scientific research",
             "lang": "pt",
-            "type": "ComplexSubject"
+            "type": "Topic"
         },
         {
             "value": "pesquisa científica",
@@ -250,9 +249,9 @@ class Update_Thesarus(BaseModel):
             "type": "Topic"
         },
         {
-            "value": "Pesquisa científica",
+            "value": "Ciência--Pesquisa",
             "lang": "pt",
-            "type": "Topic"
+            "type": "ComplexSubject"
         }
     ],
     "reciprocalAuthority": [
@@ -267,14 +266,14 @@ class Update_Thesarus(BaseModel):
             "uri": "http://id.loc.gov/authorities/subjects/sh85113055"
         },
         {
-            "value": "Aprendizado e bolsa de estudos",
-            "lang": "pt",
-            "uri": "http://id.loc.gov/authorities/subjects/sh85075529"
-        },
-        {
             "value": "Metodologia",
             "lang": "pt",
             "uri": "http://id.loc.gov/authorities/subjects/sh85084414"
+        },
+        {
+            "value": "Aprendizado e bolsa de estudos",
+            "lang": "pt",
+            "uri": "http://id.loc.gov/authorities/subjects/sh85075529"
         }
     ],
     "exactExternalAuthority": [
