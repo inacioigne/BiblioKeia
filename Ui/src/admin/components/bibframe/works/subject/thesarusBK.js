@@ -295,14 +295,15 @@ export default function ThesarusBK() {
         setOpenBK={setOpen}
         setSubjectBK={setSubjectBK}
       />
-      <Translate
+      { openTranslate && <Translate
         open={openTranslate}
         setOpen={setOpenTranslate}
         subjectDetails={subjectBK}
         setOpenLCSH={setOpen}
         setOpenBK={setOpen}
         setSubjectBK={setSubjectBK}
-      />
+      />}
+      
     </Box>
   );
 }

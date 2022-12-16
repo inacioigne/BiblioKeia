@@ -4,6 +4,7 @@ import {
   InputAdornment,
   Tooltip,
   TextField,
+  LinearProgress
 } from "@mui/material";
 import { blue, red, green } from "@mui/material/colors/";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
@@ -90,6 +91,10 @@ export default function MakeTranslate({
 
   const handleRecuse = () => {
     setSugest(false);
+    setTranslate((prevState) => ({
+      ...prevState,
+      [`${metadata}`]: { value: termo, lang: "eng" },
+    }));
   };
 
   const handleChange = (e) => {
@@ -150,6 +155,7 @@ export default function MakeTranslate({
             </Tooltip>
           </Box>
         ) : (
+       
           <Box
             sx={{
               borderRight: "solid 1px",
@@ -161,6 +167,7 @@ export default function MakeTranslate({
             }}
           >
            <Typography variant="subtitle2" p={0}> Traduzindo termo...</Typography>
+           <LinearProgress color="secondary" />
            
           </Box>
         )}

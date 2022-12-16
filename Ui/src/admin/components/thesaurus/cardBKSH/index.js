@@ -5,8 +5,6 @@ import {
   Typography,
   Divider,
   Grid,
-  // List,
-  // ListItem,
   Button,
   FormControl,
   InputLabel,
@@ -76,7 +74,7 @@ export default function CardThesaurusBKSH({
       setAutorityBK(null);
     }
   });
-  console.log("BKS", subjectDetails)
+  //console.log("BKS", subjectDetails)
 
   const getThesarus = (uri) => {
     let uris = uri.split("/");
@@ -147,7 +145,7 @@ export default function CardThesaurusBKSH({
             {subjectDetails?.note}
           </Typography>
           <Grid container spacing={2}>
-            {subjectDetails.variant.length > 0 && (
+            {subjectDetails.variant && (
               <Grid item xs={6}>
                 {/* variant */}
                 <Variants authoritys={subjectDetails.variant} />

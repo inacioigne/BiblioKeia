@@ -21,23 +21,10 @@ import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
 import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
-import CountGraph from "src/services/thesaurus/countGraph";
+//import CountGraph from "src/services/thesaurus/countGraph";
 import SparqlClient from "sparql-http-client";
-//import SimpleClient from "sparql-http-client/SimpleClient";
-//import rdf from "rdf-ext";
 
-async function GraphExist(data) {
-  const client = new SparqlClient({
-    endpointUrl: "http://localhost:3030/thesaurus/sparql",
-  });
 
-  const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
-  ASK WHERE { GRAPH bk:${data} { ?s ?p ?o } }`;
-
-  const ask = await client.query.ask(ask_query);
-
-  return ask;
-}
 
 async function AuthorityExist(graph, metadata, token) {
   const client = new SparqlClient({
@@ -150,34 +137,23 @@ export default function Translate({
 
     e.preventDefault();
 
-    const client = new SparqlClient({
-      endpointUrl: "http://localhost:3030/thesaurus/sparql",
-    });
-
-    const values = Object.values(translate);
-    const langs = values.filter(function (item) {
-      return item.lang == "eng";
-    });
-    if (langs.length > 0) {
-      alert(JSON.stringify("Todos os termos precisam ser traduzidos"));
-    } else {
-      const data = await ParserData(translate, subjectDetails, autorityBK);
-      //console.log(data);
-      api
-        .post("/thesaurus/subject", await data)
-        .then((response) => {
-          if (response.status == 201) {
-            ParserBK(response.data.uri, setSubjectBK);
-            setOpen(false);
-            //setOpenLCSH(false);
-            alert(JSON.stringify("Assunto salvo com sucesso!!"));
-          }
-        })
-        .catch(function (error) {
-          console.log("ERROOO!!", error);
-          alert(JSON.stringify("Problema ao salvar este registro"));
-        });
-     }
+    const data = await ParserData(translate, subjectDetails, autorityBK);
+    api
+      .post("/thesaurus/subject", await data)
+      .then((response) => {
+        if (response.status == 201) {
+          ParserBK(response.data.uri, setSubjectBK);
+          setOpen(false);
+          setOpenLCSH(false);
+          setOpenBK(true);
+          alert(JSON.stringify("Assunto salvo com sucesso!!"));
+        }
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+        alert(JSON.stringify("Problema ao salvar este registro"));
+      });
+    // }
   };
 
   return (
@@ -259,16 +235,15 @@ export default function Translate({
             )}
 
             {/* Variantes */}
-            
-              {subjectDetails?.variant.length > 0 && (
-                <Grid item xs={6}>
+
+            {subjectDetails?.variant && (
+              <Grid item xs={6}>
                 <Box pt={"0.5rem"}>
                   <Typography variant="subtitle2">Variantes:</Typography>
                   <List dense={true}>
                     {subjectDetails.variant.map((variant, index) => (
-                      
                       <ListItem key={index} sx={{ p: "0.5rem" }}>
-                        <MakeTranslate 
+                        <MakeTranslate
                           termo={variant.label}
                           type={variant.type}
                           metadata={`variant.${index}`}
@@ -277,15 +252,15 @@ export default function Translate({
                           sugestTranslate={sugestTranslate}
                           setSugestTranslate={setSugestTranslate}
                           label={"Variante"}
-                          agree={agree} 
+                          agree={agree}
                         />
                       </ListItem>
                     ))}
                   </List>
                 </Box>
-                </Grid>
-              )}
-           
+              </Grid>
+            )}
+
             {/* Termos Generico */}
             {subjectDetails?.broader.length > 0 && (
               <Grid item xs={6}>

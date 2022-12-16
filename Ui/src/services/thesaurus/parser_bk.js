@@ -31,7 +31,6 @@ async function ParserBK(uri, setSubjectBK) {
   //hasVariant
   const hasVariant = subject.out(ns.madsrdf.hasVariant);
   
-
   if (hasVariant._context.length > 0) {
     const variants = hasVariant.map((variant) => {
       let type = variant.out(ns.rdf.type).values[0].split("#")[1]
@@ -42,7 +41,7 @@ async function ParserBK(uri, setSubjectBK) {
     });
     SubjectDetails["variant"] = variants; 
   }
-  //console.log("P", SubjectDetails)
+
 
   // hasReciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);

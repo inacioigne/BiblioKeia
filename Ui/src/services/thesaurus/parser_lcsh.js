@@ -50,18 +50,32 @@ async function ParserLCSH(token, setSubjectDetails) {
   }
 
   //hasVariant
-  const hasVariant = subject.out(ns.madsrdf.hasVariant);
+  // const hasVariant = subject.out(ns.madsrdf.hasVariant);
   
 
-  const variants = hasVariant.map((variant) => {
-    let type = variant.out(ns.rdf.type).values[0].split("#")[1]
-    let label = variant.out(ns.madsrdf.variantLabel).value
+  // const variants = hasVariant.map((variant) => {
+  //   let type = variant.out(ns.rdf.type).values[0].split("#")[1]
+  //   let label = variant.out(ns.madsrdf.variantLabel).value
 
-    return {label: label, type: type}
-  });
-  //
+  //   return {label: label, type: type} 
+  // });
+  // //
 
-  SubjectDetails["variant"] = variants;
+  // SubjectDetails["variant"] = variants;
+
+  //hasVariant
+  const hasVariant = subject.out(ns.madsrdf.hasVariant);
+  
+  if (hasVariant._context.length > 0) {
+    const variants = hasVariant.map((variant) => {
+      let type = variant.out(ns.rdf.type).values[0].split("#")[1]
+      let label = variant.out(ns.madsrdf.variantLabel).value
+      
+      return {label: label, type: type}
+
+    });
+    SubjectDetails["variant"] = variants; 
+  }
 
   // hasBroaderAuthority
   const hasBroaderAuthority = subject.out(ns.madsrdf.hasBroaderAuthority);
