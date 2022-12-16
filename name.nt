@@ -1,0 +1,78 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/rwo/agents/n81036213> a bf:Person,
+        madsrdf:RWO,
+        foaf:Person ;
+    rdfs:label "Fearnside, Philip M. (Philip Martin)" .
+
+<http://id.loc.gov/authorities/names/n81036213> a madsrdf:Authority,
+        madsrdf:PersonalName,
+        skos:Concept ;
+    identifiers:lccn "n 81036213" ;
+    identifiers:local "(OCoLC)oca00581856" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2000-04-29T06:43:18"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1981-04-24T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Fearnside, Philip M. (Philip Martin)" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Fearnside, Philip M." ] [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "(Philip Martin)" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://www.wikidata.org/entity/Q41503385> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++81036213#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Philip M. Fearnside) p. opp. t.p., in CIP Brazil (b. 1947)" ;
+            madsrdf:citationSource "His A hidrelétrica de Balbina, 1990:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Philip M. Fearnside) leaf i, copyright stmt (Philip Martin Fearnside)" ;
+            madsrdf:citationSource "His A simulação da capacidade de suporte para populações agrícolas nos trópicos úmidos, 1979:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Martin Fearnside, Philip" ] ) ;
+            madsrdf:variantLabel "Martin Fearnside, Philip" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n81036213> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    skos:altLabel "Martin Fearnside, Philip" ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1981-04-24T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n81036213> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2000-04-29T06:43:18"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n81036213> ] ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q41503385> ;
+    skos:exactMatch <http://viaf.org/viaf/sourceID/LC%7Cn++81036213#skos:Concept> ;
+    skos:inScheme <http://id.loc.gov/authorities/names> ;
+    skos:prefLabel "Fearnside, Philip M. (Philip Martin)" ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Martin Fearnside, Philip" ] .
+
+<http://www.wikidata.org/entity/Q41503385> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Philip Fearnside" ;
+    skos:prefLabel "Philip Fearnside" .
+

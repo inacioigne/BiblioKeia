@@ -6,6 +6,7 @@ from src.routes.users import users
 from src.routes.cataloguing import images, generateId, work, instances, items
 from src.routes.translate import translate
 from src.routes.thesaurus import subjects
+from src.routes.thesaurus import names
 #from src.routes.cataloguing import generateId
 import uvicorn
 
@@ -45,6 +46,7 @@ app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing I
 app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing Items'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 app.include_router(subjects.router, prefix='/thesaurus', tags=['Thesaurus'])
+app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
