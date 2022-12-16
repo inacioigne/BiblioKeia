@@ -66,7 +66,7 @@ export default function Authorities({ label, authorities, setSubjectDetails }) {
                   wordBreak: "break-word",
                 }}
                 onClick={() => {
-                  let token = authority.uri.split("/")[5];
+                  //let token = authority.uri.split("/")[5];
                   //console.log("N", authority.uri);
                   getThesarus(authority.uri)
                   //ParserLCSH(token, setSubjectDetails);

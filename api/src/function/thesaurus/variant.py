@@ -1,76 +1,52 @@
 from rdflib import Graph, URIRef, BNode, Literal
 from rdflib.namespace import RDF
 from src.function.thesaurus.elementList import ElementList
+#from src.function.thesaurus.componentList import ComponentList
 
 def Variant(g, uri, MADSRDF, variants):
-    pass
 
     # variantList = BNode()    
     # g.add((uri, MADSRDF.hasVariant, variantList))
 
-    # for variant in variants: 
-    #     variantList = BNode()    
-    #     g.add((uri, MADSRDF.hasVariant, variantList))
-    #     if variant.type == "ComplexSubject":
-    #         g.add((variantList, RDF.type, MADSRDF.ComplexSubject))
-    #         g.add((variantList, RDF.type, MADSRDF.Variant))
-    #     else:
-    #         g.add((variantList, RDF.type, MADSRDF.Topic))
-    #         g.add((variantList, RDF.type, MADSRDF.Variant))
-    #         label = Literal(variant.value, lang=variant.lang)
-    #         #g = ElementList(g, uri, label, MADSRDF)
-        
+    for variant in variants: 
+        variantList = BNode()    
+        g.add((uri, MADSRDF.hasVariant, variantList))
+        if variant.type == "ComplexSubject":
+            complexSubject = variant.value.split("--")
+            label = Literal(variant.value, lang=variant.lang)
+            label1 = Literal(complexSubject[0], lang=variant.lang)
+            label2 = Literal(complexSubject[1], lang=variant.lang)
 
-    #     print("VARIANT: ", variant)
+            g.add((variantList, RDF.type, MADSRDF.ComplexSubject))
+            g.add((variantList, RDF.type, MADSRDF.Variant))
+            componentList = BNode()
+            g.add((variantList, MADSRDF.componentList, componentList))
+            #element1
+            element1 = BNode()
+            g.add((componentList, RDF.first, element1))
+            g.add((element1, RDF.type, MADSRDF.Topic))
+            g.add((element1, RDF.type, MADSRDF.Variant))
+            g = ElementList(g, element1, label1, MADSRDF)
+            g.add((element1, MADSRDF.variantLabel, label1))
 
-            
-        #     complexSubject = variant.value.split("--")
-        #     print("VARIANT:", complexSubject)
-        #     label1 = Literal(
-        #         complexSubject[0].rstrip(), 
-        #         lang=variant.lang)
-        #     label2 = Literal(
-        #         complexSubject[1].lstrip(), 
-        #         lang=variant.lang) 
-            
-        #     #ComplexSubject
-        #     g.add((variantList, RDF.type, MADSRDF.ComplexSubject))
-        #     g.add((variantList, RDF.type, MADSRDF.Variant))
+            element2 = BNode()
+            g.add((componentList, RDF.rest, element2))
+            #element2
+            element22 = BNode()
+            g.add((element2, RDF.first, element22))
+            g.add((element22, RDF.type, MADSRDF.Topic))
+            g.add((element22, RDF.type, MADSRDF.Variant))
+            g = ElementList(g, element22, label2, MADSRDF)
+            g.add((element22, MADSRDF.variantLabel, label2))
 
-        #     element1 = BNode()
-        #     g.add((variantList, MADSRDF.componentList, element1))
-
-        #     topic1 = BNode()
-        #     g.add((element1, RDF.first, topic1))
-        #     g.add((topic1, RDF.type, MADSRDF.Topic))
-        #     g.add((topic1, RDF.type, MADSRDF.Variant))
-        #     g = ElementList(g, topic1, label1, MADSRDF)
-        #     g.add((topic1, MADSRDF.variantLabel, label1))
-
-
-        #     element2 = BNode()
-        #     g.add((element1, RDF.rest, element2))
-
-        #     topic2 = BNode()
-        #     g.add((element2, RDF.first, topic2))
-        #     g.add((topic2, RDF.type, MADSRDF.Topic))
-        #     g.add((topic2, RDF.type, MADSRDF.Variant))
-        #     g = ElementList(g, topic2, label2, MADSRDF)
-        #     g.add((topic2, MADSRDF.variantLabel, label2))
-
-        #     g.add((element2, RDF.rest, RDF.nil))
-
-        #     g.add((
-        #         variantList, 
-        #         MADSRDF.variantLabel, 
-        #         Literal(variant.value, lang="pt")
-        #         ))
-        # else:
-        #     label = Literal(variant.value, lang='pt')
-        #     g.add((variantList, RDF.type, MADSRDF.Topic))
-        #     g.add((variantList, RDF.type, MADSRDF.Variant))
-        #     g = ElementList(g, variantList, label, MADSRDF)
-        #     g.add((variantList, MADSRDF.variantLabel, label))
-
+            g.add((element2, RDF.rest, RDF.nil))
+            g.add((variantList, MADSRDF.variantLabel, label))
+  
+        else:
+            g.add((variantList, RDF.type, MADSRDF.Topic))
+            g.add((variantList, RDF.type, MADSRDF.Variant))
+            label = Literal(variant.value, lang=variant.lang)
+            g = ElementList(g, variantList, label, MADSRDF)
+            g.add((variantList, MADSRDF.variantLabel, label))
 
     return g

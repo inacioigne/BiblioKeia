@@ -34,11 +34,15 @@ async function ParserBK(uri, setSubjectBK) {
 
   if (hasVariant._context.length > 0) {
     const variants = hasVariant.map((variant) => {
-      console.log("P", hasVariant)
-      return variant.out(ns.madsrdf.variantLabel).value;
+      let type = variant.out(ns.rdf.type).values[0].split("#")[1]
+      let label = variant.out(ns.madsrdf.variantLabel).value
+      
+      return {label: label, type: type}
+
     });
     SubjectDetails["variant"] = variants; 
   }
+  //console.log("P", SubjectDetails)
 
   // hasReciprocalAuthority
   const hasReciprocalAuthority = subject.out(ns.madsrdf.hasReciprocalAuthority);

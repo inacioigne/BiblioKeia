@@ -733,7 +733,7 @@
         <http://id.loc.gov/authorities/subjects/sh85075529>,
         <http://id.loc.gov/authorities/subjects/sh85084414>,
         <http://id.loc.gov/authorities/subjects/sh85113055> ;
-    madsrdf:hasVariant [ a madsrdf:Topic,
+    madsrdf:hasVariant [ a madsrdf:Topic, 
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
                         madsrdf:elementValue "Science research"@en ] ) ;

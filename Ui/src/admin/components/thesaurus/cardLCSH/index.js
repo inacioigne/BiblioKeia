@@ -110,7 +110,7 @@ export default function CardThesaurus({
     }
   };
 
-  //console.log("card", subjectDetails);
+  //console.log("LSCH", subjectDetails);
   return (
     <>
       <Card

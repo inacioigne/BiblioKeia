@@ -59,7 +59,7 @@ async function ParserLCSH(token, setSubjectDetails) {
 
     return {label: label, type: type}
   });
-  //console.log("VARIANT: ", variants)
+  //
 
   SubjectDetails["variant"] = variants;
 
@@ -131,6 +131,8 @@ async function ParserLCSH(token, setSubjectDetails) {
 
 
   setSubjectDetails(SubjectDetails);
+
+
 }
 
 export default ParserLCSH;

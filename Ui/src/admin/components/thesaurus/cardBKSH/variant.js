@@ -24,6 +24,7 @@ import {
 } from "@mui/material/";
 
 export default function Variants({ authoritys }) {
+
   return (
     <Box
       sx={{
@@ -43,8 +44,8 @@ export default function Variants({ authoritys }) {
         <List dense={true}>
           {authoritys.map((variant, index) => (
             <ListItem key={index}>
-              <ListItemText primary={variant} />
-            </ListItem>
+              <ListItemText primary={variant.label} />
+            </ListItem> 
           ))}
         </List>
       </Box>

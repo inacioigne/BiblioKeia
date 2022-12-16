@@ -32,7 +32,7 @@ import ParserBK from "src/services/thesaurus/parser_bk";
 import ParserLCSH from "src/services/thesaurus/parser_lcsh";
 
 // BiblioKeia Components
-import Variants from "src/admin/components/thesaurus/cardLCSH/variant";
+import Variants from "src/admin/components/thesaurus/cardBKSH/variant";
 import Authorities from "src/admin/components/thesaurus/cardBKSH/listAuthority";
 
 async function GraphExist(token) {
@@ -147,7 +147,7 @@ export default function CardThesaurusBKSH({
             {subjectDetails?.note}
           </Typography>
           <Grid container spacing={2}>
-            {subjectDetails.variant && (
+            {subjectDetails.variant.length > 0 && (
               <Grid item xs={6}>
                 {/* variant */}
                 <Variants authoritys={subjectDetails.variant} />

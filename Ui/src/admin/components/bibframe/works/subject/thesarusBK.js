@@ -34,6 +34,7 @@ import SparqlClient from "sparql-http-client";
 // BiblioKeia Components
 import Narrower from "src/admin/components/thesaurus/narrower";
 import CardThesaurusBKSH from "src/admin/components/thesaurus/cardBKSH";
+import CardThesaurus from "src/admin/components/thesaurus/cardLCSH"
 
 
 const styleIformation = {
@@ -273,6 +274,7 @@ export default function ThesarusBK() {
             </Grid>
             <Grid item xs={8}>
               {subjectBK && (
+                
                 <CardThesaurusBKSH
                   subjectDetails={subjectBK}
                   setSubjectDetails={setSubjectBK}
@@ -280,6 +282,7 @@ export default function ThesarusBK() {
                   setOpenTranslate={setOpenTranslate}
                   handleChoose={handleChoose}
                 />
+               
               )}
             </Grid>
           </Grid>

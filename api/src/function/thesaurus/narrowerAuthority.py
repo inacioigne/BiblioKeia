@@ -9,7 +9,7 @@ def NarrowerAuthority(g, uri, MADSRDF, request):
 
         #narrower = URIRef(authority.uri)
         token = authority.uri.split("/")[-1]
-        graph = GraphExist(token)
+        graph = GraphExist(token) 
         if graph:
             authority_uri = URIRef(
                 f'https://bibliokeia.com/authorities/subjects/{token}')
