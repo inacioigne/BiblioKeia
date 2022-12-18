@@ -10,45 +10,31 @@ import {
   InputLabel,
   Select,
 } from "@mui/material/";
-
 import { Search, Close } from "@mui/icons-material";
+
+// React Hooks
 import { useState } from "react";
-import SearchLCNAF from "./search_LCNAF";
-import { api } from "src/services/lcnfa";
-import { blue, red } from "@mui/material/colors/";
+
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
 
-export default function Authority() {
-  const { work, setWork } = useBf();
-  const [value, setValue] = useState("Lorem ipsum");
+// BiblioKeia Components
+import SearchBK from "src/admin/components/thesaurus/names/searchBK"
+
+export default function NamesBK() {
+  const [type, setType] = useState("PersonalName");
+  const [name, setName] = useState("");
+  const [disabled, setDisabled] = useState(false);
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(null);
-  const [hits, setHits] = useState([]);
-  const [disabled, setDisabled] = useState(false);
-  const [name, setName] = useState("");
-  const [type, setType] = useState("PersonalName");
 
-  const getData = (name, type) => {
-    api
-      .get("suggest2", {
-        params: {
-          q: `${name}`,
-          rdftype: `${type}`,
-        },
-      })
-      .then((response) => {
-        setHits(response.data.hits);
-      })
-      .catch(function (error) {
-        console.log("ERROOO!!", error);
-      });
-  };
+  const { work, setWork } = useBf();
 
   const handleSearch = (e) => {
     e.preventDefault();
     setOpen(true);
-    getData(name, type);
+    // getData(name, type);
+    console.log("NBK", e);
   };
 
   const inputPros = {
@@ -102,8 +88,7 @@ export default function Authority() {
           color="primary"
           aria-label="search"
           component="button"
-          // type="submit"
-          // onSubmit={handleSearch}
+          type="submit"
           onClick={handleSearch}
         >
           <Search />
@@ -114,7 +99,7 @@ export default function Authority() {
 
   return (
     <>
-      {/* <form onSubmit={handleSearch}> */}
+     <form onSubmit={handleSearch}>
       <Box
         sx={{
           display: "flex",
@@ -131,7 +116,7 @@ export default function Authority() {
             }}
             value={type}
           >
-            <MenuItem value={"PersonalName"}>Person</MenuItem>
+            <MenuItem value={"PersonalName"}>Nome Pessoal</MenuItem>
             <MenuItem value={"family"}>Family</MenuItem>
             <MenuItem value={"CorporateName"}>Corporate</MenuItem>
             <MenuItem value={"jurisdiction"}>Jurisdiction</MenuItem>
@@ -139,32 +124,25 @@ export default function Authority() {
             <MenuItem value={"NameTitle"}>Name Title</MenuItem>
           </Select>
         </FormControl>
-
         <TextField
           onChange={(e) => {
             setName(e.target.value);
           }}
           value={name}
           fullWidth
-          label="Search LCNAF"
+          label="Autor"
           InputProps={inputPros}
         />
       </Box>
-      {/* </form> */}
-
-      <SearchLCNAF
+    </form>
+    <SearchBK 
         open={open}
         setOpen={setOpen}
-        name={name}
-        setName={setName}
-        type={type}
-        setType={setType}
         search={search}
-        handleSearch={handleSearch}
-        hits={hits}
-        setValue={setValue}
-        setDisabled={setDisabled}
-      />
+    />
+
+
     </>
+   
   );
 }

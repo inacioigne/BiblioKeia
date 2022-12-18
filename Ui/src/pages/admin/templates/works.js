@@ -24,7 +24,7 @@ import { api } from "src/services/api";
 
 // BiblioKeia Components
 import Content from "src/admin/components/bibframe/works/content";
-import CreateWork from "src/admin/components/bibframe/works/contribution";
+import Contribution from "src/admin/components/bibframe/works/contribution";
 import Title from "src/admin/components/bibframe/works/title";
 import Subject from "src/admin/components/bibframe/works/subject";
 import Preview from "src/admin/components/work_preview";
@@ -148,7 +148,7 @@ export default function Works() {
             {/* Title */}
             {visible === 1 && <Title />}
             {/* Creator of Work */}
-            {visible === 2 && <CreateWork />}
+            {visible === 2 && <Contribution />}
             {/* Subject */}
 
             <Box

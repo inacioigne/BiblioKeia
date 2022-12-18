@@ -4,15 +4,12 @@ import { useState } from "react";
 
 import Relationship from "./relationship";
 import Authority from "./authority";
+//import NamesBK from "src/admin/components/bibframe/works/contribution/namesBK"
+import NamesBK from "src/admin/components/thesaurus/names"
 
-export default function CreateWork() {
-  // const [type, setType] = useState("person");
-  // const [open, setOpen] = useState(false);
-
-  // const [search, setSearch] = useState(null);
+export default function Contribution() {
 
   const [anchorEl, setAnchorEl] = useState(null);
-  // const openMenu1 = Boolean(anchorEl);
   const [openMenu, setopenMenu] = useState(null);
 
 
@@ -35,8 +32,9 @@ export default function CreateWork() {
               gap: "1rem",
             }}
           >
-            {/** Authority*/}
-            <Authority />
+          <NamesBK />
+            {/** Authority
+            <Authority />*/}
             {/** Relationship Designator */}
             <Relationship />
           </Box>

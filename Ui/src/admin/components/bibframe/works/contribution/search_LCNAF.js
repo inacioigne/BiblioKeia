@@ -11,7 +11,6 @@ import {
   MenuItem,
   Divider,
   Typography,
-  Stack,
   Button,
   List,
   ListItem,
@@ -62,7 +61,7 @@ export default function SearchLCNAF({
         <Grid container>
           <Grid xs={6} sx={{ borderRight: "solid 1px" }}>
             {/* <form onSubmit={handleSearch}> */}
-              <FormControl >
+              <FormControl>
                 <InputLabel id="type">Tipo</InputLabel>
                 <Select
                   label="Tipo"
