@@ -2,7 +2,7 @@ import fetch from "@rdfjs/fetch";
 import namespace from "@rdfjs/namespace";
 import cf from "clownface";
 
-async function ParserBK(uri, setSubjectBK) {
+async function ParserBK(uri, setSubjectBK) { 
   const SubjectDetails = {};
 
   let graph = `http://localhost:3030/thesaurus?graph=${uri}`;

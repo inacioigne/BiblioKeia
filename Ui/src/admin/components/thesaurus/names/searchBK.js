@@ -48,7 +48,7 @@ export default function SearchBK({
       <Divider />
       <DialogContent>
         <Grid container>
-          <Grid xs={6} sx={{ borderRight: "solid 1px" }}>
+          <Grid xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
             <Fields
               setOpen={setOpen}
               type={type}

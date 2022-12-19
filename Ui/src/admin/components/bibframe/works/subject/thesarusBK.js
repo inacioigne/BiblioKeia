@@ -100,7 +100,6 @@ export default function ThesarusBK() {
 
   const handleSearchAdv = (e) => {
     e.preventDefault();
-    //console.log(subject);
     queryThesaurusBK(subject, setResponse);
   };
 

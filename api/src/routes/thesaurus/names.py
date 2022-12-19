@@ -64,7 +64,8 @@ async def create_name(token: str):
 
     nt = g.serialize(format='nt')
     G = Make_Graph(nt, token )
-    fuseki_update.run_sparql(G)
+
+    #fuseki_update.run_sparql(G)
     g.serialize('name.nt')
     return {'msg': 'registro importado com sucesso!!'}
 

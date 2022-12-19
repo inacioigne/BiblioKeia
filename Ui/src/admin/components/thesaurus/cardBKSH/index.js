@@ -52,13 +52,11 @@ export default function CardThesaurusBKSH({
   setOpenTranslate,
   handleChoose,
 }) {
-
   const [autorityBK, setAutorityBK] = useState(null);
   const [subjectBK, setSubjectBK] = useState(null);
 
   useEffect(() => {
     if (subjectDetails?.tokenLSCH) {
-      
       (async () => {
         let graph = await GraphExist(subjectDetails?.tokenLSCH);
         if (graph) {
@@ -74,7 +72,7 @@ export default function CardThesaurusBKSH({
       setAutorityBK(null);
     }
   });
-  //console.log("BKS", subjectDetails)
+
 
   const getThesarus = (uri) => {
     let uris = uri.split("/");
