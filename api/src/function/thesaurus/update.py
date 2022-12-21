@@ -15,6 +15,7 @@ def UpdateThesarus(graph, metadata, token):
         DELETE {?s madsrdf:" + metadata + " lc:" + token + "}\n \
         INSERT { ?s madsrdf:" + metadata + " bk:" + token + "}\n \
         WHERE { ?s madsrdf:" + metadata + " lc:" + token + "}\n"
+        
     store.update(q1)
 
     q2 = prefix + "WITH bk:" + graph + "\n \

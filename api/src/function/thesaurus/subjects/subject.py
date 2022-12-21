@@ -1,13 +1,13 @@
 from rdflib import Graph, URIRef, BNode, Literal, Namespace
 from rdflib.namespace import RDF, RDFS
-from src.function.thesaurus.subjectAdmin import SubjectAdmin
-from src.function.thesaurus.elementList import ElementList
-from src.function.thesaurus.closeExternalAuthority import CloseExternalAuthority
-from src.function.thesaurus.exactExternalAuthority import ExactExternalAuthority
-from src.function.thesaurus.narrowerAuthority import NarrowerAuthority
-from src.function.thesaurus.broader import Broader
-from src.function.thesaurus.reciprocalAuthority import ReciprocalAuthority
-from src.function.thesaurus.variant import Variant
+from src.function.thesaurus.subjects.subjectAdmin import SubjectAdmin
+from src.function.thesaurus.subjects.elementList import ElementList
+from src.function.thesaurus.subjects.closeExternalAuthority import CloseExternalAuthority
+from src.function.thesaurus.subjects.exactExternalAuthority import ExactExternalAuthority
+from src.function.thesaurus.subjects.narrowerAuthority import NarrowerAuthority
+from src.function.thesaurus.subjects.broader import Broader
+from src.function.thesaurus.subjects.reciprocalAuthority import ReciprocalAuthority
+from src.function.thesaurus.subjects.variant import Variant
 
 def CreateSubject(request):
 

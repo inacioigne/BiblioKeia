@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from src.schemas.thesaurus.subject import Subject_Schema, Update_Thesarus
-from src.function.thesaurus.makeGraph import Make_Graph
-from src.function.thesaurus.subject import CreateSubject
+from src.function.thesaurus.subjects.makeGraph import Make_Graph
+from src.function.thesaurus.subjects.subject import CreateSubject
 from pyfuseki import FusekiUpdate
 
 

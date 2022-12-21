@@ -1,0 +1,161 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n95086067> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:marcKey "1001 $aBrown, Dan,$d1964-" ;
+    identifiers:lccn "n 95086067" ;
+    identifiers:local "(OCoLC)oca03909218" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2022-08-12T06:45:42"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/wu> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1995-08-30T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Brown, Dan, 1964-" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PS3552.R685434" ] ;
+    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Brown, Dan," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1964-" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1523579>,
+        <http://www.wikidata.org/entity/Q7345> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++95086067#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Dan Braun)" ;
+            madsrdf:citationSource "Shifŭrŭt na Leonardo, c2005:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Danielle Brown) colophon (lives in New England)" ;
+            madsrdf:citationSource "187 men to avoid, 1995:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "v. 1, t.p. (Dan Buraun; Dan Brown)" ;
+            madsrdf:citationSource "Brown, D. Da Vinchi kōdo, 2004:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Dan Brown, born June 22, 1964 in Exeter, N.H.; American author of thriller fiction, best known for The Da Vinci code)" ;
+            madsrdf:citationSource "Wikipedia, May 22, 2013" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(b. 6/22/64; preferred name is Dan Brown; used pseudonym Danielle Brown for 187 men to avoid)" ;
+            madsrdf:citationSource "Email from author, Apr. 9, 1998" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Dėn Braun)" ;
+            madsrdf:citationSource "Kod da Vinchi, 2005:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "CIP t.p. (Dan Brown) pub. blurb (lives in Exeter, N.H.; teaches English at Phillips Exeter Academy)" ;
+            madsrdf:citationSource "Digital fortress, 1998:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(graduate of Amherst College; taught English at Phillips Exeter Academy until he began to write full-time)" ;
+            madsrdf:citationSource "Dan Brown, via WWW, May 22, 2013" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "בראון, דן," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "בראון, דן, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Браун, Дэн," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "Браун, Дэн, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Braun, Dan," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "Braun, Dan, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Brown, Danielle," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "Brown, Danielle, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Buraun, Dan," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "Buraun, Dan, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "בראון," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "בראון, 1964-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Braun, Dėn," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1964-" ] ) ;
+            madsrdf:variantLabel "Braun, Dėn, 1964-" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n95086067> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060003> a skos:Concept ;
+    madsrdf:authoritativeLabel "Males" .
+
+<http://id.loc.gov/authorities/names/n79018566> a madsrdf:Geographic ;
+    madsrdf:authoritativeLabel "Exeter (N.H.)" .
+
+<http://id.loc.gov/authorities/names/n79109792> a madsrdf:Organization ;
+    madsrdf:authoritativeLabel "Amherst College" .
+
+<http://id.loc.gov/authorities/names/n79122151> a madsrdf:Organization ;
+    madsrdf:authoritativeLabel "Phillips Exeter Academy" .
+
+<http://id.loc.gov/authorities/subjects/sh85009808> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Authors, American" .
+
+<http://id.loc.gov/authorities/subjects/sh85048050> a skos:Concept ;
+    madsrdf:authoritativeLabel "Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh85092864> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Novelists, American" .
+
+<http://id.loc.gov/authorities/subjects/sh98004883> a skos:Concept ;
+    madsrdf:authoritativeLabel "Suspense fiction" .
+
+<http://id.loc.gov/rwo/agents/n95086067> a bf:Person,
+        madsrdf:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Brown, Dan, 1964-" ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    madsrdf:birthDate [ a skos:Concept ;
+            rdfs:label "(edtf) 1964-06-22" ] ;
+    madsrdf:birthPlace <http://id.loc.gov/authorities/names/n79018566> ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85048050>,
+        <http://id.loc.gov/authorities/subjects/sh98004883> ;
+    madsrdf:gender <http://id.loc.gov/authorities/demographicTerms/dg2015060003> ;
+    madsrdf:hasAffiliation [ a madsrdf:Affiliation ;
+            madsrdf:organization <http://id.loc.gov/authorities/names/n79109792>,
+                <http://id.loc.gov/authorities/names/n79122151> ] ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85009808>,
+        <http://id.loc.gov/authorities/subjects/sh85092864> .
+
+<http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
+    madsrdf:authoritativeLabel "English"@en .
+

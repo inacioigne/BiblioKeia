@@ -1,6 +1,6 @@
 from rdflib import Graph, URIRef, BNode, Literal
 from rdflib.namespace import RDF
-from src.function.thesaurus.elementList import ElementList
+from src.function.thesaurus.subjects.elementList import ElementList
 #from src.function.thesaurus.componentList import ComponentList
 
 def Variant(g, uri, MADSRDF, variants):
