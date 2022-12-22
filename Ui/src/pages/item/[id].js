@@ -23,7 +23,7 @@ import {
   SouthAmerica,
   AutoStories,
   EmojiTransportation,
-  LibraryBooks
+  LibraryBooks,
 } from "@mui/icons-material";
 
 // Bibliokeia Components
@@ -63,7 +63,6 @@ const Item = () => {
       })
       .then((response) => {
         let [doc] = response.data.response.docs;
-
         setItem(doc);
       });
   };
@@ -102,7 +101,7 @@ const Item = () => {
     <Box sx={{ flexGrow: 1 }}>
       {/* Navbar */}
       <Navbar mode={"dark"} />
-      <Container maxWidth="md" sx={{ height: '90vh'}}>
+      <Container maxWidth="md" sx={{ height: "90vh" }}>
         <Grid
           container
           spacing={4}

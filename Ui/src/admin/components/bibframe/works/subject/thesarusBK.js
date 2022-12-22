@@ -34,8 +34,7 @@ import SparqlClient from "sparql-http-client";
 // BiblioKeia Components
 import Narrower from "src/admin/components/thesaurus/narrower";
 import CardThesaurusBKSH from "src/admin/components/thesaurus/cardBKSH";
-import CardThesaurus from "src/admin/components/thesaurus/cardLCSH"
-
+import CardThesaurus from "src/admin/components/thesaurus/cardLCSH";
 
 const styleIformation = {
   p: "0.5rem",
@@ -119,8 +118,6 @@ export default function ThesarusBK() {
     setActive(false);
   };
 
-
-
   const inputPros = {
     startAdornment: choise && (
       <InputAdornment position="start">
@@ -179,7 +176,6 @@ export default function ThesarusBK() {
         <IconButton
           color="primary"
           aria-label="search"
-          //component="button"
           type="submit"
           //onClick={handleSearchAdv}
         >
@@ -273,7 +269,6 @@ export default function ThesarusBK() {
             </Grid>
             <Grid item xs={8}>
               {subjectBK && (
-                
                 <CardThesaurusBKSH
                   subjectDetails={subjectBK}
                   setSubjectDetails={setSubjectBK}
@@ -281,7 +276,6 @@ export default function ThesarusBK() {
                   setOpenTranslate={setOpenTranslate}
                   handleChoose={handleChoose}
                 />
-               
               )}
             </Grid>
           </Grid>
@@ -294,15 +288,16 @@ export default function ThesarusBK() {
         setOpenBK={setOpen}
         setSubjectBK={setSubjectBK}
       />
-      { openTranslate && <Translate
-        open={openTranslate}
-        setOpen={setOpenTranslate}
-        subjectDetails={subjectBK}
-        setOpenLCSH={setOpen}
-        setOpenBK={setOpen}
-        setSubjectBK={setSubjectBK}
-      />}
-      
+      {openTranslate && (
+        <Translate
+          open={openTranslate}
+          setOpen={setOpenTranslate}
+          subjectDetails={subjectBK}
+          setOpenLCSH={setOpen}
+          setOpenBK={setOpen}
+          setSubjectBK={setSubjectBK}
+        />
+      )}
     </Box>
   );
 }

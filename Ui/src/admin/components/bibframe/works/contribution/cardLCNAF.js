@@ -17,10 +17,16 @@ import {
   FileDownloadDone,
 } from "@mui/icons-material";
 // BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe"
+import { useBf } from "src/providers/bibframe";
 
-export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisabled, setName}) {
-  const { setWork } = useBf()
+export default function CardLCNAF({
+  authorityDetails,
+  setOpen,
+  setValue,
+  setDisabled,
+  setName,
+}) {
+  const { setWork } = useBf();
 
   const styleIformation = {
     p: "0.5rem",
@@ -30,15 +36,15 @@ export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisa
   const handleChoose = () => {
     ///console.log('ok', authorityDetails)
     setDisabled(true);
-    setOpen(false)
-    setName("")
-    setValue(authorityDetails?.personalName)
+    setOpen(false);
+    setName("");
+    setValue(authorityDetails?.personalName);
     setWork((prevState) => ({
       ...prevState,
       contributionAgent: authorityDetails?.personalName,
-      contributionID: authorityDetails.token
+      contributionID: authorityDetails.token,
     }));
-  }
+  };
   if (authorityDetails) {
     return (
       <Card sx={{ minWidth: 350 }}>
@@ -48,8 +54,10 @@ export default function CardLCNAF({ authorityDetails, setOpen, setValue, setDisa
               {authorityDetails?.personalName}
             </Typography>
             <Tooltip title="Escolher">
-              <IconButton color="primary" component="label"
-              onClick={handleChoose}
+              <IconButton
+                color="primary"
+                component="label"
+                onClick={handleChoose}
               >
                 <FileDownloadDone />
               </IconButton>

@@ -22,23 +22,40 @@ import { useBf } from "src/providers/bibframe";
 import SearchBK from "src/admin/components/thesaurus/names/searchBK";
 
 // BiblioKeia Services
-import QueryNamesBK from "src/services/thesaurus/names/query"
+import { getAthorities } from "src/services/solr/authorities";
 
-export default function Fields({ setOpen, type, setType, name, setName }) {
-  const [response, setResponse] = useState([]);
-  // const [name, setName] = useState("");
+export default function Fields({
+  setOpen,
+  type,
+  setType,
+  name,
+  setName,
+  setResponse
+}) {
   const [disabled, setDisabled] = useState(false);
-  //const [open, setOpen] = useState(false);
-  const [search, setSearch] = useState(null);
 
   const { work, setWork } = useBf();
+
+  const searchAuthority = (name = "*") => {
+    getAthorities
+      .get("select", {
+        params: {
+          q: `general_search:${name}*`,
+          fq:`type:${type}`,
+          "q.op":"AND",
+          wt: "json",
+        },
+      })
+      .then((response) => {
+        setResponse(response.data.response.docs);
+        console.log("Sl", response.data.response.docs);
+      });
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
     setOpen(true);
-    QueryNamesBK(name, setResponse)
-    // getData(name, type);
-    //console.log("NBK", type, name);
+    searchAuthority();
   };
 
   const inputPros = {
@@ -130,6 +147,8 @@ export default function Fields({ setOpen, type, setType, name, setName }) {
         <TextField
           onChange={(e) => {
             setName(e.target.value);
+            console.log(e.target.value)
+            searchAuthority(e.target.value)
           }}
           value={name}
           fullWidth

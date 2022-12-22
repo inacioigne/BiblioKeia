@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import Relationship from "./relationship";
 import Authority from "./authority";
-//import NamesBK from "src/admin/components/bibframe/works/contribution/namesBK"
 import NamesBK from "src/admin/components/thesaurus/names"
 
 export default function Contribution() {
@@ -33,9 +32,6 @@ export default function Contribution() {
             }}
           >
           <NamesBK />
-            {/** Authority
-            <Authority />*/}
-            {/** Relationship Designator */}
             <Relationship />
           </Box>
         </Paper>

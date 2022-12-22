@@ -20,6 +20,11 @@ import {
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import Fields from "src/admin/components/thesaurus/names/fields";
+import CardNamesBK from "src/admin/components/thesaurus/names/cardBK"
+import QueryNamesBK from "src/services/thesaurus/names/query";
+
+// React Hooks
+import { useState } from "react";
 
 export default function SearchBK({
   open,
@@ -28,7 +33,12 @@ export default function SearchBK({
   setType,
   name,
   setName,
+  response,
+  setResponse
 }) {
+
+  const [nameDetails, setNameDetails] = useState(null);
+  
   const handleClose = () => {
     setOpen(false);
   };
@@ -48,15 +58,58 @@ export default function SearchBK({
       <Divider />
       <DialogContent>
         <Grid container>
-          <Grid xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
+          <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
             <Fields
               setOpen={setOpen}
               type={type}
               setType={setType}
               name={name}
               setName={setName}
+              setResponse={setResponse}
             />
+            {response.length > 0 ? (
+              <>
+                <Typography
+                  variant="subtitle2"
+                  gutterBottom
+                  sx={{
+                    mt: "0.5rem",
+                  }}
+                >
+                  <i>Resultados:</i>
+                </Typography>
+                <List>
+                  {response.map((authority, index) => (
+                    <ListItem key={index} disablePadding>
+                      <Button
+                        onClick={() => {
+                          QueryNamesBK(authority.id, setNameDetails)
+                        }}
+                      >
+                        {authority.name}
+                      </Button>
+                    </ListItem>
+                  ))}
+                </List>
+              </>
+            ) : (
+              <Box pt={"0.5rem"}>
+                <i>Nenhum registro encontrado:</i>
+                <Button
+                  onClick={() => {
+                    //setOpenLCSH(true);
+                  }}
+                >
+                  Importar registros
+                </Button>
+              </Box>
+            )}
           </Grid>
+          <Grid item xs={7} sx={{ pl: "1rem"}}>
+          <CardNamesBK nameDetails={nameDetails} />
+
+          </Grid>
+          
         </Grid>
       </DialogContent>
     </Dialog>
