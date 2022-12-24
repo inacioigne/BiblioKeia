@@ -37,6 +37,7 @@ export default function Fields({
   const { work, setWork } = useBf();
 
   const searchAuthority = (name = "*") => {
+    //console.log("sh", name)
     getAthorities
       .get("select", {
         params: {
@@ -48,14 +49,16 @@ export default function Fields({
       })
       .then((response) => {
         setResponse(response.data.response.docs);
-        console.log("Sl", response.data.response.docs);
+       
       });
   };
 
   const handleSearch = (e) => {
+
     e.preventDefault();
     setOpen(true);
-    searchAuthority();
+    setName(e.target.value);
+    searchAuthority(e.target.value);
   };
 
   const inputPros = {
@@ -145,11 +148,11 @@ export default function Fields({
           </Select>
         </FormControl>
         <TextField
-          onChange={(e) => {
-            setName(e.target.value);
-            console.log(e.target.value)
-            searchAuthority(e.target.value)
-          }}
+          // onChange={(e) => {
+          //   setName(e.target.value);
+          //   searchAuthority(e.target.value)
+          // }}
+          onChange={handleSearch}
           value={name}
           fullWidth
           label="Autor"

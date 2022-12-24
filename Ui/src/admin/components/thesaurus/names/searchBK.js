@@ -20,8 +20,9 @@ import {
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import Fields from "src/admin/components/thesaurus/names/fields";
-import CardNamesBK from "src/admin/components/thesaurus/names/cardBK"
+import CardNamesBK from "src/admin/components/thesaurus/names/cardBK";
 import QueryNamesBK from "src/services/thesaurus/names/query";
+import SearchLCNAF from "src/admin/components/thesaurus/names/searchLCNAF";
 
 // React Hooks
 import { useState } from "react";
@@ -34,11 +35,13 @@ export default function SearchBK({
   name,
   setName,
   response,
-  setResponse
+  setResponse,
 }) {
-
   const [nameDetails, setNameDetails] = useState(null);
-  
+  const [img, setImg] = useState(null);
+  const [openLCNAF, setOpenLCNAF] = useState(false);
+  const [nameLCNAF, setNameLCNAF] = useState("");
+
   const handleClose = () => {
     setOpen(false);
   };
@@ -83,7 +86,7 @@ export default function SearchBK({
                     <ListItem key={index} disablePadding>
                       <Button
                         onClick={() => {
-                          QueryNamesBK(authority.id, setNameDetails)
+                          QueryNamesBK(authority.id, setNameDetails, setImg);
                         }}
                       >
                         {authority.name}
@@ -97,7 +100,8 @@ export default function SearchBK({
                 <i>Nenhum registro encontrado:</i>
                 <Button
                   onClick={() => {
-                    //setOpenLCSH(true);
+                    setOpenLCNAF(true);
+                    setNameLCNAF(name);
                   }}
                 >
                   Importar registros
@@ -105,13 +109,20 @@ export default function SearchBK({
               </Box>
             )}
           </Grid>
-          <Grid item xs={7} sx={{ pl: "1rem"}}>
-          <CardNamesBK nameDetails={nameDetails} />
-
+          <Grid item xs={7} sx={{ pl: "1rem" }}>
+            {nameDetails && <CardNamesBK nameDetails={nameDetails} img={img} />}
           </Grid>
-          
         </Grid>
       </DialogContent>
+      <SearchLCNAF
+        open={openLCNAF}
+        setOpen={setOpenLCNAF}
+        nameLCNAF={nameLCNAF}
+        setNameLCNAF={setNameLCNAF}
+        setNameDetails={setNameDetails}
+        setImgBK={setImg}
+        name={name}
+      />
     </Dialog>
   );
 }

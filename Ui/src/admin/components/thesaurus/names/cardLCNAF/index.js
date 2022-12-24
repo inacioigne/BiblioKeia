@@ -1,101 +1,126 @@
 // MUI
 import {
-  Box,
-  IconButton,
-  Typography,
-  Divider,
-  Grid,
-  Button,
-  Paper,
-  InputLabel,
-  Select,
-  MenuItem,
   Card,
   CardContent,
-  Tooltip,
+  Box,
+  Typography,
+  Divider,
+  Paper,
+  IconButton,
   List,
   ListItem,
   ListItemText,
-  Pagination,
-} from "@mui/material/";
+  Tooltip,
+  Grid,
+  Button,
+  LinearProgress,
+} from "@mui/material";
 import {
   LocalHospital,
   ChildFriendly,
   FileDownloadDone,
-  BorderAll,
+  CloudDownload,
 } from "@mui/icons-material";
-
 import Image from "next/image";
+import { api } from "src/services/api";
+import QueryNamesBK from "src/services/thesaurus/names/query";
+import { useState } from "react";
 
-export default function CardNamesBK({ nameDetails, img }) {
+export default function CardLCNAF({
+  LCNAFDetails,
+  img,
+  setOpen,
+  setNameDetails,
+  setImgBK,
+}) {
+  const [progress, setProgess] = useState(false);
+
+  const handleImport = () => {
+    //console.log("import", LCNAFDetails);
+    setProgess(true);
+    api
+      .post(`/thesaurus/name/import/lcnaf/${LCNAFDetails.token}`)
+      .then((response) => {
+        if (response.status == 201) {
+          console.log(response.data);
+          QueryNamesBK(LCNAFDetails.token, setNameDetails, setImgBK);
+          setOpen(false);
+        }
+      })
+      .catch(function (error) {
+        if (error.response.status == 409) {
+          console.log("ERROOO!!", error.response.data);
+          QueryNamesBK(LCNAFDetails.token, setNameDetails, setImgBK);
+          setOpen(false);
+        }
+      });
+  };
   return (
     <Card
       sx={{
         width: "100%",
       }}
     >
+      {progress && <LinearProgress color="secondary" />}
+      
+
       <CardContent>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <Typography variant="h6">{nameDetails?.name}</Typography>
-          <Tooltip title="Escolher">
+        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Typography variant="h6">{LCNAFDetails?.name}</Typography>
+          <Tooltip title="Importar">
             <IconButton
               color="primary"
               component="label"
-              //onClick={handleChoose}
+              onClick={handleImport}
             >
-              <FileDownloadDone />
+              <CloudDownload />
             </IconButton>
           </Tooltip>
         </Box>
         <Divider />
-
         <Grid container spacing={2}>
           {/* birth */}
-          {nameDetails?.birth && (
+          {LCNAFDetails?.birth && (
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Nascimento:</Typography>
-                <Button size="small"> {nameDetails?.birth.place}</Button>
+                <Button size="small"> {LCNAFDetails?.birth.place}</Button>
                 <Button size="small" startIcon={<ChildFriendly />}>
-                  {nameDetails?.birth.date}
+                  {LCNAFDetails?.birth.date}
                 </Button>
               </Box>
             </Grid>
           )}
 
           {/* death */}
-          {nameDetails?.death && (
+          {LCNAFDetails?.death && (
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Falecimento:</Typography>
-                <Button size="small"> {nameDetails?.death.place}</Button>
+                <Button size="small"> {LCNAFDetails?.death.place}</Button>
                 <Button size="small" startIcon={<LocalHospital />}>
-                  {nameDetails?.death.date}
+                  {LCNAFDetails?.death.date}
                 </Button>
               </Box>
-            </Grid> 
+            </Grid>
           )}
+          
 
           {/* fullerName */}
-         
+          {/* {LCNAFDetails?.fullerName && ( */}
             <Grid item xs={6}>
               <Box pt="0.5rem">
-              {nameDetails?.fullerName && (
-                <>
-                <Typography variant="subtitle2">Nome completo:</Typography>
-                <Typography variant="body2">
-                  {nameDetails?.fullerName}
-                </Typography>
-
-                </>
-              
+                {LCNAFDetails?.fullerName && (
+                  <>
+                    <Typography variant="subtitle2">Nome completo:</Typography>
+                    <Typography variant="body2">
+                      {LCNAFDetails?.fullerName}
+                    </Typography>
+                  </>
                 )}
+
                 {/* Imagem */}
+
                 {img && (
                   <Paper
                     elevation={6}
@@ -131,9 +156,10 @@ export default function CardNamesBK({ nameDetails, img }) {
                 )}
               </Box>
             </Grid>
-     
+          {/* )} */}
+
           {/* variant */}
-          {nameDetails?.variant && (
+          {LCNAFDetails?.variant && (
             <Grid item xs={6}>
               <Box
                 sx={{
@@ -145,7 +171,7 @@ export default function CardNamesBK({ nameDetails, img }) {
               >
                 <Typography variant="subtitle2">Variantes do nome:</Typography>
                 <List dense={true}>
-                  {nameDetails?.variant.map((variant, index) => (
+                  {LCNAFDetails?.variant.map((variant, index) => (
                     <ListItem key={index}>
                       <ListItemText primary={variant} />
                     </ListItem>

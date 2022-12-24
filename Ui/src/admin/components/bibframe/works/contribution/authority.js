@@ -37,7 +37,7 @@ export default function Authority() {
           rdftype: `${type}`,
         },
       })
-      .then((response) => {
+      .then((response) => { 
         setHits(response.data.hits);
       })
       .catch(function (error) {

@@ -3,7 +3,7 @@ import { grey } from "@mui/material/colors/";
 import { useState } from "react";
 
 import Relationship from "./relationship";
-import Authority from "./authority";
+//import Authority from "./authority";
 import NamesBK from "src/admin/components/thesaurus/names"
 
 export default function Contribution() {

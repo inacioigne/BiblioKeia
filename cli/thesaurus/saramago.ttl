@@ -1,0 +1,608 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns4: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n85130797> a ns1:Authority,
+        ns1:PersonalName ;
+    ns2:marcKey "1001 $aSaramago, José" ;
+    ns4:lccn "n 85130797" ;
+    ns4:local "(OCoLC)oca01486483" ;
+    ns1:adminMetadata [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "1985-10-25T00:00:00"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns3:recordStatus "new"^^xsd:string ],
+        [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "2016-07-07T07:53:19"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/upb> ;
+            ns3:recordStatus "revised"^^xsd:string ] ;
+    ns1:authoritativeLabel "Saramago, José" ;
+    ns1:classification [ a <http://id.loc.gov/ontologies/lcc#ClassNumber> ;
+            ns5:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:code "PQ9281.A66" ] ;
+    ns1:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    ns1:elementList ( [ a ns1:FullNameElement ;
+                ns1:elementValue "Saramago, José" ] ) ;
+    ns1:fullerName [ a ns1:PersonalName ;
+            rdfs:label "José de Sousa" ] ;
+    ns1:hasCloseExternalAuthority <http://id.worldcat.org/fast/166806>,
+        <http://www.wikidata.org/entity/Q37060> ;
+    ns1:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++85130797#skos:Concept> ;
+    ns1:hasSource [ a ns1:Source ;
+            ns1:citationNote "José Saramago autobiography page (José de Sousa Saramago; b. November 16, 1922)" ;
+            ns1:citationSource "Nobelprize website, September 3, 2009" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "(under José Saramago: José de Sousa Saramago, GColSE; b. Nov. 16, 1922, Azinhaga, Ribatejo, Portugal; d. June 18, 2010, Lanzarote, Canary Islands; Nobel-laureate Portuguese novelist, playwright, and journalist)" ;
+            ns1:citationSource "Wikipedia WWW site, June 18, 2010" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (Ruoze Salamage)" ;
+            ns1:citationSource "Xiu dao yuan ji shi, 1996:" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (Zhoze Saramago) t.p. verso (José Saramago [in rom.])" ;
+            ns1:citationSource "Evangelie ot Iisusa, 2003:" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (José Saramago) jkt. (b. 1922)" ;
+            ns1:citationSource "Hia Baltasar and Blimunda, c1987:" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (José Saramago) jkt. (b. in Azinhaga)" ;
+            ns1:citationSource "His Viagem a Portugal, 1985?:" ;
+            ns1:citationStatus "found" ] ;
+    ns1:hasVariant [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "סאראמאגו, ז׳וזה" ] ) ;
+            ns1:variantLabel "סאראמאגו, ז׳וזה" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Saramago, Zhoze" ] ) ;
+            ns1:variantLabel "Saramago, Zhoze" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "ジョゼ・サラマーゴ" ] ) ;
+            ns1:variantLabel "ジョゼ・サラマーゴ" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Salamage, Ruoze" ] ) ;
+            ns1:variantLabel "Salamage, Ruoze" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Сарамаго, Жозе" ] ) ;
+            ns1:variantLabel "Сарамаго, Жозе" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Sousa Saramago, José de" ] ) ;
+            ns1:variantLabel "Sousa Saramago, José de" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "סאראמאגו, ז׳וזה. טבעון, מרים" ] ) ;
+            ns1:variantLabel "סאראמאגו, ז׳וזה. טבעון, מרים" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "De Sousa Saramago, José" ] ) ;
+            ns1:variantLabel "De Sousa Saramago, José" ] ;
+    ns1:identifiesRWO <http://id.loc.gov/rwo/agents/n85130797> ;
+    ns1:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    ns1:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/authorities/names/n82089413> a ns1:Geographic ;
+    ns1:authoritativeLabel "Ribatejo (Portugal)" .
+
+<http://id.loc.gov/authorities/names/n93050050> a ns1:Geographic ;
+    ns1:authoritativeLabel "Lanzarote (Canary Islands)" .
+
+<http://id.loc.gov/authorities/subjects/sh2006004988> a ns1:Occupation ;
+    ns1:authoritativeLabel "Nobel Prize winners" .
+
+<http://id.loc.gov/authorities/subjects/sh85039342> a ns1:Occupation ;
+    ns1:authoritativeLabel "Dramatists" .
+
+<http://id.loc.gov/authorities/subjects/sh85070788> a ns1:Occupation ;
+    ns1:authoritativeLabel "Journalists" .
+
+<http://id.loc.gov/authorities/subjects/sh85092863> a ns1:Occupation ;
+    ns1:authoritativeLabel "Novelists" .
+
+<http://id.loc.gov/resources/works/1108173> a ns5:Work ;
+    ns2:aap "Saramago, José. Gospel according to Jesus Christ" .
+
+<http://id.loc.gov/resources/works/11949685> a ns5:Work ;
+    ns2:aap "Saramago, José. All the names" .
+
+<http://id.loc.gov/resources/works/11966928> a ns5:Work ;
+    ns2:aap "Saramago, José. Discursos de Estocolmo : [Premio Nobel de Literatura, 1998]" .
+
+<http://id.loc.gov/resources/works/11970484> a ns5:Work ;
+    ns2:aap "Azevedo, Cândido de. censura de Salazar e Marcelo Caetano : imprensa, teatro, cinema, televisão, radiodifusão, livro" .
+
+<http://id.loc.gov/resources/works/12010399> a ns5:Work ;
+    ns2:aap "Saramago, José. Diálogos com José Saramago" .
+
+<http://id.loc.gov/resources/works/12038012> a ns5:Work ;
+    ns2:aap "Saramago, José. Blindness : a novel" .
+
+<http://id.loc.gov/resources/works/12167904> a ns5:Work ;
+    ns2:aap "Saramago, José. Chiapas : rostros de la guerra = war faces = visages de la guerre" .
+
+<http://id.loc.gov/resources/works/12219961> a ns5:Work ;
+    ns2:aap "Saramago, José. Journey to Portugal : in pursuit of Portugal's history and culture" .
+
+<http://id.loc.gov/resources/works/12257577> a ns5:Work ;
+    ns2:aap "Semana de Autor (1993 May 24-27 : Agencia Española de Cooperación Internacional) José Saramago : la Semana de Autor sobre José Saramago tuvo lugar en Madrid del 24 al 27 de mayo de 1993 en la Agencia Española de Cooperación Internacional" .
+
+<http://id.loc.gov/resources/works/12292869> a ns5:Work ;
+    ns2:aap "Saramago, José Folhas políticas, 1976-1998" .
+
+<http://id.loc.gov/resources/works/12351287> a ns5:Work ;
+    ns2:aap "Gageiro, Eduardo, 1935- Evora : património da humanidade" .
+
+<http://id.loc.gov/resources/works/12417541> a ns5:Work ;
+    ns2:aap "Saramago, José. caverna : romance" .
+
+<http://id.loc.gov/resources/works/12677258> a ns5:Work ;
+    ns2:aap "Saramago, José. cave" .
+
+<http://id.loc.gov/resources/works/1285175> a ns5:Work ;
+    ns2:aap "Saramago, José. bagagem do viajante" .
+
+<http://id.loc.gov/resources/works/12916594> a ns5:Work ;
+    ns2:aap "Saramago, José. Viagem a Portugal" .
+
+<http://id.loc.gov/resources/works/12942838> a ns5:Work ;
+    ns2:aap "Saramago, José. maior flor do mundo" .
+
+<http://id.loc.gov/resources/works/12962640> a ns5:Work ;
+    ns2:aap "Saramago, José Xiu dao yuan ji shi 修道院紀事" .
+
+<http://id.loc.gov/resources/works/13150100> a ns5:Work ;
+    ns2:aap "Saramago, José. Conversaciones con Saramago : reflexiones desde Lanzarote" .
+
+<http://id.loc.gov/resources/works/13271785> a ns5:Work ;
+    ns2:aap "Saramago, José. Saramago : \"soy un comunista hormonal\" : conversaciones con Jorge Halperín" .
+
+<http://id.loc.gov/resources/works/13564537> a ns5:Work ;
+    ns2:aap "Saramago, José. double" .
+
+<http://id.loc.gov/resources/works/13636196> a ns5:Work ;
+    ns2:aap "Saramago, José. Saramago, \"Soy un comunista hormonal\" : conversaciones con Jorge Halperín" .
+
+<http://id.loc.gov/resources/works/13738541> a ns5:Work ;
+    ns2:aap "Saramago, José. homem duplicado : romance" .
+
+<http://id.loc.gov/resources/works/1375228> a ns5:Work ;
+    ns2:aap "Saramago, José Que farei com este livro?" .
+
+<http://id.loc.gov/resources/works/13820314> a ns5:Work ;
+    ns2:aap "Reina, Manuel Francisco. paz y la palabra : letras contra la guerra" .
+
+<http://id.loc.gov/resources/works/13918216> a ns5:Work ;
+    ns2:aap "Saramago, José. Ensaio sobre a lucidez : romance" .
+
+<http://id.loc.gov/resources/works/13963687> a ns5:Work ;
+    ns2:aap "Saramago, José. Saramago na Universidade" .
+
+<http://id.loc.gov/resources/works/14062473> a ns5:Work ;
+    ns2:aap "Saramago, José. Discurso de aceptación del Premio ante la Academia Sueca, 1998" .
+
+<http://id.loc.gov/resources/works/14166566> a ns5:Work ;
+    ns2:aap "Saramago, José. Seeing" .
+
+<http://id.loc.gov/resources/works/14239800> a ns5:Work ;
+    ns2:aap "Saramago, José. hombre duplicado" .
+
+<http://id.loc.gov/resources/works/14315377> a ns5:Work ;
+    ns2:aap "Saramago, José. Don Giovanni, ou, O dissoluto absolvido : teatro" .
+
+<http://id.loc.gov/resources/works/14817551> a ns5:Work ;
+    ns2:aap "Saramago, José. Candida Höfer : em Portugal" .
+
+<http://id.loc.gov/resources/works/14818117> a ns5:Work ;
+    ns2:aap "Saramago, José. intermitências da morte : romance" .
+
+<http://id.loc.gov/resources/works/15176225> a ns5:Work ;
+    ns2:aap "Haydn, Joseph, 1732-1809. Septem verba Christi in cruce Le 7 ultime parole di Cristo sulla croce" .
+
+<http://id.loc.gov/resources/works/1520368> a ns5:Work ;
+    ns2:aap "Saramago, José. segunda vida de Francisco de Assis : teatro" .
+
+<http://id.loc.gov/resources/works/15205114> a ns5:Work ;
+    ns2:aap "Saramago, José. Death with interruptions" .
+
+<http://id.loc.gov/resources/works/15286626> a ns5:Work ;
+    ns2:aap "Saramago, José. pequenas memórias" .
+
+<http://id.loc.gov/resources/works/15332808> a ns5:Work ;
+    ns2:aap "Trías, Eugenio, 1942- Discurso de investidura como doctores honoris causa de los profesores don Eugenio Trías Sagnier don José Saramago" .
+
+<http://id.loc.gov/resources/works/15498278> a ns5:Work ;
+    ns2:aap "Gómez Aguilera, Fernando. José Saramago, a consistência dos sonhos cronobiografia" .
+
+<http://id.loc.gov/resources/works/15498308> a ns5:Work ;
+    ns2:aap "Santos, Agostinho, 1960- José Saramago segundo Agostinho Santos : pintura e desenho" .
+
+<http://id.loc.gov/resources/works/15546836> a ns5:Work ;
+    ns2:aap "Kőrösi, Zoltán. Délutáni alvás : a történet árnyéka" .
+
+<http://id.loc.gov/resources/works/15584281> a ns5:Work ;
+    ns2:aap "Saramago, José. Death with interruptions" .
+
+<http://id.loc.gov/resources/works/1572997> a ns5:Work ;
+    ns2:aap "Saramago, José. Evangelho segundo Jesus Cristo : romance" .
+
+<http://id.loc.gov/resources/works/15765852> a ns5:Work ;
+    ns2:aap "Saramago, José. longa viagem com José Saramago" .
+
+<http://id.loc.gov/resources/works/15765864> a ns5:Work ;
+    ns2:aap "Saramago, José. viagem do elefante" .
+
+<http://id.loc.gov/resources/works/15812892> a ns5:Work ;
+    ns2:aap "Saramago, José. caderno" .
+
+<http://id.loc.gov/resources/works/1596774> a ns5:Work ;
+    ns2:aap "Saramago, José. Gospel according to Jesus Christ" .
+
+<http://id.loc.gov/resources/works/16068656> a ns5:Work ;
+    ns2:aap "Saramago, José. Small memories" .
+
+<http://id.loc.gov/resources/works/16083693> a ns5:Work ;
+    ns2:aap "Saramago, José. Caim : romance" .
+
+<http://id.loc.gov/resources/works/16162185> a ns5:Work ;
+    ns2:aap "Lopes, João Marques. Biografia José Saramago" .
+
+<http://id.loc.gov/resources/works/16191594> a ns5:Work ;
+    ns2:aap "Saramago, José. caderno" .
+
+<http://id.loc.gov/resources/works/16218822> a ns5:Work ;
+    ns2:aap "Saramago, José. elephant's journey" .
+
+<http://id.loc.gov/resources/works/16226492> a ns5:Work ;
+    ns2:aap "Falassi, Alessandro. fêtes du soleil : celebrations of the Mediterranean regions" .
+
+<http://id.loc.gov/resources/works/16437591> a ns5:Work ;
+    ns2:aap "Saramago, José. elephant's journey" .
+
+<http://id.loc.gov/resources/works/16491810> a ns5:Work ;
+    ns2:aap "Saramago, José. Small memories" .
+
+<http://id.loc.gov/resources/works/16515528> a ns5:Work ;
+    ns2:aap "Saramago, José. Democracia y universidad" .
+
+<http://id.loc.gov/resources/works/16591532> a ns5:Work ;
+    ns2:aap "Saramago, José. Blindness" .
+
+<http://id.loc.gov/resources/works/16609419> a ns5:Work ;
+    ns2:aap "Meirelles, Fernando. Cegueira, um ensaio" .
+
+<http://id.loc.gov/resources/works/16620000> a ns5:Work ;
+    ns2:aap "Saramago, José. suas palavras" .
+
+<http://id.loc.gov/resources/works/1666577> a ns5:Work ;
+    ns2:aap "Salgado, Sebastião, 1944- Terra" .
+
+<http://id.loc.gov/resources/works/1682281> a ns5:Work ;
+    ns2:aap "Saramago, José. José Saramago : el amor posible" .
+
+<http://id.loc.gov/resources/works/16894072> a ns5:Work ;
+    ns2:aap "Saramago, José. Cain" .
+
+<http://id.loc.gov/resources/works/16906545> a ns5:Work ;
+    ns2:aap "Saramago, José. última entrevista de José Saramago" .
+
+<http://id.loc.gov/resources/works/16915480> a ns5:Work ;
+    ns2:aap "Saramago, José. notebook" .
+
+<http://id.loc.gov/resources/works/16933339> a ns5:Work ;
+    ns2:aap "Saramago, José Cain" .
+
+<http://id.loc.gov/resources/works/16945514> a ns5:Work ;
+    ns2:aap "Saramago, José. notebook" .
+
+<http://id.loc.gov/resources/works/17056474> a ns5:Work ;
+    ns2:aap "Saramago, José. lives of things : short stories" .
+
+<http://id.loc.gov/resources/works/17138801> a ns5:Work ;
+    ns2:aap "Saramago, José. Claraboia : romance" .
+
+<http://id.loc.gov/resources/works/17138824> a ns5:Work ;
+    ns2:aap "Mendes, Miguel Gonçalves, 1978- José e Pilar : conversas inéditas" .
+
+<http://id.loc.gov/resources/works/17176404> a ns5:Work ;
+    ns2:aap "Saramago, José. Manual of painting & calligraphy : a novel" .
+
+<http://id.loc.gov/resources/works/17290355> a ns5:Work ;
+    ns2:aap "Saramago, José. Raised from the ground" .
+
+<http://id.loc.gov/resources/works/17369226> a ns5:Work ;
+    ns2:aap "Saramago, José O silêncio da água" .
+
+<http://id.loc.gov/resources/works/17538900> a ns5:Work ;
+    ns2:aap "Saramago, José. Cain" .
+
+<http://id.loc.gov/resources/works/17582817> a ns5:Work ;
+    ns2:aap "Saramago, José. lives of things : short stories" .
+
+<http://id.loc.gov/resources/works/17647053> a ns5:Work ;
+    ns2:aap "Saramago, José. Raised from the ground" .
+
+<http://id.loc.gov/resources/works/18137613> a ns5:Work ;
+    ns2:aap "Gomes, Pedro Marques, saneamentos políticos no Diário de Noticias : verão quente de 1975" .
+
+<http://id.loc.gov/resources/works/18295831> a ns5:Work ;
+    ns2:aap "Saramago, José. Skylight" .
+
+<http://id.loc.gov/resources/works/18356757> a ns5:Work ;
+    ns2:aap "Saramago, José. Alabardas" .
+
+<http://id.loc.gov/resources/works/1892015> a ns5:Work ;
+    ns2:aap "Saramago, José. Memorial do convento : romance" .
+
+<http://id.loc.gov/resources/works/19012671> a ns5:Work ;
+    ns2:aap "Seminara, Graziella, sguardo obliquo : il teatro musicale di Corghi e Saramago : epistolario e testi letterari delle opere" .
+
+<http://id.loc.gov/resources/works/19246632> a ns5:Work ;
+    ns2:aap "Thimóteo, Saulo Gomes, Está lá tudo : a crônica e o cosmos de José Saramago" .
+
+<http://id.loc.gov/resources/works/19615616> a ns5:Work ;
+    ns2:aap "Vilhena, João Francisco. Lanzarote, a janela de Saramago" .
+
+<http://id.loc.gov/resources/works/19861933> a ns5:Work ;
+    ns2:aap "Amado, Jorge, 1912-2001, Jorge Amado e José Saramago : com o mar por meio : uma amizade em cartas" .
+
+<http://id.loc.gov/resources/works/19874187> a ns5:Work ;
+    ns2:aap "Sabine, Mark, José Saramago : history, utopia, and the necessity of error" .
+
+<http://id.loc.gov/resources/works/2082541> a ns5:Work ;
+    ns2:aap "Saramago, José. Cadernos de Lanzarote : diário" .
+
+<http://id.loc.gov/resources/works/20872880> a ns5:Work ;
+    ns2:aap "Guilherme-Moreira, Pedro, 1969- Saramaguíada : [a invenção de Pilar]" .
+
+<http://id.loc.gov/resources/works/20929740> a ns5:Work ;
+    ns2:aap "Vieira, Joaquim, José Saramago : rota de vida : uma biografia" .
+
+<http://id.loc.gov/resources/works/21286139> a ns5:Work ;
+    ns2:aap "Margarido, Diogo. Castelo de Vide : apontamentos forográficos" .
+
+<http://id.loc.gov/resources/works/2141284> a ns5:Work ;
+    ns2:aap "Saramago, José. Blindness" .
+
+<http://id.loc.gov/resources/works/22437493> a ns5:Work ;
+    ns2:aap "Saramago, José Biografia José Saramago" .
+
+<http://id.loc.gov/resources/works/22463362> a ns5:Work ;
+    ns2:aap "Ponsa, Francesc Ensayo sobre José Saramago" .
+
+<http://id.loc.gov/resources/works/22562893> a ns5:Work ;
+    ns2:aap "Peças para um ensaio" .
+
+<http://id.loc.gov/resources/works/22729397> a ns5:Work ;
+    ns2:aap "Martins, Manuel Frias A espiritualidade clandestina de José Saramago" .
+
+<http://id.loc.gov/resources/works/22890278> a ns5:Work ;
+    ns2:aap "José Saramago, um escritor com o seu povo" .
+
+<http://id.loc.gov/resources/works/2303956> a ns5:Work ;
+    ns2:aap "Saramago, José. ano de 1993" .
+
+<http://id.loc.gov/resources/works/2470354> a ns5:Work ;
+    ns2:aap "Saramago, José. year of the death of Ricardo Reis" .
+
+<http://id.loc.gov/resources/works/2532302> a ns5:Work ;
+    ns2:aap "Saramago, José. In nomine Dei : teatro" .
+
+<http://id.loc.gov/resources/works/2593179> a ns5:Work ;
+    ns2:aap "Saramago, José. history of the Siege of Lisbon" .
+
+<http://id.loc.gov/resources/works/2605925> a ns5:Work ;
+    ns2:aap "Baptista-Bastos, 1934-2017. José Saramago : aproximação a um retrato" .
+
+<http://id.loc.gov/resources/works/2622422> a ns5:Work ;
+    ns2:aap "Saramago, José. conto da ilha desconhecida" .
+
+<http://id.loc.gov/resources/works/2630991> a ns5:Work ;
+    ns2:aap "Saramago, José. tale of the unknown island" .
+
+<http://id.loc.gov/resources/works/2776608> a ns5:Work ;
+    ns2:aap "Saramago, José. Objecto quase : contos" .
+
+<http://id.loc.gov/resources/works/2873961> a ns5:Work ;
+    ns2:aap "Saramago, José. ano da morte de Ricardo Reis : romance" .
+
+<http://id.loc.gov/resources/works/2894353> a ns5:Work ;
+    ns2:aap "Saramago, José. Baltasar and Blimunda" .
+
+<http://id.loc.gov/resources/works/3059164> a ns5:Work ;
+    ns2:aap "Saramago, José. Ensaio sobre a cegueira : romance" .
+
+<http://id.loc.gov/resources/works/3094426> a ns5:Work ;
+    ns2:aap "Saramago, José. Terra do pecado : romance" .
+
+<http://id.loc.gov/resources/works/3305274> a ns5:Work ;
+    ns2:aap "Saramago, José Deste mundo e do outro" .
+
+<http://id.loc.gov/resources/works/3378875> a ns5:Work ;
+    ns2:aap "Saramago, José. jangada de pedra : romance" .
+
+<http://id.loc.gov/resources/works/3442003> a ns5:Work ;
+    ns2:aap "Saramago, José. apontamentos : crónicas políticas" .
+
+<http://id.loc.gov/resources/works/3519802> a ns5:Work ;
+    ns2:aap "Saramago, José. Passport to Portugal" .
+
+<http://id.loc.gov/resources/works/3526989> a ns5:Work ;
+    ns2:aap "Saramago, José. history of the siege of Lisbon" .
+
+<http://id.loc.gov/resources/works/3969187> a ns5:Work ;
+    ns2:aap "Saramago, José. História do cerco de Lisboa : romance" .
+
+<http://id.loc.gov/resources/works/403079> a ns5:Work ;
+    ns2:aap "Saramago, José. Manual de pintura e caligrafia : ensaio de romance" .
+
+<http://id.loc.gov/rwo/agents/n85130797> a ns5:Person,
+        ns1:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Saramago, José" ;
+    ns2:contributorTo <http://id.loc.gov/resources/works/1108173>,
+        <http://id.loc.gov/resources/works/11949685>,
+        <http://id.loc.gov/resources/works/11966928>,
+        <http://id.loc.gov/resources/works/11970484>,
+        <http://id.loc.gov/resources/works/12010399>,
+        <http://id.loc.gov/resources/works/12038012>,
+        <http://id.loc.gov/resources/works/12167904>,
+        <http://id.loc.gov/resources/works/12219961>,
+        <http://id.loc.gov/resources/works/12257577>,
+        <http://id.loc.gov/resources/works/12292869>,
+        <http://id.loc.gov/resources/works/12351287>,
+        <http://id.loc.gov/resources/works/12417541>,
+        <http://id.loc.gov/resources/works/12677258>,
+        <http://id.loc.gov/resources/works/1285175>,
+        <http://id.loc.gov/resources/works/12916594>,
+        <http://id.loc.gov/resources/works/12942838>,
+        <http://id.loc.gov/resources/works/12962640>,
+        <http://id.loc.gov/resources/works/13150100>,
+        <http://id.loc.gov/resources/works/13271785>,
+        <http://id.loc.gov/resources/works/13564537>,
+        <http://id.loc.gov/resources/works/13636196>,
+        <http://id.loc.gov/resources/works/13738541>,
+        <http://id.loc.gov/resources/works/1375228>,
+        <http://id.loc.gov/resources/works/13820314>,
+        <http://id.loc.gov/resources/works/13918216>,
+        <http://id.loc.gov/resources/works/13963687>,
+        <http://id.loc.gov/resources/works/14062473>,
+        <http://id.loc.gov/resources/works/14166566>,
+        <http://id.loc.gov/resources/works/14239800>,
+        <http://id.loc.gov/resources/works/14315377>,
+        <http://id.loc.gov/resources/works/14817551>,
+        <http://id.loc.gov/resources/works/14818117>,
+        <http://id.loc.gov/resources/works/15176225>,
+        <http://id.loc.gov/resources/works/1520368>,
+        <http://id.loc.gov/resources/works/15205114>,
+        <http://id.loc.gov/resources/works/15286626>,
+        <http://id.loc.gov/resources/works/15332808>,
+        <http://id.loc.gov/resources/works/15498308>,
+        <http://id.loc.gov/resources/works/15546836>,
+        <http://id.loc.gov/resources/works/15584281>,
+        <http://id.loc.gov/resources/works/1572997>,
+        <http://id.loc.gov/resources/works/15765852>,
+        <http://id.loc.gov/resources/works/15765864>,
+        <http://id.loc.gov/resources/works/15812892>,
+        <http://id.loc.gov/resources/works/1596774>,
+        <http://id.loc.gov/resources/works/16068656>,
+        <http://id.loc.gov/resources/works/16083693>,
+        <http://id.loc.gov/resources/works/16191594>,
+        <http://id.loc.gov/resources/works/16218822>,
+        <http://id.loc.gov/resources/works/16226492>,
+        <http://id.loc.gov/resources/works/16437591>,
+        <http://id.loc.gov/resources/works/16491810>,
+        <http://id.loc.gov/resources/works/16515528>,
+        <http://id.loc.gov/resources/works/16591532>,
+        <http://id.loc.gov/resources/works/16620000>,
+        <http://id.loc.gov/resources/works/1666577>,
+        <http://id.loc.gov/resources/works/1682281>,
+        <http://id.loc.gov/resources/works/16894072>,
+        <http://id.loc.gov/resources/works/16906545>,
+        <http://id.loc.gov/resources/works/16915480>,
+        <http://id.loc.gov/resources/works/16933339>,
+        <http://id.loc.gov/resources/works/16945514>,
+        <http://id.loc.gov/resources/works/17016725>,
+        <http://id.loc.gov/resources/works/17056474>,
+        <http://id.loc.gov/resources/works/17138801>,
+        <http://id.loc.gov/resources/works/17176404>,
+        <http://id.loc.gov/resources/works/17290355>,
+        <http://id.loc.gov/resources/works/17369226>,
+        <http://id.loc.gov/resources/works/17538900>,
+        <http://id.loc.gov/resources/works/17582817>,
+        <http://id.loc.gov/resources/works/17647053>,
+        <http://id.loc.gov/resources/works/18041488>,
+        <http://id.loc.gov/resources/works/18163494>,
+        <http://id.loc.gov/resources/works/18295831>,
+        <http://id.loc.gov/resources/works/18356757>,
+        <http://id.loc.gov/resources/works/1892015>,
+        <http://id.loc.gov/resources/works/19615616>,
+        <http://id.loc.gov/resources/works/2082541>,
+        <http://id.loc.gov/resources/works/21286139>,
+        <http://id.loc.gov/resources/works/2141284>,
+        <http://id.loc.gov/resources/works/22437493>,
+        <http://id.loc.gov/resources/works/22890278>,
+        <http://id.loc.gov/resources/works/2303956>,
+        <http://id.loc.gov/resources/works/2470354>,
+        <http://id.loc.gov/resources/works/2532302>,
+        <http://id.loc.gov/resources/works/2593179>,
+        <http://id.loc.gov/resources/works/2622422>,
+        <http://id.loc.gov/resources/works/2630991>,
+        <http://id.loc.gov/resources/works/2776608>,
+        <http://id.loc.gov/resources/works/2873961>,
+        <http://id.loc.gov/resources/works/2894353>,
+        <http://id.loc.gov/resources/works/3059164>,
+        <http://id.loc.gov/resources/works/3094426>,
+        <http://id.loc.gov/resources/works/3305274>,
+        <http://id.loc.gov/resources/works/3378875>,
+        <http://id.loc.gov/resources/works/3442003>,
+        <http://id.loc.gov/resources/works/3519802>,
+        <http://id.loc.gov/resources/works/3526989>,
+        <http://id.loc.gov/resources/works/3969187>,
+        <http://id.loc.gov/resources/works/403079> ;
+    ns2:subjectOf <http://id.loc.gov/resources/works/15498278>,
+        <http://id.loc.gov/resources/works/16162185>,
+        <http://id.loc.gov/resources/works/16609419>,
+        <http://id.loc.gov/resources/works/17016725>,
+        <http://id.loc.gov/resources/works/17138824>,
+        <http://id.loc.gov/resources/works/18041488>,
+        <http://id.loc.gov/resources/works/18137613>,
+        <http://id.loc.gov/resources/works/18163494>,
+        <http://id.loc.gov/resources/works/19012671>,
+        <http://id.loc.gov/resources/works/19246632>,
+        <http://id.loc.gov/resources/works/19861933>,
+        <http://id.loc.gov/resources/works/19874187>,
+        <http://id.loc.gov/resources/works/20872880>,
+        <http://id.loc.gov/resources/works/20929740>,
+        <http://id.loc.gov/resources/works/22463362>,
+        <http://id.loc.gov/resources/works/22562893>,
+        <http://id.loc.gov/resources/works/22729397>,
+        <http://id.loc.gov/resources/works/2605925> ;
+    ns1:associatedLanguage <http://id.loc.gov/vocabulary/languages/por> ;
+    ns1:birthDate [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "(edtf) 1922-11-16" ] ;
+    ns1:birthPlace <http://id.loc.gov/authorities/names/n82089413> ;
+    ns1:deathDate [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "(edtf) 2010-06-18" ] ;
+    ns1:deathPlace <http://id.loc.gov/authorities/names/n93050050> ;
+    ns1:gender [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "male" ] ;
+    ns1:occupation <http://id.loc.gov/authorities/subjects/sh2006004988>,
+        <http://id.loc.gov/authorities/subjects/sh85039342>,
+        <http://id.loc.gov/authorities/subjects/sh85070788>,
+        <http://id.loc.gov/authorities/subjects/sh85092863> .
+
+<http://id.loc.gov/vocabulary/languages/por> a ns1:Language ;
+    ns1:authoritativeLabel "Portuguese"@en .
+
+<http://id.loc.gov/resources/works/17016725> a ns5:Work ;
+    ns2:aap "Saramago, José. José Saramago en sus palabras" .
+
+<http://id.loc.gov/resources/works/18041488> a ns5:Work ;
+    ns2:aap "Saramago, José. estátua e a pedra : o autor explica-se" .
+
+<http://id.loc.gov/resources/works/18163494> a ns5:Work ;
+    ns2:aap "Saramago, José. Saramago por José Saramago" .
+

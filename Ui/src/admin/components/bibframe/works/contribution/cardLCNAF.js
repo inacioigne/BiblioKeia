@@ -47,7 +47,7 @@ export default function CardLCNAF({
   };
   if (authorityDetails) {
     return (
-      <Card sx={{ minWidth: 350 }}>
+      <Card sx={{ minWidth: 350 }}> 
         <CardContent>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
             <Typography variant="h6">

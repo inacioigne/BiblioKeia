@@ -10,7 +10,7 @@ import { blue, red, green } from "@mui/material/colors/";
 import { Search, Close, Clear, FileDownloadDone } from "@mui/icons-material";
 import { api } from "src/services/translate/api";
 import { useEffect, useState } from "react";
-
+ 
 const styleIcon = {
   fontSize: "25px",
   px: "5px",

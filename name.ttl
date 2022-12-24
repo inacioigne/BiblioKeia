@@ -9,283 +9,84 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n79103792> a madsrdf:Authority,
+<http://id.loc.gov/authorities/names/n91088495> a madsrdf:Authority,
         madsrdf:PersonalName ;
-    bflc:marcKey "1001 $aKipling, Rudyard,$d1865-1936" ;
-    identifiers:lccn "n 79103792" ;
-    identifiers:local "(OCoLC)oca00335838" ;
+    bflc:marcKey "1001 $aHouellebecq, Michel" ;
+    identifiers:lccn "n 91088495" ;
+    identifiers:local "(OCoLC)oca03015047" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2022-11-29T06:45:33"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/upb> ;
-            ri:recordStatus "revised"^^xsd:string ],
+            ri:recordChangeDate "1991-08-31T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
         [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "1980-05-28T00:00:00"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Kipling, Rudyard, 1865-1936" ;
+            ri:recordChangeDate "2022-08-25T06:45:52"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/mosu> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Houellebecq, Michel" ;
     madsrdf:classification [ a lcc:ClassNumber ;
-            madsrdf:code "PR4850-PR4858" ;
-            madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/PR4850-PR4858> ] ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PQ2668.O77" ] ;
     madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
         "[Non-Latin script references not evaluated.]" ;
     madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                madsrdf:elementValue "Kipling, Rudyard," ] [ a madsrdf:DateNameElement ;
-                madsrdf:elementValue "1865-1936" ] ) ;
-    madsrdf:fullerName [ a madsrdf:PersonalName ;
-            rdfs:label "Joseph Rudyard" ] ;
-    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/42357>,
-        <http://www.wikidata.org/entity/Q34743> ;
-    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79103792#skos:Concept> ;
+                madsrdf:elementValue "Houellebecq, Michel" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/291449>,
+        <http://www.wikidata.org/entity/Q103114> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++91088495#skos:Concept> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationSource "Kim, 1902." ;
+            madsrdf:citationNote "title page (Michel Houellebecq) back cover (born 1958 [i.e. 1956]; critic, poet, novelist)" ;
+            madsrdf:citationSource "Extension du domaine de la lutte, 1994:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(hdg.: Kipling, Rudyard, 1865- )" ;
-            madsrdf:citationSource "LC manual auth. cd.:" ;
+            madsrdf:citationNote "(authorized access point: Houellebecq, Michel (1956-....); other data in authority record: French screenwriter, poet, and essayist; born February 26, 1956)" ;
+            madsrdf:citationSource <https://catalogue.bnf.fr/ark:/12148/cb12249911x>,
+                "Bibliothèque nationale de France online catalog, viewed August 24, 2022" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "caption title (from a correspondent)" ;
-            madsrdf:citationSource "East and West, [1885]:" ;
+            madsrdf:citationNote "title page (Michel Houellebecq)" ;
+            madsrdf:citationSource "H.P. Lovecraft, 1991:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "colophon (R.K.)" ;
-            madsrdf:citationSource "Song of the exiles, 1883:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "(Kipling, (Joseph) Rudyard; Eng. novelist, etc.; b. Bombay, India, Dec. 30,1865; d. London, Jan. 18,1936)" ;
-            madsrdf:citationSource "Encyc. Brit., c1978" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "(hdg.: Kipling, Rudyard, 1865-1936; usage: Kipḷiṅ)" ;
-            madsrdf:citationSource "SILAS, Oct. 2, 2007" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Raḍiyārda Kiplīṅga)" ;
-            madsrdf:citationSource "Rikki-ṭikki, 1935:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "The Nobel Prize in Literature 1907 (The Nobel Prize in Literature 1907 was awarded to Rudyard Kipling \"in consideration of the power of observation, originality of imagination, virility of ideas and remarkable talent for narration which characterize the creations of this world-famous author\")" ;
-            madsrdf:citationSource "Nobel Foundation, WWW, viewed on June 6, 2019:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "Cover (by Yussuf) p. 124 (Yussuf)" ;
-            madsrdf:citationSource "\"A ballad of East and West\", Macmillan's magazine, December 1889" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Redʹi︠a︡rd Kipling)" ;
-            madsrdf:citationSource "Prikli︠u︡chenii︠a︡ Alisy v Strane Chudes, 1985:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "p. 538 (Ichabod by \"Kingscraft\"; pseudonym of Rudyard Kipling)" ;
-            madsrdf:citationSource "Kipling, a bibliographical catalogue, 1959" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (R. Kiplinga) added t.p. (R. Kipling [in rom.])" ;
-            madsrdf:citationSource "Maugli, 1983:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Dzh.R. Kipling)" ;
-            madsrdf:citationSource "Angliĭskai︠a︡ literatura 1900-1914 godov, 1993:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "poem \"Ichabod\" on p. 255 signed at end (Kingcraft)" ;
-            madsrdf:citationSource "St. George's gazette, no. 588, v. 49, Dec. 1931" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "caption title (by One of Them)" ;
-            madsrdf:citationSource "Prisoners and captives, [1886]:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "(by Four Anglo-Indian writers)" ;
-            madsrdf:citationSource "Quartette : the Christmas annual of the Civil & Military Gazette, 1885" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Joseph Rudyard Kipling, 1865-1936)" ;
-            madsrdf:citationSource "The Kipling papers, 1979, c1980:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (by two writers)" ;
-            madsrdf:citationSource "Echoes, 1884:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "title page (Redʹi︠a︡rd Kipling)" ;
-            madsrdf:citationSource "Iz angliĭskoĭ i amerikanskoĭ poėzii (XVII-XX vv.), 2010:" ;
+            madsrdf:citationNote "(Michel Houellebecq; his birth name was Michel Thomas; born February 26, 1956, in Saint-Pierre on the island of La Réunion; French writer, poet, essayist, and film director; as a child, following his parents' separation, he was sent to live with his maternal grandparents in Algeria, then moved to the care of his paternal grandmother, whose maiden name was Houellebecq; he pursued a course in film studies at the École nationale supérieure Louis-Lumière in Saint-Denis; his biography of H.P. Lovecraft was published in 1991; in 2000, he moved to Ireland, and later to Spain, before returning to Paris in 2012)" ;
+            madsrdf:citationSource "French Wikipedia, viewed August 24, 2022" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, ר." ] ) ;
-            madsrdf:variantLabel "קיפלינג, ר." ],
+                        madsrdf:elementValue "Thomas, Michel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1956-" ] ) ;
+            madsrdf:variantLabel "Thomas, Michel, 1956-" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קפלינג, רודיארד," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865־1936" ] ) ;
-            madsrdf:variantLabel "קפלינג, רודיארד, 1865־1936" ],
+                        madsrdf:elementValue "וולבק, מישל" ] ) ;
+            madsrdf:variantLabel "וולבק, מישל" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kipling, Dzh. R." ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Dzh. Redʹi︠a︡rd)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kipling, Dzh. R. (Dzh. Redʹi︠a︡rd), 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רודיארד," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רודיארד, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kipling, Joseph Rudyard," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kipling, Joseph Rudyard, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kipḷiṅ," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kipḷiṅ, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רידיארד," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865־1936" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רידיארד, 1865־1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Киплинг, Редьярд," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Киплинг, Редьярд, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רידיארד," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1936־1865" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רידיארד, 1936־1865" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "כ״ץ, אלי," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "כ״ץ, אלי, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kiplīṅga, Raḍiyārḍa," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kiplīṅga, Raḍiyārḍa, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפגינג, ר." ] ) ;
-            madsrdf:variantLabel "קיפגינג, ר." ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kipling, R." ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Rudyard)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kipling, R. (Rudyard), 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רודירד" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רודירד" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Kipling, Redʹi︠a︡rd," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Kipling, Redʹi︠a︡rd, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רעדוארד," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רעדוארד, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "RK" ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Rudyard Kipling)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "RK (Rudyard Kipling), 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רידיארד" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רידיארד" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "R. K." ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Rudyard Kipling)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "R. K. (Rudyard Kipling), 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפליג, ר." ] ) ;
-            madsrdf:variantLabel "קיפליג, ר." ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Yussuf," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "Yussuf, 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "K., R." ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Rudyard Kipling)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1865-1936" ] ) ;
-            madsrdf:variantLabel "K., R. (Rudyard Kipling), 1865-1936" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "קיפלינג, רעדיארד" ] ) ;
-            madsrdf:variantLabel "קיפלינג, רעדיארד" ] ;
-    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79103792>,
-        <http://isni.org/isni/0000000120989213> ;
+                        madsrdf:elementValue "Уэльбек, Мишель" ] ) ;
+            madsrdf:variantLabel "Уэльбек, Мишель" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n91088495>,
+        <http://viaf.org/viaf/66522427>,
+        <https://isni.org/isni/000000012137320X>,
+        <https://www.wikidata.org/wiki/Q103114> ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
         <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
-    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
-    madsrdf:note "[Rudyard Kipling (1865-1936) was an English author and poet.]" ;
-    madsrdf:see <http://id.loc.gov/authorities/names/n2007071852>,
-        <http://id.loc.gov/authorities/names/n2008002160>,
-        <http://id.loc.gov/authorities/names/n2011009159>,
-        <http://id.loc.gov/authorities/names/n2011009818>,
-        <http://id.loc.gov/authorities/names/n2011009836>,
-        <http://id.loc.gov/authorities/names/n2011009874> .
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
 
-<http://id.loc.gov/authorities/demographicTerms/dg2015060003> a skos:Concept ;
-    madsrdf:authoritativeLabel "Males" .
+<http://id.loc.gov/authorities/subjects/sh85048057> a skos:Concept ;
+    madsrdf:authoritativeLabel "Fiction--Authorship" .
 
-<http://id.loc.gov/authorities/demographicTerms/dg2016060449> a skos:Concept ;
-    madsrdf:authoritativeLabel "Nobel Prize winners" .
+<http://id.loc.gov/authorities/subjects/sh85077507> a skos:Concept ;
+    madsrdf:authoritativeLabel "Literature" .
 
-<http://id.loc.gov/authorities/names/n79005665> a madsrdf:Geographic ;
-    madsrdf:authoritativeLabel "London (England)" .
+<http://id.loc.gov/authorities/subjects/sh85088067> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Motion picture producers and directors" .
 
-<http://id.loc.gov/authorities/names/n79023147> a madsrdf:Geographic ;
-    madsrdf:authoritativeLabel "Great Britain" .
-
-<http://id.loc.gov/authorities/names/n79065461> a madsrdf:Geographic ;
-    madsrdf:authoritativeLabel "Bombay (India)" .
-
-<http://id.loc.gov/authorities/names/n80125948> a madsrdf:Geographic ;
-    madsrdf:authoritativeLabel "India" .
-
-<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Occupation ;
-    madsrdf:authoritativeLabel "Authors" .
-
-<http://id.loc.gov/authorities/subjects/sh85048050> a skos:Concept ;
-    madsrdf:authoritativeLabel "Fiction" .
+<http://id.loc.gov/authorities/subjects/sh85088104> a skos:Concept ;
+    madsrdf:authoritativeLabel "Motion pictures--Production and direction" .
 
 <http://id.loc.gov/authorities/subjects/sh85092863> a madsrdf:Occupation ;
     madsrdf:authoritativeLabel "Novelists" .
@@ -296,27 +97,34 @@
 <http://id.loc.gov/authorities/subjects/sh85103733> a madsrdf:Occupation ;
     madsrdf:authoritativeLabel "Poets" .
 
-<http://id.loc.gov/rwo/agents/n79103792> a bf:Person,
+<http://id.loc.gov/authorities/subjects/sh98005508> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Essayists" .
+
+<http://id.loc.gov/rwo/agents/n91088495> a bf:Person,
         madsrdf:RWO,
         <http://xmlns.com/foaf/0.1/Person> ;
-    rdfs:label "Kipling, Rudyard, 1865-1936" ;
-    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
-    madsrdf:associatedLocale <http://id.loc.gov/authorities/names/n79023147>,
-        <http://id.loc.gov/authorities/names/n80125948> ;
+    rdfs:label "Houellebecq, Michel" ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng>,
+        <http://id.loc.gov/vocabulary/languages/fre> ;
     madsrdf:birthDate [ a skos:Concept ;
-            rdfs:label "(edtf) 1865-12-30" ] ;
-    madsrdf:birthPlace <http://id.loc.gov/authorities/names/n79065461> ;
-    madsrdf:deathDate [ a skos:Concept ;
-            rdfs:label "(edtf) 1936-01-18" ] ;
-    madsrdf:deathPlace <http://id.loc.gov/authorities/names/n79005665> ;
-    madsrdf:entityDescriptor <http://id.loc.gov/authorities/demographicTerms/dg2016060449> ;
-    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85048050>,
+            rdfs:label "(edtf) 1956-02-26" ] ;
+    madsrdf:birthPlace [ a madsrdf:Geographic ;
+            rdfs:label "Saint-Pierre (Réunion)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    madsrdf:fieldOfActivity [ a skos:Concept ;
+            rdfs:label "(lcsh) Novels" ],
+        <http://id.loc.gov/authorities/subjects/sh85048057>,
+        <http://id.loc.gov/authorities/subjects/sh85077507>,
+        <http://id.loc.gov/authorities/subjects/sh85088104>,
         <http://id.loc.gov/authorities/subjects/sh85103704> ;
-    madsrdf:gender <http://id.loc.gov/authorities/demographicTerms/dg2015060003> ;
-    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85009793>,
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85088067>,
         <http://id.loc.gov/authorities/subjects/sh85092863>,
-        <http://id.loc.gov/authorities/subjects/sh85103733> .
+        <http://id.loc.gov/authorities/subjects/sh85103733>,
+        <http://id.loc.gov/authorities/subjects/sh98005508> .
 
 <http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
     madsrdf:authoritativeLabel "English"@en .
+
+<http://id.loc.gov/vocabulary/languages/fre> a madsrdf:Language ;
+    madsrdf:authoritativeLabel "French"@en .
 

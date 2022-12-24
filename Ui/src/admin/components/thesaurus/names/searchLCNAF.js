@@ -1,3 +1,4 @@
+// Material UI
 import {
   Dialog,
   DialogTitle,
@@ -15,53 +16,91 @@ import {
   List,
   ListItem,
   Box,
+  Grid,
 } from "@mui/material";
-//import { useForm, Controller } from "react-hook-form";
-import { Search } from "@mui/icons-material";
-import Grid from "@mui/material/Unstable_Grid2";
+//import ClearIcon from "@mui/icons-material/Clear";
+import { Search, Close } from "@mui/icons-material";
 import { api } from "src/services/lcnfa";
-import ParserJsonLd from "src/services/thesaurus/parser_jsonld";
-import { useState } from "react";
-import CardLCNAF from "src/admin/components/bibframe/works/contribution/cardLCNAF";
-import ClearIcon from "@mui/icons-material/Clear";
+
+// React Hooks
+import { useState, useEffect } from "react";
+
+// BiblioKeia Components
+import CardLCNAF from "src/admin/components/thesaurus/names/cardLCNAF";
+
+// BiblioKeia Services
+import QueryLCNAF from "src/services/thesaurus/names/queryLCNAF";
 
 export default function SearchLCNAF({
   open,
   setOpen,
-  search,
   name,
-  handleSearch,
-  hits,
-  setValue,
-  setDisabled,
-  setName,
-  setType, 
-  type
+  nameLCNAF,
+  setNameLCNAF,
+  setNameDetails,
+  setImgBK
+  
 }) {
-  const [authorityDetails, setAuthorityDetails] = useState(null);
+  const [type, setType] = useState("PersonalName");
+  //const [nameLCNAF, setNameLCNAF] = useState("");
+  const [hits, setHits] = useState([]);
+
+  const [LCNAFDetails, setLCNAFDetails] = useState(null);
+  const [img, setImg] = useState(null);
+
+  const getData = (name, type) => {
+    api
+      .get("suggest2", {
+        params: {
+          q: `${name}`,
+          rdftype: `${type}`,
+        },
+      })
+      .then((response) => {
+        setHits(response.data.hits);
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
+  };
+
+  useEffect(() => {
+    //setName(search)
+    getData(name, type);
+  }, []);
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const getDetails = (token) => {
-    ParserJsonLd(token, setAuthorityDetails);
+  const handleSearch = (e) => {
+    e.preventDefault();
+    //setOpen(true);
+    getData(name, type);
   };
 
   return (
     <Dialog fullWidth={true} maxWidth={"md"} open={open} onClose={handleClose}>
-      <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography variant="div">Search LCNAF: {search?.authority}</Typography>
+      <DialogTitle
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <Typography variant="div">Importar autoridades</Typography>
         <IconButton color="primary" component="label" onClick={handleClose}>
-          <ClearIcon />
+          <Close />
         </IconButton>
       </DialogTitle>
       <Divider />
       <DialogContent>
         <Grid container>
-          <Grid xs={6} sx={{ borderRight: "solid 1px" }}>
-            {/* <form onSubmit={handleSearch}> */}
-              <FormControl>
+          <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
+            <Box
+              sx={{ display: "flex", gap: "0.5rem", flexDirection: "column" }}
+            >
+              {/* <form onSubmit={handleSearch}> */}
+              <FormControl fullWidth>
                 <InputLabel id="type">Tipo</InputLabel>
                 <Select
                   label="Tipo"
@@ -79,9 +118,11 @@ export default function SearchLCNAF({
                 </Select>
               </FormControl>
               <TextField
-                value={name}
+                fullWidth
+                value={nameLCNAF}
                 onChange={(e) => {
-                  setName(e.target.value);
+                  setNameLCNAF(e.target.value);
+                  getData(e.target.value, type);
                 }}
                 label="Search LCNAF"
                 InputProps={{
@@ -91,8 +132,6 @@ export default function SearchLCNAF({
                         color="primary"
                         aria-label="search"
                         component="button"
-                        //type="submit"
-                        onClick={handleSearch}
                       >
                         <Search />
                       </IconButton>
@@ -100,8 +139,9 @@ export default function SearchLCNAF({
                   ),
                 }}
               />
-            {/* </form> */}
-            
+              {/* </form> */}
+            </Box>
+
             <Typography
               variant="subtitle2"
               gutterBottom
@@ -118,31 +158,28 @@ export default function SearchLCNAF({
                   <Button
                     sx={{ textTransform: "none" }}
                     onClick={() => {
-                      let token = hit.uri.split("/")[5];
-                      getDetails(token);
+                      QueryLCNAF(hit.uri, setLCNAFDetails, setImg);
+                      // let token = hit.uri.split("/")[5];
+                      // console.log(hit.uri)
+                      //getDetails(token);
                     }}
                   >
-                    {" "}
                     {hit.aLabel}
                   </Button>
                 </ListItem>
               ))}
             </List>
           </Grid>
-
-          <Grid xs={6}>
-            <Typography variant="h6" gutterBottom sx={{ textAlign: "center" }}>
-              LC Name Authority File (LCNAF)
-            </Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Grid item xs={7} sx={{ pl: "1rem" }}>
+            {LCNAFDetails && (
               <CardLCNAF
-                authorityDetails={authorityDetails}
+                LCNAFDetails={LCNAFDetails}
+                img={img}
                 setOpen={setOpen}
-                setValue={setValue}
-                setDisabled={setDisabled}
-                setName={setName}
+                setNameDetails={setNameDetails}
+                setImgBK={setImgBK}
               />
-            </Box>
+            )}
           </Grid>
         </Grid>
       </DialogContent>
