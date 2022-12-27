@@ -27,7 +27,30 @@ import {
 
 import Image from "next/image";
 
-export default function CardNamesBK({ nameDetails, img }) {
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
+
+export default function CardNamesBK({
+  nameDetails,
+  img,
+  setOpen,
+  setName,
+  setDisabled,
+}) {
+  const { setWork } = useBf();
+
+  const handleChoose = () => {
+   
+    setDisabled(true);
+    setOpen(false);
+    setName("");
+    setWork((prevState) => ({
+      ...prevState,
+      contributionAgent: nameDetails.name,
+      contributionID: nameDetails.token,
+    }));
+  };
+
   return (
     <Card
       sx={{
@@ -46,7 +69,7 @@ export default function CardNamesBK({ nameDetails, img }) {
             <IconButton
               color="primary"
               component="label"
-              //onClick={handleChoose}
+              onClick={handleChoose}
             >
               <FileDownloadDone />
             </IconButton>
@@ -60,7 +83,9 @@ export default function CardNamesBK({ nameDetails, img }) {
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Nascimento:</Typography>
-                <Button size="small"> {nameDetails?.birth.place}</Button>
+                {nameDetails.birth?.place && (
+                  <Button size="small"> {nameDetails.birth.place}</Button>
+                )}
                 <Button size="small" startIcon={<ChildFriendly />}>
                   {nameDetails?.birth.date}
                 </Button>
@@ -73,65 +98,66 @@ export default function CardNamesBK({ nameDetails, img }) {
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Falecimento:</Typography>
-                <Button size="small"> {nameDetails?.death.place}</Button>
+                {nameDetails.death?.place && (
+                  <Button size="small"> {nameDetails.death.place}</Button>
+                )}
+
                 <Button size="small" startIcon={<LocalHospital />}>
                   {nameDetails?.death.date}
                 </Button>
               </Box>
-            </Grid> 
+            </Grid>
           )}
 
           {/* fullerName */}
-         
-            <Grid item xs={6}>
-              <Box pt="0.5rem">
+
+          <Grid item xs={6}>
+            <Box pt="0.5rem">
               {nameDetails?.fullerName && (
                 <>
-                <Typography variant="subtitle2">Nome completo:</Typography>
-                <Typography variant="body2">
-                  {nameDetails?.fullerName}
-                </Typography>
-
+                  <Typography variant="subtitle2">Nome completo:</Typography>
+                  <Typography variant="body2">
+                    {nameDetails?.fullerName}
+                  </Typography>
                 </>
-              
-                )}
-                {/* Imagem */}
-                {img && (
-                  <Paper
-                    elevation={6}
+              )}
+              {/* Imagem */}
+              {img && (
+                <Paper
+                  elevation={6}
+                  sx={{
+                    mt: "0.5rem",
+                    width: 180,
+                    height: 200,
+                    position: "relative",
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    p: 1,
+                  }}
+                >
+                  <Image src={img} layout="fill" />
+                  <Box
                     sx={{
-                      mt: "0.5rem",
-                      width: 180,
-                      height: 200,
-                      position: "relative",
-                      objectFit: "cover",
+                      height: 180,
+                      width: 200,
+                      background: "transparent",
                       borderRadius: "10px",
-                      overflow: "hidden",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      p: 1,
+                      transition: "border 1s",
+                      position: "relative",
+                      "&:hover": {
+                        border: "1px solid white",
+                      },
                     }}
-                  >
-                    <Image src={img} layout="fill" />
-                    <Box
-                      sx={{
-                        height: 180,
-                        width: 200,
-                        background: "transparent",
-                        borderRadius: "10px",
-                        transition: "border 1s",
-                        position: "relative",
-                        "&:hover": {
-                          border: "1px solid white",
-                        },
-                      }}
-                    ></Box>
-                  </Paper>
-                )}
-              </Box>
-            </Grid>
-     
+                  ></Box>
+                </Paper>
+              )}
+            </Box>
+          </Grid>
+
           {/* variant */}
           {nameDetails?.variant && (
             <Grid item xs={6}>

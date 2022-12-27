@@ -4,6 +4,7 @@ import cf from "clownface";
 import axios from "axios";
 
 async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
+ 
   const ns = {
     rdf: namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
     rdfs: namespace("http://www.w3.org/2000/01/rdf-schema#"),
@@ -22,9 +23,16 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
   const details = { token: token };
 
   //const jsonld = `${uri}.madsrdf_raw.jsonld`;
-  let madsrdf = `${uri}.madsrdf.nt`;
+  //let madsrdf = `${uri}.madsrdf.nt`;
+  //let uri = `http://id.loc.gov/authorities/names/${token}.rdf`
+  // http://id.loc.gov/authorities/names/n79021614
+
+  // Formats
+  // rdf
+  // madsrdf_raw.jsonld
+  // madsrdf.rdf
   const dataset = await fetch(
-    `http://id.loc.gov/authorities/names/${token}.madsrdf.rdf`
+    `${uri}.madsrdf.rdf`
   ).then((response) => response.dataset());
 
   const tbbt = cf({ dataset });
@@ -35,11 +43,12 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
   details["name"] = personalName;
 
   //fullerName
-  const fullerName = authority.out(ns.madsrdf.fullerName).map((name) => {
-    const label = name.out(ns.rdfs.label).value;
-    return label;
-  });
-  details["fullerName"] = fullerName;
+
+  let fullerName = authority.out(ns.madsrdf.fullerName);
+  if (fullerName._context.length > 0) {
+    let fullerNameLabel = fullerName.out(ns.rdfs.label).value;
+    details["fullerName"] = fullerNameLabel;
+  }
 
   //variant
   let hasVariant = authority.out(ns.madsrdf.hasVariant);
@@ -55,27 +64,57 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
   let rwo = tbbt.namedNode(rwo_uri);
 
   // birth
+  let birth = {}
+
+  // birthDate
+
+  let birthDate = rwo.out(ns.madsrdf.birthDate)
+  birthDate.forEach((birthNode) => {
+    let label = birthNode.out(ns.rdfs.label);
+    if (label._context.length > 0) { 
+      birth["date"] = label.value.replace("(edtf) ", "")
+      details["birth"] = birth;
+    } else {
+      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+      birth["date"] = label
+      details["birth"] = birth;
+    }
+  });
+
+  // birthPlace
+
   let birthPlace = rwo.out(ns.madsrdf.birthPlace);
-  let birthPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-  let birthDate = rwo.out(ns.madsrdf.birthDate).out(ns.rdfs.label).value;
-  let birth = {
-    place: birthPlacelabel,
-    date: birthDate.replace("(edtf) ", ""),
-  };
-  details["birth"] = birth;
+  birthPlace.forEach((birthNode) => {
+    let label = birthNode.out(ns.rdfs.label);
+    if (label._context.length > 0) {
+      birth["place"] = label.value
+      details["birth"] = birth;
+    } else {
+      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+      birth["place"] = label
+      details["birth"] = birth;
+    }
+  });
+
 
   // death
+  let death = {}
   let deathPlace = rwo.out(ns.madsrdf.deathPlace);
-
+ 
+  
   if (deathPlace._context.length > 0) {
+    
     let deathPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-    let deathDate = rwo.out(ns.madsrdf.deathDate).out(ns.rdfs.label).value;
-    let death = {
-      place: deathPlacelabel,
-      date: deathDate.replace("(edtf) ", ""),
-    };
+    death["place"] = deathPlacelabel
     details["death"] = death;
   }
+  let deathDate = rwo.out(ns.madsrdf.deathDate)
+  if (deathDate._context.length > 0) {
+    let date = deathDate.out(ns.rdfs.label).value
+    death["date"] = date.replace("(edtf) ", "")
+    details["death"] = death;
+  }
+  
 
   // Imagem
   let hasCloseExternalAuthority = authority.out(

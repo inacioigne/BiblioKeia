@@ -1,0 +1,207 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n86001949> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:marcKey "1001 $aWallace, David Foster" ;
+    identifiers:lccn "n 86001949" ;
+    identifiers:local "(OCoLC)oca01614721" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1986-05-22T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2016-06-13T17:23:27"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Wallace, David Foster" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PS3573.A425635" ] ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Wallace, David Foster" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/177904>,
+        <http://www.wikidata.org/entity/Q313246> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++86001949#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "(in obituary published Sept. 14: David Foster Wallace; b. in Ithaca, N.Y.; d. Friday [Sept. 12, 2008], Claremont, Calif., aged 46; author of prodigiously observant, exuberantly plotted, grammatically and etymologically challenging, philosophically probing, and culturally hyper-contemporary novels, stories, and essays)" ;
+            madsrdf:citationSource "New York times WWW site, Sept. 15, 2008" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(David Foster Wallace; b. Feb. 21, 1962, Ithaca, N.Y.; University of Arizona, M.F.A., 1987; Pomona College, Claremont, Calif., Roy Edward Disney Professor in Creative Writing, 2002- )" ;
+            madsrdf:citationSource "Biog. resource center (Contemp. authors), May 5, 2005" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "CIP t.p. (David Foster Wallace)" ;
+            madsrdf:citationSource "His The broom of the system, 1987:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n86001949> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/resources/works/1035436> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Girl with curious hair" .
+
+<http://id.loc.gov/resources/works/13203657> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Everything and more : a compact history of infinity" .
+
+<http://id.loc.gov/resources/works/13437398> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Oblivion" .
+
+<http://id.loc.gov/resources/works/13663873> a bf:Work ;
+    bflc:aap "Wallace, David Foster. broom of the system" .
+
+<http://id.loc.gov/resources/works/13934531> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Consider the lobster and other essays" .
+
+<http://id.loc.gov/resources/works/14556717> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Infinite jest : a novel" .
+
+<http://id.loc.gov/resources/works/14888833> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Selected essays from Consider the lobster and other essays" .
+
+<http://id.loc.gov/resources/works/15227126> a bf:Work ;
+    bflc:aap "Wallace, David Foster. McCain's promise : aboard the Straight Talk Express with John McCain and a whole bunch of actual reporters, thinking about hope" .
+
+<http://id.loc.gov/resources/works/15559788> a bf:Work ;
+    bflc:aap "Wallace, David Foster. This is water : some thoughts, delivered on a significant occasion about living a compassionate life" .
+
+<http://id.loc.gov/resources/works/15736803> a bf:Work ;
+    bflc:aap "Moe, Eric. Tri-Stan" .
+
+<http://id.loc.gov/resources/works/15958230> a bf:Work ;
+    bflc:aap "Lipsky, David, 1965- Although of course you end up becoming yourself : a road trip with David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/16527316> a bf:Work ;
+    bflc:aap "Wallace, David Foster. pale king : an unfinished novel" .
+
+<http://id.loc.gov/resources/works/16630568> a bf:Work ;
+    bflc:aap "Wallace, David Foster The Pale King" .
+
+<http://id.loc.gov/resources/works/1673143> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Brief interviews with hideous men" .
+
+<http://id.loc.gov/resources/works/16765872> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Everything and more : a compact history of infinity" .
+
+<http://id.loc.gov/resources/works/17203014> a bf:Work ;
+    bflc:aap "Max, D. T. (Daniel T.) Every love story is a ghost story : a life of David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/17252552> a bf:Work ;
+    bflc:aap "Wallace, David Foster. pale king : an unfinished novel" .
+
+<http://id.loc.gov/resources/works/17317147> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Both flesh and not : essays" .
+
+<http://id.loc.gov/resources/works/17741178> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Signifying rappers" .
+
+<http://id.loc.gov/resources/works/18268609> a bf:Work ;
+    bflc:aap "Wallace, David Foster. David Foster Wallace Reader" .
+
+<http://id.loc.gov/resources/works/18367133> a bf:Work ;
+    bflc:aap "Cahn, Steven M., Freedom and the self : essays on the philosophy of David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/18516409> a bf:Work ;
+    bflc:aap "Coleman, Philip, David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/19204553> a bf:Work ;
+    bflc:aap "Miller, Adam S., Gospel according to David Foster Wallace : boredom and addiction in an age of distraction" .
+
+<http://id.loc.gov/resources/works/20364611> a bf:Work ;
+    bflc:aap "The Journal of David Foster Wallace studies" .
+
+<http://id.loc.gov/resources/works/20580212> a bf:Work ;
+    bflc:aap "Wallace, David Foster David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/20580566> a bf:Work ;
+    bflc:aap "Wallace, David Foster David Foster Wallace" .
+
+<http://id.loc.gov/resources/works/2088139> a bf:Work ;
+    bflc:aap "Wallace, David Foster. Infinite jest : a novel" .
+
+<http://id.loc.gov/resources/works/20978468> a bf:Work ;
+    bflc:aap "Dolo, Eva, David Foster Wallace und die kommunikative Krise der literarischen Postmoderne : die Rückkehr des Autors und die Geburt des engagierten Lesers" .
+
+<http://id.loc.gov/resources/works/21012147> a bf:Work ;
+    bflc:aap "Boswell, Marshall, 1965- Wallace effect : David Foster Wallace and the contemporary literary imagination" .
+
+<http://id.loc.gov/resources/works/21057496> a bf:Work ;
+    bflc:aap "Miller, Adrienne In the land of men" .
+
+<http://id.loc.gov/resources/works/2470071> a bf:Work ;
+    bflc:aap "Costello, Mark. Signifying rappers : rap and race in the urban present" .
+
+<http://id.loc.gov/resources/works/3824268> a bf:Work ;
+    bflc:aap "Wallace, David Foster. broom of the system" .
+
+<http://id.loc.gov/resources/works/3825720> a bf:Work ;
+    bflc:aap "Wallace, David Foster. broom of the system" .
+
+<http://id.loc.gov/resources/works/692288> a bf:Work ;
+    bflc:aap "Wallace, David Foster. supposedly fun thing I'll never do again : essays and arguments" .
+
+<http://id.loc.gov/rwo/agents/n86001949> a bf:Person,
+        madsrdf:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Wallace, David Foster" ;
+    bflc:contributorTo <http://id.loc.gov/resources/works/1035436>,
+        <http://id.loc.gov/resources/works/13203657>,
+        <http://id.loc.gov/resources/works/13437398>,
+        <http://id.loc.gov/resources/works/13663873>,
+        <http://id.loc.gov/resources/works/13934531>,
+        <http://id.loc.gov/resources/works/14556717>,
+        <http://id.loc.gov/resources/works/14888833>,
+        <http://id.loc.gov/resources/works/15227126>,
+        <http://id.loc.gov/resources/works/15550351>,
+        <http://id.loc.gov/resources/works/15559788>,
+        <http://id.loc.gov/resources/works/15736803>,
+        <http://id.loc.gov/resources/works/15958230>,
+        <http://id.loc.gov/resources/works/16527316>,
+        <http://id.loc.gov/resources/works/16630568>,
+        <http://id.loc.gov/resources/works/1673143>,
+        <http://id.loc.gov/resources/works/16765872>,
+        <http://id.loc.gov/resources/works/17252552>,
+        <http://id.loc.gov/resources/works/17317147>,
+        <http://id.loc.gov/resources/works/17741178>,
+        <http://id.loc.gov/resources/works/18268609>,
+        <http://id.loc.gov/resources/works/18460678>,
+        <http://id.loc.gov/resources/works/2088139>,
+        <http://id.loc.gov/resources/works/2470071>,
+        <http://id.loc.gov/resources/works/3824268>,
+        <http://id.loc.gov/resources/works/3825720>,
+        <http://id.loc.gov/resources/works/692288> ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/15550351>,
+        <http://id.loc.gov/resources/works/17203014>,
+        <http://id.loc.gov/resources/works/18367133>,
+        <http://id.loc.gov/resources/works/18460678>,
+        <http://id.loc.gov/resources/works/18516409>,
+        <http://id.loc.gov/resources/works/19204553>,
+        <http://id.loc.gov/resources/works/20364611>,
+        <http://id.loc.gov/resources/works/20580212>,
+        <http://id.loc.gov/resources/works/20580566>,
+        <http://id.loc.gov/resources/works/20978468>,
+        <http://id.loc.gov/resources/works/21012147>,
+        <http://id.loc.gov/resources/works/21057496> ;
+    madsrdf:birthDate [ a skos:Concept ;
+            rdfs:label "(edtf) 1962-02-21" ] ;
+    madsrdf:deathDate [ a skos:Concept ;
+            rdfs:label "(edtf) 2008-02-12" ] .
+
+<http://id.loc.gov/resources/works/15550351> a bf:Work ;
+    bflc:aap "Celebrating the life and work of David Foster Wallace, 1962-2008" .
+
+<http://id.loc.gov/resources/works/18460678> a bf:Work ;
+    bflc:aap "Garner, Bryan A. Quack this way : David Foster Wallace & Bryan A. Garner talk language and writing" .
+

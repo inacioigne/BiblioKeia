@@ -13,6 +13,8 @@ import Footer from "../components/Footer";
 
 // BiblioKeia Hooks
 //import { useSearch } from "src/providers/search"
+// BiblioKeia Hooks
+import { useAlertBK } from "src/providers/alerts";
 
 import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -35,6 +37,8 @@ const RootStyled = styled("div")(({ theme }) => ({
 }));
 
 export default function Home() {
+  const {openSnack, setOpenSnack} = useAlertBK()
+  //console.log("A", openSnack)
   return (
     <>
       {/* Imagem */}

@@ -19,13 +19,15 @@ import {
   Grid,
 } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
-import Fields from "src/admin/components/thesaurus/names/fields";
+//import Fields from "src/admin/components/thesaurus/names/fields";
 import CardNamesBK from "src/admin/components/thesaurus/names/cardBK";
-import QueryNamesBK from "src/services/thesaurus/names/query";
+import QueryNamesBK from "src/services/thesaurus/names/queryBK";
 import SearchLCNAF from "src/admin/components/thesaurus/names/searchLCNAF";
+import Type from "src/admin/components/thesaurus/names/inputs/type";
+import AuthoritySearch from "src/admin/components/thesaurus/names/inputs/authoritySearch";
 
 // React Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function SearchBK({
   open,
@@ -36,11 +38,18 @@ export default function SearchBK({
   setName,
   response,
   setResponse,
+  handleSearch,
+  searchAuthority,
+  disabled,
+  setDisabled,
 }) {
   const [nameDetails, setNameDetails] = useState(null);
   const [img, setImg] = useState(null);
   const [openLCNAF, setOpenLCNAF] = useState(false);
-  const [nameLCNAF, setNameLCNAF] = useState("");
+  
+  useEffect(() => {
+    setNameDetails(null)
+  }, [response])
 
   const handleClose = () => {
     setOpen(false);
@@ -62,14 +71,22 @@ export default function SearchBK({
       <DialogContent>
         <Grid container>
           <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
-            <Fields
-              setOpen={setOpen}
-              type={type}
-              setType={setType}
-              name={name}
-              setName={setName}
-              setResponse={setResponse}
-            />
+     
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1rem",
+              }}
+            >
+              <Type setType={setType} type={type} />
+              <AuthoritySearch
+                handleSearch={handleSearch}
+                name={name}
+                setName={setName}
+                searchAuthority={searchAuthority}
+              />
+            </Box>
             {response.length > 0 ? (
               <>
                 <Typography
@@ -100,8 +117,8 @@ export default function SearchBK({
                 <i>Nenhum registro encontrado:</i>
                 <Button
                   onClick={() => {
+                    //console.log(name)
                     setOpenLCNAF(true);
-                    setNameLCNAF(name);
                   }}
                 >
                   Importar registros
@@ -110,19 +127,30 @@ export default function SearchBK({
             )}
           </Grid>
           <Grid item xs={7} sx={{ pl: "1rem" }}>
-            {nameDetails && <CardNamesBK nameDetails={nameDetails} img={img} />}
+            {nameDetails && (
+              <CardNamesBK
+                setOpen={setOpen}
+                setName={setName}
+                nameDetails={nameDetails}
+                img={img}
+                setDisabled={setDisabled}
+                disabled={disabled}
+              />
+            )}
           </Grid>
         </Grid>
       </DialogContent>
-      <SearchLCNAF
-        open={openLCNAF}
-        setOpen={setOpenLCNAF}
-        nameLCNAF={nameLCNAF}
-        setNameLCNAF={setNameLCNAF}
-        setNameDetails={setNameDetails}
-        setImgBK={setImg}
-        name={name}
-      />
+      {openLCNAF && (
+        <SearchLCNAF
+          open={openLCNAF}
+          setOpen={setOpenLCNAF}
+          //nameLCNAF={nameLCNAF}
+          //setNameLCNAF={setNameLCNAF}
+          setNameDetails={setNameDetails}
+          setImgBK={setImg}
+          name={name}
+        />
+      )}
     </Dialog>
   );
 }

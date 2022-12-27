@@ -1,0 +1,815 @@
+<http://id.loc.gov/authorities/names/n80002329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Machado de Assis, 1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#elementList> _:b7iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b7iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b8iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b7iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b010 .
+_:b8iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b8iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Machado de Assis," .
+_:b010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b11iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b11iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b11iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b14iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b14iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b14iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b14iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Assis, Joaquim Maria Machado de, 1839-1908" .
+_:b14iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b19iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b19iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b20iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b19iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b022 .
+_:b20iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b20iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Assis, Joaquim Maria Machado de," .
+_:b022 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b23iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b022 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b23iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b23iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b26iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b26iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b26iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b26iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Assis, Machado de, 1839-1908" .
+_:b26iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b31iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b31iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b32iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b31iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b034 .
+_:b32iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b32iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Assis, Machado de," .
+_:b034 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b35iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b034 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b35iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b35iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b38iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b38iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b38iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b38iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "De Assis, Joaquim Maria Machado, 1839-1908" .
+_:b38iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b43iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b43iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b44iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b43iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b046 .
+_:b44iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b44iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "De Assis, Joaquim Maria Machado," .
+_:b046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b47iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b47iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b47iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b50iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b50iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b50iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b50iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "De Assis, Machado, 1839-1908" .
+_:b50iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b55iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b55iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b56iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b55iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b058 .
+_:b56iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b56iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "De Assis, Machado," .
+_:b058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b59iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b59iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b59iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b62iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b62iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b62iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b62iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Machado de Assis, Joaquim Maria, 1839-1908" .
+_:b62iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b67iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b67iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b68iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b67iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b070 .
+_:b68iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b68iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Machado de Assis, Joaquim Maria," .
+_:b070 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b71iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b070 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b71iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b71iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b74iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b74iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b74iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b74iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Machado de Assis, Joaquín María, 1839-1908" .
+_:b74iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b79iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b79iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b80iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b79iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b082 .
+_:b80iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b80iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Machado de Assis, Joaquín María," .
+_:b082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b83iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b83iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b83iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b86iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b86iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b86iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b86iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Mashado de Assiz, Zhoakin, 1839-1908" .
+_:b86iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementList> _:b91iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b91iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b92iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b91iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b094 .
+_:b92iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b92iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "Mashado de Assiz, Zhoakin," .
+_:b094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b95iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b95iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b95iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#elementValue> "1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://id.loc.gov/ontologies/bflc/marcKey> "1001 $aMachado de Assis,$d1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#classification> _:b100iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b100iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/lcc#ClassNumber> .
+_:b100iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#code> "PQ9697.M18" .
+_:b100iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://id.loc.gov/authorities/classification/PQ9697.M18> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q311145> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://id.worldcat.org/fast/48407> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_LCNAF> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://viaf.org/viaf/sourceID/LC%7Cn++80002329#skos:Concept> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://id.worldcat.org/fast/48407> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q311145> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://id.loc.gov/rwo/agents/n80002329> .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.w3.org/2000/01/rdf-schema#label> "Machado de Assis, 1839-1908" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#birthDate> _:b118iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b118iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b118iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1839-06-21" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#deathDate> _:b122iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b122iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b122iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1908-09-29" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:b126iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b126iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Affiliation> .
+_:b126iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#affiliationStart> "1897" .
+_:b126iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#affiliationEnd> "1908" .
+_:b126iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#organization> <http://id.loc.gov/authorities/names/n82059239> .
+<http://id.loc.gov/authorities/names/n82059239> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Organization> .
+<http://id.loc.gov/authorities/names/n82059239> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Academia Brasileira de Letras" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#entityDescriptor> _:b136iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b136iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b136iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/2000/01/rdf-schema#label> "(lcdgt) Authors, Black" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#birthPlace> <http://id.loc.gov/authorities/names/n79060405> .
+<http://id.loc.gov/authorities/names/n79060405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/authorities/names/n79060405> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rio de Janeiro (Brazil)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#deathPlace> <http://id.loc.gov/authorities/names/n79060405> .
+<http://id.loc.gov/authorities/names/n79060405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/authorities/names/n79060405> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rio de Janeiro (Brazil)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n79128015> .
+<http://id.loc.gov/authorities/names/n79128015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/authorities/names/n79128015> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Brazil" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85092863> .
+<http://id.loc.gov/authorities/subjects/sh85092863> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85092863> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Novelists" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85103733> .
+<http://id.loc.gov/authorities/subjects/sh85103733> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85103733> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Poets" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85039342> .
+<http://id.loc.gov/authorities/subjects/sh85039342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85039342> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Dramatists" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85034154> .
+<http://id.loc.gov/authorities/subjects/sh85034154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85034154> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Critics" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85108733> .
+<http://id.loc.gov/authorities/subjects/sh85108733> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85108733> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Public officers" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#occupation> _:b172iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b172iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+_:b172iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/2000/01/rdf-schema#label> "(lcsh) Bureaucrats" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/por> .
+<http://id.loc.gov/vocabulary/languages/por> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Language> .
+<http://id.loc.gov/vocabulary/languages/por> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Portuguese"@en .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7862609> .
+<http://id.loc.gov/resources/works/7862609> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7862609> <http://id.loc.gov/ontologies/bflc/aap> "Abreu, Modesto de, 1901- ...Biógrafos e críticos de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/13072209> .
+<http://id.loc.gov/resources/works/13072209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13072209> <http://id.loc.gov/ontologies/bflc/aap> "Academia Brasileira de Letras. Atas da Academia Brasileira de Letras : presidência Machado de Assis, 1896-1908" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19100135> .
+<http://id.loc.gov/resources/works/19100135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19100135> <http://id.loc.gov/ontologies/bflc/aap> "Aidoo, Lamonte, 1986- Emerging dialogues on Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18745890> .
+<http://id.loc.gov/resources/works/18745890> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18745890> <http://id.loc.gov/ontologies/bflc/aap> "Baptista, Abel Barros, 1955- Três emendas : ensaios machadianos de propósito cosmopolita" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7505767> .
+<http://id.loc.gov/resources/works/7505767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7505767> <http://id.loc.gov/ontologies/bflc/aap> "Barbosa, Edgar, 1909-1976. Três ensaios" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15574615> .
+<http://id.loc.gov/resources/works/15574615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15574615> <http://id.loc.gov/ontologies/bflc/aap> "Barbosa, Francisco de Assis, 1914- Machado de Assis em miniatura : um perfil biográfico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6548007> .
+<http://id.loc.gov/resources/works/6548007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6548007> <http://id.loc.gov/ontologies/bflc/aap> "Barbosa, Ruy, 1849-1923. adeus da Academia a Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15945715> .
+<http://id.loc.gov/resources/works/15945715> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15945715> <http://id.loc.gov/ontologies/bflc/aap> "Bastos, Dau, 1960- Machado de Assis : num recanto, um mundo inteiro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20387934> .
+<http://id.loc.gov/resources/works/20387934> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20387934> <http://id.loc.gov/ontologies/bflc/aap> "Bellin, Greicy Pinto From European modernity to pan-American national identity" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6425254> .
+<http://id.loc.gov/resources/works/6425254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6425254> <http://id.loc.gov/ontologies/bflc/aap> "Bello, José Maria, 1880-1959. Inteligencia do Brasil" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7339760> .
+<http://id.loc.gov/resources/works/7339760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7339760> <http://id.loc.gov/ontologies/bflc/aap> "Bello, José Maria, 1880-1959. Novos estudos criticos (Machado de Assis," .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18853620> .
+<http://id.loc.gov/resources/works/18853620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18853620> <http://id.loc.gov/ontologies/bflc/aap> "Borges, Claber, Indícios homoeróticos em Dom Casmurro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/17862946> .
+<http://id.loc.gov/resources/works/17862946> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17862946> <http://id.loc.gov/ontologies/bflc/aap> "Bosi, Alfredo, 1936- Machado de Assis : cadeira 23, ocupante 1 (fundador)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/722149> .
+<http://id.loc.gov/resources/works/722149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/722149> <http://id.loc.gov/ontologies/bflc/aap> "Brazil. Departamento de Imprensa Nacional. Machado de Assis : servidor público" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/2236161> .
+<http://id.loc.gov/resources/works/2236161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2236161> <http://id.loc.gov/ontologies/bflc/aap> "Caldwell, Helen. Machado de Assis; the Brazilian master and his novels" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6576021> .
+<http://id.loc.gov/resources/works/6576021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6576021> <http://id.loc.gov/ontologies/bflc/aap> "Camara, Joaquim Mattoso. Ensaios machadianos; lingua e estilo" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19408367> .
+<http://id.loc.gov/resources/works/19408367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19408367> <http://id.loc.gov/ontologies/bflc/aap> "Camilo Castelo Branco e Machado de Assis em diálogo : para além do romantismo e do realismo" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19083744> .
+<http://id.loc.gov/resources/works/19083744> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19083744> <http://id.loc.gov/ontologies/bflc/aap> "Capitu" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7952314> .
+<http://id.loc.gov/resources/works/7952314> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7952314> <http://id.loc.gov/ontologies/bflc/aap> "Cardoso, Wilton. Tempo e memória em Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/274290> .
+<http://id.loc.gov/resources/works/274290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/274290> <http://id.loc.gov/ontologies/bflc/aap> "Casasanta, Mario. Minas e os mineiros na obra de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7097771> .
+<http://id.loc.gov/resources/works/7097771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7097771> <http://id.loc.gov/ontologies/bflc/aap> "Castello, J. Aderaldo (José Aderaldo) Realidade e ilusão em Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19974684> .
+<http://id.loc.gov/resources/works/19974684> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19974684> <http://id.loc.gov/ontologies/bflc/aap> "Colóquio Casa Dirce (1st : 2015 : Casa de Leitura Dirce Côrtes Riedel) Múltiplo Machado" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1447632> .
+<http://id.loc.gov/resources/works/1447632> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1447632> <http://id.loc.gov/ontologies/bflc/aap> "Cordeiro, Francisca de Basto. Machado de Assis que eu vi" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20062833> .
+<http://id.loc.gov/resources/works/20062833> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20062833> <http://id.loc.gov/ontologies/bflc/aap> "Corrêa, Gabriel, Há diferença? : se há diferença, desmancha-se... : representação histórica nas crônicas Gazeta de Holanda, de Machado de Assis (inclui texto integral)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18098707> .
+<http://id.loc.gov/resources/works/18098707> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18098707> <http://id.loc.gov/ontologies/bflc/aap> "Coutinho, Afrânio filosofia de Machado de Assís" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18798879> .
+<http://id.loc.gov/resources/works/18798879> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18798879> <http://id.loc.gov/ontologies/bflc/aap> "Crestani, Jaison Luis, Machado de Assis e o processo de criação literária : estudo comparativo das narrativas publicadas n' A estação (1879-1884), na Gazeta de notícias (1881-1884) e nas coletâneas Papéis avulsos (1882) e Histórias sem data (1884)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/21134092> .
+<http://id.loc.gov/resources/works/21134092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/21134092> <http://id.loc.gov/ontologies/bflc/aap> "Escritor por escritor, Machado de Assis segundo seus pares, 1908-1939" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/11470150> .
+<http://id.loc.gov/resources/works/11470150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11470150> <http://id.loc.gov/ontologies/bflc/aap> "Espelho" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15545866> .
+<http://id.loc.gov/resources/works/15545866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15545866> <http://id.loc.gov/ontologies/bflc/aap> "Fernandes, Rinaldo de. Capitu mandou flores : contos para Machado de Assis nos cem anos de sua morte" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/8427096> .
+<http://id.loc.gov/resources/works/8427096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/8427096> <http://id.loc.gov/ontologies/bflc/aap> "Fonseca, Gondin da. Machado de Assis e o hipopótamo; biografia e análise" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19227344> .
+<http://id.loc.gov/resources/works/19227344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19227344> <http://id.loc.gov/ontologies/bflc/aap> "França Neto, João Irineu de Representação literária de escravidão na contística machadiana" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7435315> .
+<http://id.loc.gov/resources/works/7435315> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7435315> <http://id.loc.gov/ontologies/bflc/aap> "Gomes, Eugenio, 1897- Espelho contra espelho; estudos e ensaios" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7016942> .
+<http://id.loc.gov/resources/works/7016942> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7016942> <http://id.loc.gov/ontologies/bflc/aap> "Grieco, Agrippino, 1888-1973. Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7643849> .
+<http://id.loc.gov/resources/works/7643849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7643849> <http://id.loc.gov/ontologies/bflc/aap> "Grieco, Agrippino, 1888-1973. Viagem em tôrno a Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19976939> .
+<http://id.loc.gov/resources/works/19976939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19976939> <http://id.loc.gov/ontologies/bflc/aap> "Guimarães, Hélio, Machado de Assis, o escritor que nos lê : as figuras machadianas através da crítica e das polêmicas" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7851307> .
+<http://id.loc.gov/resources/works/7851307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7851307> <http://id.loc.gov/ontologies/bflc/aap> "Jucá Filho, Cândido. pensamento e a expressão em Machado de Assis .." .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/13789860> .
+<http://id.loc.gov/resources/works/13789860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13789860> <http://id.loc.gov/ontologies/bflc/aap> "Kohler, Florent. Schopenhauer, Machado de Assis, Italo Svevo, ou, L'homme sans dieu" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6926043> .
+<http://id.loc.gov/resources/works/6926043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6926043> <http://id.loc.gov/ontologies/bflc/aap> "Lima, Alceu Amoroso, 1893-1983. Três ensaios sôbre Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20183150> .
+<http://id.loc.gov/resources/works/20183150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20183150> <http://id.loc.gov/ontologies/bflc/aap> "Luz, Eduardo, romance que não foi lido : Helena, de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20934852> .
+<http://id.loc.gov/resources/works/20934852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20934852> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis em perspectiva" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/4975965> .
+<http://id.loc.gov/resources/works/4975965> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/4975965> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908 Memórias póstumas de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15667235> .
+<http://id.loc.gov/resources/works/15667235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15667235> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. A olhos vistos : uma iconografia de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/16419194> .
+<http://id.loc.gov/resources/works/16419194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16419194> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Do teatro : textos críticos e escritos diversos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15537651> .
+<http://id.loc.gov/resources/works/15537651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15537651> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. homem célebre : Machado recriado" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18824247> .
+<http://id.loc.gov/resources/works/18824247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18824247> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : contos para muitas vozes = Machado de Assis : cuentos para muchas voces" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/4920901> .
+<http://id.loc.gov/resources/works/4920901> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/4920901> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. velho Senado" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/748388> .
+<http://id.loc.gov/resources/works/748388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/748388> <http://id.loc.gov/ontologies/bflc/aap> "Machado, José Bettencourt. Machado of Brazil, the life and times of Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/16082139> .
+<http://id.loc.gov/resources/works/16082139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16082139> <http://id.loc.gov/ontologies/bflc/aap> "Magalhães Júnior, R. (Raimundo), 1907-1981. Machado de Assis : vida e obra" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1391204> .
+<http://id.loc.gov/resources/works/1391204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1391204> <http://id.loc.gov/ontologies/bflc/aap> "Magalhães Júnior, R. (Raimundo), 1907-1981. Vida e obra de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15929793> .
+<http://id.loc.gov/resources/works/15929793> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15929793> <http://id.loc.gov/ontologies/bflc/aap> "Marcondes, Ayrton Cesar, 1947- Machado de Assis : exercício de admiração" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7184536> .
+<http://id.loc.gov/resources/works/7184536> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7184536> <http://id.loc.gov/ontologies/bflc/aap> "Massa, Jean Michel. Machado de Assis, traducteur" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15574982> .
+<http://id.loc.gov/resources/works/15574982> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15574982> <http://id.loc.gov/ontologies/bflc/aap> "Meyer, Augusto, 1902-1970. Machado de Assis, 1935-1958" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/4316526> .
+<http://id.loc.gov/resources/works/4316526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/4316526> <http://id.loc.gov/ontologies/bflc/aap> "Montello, Josué, 1917-2006. Presidente Machado de Assis nos papéis e relíquias da Academia Brasileira" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7143233> .
+<http://id.loc.gov/resources/works/7143233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7143233> <http://id.loc.gov/ontologies/bflc/aap> "Moog, Clodomir Vianna, 1906-1988. Heróis da decadència : Petrónio, Cervantes, Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/8466454> .
+<http://id.loc.gov/resources/works/8466454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/8466454> <http://id.loc.gov/ontologies/bflc/aap> "Moreira, Thiers Martins. Quincas Borba; ou, O pessimismo irônico, diálogo entre o filósofo e Brás Cubas" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19483523> .
+<http://id.loc.gov/resources/works/19483523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19483523> <http://id.loc.gov/ontologies/bflc/aap> "Oliveira, Paulo Motta. Diálogos possíveis : Camilo Castelo Branco, Machado de Assis e a literatura do século XIX" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6546434> .
+<http://id.loc.gov/resources/works/6546434> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6546434> <http://id.loc.gov/ontologies/bflc/aap> "Pati, Francisco. Dicionário de Machado de Assis; história e biografia das personagens" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/5989345> .
+<http://id.loc.gov/resources/works/5989345> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/5989345> <http://id.loc.gov/ontologies/bflc/aap> "Paulafreitas, Luis. Perfil de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6449236> .
+<http://id.loc.gov/resources/works/6449236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6449236> <http://id.loc.gov/ontologies/bflc/aap> "Peregrino Júnior, João, 1898-1983. Doença e constituição de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1298445> .
+<http://id.loc.gov/resources/works/1298445> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1298445> <http://id.loc.gov/ontologies/bflc/aap> "Peregrino Júnior, João, 1898-1983. Doença e constituição de Machado de Assis de Peregrino Júnior" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6081440> .
+<http://id.loc.gov/resources/works/6081440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6081440> <http://id.loc.gov/ontologies/bflc/aap> "Peregrino Júnior, João, 1898-1983. Machado de Assis na palavra de Peregrino Junior [et al" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10462571> .
+<http://id.loc.gov/resources/works/10462571> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10462571> <http://id.loc.gov/ontologies/bflc/aap> "Peregrino, Umberto, 1911- guerra do Paraguai, na obra de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7002949> .
+<http://id.loc.gov/resources/works/7002949> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7002949> <http://id.loc.gov/ontologies/bflc/aap> "Pereira, Lúcia Miguel, 1901-1959. Machado de Assis ; estudo crítico e biográfico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7837741> .
+<http://id.loc.gov/resources/works/7837741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7837741> <http://id.loc.gov/ontologies/bflc/aap> "Pereira, Lúcia Miguel, 1901-1959. Machado de Assis : estudo critico e biografico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/3444442> .
+<http://id.loc.gov/resources/works/3444442> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/3444442> <http://id.loc.gov/ontologies/bflc/aap> "Pereira, Lúcia Miguel, 1901-1959. Machado de Assis : estudo crítico e biográfico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7906978> .
+<http://id.loc.gov/resources/works/7906978> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7906978> <http://id.loc.gov/ontologies/bflc/aap> "Pereira, Lúcia Miguel, 1901-1959. Machado de Assis; estudo crítico e biográfico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20420178> .
+<http://id.loc.gov/resources/works/20420178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20420178> <http://id.loc.gov/ontologies/bflc/aap> "Petragia, Benito, Opacam-se vidros : o olhar de Machado de Assis sobre o Brasil em 50 crônicas da série \"A semana\"" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/8446744> .
+<http://id.loc.gov/resources/works/8446744> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/8446744> <http://id.loc.gov/ontologies/bflc/aap> "Pimentel, Antonio Fonseca, 1916- Machado de Assis, e outros estudos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/3111663> .
+<http://id.loc.gov/resources/works/3111663> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/3111663> <http://id.loc.gov/ontologies/bflc/aap> "Pinto, Augusto Corrêa, 1915- Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/14717447> .
+<http://id.loc.gov/resources/works/14717447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14717447> <http://id.loc.gov/ontologies/bflc/aap> "Piza, Daniel. Machado de Assis : um gênio brasileiro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/5973683> .
+<http://id.loc.gov/resources/works/5973683> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/5973683> <http://id.loc.gov/ontologies/bflc/aap> "Pontes, Eloy. vida contradictoria de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/3637231> .
+<http://id.loc.gov/resources/works/3637231> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/3637231> <http://id.loc.gov/ontologies/bflc/aap> "Pontes, Joel. Machado de Assis e o teatro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6688055> .
+<http://id.loc.gov/resources/works/6688055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6688055> <http://id.loc.gov/ontologies/bflc/aap> "Prata, Edson G. Machado de Assis, o homem e a obra vistos por todos os ângulos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/2163155> .
+<http://id.loc.gov/resources/works/2163155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2163155> <http://id.loc.gov/ontologies/bflc/aap> "Pujol, Alfredo, 1865-1930. Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/15265240> .
+<http://id.loc.gov/resources/works/15265240> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15265240> <http://id.loc.gov/ontologies/bflc/aap> "Pujol, Alfredo, 1865-1930. Machado de Assis : curso literário em sete conferências na Sociedade de Cultura Artística de São Paulo" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/2164329> .
+<http://id.loc.gov/resources/works/2164329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2164329> <http://id.loc.gov/ontologies/bflc/aap> "Rêgo, José Lins do, 1901-1957. Conferências no Prata: Tendências do romance brasileiro. Raul Pompéia. Machado de Assis. Conferências lidas no Colégio Livre de Estudos Superiores, de Buenos Aires, em outubro de 1943" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18461252> .
+<http://id.loc.gov/resources/works/18461252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18461252> <http://id.loc.gov/ontologies/bflc/aap> "Rocha, João Cezar de Castro, Machado de Assis : toward a poetics of emulation" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6431441> .
+<http://id.loc.gov/resources/works/6431441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6431441> <http://id.loc.gov/ontologies/bflc/aap> "Romero, Sílvio, 1851-1914. Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18138998> .
+<http://id.loc.gov/resources/works/18138998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18138998> <http://id.loc.gov/ontologies/bflc/aap> "Rosa, Alberto Machado da. Eça, discípulo de Machado? : Formação de Eça de Queirós (1875-1880)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/19411295> .
+<http://id.loc.gov/resources/works/19411295> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19411295> <http://id.loc.gov/ontologies/bflc/aap> "Santiago, Silviano, Machado : romance" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20235742> .
+<http://id.loc.gov/resources/works/20235742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20235742> <http://id.loc.gov/ontologies/bflc/aap> "Santos, Jaciene de Andrade Textos em trânsito" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/8073920> .
+<http://id.loc.gov/resources/works/8073920> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/8073920> <http://id.loc.gov/ontologies/bflc/aap> "Santos, Miguel (Writer on education) Machado de Assis : o estilista primoroso" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/21746350> .
+<http://id.loc.gov/resources/works/21746350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/21746350> <http://id.loc.gov/ontologies/bflc/aap> "Seidel, Vizette Priscila Por trás da estante" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7059304> .
+<http://id.loc.gov/resources/works/7059304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7059304> <http://id.loc.gov/ontologies/bflc/aap> "Silva, Hélcio Pereira da, 1920- Diálogos com Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/3835630> .
+<http://id.loc.gov/resources/works/3835630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/3835630> <http://id.loc.gov/ontologies/bflc/aap> "Silva, Hélcio Pereira da, 1920- Machado de Assis de roupa nova" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7426114> .
+<http://id.loc.gov/resources/works/7426114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7426114> <http://id.loc.gov/ontologies/bflc/aap> "Silva, Hélcio Pereira da, 1920- megalomania literária de Machado de Assis; ensaio" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20113683> .
+<http://id.loc.gov/resources/works/20113683> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20113683> <http://id.loc.gov/ontologies/bflc/aap> "Silva, Natalino A estética da dissimulação na literatura de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18754335> .
+<http://id.loc.gov/resources/works/18754335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18754335> <http://id.loc.gov/ontologies/bflc/aap> "Simon, Cátia Castilho, Labirintos da realidade : diálogo de Clarice Lispector com Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/8030691> .
+<http://id.loc.gov/resources/works/8030691> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/8030691> <http://id.loc.gov/ontologies/bflc/aap> "Soares, Maria Nazaré Lins, 1934- Machado de Assis e a análise da expressão" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7035308> .
+<http://id.loc.gov/resources/works/7035308> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7035308> <http://id.loc.gov/ontologies/bflc/aap> "Táti, Miécio. mundo de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/22312418> .
+<http://id.loc.gov/resources/works/22312418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/22312418> <http://id.loc.gov/ontologies/bflc/aap> "Teles, Adriana da Costa Uma linhagem capitu" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/21746127> .
+<http://id.loc.gov/resources/works/21746127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/21746127> <http://id.loc.gov/ontologies/bflc/aap> "Teles, Gilberto Mendonça, 1931- A ficção da página" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6515241> .
+<http://id.loc.gov/resources/works/6515241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6515241> <http://id.loc.gov/ontologies/bflc/aap> "Tôrres, Artur de Almeida. linguagem de Rui Barbosa e de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7496561> .
+<http://id.loc.gov/resources/works/7496561> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7496561> <http://id.loc.gov/ontologies/bflc/aap> "Vellinho, Moysés. Machado de Assis : histórias mal contadas e outros assuntos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/2963869> .
+<http://id.loc.gov/resources/works/2963869> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2963869> <http://id.loc.gov/ontologies/bflc/aap> "Viana Filho, Luís, 1908- vida de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/7529708> .
+<http://id.loc.gov/resources/works/7529708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/7529708> <http://id.loc.gov/ontologies/bflc/aap> "Viana Filho, Luís, 1908- vida de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/18861615> .
+<http://id.loc.gov/resources/works/18861615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18861615> <http://id.loc.gov/ontologies/bflc/aap> "Weber, João Hernesto, 1951- Machado de Assis : uma apresentação" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/2121133> .
+<http://id.loc.gov/resources/works/2121133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2121133> <http://id.loc.gov/ontologies/bflc/aap> "Werneck, Maria Helena. homem encadernado : Machado de Assis na escrita das biografias" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/6177868> .
+<http://id.loc.gov/resources/works/6177868> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/6177868> <http://id.loc.gov/ontologies/bflc/aap> "Woll, Dieter. Machado de Assis; die Entwicklung seines erzählerischen Werkes" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/20947938> .
+<http://id.loc.gov/resources/works/20947938> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/20947938> <http://id.loc.gov/ontologies/bflc/aap> "Wood, Marcus The black butterfly" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12539403> .
+<http://id.loc.gov/resources/works/12539403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12539403> <http://id.loc.gov/ontologies/bflc/aap> "Andrade, Ana Luiza Britto Cezar de, 1947- Transportes pelo olhar de Machado de Assis : passagens entre o livro e o jornal" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17862946> .
+<http://id.loc.gov/resources/works/17862946> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17862946> <http://id.loc.gov/ontologies/bflc/aap> "Bosi, Alfredo, 1936- Machado de Assis : cadeira 23, ocupante 1 (fundador)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14117362> .
+<http://id.loc.gov/resources/works/14117362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14117362> <http://id.loc.gov/ontologies/bflc/aap> "Costa, Flávio Moreira da. Crime feito em casa : contos policiais brasileiros" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/22689555> .
+<http://id.loc.gov/resources/works/22689555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/22689555> <http://id.loc.gov/ontologies/bflc/aap> "Dissidências de gênero e sexualidade na literatura brasileira" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13377866> .
+<http://id.loc.gov/resources/works/13377866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13377866> <http://id.loc.gov/ontologies/bflc/aap> "Hartke, Stephen, 1952- Sons of Noah Wulfstan at the millennium" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15617580> .
+<http://id.loc.gov/resources/works/15617580> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15617580> <http://id.loc.gov/ontologies/bflc/aap> "Hénaux, Victor. Queda que as mulheres têm para os tolos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18890931> .
+<http://id.loc.gov/resources/works/18890931> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18890931> <http://id.loc.gov/ontologies/bflc/aap> "Lísias, Ricardo, 21 contos e crônicas do romantismo brasileiro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12647491> .
+<http://id.loc.gov/resources/works/12647491> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12647491> <http://id.loc.gov/ontologies/bflc/aap> "Lopes, Lucia Leite Ribeiro Prado. Machado de A a X : um dicionário de citações" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18125617> .
+<http://id.loc.gov/resources/works/18125617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18125617> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908 A mão e a luva" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13536908> .
+<http://id.loc.gov/resources/works/13536908> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13536908> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. [Poems]" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13507182> .
+<http://id.loc.gov/resources/works/13507182> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13507182> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. [Poetry]" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15667235> .
+<http://id.loc.gov/resources/works/15667235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15667235> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. A olhos vistos : uma iconografia de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17530282> .
+<http://id.loc.gov/resources/works/17530282> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17530282> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Alienist" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17475426> .
+<http://id.loc.gov/resources/works/17475426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17475426> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. alienist : and other stories of Nineteenth-century Brazil" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14649502> .
+<http://id.loc.gov/resources/works/14649502> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14649502> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Aquarelas do Brasil : contos da nossa música popular" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11893759> .
+<http://id.loc.gov/resources/works/11893759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11893759> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Balas de estalo de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1076584> .
+<http://id.loc.gov/resources/works/1076584> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1076584> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Bons dias! : crônicas, 1888-1889" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2064628> .
+<http://id.loc.gov/resources/works/2064628> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2064628> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Casa velha" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17641084> .
+<http://id.loc.gov/resources/works/17641084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17641084> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Casa velha = The old house" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15562824> .
+<http://id.loc.gov/resources/works/15562824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15562824> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. chapter of hats : selected stories" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10184199> .
+<http://id.loc.gov/resources/works/10184199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10184199> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Chronicas ... (1859-1888)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12579942> .
+<http://id.loc.gov/resources/works/12579942> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12579942> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Chrysalidas" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16240677> .
+<http://id.loc.gov/resources/works/16240677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16240677> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Comentários da semana" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11823960> .
+<http://id.loc.gov/resources/works/11823960> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11823960> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Contos : uma antologia" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10279626> .
+<http://id.loc.gov/resources/works/10279626> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10279626> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Contos avulsos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13847044> .
+<http://id.loc.gov/resources/works/13847044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13847044> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Contos completos de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2083427> .
+<http://id.loc.gov/resources/works/2083427> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2083427> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Contos de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10359075> .
+<http://id.loc.gov/resources/works/10359075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10359075> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Contos esparsos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15960335> .
+<http://id.loc.gov/resources/works/15960335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15960335> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Correspondência de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17391051> .
+<http://id.loc.gov/resources/works/17391051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17391051> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Crônicas : A + B, Gazeta de Holanda" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16419194> .
+<http://id.loc.gov/resources/works/16419194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16419194> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Do teatro : textos críticos e escritos diversos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15712411> .
+<http://id.loc.gov/resources/works/15712411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15712411> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Dom casmurro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1987696> .
+<http://id.loc.gov/resources/works/1987696> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1987696> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Dom Casmurro" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15536410> .
+<http://id.loc.gov/resources/works/15536410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15536410> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. economia em Machado de Assis : o olhar oblíquo do acionista" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16368226> .
+<http://id.loc.gov/resources/works/16368226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16368226> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Empréstimo de ouro : cartas de Machado de Assis a Mário de Alencar" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11952165> .
+<http://id.loc.gov/resources/works/11952165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11952165> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Esau and Jacob : a novel" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15930434> .
+<http://id.loc.gov/resources/works/15930434> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15930434> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Esaú e Jacob" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1770630> .
+<http://id.loc.gov/resources/works/1770630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1770630> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Esaú e Jacob" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1300127> .
+<http://id.loc.gov/resources/works/1300127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1300127> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Helena" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2458186> .
+<http://id.loc.gov/resources/works/2458186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2458186> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Helena" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17860081> .
+<http://id.loc.gov/resources/works/17860081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17860081> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. História de quinze dias" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16909165> .
+<http://id.loc.gov/resources/works/16909165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16909165> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. História de quinze dias, História de trinta dias : crônicas de Machado de Assis, Manassés" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1298447> .
+<http://id.loc.gov/resources/works/1298447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1298447> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Histórias da meia noite" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1083398> .
+<http://id.loc.gov/resources/works/1083398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1083398> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Histórias da meia-noite" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1555636> .
+<http://id.loc.gov/resources/works/1555636> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1555636> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Histórias sem data" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1770428> .
+<http://id.loc.gov/resources/works/1770428> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1770428> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Histórias sem data" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15537651> .
+<http://id.loc.gov/resources/works/15537651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15537651> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. homem célebre : Machado recriado" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2457914> .
+<http://id.loc.gov/resources/works/2457914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2457914> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Iaiá Garcia" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16013737> .
+<http://id.loc.gov/resources/works/16013737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16013737> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. ideal do crítico" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14011118> .
+<http://id.loc.gov/resources/works/14011118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14011118> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Linha reta e linha curva : edição crítica e genética de um conto de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18824247> .
+<http://id.loc.gov/resources/works/18824247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18824247> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : contos para muitas vozes = Machado de Assis : cuentos para muchas voces" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17993832> .
+<http://id.loc.gov/resources/works/17993832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17993832> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : crítica literária e textos diversos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14201756> .
+<http://id.loc.gov/resources/works/14201756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14201756> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : crônicas de bond" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16240693> .
+<http://id.loc.gov/resources/works/16240693> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16240693> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : notas semanais" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17860157> .
+<http://id.loc.gov/resources/works/17860157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17860157> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis : ontem, hoje e sempre" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14020781> .
+<http://id.loc.gov/resources/works/14020781> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14020781> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis & confrades de versos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14045468> .
+<http://id.loc.gov/resources/works/14045468> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14045468> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis & Joaquim Nabuco : correspondência" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15278847> .
+<http://id.loc.gov/resources/works/15278847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15278847> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis afro-descendente : escritos de caramujo (antologia)" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18188705> .
+<http://id.loc.gov/resources/works/18188705> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18188705> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Machado de Assis, seus contos e romances em ponto pequeno; precedidos de introdução traços biográficos e uma exposição intitulada \"Como foi elaborado e a que se destina êste livro,\"" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1754014> .
+<http://id.loc.gov/resources/works/1754014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1754014> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. mão e a luva" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18133005> .
+<http://id.loc.gov/resources/works/18133005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18133005> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. mão e a luva" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/18133017> .
+<http://id.loc.gov/resources/works/18133017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/18133017> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. mão e a luva," .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16282151> .
+<http://id.loc.gov/resources/works/16282151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16282151> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. máximo e as máximas de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16329363> .
+<http://id.loc.gov/resources/works/16329363> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16329363> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. máximo e as máximas de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1515618> .
+<http://id.loc.gov/resources/works/1515618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1515618> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Memorial de Aires" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2255374> .
+<http://id.loc.gov/resources/works/2255374> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2255374> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Memorial de Aires" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1868398> .
+<http://id.loc.gov/resources/works/1868398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1868398> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Memorial de Aires ; O alienista" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2025343> .
+<http://id.loc.gov/resources/works/2025343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2025343> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Memórias póstumas de Brás Cubas" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/19027400> .
+<http://id.loc.gov/resources/works/19027400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/19027400> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Miss dollar & another story" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1801999> .
+<http://id.loc.gov/resources/works/1801999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1801999> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Missa do galo : variações sobre o mesmo tema" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14649383> .
+<http://id.loc.gov/resources/works/14649383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14649383> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. O que pensou e disse Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15600983> .
+<http://id.loc.gov/resources/works/15600983> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15600983> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Obra completa em quatro volumes" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10182751> .
+<http://id.loc.gov/resources/works/10182751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10182751> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Papeis avulsos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13346338> .
+<http://id.loc.gov/resources/works/13346338> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13346338> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Philosopher or dog?" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10454729> .
+<http://id.loc.gov/resources/works/10454729> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10454729> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Poemas de amor de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/16418926> .
+<http://id.loc.gov/resources/works/16418926> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/16418926> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. poesia completa" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1772214> .
+<http://id.loc.gov/resources/works/1772214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1772214> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Poesias completas : Crisálidas, Falenas, Americanas, Ocidentais" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1164521> .
+<http://id.loc.gov/resources/works/1164521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1164521> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. posthumous memoirs of Brás Cubas : a novel" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13770462> .
+<http://id.loc.gov/resources/works/13770462> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13770462> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Queda que as mulheres têm para os tolos : e outros textos" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1043273> .
+<http://id.loc.gov/resources/works/1043273> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1043273> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Quincas Borba" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2283991> .
+<http://id.loc.gov/resources/works/2283991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2283991> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Quincas Borba" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15537621> .
+<http://id.loc.gov/resources/works/15537621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15537621> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Recontando Machado" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10400706> .
+<http://id.loc.gov/resources/works/10400706> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10400706> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Ressurreição" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17780712> .
+<http://id.loc.gov/resources/works/17780712> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17780712> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Resurrection" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11861366> .
+<http://id.loc.gov/resources/works/11861366> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11861366> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Rua Cosme Velho, 18 : relato de restauro do mobiliário de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13535719> .
+<http://id.loc.gov/resources/works/13535719> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13535719> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. senhora" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/17984938> .
+<http://id.loc.gov/resources/works/17984938> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/17984938> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Stories" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1880914> .
+<http://id.loc.gov/resources/works/1880914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1880914> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Teatro completo" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14207756> .
+<http://id.loc.gov/resources/works/14207756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14207756> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Teatro de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14053464> .
+<http://id.loc.gov/resources/works/14053464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14053464> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Teatro de Machado de Assis, Qorpo-Santo e Coelho Neto" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15369397> .
+<http://id.loc.gov/resources/works/15369397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15369397> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Toda poesia de Machado de Assis" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15566734> .
+<http://id.loc.gov/resources/works/15566734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15566734> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Trinta crônicas irreverentes" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/2336029> .
+<http://id.loc.gov/resources/works/2336029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/2336029> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Tu só, to, puro amor ... : comédia" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1536414> .
+<http://id.loc.gov/resources/works/1536414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1536414> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Várias histórias" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14413683> .
+<http://id.loc.gov/resources/works/14413683> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14413683> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. wager : Aires' journal" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10323853> .
+<http://id.loc.gov/resources/works/10323853> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10323853> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. What went on at the baroness'; a tale with a point" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10149981> .
+<http://id.loc.gov/resources/works/10149981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10149981> <http://id.loc.gov/ontologies/bflc/aap> "Machado de Assis, 1839-1908. Yayá Garcia" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15546170> .
+<http://id.loc.gov/resources/works/15546170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15546170> <http://id.loc.gov/ontologies/bflc/aap> "Rosso, Mauro. Contos de Machado de Assis : relicários e raisonnés" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11977355> .
+<http://id.loc.gov/resources/works/11977355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11977355> <http://id.loc.gov/ontologies/bflc/aap> "Secchin, Antonio Carlos, 1952- Machado de Assis : uma revisão" .
+<http://id.loc.gov/rwo/agents/n80002329> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12539414> .
+<http://id.loc.gov/resources/works/12539414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12539414> <http://id.loc.gov/ontologies/bflc/aap> "Trigo, Luciano, 1964- viajante imóvel : Machado de Assis e o Rio de Janeiro de seu tempo" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://isni.org/isni/0000000121441225> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://viaf.org/viaf/95151633> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://www.wikidata.org/entity/Q311145> .
+<http://id.loc.gov/authorities/names/n80002329> <http://id.loc.gov/ontologies/bflc/marcKey> "1001 $aMachado de Assis,$d1839-1908" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#fullerName> _:b986iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b986iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b986iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/2000/01/rdf-schema#label> "Joaquim Maria Machado" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#editorialNote> "[Pseudonym not found on published works: Lélio, Manassés, Bruxo do Cosme Velho.]" .
+<http://id.loc.gov/authorities/names/n80002329> <http://id.loc.gov/vocabulary/identifiers/lccn> "n 80002329" .
+<http://id.loc.gov/authorities/names/n80002329> <http://id.loc.gov/vocabulary/identifiers/local> "(OCoLC)oca00385024" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b996iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b996iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b996iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" .
+_:b996iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationNote> "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" .
+_:b996iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1004iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1004iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1004iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> "Balas de estalo, 1998:" .
+_:b1004iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Machado de Assis) p. 19 (pseudonym Lélio)" .
+_:b1004iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1012iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1012iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1012iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> "História de quinze dias, 2009:" .
+_:b1012iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Machado de Assis) p. 16 (Manassés, pseudônimo que Machado assumiria em todas as crônicas de série.) p. 65 (Manassés)" .
+_:b1012iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1020iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1020iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1020iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> "Wikipedia, Sept. 17, 2013" .
+_:b1020iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> <https://en.wikipedia.org/wiki/Machado_de_Assis> .
+_:b1020iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationNote> "(Joaquim Maria Machado de Assis; known as Machado de Assis, Machado, or Bruxo do Cosme Velho; born June 21, 1839 in Rio de Janeiro; died September 29, 1908, Rio de Janeiro; of African descent; Brazilian novelist, poet, playwright, short story writer, literary critics, and advocate of monarchism. Widely regarded as the greatest writer of Brazilian literature)" .
+_:b1020iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1029iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1029iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1029iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationSource> "Machado de Assis. Epitaph of a small winner, 1990:" .
+_:b1029iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationNote> "translator's introducation, page xxiii (Through most of his life [Machado de Assis] worked as a public official -- a bureaucrat, we should say -- for it was almost impossible to earn a living as a writer; the Brazilian Academy of Letters unanimously elected Machado its president, a title that he held from the founding of the Academy in 1897 till his death in 1908)" .
+_:b1029iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b1037iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1037iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b1037iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1980-06-25T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1037iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b1037iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b1037iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://id.loc.gov/authorities/names/n80002329> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b1045iddOtlocdOtgovauthoritiesnamesn80002329 .
+_:b1045iddOtlocdOtgovauthoritiesnamesn80002329 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b1045iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "2022-12-12T06:45:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1045iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b1045iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/nnu> .
+_:b1045iddOtlocdOtgovauthoritiesnamesn80002329 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .

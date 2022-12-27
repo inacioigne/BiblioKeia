@@ -1,0 +1,1274 @@
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Kant, Immanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#elementList> _:b7iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b7iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b8iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b7iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b010 .
+_:b8iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b8iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Immanuel," .
+_:b010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b11iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b11iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b11iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b14iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b14iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b14iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b14iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, I. (Immanuil), 1724-1804" .
+_:b14iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b19iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b19iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b20iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b19iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b022 .
+_:b20iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b20iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, I." .
+_:b022 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b23iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b022 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b025 .
+_:b23iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b23iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "(Immanuil)," .
+_:b025 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b26iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b025 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b26iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b26iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b29iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b29iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b29iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b29iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kānt, ʻAmmānūʼīl, 1724-1804" .
+_:b29iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b34iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b34iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b35iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b34iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b037 .
+_:b35iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b35iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kānt, ʻAmmānūʼīl," .
+_:b037 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b38iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b037 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b38iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b38iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b41iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b41iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b41iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b41iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Immanouel, 1724-1804" .
+_:b41iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b46iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b46iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b47iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b46iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b049 .
+_:b47iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b47iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Immanouel," .
+_:b049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b50iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b50iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b50iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b53iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b53iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b53iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b53iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Immanuil, 1724-1804" .
+_:b53iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b58iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b58iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b59iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b58iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b061 .
+_:b59iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b59iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Immanuil," .
+_:b061 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b62iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b061 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b62iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b62iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b65iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b65iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b65iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b65iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kʻantʻŭ, 1724-1804" .
+_:b65iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b70iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b70iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b71iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b70iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b073 .
+_:b71iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b71iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kʻantʻŭ," .
+_:b073 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b74iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b073 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b74iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b74iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b77iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b77iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b77iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b77iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, 1724-1804" .
+_:b77iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b82iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b82iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b83iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b82iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b085 .
+_:b83iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b83iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant," .
+_:b085 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b86iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b085 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b86iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b86iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b89iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b89iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b89iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b89iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Emmanuel, 1724-1804" .
+_:b89iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b94iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b94iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b95iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b94iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b097 .
+_:b95iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b95iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Emmanuel," .
+_:b097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b98iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b98iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b98iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b101iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b101iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b101iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b101iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Ḳanṭ, ʻImanuʼel, 1724-1804" .
+_:b101iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b106iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b106iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b107iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b106iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0109 .
+_:b107iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b107iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Ḳanṭ, ʻImanuʼel," .
+_:b0109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b110iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b110iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b110iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b113iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b113iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b113iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b113iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, E., 1724-1804" .
+_:b113iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b118iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b118iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b119iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b118iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0121 .
+_:b119iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b119iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, E.," .
+_:b0121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b122iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b122iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b122iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b125iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b125iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b125iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b125iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Emanuel, 1724-1804" .
+_:b125iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b130iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b130iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b131iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b130iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0133 .
+_:b131iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b131iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Emanuel," .
+_:b0133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b134iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b134iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b134iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b137iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b137iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b137iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b137iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Cantơ, I., 1724-1804" .
+_:b137iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b142iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b142iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b143iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b142iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0145 .
+_:b143iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b143iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Cantơ, I.," .
+_:b0145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b146iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b146iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b146iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b149iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b149iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b149iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b149iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Emanuele, 1724-1804" .
+_:b149iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b154iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b154iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b155iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b154iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0157 .
+_:b155iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b155iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Emanuele," .
+_:b0157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b158iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b158iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b158iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b161iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b161iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b161iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b161iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Im. (Immanuel), 1724-1804" .
+_:b161iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b166iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b166iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b167iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b166iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0169 .
+_:b167iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b167iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Im." .
+_:b0169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b170iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0172 .
+_:b170iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b170iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "(Immanuel)," .
+_:b0172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b173iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b173iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b173iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b176iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b176iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b176iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b176iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט" .
+_:b176iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b181iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b181iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b182iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b181iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b182iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b182iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b185iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b185iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b185iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b185iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט, א." .
+_:b185iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b190iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b190iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b191iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b190iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b191iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b191iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט, א." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b194iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b194iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b194iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b194iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט, עמנואל" .
+_:b194iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b199iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b199iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b200iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b199iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b200iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b200iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b203iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b203iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b203iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b203iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט, עמנואל, 4271־4081" .
+_:b203iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b208iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b208iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b209iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b208iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0211 .
+_:b209iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b209iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט, עמנואל," .
+_:b0211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b212iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b212iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b212iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "4271־4081" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b215iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b215iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b215iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b215iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט, עמנואל, 1724־1804" .
+_:b215iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b220iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b220iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b221iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b220iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0223 .
+_:b221iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b221iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט, עמנואל," .
+_:b0223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b224iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b224iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b224iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b227iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b227iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b227iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b227iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קאנט, ע." .
+_:b227iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b232iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b232iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b233iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b232iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b233iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b233iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קאנט, ע." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b236iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b236iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b236iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b236iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קנט" .
+_:b236iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b241iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b241iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b242iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b241iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b242iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b242iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b245iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b245iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b245iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b245iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קנט, עמנואל" .
+_:b245iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b250iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b250iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b251iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b250iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b251iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b251iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b254iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b254iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b254iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b254iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "קנט, עמנואל, 1724־1804" .
+_:b254iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b259iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b259iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b260iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b259iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0262 .
+_:b260iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b260iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "קנט, עמנואל," .
+_:b0262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b263iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b266iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b266iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b266iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b266iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "كانت ، ايمانوئل" .
+_:b266iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b271iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b271iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b272iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b271iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b272iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b272iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "كانت ، ايمانوئل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b275iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b275iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b275iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b275iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "كنت، إمانويل، 1724-1804" .
+_:b275iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b280iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b280iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b281iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b280iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0283 .
+_:b281iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b281iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "كنت، إمانويل،" .
+_:b0283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b284iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b284iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b284iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b287iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b287iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b287iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b287iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "カントイマニユエル, 1724-1804" .
+_:b287iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b292iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b292iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b293iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b292iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0295 .
+_:b293iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b293iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "カントイマニユエル," .
+_:b0295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b296iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b296iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b296iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b299iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kangde, 1724-1804" .
+_:b299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b304iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b304iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b305iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b304iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0307 .
+_:b305iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b305iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kangde," .
+_:b0307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b308iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b308iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b308iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b311iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b311iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b311iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b311iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "康德, 1724-1804" .
+_:b311iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b316iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b316iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b317iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b316iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0319 .
+_:b317iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b317iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "康德," .
+_:b0319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b320iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0319 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b320iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b320iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b323iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kanṭ, Īmānwīl, 1724-1804" .
+_:b323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b328iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b328iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b329iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b328iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0331 .
+_:b329iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b329iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kanṭ, Īmānwīl," .
+_:b0331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b332iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0331 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b332iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b332iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b335iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b335iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b335iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b335iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "كانط، إيمانويل" .
+_:b335iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b340iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b340iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b341iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b340iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b341iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b341iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "كانط، إيمانويل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b344iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b344iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b344iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b344iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#variantLabel> "Kant, Manuel, 1724-1804" .
+_:b344iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementList> _:b349iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b349iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b350iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b349iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b0352 .
+_:b350iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#FullNameElement> .
+_:b350iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "Kant, Manuel," .
+_:b0352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b353iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b0352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:b353iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#DateNameElement> .
+_:b353iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#elementValue> "1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://id.loc.gov/ontologies/bflc/marcKey> "1001 $aKant, Immanuel,$d1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://vocab.getty.edu/ulan/500107055> .
+<http://vocab.getty.edu/ulan/500107055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://vocab.getty.edu/ulan/500107055> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Kant, Immanuel" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://id.worldcat.org/fast/31763> .
+<http://id.worldcat.org/fast/31763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.worldcat.org/fast/31763> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Kant, Immanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q9312> .
+<http://www.wikidata.org/entity/Q9312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://www.wikidata.org/entity/Q9312> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Immanuel Kant" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_LCNAF> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://viaf.org/viaf/sourceID/LC%7Cn++79021614#skos:Concept> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://id.worldcat.org/fast/31763> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://vocab.getty.edu/ulan/500107055> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasCloseExternalAuthority> <http://www.wikidata.org/entity/Q9312> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://id.loc.gov/rwo/agents/n79021614> .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.w3.org/2000/01/rdf-schema#label> "Kant, Immanuel, 1724-1804" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#birthDate> _:b382iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b382iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b382iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1724-04-22" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#deathDate> _:b386iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b386iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b386iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1804-02-12" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#birthPlace> _:b390iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b390iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+_:b390iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/names> .
+_:b390iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2000/01/rdf-schema#label> "Königsberg (Germany)" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> _:b395iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b395iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:b395iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2000/01/rdf-schema#label> "Enlightenment philosophy" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85100836> .
+<http://id.loc.gov/authorities/subjects/sh85100836> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Occupation> .
+<http://id.loc.gov/authorities/subjects/sh85100836> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Philosophers" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#gender> <http://id.loc.gov/authorities/demographicTerms/dg2015060003> .
+<http://id.loc.gov/authorities/demographicTerms/dg2015060003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/demographicTerms/dg2015060003> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Males" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/ger> .
+<http://id.loc.gov/vocabulary/languages/ger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Language> .
+<http://id.loc.gov/vocabulary/languages/ger> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "German"@en .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10199412> .
+<http://id.loc.gov/resources/works/10199412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10199412> <http://id.loc.gov/ontologies/bflc/aap> "[Gross, Felix], 1884- Immanuel Kant," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10219290> .
+<http://id.loc.gov/resources/works/10219290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10219290> <http://id.loc.gov/ontologies/bflc/aap> "Abicht, Johann Heinrich, 1762-1816. Kritische briefe über die möglichkeit einer wahren wissenschaftlichen moral, theologie, rechtslehre, empirischen psychologie und geschmakslehre mit prüfender hinsicht auf die Kantische begründung dieser lehre," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10446502> .
+<http://id.loc.gov/resources/works/10446502> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10446502> <http://id.loc.gov/ontologies/bflc/aap> "Anschütz, Oskar Franziskanische Menschen" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1097251> .
+<http://id.loc.gov/resources/works/1097251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1097251> <http://id.loc.gov/ontologies/bflc/aap> "Aviau de Ternay, Henri d' La liberté kantienne" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10264028> .
+<http://id.loc.gov/resources/works/10264028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10264028> <http://id.loc.gov/ontologies/bflc/aap> "Beier, Franz (Writer on philosophy. ) Kants Apriorismus, eine Irreführung der Menschheit" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10452260> .
+<http://id.loc.gov/resources/works/10452260> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10452260> <http://id.loc.gov/ontologies/bflc/aap> "Bianca, Giovanni A. Intelligenza e dato empirico nel pensiero di Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10181147> .
+<http://id.loc.gov/resources/works/10181147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10181147> <http://id.loc.gov/ontologies/bflc/aap> "Borkowski, Heinrich. Bibel Immanuel Kants," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10404215> .
+<http://id.loc.gov/resources/works/10404215> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10404215> <http://id.loc.gov/ontologies/bflc/aap> "Borries, Kurt, 1895-1968. Kant als politiker" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10063545> .
+<http://id.loc.gov/resources/works/10063545> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10063545> <http://id.loc.gov/ontologies/bflc/aap> "Brockdorff, Cay [Ludwig Georg Conrad], baron von, 1874- Kants teleologie .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10444969> .
+<http://id.loc.gov/resources/works/10444969> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10444969> <http://id.loc.gov/ontologies/bflc/aap> "Bulatov, Mikhail Aleksandrovich. Kriticheskie ocherki po filosofii Kanta" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10063547> .
+<http://id.loc.gov/resources/works/10063547> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10063547> <http://id.loc.gov/ontologies/bflc/aap> "Burckhardt, Waldemar, 1853- Kant's objectiver Idealismus" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1060064> .
+<http://id.loc.gov/resources/works/1060064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1060064> <http://id.loc.gov/ontologies/bflc/aap> "Carl, Wolfgang. schweigende Kant : die Entwürfe zu einer Deduktion der Kategorien vor 1781" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1020376> .
+<http://id.loc.gov/resources/works/1020376> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1020376> <http://id.loc.gov/ontologies/bflc/aap> "Cassirer, H. W. (Heinrich Walter), 1903- Grace and law : St. Paul, Kant, and the Hebrew prophets" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1086473> .
+<http://id.loc.gov/resources/works/1086473> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1086473> <http://id.loc.gov/ontologies/bflc/aap> "Chadwick, Ruth F. Immanuel Kant, critical assessments" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1008255> .
+<http://id.loc.gov/resources/works/1008255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1008255> <http://id.loc.gov/ontologies/bflc/aap> "Chamberlain, Houston Stewart, 1855-1927. Immanuel Kant : die Persönlichkeit als Einführung in das Werk" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10212962> .
+<http://id.loc.gov/resources/works/10212962> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10212962> <http://id.loc.gov/ontologies/bflc/aap> "Cresson, André, 1869-1950. Kant; sa vie, son œuvre, avec un exposé de sa philosophie," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/106878> .
+<http://id.loc.gov/resources/works/106878> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/106878> <http://id.loc.gov/ontologies/bflc/aap> "De Tienne, André. analytique de la représentation chez Peirce : la genèse de la théorie des catégories" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10393897> .
+<http://id.loc.gov/resources/works/10393897> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10393897> <http://id.loc.gov/ontologies/bflc/aap> "Declève, H. (Henri) Heidegger et Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10088579> .
+<http://id.loc.gov/resources/works/10088579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10088579> <http://id.loc.gov/ontologies/bflc/aap> "Dreyer, Hans, 1871- begriff geist in der deutschen philosophie von Kant bis Hegel" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10202791> .
+<http://id.loc.gov/resources/works/10202791> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10202791> <http://id.loc.gov/ontologies/bflc/aap> "Drobisch, Moritz Wilhelm, 1802-1896. Kant's dinge an sich und sein erfahrungsbegriff" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10171708> .
+<http://id.loc.gov/resources/works/10171708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10171708> <http://id.loc.gov/ontologies/bflc/aap> "Dulckeit, Gerhard, 1904- Naturrecht und positives recht bei Kant .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10443095> .
+<http://id.loc.gov/resources/works/10443095> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10443095> <http://id.loc.gov/ontologies/bflc/aap> "Duproix, Paul. Kant et Fichte et le problème de l'éducation" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10136853> .
+<http://id.loc.gov/resources/works/10136853> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10136853> <http://id.loc.gov/ontologies/bflc/aap> "Durant, Will, 1885-1981. philosophy of Immanuel Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10100654> .
+<http://id.loc.gov/resources/works/10100654> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10100654> <http://id.loc.gov/ontologies/bflc/aap> "Edmunds, James. Kant's ethics: the clavis to an index. Including extracts from several oriental sacred scriptures, and from certain Greek and Roman philosophical writings" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10183998> .
+<http://id.loc.gov/resources/works/10183998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10183998> <http://id.loc.gov/ontologies/bflc/aap> "Elsenhans, Theodor, 1862-1918. Fries und Kant; ein Beitrag zur Geschichte und zur systematischen Grundlegung der Erkenntnistheorie," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10107171> .
+<http://id.loc.gov/resources/works/10107171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10107171> <http://id.loc.gov/ontologies/bflc/aap> "Ernst, Wilhelm, 1877- Zweckbegriff bei Kant und sein Verhältnis zu den Kategorien" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10233137> .
+<http://id.loc.gov/resources/works/10233137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10233137> <http://id.loc.gov/ontologies/bflc/aap> "Ewald, Oscar, 1881- Kants kritischer Idealismus als Grundlage von Erkenntnistheorie und Ethik" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10091687> .
+<http://id.loc.gov/resources/works/10091687> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10091687> <http://id.loc.gov/ontologies/bflc/aap> "Fichte, Johann Gottlieb, 1762-1814. New exposition of the science of knowledge" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10096816> .
+<http://id.loc.gov/resources/works/10096816> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10096816> <http://id.loc.gov/ontologies/bflc/aap> "Fischer, Kuno, 1824-1907. critique of Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10064105> .
+<http://id.loc.gov/resources/works/10064105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10064105> <http://id.loc.gov/ontologies/bflc/aap> "Frommel, Otto Heinrich, 1862- Das Verhältnis von mechanischer und teleologischer Naturerklärung bei Kant und Lotze .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1011091> .
+<http://id.loc.gov/resources/works/1011091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1011091> <http://id.loc.gov/ontologies/bflc/aap> "Gawlick, Günter. Hume in der deutschen Aufklärung : Umrisse einer Rezeptionsgeschichte" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10184296> .
+<http://id.loc.gov/resources/works/10184296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10184296> <http://id.loc.gov/ontologies/bflc/aap> "Gemelli, Agostino, 1878-1959, Immanuel Kant (1724-1924)" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1079122> .
+<http://id.loc.gov/resources/works/1079122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1079122> <http://id.loc.gov/ontologies/bflc/aap> "Gneiting, Ulrich, 1960- Erfahrung und Dialektik" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1080847> .
+<http://id.loc.gov/resources/works/1080847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1080847> <http://id.loc.gov/ontologies/bflc/aap> "Goetschel, Willi, 1958- Kant als Schriftsteller" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10452228> .
+<http://id.loc.gov/resources/works/10452228> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10452228> <http://id.loc.gov/ontologies/bflc/aap> "Görland, Ingtraud, 1933- Kantkritik des jungen Hegel" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10267562> .
+<http://id.loc.gov/resources/works/10267562> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10267562> <http://id.loc.gov/ontologies/bflc/aap> "Gotenburg, Erwin, 1926- Antinomienproblem bei Kant und bei Cusanus im systematischen Zusammenhang der Vermögensleistung" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1071139> .
+<http://id.loc.gov/resources/works/1071139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1071139> <http://id.loc.gov/ontologies/bflc/aap> "Green, Ronald Michael. Kierkegaard and Kant : the hidden debt" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1053421> .
+<http://id.loc.gov/resources/works/1053421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1053421> <http://id.loc.gov/ontologies/bflc/aap> "Gurwitsch, Aron. Kants Theorie des Verstandes" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10107169> .
+<http://id.loc.gov/resources/works/10107169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10107169> <http://id.loc.gov/ontologies/bflc/aap> "Guttmann, Julius, 1880-1950. Kants Gottesbegriff in seiner positiven Entwicklung" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10070880> .
+<http://id.loc.gov/resources/works/10070880> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10070880> <http://id.loc.gov/ontologies/bflc/aap> "Hägerström, Axel, 1868-1939 Kants Ethik im Verhältnis zu seinen erkenntnistheoretischen Grundgedanken" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10166538> .
+<http://id.loc.gov/resources/works/10166538> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10166538> <http://id.loc.gov/ontologies/bflc/aap> "Hartmann, Eduard von, 1842-1906. Kants Erkenntnistheorie und Metaphysik in den vier Perioden ihrer Entwickelung" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1016375> .
+<http://id.loc.gov/resources/works/1016375> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1016375> <http://id.loc.gov/ontologies/bflc/aap> "Hauser, Linus, 1950- Religion als Prinzip und Faktum" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10174133> .
+<http://id.loc.gov/resources/works/10174133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10174133> <http://id.loc.gov/ontologies/bflc/aap> "Haymann, Franz, 1874- Kants kritizismus und die Naturrechtlichen Strömungen der Gegenwart. Festrede anlässlich der zweihundertjährigen Wiederkehr des Geburtstages von Immanuel Kant gehalten am 8. März 1924 in der Juristischen Gesellschaft in Köln," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10421209> .
+<http://id.loc.gov/resources/works/10421209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10421209> <http://id.loc.gov/ontologies/bflc/aap> "Heinrichs, Jürgen. Problem der Zeit in der praktischen Philosophie Kants" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10183235> .
+<http://id.loc.gov/resources/works/10183235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10183235> <http://id.loc.gov/ontologies/bflc/aap> "Hessen, Johannes, 1889- religionsphilosophie des neukantianismus," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10070263> .
+<http://id.loc.gov/resources/works/10070263> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10070263> <http://id.loc.gov/ontologies/bflc/aap> "Hoffmann, Alfons Immanuel Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10168530> .
+<http://id.loc.gov/resources/works/10168530> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10168530> <http://id.loc.gov/ontologies/bflc/aap> "Hoffmeister, Johannes. Die problematik des völkerbundes bei Kant und Hegel," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10419705> .
+<http://id.loc.gov/resources/works/10419705> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10419705> <http://id.loc.gov/ontologies/bflc/aap> "Hogrebe, Wolfram, 1945- Kant und das Problem einer transzendentalen Semantik" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10449233> .
+<http://id.loc.gov/resources/works/10449233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10449233> <http://id.loc.gov/ontologies/bflc/aap> "Huang, Chen-hua. Kʻang-te che hsüeh lun wen chi" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1081562> .
+<http://id.loc.gov/resources/works/1081562> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1081562> <http://id.loc.gov/ontologies/bflc/aap> "Hufnagel, Erwin, 1940- Wissenschaftscharakter der Pädagogik : Studien zur pädagogischen Grundlehre von Kant, Natorp und Hönigswald" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10353753> .
+<http://id.loc.gov/resources/works/10353753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10353753> <http://id.loc.gov/ontologies/bflc/aap> "ʻAẓm, Ṣādiq Jalāl. Kant's theory of time" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10253746> .
+<http://id.loc.gov/resources/works/10253746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10253746> <http://id.loc.gov/ontologies/bflc/aap> "Janoska, Georg. Kant und Schestow; ein Beitrag zum Glaubensproblem" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10165044> .
+<http://id.loc.gov/resources/works/10165044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10165044> <http://id.loc.gov/ontologies/bflc/aap> "Jansen, Bernhard, 1877-1942. philosophie religieuse de Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10191977> .
+<http://id.loc.gov/resources/works/10191977> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10191977> <http://id.loc.gov/ontologies/bflc/aap> "Jones, W. T. (William Thomas), 1910- Morality and freedom in the philosophy of Immanuel Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/101851> .
+<http://id.loc.gov/resources/works/101851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/101851> <http://id.loc.gov/ontologies/bflc/aap> "Joos, Jean-Ernest. Kant et la question de l'autorité" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1025620> .
+<http://id.loc.gov/resources/works/1025620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1025620> <http://id.loc.gov/ontologies/bflc/aap> "Kaltschew, Boris. Rational-empirische Erkenntnistheorie : Denken, Zeichen, Zeit" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10330178> .
+<http://id.loc.gov/resources/works/10330178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10330178> <http://id.loc.gov/ontologies/bflc/aap> "Kern, Iso. Husserl und Kant : eine Untersuchung über Husserls Verhältnis zu Kant und zum Neukantianismus" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1058446> .
+<http://id.loc.gov/resources/works/1058446> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1058446> <http://id.loc.gov/ontologies/bflc/aap> "Kim, Chin, 1955- Kants Postulatenlehre" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10373602> .
+<http://id.loc.gov/resources/works/10373602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10373602> <http://id.loc.gov/ontologies/bflc/aap> "Kim, Jisu, 1937- \"Methodentrialismus\" und \"Natur der Sache\" im Denken Gustav Radbruchs" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10042862> .
+<http://id.loc.gov/resources/works/10042862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10042862> <http://id.loc.gov/ontologies/bflc/aap> "Kraft, Julius, 1898-1960 Die methode der rechtstheorie in der schule von Kant und Fries" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10160362> .
+<http://id.loc.gov/resources/works/10160362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10160362> <http://id.loc.gov/ontologies/bflc/aap> "Krüger, Gerhard, 1902-1972. Philosophie und moral in der Kantischen kritik," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1028813> .
+<http://id.loc.gov/resources/works/1028813> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1028813> <http://id.loc.gov/ontologies/bflc/aap> "Küsters, Gerd-Walter. Kants Rechtsphilosophie" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10389417> .
+<http://id.loc.gov/resources/works/10389417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10389417> <http://id.loc.gov/ontologies/bflc/aap> "Llano Cifuentes, Alejandro. Fenómeno y trascendencia en Kant .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10053486> .
+<http://id.loc.gov/resources/works/10053486> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10053486> <http://id.loc.gov/ontologies/bflc/aap> "Masci, Filippo, 1844-1922 La libertà nel diritto e nella storia secondo Kant ed Hegel, appunti critici" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10191691> .
+<http://id.loc.gov/resources/works/10191691> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10191691> <http://id.loc.gov/ontologies/bflc/aap> "Mattern, Charles David, 1907- Personal freedom within the third antinomy" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1079003> .
+<http://id.loc.gov/resources/works/1079003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1079003> <http://id.loc.gov/ontologies/bflc/aap> "Metz, Wilhelm. Kategoriendeduktion und produktive Einbildungskraft in der theoretischen Philosophie Kants und Fichtes" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10198764> .
+<http://id.loc.gov/resources/works/10198764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10198764> <http://id.loc.gov/ontologies/bflc/aap> "Meyer, Jürgen Bona, 1829-1897. Kant's psychologie. Dargestellt und erörtert" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1041297> .
+<http://id.loc.gov/resources/works/1041297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1041297> <http://id.loc.gov/ontologies/bflc/aap> "Meyer, Michel, 1950- Science et métaphysique chez Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10375523> .
+<http://id.loc.gov/resources/works/10375523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10375523> <http://id.loc.gov/ontologies/bflc/aap> "Neeb, Johann, 1767-1843. System der kritischen Philosophie auf den Satz des Bewustseyns gegründet" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10142422> .
+<http://id.loc.gov/resources/works/10142422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10142422> <http://id.loc.gov/ontologies/bflc/aap> "Nolen, Désiré, 1838-1904. critique de Kant et la métaphysique de Leibniz" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10515369> .
+<http://id.loc.gov/resources/works/10515369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10515369> <http://id.loc.gov/ontologies/bflc/aap> "Novgorodt︠s︡ev, P. I. (Pavel Ivanovich), 1866-1924. Kant i Gegelʹ v ikh uchenīi︠a︡kh o pravi︠e︡ i gosudarstvi︠e︡" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10069202> .
+<http://id.loc.gov/resources/works/10069202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10069202> <http://id.loc.gov/ontologies/bflc/aap> "Paulsen, Friedrich, 1846-1908 Immanuel Kant, his life and doctrine" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/103671> .
+<http://id.loc.gov/resources/works/103671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/103671> <http://id.loc.gov/ontologies/bflc/aap> "Pešek, Jiří, 1929- Proměny času ve vztahu k bytí a jeho možnému smyslu : příspěvek k dějinám ontologického smyslu temporality" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/100373> .
+<http://id.loc.gov/resources/works/100373> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/100373> <http://id.loc.gov/ontologies/bflc/aap> "Piché, Claude Kant et ses épigones" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10243618> .
+<http://id.loc.gov/resources/works/10243618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10243618> <http://id.loc.gov/ontologies/bflc/aap> "Reale, Miguel. doutrina de Kant no Brasil. [Dois ensaios]" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1045361> .
+<http://id.loc.gov/resources/works/1045361> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1045361> <http://id.loc.gov/ontologies/bflc/aap> "Riedel, Manfred, 1936- Urteilskraft und Vernunft : Kants ursprüngliche Fragestellung" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/100506> .
+<http://id.loc.gov/resources/works/100506> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/100506> <http://id.loc.gov/ontologies/bflc/aap> "Rosas, Alejandro Kants idealistische Reduktion" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/108937> .
+<http://id.loc.gov/resources/works/108937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/108937> <http://id.loc.gov/ontologies/bflc/aap> "Rotenstreich, Nathan, 1914-1993. Reason and its manifestations : a study on Kant and Hegel" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1023938> .
+<http://id.loc.gov/resources/works/1023938> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1023938> <http://id.loc.gov/ontologies/bflc/aap> "Salgado, Joaquim Carlos. idéia de justiça em Kant : seu fundamento na liberdade e na igualdade" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10368052> .
+<http://id.loc.gov/resources/works/10368052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10368052> <http://id.loc.gov/ontologies/bflc/aap> "Scheler, Max, 1874-1928 Formalismus in der Ethik und die materiale Wertethik. Neuer Versuch der Grundlegung eines ethischen Personalismus" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10166471> .
+<http://id.loc.gov/resources/works/10166471> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10166471> <http://id.loc.gov/ontologies/bflc/aap> "Schmid, Albert, 1856- Zu Kants Lehre vom Raum" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1097948> .
+<http://id.loc.gov/resources/works/1097948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1097948> <http://id.loc.gov/ontologies/bflc/aap> "Schroeter, François La critique kantienne de l'eudémonisme" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10389529> .
+<http://id.loc.gov/resources/works/10389529> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10389529> <http://id.loc.gov/ontologies/bflc/aap> "Schultz, Uwe, 1936- Immanuel Kant in Selbstzeugnissen und Bilddokumenten" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10166381> .
+<http://id.loc.gov/resources/works/10166381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10166381> <http://id.loc.gov/ontologies/bflc/aap> "Schulze-Soelde, W. (Walther), 1888- methode Spinozas im lichte Kants. Eine studie über dogmatismus und kritizismus .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10135222> .
+<http://id.loc.gov/resources/works/10135222> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10135222> <http://id.loc.gov/ontologies/bflc/aap> "Seroux d'Agincourt, Camille. Exposé des projets de paix perpétuelle de l'abbé de Saint-Pierre (et de Henri IV) de Bentham et de Kant," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10120531> .
+<http://id.loc.gov/resources/works/10120531> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10120531> <http://id.loc.gov/ontologies/bflc/aap> "Staeckel, O. begriff der idee bei Kant im verhältniss zu den ideen bei Platon .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10120785> .
+<http://id.loc.gov/resources/works/10120785> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10120785> <http://id.loc.gov/ontologies/bflc/aap> "Stommel, Kuno, 1847- Differenz Kants und Hegels : in Bezug auf die Erklärung der Antinomien" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10150873> .
+<http://id.loc.gov/resources/works/10150873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10150873> <http://id.loc.gov/ontologies/bflc/aap> "Storrs, Margaret, 1900- relation of Carlyle to Kant and Fichte," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10120094> .
+<http://id.loc.gov/resources/works/10120094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10120094> <http://id.loc.gov/ontologies/bflc/aap> "Tilšer, František, 1825- Kdo hlásá pravdu: Kant či Lamarck a Monge?" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10358043> .
+<http://id.loc.gov/resources/works/10358043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10358043> <http://id.loc.gov/ontologies/bflc/aap> "Tullio-Altan, Carlo. necessary revolution in man's thinking after Immanuel Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10090295> .
+<http://id.loc.gov/resources/works/10090295> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10090295> <http://id.loc.gov/ontologies/bflc/aap> "Uppsala universitet. Upsala universitets årsskrift" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10154243> .
+<http://id.loc.gov/resources/works/10154243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10154243> <http://id.loc.gov/ontologies/bflc/aap> "Vaihinger, Hans, 1852-1933. philosophie des als ob" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1079165> .
+<http://id.loc.gov/resources/works/1079165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1079165> <http://id.loc.gov/ontologies/bflc/aap> "Vogel, Peter, 1947- Kausalität und Freiheit in der Pädagogik" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10163587> .
+<http://id.loc.gov/resources/works/10163587> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10163587> <http://id.loc.gov/ontologies/bflc/aap> "Wacker, Herbert. verhältnis des jungen Hegel zu Kant," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1019910> .
+<http://id.loc.gov/resources/works/1019910> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1019910> <http://id.loc.gov/ontologies/bflc/aap> "Walker, Ralph Charles Sutherland. Real in the ideal : Berkeley's relation to Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10462695> .
+<http://id.loc.gov/resources/works/10462695> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10462695> <http://id.loc.gov/ontologies/bflc/aap> "Weishaupt, Adam, 1747-1830. Zweifel über die Kantischen Begriffe von Zeit und Raum" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10186540> .
+<http://id.loc.gov/resources/works/10186540> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10186540> <http://id.loc.gov/ontologies/bflc/aap> "Whitney, George Tapley, 1871-1938, heritage of Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10064414> .
+<http://id.loc.gov/resources/works/10064414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10064414> <http://id.loc.gov/ontologies/bflc/aap> "Willareth, Otto, 1867- Die lehre vom uebel bei Leibniz" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/10218523> .
+<http://id.loc.gov/resources/works/10218523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10218523> <http://id.loc.gov/ontologies/bflc/aap> "Wobbermin, Georg, 1869- Luther, Kant, Schleiermacher in ihrer bedeutung für den protestantismus; forschungen und abhandlungen," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/subjectOf> <http://id.loc.gov/resources/works/1059281> .
+<http://id.loc.gov/resources/works/1059281> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1059281> <http://id.loc.gov/ontologies/bflc/aap> "Woschnak, Maria. Zum Begriff der Freundschaft bei Aristoteles und Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10212962> .
+<http://id.loc.gov/resources/works/10212962> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10212962> <http://id.loc.gov/ontologies/bflc/aap> "Cresson, André, 1869-1950. Kant; sa vie, son œuvre, avec un exposé de sa philosophie," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13291393> .
+<http://id.loc.gov/resources/works/13291393> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13291393> <http://id.loc.gov/ontologies/bflc/aap> "Jacobelli Isoldi, Angela Maria. dignità del limite : saggi kantiani" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/101851> .
+<http://id.loc.gov/resources/works/101851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/101851> <http://id.loc.gov/ontologies/bflc/aap> "Joos, Jean-Ernest. Kant et la question de l'autorité" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10001277> .
+<http://id.loc.gov/resources/works/10001277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10001277> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Anthropology from a pragmatic point of view" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10060573> .
+<http://id.loc.gov/resources/works/10060573> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10060573> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Beantwortung der Frage, Was ist Aufklärung?" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13910711> .
+<http://id.loc.gov/resources/works/13910711> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13910711> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Critique of judgement" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14156077> .
+<http://id.loc.gov/resources/works/14156077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14156077> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Ideii︠a︡ vseobshcheĭ istorii vo vsemirno-grazhdanskom plane Идеия всеобщей истории во всемирно-гражданском плане" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10391903> .
+<http://id.loc.gov/resources/works/10391903> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10391903> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Întemeierea metafizicii moravurilor" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10070664> .
+<http://id.loc.gov/resources/works/10070664> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10070664> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Kant's inaugural dissertation of 1770" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10067251> .
+<http://id.loc.gov/resources/works/10067251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10067251> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Kant's principles of politics, including his essay on Perpetual peace" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12250910> .
+<http://id.loc.gov/resources/works/12250910> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12250910> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Opus postumum" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10023536> .
+<http://id.loc.gov/resources/works/10023536> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10023536> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Reflexionen Kants zur kritischen Philosophie" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14711739> .
+<http://id.loc.gov/resources/works/14711739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14711739> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804 Ren he yi zhong neng gou zuo wei ke xue chu xian de wei lai xing er shang xue dao lun 任何一种能够作为科学出现的未来形而上学导论" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12206104> .
+<http://id.loc.gov/resources/works/12206104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12206104> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Anthropologie in pragmatischer Hinsicht" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10119884> .
+<http://id.loc.gov/resources/works/10119884> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10119884> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Anthropologie in pragmatischer hinsicht," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14619313> .
+<http://id.loc.gov/resources/works/14619313> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14619313> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Anthropology from a pragmatic point of view" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14646383> .
+<http://id.loc.gov/resources/works/14646383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14646383> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Anthropology, history, and education" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14161108> .
+<http://id.loc.gov/resources/works/14161108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14161108> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Aufklärung : Beiträge zur Philosophie Immanuel Kants" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1016405> .
+<http://id.loc.gov/resources/works/1016405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1016405> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Ausgewählte Schriften zur Pädagogik und ihrer Begründung : ausgewählte pädagogische Schriften" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12276309> .
+<http://id.loc.gov/resources/works/12276309> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12276309> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Basic writings of Kant" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10189771> .
+<http://id.loc.gov/resources/works/10189771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10189771> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. conflit des facultés," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13251901> .
+<http://id.loc.gov/resources/works/13251901> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13251901> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Crítica de la razón práctica" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10185107> .
+<http://id.loc.gov/resources/works/10185107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10185107> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critik der practischen Vernunft," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10163892> .
+<http://id.loc.gov/resources/works/10163892> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10163892> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critik der reinen Vernunft," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10215995> .
+<http://id.loc.gov/resources/works/10215995> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10215995> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique de la raison pratique," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10216954> .
+<http://id.loc.gov/resources/works/10216954> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10216954> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique de la raison pratique," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14694169> .
+<http://id.loc.gov/resources/works/14694169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14694169> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of judgement" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14218940> .
+<http://id.loc.gov/resources/works/14218940> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14218940> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of judgment" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12735842> .
+<http://id.loc.gov/resources/works/12735842> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12735842> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of practical reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13398099> .
+<http://id.loc.gov/resources/works/13398099> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13398099> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of practical reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14205913> .
+<http://id.loc.gov/resources/works/14205913> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14205913> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of practical reason and other works on the theory of ethics" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13163294> .
+<http://id.loc.gov/resources/works/13163294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13163294> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13178186> .
+<http://id.loc.gov/resources/works/13178186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13178186> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14171906> .
+<http://id.loc.gov/resources/works/14171906> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14171906> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11856549> .
+<http://id.loc.gov/resources/works/11856549> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11856549> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Critique of the power of judgment" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1078226> .
+<http://id.loc.gov/resources/works/1078226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1078226> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. De la conducta moral y política" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12429148> .
+<http://id.loc.gov/resources/works/12429148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12429148> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. drei Kritiken" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/15116432> .
+<http://id.loc.gov/resources/works/15116432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/15116432> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. drei Kritiken : in ihrem Zusammenhang mit dem Gesamtwerk" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1108509> .
+<http://id.loc.gov/resources/works/1108509> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1108509> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. einzig mögliche Beweisgrund = The one possible basis for a demonstration of the existence of God" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10212643> .
+<http://id.loc.gov/resources/works/10212643> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10212643> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Erläuternde Anmerkungen zu den Metaphysischen Anfangsgründen der Rechtslehre," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12657499> .
+<http://id.loc.gov/resources/works/12657499> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12657499> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. falsa sottigliezza delle quattro figure sillogistiche" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10196127> .
+<http://id.loc.gov/resources/works/10196127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10196127> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Filosofía de la historia" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10452254> .
+<http://id.loc.gov/resources/works/10452254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10452254> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. forma e i princìpi del mondo sensibile e del mondo intelligibile [Dissertazione del 1770]" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13797617> .
+<http://id.loc.gov/resources/works/13797617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13797617> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Fundamental principles of the metaphysics of morals" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10435198> .
+<http://id.loc.gov/resources/works/10435198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10435198> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. giudizio estetico" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12688068> .
+<http://id.loc.gov/resources/works/12688068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12688068> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13007250> .
+<http://id.loc.gov/resources/works/13007250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13007250> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13947569> .
+<http://id.loc.gov/resources/works/13947569> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13947569> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11897803> .
+<http://id.loc.gov/resources/works/11897803> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11897803> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Grundlegung zur Metaphysik der Sitten" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10156921> .
+<http://id.loc.gov/resources/works/10156921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10156921> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Grundlegung zur metaphysik der sitten," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14553820> .
+<http://id.loc.gov/resources/works/14553820> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14553820> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Immanuel Kant : Erkenntnis - Freiheit - Frieden : Katalog zur Ausstellung anlässlich des 200. Todestages am 12. Februar 2004, Museum Stadt Königsberg der Stadtgemeinschaft Königsberg (Pr) im Kultur- und Stadthistorischen Museum Duisburg" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10298932> .
+<http://id.loc.gov/resources/works/10298932> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10298932> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Immanuel Kant reader" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10153988> .
+<http://id.loc.gov/resources/works/10153988> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10153988> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Immanuel Kant's Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10136739> .
+<http://id.loc.gov/resources/works/10136739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10136739> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Immanuel Kant's kleinere Schriften zur Ethik und Religionsphilosophie" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10136741> .
+<http://id.loc.gov/resources/works/10136741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10136741> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Immanuel Kant's Logik : ein Handbuch zu Vorlesungen .." .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1292536> .
+<http://id.loc.gov/resources/works/1292536> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1292536> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kant dictionary" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12903311> .
+<http://id.loc.gov/resources/works/12903311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12903311> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kant on Swedenborg : dreams of a spirit-seer and other writings" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10381207> .
+<http://id.loc.gov/resources/works/10381207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10381207> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kant-Brevier; eine Auswahl aus dem Gesamtwerk," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10517490> .
+<http://id.loc.gov/resources/works/10517490> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10517490> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kant, kritiek der zuivere rede; proeve eener opheldering daarvan door Joh. Kinker" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10146847> .
+<http://id.loc.gov/resources/works/10146847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10146847> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kant's inaugural dissertation and early writings on space," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10162772> .
+<http://id.loc.gov/resources/works/10162772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10162772> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kants Weltanschauung aus seinen Werken," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10392630> .
+<http://id.loc.gov/resources/works/10392630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10392630> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kritik der reinen Vernunft" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12506013> .
+<http://id.loc.gov/resources/works/12506013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12506013> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Kritik der Urteilskraft" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1321569> .
+<http://id.loc.gov/resources/works/1321569> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1321569> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Lectures on philosophical theology" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1491596> .
+<http://id.loc.gov/resources/works/1491596> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1491596> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Logic" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14670567> .
+<http://id.loc.gov/resources/works/14670567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14670567> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Logica di Vienna" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10367480> .
+<http://id.loc.gov/resources/works/10367480> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10367480> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Logique" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1291984> .
+<http://id.loc.gov/resources/works/1291984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1291984> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Metaphysical foundations of natural science" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13386082> .
+<http://id.loc.gov/resources/works/13386082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13386082> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Metaphysical foundations of natural science" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10318884> .
+<http://id.loc.gov/resources/works/10318884> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10318884> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. metaphysical principles of virtue" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13603369> .
+<http://id.loc.gov/resources/works/13603369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13603369> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Notes and fragments : logic, metaphysics, moral philosophy, aesthetics" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14396161> .
+<http://id.loc.gov/resources/works/14396161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14396161> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. O prosvećenosti" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13317055> .
+<http://id.loc.gov/resources/works/13317055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13317055> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. On education" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14288332> .
+<http://id.loc.gov/resources/works/14288332> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14288332> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. On education" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12233062> .
+<http://id.loc.gov/resources/works/12233062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12233062> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. philosophy of law : an exposition of the fundamental principles of jurisprudence as the science of right" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13640383> .
+<http://id.loc.gov/resources/works/13640383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13640383> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to come forward as science : with selections from the Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12296521> .
+<http://id.loc.gov/resources/works/12296521> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12296521> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to come forward as science, with Kant's letter to Marcus Herz, February 27, 1772 / the Paul Carus translation extensively rev. by James W. Ellington" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13609442> .
+<http://id.loc.gov/resources/works/13609442> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13609442> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to present itself as a science : with two early reviews of the Critique of pure reason" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12815161> .
+<http://id.loc.gov/resources/works/12815161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12815161> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Prolegomena zu einer jeden künftigen Metaphysik, die als Wissenschaft wird auftreten können" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1144181> .
+<http://id.loc.gov/resources/works/1144181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1144181> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Religion and rational theology" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13242503> .
+<http://id.loc.gov/resources/works/13242503> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13242503> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Religion innerhalb der Grenzen der blossen Vernunft" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1234226> .
+<http://id.loc.gov/resources/works/1234226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1234226> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Selected pre-critical writings and correspondence with Beck" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10150921> .
+<http://id.loc.gov/resources/works/10150921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10150921> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Selections," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14010716> .
+<http://id.loc.gov/resources/works/14010716> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14010716> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Streit der Fakultäten" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12435031> .
+<http://id.loc.gov/resources/works/12435031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12435031> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Theoretical philosophy after 1781" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13258780> .
+<http://id.loc.gov/resources/works/13258780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13258780> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Theoretical philosophy, 1755-1770" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13602639> .
+<http://id.loc.gov/resources/works/13602639> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13602639> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Theoretische Philosophie : Texte und Kommentar" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13235420> .
+<http://id.loc.gov/resources/works/13235420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13235420> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. To perpetual peace : a philosophical sketch" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14254669> .
+<http://id.loc.gov/resources/works/14254669> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14254669> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Toward perpetual peace and other writings on politics, peace, and history" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1081334> .
+<http://id.loc.gov/resources/works/1081334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1081334> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Transición de los principios metafísicos de la ciencia natural a la física : Opus postumum" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13819144> .
+<http://id.loc.gov/resources/works/13819144> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13819144> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Vorlesung zur Moralphilosophie" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/11882798> .
+<http://id.loc.gov/resources/works/11882798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/11882798> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Was ist Aufklärung? : ausgewählte kleine Schriften" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/12347324> .
+<http://id.loc.gov/resources/works/12347324> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/12347324> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Werke" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/14108918> .
+<http://id.loc.gov/resources/works/14108918> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/14108918> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Zum ewigen Frieden" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/1449742> .
+<http://id.loc.gov/resources/works/1449742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/1449742> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Zum ewigen Frieden : ein philosophischer Entwurf : Texte zur Rezeption, 1796-1800" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10171704> .
+<http://id.loc.gov/resources/works/10171704> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10171704> <http://id.loc.gov/ontologies/bflc/aap> "Kant, Immanuel, 1724-1804. Zum ewigen Frieden. Ein philosophischer entwurf" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13471848> .
+<http://id.loc.gov/resources/works/13471848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13471848> <http://id.loc.gov/ontologies/bflc/aap> "Łaciak, Piotr Struktura i rodzaje poznania A PRIORI w rozumieniu Kanta i Husserla" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10237015> .
+<http://id.loc.gov/resources/works/10237015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10237015> <http://id.loc.gov/ontologies/bflc/aap> "Lessing, Gotthold Ephraim, 1729-1781. Gotthold Ephraim Lessing:" .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/10096369> .
+<http://id.loc.gov/resources/works/10096369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/10096369> <http://id.loc.gov/ontologies/bflc/aap> "Montaigne, Michel de, 1533-1592. Literary and philosophical essays, French, German and Italian," .
+<http://id.loc.gov/rwo/agents/n79021614> <http://id.loc.gov/ontologies/bflc/contributorTo> <http://id.loc.gov/resources/works/13628977> .
+<http://id.loc.gov/resources/works/13628977> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/13628977> <http://id.loc.gov/ontologies/bflc/aap> "Schütze, Marc. Subjektive Rechte und personale Identität : die Anwendung subjektiver Rechte bei Immanuel Kant, Carl Schmitt, Hans Kelsen und Hermann Heller" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <https://www.wikidata.org/wiki/Q9312> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <https://viaf.org/viaf/82088490/> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <https://isni.org/isni/0000000122824025> .
+<http://id.loc.gov/authorities/names/n79021614> <http://id.loc.gov/ontologies/bflc/marcKey> "1001 $aKant, Immanuel,$d1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#editorialNote> "[Machine-derived non-Latin script reference project.]" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#editorialNote> "[Non-Latin script references not evaluated.]" .
+<http://id.loc.gov/authorities/names/n79021614> <http://id.loc.gov/vocabulary/identifiers/lccn> "n 79021614" .
+<http://id.loc.gov/authorities/names/n79021614> <http://id.loc.gov/vocabulary/identifiers/local> "(OCoLC)oca00255412" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1225iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1225iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1225iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Der Streit der Facultäten, 1799." .
+_:b1225iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1231iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1231iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1231iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Voprosy teoreticheskogo nasledii︠a︡ Immanuila Kanta, 1980-:" .
+_:b1231iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "v. 5, t.p. (Immanuila Kanta)" .
+_:b1231iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1239iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1239iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1239iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Kʻantʻŭ chʻŏrhak sasang ŭi ihae, 1983:" .
+_:b1239iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Kʻantʻŭ)" .
+_:b1239iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1247iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1247iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1247iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Ethos ed eros in Hegel e Kant, c1984:" .
+_:b1247iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Kant)" .
+_:b1247iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1255iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1255iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1255iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Projet de paix perpétuelle, 1769:" .
+_:b1255iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Emmanuel Kant)" .
+_:b1255iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1263iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Hanaḥat yesod la-meṭafisiḳah shel ha-midot, 1984:" .
+_:b1263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (ʻImanuʼel Ḳanṭ) added t.p. (Immanuel Kant [in rom.])" .
+_:b1263iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1271iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1271iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1271iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Kant, 1988." .
+_:b1271iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1277iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1277iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1277iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Problemy religii v uchenii I. Kanta, 1994:" .
+_:b1277iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (I. Kanta)" .
+_:b1277iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1285iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1285iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1285iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Project for a perpetual peace, 1796:" .
+_:b1285iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Emanuel Kant)" .
+_:b1285iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1293iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1293iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1293iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "I. Cantơ, người sáng lập nền triê̕t học cô̕ điê̕n Đức, 1997." .
+_:b1293iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1299iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Incontro con Kant, c1997:" .
+_:b1299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "p. 7 (Emanuele Kant)" .
+_:b1299iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1307iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1307iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1307iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Immanuel Kant's Allgemeine Naturgeschichte und Theorie des Himmels, 1884?:" .
+_:b1307iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "cover (Im. Kant)" .
+_:b1307iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1315iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1315iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1315iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Wikipedia, Sept. 20, 2012" .
+_:b1315iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "(Immanuel Kant; born 22 April 1724; died 12 February 1804; German philosopher from Königsberg in Prussia (today Kaliningrad, Russia) who researched, lectured and wrote on philosophy and anthropology during the Enlightenment at the end of the 18th century)" .
+_:b1315iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1323iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Gnōsē kai praxē, 2010:" .
+_:b1323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "t.p. (Ιμμάνουελ Καντ = Immanouel Kant)" .
+_:b1323iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1331iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1331iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1331iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "al-Anwār wa-sulṭat al-khabīr al-bīdaghūjī, 2011:" .
+_:b1331iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "title page (إيمانويل كانط = Imānwīl Kānṭ)" .
+_:b1331iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1339iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1339iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1339iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Crítica del juicio, 1985:" .
+_:b1339iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "title page (Manuel Kant)" .
+_:b1339iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b1347iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1347iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b1347iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationSource> "Hacia la paz perpetua, 2018:" .
+_:b1347iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationNote> "(Spanish transl. of Zum ewigen Frieden)" .
+_:b1347iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.loc.gov/mads/rdf/v1#citationStatus> "found" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b1355iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1355iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b1355iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1979-04-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1355iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b1355iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b1355iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b1363iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1363iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b1363iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "2021-05-27T06:46:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1363iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:b1363iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/pst> .
+_:b1363iddOtlocdOtgovauthoritiesnamesn79021614 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kant, Immanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1374iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1374iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1374iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, I. (Immanuil), 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1379iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1379iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1379iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kānt, ʻAmmānūʼīl, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1384iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1384iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1384iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Immanouel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1389iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1389iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1389iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Immanuil, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1394iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1394iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1394iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kʻantʻŭ, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1399iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1399iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1399iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1404iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1404iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1404iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Emmanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1409iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1409iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1409iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Ḳanṭ, ʻImanuʼel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1414iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1414iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1414iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, E., 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1419iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1419iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1419iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Emanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1424iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1424iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1424iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Cantơ, I., 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1429iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1429iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1429iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Emanuele, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1434iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1434iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1434iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Im. (Immanuel), 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1439iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1439iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1439iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1444iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1444iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1444iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט, א." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1449iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1449iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1449iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1454iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1454iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1454iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט, עמנואל, 4271־4081" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1459iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1459iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1459iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט, עמנואל, 1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1464iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1464iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1464iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קאנט, ע." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1469iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1469iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1469iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1474iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1474iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1474iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1479iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1479iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1479iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "קנט, עמנואל, 1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1484iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1484iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1484iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "كانت ، ايمانوئل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1489iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1489iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1489iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "كنت، إمانويل، 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1494iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1494iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1494iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "カントイマニユエル, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1499iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1499iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1499iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kangde, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1504iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1504iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1504iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "康德, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1509iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1509iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1509iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kanṭ, Īmānwīl, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1514iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1514iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1514iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "كانط، إيمانويل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b1519iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1519iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b1519iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/2008/05/skos-xl#literalForm> "Kant, Manuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://viaf.org/viaf/sourceID/LC%7Cn++79021614#skos:Concept> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://vocab.getty.edu/ulan/500107055> .
+<http://vocab.getty.edu/ulan/500107055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.getty.edu/ulan/500107055> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kant, Immanuel" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.worldcat.org/fast/31763> .
+<http://id.worldcat.org/fast/31763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.worldcat.org/fast/31763> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kant, Immanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.wikidata.org/entity/Q9312> .
+<http://www.wikidata.org/entity/Q9312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.wikidata.org/entity/Q9312> <http://www.w3.org/2004/02/skos/core#prefLabel> "Immanuel Kant" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.worldcat.org/fast/31763> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://vocab.getty.edu/ulan/500107055> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.wikidata.org/entity/Q9312> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#editorial> "[Machine-derived non-Latin script reference project.]" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#editorial> "[Non-Latin script references not evaluated.]" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, I. (Immanuil), 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kānt, ʻAmmānūʼīl, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Immanouel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Immanuil, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kʻantʻŭ, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Emmanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Ḳanṭ, ʻImanuʼel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, E., 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Emanuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Cantơ, I., 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Emanuele, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Im. (Immanuel), 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט, א." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט, עמנואל, 4271־4081" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט, עמנואל, 1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קאנט, ע." .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קנט" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קנט, עמנואל" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "קנט, עמנואל, 1724־1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "كانت ، ايمانوئل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "كنت، إمانويل، 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "カントイマニユエル, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kangde, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "康德, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kanṭ, Īmānwīl, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "كانط، إيمانويل" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#altLabel> "Kant, Manuel, 1724-1804" .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#changeNote> _:b1608iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1608iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b1608iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/n79021614> .
+_:b1608iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b1608iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#createdDate> "1979-04-13T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1608iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://id.loc.gov/authorities/names/n79021614> <http://www.w3.org/2004/02/skos/core#changeNote> _:b1616iddOtlocdOtgovauthoritiesnamesn79021614 .
+_:b1616iddOtlocdOtgovauthoritiesnamesn79021614 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b1616iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/n79021614> .
+_:b1616iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/pst> .
+_:b1616iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#createdDate> "2021-05-27T06:46:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1616iddOtlocdOtgovauthoritiesnamesn79021614 <http://purl.org/vocab/changeset/schema#changeReason> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .

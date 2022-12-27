@@ -1,7 +1,6 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
-@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,122 +8,102 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n91088495> a madsrdf:Authority,
+<http://id.loc.gov/authorities/names/no97027235> a madsrdf:Authority,
         madsrdf:PersonalName ;
-    bflc:marcKey "1001 $aHouellebecq, Michel" ;
-    identifiers:lccn "n 91088495" ;
-    identifiers:local "(OCoLC)oca03015047" ;
+    bflc:marcKey "1001 $aGraeber, David" ;
+    identifiers:lccn "no 97027235" ;
+    identifiers:local "(OCoLC)oca04330968" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "1991-08-31T00:00:00"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ],
+            ri:recordChangeDate "2022-05-04T06:45:56"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/gvas> ;
+            ri:recordStatus "revised"^^xsd:string ],
         [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2022-08-25T06:45:52"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/mosu> ;
-            ri:recordStatus "revised"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Houellebecq, Michel" ;
-    madsrdf:classification [ a lcc:ClassNumber ;
-            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            madsrdf:code "PQ2668.O77" ] ;
-    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
-        "[Non-Latin script references not evaluated.]" ;
+            ri:recordChangeDate "1997-05-01T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/ien> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Graeber, David" ;
     madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                madsrdf:elementValue "Houellebecq, Michel" ] ) ;
-    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/291449>,
-        <http://www.wikidata.org/entity/Q103114> ;
-    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++91088495#skos:Concept> ;
+                madsrdf:elementValue "Graeber, David" ] ) ;
+    madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "David Rolfe" ] ;
+    madsrdf:hasCloseExternalAuthority <http://www.wikidata.org/entity/Q1174579> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cno+97027235#skos:Concept> ;
+    madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/names/n80038497> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "title page (Michel Houellebecq) back cover (born 1958 [i.e. 1956]; critic, poet, novelist)" ;
-            madsrdf:citationSource "Extension du domaine de la lutte, 1994:" ;
+            madsrdf:citationNote "(David Graeber ; died in a Venice hospital on Wednesday [09/02/2020] at 59 ; anarchist and author of bestselling books on capitalism and bureaucracy ; anthropologist and anarchist author of bestselling books on bureaucracy and economics)" ;
+            madsrdf:citationSource <https://www.theguardian.com/books/2020/sep/03/david-graeber-anthropologist-and-author-of-bullshit-jobs-dies-aged-59>,
+                "Guardian, viewed September 4, 2020" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(authorized access point: Houellebecq, Michel (1956-....); other data in authority record: French screenwriter, poet, and essayist; born February 26, 1956)" ;
-            madsrdf:citationSource <https://catalogue.bnf.fr/ark:/12148/cb12249911x>,
-                "Bibliothèque nationale de France online catalog, viewed August 24, 2022" ;
+            madsrdf:citationNote "title page (David Graeber)" ;
+            madsrdf:citationSource "Graeber, David. The disastrous ordeal of 1987, 1996:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "title page (Michel Houellebecq)" ;
-            madsrdf:citationSource "H.P. Lovecraft, 1991:" ;
+            madsrdf:citationNote "title page (David Graeber)" ;
+            madsrdf:citationSource "The utopia of rules, 2015:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(Michel Houellebecq; his birth name was Michel Thomas; born February 26, 1956, in Saint-Pierre on the island of La Réunion; French writer, poet, essayist, and film director; as a child, following his parents' separation, he was sent to live with his maternal grandparents in Algeria, then moved to the care of his paternal grandmother, whose maiden name was Houellebecq; he pursued a course in film studies at the École nationale supérieure Louis-Lumière in Saint-Denis; his biography of H.P. Lovecraft was published in 1991; in 2000, he moved to Ireland, and later to Spain, before returning to Paris in 2012)" ;
-            madsrdf:citationSource "French Wikipedia, viewed August 24, 2022" ;
+            madsrdf:citationNote "(access point: Graeber, David)" ;
+            madsrdf:citationSource "Canadiana, May 27, 2021" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(David Rolfe Graeber, born 12 February 1961; Residence: London, England; He is Professor of Anthropology at the London School of Economics)" ;
+            madsrdf:citationSource <https://en.wikipedia.org/wiki/David_Graeber>,
+                "Wikipedia, viewed August 10, 2015" ;
             madsrdf:citationStatus "found" ] ;
-    madsrdf:hasVariant [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Thomas, Michel," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1956-" ] ) ;
-            madsrdf:variantLabel "Thomas, Michel, 1956-" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "וולבק, מישל" ] ) ;
-            madsrdf:variantLabel "וולבק, מישל" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Уэльбек, Мишель" ] ) ;
-            madsrdf:variantLabel "Уэльбек, Мишель" ] ;
-    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n91088495>,
-        <http://viaf.org/viaf/66522427>,
-        <https://isni.org/isni/000000012137320X>,
-        <https://www.wikidata.org/wiki/Q103114> ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/no97027235> ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
         <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
     madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
 
-<http://id.loc.gov/authorities/subjects/sh85048057> a skos:Concept ;
-    madsrdf:authoritativeLabel "Fiction--Authorship" .
+<http://id.loc.gov/authorities/subjects/sh85004813> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Anarchists" .
 
-<http://id.loc.gov/authorities/subjects/sh85077507> a skos:Concept ;
-    madsrdf:authoritativeLabel "Literature" .
+<http://id.loc.gov/authorities/subjects/sh85005579> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Anthropologists" .
 
-<http://id.loc.gov/authorities/subjects/sh85088067> a madsrdf:Occupation ;
-    madsrdf:authoritativeLabel "Motion picture producers and directors" .
+<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Authors" .
 
-<http://id.loc.gov/authorities/subjects/sh85088104> a skos:Concept ;
-    madsrdf:authoritativeLabel "Motion pictures--Production and direction" .
+<http://id.loc.gov/authorities/subjects/sh85028378> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "College teachers" .
 
-<http://id.loc.gov/authorities/subjects/sh85092863> a madsrdf:Occupation ;
-    madsrdf:authoritativeLabel "Novelists" .
+<http://id.loc.gov/authorities/subjects/sh85040766> a skos:Concept ;
+    madsrdf:authoritativeLabel "Economic anthropology" .
 
-<http://id.loc.gov/authorities/subjects/sh85103704> a skos:Concept ;
-    madsrdf:authoritativeLabel "Poetry" .
+<http://id.loc.gov/authorities/subjects/sh85041065> a skos:Concept ;
+    madsrdf:authoritativeLabel "Education, Higher" .
 
-<http://id.loc.gov/authorities/subjects/sh85103733> a madsrdf:Occupation ;
-    madsrdf:authoritativeLabel "Poets" .
+<http://id.loc.gov/authorities/subjects/sh85045198> a skos:Concept ;
+    madsrdf:authoritativeLabel "Ethnology" .
 
-<http://id.loc.gov/authorities/subjects/sh98005508> a madsrdf:Occupation ;
-    madsrdf:authoritativeLabel "Essayists" .
-
-<http://id.loc.gov/rwo/agents/n91088495> a bf:Person,
+<http://id.loc.gov/rwo/agents/no97027235> a bf:Person,
         madsrdf:RWO,
         <http://xmlns.com/foaf/0.1/Person> ;
-    rdfs:label "Houellebecq, Michel" ;
-    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng>,
-        <http://id.loc.gov/vocabulary/languages/fre> ;
-    madsrdf:birthDate [ a skos:Concept ;
-            rdfs:label "(edtf) 1956-02-26" ] ;
-    madsrdf:birthPlace [ a madsrdf:Geographic ;
-            rdfs:label "Saint-Pierre (Réunion)" ;
+    rdfs:label "Graeber, David" ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    madsrdf:associatedLocale [ a madsrdf:Geographic ;
+            rdfs:label "United States" ;
             madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
-    madsrdf:fieldOfActivity [ a skos:Concept ;
-            rdfs:label "(lcsh) Novels" ],
-        <http://id.loc.gov/authorities/subjects/sh85048057>,
-        <http://id.loc.gov/authorities/subjects/sh85077507>,
-        <http://id.loc.gov/authorities/subjects/sh85088104>,
-        <http://id.loc.gov/authorities/subjects/sh85103704> ;
-    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85088067>,
-        <http://id.loc.gov/authorities/subjects/sh85092863>,
-        <http://id.loc.gov/authorities/subjects/sh85103733>,
-        <http://id.loc.gov/authorities/subjects/sh98005508> .
+    madsrdf:birthDate [ a skos:Concept ;
+            rdfs:label "(edtf) 1961-02-12" ] ;
+    madsrdf:deathDate [ a skos:Concept ;
+            rdfs:label "(edtf) 2020-09-02" ] ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85040766>,
+        <http://id.loc.gov/authorities/subjects/sh85041065>,
+        <http://id.loc.gov/authorities/subjects/sh85045198> ;
+    madsrdf:hasAffiliation [ a madsrdf:Affiliation ;
+            madsrdf:organization <http://id.loc.gov/authorities/names/n80038497> ] ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85004813>,
+        <http://id.loc.gov/authorities/subjects/sh85005579>,
+        <http://id.loc.gov/authorities/subjects/sh85009793>,
+        <http://id.loc.gov/authorities/subjects/sh85028378> .
 
 <http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
     madsrdf:authoritativeLabel "English"@en .
 
-<http://id.loc.gov/vocabulary/languages/fre> a madsrdf:Language ;
-    madsrdf:authoritativeLabel "French"@en .
+<http://id.loc.gov/authorities/names/n80038497> a madsrdf:Organization ;
+    madsrdf:authoritativeLabel "London School of Economics and Political Science" .
 

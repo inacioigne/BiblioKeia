@@ -14,7 +14,9 @@ import {
   Grid,
   Button,
   LinearProgress,
+  Snackbar,
 } from "@mui/material";
+import MuiAlert from "@mui/material/Alert";
 import {
   LocalHospital,
   ChildFriendly,
@@ -23,8 +25,15 @@ import {
 } from "@mui/icons-material";
 import Image from "next/image";
 import { api } from "src/services/api";
-import QueryNamesBK from "src/services/thesaurus/names/query";
-import { useState } from "react";
+import QueryNamesBK from "src/services/thesaurus/names/queryBK";
+import { useState, forwardRef } from "react";
+
+// BiblioKeia Hooks
+import { useAlertBK } from "src/providers/alerts";
+
+const Alert = forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export default function CardLCNAF({
   LCNAFDetails,
@@ -34,21 +43,28 @@ export default function CardLCNAF({
   setImgBK,
 }) {
   const [progress, setProgess] = useState(false);
+  // const [openSnack, setOpenSnack] = useState(false);
+  const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
+  
   const handleImport = () => {
-    //console.log("import", LCNAFDetails);
     setProgess(true);
     api
       .post(`/thesaurus/name/import/lcnaf/${LCNAFDetails.token}`)
       .then((response) => {
         if (response.status == 201) {
-          console.log(response.data);
+          setMessage("Registro importado com sucesso!");
+          setOpenSnack(true);
+
           QueryNamesBK(LCNAFDetails.token, setNameDetails, setImgBK);
           setOpen(false);
         }
       })
       .catch(function (error) {
         if (error.response.status == 409) {
+          setMessage("Registro já existe no thesarus");
+          setTypeAlert("warning");
+          setOpenSnack(true);
           console.log("ERROOO!!", error.response.data);
           QueryNamesBK(LCNAFDetails.token, setNameDetails, setImgBK);
           setOpen(false);
@@ -62,7 +78,6 @@ export default function CardLCNAF({
       }}
     >
       {progress && <LinearProgress color="secondary" />}
-      
 
       <CardContent>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -84,7 +99,9 @@ export default function CardLCNAF({
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Nascimento:</Typography>
-                <Button size="small"> {LCNAFDetails?.birth.place}</Button>
+                {LCNAFDetails.birth?.place && (
+                  <Button size="small"> {LCNAFDetails?.birth.place}</Button>
+                )}
                 <Button size="small" startIcon={<ChildFriendly />}>
                   {LCNAFDetails?.birth.date}
                 </Button>
@@ -97,65 +114,66 @@ export default function CardLCNAF({
             <Grid item xs={6}>
               <Box pt="0.5rem">
                 <Typography variant="subtitle2">Falecimento:</Typography>
-                <Button size="small"> {LCNAFDetails?.death.place}</Button>
+                {LCNAFDetails.death?.place && (
+                  <Button size="small"> {LCNAFDetails.death.place}</Button>
+                )}
+
                 <Button size="small" startIcon={<LocalHospital />}>
                   {LCNAFDetails?.death.date}
                 </Button>
               </Box>
             </Grid>
           )}
-          
 
-          {/* fullerName */}
-          {/* {LCNAFDetails?.fullerName && ( */}
-            <Grid item xs={6}>
-              <Box pt="0.5rem">
-                {LCNAFDetails?.fullerName && (
-                  <>
-                    <Typography variant="subtitle2">Nome completo:</Typography>
-                    <Typography variant="body2">
-                      {LCNAFDetails?.fullerName}
-                    </Typography>
-                  </>
-                )}
+          <Grid item xs={6}>
+            <Box pt="0.5rem">
+              {/* fullerName */}
+              {LCNAFDetails?.fullerName && (
+                <>
+                  <Typography variant="subtitle2">Nome completo:</Typography>
+                  <Typography variant="body2">
+                    {LCNAFDetails?.fullerName}
+                  </Typography>
+                </>
+              )}
 
-                {/* Imagem */}
+              {/* Imagem */}
 
-                {img && (
-                  <Paper
-                    elevation={6}
+              {img && (
+                <Paper
+                  elevation={6}
+                  sx={{
+                    mt: "0.5rem",
+                    width: 180,
+                    height: 200,
+                    position: "relative",
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    p: 1,
+                  }}
+                >
+                  <Image src={img} layout="fill" />
+                  <Box
                     sx={{
-                      mt: "0.5rem",
-                      width: 180,
-                      height: 200,
-                      position: "relative",
-                      objectFit: "cover",
+                      height: 180,
+                      width: 200,
+                      background: "transparent",
                       borderRadius: "10px",
-                      overflow: "hidden",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      p: 1,
+                      transition: "border 1s",
+                      position: "relative",
+                      "&:hover": {
+                        border: "1px solid white",
+                      },
                     }}
-                  >
-                    <Image src={img} layout="fill" />
-                    <Box
-                      sx={{
-                        height: 180,
-                        width: 200,
-                        background: "transparent",
-                        borderRadius: "10px",
-                        transition: "border 1s",
-                        position: "relative",
-                        "&:hover": {
-                          border: "1px solid white",
-                        },
-                      }}
-                    ></Box>
-                  </Paper>
-                )}
-              </Box>
-            </Grid>
+                  ></Box>
+                </Paper>
+              )}
+            </Box>
+          </Grid>
           {/* )} */}
 
           {/* variant */}

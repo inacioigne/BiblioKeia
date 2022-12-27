@@ -13,7 +13,7 @@ import {
 import { Search, Close } from "@mui/icons-material";
 
 // React Hooks
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
@@ -30,9 +30,10 @@ export default function Fields({
   setType,
   name,
   setName,
-  setResponse
+  setResponse,
 }) {
   const [disabled, setDisabled] = useState(false);
+  const textInput = useRef(null);
 
   const { work, setWork } = useBf();
 
@@ -42,18 +43,18 @@ export default function Fields({
       .get("select", {
         params: {
           q: `general_search:${name}*`,
-          fq:`type:${type}`,
-          "q.op":"AND",
+          fq: `type:${type}`,
+          "q.op": "AND",
           wt: "json",
         },
       })
       .then((response) => {
         setResponse(response.data.response.docs);
-       
       });
   };
 
   const handleSearch = (e) => {
+    //console.log("r", e.target.value)
 
     e.preventDefault();
     setOpen(true);
@@ -112,8 +113,8 @@ export default function Fields({
           color="primary"
           aria-label="search"
           component="button"
-          type="submit"
-          onClick={handleSearch}
+          //type="submit"
+          //onClick={() => console.log("r", textInput.current.value)}
         >
           <Search />
         </IconButton>
@@ -148,10 +149,7 @@ export default function Fields({
           </Select>
         </FormControl>
         <TextField
-          // onChange={(e) => {
-          //   setName(e.target.value);
-          //   searchAuthority(e.target.value)
-          // }}
+          //ref={textInput}
           onChange={handleSearch}
           value={name}
           fullWidth

@@ -16,6 +16,7 @@ def Import_Authority(token):
 
     g = Graph()
     rdf = f'https://id.loc.gov/authorities/names/{token}.madsrdf.rdf'
+    #rdf = f'https://id.loc.gov/authorities/names/{token}.rdf'
     g.parse(rdf)   
      
 

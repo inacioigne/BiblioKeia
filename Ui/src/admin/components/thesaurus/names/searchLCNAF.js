@@ -35,14 +35,14 @@ export default function SearchLCNAF({
   open,
   setOpen,
   name,
-  nameLCNAF,
-  setNameLCNAF,
+  // nameLCNAF,
+  // setNameLCNAF,
   setNameDetails,
   setImgBK
   
 }) {
   const [type, setType] = useState("PersonalName");
-  //const [nameLCNAF, setNameLCNAF] = useState("");
+  const [nameLCNAF, setNameLCNAF] = useState("");
   const [hits, setHits] = useState([]);
 
   const [LCNAFDetails, setLCNAFDetails] = useState(null);
@@ -65,8 +65,15 @@ export default function SearchLCNAF({
   };
 
   useEffect(() => {
+    if (name) {
+
+      setNameLCNAF(name)
+      getData(name, type);
+
+    }
+    
     //setName(search)
-    getData(name, type);
+    
   }, []);
 
   const handleClose = () => {
@@ -159,9 +166,6 @@ export default function SearchLCNAF({
                     sx={{ textTransform: "none" }}
                     onClick={() => {
                       QueryLCNAF(hit.uri, setLCNAFDetails, setImg);
-                      // let token = hit.uri.split("/")[5];
-                      // console.log(hit.uri)
-                      //getDetails(token);
                     }}
                   >
                     {hit.aLabel}

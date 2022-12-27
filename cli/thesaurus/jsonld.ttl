@@ -1,0 +1,138 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix ns3: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n80002329> a ns1:Authority,
+        ns1:PersonalName ;
+    ns5:marcKey "1001 $aMachado de Assis,$d1839-1908" ;
+    ns2:lccn "n 80002329" ;
+    ns2:local "(OCoLC)oca00385024" ;
+    ns1:adminMetadata [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "1980-06-25T00:00:00"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns3:recordStatus "new"^^xsd:string ],
+        [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "2022-12-12T06:45:17"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/nnu> ;
+            ns3:recordStatus "revised"^^xsd:string ] ;
+    ns1:authoritativeLabel "Machado de Assis, 1839-1908" ;
+    ns1:classification [ a <http://id.loc.gov/ontologies/lcc#ClassNumber> ;
+            ns4:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:code "PQ9697.M18" ] ;
+    ns1:editorialNote "[Pseudonym not found on published works: Lélio, Manassés, Bruxo do Cosme Velho.]" ;
+    ns1:elementList ( [ a ns1:FullNameElement ;
+                ns1:elementValue "Machado de Assis," ] [ a ns1:DateNameElement ;
+                ns1:elementValue "1839-1908" ] ) ;
+    ns1:fullerName [ a ns1:PersonalName ;
+            rdfs:label "Joaquim Maria Machado" ] ;
+    ns1:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++80002329#skos:Concept> ;
+    ns1:hasSource [ a ns1:Source ;
+            ns1:citationNote "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" ;
+            ns1:citationSource "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (Machado de Assis) p. 19 (pseudonym Lélio)" ;
+            ns1:citationSource "Balas de estalo, 1998:" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "t.p. (Machado de Assis) p. 16 (Manassés, pseudônimo que Machado assumiria em todas as crônicas de série.) p. 65 (Manassés)" ;
+            ns1:citationSource "História de quinze dias, 2009:" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "(Joaquim Maria Machado de Assis; known as Machado de Assis, Machado, or Bruxo do Cosme Velho; born June 21, 1839 in Rio de Janeiro; died September 29, 1908, Rio de Janeiro; of African descent; Brazilian novelist, poet, playwright, short story writer, literary critics, and advocate of monarchism. Widely regarded as the greatest writer of Brazilian literature)" ;
+            ns1:citationSource <https://en.wikipedia.org/wiki/Machado_de_Assis>,
+                "Wikipedia, Sept. 17, 2013" ;
+            ns1:citationStatus "found" ],
+        [ a ns1:Source ;
+            ns1:citationNote "translator's introducation, page xxiii (Through most of his life [Machado de Assis] worked as a public official -- a bureaucrat, we should say -- for it was almost impossible to earn a living as a writer; the Brazilian Academy of Letters unanimously elected Machado its president, a title that he held from the founding of the Academy in 1897 till his death in 1908)" ;
+            ns1:citationSource "Machado de Assis. Epitaph of a small winner, 1990:" ;
+            ns1:citationStatus "found" ] ;
+    ns1:hasVariant [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "De Assis, Joaquim Maria Machado," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "De Assis, Joaquim Maria Machado, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "De Assis, Machado," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "De Assis, Machado, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Machado de Assis, Joaquim Maria," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Machado de Assis, Joaquín María," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "Machado de Assis, Joaquín María, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Mashado de Assiz, Zhoakin," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "Mashado de Assiz, Zhoakin, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Assis, Joaquim Maria Machado de," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "Assis, Joaquim Maria Machado de, 1839-1908" ],
+        [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "Assis, Machado de," ] [ a ns1:DateNameElement ;
+                        ns1:elementValue "1839-1908" ] ) ;
+            ns1:variantLabel "Assis, Machado de, 1839-1908" ] ;
+    ns1:identifiesRWO <http://id.loc.gov/rwo/agents/n80002329>,
+        <http://isni.org/isni/0000000121441225>,
+        <http://viaf.org/viaf/95151633>,
+        <http://www.wikidata.org/entity/Q311145> ;
+    ns1:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    ns1:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/rwo/agents/n80002329> a ns4:Person,
+        ns1:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Machado de Assis, 1839-1908" ;
+    ns1:associatedLanguage <http://id.loc.gov/vocabulary/languages/por> ;
+    ns1:birthDate [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "(edtf) 1839-06-21" ] ;
+    ns1:birthPlace [ a ns1:Geographic ;
+            rdfs:label "Rio de Janeiro (Brazil)" ;
+            ns1:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    ns1:deathDate [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "(edtf) 1908-09-29" ] ;
+    ns1:entityDescriptor [ a <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "Authors, Black" ] ;
+    ns1:hasAffiliation [ a ns1:Affiliation ;
+            ns1:affiliationEnd "1908" ;
+            ns1:affiliationStart "1897" ;
+            ns1:organization [ a ns1:Organization ;
+                    rdfs:label "(naf) Academia Brasileira de Letras" ] ] ;
+    ns1:occupation [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Novelists" ],
+        [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Poets" ],
+        [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Dramatists" ],
+        [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Critics" ],
+        [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Public officers" ],
+        [ a ns1:Occupation ;
+            rdfs:label "(lcsh) Bureaucrats" ] .
+

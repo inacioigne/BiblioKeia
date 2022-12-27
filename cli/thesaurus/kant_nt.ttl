@@ -1,0 +1,1227 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns4: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns5: <http://purl.org/vocab/changeset/schema#> .
+@prefix ns6: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns7: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060003> a ns4:Concept ;
+    ns2:authoritativeLabel "Males" .
+
+<http://id.loc.gov/authorities/subjects/sh85100836> a ns2:Occupation ;
+    ns2:authoritativeLabel "Philosophers" .
+
+<http://id.loc.gov/resources/works/10001277> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Anthropology from a pragmatic point of view" .
+
+<http://id.loc.gov/resources/works/10023536> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Reflexionen Kants zur kritischen Philosophie" .
+
+<http://id.loc.gov/resources/works/100373> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Piché, Claude Kant et ses épigones" .
+
+<http://id.loc.gov/resources/works/10042862> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kraft, Julius, 1898-1960 Die methode der rechtstheorie in der schule von Kant und Fries" .
+
+<http://id.loc.gov/resources/works/100506> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Rosas, Alejandro Kants idealistische Reduktion" .
+
+<http://id.loc.gov/resources/works/10053486> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Masci, Filippo, 1844-1922 La libertà nel diritto e nella storia secondo Kant ed Hegel, appunti critici" .
+
+<http://id.loc.gov/resources/works/10060573> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Beantwortung der Frage, Was ist Aufklärung?" .
+
+<http://id.loc.gov/resources/works/10063545> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Brockdorff, Cay [Ludwig Georg Conrad], baron von, 1874- Kants teleologie .." .
+
+<http://id.loc.gov/resources/works/10063547> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Burckhardt, Waldemar, 1853- Kant's objectiver Idealismus" .
+
+<http://id.loc.gov/resources/works/10064105> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Frommel, Otto Heinrich, 1862- Das Verhältnis von mechanischer und teleologischer Naturerklärung bei Kant und Lotze .." .
+
+<http://id.loc.gov/resources/works/10064414> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Willareth, Otto, 1867- Die lehre vom uebel bei Leibniz" .
+
+<http://id.loc.gov/resources/works/10067251> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Kant's principles of politics, including his essay on Perpetual peace" .
+
+<http://id.loc.gov/resources/works/10069202> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Paulsen, Friedrich, 1846-1908 Immanuel Kant, his life and doctrine" .
+
+<http://id.loc.gov/resources/works/10070263> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hoffmann, Alfons Immanuel Kant" .
+
+<http://id.loc.gov/resources/works/10070664> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Kant's inaugural dissertation of 1770" .
+
+<http://id.loc.gov/resources/works/10070880> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hägerström, Axel, 1868-1939 Kants Ethik im Verhältnis zu seinen erkenntnistheoretischen Grundgedanken" .
+
+<http://id.loc.gov/resources/works/1008255> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Chamberlain, Houston Stewart, 1855-1927. Immanuel Kant : die Persönlichkeit als Einführung in das Werk" .
+
+<http://id.loc.gov/resources/works/10088579> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Dreyer, Hans, 1871- begriff geist in der deutschen philosophie von Kant bis Hegel" .
+
+<http://id.loc.gov/resources/works/10090295> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Uppsala universitet. Upsala universitets årsskrift" .
+
+<http://id.loc.gov/resources/works/10091687> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Fichte, Johann Gottlieb, 1762-1814. New exposition of the science of knowledge" .
+
+<http://id.loc.gov/resources/works/10096369> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Montaigne, Michel de, 1533-1592. Literary and philosophical essays, French, German and Italian," .
+
+<http://id.loc.gov/resources/works/10096816> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Fischer, Kuno, 1824-1907. critique of Kant" .
+
+<http://id.loc.gov/resources/works/10100654> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Edmunds, James. Kant's ethics: the clavis to an index. Including extracts from several oriental sacred scriptures, and from certain Greek and Roman philosophical writings" .
+
+<http://id.loc.gov/resources/works/10107169> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Guttmann, Julius, 1880-1950. Kants Gottesbegriff in seiner positiven Entwicklung" .
+
+<http://id.loc.gov/resources/works/10107171> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ernst, Wilhelm, 1877- Zweckbegriff bei Kant und sein Verhältnis zu den Kategorien" .
+
+<http://id.loc.gov/resources/works/1011091> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gawlick, Günter. Hume in der deutschen Aufklärung : Umrisse einer Rezeptionsgeschichte" .
+
+<http://id.loc.gov/resources/works/10119884> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Anthropologie in pragmatischer hinsicht," .
+
+<http://id.loc.gov/resources/works/10120094> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Tilšer, František, 1825- Kdo hlásá pravdu: Kant či Lamarck a Monge?" .
+
+<http://id.loc.gov/resources/works/10120531> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Staeckel, O. begriff der idee bei Kant im verhältniss zu den ideen bei Platon .." .
+
+<http://id.loc.gov/resources/works/10120785> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Stommel, Kuno, 1847- Differenz Kants und Hegels : in Bezug auf die Erklärung der Antinomien" .
+
+<http://id.loc.gov/resources/works/10135222> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Seroux d'Agincourt, Camille. Exposé des projets de paix perpétuelle de l'abbé de Saint-Pierre (et de Henri IV) de Bentham et de Kant," .
+
+<http://id.loc.gov/resources/works/10136739> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Immanuel Kant's kleinere Schriften zur Ethik und Religionsphilosophie" .
+
+<http://id.loc.gov/resources/works/10136741> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Immanuel Kant's Logik : ein Handbuch zu Vorlesungen .." .
+
+<http://id.loc.gov/resources/works/10136853> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Durant, Will, 1885-1981. philosophy of Immanuel Kant" .
+
+<http://id.loc.gov/resources/works/10142422> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Nolen, Désiré, 1838-1904. critique de Kant et la métaphysique de Leibniz" .
+
+<http://id.loc.gov/resources/works/10146847> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kant's inaugural dissertation and early writings on space," .
+
+<http://id.loc.gov/resources/works/10150873> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Storrs, Margaret, 1900- relation of Carlyle to Kant and Fichte," .
+
+<http://id.loc.gov/resources/works/10150921> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Selections," .
+
+<http://id.loc.gov/resources/works/10153988> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Immanuel Kant's Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/10154243> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vaihinger, Hans, 1852-1933. philosophie des als ob" .
+
+<http://id.loc.gov/resources/works/10156921> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Grundlegung zur metaphysik der sitten," .
+
+<http://id.loc.gov/resources/works/10160362> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Krüger, Gerhard, 1902-1972. Philosophie und moral in der Kantischen kritik," .
+
+<http://id.loc.gov/resources/works/10162772> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kants Weltanschauung aus seinen Werken," .
+
+<http://id.loc.gov/resources/works/10163587> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Wacker, Herbert. verhältnis des jungen Hegel zu Kant," .
+
+<http://id.loc.gov/resources/works/1016375> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hauser, Linus, 1950- Religion als Prinzip und Faktum" .
+
+<http://id.loc.gov/resources/works/10163892> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critik der reinen Vernunft," .
+
+<http://id.loc.gov/resources/works/1016405> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Ausgewählte Schriften zur Pädagogik und ihrer Begründung : ausgewählte pädagogische Schriften" .
+
+<http://id.loc.gov/resources/works/10165044> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Jansen, Bernhard, 1877-1942. philosophie religieuse de Kant" .
+
+<http://id.loc.gov/resources/works/10166381> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Schulze-Soelde, W. (Walther), 1888- methode Spinozas im lichte Kants. Eine studie über dogmatismus und kritizismus .." .
+
+<http://id.loc.gov/resources/works/10166471> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Schmid, Albert, 1856- Zu Kants Lehre vom Raum" .
+
+<http://id.loc.gov/resources/works/10166538> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hartmann, Eduard von, 1842-1906. Kants Erkenntnistheorie und Metaphysik in den vier Perioden ihrer Entwickelung" .
+
+<http://id.loc.gov/resources/works/10168530> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hoffmeister, Johannes. Die problematik des völkerbundes bei Kant und Hegel," .
+
+<http://id.loc.gov/resources/works/10171704> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Zum ewigen Frieden. Ein philosophischer entwurf" .
+
+<http://id.loc.gov/resources/works/10171708> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Dulckeit, Gerhard, 1904- Naturrecht und positives recht bei Kant .." .
+
+<http://id.loc.gov/resources/works/10174133> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Haymann, Franz, 1874- Kants kritizismus und die Naturrechtlichen Strömungen der Gegenwart. Festrede anlässlich der zweihundertjährigen Wiederkehr des Geburtstages von Immanuel Kant gehalten am 8. März 1924 in der Juristischen Gesellschaft in Köln," .
+
+<http://id.loc.gov/resources/works/10181147> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Borkowski, Heinrich. Bibel Immanuel Kants," .
+
+<http://id.loc.gov/resources/works/10183235> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hessen, Johannes, 1889- religionsphilosophie des neukantianismus," .
+
+<http://id.loc.gov/resources/works/10183998> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Elsenhans, Theodor, 1862-1918. Fries und Kant; ein Beitrag zur Geschichte und zur systematischen Grundlegung der Erkenntnistheorie," .
+
+<http://id.loc.gov/resources/works/10184296> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gemelli, Agostino, 1878-1959, Immanuel Kant (1724-1924)" .
+
+<http://id.loc.gov/resources/works/10185107> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critik der practischen Vernunft," .
+
+<http://id.loc.gov/resources/works/10186540> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Whitney, George Tapley, 1871-1938, heritage of Kant" .
+
+<http://id.loc.gov/resources/works/10189771> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. conflit des facultés," .
+
+<http://id.loc.gov/resources/works/10191691> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Mattern, Charles David, 1907- Personal freedom within the third antinomy" .
+
+<http://id.loc.gov/resources/works/10191977> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Jones, W. T. (William Thomas), 1910- Morality and freedom in the philosophy of Immanuel Kant" .
+
+<http://id.loc.gov/resources/works/10196127> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Filosofía de la historia" .
+
+<http://id.loc.gov/resources/works/10198764> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Meyer, Jürgen Bona, 1829-1897. Kant's psychologie. Dargestellt und erörtert" .
+
+<http://id.loc.gov/resources/works/1019910> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Walker, Ralph Charles Sutherland. Real in the ideal : Berkeley's relation to Kant" .
+
+<http://id.loc.gov/resources/works/10199412> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "[Gross, Felix], 1884- Immanuel Kant," .
+
+<http://id.loc.gov/resources/works/10202791> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Drobisch, Moritz Wilhelm, 1802-1896. Kant's dinge an sich und sein erfahrungsbegriff" .
+
+<http://id.loc.gov/resources/works/1020376> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cassirer, H. W. (Heinrich Walter), 1903- Grace and law : St. Paul, Kant, and the Hebrew prophets" .
+
+<http://id.loc.gov/resources/works/10212643> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Erläuternde Anmerkungen zu den Metaphysischen Anfangsgründen der Rechtslehre," .
+
+<http://id.loc.gov/resources/works/10215995> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique de la raison pratique," .
+
+<http://id.loc.gov/resources/works/10216954> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique de la raison pratique," .
+
+<http://id.loc.gov/resources/works/10218523> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Wobbermin, Georg, 1869- Luther, Kant, Schleiermacher in ihrer bedeutung für den protestantismus; forschungen und abhandlungen," .
+
+<http://id.loc.gov/resources/works/10219290> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Abicht, Johann Heinrich, 1762-1816. Kritische briefe über die möglichkeit einer wahren wissenschaftlichen moral, theologie, rechtslehre, empirischen psychologie und geschmakslehre mit prüfender hinsicht auf die Kantische begründung dieser lehre," .
+
+<http://id.loc.gov/resources/works/10233137> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ewald, Oscar, 1881- Kants kritischer Idealismus als Grundlage von Erkenntnistheorie und Ethik" .
+
+<http://id.loc.gov/resources/works/10237015> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Lessing, Gotthold Ephraim, 1729-1781. Gotthold Ephraim Lessing:" .
+
+<http://id.loc.gov/resources/works/1023938> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Salgado, Joaquim Carlos. idéia de justiça em Kant : seu fundamento na liberdade e na igualdade" .
+
+<http://id.loc.gov/resources/works/10243618> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Reale, Miguel. doutrina de Kant no Brasil. [Dois ensaios]" .
+
+<http://id.loc.gov/resources/works/10253746> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Janoska, Georg. Kant und Schestow; ein Beitrag zum Glaubensproblem" .
+
+<http://id.loc.gov/resources/works/1025620> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kaltschew, Boris. Rational-empirische Erkenntnistheorie : Denken, Zeichen, Zeit" .
+
+<http://id.loc.gov/resources/works/10264028> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Beier, Franz (Writer on philosophy. ) Kants Apriorismus, eine Irreführung der Menschheit" .
+
+<http://id.loc.gov/resources/works/10267562> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gotenburg, Erwin, 1926- Antinomienproblem bei Kant und bei Cusanus im systematischen Zusammenhang der Vermögensleistung" .
+
+<http://id.loc.gov/resources/works/1028813> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Küsters, Gerd-Walter. Kants Rechtsphilosophie" .
+
+<http://id.loc.gov/resources/works/10298932> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Immanuel Kant reader" .
+
+<http://id.loc.gov/resources/works/10318884> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. metaphysical principles of virtue" .
+
+<http://id.loc.gov/resources/works/10330178> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kern, Iso. Husserl und Kant : eine Untersuchung über Husserls Verhältnis zu Kant und zum Neukantianismus" .
+
+<http://id.loc.gov/resources/works/10353753> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "ʻAẓm, Ṣādiq Jalāl. Kant's theory of time" .
+
+<http://id.loc.gov/resources/works/10358043> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Tullio-Altan, Carlo. necessary revolution in man's thinking after Immanuel Kant" .
+
+<http://id.loc.gov/resources/works/103671> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Pešek, Jiří, 1929- Proměny času ve vztahu k bytí a jeho možnému smyslu : příspěvek k dějinám ontologického smyslu temporality" .
+
+<http://id.loc.gov/resources/works/10367480> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Logique" .
+
+<http://id.loc.gov/resources/works/10368052> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Scheler, Max, 1874-1928 Formalismus in der Ethik und die materiale Wertethik. Neuer Versuch der Grundlegung eines ethischen Personalismus" .
+
+<http://id.loc.gov/resources/works/10373602> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kim, Jisu, 1937- \"Methodentrialismus\" und \"Natur der Sache\" im Denken Gustav Radbruchs" .
+
+<http://id.loc.gov/resources/works/10375523> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Neeb, Johann, 1767-1843. System der kritischen Philosophie auf den Satz des Bewustseyns gegründet" .
+
+<http://id.loc.gov/resources/works/10381207> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kant-Brevier; eine Auswahl aus dem Gesamtwerk," .
+
+<http://id.loc.gov/resources/works/10389417> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Llano Cifuentes, Alejandro. Fenómeno y trascendencia en Kant .." .
+
+<http://id.loc.gov/resources/works/10389529> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Schultz, Uwe, 1936- Immanuel Kant in Selbstzeugnissen und Bilddokumenten" .
+
+<http://id.loc.gov/resources/works/10391903> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Întemeierea metafizicii moravurilor" .
+
+<http://id.loc.gov/resources/works/10392630> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kritik der reinen Vernunft" .
+
+<http://id.loc.gov/resources/works/10393897> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Declève, H. (Henri) Heidegger et Kant" .
+
+<http://id.loc.gov/resources/works/10404215> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Borries, Kurt, 1895-1968. Kant als politiker" .
+
+<http://id.loc.gov/resources/works/1041297> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Meyer, Michel, 1950- Science et métaphysique chez Kant" .
+
+<http://id.loc.gov/resources/works/10419705> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hogrebe, Wolfram, 1945- Kant und das Problem einer transzendentalen Semantik" .
+
+<http://id.loc.gov/resources/works/10421209> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Heinrichs, Jürgen. Problem der Zeit in der praktischen Philosophie Kants" .
+
+<http://id.loc.gov/resources/works/10435198> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. giudizio estetico" .
+
+<http://id.loc.gov/resources/works/10443095> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Duproix, Paul. Kant et Fichte et le problème de l'éducation" .
+
+<http://id.loc.gov/resources/works/10444969> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Bulatov, Mikhail Aleksandrovich. Kriticheskie ocherki po filosofii Kanta" .
+
+<http://id.loc.gov/resources/works/10446502> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Anschütz, Oskar Franziskanische Menschen" .
+
+<http://id.loc.gov/resources/works/10449233> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Huang, Chen-hua. Kʻang-te che hsüeh lun wen chi" .
+
+<http://id.loc.gov/resources/works/10452228> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Görland, Ingtraud, 1933- Kantkritik des jungen Hegel" .
+
+<http://id.loc.gov/resources/works/10452254> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. forma e i princìpi del mondo sensibile e del mondo intelligibile [Dissertazione del 1770]" .
+
+<http://id.loc.gov/resources/works/10452260> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Bianca, Giovanni A. Intelligenza e dato empirico nel pensiero di Kant" .
+
+<http://id.loc.gov/resources/works/1045361> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Riedel, Manfred, 1936- Urteilskraft und Vernunft : Kants ursprüngliche Fragestellung" .
+
+<http://id.loc.gov/resources/works/10462695> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Weishaupt, Adam, 1747-1830. Zweifel über die Kantischen Begriffe von Zeit und Raum" .
+
+<http://id.loc.gov/resources/works/10515369> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Novgorodt︠s︡ev, P. I. (Pavel Ivanovich), 1866-1924. Kant i Gegelʹ v ikh uchenīi︠a︡kh o pravi︠e︡ i gosudarstvi︠e︡" .
+
+<http://id.loc.gov/resources/works/10517490> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kant, kritiek der zuivere rede; proeve eener opheldering daarvan door Joh. Kinker" .
+
+<http://id.loc.gov/resources/works/1053421> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gurwitsch, Aron. Kants Theorie des Verstandes" .
+
+<http://id.loc.gov/resources/works/1058446> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kim, Chin, 1955- Kants Postulatenlehre" .
+
+<http://id.loc.gov/resources/works/1059281> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Woschnak, Maria. Zum Begriff der Freundschaft bei Aristoteles und Kant" .
+
+<http://id.loc.gov/resources/works/1060064> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Carl, Wolfgang. schweigende Kant : die Entwürfe zu einer Deduktion der Kategorien vor 1781" .
+
+<http://id.loc.gov/resources/works/106878> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "De Tienne, André. analytique de la représentation chez Peirce : la genèse de la théorie des catégories" .
+
+<http://id.loc.gov/resources/works/1071139> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Green, Ronald Michael. Kierkegaard and Kant : the hidden debt" .
+
+<http://id.loc.gov/resources/works/1078226> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. De la conducta moral y política" .
+
+<http://id.loc.gov/resources/works/1079003> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Metz, Wilhelm. Kategoriendeduktion und produktive Einbildungskraft in der theoretischen Philosophie Kants und Fichtes" .
+
+<http://id.loc.gov/resources/works/1079122> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gneiting, Ulrich, 1960- Erfahrung und Dialektik" .
+
+<http://id.loc.gov/resources/works/1079165> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vogel, Peter, 1947- Kausalität und Freiheit in der Pädagogik" .
+
+<http://id.loc.gov/resources/works/1080847> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Goetschel, Willi, 1958- Kant als Schriftsteller" .
+
+<http://id.loc.gov/resources/works/1081334> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Transición de los principios metafísicos de la ciencia natural a la física : Opus postumum" .
+
+<http://id.loc.gov/resources/works/1081562> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Hufnagel, Erwin, 1940- Wissenschaftscharakter der Pädagogik : Studien zur pädagogischen Grundlehre von Kant, Natorp und Hönigswald" .
+
+<http://id.loc.gov/resources/works/1086473> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Chadwick, Ruth F. Immanuel Kant, critical assessments" .
+
+<http://id.loc.gov/resources/works/108937> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Rotenstreich, Nathan, 1914-1993. Reason and its manifestations : a study on Kant and Hegel" .
+
+<http://id.loc.gov/resources/works/1097251> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Aviau de Ternay, Henri d' La liberté kantienne" .
+
+<http://id.loc.gov/resources/works/1097948> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Schroeter, François La critique kantienne de l'eudémonisme" .
+
+<http://id.loc.gov/resources/works/1108509> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. einzig mögliche Beweisgrund = The one possible basis for a demonstration of the existence of God" .
+
+<http://id.loc.gov/resources/works/1144181> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Religion and rational theology" .
+
+<http://id.loc.gov/resources/works/11856549> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of the power of judgment" .
+
+<http://id.loc.gov/resources/works/11882798> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Was ist Aufklärung? : ausgewählte kleine Schriften" .
+
+<http://id.loc.gov/resources/works/11897803> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Grundlegung zur Metaphysik der Sitten" .
+
+<http://id.loc.gov/resources/works/12206104> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Anthropologie in pragmatischer Hinsicht" .
+
+<http://id.loc.gov/resources/works/12233062> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. philosophy of law : an exposition of the fundamental principles of jurisprudence as the science of right" .
+
+<http://id.loc.gov/resources/works/12250910> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Opus postumum" .
+
+<http://id.loc.gov/resources/works/12276309> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Basic writings of Kant" .
+
+<http://id.loc.gov/resources/works/12296521> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to come forward as science, with Kant's letter to Marcus Herz, February 27, 1772 / the Paul Carus translation extensively rev. by James W. Ellington" .
+
+<http://id.loc.gov/resources/works/1234226> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Selected pre-critical writings and correspondence with Beck" .
+
+<http://id.loc.gov/resources/works/12347324> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Werke" .
+
+<http://id.loc.gov/resources/works/12429148> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. drei Kritiken" .
+
+<http://id.loc.gov/resources/works/12435031> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Theoretical philosophy after 1781" .
+
+<http://id.loc.gov/resources/works/12506013> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kritik der Urteilskraft" .
+
+<http://id.loc.gov/resources/works/12657499> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. falsa sottigliezza delle quattro figure sillogistiche" .
+
+<http://id.loc.gov/resources/works/12688068> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+
+<http://id.loc.gov/resources/works/12735842> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of practical reason" .
+
+<http://id.loc.gov/resources/works/12815161> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Prolegomena zu einer jeden künftigen Metaphysik, die als Wissenschaft wird auftreten können" .
+
+<http://id.loc.gov/resources/works/12903311> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kant on Swedenborg : dreams of a spirit-seer and other writings" .
+
+<http://id.loc.gov/resources/works/1291984> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Metaphysical foundations of natural science" .
+
+<http://id.loc.gov/resources/works/1292536> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Kant dictionary" .
+
+<http://id.loc.gov/resources/works/13007250> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+
+<http://id.loc.gov/resources/works/13163294> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/13178186> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/1321569> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Lectures on philosophical theology" .
+
+<http://id.loc.gov/resources/works/13235420> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. To perpetual peace : a philosophical sketch" .
+
+<http://id.loc.gov/resources/works/13242503> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Religion innerhalb der Grenzen der blossen Vernunft" .
+
+<http://id.loc.gov/resources/works/13251901> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Crítica de la razón práctica" .
+
+<http://id.loc.gov/resources/works/13258780> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Theoretical philosophy, 1755-1770" .
+
+<http://id.loc.gov/resources/works/13291393> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Jacobelli Isoldi, Angela Maria. dignità del limite : saggi kantiani" .
+
+<http://id.loc.gov/resources/works/13317055> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. On education" .
+
+<http://id.loc.gov/resources/works/13386082> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Metaphysical foundations of natural science" .
+
+<http://id.loc.gov/resources/works/13398099> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of practical reason" .
+
+<http://id.loc.gov/resources/works/13471848> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Łaciak, Piotr Struktura i rodzaje poznania A PRIORI w rozumieniu Kanta i Husserla" .
+
+<http://id.loc.gov/resources/works/13602639> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Theoretische Philosophie : Texte und Kommentar" .
+
+<http://id.loc.gov/resources/works/13603369> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Notes and fragments : logic, metaphysics, moral philosophy, aesthetics" .
+
+<http://id.loc.gov/resources/works/13609442> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to present itself as a science : with two early reviews of the Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/13628977> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Schütze, Marc. Subjektive Rechte und personale Identität : die Anwendung subjektiver Rechte bei Immanuel Kant, Carl Schmitt, Hans Kelsen und Hermann Heller" .
+
+<http://id.loc.gov/resources/works/13640383> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Prolegomena to any future metaphysics that will be able to come forward as science : with selections from the Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/13797617> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Fundamental principles of the metaphysics of morals" .
+
+<http://id.loc.gov/resources/works/13819144> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Vorlesung zur Moralphilosophie" .
+
+<http://id.loc.gov/resources/works/13910711> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Critique of judgement" .
+
+<http://id.loc.gov/resources/works/13947569> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Groundwork for the metaphysics of morals" .
+
+<http://id.loc.gov/resources/works/14010716> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Streit der Fakultäten" .
+
+<http://id.loc.gov/resources/works/14108918> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Zum ewigen Frieden" .
+
+<http://id.loc.gov/resources/works/14156077> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Ideii︠a︡ vseobshcheĭ istorii vo vsemirno-grazhdanskom plane Идеия всеобщей истории во всемирно-гражданском плане" .
+
+<http://id.loc.gov/resources/works/14161108> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Aufklärung : Beiträge zur Philosophie Immanuel Kants" .
+
+<http://id.loc.gov/resources/works/14171906> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of pure reason" .
+
+<http://id.loc.gov/resources/works/14205913> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of practical reason and other works on the theory of ethics" .
+
+<http://id.loc.gov/resources/works/14218940> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of judgment" .
+
+<http://id.loc.gov/resources/works/14254669> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Toward perpetual peace and other writings on politics, peace, and history" .
+
+<http://id.loc.gov/resources/works/14288332> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. On education" .
+
+<http://id.loc.gov/resources/works/14396161> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. O prosvećenosti" .
+
+<http://id.loc.gov/resources/works/1449742> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Zum ewigen Frieden : ein philosophischer Entwurf : Texte zur Rezeption, 1796-1800" .
+
+<http://id.loc.gov/resources/works/14553820> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Immanuel Kant : Erkenntnis - Freiheit - Frieden : Katalog zur Ausstellung anlässlich des 200. Todestages am 12. Februar 2004, Museum Stadt Königsberg der Stadtgemeinschaft Königsberg (Pr) im Kultur- und Stadthistorischen Museum Duisburg" .
+
+<http://id.loc.gov/resources/works/14619313> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Anthropology from a pragmatic point of view" .
+
+<http://id.loc.gov/resources/works/14646383> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Anthropology, history, and education" .
+
+<http://id.loc.gov/resources/works/14670567> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Logica di Vienna" .
+
+<http://id.loc.gov/resources/works/14694169> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Critique of judgement" .
+
+<http://id.loc.gov/resources/works/14711739> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804 Ren he yi zhong neng gou zuo wei ke xue chu xian de wei lai xing er shang xue dao lun 任何一种能够作为科学出现的未来形而上学导论" .
+
+<http://id.loc.gov/resources/works/1491596> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. Logic" .
+
+<http://id.loc.gov/resources/works/15116432> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Kant, Immanuel, 1724-1804. drei Kritiken : in ihrem Zusammenhang mit dem Gesamtwerk" .
+
+<http://id.loc.gov/rwo/agents/n79021614> a <http://id.loc.gov/ontologies/bibframe/Person>,
+        ns2:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Kant, Immanuel, 1724-1804" ;
+    ns1:contributorTo <http://id.loc.gov/resources/works/10001277>,
+        <http://id.loc.gov/resources/works/10023536>,
+        <http://id.loc.gov/resources/works/10060573>,
+        <http://id.loc.gov/resources/works/10067251>,
+        <http://id.loc.gov/resources/works/10070664>,
+        <http://id.loc.gov/resources/works/10096369>,
+        <http://id.loc.gov/resources/works/10119884>,
+        <http://id.loc.gov/resources/works/10136739>,
+        <http://id.loc.gov/resources/works/10136741>,
+        <http://id.loc.gov/resources/works/10146847>,
+        <http://id.loc.gov/resources/works/10150921>,
+        <http://id.loc.gov/resources/works/10153988>,
+        <http://id.loc.gov/resources/works/10156921>,
+        <http://id.loc.gov/resources/works/10162772>,
+        <http://id.loc.gov/resources/works/10163892>,
+        <http://id.loc.gov/resources/works/1016405>,
+        <http://id.loc.gov/resources/works/10171704>,
+        <http://id.loc.gov/resources/works/101851>,
+        <http://id.loc.gov/resources/works/10185107>,
+        <http://id.loc.gov/resources/works/10189771>,
+        <http://id.loc.gov/resources/works/10196127>,
+        <http://id.loc.gov/resources/works/10212643>,
+        <http://id.loc.gov/resources/works/10212962>,
+        <http://id.loc.gov/resources/works/10215995>,
+        <http://id.loc.gov/resources/works/10216954>,
+        <http://id.loc.gov/resources/works/10237015>,
+        <http://id.loc.gov/resources/works/10298932>,
+        <http://id.loc.gov/resources/works/10318884>,
+        <http://id.loc.gov/resources/works/10367480>,
+        <http://id.loc.gov/resources/works/10381207>,
+        <http://id.loc.gov/resources/works/10391903>,
+        <http://id.loc.gov/resources/works/10392630>,
+        <http://id.loc.gov/resources/works/10435198>,
+        <http://id.loc.gov/resources/works/10452254>,
+        <http://id.loc.gov/resources/works/10517490>,
+        <http://id.loc.gov/resources/works/1078226>,
+        <http://id.loc.gov/resources/works/1081334>,
+        <http://id.loc.gov/resources/works/1108509>,
+        <http://id.loc.gov/resources/works/1144181>,
+        <http://id.loc.gov/resources/works/11856549>,
+        <http://id.loc.gov/resources/works/11882798>,
+        <http://id.loc.gov/resources/works/11897803>,
+        <http://id.loc.gov/resources/works/12206104>,
+        <http://id.loc.gov/resources/works/12233062>,
+        <http://id.loc.gov/resources/works/12250910>,
+        <http://id.loc.gov/resources/works/12276309>,
+        <http://id.loc.gov/resources/works/12296521>,
+        <http://id.loc.gov/resources/works/1234226>,
+        <http://id.loc.gov/resources/works/12347324>,
+        <http://id.loc.gov/resources/works/12429148>,
+        <http://id.loc.gov/resources/works/12435031>,
+        <http://id.loc.gov/resources/works/12506013>,
+        <http://id.loc.gov/resources/works/12657499>,
+        <http://id.loc.gov/resources/works/12688068>,
+        <http://id.loc.gov/resources/works/12735842>,
+        <http://id.loc.gov/resources/works/12815161>,
+        <http://id.loc.gov/resources/works/12903311>,
+        <http://id.loc.gov/resources/works/1291984>,
+        <http://id.loc.gov/resources/works/1292536>,
+        <http://id.loc.gov/resources/works/13007250>,
+        <http://id.loc.gov/resources/works/13163294>,
+        <http://id.loc.gov/resources/works/13178186>,
+        <http://id.loc.gov/resources/works/1321569>,
+        <http://id.loc.gov/resources/works/13235420>,
+        <http://id.loc.gov/resources/works/13242503>,
+        <http://id.loc.gov/resources/works/13251901>,
+        <http://id.loc.gov/resources/works/13258780>,
+        <http://id.loc.gov/resources/works/13291393>,
+        <http://id.loc.gov/resources/works/13317055>,
+        <http://id.loc.gov/resources/works/13386082>,
+        <http://id.loc.gov/resources/works/13398099>,
+        <http://id.loc.gov/resources/works/13471848>,
+        <http://id.loc.gov/resources/works/13602639>,
+        <http://id.loc.gov/resources/works/13603369>,
+        <http://id.loc.gov/resources/works/13609442>,
+        <http://id.loc.gov/resources/works/13628977>,
+        <http://id.loc.gov/resources/works/13640383>,
+        <http://id.loc.gov/resources/works/13797617>,
+        <http://id.loc.gov/resources/works/13819144>,
+        <http://id.loc.gov/resources/works/13910711>,
+        <http://id.loc.gov/resources/works/13947569>,
+        <http://id.loc.gov/resources/works/14010716>,
+        <http://id.loc.gov/resources/works/14108918>,
+        <http://id.loc.gov/resources/works/14156077>,
+        <http://id.loc.gov/resources/works/14161108>,
+        <http://id.loc.gov/resources/works/14171906>,
+        <http://id.loc.gov/resources/works/14205913>,
+        <http://id.loc.gov/resources/works/14218940>,
+        <http://id.loc.gov/resources/works/14254669>,
+        <http://id.loc.gov/resources/works/14288332>,
+        <http://id.loc.gov/resources/works/14396161>,
+        <http://id.loc.gov/resources/works/1449742>,
+        <http://id.loc.gov/resources/works/14553820>,
+        <http://id.loc.gov/resources/works/14619313>,
+        <http://id.loc.gov/resources/works/14646383>,
+        <http://id.loc.gov/resources/works/14670567>,
+        <http://id.loc.gov/resources/works/14694169>,
+        <http://id.loc.gov/resources/works/14711739>,
+        <http://id.loc.gov/resources/works/1491596>,
+        <http://id.loc.gov/resources/works/15116432> ;
+    ns1:subjectOf <http://id.loc.gov/resources/works/100373>,
+        <http://id.loc.gov/resources/works/10042862>,
+        <http://id.loc.gov/resources/works/100506>,
+        <http://id.loc.gov/resources/works/10053486>,
+        <http://id.loc.gov/resources/works/10063545>,
+        <http://id.loc.gov/resources/works/10063547>,
+        <http://id.loc.gov/resources/works/10064105>,
+        <http://id.loc.gov/resources/works/10064414>,
+        <http://id.loc.gov/resources/works/10069202>,
+        <http://id.loc.gov/resources/works/10070263>,
+        <http://id.loc.gov/resources/works/10070880>,
+        <http://id.loc.gov/resources/works/1008255>,
+        <http://id.loc.gov/resources/works/10088579>,
+        <http://id.loc.gov/resources/works/10090295>,
+        <http://id.loc.gov/resources/works/10091687>,
+        <http://id.loc.gov/resources/works/10096816>,
+        <http://id.loc.gov/resources/works/10100654>,
+        <http://id.loc.gov/resources/works/10107169>,
+        <http://id.loc.gov/resources/works/10107171>,
+        <http://id.loc.gov/resources/works/1011091>,
+        <http://id.loc.gov/resources/works/10120094>,
+        <http://id.loc.gov/resources/works/10120531>,
+        <http://id.loc.gov/resources/works/10120785>,
+        <http://id.loc.gov/resources/works/10135222>,
+        <http://id.loc.gov/resources/works/10136853>,
+        <http://id.loc.gov/resources/works/10142422>,
+        <http://id.loc.gov/resources/works/10150873>,
+        <http://id.loc.gov/resources/works/10154243>,
+        <http://id.loc.gov/resources/works/10160362>,
+        <http://id.loc.gov/resources/works/10163587>,
+        <http://id.loc.gov/resources/works/1016375>,
+        <http://id.loc.gov/resources/works/10165044>,
+        <http://id.loc.gov/resources/works/10166381>,
+        <http://id.loc.gov/resources/works/10166471>,
+        <http://id.loc.gov/resources/works/10166538>,
+        <http://id.loc.gov/resources/works/10168530>,
+        <http://id.loc.gov/resources/works/10171708>,
+        <http://id.loc.gov/resources/works/10174133>,
+        <http://id.loc.gov/resources/works/10181147>,
+        <http://id.loc.gov/resources/works/10183235>,
+        <http://id.loc.gov/resources/works/10183998>,
+        <http://id.loc.gov/resources/works/10184296>,
+        <http://id.loc.gov/resources/works/101851>,
+        <http://id.loc.gov/resources/works/10186540>,
+        <http://id.loc.gov/resources/works/10191691>,
+        <http://id.loc.gov/resources/works/10191977>,
+        <http://id.loc.gov/resources/works/10198764>,
+        <http://id.loc.gov/resources/works/1019910>,
+        <http://id.loc.gov/resources/works/10199412>,
+        <http://id.loc.gov/resources/works/10202791>,
+        <http://id.loc.gov/resources/works/1020376>,
+        <http://id.loc.gov/resources/works/10212962>,
+        <http://id.loc.gov/resources/works/10218523>,
+        <http://id.loc.gov/resources/works/10219290>,
+        <http://id.loc.gov/resources/works/10233137>,
+        <http://id.loc.gov/resources/works/1023938>,
+        <http://id.loc.gov/resources/works/10243618>,
+        <http://id.loc.gov/resources/works/10253746>,
+        <http://id.loc.gov/resources/works/1025620>,
+        <http://id.loc.gov/resources/works/10264028>,
+        <http://id.loc.gov/resources/works/10267562>,
+        <http://id.loc.gov/resources/works/1028813>,
+        <http://id.loc.gov/resources/works/10330178>,
+        <http://id.loc.gov/resources/works/10353753>,
+        <http://id.loc.gov/resources/works/10358043>,
+        <http://id.loc.gov/resources/works/103671>,
+        <http://id.loc.gov/resources/works/10368052>,
+        <http://id.loc.gov/resources/works/10373602>,
+        <http://id.loc.gov/resources/works/10375523>,
+        <http://id.loc.gov/resources/works/10389417>,
+        <http://id.loc.gov/resources/works/10389529>,
+        <http://id.loc.gov/resources/works/10393897>,
+        <http://id.loc.gov/resources/works/10404215>,
+        <http://id.loc.gov/resources/works/1041297>,
+        <http://id.loc.gov/resources/works/10419705>,
+        <http://id.loc.gov/resources/works/10421209>,
+        <http://id.loc.gov/resources/works/10443095>,
+        <http://id.loc.gov/resources/works/10444969>,
+        <http://id.loc.gov/resources/works/10446502>,
+        <http://id.loc.gov/resources/works/10449233>,
+        <http://id.loc.gov/resources/works/10452228>,
+        <http://id.loc.gov/resources/works/10452260>,
+        <http://id.loc.gov/resources/works/1045361>,
+        <http://id.loc.gov/resources/works/10462695>,
+        <http://id.loc.gov/resources/works/10515369>,
+        <http://id.loc.gov/resources/works/1053421>,
+        <http://id.loc.gov/resources/works/1058446>,
+        <http://id.loc.gov/resources/works/1059281>,
+        <http://id.loc.gov/resources/works/1060064>,
+        <http://id.loc.gov/resources/works/106878>,
+        <http://id.loc.gov/resources/works/1071139>,
+        <http://id.loc.gov/resources/works/1079003>,
+        <http://id.loc.gov/resources/works/1079122>,
+        <http://id.loc.gov/resources/works/1079165>,
+        <http://id.loc.gov/resources/works/1080847>,
+        <http://id.loc.gov/resources/works/1081562>,
+        <http://id.loc.gov/resources/works/1086473>,
+        <http://id.loc.gov/resources/works/108937>,
+        <http://id.loc.gov/resources/works/1097251>,
+        <http://id.loc.gov/resources/works/1097948> ;
+    ns2:associatedLanguage <http://id.loc.gov/vocabulary/languages/ger> ;
+    ns2:birthDate [ a ns4:Concept ;
+            rdfs:label "(edtf) 1724-04-22" ] ;
+    ns2:birthPlace [ a ns2:Geographic ;
+            rdfs:label "Königsberg (Germany)" ;
+            ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    ns2:deathDate [ a ns4:Concept ;
+            rdfs:label "(edtf) 1804-02-12" ] ;
+    ns2:fieldOfActivity [ a ns4:Concept ;
+            rdfs:label "Enlightenment philosophy" ] ;
+    ns2:gender <http://id.loc.gov/authorities/demographicTerms/dg2015060003> ;
+    ns2:occupation <http://id.loc.gov/authorities/subjects/sh85100836> .
+
+<http://id.loc.gov/vocabulary/languages/ger> a ns2:Language ;
+    ns2:authoritativeLabel "German"@en .
+
+<http://id.loc.gov/authorities/names/n79021614> a ns2:Authority,
+        ns2:PersonalName,
+        ns4:Concept ;
+    ns1:marcKey "1001 $aKant, Immanuel,$d1724-1804" ;
+    ns7:lccn "n 79021614" ;
+    ns7:local "(OCoLC)oca00255412" ;
+    ns2:adminMetadata [ a ns6:RecordInfo ;
+            ns6:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns6:recordChangeDate "2021-05-27T06:46:00"^^xsd:dateTime ;
+            ns6:recordContentSource <http://id.loc.gov/vocabulary/organizations/pst> ;
+            ns6:recordStatus "revised"^^xsd:string ],
+        [ a ns6:RecordInfo ;
+            ns6:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns6:recordChangeDate "1979-04-13T00:00:00"^^xsd:dateTime ;
+            ns6:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns6:recordStatus "new"^^xsd:string ] ;
+    ns2:authoritativeLabel "Kant, Immanuel, 1724-1804" ;
+    ns2:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    ns2:elementList ( [ a ns2:FullNameElement ;
+                ns2:elementValue "Kant, Immanuel," ] [ a ns2:DateNameElement ;
+                ns2:elementValue "1724-1804" ] ) ;
+    ns2:hasCloseExternalAuthority <http://id.worldcat.org/fast/31763>,
+        <http://vocab.getty.edu/ulan/500107055>,
+        <http://www.wikidata.org/entity/Q9312> ;
+    ns2:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79021614#skos:Concept> ;
+    ns2:hasSource [ a ns2:Source ;
+            ns2:citationNote "t.p. (I. Kanta)" ;
+            ns2:citationSource "Problemy religii v uchenii I. Kanta, 1994:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationSource "Der Streit der Facultäten, 1799." ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Emanuel Kant)" ;
+            ns2:citationSource "Project for a perpetual peace, 1796:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (ʻImanuʼel Ḳanṭ) added t.p. (Immanuel Kant [in rom.])" ;
+            ns2:citationSource "Hanaḥat yesod la-meṭafisiḳah shel ha-midot, 1984:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Kant)" ;
+            ns2:citationSource "Ethos ed eros in Hegel e Kant, c1984:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Ιμμάνουελ Καντ = Immanouel Kant)" ;
+            ns2:citationSource "Gnōsē kai praxē, 2010:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Kʻantʻŭ)" ;
+            ns2:citationSource "Kʻantʻŭ chʻŏrhak sasang ŭi ihae, 1983:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "(Immanuel Kant; born 22 April 1724; died 12 February 1804; German philosopher from Königsberg in Prussia (today Kaliningrad, Russia) who researched, lectured and wrote on philosophy and anthropology during the Enlightenment at the end of the 18th century)" ;
+            ns2:citationSource "Wikipedia, Sept. 20, 2012" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "title page (إيمانويل كانط = Imānwīl Kānṭ)" ;
+            ns2:citationSource "al-Anwār wa-sulṭat al-khabīr al-bīdaghūjī, 2011:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationSource "I. Cantơ, người sáng lập nền triê̕t học cô̕ điê̕n Đức, 1997." ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "(Spanish transl. of Zum ewigen Frieden)" ;
+            ns2:citationSource "Hacia la paz perpetua, 2018:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "p. 7 (Emanuele Kant)" ;
+            ns2:citationSource "Incontro con Kant, c1997:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "cover (Im. Kant)" ;
+            ns2:citationSource "Immanuel Kant's Allgemeine Naturgeschichte und Theorie des Himmels, 1884?:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationSource "Kant, 1988." ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "v. 5, t.p. (Immanuila Kanta)" ;
+            ns2:citationSource "Voprosy teoreticheskogo nasledii︠a︡ Immanuila Kanta, 1980-:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Emmanuel Kant)" ;
+            ns2:citationSource "Projet de paix perpétuelle, 1769:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "title page (Manuel Kant)" ;
+            ns2:citationSource "Crítica del juicio, 1985:" ;
+            ns2:citationStatus "found" ] ;
+    ns2:hasVariant [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Immanuil," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Immanuil, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Im." ] [ a ns2:FullNameElement ;
+                        ns2:elementValue "(Immanuel)," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Im. (Immanuel), 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Emmanuel," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Emmanuel, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Immanouel," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Immanouel, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קנט" ] ) ;
+            ns2:variantLabel "קנט" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kangde," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kangde, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Emanuele," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Emanuele, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט, א." ] ) ;
+            ns2:variantLabel "קאנט, א." ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "カントイマニユエル," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "カントイマニユエル, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט, עמנואל," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724־1804" ] ) ;
+            ns2:variantLabel "קאנט, עמנואל, 1724־1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קנט, עמנואל," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724־1804" ] ) ;
+            ns2:variantLabel "קנט, עמנואל, 1724־1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט, עמנואל" ] ) ;
+            ns2:variantLabel "קאנט, עמנואל" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "كنت، إمانويل،" ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "كنت، إمانويل، 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט" ] ) ;
+            ns2:variantLabel "קאנט" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kʻantʻŭ," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kʻantʻŭ, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Manuel," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Manuel, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "كانط، إيمانويل" ] ) ;
+            ns2:variantLabel "كانط، إيمانويل" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט, ע." ] ) ;
+            ns2:variantLabel "קאנט, ע." ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קאנט, עמנואל," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "4271־4081" ] ) ;
+            ns2:variantLabel "קאנט, עמנואל, 4271־4081" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "康德," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "康德, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, Emanuel," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, Emanuel, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "كانت ، ايمانوئل" ] ) ;
+            ns2:variantLabel "كانت ، ايمانوئل" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kānt, ʻAmmānūʼīl," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kānt, ʻAmmānūʼīl, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "קנט, עמנואל" ] ) ;
+            ns2:variantLabel "קנט, עמנואל" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kanṭ, Īmānwīl," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kanṭ, Īmānwīl, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Ḳanṭ, ʻImanuʼel," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Ḳanṭ, ʻImanuʼel, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Cantơ, I.," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Cantơ, I., 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, E.," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, E., 1724-1804" ],
+        [ a ns2:PersonalName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:FullNameElement ;
+                        ns2:elementValue "Kant, I." ] [ a ns2:FullNameElement ;
+                        ns2:elementValue "(Immanuil)," ] [ a ns2:DateNameElement ;
+                        ns2:elementValue "1724-1804" ] ) ;
+            ns2:variantLabel "Kant, I. (Immanuil), 1724-1804" ] ;
+    ns2:identifiesRWO <http://id.loc.gov/rwo/agents/n79021614>,
+        <https://isni.org/isni/0000000122824025>,
+        <https://viaf.org/viaf/82088490/>,
+        <https://www.wikidata.org/wiki/Q9312> ;
+    ns2:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    ns4:altLabel "Cantơ, I., 1724-1804",
+        "Kangde, 1724-1804",
+        "Kant, 1724-1804",
+        "Kant, E., 1724-1804",
+        "Kant, Emanuel, 1724-1804",
+        "Kant, Emanuele, 1724-1804",
+        "Kant, Emmanuel, 1724-1804",
+        "Kant, I. (Immanuil), 1724-1804",
+        "Kant, Im. (Immanuel), 1724-1804",
+        "Kant, Immanouel, 1724-1804",
+        "Kant, Immanuil, 1724-1804",
+        "Kant, Manuel, 1724-1804",
+        "Kanṭ, Īmānwīl, 1724-1804",
+        "Kānt, ʻAmmānūʼīl, 1724-1804",
+        "Kʻantʻŭ, 1724-1804",
+        "קאנט",
+        "קאנט, א.",
+        "קאנט, ע.",
+        "קאנט, עמנואל",
+        "קאנט, עמנואל, 1724־1804",
+        "קאנט, עמנואל, 4271־4081",
+        "קנט",
+        "קנט, עמנואל",
+        "קנט, עמנואל, 1724־1804",
+        "كانت ، ايمانوئل",
+        "كانط، إيمانويل",
+        "كنت، إمانويل، 1724-1804",
+        "Ḳanṭ, ʻImanuʼel, 1724-1804",
+        "カントイマニユエル, 1724-1804",
+        "康德, 1724-1804" ;
+    ns4:changeNote [ a ns5:ChangeSet ;
+            ns5:changeReason "revised"^^xsd:string ;
+            ns5:createdDate "2021-05-27T06:46:00"^^xsd:dateTime ;
+            ns5:creatorName <http://id.loc.gov/vocabulary/organizations/pst> ;
+            ns5:subjectOfChange <http://id.loc.gov/authorities/names/n79021614> ],
+        [ a ns5:ChangeSet ;
+            ns5:changeReason "new"^^xsd:string ;
+            ns5:createdDate "1979-04-13T00:00:00"^^xsd:dateTime ;
+            ns5:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns5:subjectOfChange <http://id.loc.gov/authorities/names/n79021614> ] ;
+    ns4:closeMatch <http://id.worldcat.org/fast/31763>,
+        <http://vocab.getty.edu/ulan/500107055>,
+        <http://www.wikidata.org/entity/Q9312> ;
+    ns4:editorial "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    ns4:exactMatch <http://viaf.org/viaf/sourceID/LC%7Cn++79021614#skos:Concept> ;
+    ns4:inScheme <http://id.loc.gov/authorities/names> ;
+    ns4:prefLabel "Kant, Immanuel, 1724-1804" ;
+    ns3:altLabel [ a ns3:Label ;
+            ns3:literalForm "קנט, עמנואל" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט, ע." ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Emmanuel, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, E., 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט, עמנואל" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Immanouel, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט, עמנואל, 4271־4081" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קנט, עמנואל, 1724־1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Cantơ, I., 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Ḳanṭ, ʻImanuʼel, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Emanuel, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kānt, ʻAmmānūʼīl, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קנט" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט, עמנואל, 1724־1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "カントイマニユエル, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "קאנט, א." ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, I. (Immanuil), 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "كانت ، ايمانوئل" ],
+        [ a ns3:Label ;
+            ns3:literalForm "كانط، إيمانويل" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kangde, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Manuel, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kʻantʻŭ, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Im. (Immanuel), 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "康德, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Emanuele, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kant, Immanuil, 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "كنت، إمانويل، 1724-1804" ],
+        [ a ns3:Label ;
+            ns3:literalForm "Kanṭ, Īmānwīl, 1724-1804" ] .
+
+<http://id.loc.gov/resources/works/101851> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Joos, Jean-Ernest. Kant et la question de l'autorité" .
+
+<http://id.loc.gov/resources/works/10212962> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cresson, André, 1869-1950. Kant; sa vie, son œuvre, avec un exposé de sa philosophie," .
+
+<http://id.worldcat.org/fast/31763> a ns2:Authority,
+        ns4:Concept ;
+    ns2:authoritativeLabel "Kant, Immanuel, 1724-1804" ;
+    ns4:prefLabel "Kant, Immanuel, 1724-1804" .
+
+<http://vocab.getty.edu/ulan/500107055> a ns2:Authority,
+        ns4:Concept ;
+    ns2:authoritativeLabel "Kant, Immanuel" ;
+    ns4:prefLabel "Kant, Immanuel" .
+
+<http://www.wikidata.org/entity/Q9312> a ns2:Authority,
+        ns4:Concept ;
+    ns2:authoritativeLabel "Immanuel Kant" ;
+    ns4:prefLabel "Immanuel Kant" .
+

@@ -5,7 +5,7 @@ import cf from "clownface";
 import namespace from "@rdfjs/namespace";
 
 async function QueryNamesBK(token, setNameDetails, setImg) {
-  const details = {};
+  const details = { "token": token};
 
   const ns = {
     rdf: namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
@@ -27,19 +27,22 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
   let dataset = await fetch(graph).then((response) => response.dataset());
 
   let tbbt = cf({ dataset });
-  let athority = tbbt.namedNode(uri);
+  let authority = tbbt.namedNode(uri);
 
   //  Label
-  const name = athority.out(ns.madsrdf.authoritativeLabel).value;
+  const name = authority.out(ns.madsrdf.authoritativeLabel).value;
   details["name"] = name;
 
   //fullerName
-  let fullerName = athority.out(ns.madsrdf.fullerName);
-  let label = fullerName.out(ns.rdfs.label).value;
-  details["fullerName"] = label;
+
+  let fullerName = authority.out(ns.madsrdf.fullerName)
+  if (fullerName._context.length > 0) {
+    let fullerNameLabel = fullerName.out(ns.rdfs.label).value
+    details["fullerName"] = fullerNameLabel;
+  }
 
   //variant
-  let hasVariant = athority.out(ns.madsrdf.hasVariant);
+  let hasVariant = authority.out(ns.madsrdf.hasVariant);
   if (hasVariant._context.length > 0) {
     let variants = hasVariant.map((variant) => {
       let label = variant.out(ns.madsrdf.variantLabel).value;
@@ -47,8 +50,9 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
     });
     details["variant"] = variants;
   }
+
   // Imagem
-  let hasCloseExternalAuthority = athority.out(
+  let hasCloseExternalAuthority = authority.out(
     ns.madsrdf.hasCloseExternalAuthority
   );
   hasCloseExternalAuthority.forEach(async (authority) => {
@@ -69,24 +73,77 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
     }
   });
 
-  let rwo = tbbt.namedNode(rwo_uri);
-  let birthPlace = rwo.out(ns.madsrdf.birthPlace);
-  let birthPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-  let birthDate = rwo.out(ns.madsrdf.birthDate).out(ns.rdfs.label).value;
-  let birth = {
-    place: birthPlacelabel,
-    date: birthDate.replace("(edtf) ", ""),
-  };
-  details["birth"] = birth;
+  // identifiesRWO
 
+  let rwo = tbbt.namedNode(rwo_uri);
+
+   // birth
+   let birth = {}
+
+   // birthDate
+ 
+   let birthDate = rwo.out(ns.madsrdf.birthDate)
+   birthDate.forEach((birthNode) => {
+     let label = birthNode.out(ns.rdfs.label);
+     if (label._context.length > 0) {
+       
+       birth["date"] = label.value.replace("(edtf) ", "")
+       details["birth"] = birth;
+     } else {
+       let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+       birth["date"] = label
+       details["birth"] = birth;
+     }
+   });
+ 
+   // birthPlace
+ 
+  //  let birthPlace = rwo.out(ns.madsrdf.birthPlace);
+  //  birthPlace.forEach((birthNode) => {
+  //    let label = birthNode.out(ns.rdfs.label);
+  //    if (label._context.length > 0) {
+  //      let birth = {
+  //        place: label.value,
+  //        date: birthDate.replace("(edtf) ", ""),
+  //      };
+  //      details["birth"] = birth;
+  //    } else {
+  //      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+  //      let birth = {
+  //        place: label,
+  //        date: birthDate.replace("(edtf) ", ""),
+  //      };
+  //      details["birth"] = birth;
+  //    }
+  //  });
+
+  let birthPlace = rwo.out(ns.madsrdf.birthPlace);
+  birthPlace.forEach((birthNode) => {
+    let label = birthNode.out(ns.rdfs.label);
+    if (label._context.length > 0) {
+      birth["place"] = label.value
+      details["birth"] = birth;
+    } else {
+      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+      birth["place"] = label
+      details["birth"] = birth;
+    }
+  });
+
+ 
+
+
+  let death = {}
   let deathPlace = rwo.out(ns.madsrdf.deathPlace);
   if (deathPlace._context.length > 0) {
     let deathPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-    let deathDate = rwo.out(ns.madsrdf.deathDate).out(ns.rdfs.label).value;
-    let death = {
-      place: deathPlacelabel,
-      date: deathDate.replace("(edtf) ", ""),
-    };
+    death["place"] = deathPlacelabel
+    details["death"] = death;
+  }
+  let deathDate = rwo.out(ns.madsrdf.deathDate)
+  if (deathDate._context.length > 0) {
+    let date = deathDate.out(ns.rdfs.label).value
+    death["date"] = date.replace("(edtf) ", "")
     details["death"] = death;
   }
 
