@@ -3,14 +3,15 @@ import { SearchProvider } from "src/providers/search";
 import { AuthProvider } from "src/admin/auth/authContext";
 import { BfProvider } from "src/providers/bibframe";
 import { AlertProvider } from "src/providers/alerts";
+import { ColorModeProvider } from "src/providers/mode"
 import { useState, createContext, useContext } from "react";
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
+import { grey, deepPurple, indigo } from "@mui/material/colors";
 
-const ColorModeContext = createContext({ toggleColorMode: () => {} });
+//const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 function MyApp({ Component, pageProps }) {
-  const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
+
 
   const getLayout = Component.getLayout || ((page) => page);
 
@@ -19,11 +20,11 @@ function MyApp({ Component, pageProps }) {
       <SearchProvider>
         <BfProvider>
           <AlertProvider>
-            <ColorModeContext.Provider value={colorMode}>
-              <ThemeProvider theme={theme}>
+          <ColorModeProvider>
+              {/* <ThemeProvider theme={theme}> */}
                 <Component {...pageProps} />
-              </ThemeProvider>
-            </ColorModeContext.Provider>
+              {/* </ThemeProvider> */}
+              </ColorModeProvider>
           </AlertProvider>
         </BfProvider>
       </SearchProvider>

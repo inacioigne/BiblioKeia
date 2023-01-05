@@ -5,7 +5,6 @@ import {
   TextField,
   InputAdornment,
   IconButton,
-  MenuItem,
 } from "@mui/material/";
 import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
@@ -16,7 +15,7 @@ import { useState, useRef } from "react";
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
 
-export default function Authority({
+export default function Authority({ 
   handleSearch,
   value,
   setValue,

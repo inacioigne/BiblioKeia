@@ -26,7 +26,7 @@
     "next": "^12.0.5-canary.0",
     "nextjs-progressbar": "^0.0.16",
     "nookies": "^2.5.2",
-    "qs": "^6.11.0",
+    "qs": "^6.11.0", 
     "rdf-ext": "^2.1.0",
     "rdf-object": "^1.13.1",
     "rdf-utils-fs": "^2.2.0",

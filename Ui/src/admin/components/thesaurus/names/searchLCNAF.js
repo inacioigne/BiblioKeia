@@ -35,11 +35,8 @@ export default function SearchLCNAF({
   open,
   setOpen,
   name,
-  // nameLCNAF,
-  // setNameLCNAF,
   setNameDetails,
-  setImgBK
-  
+  setImgBK,
 }) {
   const [type, setType] = useState("PersonalName");
   const [nameLCNAF, setNameLCNAF] = useState("");
@@ -66,14 +63,11 @@ export default function SearchLCNAF({
 
   useEffect(() => {
     if (name) {
-
-      setNameLCNAF(name)
+      setNameLCNAF(name);
       getData(name, type);
-
     }
-    
+
     //setName(search)
-    
   }, []);
 
   const handleClose = () => {

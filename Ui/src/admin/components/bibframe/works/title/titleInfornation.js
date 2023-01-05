@@ -13,7 +13,7 @@ import { useState } from "react";
 import { Search, Close } from "@mui/icons-material";
 
 // BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe"
+import { useBf } from "src/providers/bibframe";
 
 const inputPros = {
   endAdornment: (
@@ -31,12 +31,10 @@ const inputPros = {
   ),
 };
 
-export default function TitleInformation( 
-  //{ values, setValues } 
-  ) {
+export default function TitleInformation() {
+//{ values, setValues }
+  const { work, setWork } = useBf();
 
-  const { work, setWork } = useBf()
-  
   const [type, setType] = useState("Title");
   //const [mainTitle, setMainTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
@@ -77,7 +75,6 @@ export default function TitleInformation(
       </FormControl>
 
       <TextField
-        
         onChange={handleOnChangeMainTitle}
         value={work.mainTitle}
         fullWidth

@@ -1,10 +1,5 @@
 // Material UI
 import {
-  Box,
-  Typography,
-  TextField,
-  InputAdornment,
-  IconButton,
   MenuItem,
   FormControl,
   InputLabel,

@@ -7,22 +7,17 @@ import {
   Grid,
   Button,
   Paper,
-  InputLabel,
-  Select,
-  MenuItem,
   Card,
   CardContent,
   Tooltip,
   List,
   ListItem,
   ListItemText,
-  Pagination,
 } from "@mui/material/";
 import {
   LocalHospital,
   ChildFriendly,
-  FileDownloadDone,
-  BorderAll,
+  FileDownloadDone
 } from "@mui/icons-material";
 
 import Image from "next/image";
@@ -110,7 +105,6 @@ export default function CardNamesBK({
           )}
 
           {/* fullerName */}
-
           <Grid item xs={6}>
             <Box pt="0.5rem">
               {nameDetails?.fullerName && (
@@ -139,7 +133,9 @@ export default function CardNamesBK({
                     p: 1,
                   }}
                 >
-                  <Image src={img} layout="fill" />
+                  <Image src={img} //layout="fill" 
+
+                  />
                   <Box
                     sx={{
                       height: 180,

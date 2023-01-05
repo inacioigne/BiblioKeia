@@ -52,14 +52,7 @@ export default function NamesBK() {
 
   return (
     <>
-      {/* <Fields
-        setOpen={setOpen}
-        type={type}
-        setType={setType}
-        name={name}
-        setName={setName}
-        setResponse={setResponse}
-      /> */}
+   
       <form onSubmit={handleSearch}>
         <Box
           sx={{

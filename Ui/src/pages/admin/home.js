@@ -22,6 +22,7 @@ import {
   List,
   ListItem,
   Grid,
+  Container,
 } from "@mui/material";
 import { grey, deepPurple, indigo } from "@mui/material/colors";
 import {
@@ -43,46 +44,44 @@ import {
   ThemeProvider,
   createTheme,
 } from "@mui/material/styles";
+import { useColorMode } from "src/providers/mode";
 
 import { useState, createContext, useContext, useMemo } from "react";
 
 // Nexts components
 import Image from "next/image";
 
-const ColorModeContext = createContext({ toggleColorMode: () => {} });
-
-function MyApp() {
-  const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
-
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
-        bgcolor: "background.default",
-        color: "text.primary",
-        borderRadius: 1,
-        p: 3,
-      }}
-    >
-      {" "}
-      {theme.palette.mode} mode{" "}
-    </Box>
-  );
-}
-
-const styleText = { color: grey[600] };
-
-const primaryColor = indigo[500];
-const sideBarColor = grey[50];
-const textColor = grey[600];
 // Transistion
 const tran03 = "all 0.2s ease";
 const tran04 = "all 0.3s ease";
 const tran05 = "all 0.5s ease";
+
+const styleText = { color: grey[600] };
+const navbarStyle = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  height: "100vh",
+  p: "1rem",
+  //padding: "10px 14px",
+  bgcolor: "background.sideBar",
+  transition: tran05,
+};
+const itemMenuStyle = {
+  color: grey[600],
+  display: "flex",
+  gap: "0.7rem",
+  borderRadius: "6px",
+  ":hover": {
+    backgroundColor: indigo[300],
+    color: grey[50],
+  },
+};
+
+const primaryColor = indigo[300];
+const sideBarColor = grey[50];
+const textColor = grey[600];
+
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -132,244 +131,183 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function Admin() {
-  //const theme = useTheme();
-  const [mode, setMode] = useState("light");
-  const colorMode = useMemo(
-    () => ({
-      toggleColorMode: () => {
-        console.log("mode");
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-      },
-    }),
-    []
-  );
+  const { toggleColorMode } = useColorMode();
+  const [expandMenu, setExpandMenu] = useState(true);
 
-  const theme = useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode,
-        },
-      }),
-    [mode]
-  );
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <Box
-          component="nav"
+   
+      <Box
+        component="nav"
+        sx={
+          expandMenu
+            ? {
+                ...navbarStyle,
+                width: "250px",
+              }
+            : {
+                ...navbarStyle,
+                overflow: "hidden",
+                width: "80px",
+                
+              }
+        }
+      >
+        {/* header */}
+        <Box component="header" sx={{ position: "relative" }}>
+         
+
+          {/* Image Text */}
+          <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <Box
+              component="span"
+              sx={{ minWidth: "60px", display: "flex", alignItems: "center" }}
+            >
+              <Avatar
+                variant="square"
+                sx={{
+                  bgcolor: deepPurple[500],
+                  borderRadius: "6px",
+                }}
+              >
+                BK
+              </Avatar>
+            </Box>
+            {/* header text */}
+            { expandMenu && (
+              <Box
+              sx={{ ...styleText, display: "flex", flexDirection: "column" }}
+            >
+              {/* name */}
+              <Typography
+                component="span"
+                sx={{ fontSize: "16px", fontWeight: 600 }}
+              >
+                BiblioKeia
+              </Typography>
+              <Typography component="span" variant="body2" //sx={{ marginTop: "-2px" }}
+              >
+                Bibframe - Obra
+              </Typography>
+            </Box>
+
+            )}
+           
+          </Box>
+            {/* Toglle */}
+        <IconButton
+          component="i"
+          size="small"
           sx={{
-            // border: "solid",
-            position: "fixed",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: "250px",
-            padding: "10px 14px",
-            //background: sideBarColor,
-            bgcolor: "background.default",
+            position: "absolute",
+            top: "20px",
+            right: "-25px",
+            transform: "translateY(-50%)",
+            height: "25px",
+            width: "25px",
+            backgroundColor: indigo[500],
+            color: "white",
+            ":hover": { backgroundColor: indigo[400] },
+          }}
+          onClick={() => setExpandMenu(!expandMenu)}
+        >
+          <ArrowForwardIos fontSize="inherit" />
+        </IconButton>
+        </Box>
+      
+        
+        {/* menu bar */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "calc(100% - 40px)",
           }}
         >
-          {/* header */}
-          <Box component="header" sx={{ position: "relative" }}>
-            {/* Image Text */}
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box
-                component="span"
-                sx={{ minWidth: "60px", display: "flex", alignItems: "center" }}
-              >
-                <Avatar
-                  variant="square"
-                  sx={{
-                    bgcolor: deepPurple[500],
-                    borderRadius: "6px",
-                  }}
-                >
-                  BK
-                </Avatar>
-              </Box>
-              {/* header text */}
-              <Box
-                sx={{ ...styleText, display: "flex", flexDirection: "column" }}
-              >
-                {/* name */}
-                <Typography
-                  component="span"
-                  sx={{ fontSize: "16px", fontWeight: 600 }}
-                >
-                  BiblioKeia
-                </Typography>
-                <Typography component="span" sx={{ marginTop: "-2px" }}>
-                  Dashboard
-                </Typography>
-              </Box>
-            </Box>
-            {/* Toglle */}
-            <IconButton
-              component="i"
-              size="small"
-              //color="primary"
-              sx={{
-                position: "absolute",
-                top: "50%",
-                right: "-25px",
-                transform: "translateY(-50%)",
-                height: "25px",
-                width: "25px",
-                backgroundColor: indigo[500],
-                color: "white",
-                ":hover": { backgroundColor: indigo[400] },
-              }}
-            >
-              <ArrowForwardIos fontSize="inherit" />
-            </IconButton>
-          </Box>
-          {/* menu bar */}
-          <Box
+        {/* <Divider /> */}
+          <MenuList
             sx={{
-              //border: "solid",
+              transition: tran03,
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between",
-              height: "calc(100% - 40px)",
+              gap: "1rem",
+              mt: "1.5rem",
             }}
           >
-            <MenuList
+            {/* menu links */}
+            <MenuItem
               sx={{
-                transition: tran03,
-                display: "flex",
-                flexDirection: "column",
-                gap: "1rem",
-                mt: "1.5rem",
+                ...itemMenuStyle,
               }}
             >
-              {/* menu links */}
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
+              <ListItemIcon //sx={{display: "flex", justifyContent: "center"}}
               >
-                <ListItemIcon>
-                  <MenuBook />
-                </ListItemIcon>
-                <ListItemText>Tipo</ListItemText>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Title />
-                </ListItemIcon>
-                <ListItemText>Título</ListItemText>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Person />
-                </ListItemIcon>
-                <ListItemText>Autor</ListItemText>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Subject />
-                </ListItemIcon>
-                <ListItemText>Assunto</ListItemText>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Translate />
-                </ListItemIcon>
-                <ListItemText>Idioma</ListItemText>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Class />
-                </ListItemIcon>
-                <ListItemText>Classificação</ListItemText>
-              </MenuItem>
-            </MenuList>
-            {/* Botton */}
-            <MenuList>
-              <MenuItem
-                sx={{
-                  color: textColor,
-                  borderRadius: "6px",
-                  ":hover": {
-                    backgroundColor: primaryColor,
-                    color: sideBarColor,
-                  },
-                }}
-              >
-                <ListItemIcon>
-                  <Logout />
-                </ListItemIcon>
-                <ListItemText>Voltar</ListItemText>
-              </MenuItem>
+                <MenuBook />
+              </ListItemIcon>
+              <ListItemText>Tipo</ListItemText>
+            </MenuItem>
+            <MenuItem sx={{ ...itemMenuStyle }}>
+              <ListItemIcon>
+                <Title />
+              </ListItemIcon>
+              <ListItemText>Título</ListItemText>
+            </MenuItem>
+            <MenuItem sx={{ ...itemMenuStyle }}>
+              <ListItemIcon>
+                <Person />
+              </ListItemIcon>
+              <ListItemText>Autor</ListItemText>
+            </MenuItem>
+            <MenuItem sx={{ ...itemMenuStyle }}>
+              <ListItemIcon>
+                <Subject />
+              </ListItemIcon>
+              <ListItemText>Assunto</ListItemText>
+            </MenuItem>
+            <MenuItem sx={{ ...itemMenuStyle }}>
+              <ListItemIcon>
+                <Translate />
+              </ListItemIcon>
+              <ListItemText>Idioma</ListItemText>
+            </MenuItem>
+            <MenuItem sx={{ ...itemMenuStyle }}>
+              <ListItemIcon>
+                <Class />
+              </ListItemIcon>
+              <ListItemText>Classificação</ListItemText>
+            </MenuItem>
+          </MenuList>
+          {/* Botton */}
+          <MenuList>
+            <MenuItem
+              sx={{
+                color: textColor,
+                borderRadius: "6px",
+                ":hover": {
+                  backgroundColor: primaryColor,
+                  color: sideBarColor,
+                },
+              }}
+            >
+              <ListItemIcon>
+                <Logout />
+              </ListItemIcon>
+              <ListItemText>Voltar</ListItemText>
+            </MenuItem>
 
-              <FormControlLabel
-                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked 
-                onClick={colorMode.toggleColorMode} />}
-                label={`Modo ${mode}`}
-              />
-              {/* <IconButton
-                sx={{ ml: 1 }}
-                onClick={colorMode.toggleColorMode}
-                color="inherit"
-              >
-                {theme.palette.mode === "dark" ? <DarkMode /> : <LightMode />}
-                {theme.palette.mode}
-              </IconButton> */}
-            </MenuList>
-          </Box>
+            <FormControlLabel
+              control={
+                <MaterialUISwitch
+                  sx={{ m: 1 }}
+                  defaultChecked
+                  onClick={() => toggleColorMode()}
+                />
+              }
+            />
+          </MenuList>
         </Box>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
+      </Box>
+    
+  
   );
 }
