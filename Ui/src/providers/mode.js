@@ -42,7 +42,7 @@ export const ColorModeProvider = ({ children }) => {
               }),
         },
       }),
-    [mode]
+    [mode] 
   );
 
   return (
