@@ -21,9 +21,7 @@ import MakeTranslate from "./makeTranslate";
 import { useEffect, useState, useRef } from "react";
 import ParserBK from "src/services/thesaurus/parser_bk";
 import { api } from "src/services/api";
-//import CountGraph from "src/services/thesaurus/countGraph";
 import SparqlClient from "sparql-http-client";
-
 
 
 async function AuthorityExist(graph, metadata, token) {

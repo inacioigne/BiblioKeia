@@ -1,0 +1,365 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85014310> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2023-01-10T17:29:43.733867"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "pássaros"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "pássaros"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85142902>,
+        <http://id.loc.gov/authorities/subjects/sh96009544> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4063673-2>,
+        <http://data.bnf.fr/ark:/12148/cb11932889r>,
+        <http://id.worldcat.org/fast/832970>,
+        <http://lod.nal.usda.gov/nalt/17603>,
+        <http://lod.nal.usda.gov/nalt/84>,
+        <http://www.wikidata.org/entity/Q5113>,
+        <http://www.yso.fi/onto/yso/p3363> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85014310>,
+        <http://lod.nal.usda.gov/nalt/106> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2001000295>,
+        <http://id.loc.gov/authorities/subjects/sh2003004678>,
+        <http://id.loc.gov/authorities/subjects/sh2007006327>,
+        <http://id.loc.gov/authorities/subjects/sh2007006328>,
+        <http://id.loc.gov/authorities/subjects/sh2007010954>,
+        <http://id.loc.gov/authorities/subjects/sh2008020239>,
+        <http://id.loc.gov/authorities/subjects/sh2009008921>,
+        <http://id.loc.gov/authorities/subjects/sh2011005532>,
+        <http://id.loc.gov/authorities/subjects/sh2012000759>,
+        <http://id.loc.gov/authorities/subjects/sh2018000667>,
+        <http://id.loc.gov/authorities/subjects/sh85005473>,
+        <http://id.loc.gov/authorities/subjects/sh85006015>,
+        <http://id.loc.gov/authorities/subjects/sh85013130>,
+        <http://id.loc.gov/authorities/subjects/sh85014297>,
+        <http://id.loc.gov/authorities/subjects/sh85014331>,
+        <http://id.loc.gov/authorities/subjects/sh85014334>,
+        <http://id.loc.gov/authorities/subjects/sh85014346>,
+        <http://id.loc.gov/authorities/subjects/sh85018692>,
+        <http://id.loc.gov/authorities/subjects/sh85020005>,
+        <http://id.loc.gov/authorities/subjects/sh85022628>,
+        <http://id.loc.gov/authorities/subjects/sh85025933>,
+        <http://id.loc.gov/authorities/subjects/sh85027953>,
+        <http://id.loc.gov/authorities/subjects/sh85028750>,
+        <http://id.loc.gov/authorities/subjects/sh85032512>,
+        <http://id.loc.gov/authorities/subjects/sh85034666>,
+        <http://id.loc.gov/authorities/subjects/sh85038576>,
+        <http://id.loc.gov/authorities/subjects/sh85046956>,
+        <http://id.loc.gov/authorities/subjects/sh85050565>,
+        <http://id.loc.gov/authorities/subjects/sh85052842>,
+        <http://id.loc.gov/authorities/subjects/sh85057028>,
+        <http://id.loc.gov/authorities/subjects/sh85057541>,
+        <http://id.loc.gov/authorities/subjects/sh85078319>,
+        <http://id.loc.gov/authorities/subjects/sh85096012>,
+        <http://id.loc.gov/authorities/subjects/sh85096279>,
+        <http://id.loc.gov/authorities/subjects/sh85097911>,
+        <http://id.loc.gov/authorities/subjects/sh85098302>,
+        <http://id.loc.gov/authorities/subjects/sh85098509>,
+        <http://id.loc.gov/authorities/subjects/sh85099253>,
+        <http://id.loc.gov/authorities/subjects/sh85099397>,
+        <http://id.loc.gov/authorities/subjects/sh85101333>,
+        <http://id.loc.gov/authorities/subjects/sh85101958>,
+        <http://id.loc.gov/authorities/subjects/sh85107132>,
+        <http://id.loc.gov/authorities/subjects/sh85111442>,
+        <http://id.loc.gov/authorities/subjects/sh85111532>,
+        <http://id.loc.gov/authorities/subjects/sh85127482>,
+        <http://id.loc.gov/authorities/subjects/sh85135506>,
+        <http://id.loc.gov/authorities/subjects/sh85144471>,
+        <http://id.loc.gov/authorities/subjects/sh85145533>,
+        <http://id.loc.gov/authorities/subjects/sh85146667>,
+        <http://id.loc.gov/authorities/subjects/sh88004496>,
+        <http://id.loc.gov/authorities/subjects/sh90000789>,
+        <http://id.loc.gov/authorities/subjects/sh90003251>,
+        <http://id.loc.gov/authorities/subjects/sh90003435>,
+        <http://id.loc.gov/authorities/subjects/sh92000390>,
+        <http://id.loc.gov/authorities/subjects/sh92001448>,
+        <http://id.loc.gov/authorities/subjects/sh92002779>,
+        <http://id.loc.gov/authorities/subjects/sh92004605>,
+        <http://id.loc.gov/authorities/subjects/sh93000048>,
+        <http://id.loc.gov/authorities/subjects/sh93000125>,
+        <http://id.loc.gov/authorities/subjects/sh93006731>,
+        <http://id.loc.gov/authorities/subjects/sh95010415> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85095726> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Avifauna"@pt ] ) ;
+            madsrdf:variantLabel "Avifauna"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "fauna aviária"@pt ] ) ;
+            madsrdf:variantLabel "fauna aviária"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Aves"@pt ] ) ;
+            madsrdf:variantLabel "Aves"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Pássaros selvagens"@pt ] ) ;
+            madsrdf:variantLabel "Pássaros selvagens"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2001000295> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "aves provincianas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2003004678> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves coloniais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2007006327> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves de zonas húmidas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2007006328> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves de pastagem"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2007010954> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves endêmicas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2008020239> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "aves altriciais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2009008921> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves migratórias"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2011005532> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Upupiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2012000759> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Dispersão de sementes por pássaros"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2018000667> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves da montanha"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85005473> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Anseriformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85006015> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Apodiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85013130> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves benéficas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85014297> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pragas de pássaros"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85014331> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves extintas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85014334> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves ornamentais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85014346> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves de Rapina"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85018692> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pássaros de gaiola"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85020005> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Caprimulgiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85022628> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Charadriiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85025933> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciconiiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85027953> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Coliiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85028750> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Columbiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85032512> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Coraciiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85034666> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Cuculiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85038576> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mergulhadores (pássaros)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85046956> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Falconiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85050565> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pássaros da floresta"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85052842> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Galiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85057028> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "mergulhões"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85057541> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Gruiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85078319> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "mergulhões"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85095726> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ornitologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85096012> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "avestruzes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85096279> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "corujas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85097911> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves parasitas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85098302> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "papagaios"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85098509> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Passeriformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85099253> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pelecaniformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85099397> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pinguins"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85101333> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "fotografia de pássaros"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85101958> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Piciformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85107132> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Procellariiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85111442> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pássaros raros"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85111532> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ratitas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85127482> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pássaros do estado"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85135506> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Tinamiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85142902> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "vertebrados"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85144471> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "abutres"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85145533> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pássaros aquáticos"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85146667> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves selvagens em cativeiro"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88004496> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "softbills"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90000789> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pássaros exóticos"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90003251> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves que não voam"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90003435> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Casuariformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh92000390> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pássaros falantes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh92001448> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Rheiformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh92002779> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves perigosas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh92004605> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves noturnas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh93000048> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "aves piscívoras"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh93000125> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves que nidificam em cavidades"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh93006731> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Trogoniformes"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh95010415> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Aves introduzidas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh96009544> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "amniotas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+

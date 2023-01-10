@@ -99,8 +99,6 @@ export default function ThesaurusLCSH({
   };
 
   useEffect(() => {
-    //console.log(subjectDetails?.variant.length);
-
     getData();
   }, []);
 
@@ -232,7 +230,6 @@ export default function ThesaurusLCSH({
                           getDetails(token);
                         }}
                       >
-                        {" "}
                         {hit.aLabel}
                       </Button>
                     </ListItem>
