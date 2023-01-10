@@ -42,29 +42,23 @@
             madsrdf:citationSource "Machado de Assis. Epitaph of a small winner, 1990:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" ;
-            madsrdf:citationSource "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" ;
+            madsrdf:citationNote "t.p. (Machado de Assis) p. 19 (pseudonym Lélio)" ;
+            madsrdf:citationSource "Balas de estalo, 1998:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(Joaquim Maria Machado de Assis; known as Machado de Assis, Machado, or Bruxo do Cosme Velho; born June 21, 1839 in Rio de Janeiro; died September 29, 1908, Rio de Janeiro; of African descent; Brazilian novelist, poet, playwright, short story writer, literary critics, and advocate of monarchism. Widely regarded as the greatest writer of Brazilian literature)" ;
-            madsrdf:citationSource <https://en.wikipedia.org/wiki/Machado_de_Assis>,
-                "Wikipedia, Sept. 17, 2013" ;
+            madsrdf:citationNote "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" ;
+            madsrdf:citationSource "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
             madsrdf:citationNote "t.p. (Machado de Assis) p. 16 (Manassés, pseudônimo que Machado assumiria em todas as crônicas de série.) p. 65 (Manassés)" ;
             madsrdf:citationSource "História de quinze dias, 2009:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Machado de Assis) p. 19 (pseudonym Lélio)" ;
-            madsrdf:citationSource "Balas de estalo, 1998:" ;
+            madsrdf:citationNote "(Joaquim Maria Machado de Assis; known as Machado de Assis, Machado, or Bruxo do Cosme Velho; born June 21, 1839 in Rio de Janeiro; died September 29, 1908, Rio de Janeiro; of African descent; Brazilian novelist, poet, playwright, short story writer, literary critics, and advocate of monarchism. Widely regarded as the greatest writer of Brazilian literature)" ;
+            madsrdf:citationSource <https://en.wikipedia.org/wiki/Machado_de_Assis>,
+                "Wikipedia, Sept. 17, 2013" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Machado de Assis, Joaquín María," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Machado de Assis, Joaquín María, 1839-1908" ],
-        [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
                         madsrdf:elementValue "Assis, Joaquim Maria Machado de," ] [ a madsrdf:DateNameElement ;
@@ -73,9 +67,9 @@
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "De Assis, Joaquim Maria Machado," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "Machado de Assis, Joaquín María," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "De Assis, Joaquim Maria Machado, 1839-1908" ],
+            madsrdf:variantLabel "Machado de Assis, Joaquín María, 1839-1908" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
@@ -91,15 +85,21 @@
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Assis, Machado de," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "Machado de Assis, Joaquim Maria," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Assis, Machado de, 1839-1908" ],
+            madsrdf:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Machado de Assis, Joaquim Maria," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "De Assis, Joaquim Maria Machado," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ] ;
+            madsrdf:variantLabel "De Assis, Joaquim Maria Machado, 1839-1908" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Assis, Machado de," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1839-1908" ] ) ;
+            madsrdf:variantLabel "Assis, Machado de, 1839-1908" ] ;
     madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80002329>,
         <http://isni.org/isni/0000000121441225>,
         <http://viaf.org/viaf/95151633>,

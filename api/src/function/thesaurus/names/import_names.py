@@ -2,8 +2,9 @@ from rdflib import Graph, URIRef
 from pyfuseki import FusekiUpdate, FusekiQuery
 import pysolr
 from src.function.thesaurus.names.makeGraph import Make_Graph
-from src.function.solr.doc_names import create_doc
-
+#from src.function.solr.doc_names import create_doc
+from src.function.solr.docName import DocName
+ 
 
 #JENA
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authority')
@@ -50,6 +51,6 @@ def Import_Authority(token):
     fuseki_update.run_sparql(update)
 
     #INDEX SOLR
-    doc = create_doc(g, token)
+    doc = DocName(g, token)
     rs = solr.add([doc], commit=True)
     return status["statusCode"]
