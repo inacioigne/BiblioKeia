@@ -10,6 +10,10 @@
         "**/__pycache__": true,
         "cli/Marc_to_Bibframe/__pycache__": false,
         "**/__init__.py": false,
-        "venv": false
+        "venv": true,
+        "apache-jena-fuseki-4.5.0": true,
+        "Jena": true,
+        "Solr": true,
+
       },
 }
