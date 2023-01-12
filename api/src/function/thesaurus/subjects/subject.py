@@ -49,7 +49,6 @@ def CreateSubject(request):
 
     #Variant
     if len(request.variant) > 0:
-        print("VARIAMTE: ", request.variant)
         g = Variant(g, uri, MADSRDF, request.variant) 
     
     collection = URIRef("https://bibliokeia.com/authorities/subjects/collection_BKSH_General")

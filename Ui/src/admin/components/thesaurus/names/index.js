@@ -13,7 +13,8 @@ import { useState } from "react";
 import { useAlertBK } from "src/providers/alerts";
 
 // BiblioKeia Services
-import { getAthorities } from "src/services/solr/authorities";
+// import { getAthorities } from "src/services/solr/authorities";
+import { apiSolr } from "src/services/solr";
 
 export default function NamesBK() {
   const [open, setOpen] = useState(false);
@@ -26,8 +27,8 @@ export default function NamesBK() {
 
   const searchAuthority = (name = "*") => {
     //console.log("sh", name)
-    getAthorities
-      .get("select", {
+    apiSolr
+      .get("authorities/select", {
         params: {
           q: `general_search:${name}*`,
           fq: `type:${type}`,

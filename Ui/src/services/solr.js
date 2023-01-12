@@ -3,11 +3,11 @@ import axios from "axios";
 function search() {
     
     const api = axios.create({
-      baseURL: "http://localhost:8983/solr/search/",
+      baseURL: "http://localhost:8983/solr/",
     });
   
    
     return api;
   }
   
-export const api = search()
+export const apiSolr = search()

@@ -136,6 +136,7 @@ export default function Translate({
     e.preventDefault();
 
     const data = await ParserData(translate, subjectDetails, autorityBK);
+    
     api
       .post("/thesaurus/subject", await data)
       .then((response) => {
