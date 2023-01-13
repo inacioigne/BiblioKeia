@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bibliokeia.com/bibframe/instance/bk-23-3> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Literature" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2023-01-13"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-01-13T17:15:05.549606"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-23-3" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:editionStatement "1º Edição" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "152 páginas" ] ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Aleph" ] ;
+            bf:date "2022" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Óbidos" ] ] ;
+    bf:responsibilityStatement "Machado de Assis" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Literature" ;
+            bf:mainTitle "Literature" ] .
+

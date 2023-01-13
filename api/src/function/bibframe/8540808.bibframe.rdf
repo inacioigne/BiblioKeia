@@ -1,0 +1,86 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/8540808" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1973</bf:date>
+	<bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/bl"/>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:identifiedBy>
+      <bf:Lccn>
+	<rdf:value>   74219407 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>1427670</rdf:value>
+	<bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/ocolc"/>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Contos fantásticos de Machado de Assis.</rdfs:label>
+    <bf:responsibilityStatement>[Seleção e apresentação de] R. Magalhães Júnior</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Contos fantásticos de Machado de Assis.</rdfs:label>
+	<bf:mainTitle>Contos fantásticos de Machado de Assis</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:editionStatement>[1. ed. brasileira</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:place>
+	  <bf:Place>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Rio de Janeiro</rdfs:label>
+	  </bf:Place>
+	</bf:place>
+	<bf:agent>
+	  <bf:Agent>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Edições Bloch</rdfs:label>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:date>1973</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Rio de Janeiro]; Edições Bloch; [1973]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+	<rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">203 p.</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>21 cm.</bf:dimensions>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances" xmlns:dcterms="http://purl.org/dc/terms/"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/8540808"/>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/8540808-050-11"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:generationProcess>
+	  <bf:GenerationProcess>
+	    <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC marc2bibframe2 v1.7.0-SNAPSHOT</rdfs:label>
+	    <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-04T20:03:48-04:00</bf:generationDate>
+	  </bf:GenerationProcess>
+	</bf:generationProcess>
+	<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/c"/>
+	<bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/1" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"/>
+	<bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/local"/>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>8540808</rdf:value>
+	    <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-07-10T17:26:59</bf:changeDate>
+	<bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-07-02</bf:creationDate>
+	<lclocal:d906 xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">=906     $a 7 $b cbc $c oclcrpl $d u $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+	<bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/premarc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+</rdf:RDF>

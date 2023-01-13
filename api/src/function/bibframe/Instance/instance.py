@@ -6,6 +6,7 @@ from src.function.bibframe.Instance.extent import Extent
 from src.function.bibframe.Instance.provisionActivity import ProvisionActivity
 from src.function.bibframe.Instance.responsibilityStatement import ResponsibilityStatement
 from src.function.bibframe.Instance.seriesStatement import SeriesStatement
+from src.function.bibframe.Instance.editionStatement import Edition
 
 def BfInstance(request): 
     instance_uri = URIRef(
@@ -32,22 +33,25 @@ def BfInstance(request):
     g.add((instance_uri, RDF.type, BF.Print)) 
     g.add((instance_uri, RDFS.label, label)) 
 
-    #AdminMetadata
+    # AdminMetadata
     g = WorkAdmin(g, instance_uri, request.instanceOf, BF) 
 
-    #Title
+    # Title
     g = Title(g, request, instance_uri, label, BF)
 
-    #Extent
+    # Edition
+    g = Edition(g, request, instance_uri, BF)
+
+    # Extent
     g = Extent(g, request, instance_uri, BF)
 
-    #ProvisionActivity
+    # ProvisionActivity
     g = ProvisionActivity(g, request, instance_uri, BF)
 
-    #responsibilityStatement
+    # responsibilityStatement
     g = ResponsibilityStatement(g, request, instance_uri, BF)
 
-    #seriesStatement
+    # seriesStatement
     g = SeriesStatement(g, request, instance_uri, BF)
 
     return g

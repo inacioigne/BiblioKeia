@@ -34,6 +34,6 @@ async def create_work(request: Work_Schema):
         GRAPH <http://bibliokeia.com/bibframe/work/"""+work_id+""">
         { \n"""+nt+"} }" 
 
-    fuseki_update.run_sparql(G)
+    #fuseki_update.run_sparql(G)
     
     return {"msg": work_id}

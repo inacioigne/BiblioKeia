@@ -3,10 +3,12 @@ from typing import Optional
 
 class Instance_Schema(BaseModel):
     instanceOf: str
+    type: str
     mainTitle: str
     subtitle: Optional[str]
     extent: str
     publication: str
+    edition: Optional[str]
     place: str
     date: str
     responsibility: str

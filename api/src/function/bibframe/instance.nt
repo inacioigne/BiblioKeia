@@ -6,11 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/resources/works/8540808> a bf:Text,
-        bf:Work ;
+<http://id.loc.gov/resources/instances/8540808> a bf:Instance,
+        bf:Print ;
     rdfs:label "Contos fantásticos de Machado de Assis." ;
-    bflc:aap "Machado de Assis, 1839-1908. Contos fantásticos de Machado de Assis" ;
-    bflc:aap-normalized "machadodeassis18391908contosfantásticosdemachadodeassis" ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/1> ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
@@ -27,24 +25,35 @@
                     rdf:value "8540808" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
             lclocal:d906 "=906     $a 7 $b cbc $c oclcrpl $d u $e ncip $f 19 $g y-gencatlg" ] ;
-    bf:classification [ a bf:ClassificationLcc ;
-            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            bf:classificationPortion "PQ9697.M18" ;
-            bf:itemPortion "C59 1973" ] ;
-    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
-    bf:contribution [ a bf:Contribution ;
-            bf:agent <http://id.loc.gov/rwo/agents/n50037473> ;
-            bf:role <http://id.loc.gov/entities/roles/editor> ],
-        [ a bflc:PrimaryContribution,
-                bf:Contribution ;
-            bf:agent <http://id.loc.gov/rwo/agents/n80002329> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
-    bf:hasInstance <http://id.loc.gov/resources/instances/8540808> ;
-    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:tableOfContents [ a bf:TableOfContents ;
-            rdfs:label "A chinela turca.--Sem olhos.--O imortal.--A segunda vida.--A mulher pálida.--Os óculos de Pedro Antão.--A vida eterna.--O anjo Rafael.--Decadência de dois grandes homens.--Um esqueleto.--O capitão Mendonça." ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:dimensions "21 cm." ;
+    bf:editionStatement "[1. ed. brasileira" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "203 p." ] ; 
+    bf:hasItem <http://id.loc.gov/resources/items/8540808-050-11> ;
+    bf:identifiedBy [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            rdf:value "1427670" ],
+        [ a bf:Lccn ;
+            rdf:value "   74219407 " ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/8540808> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1973"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/bl> ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Edições Bloch" ] ;
+            bf:date "1973" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Rio de Janeiro" ] ] ;
+    bf:provisionActivityStatement "Rio de Janeiro]; Edições Bloch; [1973]" ;
+    bf:responsibilityStatement "[Seleção e apresentação de] R. Magalhães Júnior" ;
     bf:title [ a bf:Title ;
             rdfs:label "Contos fantásticos de Machado de Assis." ;
-            bf:mainTitle "Contos fantásticos de Machado de Assis." ] ;
-    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+            bf:mainTitle "Contos fantásticos de Machado de Assis" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
 
