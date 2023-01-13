@@ -40,7 +40,7 @@ export default function Cataloguing() {
       <Box sx={{ py: "1rem", display: "flex", justifyContent: "space-around" }}>
         <CardCataloguing
           name="Livros"
-          link="admin/cataloguing/book"
+          link="/admin/cataloguing/book"
           Icon={AutoStories}
         />
         <CardCataloguing

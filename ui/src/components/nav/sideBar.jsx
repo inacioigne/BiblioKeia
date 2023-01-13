@@ -99,9 +99,8 @@ export default function SideBar({ open }) {
               borderRadius: "6px",
               mx: "0.5rem",
               pl: "0.5rem",
-              ":hover": { backgroundColor: blue[100] },
+              ":hover": { backgroundColor: "hover.background" },
             }}
-            //onClick={initProgress}
           >
             <ListItemIcon>
               <Home />
@@ -127,7 +126,7 @@ export default function SideBar({ open }) {
                     borderRadius: "6px",
                     mx: "0.5rem",
                     pl: "0.5rem",
-                    ":hover": { backgroundColor: blue[100] },
+                    ":hover": { backgroundColor: "hover.background" },
                   }}
                   onClick={initProgress}
                 >

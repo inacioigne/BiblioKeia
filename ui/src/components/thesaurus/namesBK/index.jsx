@@ -27,10 +27,7 @@ export default function NamesBK() {
     return (
       <>
         <form onSubmit={handleSearch}>
-          <Grid container spacing={2} 
-        //   sx={{ px: "2rem", //pb: "2rem" 
-        // }}
-        >
+          <Grid container spacing={2} >
             <Grid item xs={3}>
               <Type setType={setType} type={type} />
             </Grid>

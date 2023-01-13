@@ -23,16 +23,16 @@ import TitleIcon from "@mui/icons-material/Title";
 import SubjectIcon from "@mui/icons-material/Subject";
 import LanguageIcon from "@mui/icons-material/Language";
 
-import { blue } from "@mui/material/colors";
+import { blue, indigo } from "@mui/material/colors";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
-import Content from "src/components/bibframe/content";
-import Title from "src/components/bibframe/title";
-import Contribution from "src/components/bibframe/contribution";
-import Subject from "src/components/bibframe/subject";
-import Language from "src/components/bibframe/language";
-import Classification from "src/components/bibframe/classification";
+import Content from "src/components/bibframe/work/content";
+import Title from "src/components/bibframe/work/title";
+import Contribution from "src/components/bibframe/work/contribution";
+import Subject from "src/components/bibframe/work/subject";
+import Language from "src/components/bibframe/work/language";
+import Classification from "src/components/bibframe/work/classification";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
@@ -45,26 +45,17 @@ import { api } from "src/services/api/api";
 // Next Components
 import Link from "next/link";
 
-const menuStyle = {
-  borderRadius: "6px",
-  mx: "0.5rem",
-  mb: "0.5rem",
-  pl: "0.5rem",
-  color: "text.secondary",
-  ":hover": {
-    backgroundColor: blue[100],
-    color: "text.primary",
-  },
-};
+// BiblioKeia Styles
+import { menuStyle } from "src/styles/mui";
 
 const previousPaths = [
   {
-    link: "admin",
+    link: "/admin",
     label: "Início",
     icon: <Home fontSize="small" />,
   },
   {
-    link: "cataloguing",
+    link: "/admin/cataloguing",
     label: "Catalogação",
     icon: <DashboardCustomize fontSize="small" />,
   },
@@ -72,6 +63,9 @@ const previousPaths = [
 
 // React Hooks
 import { useState } from "react";
+
+// Next Hooks
+import { useRouter } from 'next/navigation';
 
 const metadados = [
   { label: "Tipo", icon: ImportContacts },
@@ -83,10 +77,13 @@ const metadados = [
 ];
 
 export default function Book() {
+
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
-  const { work } = useBf();
+  const { work, setInstances } = useBf();
+  
+  const router = useRouter();
 
   function postWork(work) {
     setProgress(true);
@@ -96,13 +93,18 @@ export default function Book() {
       .post(`/cataloguing/work`, work)
       .then((response) => {
         setProgress(false);
-
         if (response.status == 201) {
+
+          setInstances((prevState) => ({
+              ...prevState,
+              instanceOf: response.data.msg,
+            }));
+        
+          router.push('/admin/cataloguing/book/instance')
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
         }
-        //console.log(response);
       })
       .catch(function (error) {
         console.log("ERROOO!!", error);
@@ -133,7 +135,7 @@ export default function Book() {
                     visible == index
                       ? {
                           ...menuStyle,
-                          backgroundColor: blue[100],
+                          backgroundColor: "hover.background",
                           color: "text.primary",
                         }
                       : { ...menuStyle }
@@ -166,11 +168,9 @@ export default function Book() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Link href="/admin/cataloguing/book/instance">
             <Button variant="outlined" onClick={() => postWork(work)}>
               Salvar e Adicionar Instancia
             </Button>
-          </Link>
         </Grid>
       </Grid>
     </Container>

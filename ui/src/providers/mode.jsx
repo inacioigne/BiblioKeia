@@ -2,7 +2,7 @@
 // MUI Styles
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { grey } from "@mui/material/colors";
+import { grey, blue, indigo } from "@mui/material/colors";
 
 // React Hooks
 import { createContext, useContext, useState, useMemo } from "react";
@@ -20,6 +20,9 @@ export const ModeProvider = ({ children }) => {
         //paper: "red",
         //default: "blue",
         bgBk: grey[100]
+      },
+      hover: {
+        background: blue[100]
       }
     },
   };
@@ -27,6 +30,9 @@ export const ModeProvider = ({ children }) => {
   const modeDark = {
     palette: {
       mode: "dark",
+      hover: {
+        background: indigo[600]
+      }
     },
   };
 

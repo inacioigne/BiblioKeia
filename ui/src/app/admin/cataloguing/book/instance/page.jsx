@@ -20,33 +20,48 @@ import {
   Person3,
   Class,
   DashboardCustomize,
+  PeopleAlt,
+  LocationCity,
+  Filter1,
+  FileCopy
 } from "@mui/icons-material/";
 import TitleIcon from "@mui/icons-material/Title";
 import SubjectIcon from "@mui/icons-material/Subject";
 import LanguageIcon from "@mui/icons-material/Language";
 
-// MUI Colors
-import { blue } from "@mui/material/colors";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
+import Type from "src/components/bibframe/instance/type";
+import Title from "src/components/bibframe/instance/title";
+import Extent from "src/components/bibframe/instance/extent";
+import ProvisionActivity from "src/components/bibframe/instance/provisionActivity";
+import ResponsibilityStatement from "src/components/bibframe/instance/responsibilityStatement";
+import Edition from "src/components/bibframe/instance/editionStatement";
 
 // React Hooks
 import { useState, useEffect } from "react";
 
+// BiblioKeia Styles
+import { menuStyle } from "src/styles/mui";
+
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
+
+
 const previousPaths = [
   {
-    link: "admin",
+    link: "/admin",
     label: "Início",
     icon: <Home fontSize="small" />,
   },
   {
-    link: "admin/cataloguing",
+    link: "/admin/cataloguing",
     label: "Catalogação",
     icon: <DashboardCustomize fontSize="small" />,
   },
   {
-    link: "admin/cataloguing/book",
+    link: "/admin/cataloguing/book",
     label: "Obra",
     icon: <Class fontSize="small" />,
   },
@@ -55,27 +70,17 @@ const previousPaths = [
 const metadados = [
   { label: "Tipo", icon: ImportContacts },
   { label: "Título", icon: TitleIcon },
-  { label: "Extensão", icon: Person3 },
-  { label: "Edição", icon: SubjectIcon },
-  { label: "Responsabilidades", icon: LanguageIcon },
+  { label: "Responsabilidades", icon: PeopleAlt },
+  { label: "Extensão", icon: FileCopy },
+  { label: "Edição", icon: Filter1 },
+  { label: "Publicação", icon: LocationCity },
   { label: "Série", icon: Class },
 ];
-
-const menuStyle = {
-  borderRadius: "6px",
-  mx: "0.5rem",
-  mb: "0.5rem",
-  pl: "0.5rem",
-  color: "text.secondary",
-  ":hover": {
-    backgroundColor: blue[100],
-    color: "text.primary",
-  },
-};
 
 export default function Instance() {
 
     const [visible, setVisible] = useState(0);
+    const { instance } = useBf();
 
   return (
     <Container maxWidth="xl">
@@ -101,7 +106,7 @@ export default function Instance() {
                     visible == index
                       ? {
                           ...menuStyle,
-                          backgroundColor: blue[100],
+                          backgroundColor: "hover.background",
                           color: "text.primary",
                         }
                       : { ...menuStyle }
@@ -118,6 +123,21 @@ export default function Instance() {
               ))}
             </MenuList>
           </Paper>
+        </Grid>
+        <Grid item xs={9}>
+        <Paper>
+        {visible === 0 && <Type />}
+        {visible === 1 && <Title />}
+        {visible === 2 && <ResponsibilityStatement />}
+        {visible === 3 && <Extent />}
+        {visible === 4 && <Edition />}
+        {visible === 5 && <ProvisionActivity />}
+        </Paper>
+        </Grid>
+        <Grid item xs={12}>
+            <Button variant="outlined" onClick={() => console.log("INSTANCE: ", instance)}>
+              Salvar e Adicionar exemplar
+            </Button>
         </Grid>
       </Grid>
     </Container>

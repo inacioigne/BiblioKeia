@@ -21,10 +21,12 @@ export const BfProvider = ({ children }) => {
 
   const [instance, setInstances] = useState({
     instanceOf: null,
+    type: "Print",
     mainTitle: "",
     subtitle: "",
     extent: "",
     publication: "",
+    edition: "",
     place: "",
     date: "",
     responsibility: "",

@@ -36,7 +36,7 @@ export default function BreadcrumbsBK({ previousPaths, currentPath }) {
         <Link key={index} href={path.link}>
           <StyledBreadcrumb
             label={path.label}
-            icon={path.icon}
+            icon={path.icon} 
           />
         </Link>
       ))}
