@@ -5,7 +5,6 @@ import {
   Paper,
   Grid,
   Box,
-  IconButton,
   MenuList,
   MenuItem,
   ListItemIcon,
@@ -28,8 +27,6 @@ import { blue } from "@mui/material/colors";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
-
-// BiblioKeia Components
 import Content from "src/components/bibframe/content";
 import Title from "src/components/bibframe/title";
 import Contribution from "src/components/bibframe/contribution";
@@ -39,6 +36,8 @@ import Classification from "src/components/bibframe/classification";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
+import { useProgress } from "src/providers/progress";
+import { useAlertBK } from "src/providers/alerts";
 
 // BiblioKeia Services
 import { api } from "src/services/api/api";
@@ -72,7 +71,7 @@ const previousPaths = [
 ];
 
 // React Hooks
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const metadados = [
   { label: "Tipo", icon: ImportContacts },
@@ -84,27 +83,32 @@ const metadados = [
 ];
 
 export default function Book() {
+  const { setProgress } = useProgress();
+  const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
-  const { work, setWork } = useBf();
+  const { work } = useBf();
 
-  useEffect(() => {
+  function postWork(work) {
+    setProgress(true);
+    console.log(work);
+
     api
-      .get("/items/next_id")
+      .post(`/cataloguing/work`, work)
       .then((response) => {
-        setWork((prevState) => ({
-          ...prevState,
-          work_id: response.data.id,
-        }));
+        setProgress(false);
+
+        if (response.status == 201) {
+          setTypeAlert("success");
+          setMessage("Registro salvo com sucesso!");
+          setOpenSnack(true);
+        }
+        //console.log(response);
       })
       .catch(function (error) {
-        console.log("ER", error);
+        console.log("ERROOO!!", error);
       });
+  }
 
-    // setWork((prevState) => ({
-    //   ...prevState,
-    //   subjects: listSubject,
-    // }));
-  }, []);
   return (
     <Container maxWidth="xl">
       <Box my={"1rem"}>
@@ -139,9 +143,6 @@ export default function Book() {
                   }}
                 >
                   <ListItemIcon>
-                    {/* <ImportContacts
-                      sx={{ ":hover": { color: "text.primary" } }}
-                    /> */}
                     <metadado.icon />
                   </ListItemIcon>
                   <ListItemText>{metadado.label}</ListItemText>
@@ -164,9 +165,13 @@ export default function Book() {
             {visible === 5 && <Classification />}
           </Paper>
         </Grid>
-        <Button variant="outlined" onClick={() => console.log(work)}>
-          Salvar e Adicionar Instancia
-        </Button>
+        <Grid item xs={12}>
+          <Link href="/admin/cataloguing/book/instance">
+            <Button variant="outlined" onClick={() => postWork(work)}>
+              Salvar e Adicionar Instancia
+            </Button>
+          </Link>
+        </Grid>
       </Grid>
     </Container>
   );

@@ -97,14 +97,7 @@ export default function Translate({
   const [agree, setAgree] = useState(false);
   const form = useRef(null);
 
-  const {
-    openSnack,
-    setOpenSnack,
-    message,
-    setMessage,
-    typeAlert,
-    setTypeAlert,
-  } = useAlertBK();
+  const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
   function getTranslate(termo) {
     api
@@ -157,7 +150,6 @@ export default function Translate({
 
   const handleSalve = async (e) => {
     e.preventDefault();
-    
 
     const autorityBK = { graph: subjectDetails.tokenLSCH, data: [] };
     const data = await ParserData(translate, subjectDetails, autorityBK);

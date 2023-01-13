@@ -10,11 +10,6 @@ def Make_Graph(nt, token ):
     INSERT DATA {
         GRAPH bk:"""
 
-    G2 = " {"
-
-    G3 = """}
-    }"""
-
     G = G1+str(token)+" { \n"+nt+"}}"
 
     return G

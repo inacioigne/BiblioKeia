@@ -1,0 +1,835 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n80032184> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:marcKey "1001 $aPopper, Karl R.$q(Karl Raimund),$d1902-1994" ;
+    identifiers:lccn "n 80032184" ;
+    identifiers:local "(OCoLC)oca00414387" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2013-05-14T14:34:14"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1980-05-22T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Popper, Karl R. (Karl Raimund), 1902-1994" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Popper, Karl R." ] [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "(Karl Raimund)," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1902-1994" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1717209>,
+        <http://id.worldcat.org/fast/51773>,
+        <http://vocab.getty.edu/ulan/500256162>,
+        <http://www.wikidata.org/entity/Q81244> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++80032184#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (K. Poppera)" ;
+            madsrdf:citationSource "Sokuler, Z. A. Problema obosnovanii︠a︡ znanii︠a︡, 1988:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "Marinov, M. Logikata na naukata i metodologii︠a︡ta na Karl Popŭr, 1992." ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "His Logik der ... 1935." ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Karl Popper)" ;
+            madsrdf:citationSource "Artigas, M. Karl Popper, búsqueda sin termino, 1979:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "v. 1, t.p. (Kāru R. Popā [in kana]) v. 1, verso t.p. (Karl R. Popper [in rom.])" ;
+            madsrdf:citationSource "Hateshinaki tankyū, 2004:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Kʻal Pʻopʻŏ)" ;
+            madsrdf:citationSource "Yi, H.G. Yŏksajuŭi wa yŏksa chʻŏrhak, 1986:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "NYtimes, 9/18/94, sect a, p. 22 (Sir Karl Popper, d. Sept. 17, 1994)" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Kʻa-erh Pa-po) cover (Karl Popper)" ;
+            madsrdf:citationSource "Chu, H.Y. Kʻa-erh Pa-po, 1991:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Popper, Karl Raimund," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Popper, Karl Raimund, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Popŭr, Karl," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Popŭr, Karl, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Poper, Karl," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Poper, Karl, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Pabo, Kaer," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Pabo, Kaer, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Popper, K. R." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Karl Raimund)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Popper, K. R. (Karl Raimund), 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Popper, Karl," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Popper, Karl, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Pʻopʻŏ, Kʻa," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Pʻopʻŏ, Kʻa, 1902-1994" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Popā, Kāru R.," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1902-1994" ] ) ;
+            madsrdf:variantLabel "Popā, Kāru R., 1902-1994" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80032184> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/resources/works/10283963> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. poverty of historicism" .
+
+<http://id.loc.gov/resources/works/10350928> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. poverty of historicism," .
+
+<http://id.loc.gov/resources/works/10387264> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Logik der Forschung" .
+
+<http://id.loc.gov/resources/works/10402425> a bf:Work ;
+    bflc:aap "Dick, Franz, 1943- Wenn p, dann q: die Widersprüche d. nomothet. Gesetzesbegriffs d. empir.-analyt. Sozialwiss. u. dessen doppelt idealog. Funktion" .
+
+<http://id.loc.gov/resources/works/10416908> a bf:Work ;
+    bflc:aap "Albrecht, Reinhardt, 1944- Sozialtechnologie und ganzheitliche Sozialphilosophie" .
+
+<http://id.loc.gov/resources/works/1043415> a bf:Work ;
+    bflc:aap "Sierra Mejía, Rubén. Apreciación de la filosofía analítica" .
+
+<http://id.loc.gov/resources/works/10463144> a bf:Work ;
+    bflc:aap "Orestov, Oleg Leonidovich. Razoblachennyĭ mif" .
+
+<http://id.loc.gov/resources/works/106263> a bf:Work ;
+    bflc:aap "Marqués i Martí, Andreu. Coneixement i decisió els fonaments del racionalisme crític" .
+
+<http://id.loc.gov/resources/works/1072443> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Realism and the aim of science" .
+
+<http://id.loc.gov/resources/works/1087974> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Quantum theory and the schism in physics" .
+
+<http://id.loc.gov/resources/works/1096844> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Quantum theory and the schism in physics" .
+
+<http://id.loc.gov/resources/works/1097341> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Realism and the aim of science" .
+
+<http://id.loc.gov/resources/works/1100719> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. logic of scientific discovery" .
+
+<http://id.loc.gov/resources/works/1137485> a bf:Work ;
+    bflc:aap "Marinov, Marin. \"Logikata na naukata\" i metodologii︠a︡ta na Karl Popŭr" .
+
+<http://id.loc.gov/resources/works/1153693> a bf:Work ;
+    bflc:aap "Geier, Manfred. Karl Popper" .
+
+<http://id.loc.gov/resources/works/1154607> a bf:Work ;
+    bflc:aap "Pezzimenti, Rocco. Homo metaphysicus" .
+
+<http://id.loc.gov/resources/works/11776447> a bf:Work ;
+    bflc:aap "Baldini, Massimo, 1947- Karl Popper e Sherlock Holmes : l'epistemologo, il detective, il medico, lo storico e lo scienziato" .
+
+<http://id.loc.gov/resources/works/11794007> a bf:Work ;
+    bflc:aap "Hacohen, Malachi Haim, 1957- Karl Popper, the formative years, 1902-1945 : politics and philosophy in interwar Vienna" .
+
+<http://id.loc.gov/resources/works/11797046> a bf:Work ;
+    bflc:aap "Antiseri, Dario. Karl Popper" .
+
+<http://id.loc.gov/resources/works/11877165> a bf:Work ;
+    bflc:aap "Notturno, Mark Amadeus. Science and the open society : the future of Karl Popper's philosophy" .
+
+<http://id.loc.gov/resources/works/11885158> a bf:Work ;
+    bflc:aap "Swann, Joanna. Improving education : realist approaches to method and research" .
+
+<http://id.loc.gov/resources/works/11960356> a bf:Work ;
+    bflc:aap "Porciello, Roberto, 1966- Scienza e decisione : saggio sul pensiero politico di Karl Popper" .
+
+<http://id.loc.gov/resources/works/12031009> a bf:Work ;
+    bflc:aap "O'Hear, Anthony. Karl Popper" .
+
+<http://id.loc.gov/resources/works/12044407> a bf:Work ;
+    bflc:aap "Antiseri, Dario. Vienna di Popper" .
+
+<http://id.loc.gov/resources/works/12174441> a bf:Work ;
+    bflc:aap "Stove, D. C. (David Charles) Scientific irrationalism : origins of a postmodern cult" .
+
+<http://id.loc.gov/resources/works/12211449> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. world of Parmenides : essays on the pre-Socratic Enlightenment" .
+
+<http://id.loc.gov/resources/works/1223350> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open society and its enemies" .
+
+<http://id.loc.gov/resources/works/12266945> a bf:Work ;
+    bflc:aap "Bredikhin, Oleg Nikolaevich. Sovremennoe politicheskoe mifotvorchestvo : k voprosu o kritike popperovskoĭ kont︠s︡ept︠s︡ii \"otkrytogo obshchestva\"" .
+
+<http://id.loc.gov/resources/works/12287024> a bf:Work ;
+    bflc:aap "Tangwa, Godfrey B. Karl Popper : a thematic critical introduction" .
+
+<http://id.loc.gov/resources/works/12295700> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. lesson of this century : with two talks on freedom and the democratic state" .
+
+<http://id.loc.gov/resources/works/12349966> a bf:Work ;
+    bflc:aap "Rodolfi, Francesca. Singole teorie o programmi di ricerca? : le immagini della sienza di Popper e Lakàtos" .
+
+<http://id.loc.gov/resources/works/123568> a bf:Work ;
+    bflc:aap "Graterol, Martín. Paradigmas y creación de conocimiento en naciones neocoloniales : cuando los paradigmas transferidos dificultan ver lo dado" .
+
+<http://id.loc.gov/resources/works/12436146> a bf:Work ;
+    bflc:aap "Lai, Bruno, 1963- Popper in Italia : le disavventure di una filosofia politica" .
+
+<http://id.loc.gov/resources/works/12457632> a bf:Work ;
+    bflc:aap "Edmonds, David, 1964- Wittgenstein's poker : the story of a ten-minute argument between two great philosophers" .
+
+<http://id.loc.gov/resources/works/12471137> a bf:Work ;
+    bflc:aap "Moya, Eugenio. Conocimiento y verdad : la epistemología crítica de K.R. Popper" .
+
+<http://id.loc.gov/resources/works/1248018> a bf:Work ;
+    bflc:aap "Marcuse, Herbert, 1898-1979. Studies in critical philosophy" .
+
+<http://id.loc.gov/resources/works/12496265> a bf:Work ;
+    bflc:aap "Bailey, Richard, 1966- Education in the open society : Karl Popper and schooling" .
+
+<http://id.loc.gov/resources/works/12596684> a bf:Work ;
+    bflc:aap "Kilian, Krzysztof Jerzy. Od metody do metafizyki : poznanie teoretyczne w ujęciu Karla R. Poppera" .
+
+<http://id.loc.gov/resources/works/12663729> a bf:Work ;
+    bflc:aap "Edmonds, David, 1964- Wittgenstein's poker : the story of a ten-minute argument between two great philosophers" .
+
+<http://id.loc.gov/resources/works/12757217> a bf:Work ;
+    bflc:aap "Brudny, Michelle-Irène Karl Popper, un philosophe heureux" .
+
+<http://id.loc.gov/resources/works/12787984> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" .
+
+<http://id.loc.gov/resources/works/12793415> a bf:Work ;
+    bflc:aap "Sadovskiĭ, V. N. (Vadim Nikolaevich) Karl Popper i Rossii︠a︡" .
+
+<http://id.loc.gov/resources/works/12997064> a bf:Work ;
+    bflc:aap "Scattone, Giovanni, 1968- Due filosofie della libertà : Karl Popper e Robert Nozick" .
+
+<http://id.loc.gov/resources/works/13022936> a bf:Work ;
+    bflc:aap "Borghini, Andrea. Karl Popper : politica e società" .
+
+<http://id.loc.gov/resources/works/13165326> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open society and its enemies," .
+
+<http://id.loc.gov/resources/works/1321570> a bf:Work ;
+    bflc:aap "Wilkins, Burleigh Taylor. Has history any meaning? : A critique of Popper's philosophy of history" .
+
+<http://id.loc.gov/resources/works/13251466> a bf:Work ;
+    bflc:aap "O'Hear, Anthony. Karl Popper : critical assessments of leading philosophers" .
+
+<http://id.loc.gov/resources/works/13297934> a bf:Work ;
+    bflc:aap "Notturno, Mark Amadeus. On Popper" .
+
+<http://id.loc.gov/resources/works/13319445> a bf:Work ;
+    bflc:aap "Brüschweiler, Andreas. Gerechtigkeit durch Ironisierung : die Kritik von Sokrates an der geschlossenen spartanischen Gesellschaft : eine rechtsphilosophiegeschichtliche Analyse von Karl Raimund Poppers Kritik an Platon" .
+
+<http://id.loc.gov/resources/works/13401880> a bf:Work ;
+    bflc:aap "Munz, Peter, 1921- Beyond Wittgenstein's poker : new light on Popper and Wittgenstein" .
+
+<http://id.loc.gov/resources/works/13468522> a bf:Work ;
+    bflc:aap "Buzgalin, A. V. (Aleksandr Vladimirovich) Anti-Popper: sot︠s︡ialʹnoe osvobozhdenie i ego druzʹi︠a︡" .
+
+<http://id.loc.gov/resources/works/13472940> a bf:Work ;
+    bflc:aap "Oeser, Erhard. Popper, der Wiener Kreis und die Folgen : die Grundlagendebatte der Wissenschaftstheorie" .
+
+<http://id.loc.gov/resources/works/13487743> a bf:Work ;
+    bflc:aap "Catton, Philip, 1956- Karl Popper : critical appraisals" .
+
+<http://id.loc.gov/resources/works/13499600> a bf:Work ;
+    bflc:aap "Keuth, Herbert, 1940- philosophy of Karl Popper" .
+
+<http://id.loc.gov/resources/works/13550846> a bf:Work ;
+    bflc:aap "Fuller, Steve, 1959- Kuhn vs. Popper : the struggle for the soul of science" .
+
+<http://id.loc.gov/resources/works/13708337> a bf:Work ;
+    bflc:aap "Morgenstern, Martin. Karl Popper" .
+
+<http://id.loc.gov/resources/works/13772624> a bf:Work ;
+    bflc:aap "Słomski, Wojciech, 1969- Trzy światy : szkice o filozofii Karla Rajmunda Poppera" .
+
+<http://id.loc.gov/resources/works/13790176> a bf:Work ;
+    bflc:aap "Nölle, Rolf. Sozialphilosophische Variablen : Individuum und Gesellschaft bei Horkheimer/Adorno, Marcuse, Popper und Gehlen" .
+
+<http://id.loc.gov/resources/works/13826042> a bf:Work ;
+    bflc:aap "Jarvie, I. C. (Ian Charles), 1937- republic of science : the emergence of Popper's social view of science, 1935-1945" .
+
+<http://id.loc.gov/resources/works/13858768> a bf:Work ;
+    bflc:aap "Wettersten, John The roots of critical rationalism" .
+
+<http://id.loc.gov/resources/works/13861203> a bf:Work ;
+    bflc:aap "Miller, David (David W.) Out of error : further essays on critical rationalism" .
+
+<http://id.loc.gov/resources/works/13903455> a bf:Work ;
+    bflc:aap "Gorton, William A., 1966- Karl Popper and the social sciences" .
+
+<http://id.loc.gov/resources/works/13942834> a bf:Work ;
+    bflc:aap "Kiesewetter, Hubert, 1939- Karl Popper-- Leben und Werk" .
+
+<http://id.loc.gov/resources/works/14019680> a bf:Work ;
+    bflc:aap "Wettersten, John. How do institutions steer events? : an inquiry into the limits and possibilities of rational thought and action" .
+
+<http://id.loc.gov/resources/works/14030784> a bf:Work ;
+    bflc:aap "Giovannini, Graziano. Karl Popper la razionalità nella scienza e nella politica" .
+
+<http://id.loc.gov/resources/works/1407697> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Popper selections" .
+
+<http://id.loc.gov/resources/works/1412942> a bf:Work ;
+    bflc:aap "Hahn, Rainald, 1947- Theorie der Erfahrung bei Popper und Kant : zur Kritik des Kritischen Rationalismus am transzendentalen Apriori" .
+
+<http://id.loc.gov/resources/works/14151172> a bf:Work ;
+    bflc:aap "Albert, Hans, 1921- Briefwechsel 1958-1994" .
+
+<http://id.loc.gov/resources/works/14208701> a bf:Work ;
+    bflc:aap "García, Carlos E. Popper's theory of science : an apologia" .
+
+<http://id.loc.gov/resources/works/14285521> a bf:Work ;
+    bflc:aap "Lefevr, V. A. (Vladimir Aleksandrovich) Research on bipolarity and reflexivity" .
+
+<http://id.loc.gov/resources/works/14330835> a bf:Work ;
+    bflc:aap "Jarvie, I. C. (Ian Charles), 1937- Karl Popper : a centenary assessment" .
+
+<http://id.loc.gov/resources/works/14414459> a bf:Work ;
+    bflc:aap "Stelzer, Harald. Karl Poppers Sozialphilosophie : politische und ethische Implikationen" .
+
+<http://id.loc.gov/resources/works/14465418> a bf:Work ;
+    bflc:aap "Antiseri, Dario. Popper's Vienna" .
+
+<http://id.loc.gov/resources/works/14518637> a bf:Work ;
+    bflc:aap "Sceski, John H. Popper, objectivity and the growth of knowledge" .
+
+<http://id.loc.gov/resources/works/14585948> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994 After The open society" .
+
+<http://id.loc.gov/resources/works/14625198> a bf:Work ;
+    bflc:aap "Hofmann, Joachim, 1933- Anti-Popper" .
+
+<http://id.loc.gov/resources/works/14630934> a bf:Work ;
+    bflc:aap "Zhao, Dunhua, 1949- Zhao Dunhua jiang Bopu'er 赵敦华讲波普尔" .
+
+<http://id.loc.gov/resources/works/14639569> a bf:Work ;
+    bflc:aap "Nordmann, Jürgen, 1968- lange Marsch zum Neoliberalismus : vom Roten Wien zum freien Markt - Popper und Hayek im Diskurs" .
+
+<http://id.loc.gov/resources/works/14725908> a bf:Work ;
+    bflc:aap "Boylan, Thomas A. Popper and economic methodology : contemporary challenges" .
+
+<http://id.loc.gov/resources/works/14835312> a bf:Work ;
+    bflc:aap "Kadlec, Erich Praktische Philosophie - heute" .
+
+<http://id.loc.gov/resources/works/14900380> a bf:Work ;
+    bflc:aap "Sassower, Raphael. Popper's legacy : rethinking politics, economics and science" .
+
+<http://id.loc.gov/resources/works/14961177> a bf:Work ;
+    bflc:aap "Jabłoński, Arkadiusz. Budowanie społeczeństwa wiedzy : zarys teorii społecznej Karla R. Poppera" .
+
+<http://id.loc.gov/resources/works/15181259> a bf:Work ;
+    bflc:aap "Gattei, Stefano. Thomas Kuhn's \"linguistic turn\" and the legacy of logical empiricism : incommensurability, rationality and the search for truth" .
+
+<http://id.loc.gov/resources/works/15187909> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. two fundamental problems of the theory of knowledge" .
+
+<http://id.loc.gov/resources/works/15250368> a bf:Work ;
+    bflc:aap "Hayes, Calvin. Popper, Hayek and the open society" .
+
+<http://id.loc.gov/resources/works/1530302> a bf:Work ;
+    bflc:aap "Hilgenheger, Norbert. pädagogische Normproblem aus der Sicht des Kritischen Rationalismus" .
+
+<http://id.loc.gov/resources/works/15303167> a bf:Work ;
+    bflc:aap "Gattei, Stefano. Karl Popper's philosophy of science : rationality without foundations" .
+
+<http://id.loc.gov/resources/works/15350463> a bf:Work ;
+    bflc:aap "Gattei, Stefano. Introduzione a Popper" .
+
+<http://id.loc.gov/resources/works/15429729> a bf:Work ;
+    bflc:aap "Novaković, Staniša. Savremena uloga i organizacija nauke : izabrani radovi" .
+
+<http://id.loc.gov/resources/works/15503116> a bf:Work ;
+    bflc:aap "Parusniková, Zuzana. Rethinking Popper" .
+
+<http://id.loc.gov/resources/works/1554428> a bf:Work ;
+    bflc:aap "Bouveresse, Renée. Karl Popper, science et philosophie" .
+
+<http://id.loc.gov/resources/works/1558581> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. In search of a better world : lectures and essays from thirty years" .
+
+<http://id.loc.gov/resources/works/15596828> a bf:Work ;
+    bflc:aap "Borghini, Andrea. Sociologia di Karl Popper" .
+
+<http://id.loc.gov/resources/works/15641797> a bf:Work ;
+    bflc:aap "Markl, Peter. Karl Popper's response to 1938" .
+
+<http://id.loc.gov/resources/works/15733455> a bf:Work ;
+    bflc:aap "Wilczek, Gerhard. Metaphysik und Gesellschaft" .
+
+<http://id.loc.gov/resources/works/15796848> a bf:Work ;
+    bflc:aap "Pimbé, Daniel. explication interdite : essai sur la théorie de la connaissance de Karl Popper" .
+
+<http://id.loc.gov/resources/works/15820279> a bf:Work ;
+    bflc:aap "Stelzer, Harald. Karl Raimund Popper und kritischer Rationalismus interkulturell gelesen" .
+
+<http://id.loc.gov/resources/works/1587564> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. lezione di questo secolo" .
+
+<http://id.loc.gov/resources/works/16276293> a bf:Work ;
+    bflc:aap "Rowbottom, Darrell P., 1975- Popper's critical rationalism : a philosophical investigation" .
+
+<http://id.loc.gov/resources/works/16758187> a bf:Work ;
+    bflc:aap "Pezzimenti, Rocco. open society and its friends : with letters from Isaiah Berlin and Karl R. Popper" .
+
+<http://id.loc.gov/resources/works/16758378> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994 After The open society" .
+
+<http://id.loc.gov/resources/works/16771828> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. two fundamental problems of the theory of knowledge" .
+
+<http://id.loc.gov/resources/works/16775920> a bf:Work ;
+    bflc:aap "Niebrój, Katarzyna Karla R. Poppera koncepcja prawdy" .
+
+<http://id.loc.gov/resources/works/16802021> a bf:Work ;
+    bflc:aap "Swann, Joanna. Learning, teaching, and education research in the 21st century : an evolutionary analysis of the role of teachers" .
+
+<http://id.loc.gov/resources/works/1684832> a bf:Work ;
+    bflc:aap "Artigas, Mariano. ethical nature of Karl Popper's theory of knowledge : including Popper's unpublished comments on Bartley and critical rationalism" .
+
+<http://id.loc.gov/resources/works/16886467> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Wissenschaftstheorie, Hermeneutik, Theologie : dem Anderen Recht geben : Karl R. Poppers Kritischer Rationalismus im Gespräch mit Hans Albert, Dario Antiseri, Volker Gadenne, Armin Kreiner und Hans Joachim Niemann" .
+
+<http://id.loc.gov/resources/works/1711909> a bf:Work ;
+    bflc:aap "Michalos, Alex C. Popper-Carnap controversy" .
+
+<http://id.loc.gov/resources/works/17140591> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. world of Parmenides : essays on the Presocratic enlightenment" .
+
+<http://id.loc.gov/resources/works/17302230> a bf:Work ;
+    bflc:aap "Franco, Giuseppe, 1981- Conoscenza e interpretazione : l'inaspettata convergenza tra l'epistemologia di Popper e l'ermeneutica di Gadamer" .
+
+<http://id.loc.gov/resources/works/17386639> a bf:Work ;
+    bflc:aap "Verhofstadt, Dirk, 1955- open samenleving onder vuur : de wereld van nu in popperiaans perspectief" .
+
+<http://id.loc.gov/resources/works/17396185> a bf:Work ;
+    bflc:aap "Kech, Florian, 1979- Kritik der holistischen Vernunft : Karl Popper und die Frage nach dem Ganzen und seiner Teile" .
+
+<http://id.loc.gov/resources/works/17401310> a bf:Work ;
+    bflc:aap "Borghini, Andrea. Karl Popper oggi : una riflessione multidisciplinare" .
+
+<http://id.loc.gov/resources/works/17509316> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Open Society and Its Enemies" .
+
+<http://id.loc.gov/resources/works/17603471> a bf:Work ;
+    bflc:aap "Nguimbi, Marcel. Penser l'épistémologie de Karl Popper" .
+
+<http://id.loc.gov/resources/works/17645689> a bf:Work ;
+    bflc:aap "De Mucci, Raffaele. austriaco in Italia = An Austrian in Italy : Festschrift in honour of professor Dario Antiseri" .
+
+<http://id.loc.gov/resources/works/1770578> a bf:Work ;
+    bflc:aap "Nordhofen, Eckhard, 1945- Bereichsdenken im kritischen Rationalismus : zur finitist. Tradition d. Popperschule" .
+
+<http://id.loc.gov/resources/works/17724475> a bf:Work ;
+    bflc:aap "Firode, Alain. Théorie de l'esprit et pédagogie chez Karl Popper : le \"seau\" et le \"projecteur\"" .
+
+<http://id.loc.gov/resources/works/18055646> a bf:Work ;
+    bflc:aap "Colucci, Achille, Popper a confronto : una lezione di umana civiltà" .
+
+<http://id.loc.gov/resources/works/1819220> a bf:Work ;
+    bflc:aap "Coniglione, Francesco. scienza impossibile : dal popperismo alla critica del razionalismo" .
+
+<http://id.loc.gov/resources/works/18202252> a bf:Work ;
+    bflc:aap "Notturno, Mark Amadeus. Hayek and Popper : on rationality, economism, and democracy" .
+
+<http://id.loc.gov/resources/works/18790139> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. After The open society : selected social and political writings" .
+
+<http://id.loc.gov/resources/works/1893399> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" .
+
+<http://id.loc.gov/resources/works/1933999> a bf:Work ;
+    bflc:aap "Radnitzky, Gerard. Evolutionary epistemology, rationality, and the sociology of knowledge" .
+
+<http://id.loc.gov/resources/works/21268215> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Kagakuteki hakken no ronri. jō 科学的発見の論理. 上" .
+
+<http://id.loc.gov/resources/works/2165877> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. logic of scientific discovery" .
+
+<http://id.loc.gov/resources/works/2183142> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations: the growth of scientific knowledge," .
+
+<http://id.loc.gov/resources/works/2199057> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Objective knowledge; an evolutionary approach" .
+
+<http://id.loc.gov/resources/works/2219689> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. logic of scientific discovery" .
+
+<http://id.loc.gov/resources/works/222005> a bf:Work ;
+    bflc:aap "Pezzimenti, Rocco. Dynamic order : the problem of method in evolving nature : with letters from N. Rescher, L. Pauling, J. Eccles, and K.R. Popper" .
+
+<http://id.loc.gov/resources/works/2314237> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Quantum theory and the schism in physics" .
+
+<http://id.loc.gov/resources/works/2331456> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Realism and the aim of science" .
+
+<http://id.loc.gov/resources/works/2568290> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Alles Leben ist Problemlösen : über Erkenntnis, Geschichte und Politik" .
+
+<http://id.loc.gov/resources/works/2640526> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. poverty of historicism," .
+
+<http://id.loc.gov/resources/works/2665820> a bf:Work ;
+    bflc:aap "Stark, Franz. Revolution oder Reform? Herbert Marcuse u. Karl Popper. Eine Konfrontation" .
+
+<http://id.loc.gov/resources/works/2720677> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. self and its brain" .
+
+<http://id.loc.gov/resources/works/2819012> a bf:Work ;
+    bflc:aap "Kreuzer, Franz. Offene Gesellschaft, offenes Universum : Franz Kreuzer im Gespräch mit Karl R. Popper : aus Anlass des 80. Geburtstages des grossen österreichischen Philosophen" .
+
+<http://id.loc.gov/resources/works/3234150> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Objective knowledge : an evolutionary approach" .
+
+<http://id.loc.gov/resources/works/3260347> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open universe : an argument for indeterminism" .
+
+<http://id.loc.gov/resources/works/3277978> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. In pursuit of truth : essays on the philosophy of Karl Popper on the occasion of his 80th birthday" .
+
+<http://id.loc.gov/resources/works/3436888> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. world of propensities" .
+
+<http://id.loc.gov/resources/works/3523139> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. lesson of this century : with two talks on freedom and the democratic state" .
+
+<http://id.loc.gov/resources/works/3542730> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. world of Parmenides : essays on the Presocratic enlightenment" .
+
+<http://id.loc.gov/resources/works/3564630> a bf:Work ;
+    bflc:aap "Pezzimenti, Rocco. open society and its friends : with letters from Isaiah Berlin and the late Karl R. Popper" .
+
+<http://id.loc.gov/resources/works/3727649> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. beiden Grundprobleme der Erkenntnistheorie : aufgrund von Ms. aus d. Jahren 1930-1933" .
+
+<http://id.loc.gov/resources/works/3804889> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Unended quest : an intellectual autobiography" .
+
+<http://id.loc.gov/resources/works/3808022> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Auf der Suche nach einer besseren Welt : Vorträge und Aufsätze aus dreissig Jahren" .
+
+<http://id.loc.gov/resources/works/3896113> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Elend des Historizismus" .
+
+<http://id.loc.gov/resources/works/3959693> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Knowledge and the body-mind problem : in defence of interaction" .
+
+<http://id.loc.gov/resources/works/4128105> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Philosophy of Karl Popper" .
+
+<http://id.loc.gov/resources/works/4404930> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open universe : an argument for indeterminism" .
+
+<http://id.loc.gov/resources/works/4543435> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. logic of scientific discovery" .
+
+<http://id.loc.gov/resources/works/4633012> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Unended quest : an intellectual autobiography" .
+
+<http://id.loc.gov/resources/works/4905579> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. myth of the framework : in defence of science and rationality" .
+
+<http://id.loc.gov/resources/works/4982137> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. All life is problem solving" .
+
+<http://id.loc.gov/resources/works/5125862> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994 Yŏksajuŭi ŭi pinʼgon 역사주의　의　빈곤" .
+
+<http://id.loc.gov/resources/works/527261> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Fakt i teoria : teksty źródłowe" .
+
+<http://id.loc.gov/resources/works/627578> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" .
+
+<http://id.loc.gov/resources/works/6425724> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Logik der forschung; zur erkenntnistheorie der modernen naturwissenschaft," .
+
+<http://id.loc.gov/resources/works/6513303> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open society and its enemies" .
+
+<http://id.loc.gov/resources/works/6565071> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. poverty of historicism" .
+
+<http://id.loc.gov/resources/works/6613708> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open society and its enemies," .
+
+<http://id.loc.gov/resources/works/7073421> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Of clouds and clocks; an approach to the problem of rationality and the freedom of man" .
+
+<http://id.loc.gov/resources/works/7184114> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Logik der Forschung" .
+
+<http://id.loc.gov/resources/works/7899177> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. open society and its enemies" .
+
+<http://id.loc.gov/resources/works/7969628> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. On the sources of knowledge and of ignorance" .
+
+<http://id.loc.gov/resources/works/8913635> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations; the growth of scientific knowledge," .
+
+<http://id.loc.gov/resources/works/9389569> a bf:Work ;
+    bflc:aap "Bunge, Mario, 1919- critical approach to science and philosophy" .
+
+<http://id.loc.gov/resources/works/979296> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Zukunft ist offen : das Altenberger Gespräch : mit den Texten des Wiener Popper-Symposiums" .
+
+<http://id.loc.gov/resources/works/9879993> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Logik der Forschung," .
+
+<http://id.loc.gov/rwo/agents/n80032184> a bf:Person,
+        madsrdf:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
+    bflc:contributorTo <http://id.loc.gov/resources/works/10283963>,
+        <http://id.loc.gov/resources/works/10350928>,
+        <http://id.loc.gov/resources/works/10387264>,
+        <http://id.loc.gov/resources/works/1072443>,
+        <http://id.loc.gov/resources/works/1087974>,
+        <http://id.loc.gov/resources/works/1096844>,
+        <http://id.loc.gov/resources/works/1097341>,
+        <http://id.loc.gov/resources/works/1100719>,
+        <http://id.loc.gov/resources/works/1154607>,
+        <http://id.loc.gov/resources/works/12211449>,
+        <http://id.loc.gov/resources/works/1223350>,
+        <http://id.loc.gov/resources/works/12295700>,
+        <http://id.loc.gov/resources/works/12787969>,
+        <http://id.loc.gov/resources/works/12787984>,
+        <http://id.loc.gov/resources/works/12930024>,
+        <http://id.loc.gov/resources/works/13117235>,
+        <http://id.loc.gov/resources/works/13165326>,
+        <http://id.loc.gov/resources/works/13249953>,
+        <http://id.loc.gov/resources/works/13513203>,
+        <http://id.loc.gov/resources/works/1407697>,
+        <http://id.loc.gov/resources/works/14151172>,
+        <http://id.loc.gov/resources/works/14285521>,
+        <http://id.loc.gov/resources/works/14585948>,
+        <http://id.loc.gov/resources/works/15187909>,
+        <http://id.loc.gov/resources/works/1558581>,
+        <http://id.loc.gov/resources/works/1571235>,
+        <http://id.loc.gov/resources/works/1587564>,
+        <http://id.loc.gov/resources/works/16426191>,
+        <http://id.loc.gov/resources/works/16758187>,
+        <http://id.loc.gov/resources/works/16758378>,
+        <http://id.loc.gov/resources/works/16771828>,
+        <http://id.loc.gov/resources/works/16886467>,
+        <http://id.loc.gov/resources/works/17140591>,
+        <http://id.loc.gov/resources/works/17509316>,
+        <http://id.loc.gov/resources/works/18790139>,
+        <http://id.loc.gov/resources/works/1893399>,
+        <http://id.loc.gov/resources/works/1933999>,
+        <http://id.loc.gov/resources/works/21268215>,
+        <http://id.loc.gov/resources/works/2165877>,
+        <http://id.loc.gov/resources/works/2183142>,
+        <http://id.loc.gov/resources/works/2199057>,
+        <http://id.loc.gov/resources/works/2219689>,
+        <http://id.loc.gov/resources/works/222005>,
+        <http://id.loc.gov/resources/works/2314237>,
+        <http://id.loc.gov/resources/works/2331456>,
+        <http://id.loc.gov/resources/works/2568290>,
+        <http://id.loc.gov/resources/works/2640526>,
+        <http://id.loc.gov/resources/works/2665820>,
+        <http://id.loc.gov/resources/works/2720677>,
+        <http://id.loc.gov/resources/works/2819012>,
+        <http://id.loc.gov/resources/works/3234150>,
+        <http://id.loc.gov/resources/works/3260347>,
+        <http://id.loc.gov/resources/works/3277978>,
+        <http://id.loc.gov/resources/works/3436888>,
+        <http://id.loc.gov/resources/works/3523139>,
+        <http://id.loc.gov/resources/works/3542730>,
+        <http://id.loc.gov/resources/works/3564630>,
+        <http://id.loc.gov/resources/works/3727649>,
+        <http://id.loc.gov/resources/works/3804889>,
+        <http://id.loc.gov/resources/works/3808022>,
+        <http://id.loc.gov/resources/works/3896113>,
+        <http://id.loc.gov/resources/works/3959693>,
+        <http://id.loc.gov/resources/works/4128105>,
+        <http://id.loc.gov/resources/works/4404930>,
+        <http://id.loc.gov/resources/works/4543435>,
+        <http://id.loc.gov/resources/works/4633012>,
+        <http://id.loc.gov/resources/works/4905579>,
+        <http://id.loc.gov/resources/works/4982137>,
+        <http://id.loc.gov/resources/works/5125862>,
+        <http://id.loc.gov/resources/works/527261>,
+        <http://id.loc.gov/resources/works/627578>,
+        <http://id.loc.gov/resources/works/6425724>,
+        <http://id.loc.gov/resources/works/6513303>,
+        <http://id.loc.gov/resources/works/6565071>,
+        <http://id.loc.gov/resources/works/6613708>,
+        <http://id.loc.gov/resources/works/7073421>,
+        <http://id.loc.gov/resources/works/7184114>,
+        <http://id.loc.gov/resources/works/7899177>,
+        <http://id.loc.gov/resources/works/7969628>,
+        <http://id.loc.gov/resources/works/8913635>,
+        <http://id.loc.gov/resources/works/9389569>,
+        <http://id.loc.gov/resources/works/979296>,
+        <http://id.loc.gov/resources/works/9879993> ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/10402425>,
+        <http://id.loc.gov/resources/works/10416908>,
+        <http://id.loc.gov/resources/works/1043415>,
+        <http://id.loc.gov/resources/works/10463144>,
+        <http://id.loc.gov/resources/works/106263>,
+        <http://id.loc.gov/resources/works/1137485>,
+        <http://id.loc.gov/resources/works/1153693>,
+        <http://id.loc.gov/resources/works/11776447>,
+        <http://id.loc.gov/resources/works/11794007>,
+        <http://id.loc.gov/resources/works/11797046>,
+        <http://id.loc.gov/resources/works/11877165>,
+        <http://id.loc.gov/resources/works/11885158>,
+        <http://id.loc.gov/resources/works/11960356>,
+        <http://id.loc.gov/resources/works/12031009>,
+        <http://id.loc.gov/resources/works/12044407>,
+        <http://id.loc.gov/resources/works/12174441>,
+        <http://id.loc.gov/resources/works/12266945>,
+        <http://id.loc.gov/resources/works/12287024>,
+        <http://id.loc.gov/resources/works/12349966>,
+        <http://id.loc.gov/resources/works/123568>,
+        <http://id.loc.gov/resources/works/12436146>,
+        <http://id.loc.gov/resources/works/12457632>,
+        <http://id.loc.gov/resources/works/12471137>,
+        <http://id.loc.gov/resources/works/1248018>,
+        <http://id.loc.gov/resources/works/12496265>,
+        <http://id.loc.gov/resources/works/12596684>,
+        <http://id.loc.gov/resources/works/12663729>,
+        <http://id.loc.gov/resources/works/12757217>,
+        <http://id.loc.gov/resources/works/12787969>,
+        <http://id.loc.gov/resources/works/12793415>,
+        <http://id.loc.gov/resources/works/12930024>,
+        <http://id.loc.gov/resources/works/12997064>,
+        <http://id.loc.gov/resources/works/13022936>,
+        <http://id.loc.gov/resources/works/13117235>,
+        <http://id.loc.gov/resources/works/1321570>,
+        <http://id.loc.gov/resources/works/13249953>,
+        <http://id.loc.gov/resources/works/13251466>,
+        <http://id.loc.gov/resources/works/13297934>,
+        <http://id.loc.gov/resources/works/13319445>,
+        <http://id.loc.gov/resources/works/13401880>,
+        <http://id.loc.gov/resources/works/13468522>,
+        <http://id.loc.gov/resources/works/13472940>,
+        <http://id.loc.gov/resources/works/13487743>,
+        <http://id.loc.gov/resources/works/13499600>,
+        <http://id.loc.gov/resources/works/13513203>,
+        <http://id.loc.gov/resources/works/13550846>,
+        <http://id.loc.gov/resources/works/13708337>,
+        <http://id.loc.gov/resources/works/13772624>,
+        <http://id.loc.gov/resources/works/13790176>,
+        <http://id.loc.gov/resources/works/13826042>,
+        <http://id.loc.gov/resources/works/13858768>,
+        <http://id.loc.gov/resources/works/13861203>,
+        <http://id.loc.gov/resources/works/13903455>,
+        <http://id.loc.gov/resources/works/13942834>,
+        <http://id.loc.gov/resources/works/14019680>,
+        <http://id.loc.gov/resources/works/14030784>,
+        <http://id.loc.gov/resources/works/1412942>,
+        <http://id.loc.gov/resources/works/14208701>,
+        <http://id.loc.gov/resources/works/14330835>,
+        <http://id.loc.gov/resources/works/14414459>,
+        <http://id.loc.gov/resources/works/14465418>,
+        <http://id.loc.gov/resources/works/14518637>,
+        <http://id.loc.gov/resources/works/14625198>,
+        <http://id.loc.gov/resources/works/14630934>,
+        <http://id.loc.gov/resources/works/14639569>,
+        <http://id.loc.gov/resources/works/14725908>,
+        <http://id.loc.gov/resources/works/14835312>,
+        <http://id.loc.gov/resources/works/14900380>,
+        <http://id.loc.gov/resources/works/14961177>,
+        <http://id.loc.gov/resources/works/15181259>,
+        <http://id.loc.gov/resources/works/15250368>,
+        <http://id.loc.gov/resources/works/1530302>,
+        <http://id.loc.gov/resources/works/15303167>,
+        <http://id.loc.gov/resources/works/15350463>,
+        <http://id.loc.gov/resources/works/15429729>,
+        <http://id.loc.gov/resources/works/15503116>,
+        <http://id.loc.gov/resources/works/1554428>,
+        <http://id.loc.gov/resources/works/15596828>,
+        <http://id.loc.gov/resources/works/15641797>,
+        <http://id.loc.gov/resources/works/1571235>,
+        <http://id.loc.gov/resources/works/15733455>,
+        <http://id.loc.gov/resources/works/15796848>,
+        <http://id.loc.gov/resources/works/15820279>,
+        <http://id.loc.gov/resources/works/16276293>,
+        <http://id.loc.gov/resources/works/16426191>,
+        <http://id.loc.gov/resources/works/16775920>,
+        <http://id.loc.gov/resources/works/16802021>,
+        <http://id.loc.gov/resources/works/1684832>,
+        <http://id.loc.gov/resources/works/1711909>,
+        <http://id.loc.gov/resources/works/17302230>,
+        <http://id.loc.gov/resources/works/17386639>,
+        <http://id.loc.gov/resources/works/17396185>,
+        <http://id.loc.gov/resources/works/17401310>,
+        <http://id.loc.gov/resources/works/17603471>,
+        <http://id.loc.gov/resources/works/17645689>,
+        <http://id.loc.gov/resources/works/1770578>,
+        <http://id.loc.gov/resources/works/17724475>,
+        <http://id.loc.gov/resources/works/18055646>,
+        <http://id.loc.gov/resources/works/1819220>,
+        <http://id.loc.gov/resources/works/18202252> ;
+    madsrdf:birthDate "1902"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:deathDate "1994"^^<http://id.loc.gov/datatypes/edtf/EDTF> .
+
+<http://id.loc.gov/resources/works/12787969> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Unended quest" .
+
+<http://id.loc.gov/resources/works/12930024> a bf:Work ;
+    bflc:aap "Böhm, Jan M., 1971- Karl Poppers kritischer Rationalismus heute : zur Aktualität kritisch-rationaler Wissenschaftstheorie" .
+
+<http://id.loc.gov/resources/works/13117235> a bf:Work ;
+    bflc:aap "Morscher, Edgar. Was wir Karl R. Popper und seiner Philosophie verdanken : zu seinem 100. Geburtstag" .
+
+<http://id.loc.gov/resources/works/13249953> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Neprekinata potraga : intelektualna avtobiografija" .
+
+<http://id.loc.gov/resources/works/13513203> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Centenaire Karl Popper : colloque, Faculté des sciences humaines et sociales du 31 octobre au 1er novembre 2002" .
+
+<http://id.loc.gov/resources/works/1571235> a bf:Work ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Gegen den Zynismus in der Interpretation der Geschichte" .
+
+<http://id.loc.gov/resources/works/16426191> a bf:Work ;
+    bflc:aap "Štěpánková, Hana. In memoriam : Karl Popper in Prague (Prague, May 23rd-May 27th 1994) = Karl Popper v Praze (Praha, 23. května-27. května 1994)" .
+

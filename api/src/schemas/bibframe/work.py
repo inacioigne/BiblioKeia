@@ -1,6 +1,10 @@
 from pydantic import BaseModel
 from typing import Optional
 
+class Subject(BaseModel):
+    label: str
+    uri: str
+
 class Work_Schema(BaseModel):
     contentType: str
     mainTitle: str
@@ -9,7 +13,7 @@ class Work_Schema(BaseModel):
     contributionID: str
     contributionRole: str
     contributionRoleUri: str
-    subjects: list
+    subjects: list[Subject]
     language: str
     languageCode: str 
     cdd: str

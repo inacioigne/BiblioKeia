@@ -11,7 +11,6 @@ class AuthorityExternal(BaseModel):
     lang: str
     uri: str
 
-
 class Subject_Schema(BaseModel):
     authority: Authority
     tokenLSCH: str

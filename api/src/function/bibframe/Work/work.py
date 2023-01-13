@@ -5,13 +5,16 @@ from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Work.title import Title
 from src.function.bibframe.Work.primaryContribution import PrimaryContribution
-from src.function.bibframe.Work.subject import Subject
+from src.function.bibframe.Work.subject import Subject, UpdateSubject
 from src.function.bibframe.Work.language import Language
 from src.function.bibframe.Work.classification import Classification
 
+import httpx
+from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
+
 def BfWork(request, work_id): 
 
-    work_uri = URIRef(f"http://bibliokeia.com/bibframe/work/{work_id}") 
+    work_uri = URIRef(f"https://bibliokeia.com/bibframe/work/{work_id}") 
     g = Graph(identifier=work_uri)
 
     #Prefix
@@ -26,7 +29,7 @@ def BfWork(request, work_id):
    
     
     content = {
-        "text": BF.Text
+        "Texto": BF.Text
     }
     contentType =  content[request.contentType]
 
@@ -57,8 +60,11 @@ def BfWork(request, work_id):
 
     #Subject
     for subject in request.subjects:
-        g = Subject(g, subject, work_uri, BF, MADSRDF)
-    
+        
+        uriSubject = URIRef(subject.uri)
+        #g = Subject(g, subject, work_uri, BF, MADSRDF)
+        g.add((work_uri, BF.subject, uriSubject))
 
+        UpdateSubject(subject, work_id)
 
     return g

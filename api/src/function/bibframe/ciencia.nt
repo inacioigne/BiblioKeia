@@ -1,0 +1,371 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85118553> a madsrdf:Authority,
+        madsrdf:Topic ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/TESTE> ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2023-01-10T14:21:19.285012"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new" ] ;
+    madsrdf:authoritativeLabel "Ciência"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Ciência"@pt ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4066562-8>,
+        <http://data.bnf.fr/ark:/12148/cb11933232c>,
+        <http://data.bnf.fr/ark:/12148/cb119469567>,
+        <http://data.bnf.fr/ark:/12148/cb119673416>,
+        <http://data.bnf.fr/ark:/12148/cb11973101n>,
+        <http://data.bnf.fr/ark:/12148/cb119934236>,
+        <http://data.bnf.fr/ark:/12148/cb12062047t>,
+        <http://data.bnf.fr/ark:/12148/cb120745812>,
+        <http://data.bnf.fr/ark:/12148/cb121155321>,
+        <http://data.bnf.fr/ark:/12148/cb122890536>,
+        <http://data.bnf.fr/ark:/12148/cb12321484k>,
+        <http://data.bnf.fr/ark:/12148/cb123662513>,
+        <http://data.bnf.fr/ark:/12148/cb13328497r>,
+        <http://data.bnf.fr/ark:/12148/cb15556043g>,
+        <http://id.worldcat.org/fast/1108176>,
+        <http://www.yso.fi/onto/yso/p2240>,
+        <http://www.yso.fi/onto/yso/p352> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85118553> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00002690>,
+        <http://id.loc.gov/authorities/subjects/sh2001002975>,
+        <http://id.loc.gov/authorities/subjects/sh2001008470>,
+        <http://id.loc.gov/authorities/subjects/sh2002000242>,
+        <http://id.loc.gov/authorities/subjects/sh2003008595>,
+        <http://id.loc.gov/authorities/subjects/sh2004002205>,
+        <http://id.loc.gov/authorities/subjects/sh2005005260>,
+        <http://id.loc.gov/authorities/subjects/sh2006001308>,
+        <http://id.loc.gov/authorities/subjects/sh2006004914>,
+        <http://id.loc.gov/authorities/subjects/sh2006008078>,
+        <http://id.loc.gov/authorities/subjects/sh2007002485>,
+        <http://id.loc.gov/authorities/subjects/sh2008004326>,
+        <http://id.loc.gov/authorities/subjects/sh2009030086>,
+        <http://id.loc.gov/authorities/subjects/sh2013003397>,
+        <http://id.loc.gov/authorities/subjects/sh2016000013>,
+        <http://id.loc.gov/authorities/subjects/sh2021006138>,
+        <http://id.loc.gov/authorities/subjects/sh2022006701>,
+        <http://id.loc.gov/authorities/subjects/sh85006246>,
+        <http://id.loc.gov/authorities/subjects/sh85007974>,
+        <http://id.loc.gov/authorities/subjects/sh85013804>,
+        <http://id.loc.gov/authorities/subjects/sh85017514>,
+        <http://id.loc.gov/authorities/subjects/sh85029094>,
+        <http://id.loc.gov/authorities/subjects/sh85029164>,
+        <http://id.loc.gov/authorities/subjects/sh85051625>,
+        <http://id.loc.gov/authorities/subjects/sh85056179>,
+        <http://id.loc.gov/authorities/subjects/sh85060947>,
+        <http://id.loc.gov/authorities/subjects/sh85068424>,
+        <http://id.loc.gov/authorities/subjects/sh85070881>,
+        <http://id.loc.gov/authorities/subjects/sh85072992>,
+        <http://id.loc.gov/authorities/subjects/sh85076841>,
+        <http://id.loc.gov/authorities/subjects/sh85079823>,
+        <http://id.loc.gov/authorities/subjects/sh85082139>,
+        <http://id.loc.gov/authorities/subjects/sh85085833>,
+        <http://id.loc.gov/authorities/subjects/sh85088165>,
+        <http://id.loc.gov/authorities/subjects/sh85090222>,
+        <http://id.loc.gov/authorities/subjects/sh85097903>,
+        <http://id.loc.gov/authorities/subjects/sh85101000>,
+        <http://id.loc.gov/authorities/subjects/sh85112579>,
+        <http://id.loc.gov/authorities/subjects/sh85120210>,
+        <http://id.loc.gov/authorities/subjects/sh85122441>,
+        <http://id.loc.gov/authorities/subjects/sh85125953>,
+        <http://id.loc.gov/authorities/subjects/sh85133147>,
+        <http://id.loc.gov/authorities/subjects/sh85133573>,
+        <http://id.loc.gov/authorities/subjects/sh85144367>,
+        <http://id.loc.gov/authorities/subjects/sh85147604>,
+        <http://id.loc.gov/authorities/subjects/sh85149727>,
+        <http://id.loc.gov/authorities/subjects/sh86000064>,
+        <http://id.loc.gov/authorities/subjects/sh86002531>,
+        <http://id.loc.gov/authorities/subjects/sh88006179>,
+        <http://id.loc.gov/authorities/subjects/sh88007833>,
+        <http://id.loc.gov/authorities/subjects/sh88007926>,
+        <http://id.loc.gov/authorities/subjects/sh89001061>,
+        <http://id.loc.gov/authorities/subjects/sh89003285>,
+        <http://id.loc.gov/authorities/subjects/sh89005450>,
+        <http://id.loc.gov/authorities/subjects/sh89005705>,
+        <http://id.loc.gov/authorities/subjects/sh90000823>,
+        <http://id.loc.gov/authorities/subjects/sh90001487>,
+        <http://id.loc.gov/authorities/subjects/sh92004048>,
+        <http://id.loc.gov/authorities/subjects/sh95008762>,
+        <http://id.loc.gov/authorities/subjects/sh95010294>,
+        <http://id.loc.gov/authorities/subjects/sh96010624>,
+        <http://id.loc.gov/authorities/subjects/sh98005795>,
+        <http://id.loc.gov/authorities/subjects/sh99002551> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Ciências Naturais"@pt ] ) ;
+            madsrdf:variantLabel "Ciências Naturais"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "ciência da ciência"@pt ] ) ;
+            madsrdf:variantLabel "ciência da ciência"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Ciência natural"@pt ] ) ;
+            madsrdf:variantLabel "Ciência natural"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "ciências"@pt ] ) ;
+            madsrdf:variantLabel "ciências"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh00002690> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pessoas com deficiência na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2001002975> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "pseudociência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2001008470> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Metrologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2002000242> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "nanociência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2003008595> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Democracia e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2004002205> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Vedas e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2005005260> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Comunicação visual na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2006001308> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Imperialismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2006004914> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Identidade de gênero na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2006008078> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Heresia na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2007002485> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ambiguidade na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2008004326> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Nacionalismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2009030086> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Upanishads e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2013003397> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Fé Bahai e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2016000013> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Taoísmo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2021006138> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliotecas--Coleções especiais--Ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2022006701> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Discriminação na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85006246> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "ciências aquáticas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85007974> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Arte e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85013804> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bíblia e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85017514> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Budismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029094> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Comunicação em ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029164> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "comunismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85051625> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Fraude na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85056179> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Estudantes de graduação em ciências"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85060947> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Hinduísmo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85068424> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Islã e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85070881> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "judaísmo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85072992> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Alcorão e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85076841> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciências da Vida"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85079823> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bhagavadgītā e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85082139> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Matemática"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85085833> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Minorias na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85088165> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Cinema na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85090222> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "História Natural"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85097903> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Parapsicologia e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85101000> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Filosofia e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85112579> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Religião e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85120210> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Serendipidade na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85122441> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Sikhismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85125953> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "ciências espaciais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85133147> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Tecnologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85133573> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Televisão na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85144367> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Trabalhadores voluntários na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85147604> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mulheres na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85149727> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Zen Budismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh86000064> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "ciências do esporte"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh86002531> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mentoria em ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88006179> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciência cognitiva"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88007833> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Discriminação sexual na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88007926> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Sexismo na ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh89001061> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Nacional-socialismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh89003285> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciência da Computação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh89005450> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Música e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh89005705> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciências físicas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90000823> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ocultismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90001487> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "ciências forenses"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh92004048> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciencias ambientais"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh95008762> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "jainismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh95010294> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Classificação--Livros--Ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh96010624> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Etnociência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98005795> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Arquitetura e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh99002551> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Feminismo e ciência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+

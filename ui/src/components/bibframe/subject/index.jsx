@@ -15,7 +15,6 @@ import { useState, useEffect } from "react";
 import { useBf } from "src/providers/bibframe";
 
 export default function Subject() {
-
   const { work, setWork } = useBf();
 
   const [listSubject, setListSubject] = useState([]);
@@ -25,10 +24,7 @@ export default function Subject() {
       ...prevState,
       subjects: listSubject,
     }));
-
-  }, [listSubject])
-
-
+  }, [listSubject]);
 
   const { control, handleSubmit } = useForm({
     defaultValues: {
@@ -41,20 +37,11 @@ export default function Subject() {
     name: "subjects",
   });
 
-
   return (
     <Box sx={{ p: "1rem" }}>
       <Typography variant="subtitle2" sx={{ pb: "1rem" }}>
         Assunto
       </Typography>
-      <Button
-          onClick={() => {
-            console.log(listSubject)
-          }}
-        >
-          Assunto
-        </Button>
-     
       <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
         {fields.map((subject, index) => (
           <Box key={subject.id} sx={{ display: "flex", gap: "1rem" }}>
@@ -67,7 +54,7 @@ export default function Subject() {
                 let recuse = listSubject.filter((value, i) => {
                   return i !== index;
                 });
-                setListSubject(recuse)
+                setListSubject(recuse);
                 remove(index);
               }}
             >
@@ -83,7 +70,6 @@ export default function Subject() {
           Adicionar Assunto
         </Button>
       </Box>
-      
     </Box>
   );
 }
