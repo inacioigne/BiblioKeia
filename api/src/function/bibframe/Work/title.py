@@ -1,9 +1,9 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 
-def Title(g, request, uri, label, BF):
+def Title(g, request, instance_uri, label, BF):
     title = BNode()
-    g.add((uri, BF.title, title))
+    g.add((instance_uri, BF.title, title))
     g.add((title, RDF.type, BF.Title))
     g.add((title, BF.mainTitle, Literal(request.mainTitle)))
     if request.subtitle: 

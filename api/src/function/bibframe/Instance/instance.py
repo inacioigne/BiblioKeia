@@ -7,6 +7,7 @@ from src.function.bibframe.Instance.provisionActivity import ProvisionActivity
 from src.function.bibframe.Instance.responsibilityStatement import ResponsibilityStatement
 from src.function.bibframe.Instance.seriesStatement import SeriesStatement
 from src.function.bibframe.Instance.editionStatement import Edition
+from src.function.bibframe.Instance.instanceOf import InstanceOf
 
 def BfInstance(request): 
     instance_uri = URIRef(
@@ -53,6 +54,8 @@ def BfInstance(request):
 
     # seriesStatement
     g = SeriesStatement(g, request, instance_uri, BF)
+
+    g = InstanceOf(g, request, instance_uri, BF)
 
     return g
 

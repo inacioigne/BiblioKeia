@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/instances/748300> a bf:Instance,
+        bf:Print ;
+    rdfs:label "The old man and the sea." ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/1> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2021-10-20T13:33:01"^^xsd:dateTime ;
+            bf:creationDate "1973-01-02"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/local> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-10-21T01:30:06.415662-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "748300" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ocip $f 19 $g y-gencatlg" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:dimensions "22 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "140 p." ] ;
+    bf:hasItem <http://id.loc.gov/resources/items/748300-050-10>,
+        <http://id.loc.gov/resources/items/748300-051-11>,
+        <http://id.loc.gov/resources/items/748300-051-12>,
+        <http://id.loc.gov/resources/items/748300-051-13>,
+        <http://id.loc.gov/resources/items/748300-051-14> ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "   52011935 " ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/748300> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Scribner" ] ;
+            bf:date "1952" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1952"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ] ;
+    bf:provisionActivityStatement "New York, Scribner, 1952." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "The old man and the sea." ;
+            bf:mainTitle "The old man and the sea" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
