@@ -47,6 +47,11 @@ import { menuStyle } from "src/styles/mui";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
+import { useProgress } from "src/providers/progress";
+import { useAlertBK } from "src/providers/alerts";
+
+// BiblioKeia Services
+import { api } from "src/services/api/api";
 
 
 const previousPaths = [
@@ -81,6 +86,28 @@ export default function Instance() {
 
     const [visible, setVisible] = useState(0);
     const { instance } = useBf();
+    const { setProgress } = useProgress();
+    const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
+
+    function postInstance(instance) {
+      setProgress(true);
+      console.log(instance);
+      api
+        .post(`/cataloguing/instance`, instance)
+        .then((response) => {
+          setProgress(false);
+          if (response.status == 201) {
+            
+            // router.push("/admin/cataloguing/book/instance");
+            setTypeAlert("success");
+            setMessage("Registro salvo com sucesso!");
+            setOpenSnack(true);
+          }
+        })
+        .catch(function (error) {
+          console.log("ERROOO!!", error);
+        });
+    }
 
   return (
     <Container maxWidth="xl">
@@ -135,9 +162,9 @@ export default function Instance() {
         </Paper>
         </Grid>
         <Grid item xs={12}>
-            <Button variant="outlined" onClick={() => console.log("INSTANCE: ", instance)}>
+            <Button variant="outlined" onClick={() => postInstance(instance)}>
               Salvar e Adicionar exemplar
-            </Button>
+            </Button> 
         </Grid>
       </Grid>
     </Container>

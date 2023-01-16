@@ -19,7 +19,7 @@ def Work(request):
 async def create_work(request: Work_Schema):
     work_id = GenerateId()
     g = Work(request)
-    g.serialize("work1.nt") 
+    g.serialize("work.ttl") 
     nt = g.serialize(format='nt')
 
     G = """PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
@@ -31,9 +31,9 @@ async def create_work(request: Work_Schema):
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
     INSERT DATA {
-        GRAPH <http://bibliokeia.com/bibframe/work/"""+work_id+""">
+        GRAPH <https://bibliokeia.com/bibframe/work/"""+work_id+""">
         { \n"""+nt+"} }" 
 
-    #fuseki_update.run_sparql(G)
+    fuseki_update.run_sparql(G)
     
     return {"msg": work_id}

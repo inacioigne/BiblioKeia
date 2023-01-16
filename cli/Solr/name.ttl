@@ -1,0 +1,121 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n80139757> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:marcKey "1001 $aBolaño, Roberto,$d1953-2003" ;
+    identifiers:lccn "n 80139757" ;
+    identifiers:local "(OCoLC)oca00519999" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2019-11-29T23:57:55"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/caoonl> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1980-11-19T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Bolaño, Roberto, 1953-2003" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PQ8098.12.O38" ] ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Bolaño, Roberto," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1953-2003" ] ) ;
+    madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "Bolaño Avalos" ] ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1446418>,
+        <http://id.worldcat.org/fast/63135>,
+        <http://www.wikidata.org/entity/Q297532> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++80139757#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "(d. July 16, 2003 in Spain)" ;
+            madsrdf:citationSource "El País (Madrid, Spain), July 16, 2003" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "colophon (1950-2003; Chilean poet, novelist and essayist)" ;
+            madsrdf:citationSource "Roberto Bolaño, 2009:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Roberto Bolaño) p. 29 (Roberto Bolaño Avalos)" ;
+            madsrdf:citationSource "Sensini, 1997:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Roberto Bolaño) p. 156 (Chileno, 1953)" ;
+            madsrdf:citationSource "Muchachos desnudos bajo el arcoiris de fuego, 1979 (a.e.)" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Roberto Bolaño)" ;
+            madsrdf:citationSource "A la intemperie, 2019:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Roberto Bolaño Ávalos; 28 April 1953--15 July 2003) was a Chilean novelist, short-story writer, poet and essayist. In 1999, Bolaño won the Rómulo Gallegos Prize for his novel Los detectives salvajes (The Savage Detectives), and in 2008 he was posthumously awarded the National Book Critics Circle Award for Fiction for his novel 2666, which was described by board member Marcela Valdes as a \"work so rich and dazzling that it will surely draw readers and scholars for ages\". The New York Times described him as \"the most significant Latin American literary voice of his generation\"; born: Santiago, Chile; died, Barcelona, Spain)" ;
+            madsrdf:citationSource "English Wikipedia website, viewed Mar. 14, 2018:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Avalos, Roberto Bolaño," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1953-2003" ] ) ;
+            madsrdf:variantLabel "Avalos, Roberto Bolaño, 1953-2003" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Bolaño Avalos, Roberto," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1953-2003" ] ) ;
+            madsrdf:variantLabel "Bolaño Avalos, Roberto, 1953-2003" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80139757> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/authorities/names/n79021052> a madsrdf:Geographic ;
+    madsrdf:authoritativeLabel "Barcelona (Spain)" .
+
+<http://id.loc.gov/authorities/names/n79061242> a madsrdf:Geographic ;
+    madsrdf:authoritativeLabel "Chile" .
+
+<http://id.loc.gov/authorities/names/n79077402> a madsrdf:Geographic ;
+    madsrdf:authoritativeLabel "Santiago (Chile)" .
+
+<http://id.loc.gov/authorities/subjects/sh85048050> a skos:Concept ;
+    madsrdf:authoritativeLabel "Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh85092863> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Novelists" .
+
+<http://id.loc.gov/authorities/subjects/sh85103704> a skos:Concept ;
+    madsrdf:authoritativeLabel "Poetry" .
+
+<http://id.loc.gov/authorities/subjects/sh85103733> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Poets" .
+
+<http://id.loc.gov/authorities/subjects/sh98005508> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Essayists" .
+
+<http://id.loc.gov/rwo/agents/n80139757> a bf:Person,
+        madsrdf:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Bolaño, Roberto, 1953-2003" ;
+    madsrdf:associatedLocale <http://id.loc.gov/authorities/names/n79061242> ;
+    madsrdf:birthDate [ a skos:Concept ;
+            rdfs:label "(edtf) 1953-04-28" ] ;
+    madsrdf:birthPlace <http://id.loc.gov/authorities/names/n79077402> ;
+    madsrdf:deathDate [ a skos:Concept ;
+            rdfs:label "(edtf) 2003-07-16" ] ;
+    madsrdf:deathPlace <http://id.loc.gov/authorities/names/n79021052> ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85048050>,
+        <http://id.loc.gov/authorities/subjects/sh85103704> ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85092863>,
+        <http://id.loc.gov/authorities/subjects/sh85103733>,
+        <http://id.loc.gov/authorities/subjects/sh98005508> .
+

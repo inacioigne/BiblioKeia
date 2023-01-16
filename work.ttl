@@ -1,32 +1,30 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://bibliokeia.com/bibframe/instance/bk-23-11> a bf:Instance,
-        bf:Print ;
-    rdfs:label "Compaixão" ;
+<https://bibliokeia.com/bibframe/work/bk-23-11> a bf:Text,
+        bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:creationDate "2023-01-15"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-15T11:10:29.971999"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-15T11:09:38.191850"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-23-11" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
-    bf:editionStatement "" ;
-    bf:extent [ a bf:Extent ;
-            rdfs:label "140 p." ] ;
-    bf:instanceOf <http://bibliokeia.com/bibframe/work/bk-23-11> ;
-    bf:provisionActivity [ a bf:ProvisionActivity,
-                bf:Publication ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Companhia das letras" ] ;
-            bf:date "2019" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "São Paulo" ] ] ;
-    bf:responsibilityStatement "Toni Morrison" ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "" ;
+            bf:itemPortion "" ] ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            rdfs:label "Machado de Assis, 1839-1908" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n80002329> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh99001562> ;
     bf:title [ a bf:Title ;
             rdfs:label "Compaixão" ;
             bf:mainTitle "Compaixão" ] .

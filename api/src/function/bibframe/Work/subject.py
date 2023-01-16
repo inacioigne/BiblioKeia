@@ -2,7 +2,7 @@ from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 
-def UpdateSubject(subject, work_id):
+def UpdateSubject(subject, work_id): 
 
     store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/thesaurus/update')
     query_endpoint = 'http://localhost:3030/thesaurus/query'

@@ -23,8 +23,6 @@ import TitleIcon from "@mui/icons-material/Title";
 import SubjectIcon from "@mui/icons-material/Subject";
 import LanguageIcon from "@mui/icons-material/Language";
 
-import { blue, indigo } from "@mui/material/colors";
-
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
 import Content from "src/components/bibframe/work/content";
@@ -65,7 +63,7 @@ const previousPaths = [
 import { useState } from "react";
 
 // Next Hooks
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const metadados = [
   { label: "Tipo", icon: ImportContacts },
@@ -77,30 +75,26 @@ const metadados = [
 ];
 
 export default function Book() {
-
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
   const { work, setInstances } = useBf();
-  
+
   const router = useRouter();
 
   function postWork(work) {
     setProgress(true);
     console.log(work);
-
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
         setProgress(false);
         if (response.status == 201) {
-
           setInstances((prevState) => ({
-              ...prevState,
-              instanceOf: response.data.msg,
-            }));
-        
-          router.push('/admin/cataloguing/book/instance')
+            ...prevState,
+            instanceOf: response.data.msg,
+          }));
+          router.push("/admin/cataloguing/book/instance");
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
@@ -168,9 +162,9 @@ export default function Book() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-            <Button variant="outlined" onClick={() => postWork(work)}>
-              Salvar e Adicionar Instancia
-            </Button>
+          <Button variant="outlined" onClick={() => postWork(work)}>
+            Salvar e Adicionar Instancia
+          </Button>
         </Grid>
       </Grid>
     </Container>

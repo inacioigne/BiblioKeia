@@ -110,17 +110,25 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
     let base = authority.value.split(".")[1];
     if (base == "wikidata") {
       let id = authority.value.split("/")[4];
-      let data = await axios
+      //let data = await
+      axios
         .get(`https://www.wikidata.org/wiki/Special:EntityData/${id}.json`)
         .then((response) => {
           return response.data.entities[`${id}`].claims.P18;
         })
         .then((files) => {
-          let file = files[0];
-          return file.mainsnak.datavalue.value;
+          if (typeof files == "undefined") {
+            console.log(undefined);
+            setImg(false);
+          } else {
+            let file = files[0];
+            //let img = `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`;
+            setImg(
+              `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`
+            )
+            //return file.mainsnak.datavalue.value;
+          }
         });
-      let img = `http://commons.wikimedia.org/wiki/Special:FilePath/${data}`;
-      setImg(img);
     }
   });
 

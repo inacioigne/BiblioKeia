@@ -1,6 +1,7 @@
 def DocName(g, token):
 
-    doc = {"id": token}
+    doc = {"id": token,
+    "type": "PersonalName"}
 
     qName = """
 PREFIX lc: <http://id.loc.gov/authorities/names/>

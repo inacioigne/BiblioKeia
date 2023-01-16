@@ -10,7 +10,7 @@ import Authority from "src/components/thesaurus/namesBK/inputs/authority";
 import SearchBK from "src/components/thesaurus/namesBK/searchBK"
 
 // BiblioKeia Services
-import searchAuthority from "src/services/solr/names"
+import SearchAuthority from "src/services/solr/searchAuthority";
 
 export default function NamesBK() {
     const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function NamesBK() {
     const handleSearch = (e) => {
       e.preventDefault();
       setOpen(true);
-      searchAuthority(name, type, setResponse);
+      SearchAuthority(name, type, setResponse);
     };
     return (
       <>

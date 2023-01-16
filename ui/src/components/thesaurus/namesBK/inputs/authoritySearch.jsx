@@ -3,7 +3,7 @@ import { TextField, InputAdornment, IconButton } from "@mui/material/";
 import { Search } from "@mui/icons-material";
 
 // BiblioKeia Services
-import searchAuthority from "src/services/solr/names";
+import SearchAuthority from "src/services/solr/searchAuthority";
 
 export default function AuthoritySearch({ name, setName, type, setResponse }) {
   const inputPros = {
@@ -20,7 +20,7 @@ export default function AuthoritySearch({ name, setName, type, setResponse }) {
     <TextField
       onChange={(e) => {
         setName(e.target.value);
-        searchAuthority(e.target.value, type, setResponse);
+        SearchAuthority(e.target.value, type, setResponse);
       }}
       value={name}
       fullWidth

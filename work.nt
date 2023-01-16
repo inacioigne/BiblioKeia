@@ -4,28 +4,28 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/bibframe/work/bk-23-3> a bf:Text,
+<https://bibliokeia.com/bibframe/work/bk-23-10> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-13"^^xsd:date ;
+            bf:creationDate "2023-01-15"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-13T16:44:45.213878"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-15T09:50:42.834926"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-23-3" ] ;
+                    rdf:value "bk-23-10" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
             bf:classificationPortion "548.2" ;
-            bf:itemPortion "A587s" ] ;
+            bf:itemPortion "H454o" ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "Machado de Assis, 1839-1908" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n80002329> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/ccp> ] ;
+            rdfs:label "Blainey, Geoffrey" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n50008505> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh85145114> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Literature" ;
-            bf:mainTitle "Literature" ] .
+            rdfs:label "Uma breve história das guerras" ;
+            bf:mainTitle "Uma breve história das guerras" ] .
 

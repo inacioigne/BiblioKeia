@@ -22,7 +22,7 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
   let uri = `https://bibliokeia.com/authorities/names/${token}`;
   let rwo_uri = `http://id.loc.gov/rwo/agents/${token}`;
 
-  let graph = `http://localhost:3030/authority?graph=${uri}`;
+  let graph = `http://localhost:3030/thesaurus?graph=${uri}`;
   let dataset = await fetch(graph).then((response) => response.dataset());
 
   let tbbt = cf({ dataset });
@@ -88,7 +88,7 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
       birth["date"] = label.value.replace("(edtf) ", "");
       details["birth"] = birth;
     } else {
-      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+      let label = birthDate.out(ns.madsrdf.authoritativeLabel).value;
       birth["date"] = label;
       details["birth"] = birth;
     }
@@ -116,7 +116,9 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
   }
   let deathDate = rwo.out(ns.madsrdf.deathDate);
   if (deathDate._context.length > 0) {
-    let date = deathDate.out(ns.rdfs.label).value;
+    //let date = deathDate.out(ns.rdfs.label)._context[0].value
+    let date = deathDate.out(ns.rdfs.label)._context[0].term.value
+    // console.log(date.term.value)
     death["date"] = date.replace("(edtf) ", "");
     details["death"] = death;
   }
