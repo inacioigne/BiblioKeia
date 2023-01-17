@@ -59,17 +59,23 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
   // birthDate
 
   let birthDate = rwo.out(ns.madsrdf.birthDate);
-  birthDate.forEach((birthNode) => {
-    let label = birthNode.out(ns.rdfs.label);
-    if (label._context.length > 0) {
-      birth["date"] = label.value.replace("(edtf) ", "");
-      details["birth"] = birth;
-    } else {
-      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-      birth["date"] = label;
-      details["birth"] = birth;
-    }
-  });
+  if (birthDate._context.length > 0) {
+    birth["date"] = birthDate.value;
+    details["birth"] = birth;
+  }
+
+  // console.log(birthDate.value)
+  // birthDate.forEach((birthNode) => {
+  //   let label = birthNode.out(ns.rdfs.label);
+  //   if (label._context.length > 0) {
+  //     birth["date"] = label.value.replace("(edtf) ", "");
+  //     details["birth"] = birth;
+  //   } else {
+  //     let label = birthDate.out(ns.madsrdf.authoritativeLabel).value;
+  //     birth["date"] = label;
+  //     details["birth"] = birth;
+  //   }
+  // });
 
   // birthPlace
 
@@ -88,6 +94,8 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
 
   // death
   let death = {};
+
+  // death place
   let deathPlace = rwo.out(ns.madsrdf.deathPlace);
 
   if (deathPlace._context.length > 0) {
@@ -95,11 +103,23 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
     death["place"] = deathPlacelabel;
     details["death"] = death;
   }
+
+  // death Date
   let deathDate = rwo.out(ns.madsrdf.deathDate);
   if (deathDate._context.length > 0) {
-    let date = deathDate.out(ns.rdfs.label).value;
-    death["date"] = date.replace("(edtf) ", "");
+    death["date"] = deathDate.value;
     details["death"] = death;
+
+    // let date = deathDate.out(ns.rdfs.label);
+    // if (typeof date === "undefined") {
+    //   death["date"] = deathDate.value;
+    //   details["death"] = death;
+    // } else {
+    //   console.log()
+    //   let date = deathDate.out(ns.rdfs.label).value;
+    //   death["date"] = date.replace("(edtf) ", "");
+    //   details["death"] = death;
+    // }
   }
 
   // Imagem
@@ -125,7 +145,7 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
             //let img = `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`;
             setImg(
               `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`
-            )
+            );
             //return file.mainsnak.datavalue.value;
           }
         });

@@ -3,31 +3,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://bibliokeia.com/bibframe/instance/bk-23-11> a bf:Instance,
+<http://bibliokeia.com/bibframe/instance/bk-23-6> a bf:Instance,
         bf:Print ;
-    rdfs:label "Compaixão" ;
+    rdfs:label "Saramago" ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-15"^^xsd:date ;
+            bf:creationDate "2023-01-17"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-15T11:10:29.971999"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-17T18:19:50.984335"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-23-11" ] ;
+                    rdf:value "bk-23-6" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:editionStatement "" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "140 p." ] ;
-    bf:instanceOf <http://bibliokeia.com/bibframe/work/bk-23-11> ;
+            rdfs:label "Methodology" ] ;
+    bf:instanceOf <http://bibliokeia.com/bibframe/work/bk-23-6> ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Companhia das letras" ] ;
-            bf:date "2019" ;
+                    rdfs:label "" ] ;
+            bf:date "2022" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "São Paulo" ] ] ;
-    bf:responsibilityStatement "Toni Morrison" ;
+                    rdfs:label "Metodology" ] ] ;
+    bf:responsibilityStatement "Litera" ;
     bf:title [ a bf:Title ;
-            rdfs:label "Compaixão" ;
-            bf:mainTitle "Compaixão" ] .
+            rdfs:label "Saramago" ;
+            bf:mainTitle "Saramago" ] .
 

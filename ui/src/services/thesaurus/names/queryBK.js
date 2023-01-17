@@ -50,6 +50,70 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
     details["variant"] = variants;
   }
 
+  // identifiesRWO
+
+  let rwo = tbbt.namedNode(rwo_uri);
+
+  // birth
+  let birth = {};
+
+  // birth Date
+  let birthDate = rwo.out(ns.madsrdf.birthDate);
+  if (birthDate._context.length > 0) {
+    birth["date"] = birthDate.value;
+    details["birth"] = birth;
+  }
+
+  // let birthDate = rwo.out(ns.madsrdf.birthDate);
+  // birthDate.forEach((birthNode) => {
+  //   let label = birthNode.out(ns.rdfs.label);
+  //   if (label._context.length > 0) {
+  //     birth["date"] = label.value.replace("(edtf) ", "");
+  //     details["birth"] = birth;
+  //   } else {
+  //     let label = birthDate.out(ns.madsrdf.authoritativeLabel).value;
+  //     birth["date"] = label;
+  //     details["birth"] = birth;
+  //   }
+  // });
+
+  let birthPlace = rwo.out(ns.madsrdf.birthPlace);
+  birthPlace.forEach((birthNode) => {
+    let label = birthNode.out(ns.rdfs.label);
+    if (label._context.length > 0) {
+      birth["place"] = label.value;
+      details["birth"] = birth;
+    } else {
+      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+      birth["place"] = label;
+      details["birth"] = birth;
+    }
+  });
+
+  // death
+  let death = {};
+
+  // death place
+  let deathPlace = rwo.out(ns.madsrdf.deathPlace);
+
+  if (deathPlace._context.length > 0) {
+    let deathPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
+    death["place"] = deathPlacelabel;
+    details["death"] = death;
+  }
+
+  // death Date
+  let deathDate = rwo.out(ns.madsrdf.deathDate);
+  if (deathDate._context.length > 0) {
+    death["date"] = deathDate.value;
+    details["death"] = death;
+
+    // let date = deathDate.out(ns.rdfs.label)._context[0].term.value;
+
+    // death["date"] = date.replace("(edtf) ", "");
+    // details["death"] = death;
+  }
+
   // Imagem
   let hasCloseExternalAuthority = authority.out(
     ns.madsrdf.hasCloseExternalAuthority
@@ -71,57 +135,6 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
       setImg(img);
     }
   });
-
-  // identifiesRWO
-
-  let rwo = tbbt.namedNode(rwo_uri);
-
-  // birth
-  let birth = {};
-
-  // birthDate
-
-  let birthDate = rwo.out(ns.madsrdf.birthDate);
-  birthDate.forEach((birthNode) => {
-    let label = birthNode.out(ns.rdfs.label);
-    if (label._context.length > 0) {
-      birth["date"] = label.value.replace("(edtf) ", "");
-      details["birth"] = birth;
-    } else {
-      let label = birthDate.out(ns.madsrdf.authoritativeLabel).value;
-      birth["date"] = label;
-      details["birth"] = birth;
-    }
-  });
-
-  let birthPlace = rwo.out(ns.madsrdf.birthPlace);
-  birthPlace.forEach((birthNode) => {
-    let label = birthNode.out(ns.rdfs.label);
-    if (label._context.length > 0) {
-      birth["place"] = label.value;
-      details["birth"] = birth;
-    } else {
-      let label = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-      birth["place"] = label;
-      details["birth"] = birth;
-    }
-  });
-
-  let death = {};
-  let deathPlace = rwo.out(ns.madsrdf.deathPlace);
-  if (deathPlace._context.length > 0) {
-    let deathPlacelabel = birthPlace.out(ns.madsrdf.authoritativeLabel).value;
-    death["place"] = deathPlacelabel;
-    details["death"] = death;
-  }
-  let deathDate = rwo.out(ns.madsrdf.deathDate);
-  if (deathDate._context.length > 0) {
-    //let date = deathDate.out(ns.rdfs.label)._context[0].value
-    let date = deathDate.out(ns.rdfs.label)._context[0].term.value
-    // console.log(date.term.value)
-    death["date"] = date.replace("(edtf) ", "");
-    details["death"] = death;
-  }
 
   setNameDetails(details);
 }

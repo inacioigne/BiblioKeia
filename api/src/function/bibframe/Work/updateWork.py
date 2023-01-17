@@ -11,9 +11,9 @@ def UpdateWork(token):
 
     up = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
         INSERT DATA
-            { GRAPH  <http://bibliokeia.com/bibframe/work/"""+token+"""> { 
+            { GRAPH  <https://bibliokeia.com/bibframe/work/"""+token+"""> { 
                     <https://bibliokeia.com/bibframe/work/"""+token+""">  
                     bf:hasInstance
-                    <http://bibliokeia.com/bibframe/instance/"""+token+"""> } }"""
+                    <https://bibliokeia.com/bibframe/instance/"""+token+"""> } }"""
 
     fuseki_update.run_sparql(up)

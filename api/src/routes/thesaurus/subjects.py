@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from src.schemas.thesaurus.subject import Subject_Schema, Update_Thesarus
 from src.function.thesaurus.subjects.makeGraph import Make_Graph
 from src.function.thesaurus.subjects.subject import CreateSubject
+from src.function.solr.docSubject import DocSubject
 from pyfuseki import FusekiUpdate
 
 
@@ -15,6 +16,7 @@ async def create_subject(request: Subject_Schema):
     G = Make_Graph(nt, request.tokenLSCH)
 
     fuseki_update.run_sparql(G)
+    DocSubject(request)
 
     return {'uri': f'https://bibliokeia.com/authorities/subjects/{request.tokenLSCH}'}
     

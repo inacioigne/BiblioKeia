@@ -1,13 +1,12 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
+from pyfuseki import FusekiUpdate
+from pysolr import Solr
 
 def PrimaryContribution(g, request, work_uri, BF, BFLC):
-
-    store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/authority/update')
-    query_endpoint = 'http://localhost:3030/authority/query'
-    update_endpoint = 'http://localhost:3030/authority/update'
-    store.open((query_endpoint, update_endpoint))
+    print("CONTRIBUTOR INSIDE: ", g)
+    return g
 
     contribution = BNode()
     uri = f"https://bibliokeia.com/authorities/names/{request.contributionID}"
@@ -20,12 +19,4 @@ def PrimaryContribution(g, request, work_uri, BF, BFLC):
     g.add((contribution, RDFS.label, Literal(request.contributionAgent)))
     g.add((contribution, BF.role, role))
 
-    up = """PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>
-                INSERT DATA
-                { GRAPH  <https://bibliokeia.com/authorities/names/"""+request.contributionID+"""> { 
-                    <https://bibliokeia.com/authorities/names/"""+request.contributionID+"""> 
-                     bflc:contributorTo 
-                     <"""+str(work_uri)+"""> } }"""
-    store.update(up)
-
-    return g
+    # return g

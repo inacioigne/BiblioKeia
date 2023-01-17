@@ -4,6 +4,7 @@ from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
 from src.function.bibframe.Work.work import BfWork
 from pyfuseki import FusekiUpdate
+from src.function.solr.docWork import DocWork
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
@@ -34,6 +35,11 @@ async def create_work(request: Work_Schema):
         GRAPH <https://bibliokeia.com/bibframe/work/"""+work_id+""">
         { \n"""+nt+"} }" 
 
-    fuseki_update.run_sparql(G)
+    response =  fuseki_update.run_sparql(G)
+
+    DocWork(request, work_id)
+
+    return {"msg": work_id }
+
     
-    return {"msg": work_id}
+    #return {"msg": response.convert()}

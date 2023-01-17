@@ -7,6 +7,7 @@ from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Instance.extent import Extent
 from src.function.bibframe.Instance.instance import BfInstance
 from pyfuseki import FusekiUpdate
+from src.function.solr.docInstance import DocInstance
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
@@ -27,9 +28,10 @@ async def create_instance(request: Instance_Schema):
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
     INSERT DATA {
-        GRAPH <http://bibliokeia.com/bibframe/instance/"""+request.instanceOf+""">
+        GRAPH <http://bibliokeia.com/bibframe/instance/"""+str(request.instanceOf)+""">
         { \n"""+nt+"} }" 
     
     fuseki_update.run_sparql(G)
+    DocInstance(request)
 
     return { "instance": request.instanceOf }

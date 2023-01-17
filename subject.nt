@@ -3,35 +3,155 @@
 @prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/authorities/subjects/sh99001562> a madsrdf:Authority,
+<https://bibliokeia.com/authorities/subjects/sh85076723> a madsrdf:Authority,
         madsrdf:Topic ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2023-01-15T11:09:19.020673"^^xsd:dateTime ;
+            ri:recordChangeDate "2023-01-17T17:58:38.825847"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Ficção"@pt ;
+    madsrdf:authoritativeLabel "Biblioteconomia"@pt ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Ficção"@pt ] ) ;
-    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh99001562> ;
-    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh99001687> ;
+                madsrdf:elementValue "Biblioteconomia"@pt ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4006465-7>,
+        <http://data.bnf.fr/ark:/12148/cb119316669>,
+        <http://id.worldcat.org/fast/997916>,
+        <http://www.wikidata.org/entity/Q199655>,
+        <http://www.yso.fi/onto/yso/p3713> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85076723> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2004007348>,
+        <http://id.loc.gov/authorities/subjects/sh2007007218>,
+        <http://id.loc.gov/authorities/subjects/sh2021006014>,
+        <http://id.loc.gov/authorities/subjects/sh85026747>,
+        <http://id.loc.gov/authorities/subjects/sh85027982>,
+        <http://id.loc.gov/authorities/subjects/sh85029074>,
+        <http://id.loc.gov/authorities/subjects/sh85029300>,
+        <http://id.loc.gov/authorities/subjects/sh85067425>,
+        <http://id.loc.gov/authorities/subjects/sh85076635>,
+        <http://id.loc.gov/authorities/subjects/sh85085826>,
+        <http://id.loc.gov/authorities/subjects/sh85088931>,
+        <http://id.loc.gov/authorities/subjects/sh85094875>,
+        <http://id.loc.gov/authorities/subjects/sh85107141>,
+        <http://id.loc.gov/authorities/subjects/sh85107547>,
+        <http://id.loc.gov/authorities/subjects/sh85111809>,
+        <http://id.loc.gov/authorities/subjects/sh85111836>,
+        <http://id.loc.gov/authorities/subjects/sh85147586>,
+        <http://id.loc.gov/authorities/subjects/sh90006221>,
+        <http://id.loc.gov/authorities/subjects/sh95007591>,
+        <http://id.loc.gov/authorities/subjects/sh98000880>,
+        <http://id.loc.gov/authorities/subjects/sh98001165>,
+        <http://id.loc.gov/authorities/subjects/sh98005480> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85013838>,
+        <http://id.loc.gov/authorities/subjects/sh85038731>,
+        <http://id.loc.gov/authorities/subjects/sh85066150> ;
     madsrdf:hasVariant [ a madsrdf:Topic,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "Histórias"@pt ] ) ;
-            madsrdf:variantLabel "Histórias"@pt ],
+                        madsrdf:elementValue "Biblioteconomia"@pt ] ) ;
+            madsrdf:variantLabel "Biblioteconomia"@pt ],
         [ a madsrdf:Topic,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "romances"@pt ] ) ;
-            madsrdf:variantLabel "romances"@pt ],
-        [ a madsrdf:Topic,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "lendas e histórias"@pt ] ) ;
-            madsrdf:variantLabel "lendas e histórias"@pt ] ;
+                        madsrdf:elementValue "economia da biblioteca"@pt ] ) ;
+            madsrdf:variantLabel "economia da biblioteca"@pt ] ;
     madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
 
-<http://id.loc.gov/authorities/subjects/sh99001687> a madsrdf:Authority ;
-    madsrdf:authoritativeLabel "Ficção juvenil"@pt ;
+<http://id.loc.gov/authorities/subjects/sh2004007348> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "biblioteconomia médica"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2007007218> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "biblioteconomia web"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2021006014> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliotecas - Coleções especiais - Biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85013838> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliografia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85026747> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Classificação--Livros--Biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85027982> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Arquivos Collectanea"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029074> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Comunicação em Biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029300> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Biblioteconomia Comparada"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85038731> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Documentação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85066150> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ciência da Informação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85067425> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "biblioteconomia internacional"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85076635> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Serviços públicos (bibliotecas)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85085826> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Minorias na biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85088931> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "biblioteconomia musical"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85094875> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Prateleiras abertas e fechadas"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85107141> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Serviços técnicos (Bibliotecas)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85107547> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Proposta de redação em biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85111809> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Recatalogação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85111836> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Reclassificação (Bibliotecas)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85147586> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mulheres na Biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh90006221> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Biblioteconomia em equipe"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh95007591> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "biblioteconomia teatral"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98000880> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Mentoria em Biblioteconomia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98001165> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Biblioteconomia de livros raros"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98005480> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Biblioteconomia de periódicos"@pt ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
 

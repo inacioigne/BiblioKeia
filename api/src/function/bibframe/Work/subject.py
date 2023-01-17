@@ -2,7 +2,7 @@ from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 
-def UpdateSubject(subject, work_id): 
+def UpdateSubject(subject, work_uri): 
 
     store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/thesaurus/update')
     query_endpoint = 'http://localhost:3030/thesaurus/query'
@@ -12,8 +12,8 @@ def UpdateSubject(subject, work_id):
     up = """PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>
                 PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
                 INSERT DATA
-                { GRAPH  <"""+subject.uri+"""> { 
-                    <"""+subject.uri+">  bflc:subjectOf <"+work_id+"> } }"
+                { GRAPH  <"""+str(subject.uri)+"""> { 
+                    <"""+str(subject.uri)+">  bflc:subjectOf <"+str(work_uri)+"> } }"
 
     store.update(up)
     

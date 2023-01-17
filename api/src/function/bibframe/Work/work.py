@@ -5,6 +5,7 @@ from rdflib.namespace import RDF, RDFS
 from src.function.bibframe.Work.workAdmin import WorkAdmin
 from src.function.bibframe.Work.title import Title
 from src.function.bibframe.Work.primaryContribution import PrimaryContribution
+from src.function.bibframe.Work.contributor import Contributor
 from src.function.bibframe.Work.subject import Subject, UpdateSubject
 from src.function.bibframe.Work.language import Language
 from src.function.bibframe.Work.classification import Classification
@@ -26,8 +27,7 @@ def BfWork(request, work_id):
     g.bind('bflc', BFLC)
     MADSRDF = Namespace("http://www.loc.gov/mads/rdf/v1#")
     g.bind('madsrdf', MADSRDF)
-   
-    
+     
     content = {
         "Texto": BF.Text
     }
@@ -56,7 +56,8 @@ def BfWork(request, work_id):
     g = Title(g, request, work_uri, label, BF)
 
     #PrimaryContribution
-    g = PrimaryContribution(g, request, work_uri, BF, BFLC)
+    # g = PrimaryContribution(g, request, work_uri, BF, BFLC),
+    g = Contributor(g, request, work_uri, BF, BFLC)
 
     #Subject
     for subject in request.subjects:
@@ -64,7 +65,6 @@ def BfWork(request, work_id):
         uriSubject = URIRef(subject.uri)
         #g = Subject(g, subject, work_uri, BF, MADSRDF)
         g.add((work_uri, BF.subject, uriSubject))
-
-        UpdateSubject(subject, work_id)
+        UpdateSubject(subject, work_uri)
 
     return g

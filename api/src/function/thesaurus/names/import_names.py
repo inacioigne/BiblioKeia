@@ -2,7 +2,6 @@ from rdflib import Graph, URIRef
 from pyfuseki import FusekiUpdate, FusekiQuery
 import pysolr
 from src.function.thesaurus.names.makeGraph import Make_Graph
-#from src.function.solr.doc_names import create_doc
 from src.function.solr.docName import DocName
  
 
@@ -10,7 +9,7 @@ from src.function.solr.docName import DocName
 fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
 
 #SOLR
-solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10)
+solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10) 
 
 
 def Import_Authority(token):
