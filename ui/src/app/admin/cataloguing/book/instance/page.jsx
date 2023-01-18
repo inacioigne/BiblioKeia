@@ -38,6 +38,7 @@ import Extent from "src/components/bibframe/instance/extent";
 import ProvisionActivity from "src/components/bibframe/instance/provisionActivity";
 import ResponsibilityStatement from "src/components/bibframe/instance/responsibilityStatement";
 import Edition from "src/components/bibframe/instance/editionStatement";
+import Item from "src/components/bibframe/item";
 
 // React Hooks
 import { useState, useEffect } from "react";
@@ -85,28 +86,28 @@ const metadados = [
 export default function Instance() {
 
     const [visible, setVisible] = useState(0);
+    const [openItem, setOpenItem] = useState(false)
     const { instance } = useBf();
     const { setProgress } = useProgress();
     const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
     function postInstance(instance) {
-      setProgress(true);
+      //setProgress(true);
       console.log(instance);
-      api
-        .post(`/cataloguing/instance`, instance)
-        .then((response) => {
-          setProgress(false);
-          if (response.status == 201) {
-            
-            // router.push("/admin/cataloguing/book/instance");
-            setTypeAlert("success");
-            setMessage("Registro salvo com sucesso!");
-            setOpenSnack(true);
-          }
-        })
-        .catch(function (error) {
-          console.log("ERROOO!!", error);
-        });
+      setOpenItem(true)
+      // api
+      //   .post(`/cataloguing/instance`, instance)
+      //   .then((response) => {
+      //     setProgress(false);
+      //     if (response.status == 201) {
+      //       setTypeAlert("success");
+      //       setMessage("Registro salvo com sucesso!");
+      //       setOpenSnack(true);
+      //     }
+      //   })
+      //   .catch(function (error) {
+      //     console.log("ERROOO!!", error);
+      //   });
     }
 
   return (
@@ -167,6 +168,7 @@ export default function Instance() {
             </Button> 
         </Grid>
       </Grid>
+      <Item open={openItem} setOpen={setOpenItem} />
     </Container>
   );
 }

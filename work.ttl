@@ -4,28 +4,27 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/bibframe/work/bk-23-6> a bf:Text,
+<https://bibliokeia.com/bibframe/work/bk-23-4> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-17"^^xsd:date ;
+            bf:creationDate "2023-01-18"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-17T18:18:17.647633"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-18T16:59:07.202168"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-23-6" ] ;
+                    rdf:value "bk-23-4" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "548.2" ;
-            bf:itemPortion "A587s" ] ;
+            bf:classificationPortion "" ;
+            bf:itemPortion "" ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "Machado de Assis, 1839-1908" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n80002329> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/acp> ] ;
-    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh85076723> ;
+            rdfs:label "" ;
+            bf:agent <https://bibliokeia.com/authorities/names/> ;
+            bf:role <> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Saramago" ;
-            bf:mainTitle "Saramago" ] .
+            rdfs:label "" ;
+            bf:mainTitle "" ] .
 

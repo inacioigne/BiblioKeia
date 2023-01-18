@@ -1,0 +1,265 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/names/n79029745> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:contributorTo <https://bibliokeia.com/bibframe/work/bk-23-1>,
+        <https://bibliokeia.com/bibframe/work/bk-23-2>,
+        <https://bibliokeia.com/bibframe/work/bk-23-3>,
+        <https://bibliokeia.com/bibframe/work/bk-23-4>,
+        <https://bibliokeia.com/bibframe/work/bk-23-5> ;
+    bflc:marcKey "1001 $aPoe, Edgar Allan,$d1809-1849" ;
+    identifiers:lccn "n 79029745" ;
+    identifiers:local "(OCoLC)oca00263409" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1979-04-23T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new" ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2020-01-04T07:33:52"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/caoonl> ;
+            ri:recordStatus "revised" ] ;
+    madsrdf:authoritativeLabel "Poe, Edgar Allan, 1809-1849" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            madsrdf:code "PS2600-PS2648" ;
+            madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/PS2600-PS2648> ] ;
+    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Poe, Edgar Allan," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1809-1849" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/32674>,
+        <http://vocab.getty.edu/ulan/500212765>,
+        <http://www.wikidata.org/entity/Q16867> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79029745#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Eḍgār Āllen Pō)" ;
+            madsrdf:citationSource "Suvarṇa kīṭa, 1947:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "title page (Quarles)" ;
+            madsrdf:citationSource "The raven, 1902:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Edgar Allen Poe )" ;
+            madsrdf:citationSource "The raven, 1883:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(born January 19, 1809 in Boston, Massachusetts; died October 7, 1849 in Baltimore)" ;
+            madsrdf:citationSource "Wikipedia, 17 December 2010" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Edhar Po)" ;
+            madsrdf:citationSource "Kruk, 2000:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (ʼAggā ʼAyʻlaṅʻ Pui)" ;
+            madsrdf:citationSource "Lyhuiʹ vhakʻ sai phui, 195-?:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "His Poems and tales ... 1902." ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Edgard Poë)" ;
+            madsrdf:citationSource "Milhaud, D. Les cloches, c1960:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "title page (愛倫坡 = Ailun Po)" ;
+            madsrdf:citationSource "Ailun Po gu shi ji, 1949:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (E.A. Poe)" ;
+            madsrdf:citationSource "His Anastatic printing, 1972:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "pref. (Edgar A. Perry; pseudonym name used by Edgar Allan Poe when enlisting into the Army)" ;
+            madsrdf:citationSource "Private Perry and Mister Poe, c2005:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(access point: Poe, Edgar Allan, 1809-1849)" ;
+            madsrdf:citationSource "Canadiana, January 3, 2020" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Quarles," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Quarles, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פו, אדגר אלן" ] ) ;
+            madsrdf:variantLabel "פו, אדגר אלן" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פא, עדגאר עלען," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809־1849" ] ) ;
+            madsrdf:variantLabel "פא, עדגאר עלען, 1809־1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "アランポオ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "アランポオ, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Po, Edgar," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Po, Edgar, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פו, אדגר אלן," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809־1849" ] ) ;
+            madsrdf:variantLabel "פו, אדגר אלן, 1809־1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פו, אדגר" ] ) ;
+            madsrdf:variantLabel "פו, אדגר" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Poe, Edgar Allen," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Poe, Edgar Allen, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "По, Эдгар," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "По, Эдгар, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פא, אדגאר אלאן" ] ) ;
+            madsrdf:variantLabel "פא, אדגאר אלאן" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פא, עדגאר" ] ) ;
+            madsrdf:variantLabel "פא, עדגאר" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Po, Ailun," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Po, Ailun, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Po, Edhar," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Po, Edhar, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פאו, עדגאר עלען," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "פאו, עדגאר עלען, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Perry, Edgar A.," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Perry, Edgar A., 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פאו, עדגאר עלען" ] ) ;
+            madsrdf:variantLabel "פאו, עדגאר עלען" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Boy, Ētkar," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Boy, Ētkar, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Poe, E. A." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Edgar Allan)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Poe, E. A. (Edgar Allan), 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "愛倫坡," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "愛倫坡, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "פו, אדגר אלן," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1849־1809" ] ) ;
+            madsrdf:variantLabel "פו, אדגר אלן, 1849־1809" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "По, Эдгар Аллан," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "По, Эдгар Аллан, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Pui, ʼAggā ʼAyʻlaṅʻ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Pui, ʼAggā ʼAyʻlaṅʻ, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Poë, Edgard," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Poë, Edgard, 1809-1849" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Pō, Eḍgār Ālen," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1809-1849" ] ) ;
+            madsrdf:variantLabel "Pō, Eḍgār Ālen, 1809-1849" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79029745> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Authors" .
+
+<http://id.loc.gov/authorities/subjects/sh85103733> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Poets" .
+
+<http://id.loc.gov/authorities/subjects/sh85124554> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Soldiers" .
+
+<http://id.loc.gov/rwo/agents/n79029745> a bf:Person,
+        madsrdf:RWO,
+        foaf:Person ;
+    rdfs:label "Poe, Edgar Allan, 1809-1849" ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    madsrdf:birthDate "1809-01-19"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:birthPlace [ a madsrdf:Geographic ;
+            rdfs:label "Boston (Mass.)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    madsrdf:deathDate "1849-10-07"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:entityDescriptor [ a skos:Concept ;
+            rdfs:label "Americans" ] ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85009793>,
+        <http://id.loc.gov/authorities/subjects/sh85103733>,
+        <http://id.loc.gov/authorities/subjects/sh85124554> .
+
+<http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
+    madsrdf:authoritativeLabel "English"@en .
+

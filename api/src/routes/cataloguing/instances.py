@@ -28,7 +28,7 @@ async def create_instance(request: Instance_Schema):
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
     INSERT DATA {
-        GRAPH <http://bibliokeia.com/bibframe/instance/"""+str(request.instanceOf)+""">
+        GRAPH <https://bibliokeia.com/bibframe/instance/"""+str(request.instanceOf)+""">
         { \n"""+nt+"} }" 
     
     fuseki_update.run_sparql(G)

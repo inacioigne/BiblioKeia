@@ -9,17 +9,18 @@ from src.function.solr.docWork import DocWork
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
 
-def Work(request):
-    work_id = GenerateId()
-    g = BfWork(request, work_id )
+# def Work(request):
+#     work_id = GenerateId()
+#     g = BfWork(request, work_id )
 
-    return g
+#     return g
 
 
 @router.post("/work", status_code=201)
 async def create_work(request: Work_Schema):
     work_id = GenerateId()
-    g = Work(request)
+    g = BfWork(request, work_id )
+    # g = Work(request)
     g.serialize("work.ttl") 
     nt = g.serialize(format='nt')
 
