@@ -6,7 +6,7 @@ def Sublocation(g, item, uri, BF):
     sublocation = BNode()
     g.add((uri, BF.sublocation, sublocation))
     g.add((sublocation, RDF.type, BF.Sublocation))
-    label = Literal(item.sublocation)
+    label = Literal(item.shelf)
     g.add((sublocation, RDFS.label, label))
 
     return g

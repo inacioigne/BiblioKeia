@@ -92,22 +92,22 @@ export default function Instance() {
     const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
     function postInstance(instance) {
-      //setProgress(true);
-      console.log(instance);
+      setProgress(true);
+  
       setOpenItem(true)
-      // api
-      //   .post(`/cataloguing/instance`, instance)
-      //   .then((response) => {
-      //     setProgress(false);
-      //     if (response.status == 201) {
-      //       setTypeAlert("success");
-      //       setMessage("Registro salvo com sucesso!");
-      //       setOpenSnack(true);
-      //     }
-      //   })
-      //   .catch(function (error) {
-      //     console.log("ERROOO!!", error);
-      //   });
+      api
+        .post(`/cataloguing/instance`, instance)
+        .then((response) => {
+          setProgress(false);
+          if (response.status == 201) {
+            setTypeAlert("success");
+            setMessage("Registro salvo com sucesso!");
+            setOpenSnack(true);
+          }
+        })
+        .catch(function (error) {
+          console.log("ERROOO!!", error);
+        });
     }
 
   return (

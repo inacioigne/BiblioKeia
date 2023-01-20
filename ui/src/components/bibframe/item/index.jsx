@@ -22,47 +22,79 @@ import { useForm, useFieldArray, Controller, useWatch } from "react-hook-form";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
+import { useAlertBK } from "src/providers/alerts";
 
 // React Hook
 import { useEffect, useState } from "react";
 
 export default function Item({ open, setOpen }) {
-  const { work, setInstances } = useBf();
-  const [identifier, setIdentifier] = useState("");
+  const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
+  const { work, instance, setInstances } = useBf();
+  const [identifier, setIdentifier] = useState(null);
 
-  const myFunction = async () => {
-    let register = await api.get("/items/next_id").then((response) => {
-      setIdentifier(response.data.id);
-      return response.data.id;
+  const [inputs, setInput] = useState([]);
+
+  function generateID(identifier, index) {
+    let ex = identifier[index];
+
+    let id = ex.item.split("-");
+    let count = parseInt(id[2]);
+    let next = count + 1;
+    let newId = {
+      library: "Biblioteca do INPA",
+      call: "542.6 F452a",
+      shelf: "E1.P1",
+      item: `bk-${id[1]}-${next}`,
+    };
+    setIdentifier((prevState) => [...prevState, newId]);
+    console.log(next);
+  }
+  function handleRemove(identifier, index) {
+    let newItems = identifier.filter((_, i) => {
+      return i !== index;
     });
-    console.log(register);
-  };
+    setIdentifier(newItems);
+    //console.log(newItems);
+  }
 
   useEffect(() => {
-    myFunction();
-  });
+    api.get("/items/next_id").then((response) => {
+      console.log(response);
+      setIdentifier([
+        {
+          library: "Biblioteca do INPA",
+          call: "542.6 F452a",
+          shelf: "E1.P1",
+          item: response.data.id,
+        },
+      ]);
+    });
+  }, []);
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const { register, control, handleSubmit, reset, watch } = useForm({
-    defaultValues: {
-      item: [
-        {
-          library: "Biblioteca do INPA",
-          call: `${work.cdd} ${work.cutter}`,
-          identifier: identifier,
-        },
-      ],
-    },
-  });
-  const { fields, append, remove } = useFieldArray({
-    control,
-    name: "item",
-  });
+  const handleSalve = () => {
+    const data = {
+      itemOf: instance.instanceOf,
+      items: identifier,
+    };
 
-  const onSubmit = (data) => console.log("data", data);
+    api.post("/cataloguing/items", data).then((response) => {
+      console.log(response);
+      if (response.status == 201) {
+        setTypeAlert("success");
+        setMessage("Itens salvo com sucesso!");
+        setOpenSnack(true);
+      } else {
+        setTypeAlert("error");
+        setMessage("Algo deu errado!");
+        setOpenSnack(true);
+      }
+      setOpen(false);
+    });
+  };
 
   return (
     <Dialog fullWidth maxWidth={"md"} open={open} onClose={handleClose}>
@@ -73,51 +105,54 @@ export default function Item({ open, setOpen }) {
         }}
       >
         <Typography variant="div">Items</Typography>
-        {identifier}
+
         <IconButton color="primary" component="label" onClick={handleClose}>
           <ClearIcon />
         </IconButton>
       </DialogTitle>
       <Divider />
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form //onSubmit={handleSubmit(onSubmit)}
+      >
         <DialogContent>
-          {fields.map((field, index) => (
-            <ListItem key={field.id}>
+          {identifier?.map((item, index) => (
+            <Box
+              key={index}
+              sx={{ display: "flex", rowGap: "1rem", pb: "1rem" }}
+            >
               <Box sx={{ display: "flex", gap: "1rem" }}>
-                <Controller
-                  name={`item.${index}.library`}
-                  control={control}
-                  render={({ field }) => (
-                    <TextField label="Biblioteca" {...field} />
-                  )}
-                />
-                <Controller
-                  name={`item.${index}.call`}
-                  control={control}
-                  render={({ field }) => (
-                    <TextField label="Chamada" {...field} />
-                  )}
+                <TextField
+                  sx={{ width: 180 }}
+                  required
+                  label="Biblioteca"
+                  defaultValue={item.library}
                 />
 
-                <Controller
-                  name={`item.${index}.identifier`}
-                  control={control}
-                  defaultValue={identifier}
-                  render={({ field }) => (
-                    <TextField label="Registro" {...field} />
-                  )}
-                />
                 <TextField
+                  sx={{ width: 150 }}
                   required
-                  id="outlined-required"
-                  label="Required"
-                  defaultValue={() => {return "res"}}
+                  label="Chamada"
+                  defaultValue={item.call}
+                />
+
+                <TextField
+                  sx={{ width: 150 }}
+                  required
+                  label="Localização"
+                  defaultValue={item.shelf}
+                />
+
+                <TextField
+                  sx={{ width: 150 }}
+                  required
+                  label="Registro"
+                  defaultValue={item.item}
                 />
               </Box>
+
               <IconButton
                 color="primary"
                 onClick={() => {
-                  remove(index);
+                  handleRemove(identifier, index);
                 }}
               >
                 <RemoveIcon />
@@ -125,20 +160,16 @@ export default function Item({ open, setOpen }) {
               <IconButton
                 color="primary"
                 onClick={() => {
-                  append({
-                    library: "Biblioteca do INPA",
-                    call: "",
-                    identifier: "",
-                  });
+                  generateID(identifier, index);
                 }}
               >
                 <AddIcon />
               </IconButton>
-            </ListItem>
+            </Box>
           ))}
         </DialogContent>
         <DialogActions>
-          <Button type="submit">Salvar</Button>
+          <Button onClick={handleSalve}>Salvar</Button>
           <Button onClick={handleClose}>Cancelar</Button>
         </DialogActions>
       </form>

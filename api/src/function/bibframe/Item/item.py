@@ -6,7 +6,7 @@ from src.function.bibframe.Item.sublocation import Sublocation
 
 def BfItem(item, itemOf): 
     item_uri = URIRef(
-        f"http://bibliokeia.com/bibframe/item/{item.barcode}")
+        f"https://bibliokeia.com/bibframe/item/{item.item}")
     g = Graph(identifier=item_uri)
 
     #Prefix
@@ -22,7 +22,7 @@ def BfItem(item, itemOf):
     g.add((item_uri, RDF.type, BF.Item)) 
  
     #AdminMetadata
-    g = WorkAdmin(g, item_uri, item.barcode, BF) 
+    g = WorkAdmin(g, item_uri, item.item, BF) 
 
     heldBy = URIRef("http://id.loc.gov/vocabulary/organizations/brmninpa")
     g.add((item_uri, BF.heldBy, heldBy)) 

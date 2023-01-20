@@ -9,12 +9,6 @@ from src.function.solr.docWork import DocWork
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
 
-# def Work(request):
-#     work_id = GenerateId()
-#     g = BfWork(request, work_id )
-
-#     return g
-
 
 @router.post("/work", status_code=201)
 async def create_work(request: Work_Schema):

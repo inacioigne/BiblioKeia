@@ -1,16 +1,28 @@
 from fastapi import APIRouter
 from src.schemas.bibframe.items import Items_Schema
 from src.function.bibframe.Item.item import BfItem
+from pyfuseki import FusekiUpdate
 
 router = APIRouter()
 
 @router.post("/items", status_code=201)
 async def create_items(request: Items_Schema):
+    fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
+
+   
 
     c = 1
     for item in request.items:
         g = BfItem(item, request.itemOf)
-        g.serialize(f"item{c}.nt")
+        nt = g.serialize(format='nt')
+        G = """
+    INSERT DATA {
+        GRAPH <https://bibliokeia.com/bibframe/item/"""+item.item+""">
+        { \n"""+nt+"} }" 
+
+        response = fuseki_update.run_sparql(G)
+        print("ITEM", response.convert())
+        #g.serialize(f"item{c}.nt")
         c += 1 
 
     return {'msg': 'item criados com sucesso'}
