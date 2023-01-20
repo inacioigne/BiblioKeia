@@ -6,7 +6,7 @@ solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 def DocInstance(request):
 
     doc = {
-        "instanceOf": request.instanceOf,
+        "instanceOf": f"in_{request.instanceOf}",
         "bibrame": "instance",
         "contentType": request.type,
         "mainTitle": request.mainTitle,

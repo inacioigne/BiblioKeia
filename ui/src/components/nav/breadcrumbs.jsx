@@ -6,6 +6,9 @@ import { emphasize, styled } from "@mui/material/styles";
 // Next Components
 import Link from "next/link";
 
+// Providers BiblioKeia
+import { useProgress } from "src/providers/progress";
+
 
 
 const StyledBreadcrumb = styled(Chip)(({ theme }) => {
@@ -30,6 +33,9 @@ const StyledBreadcrumb = styled(Chip)(({ theme }) => {
 });
 
 export default function BreadcrumbsBK({ previousPaths, currentPath }) {
+
+  const { initProgress } = useProgress();
+  
   return (
     <Breadcrumbs separator="/">
       {previousPaths?.map((path, index) => (
@@ -37,6 +43,7 @@ export default function BreadcrumbsBK({ previousPaths, currentPath }) {
           <StyledBreadcrumb
             label={path.label}
             icon={path.icon} 
+            onClick={initProgress}
           />
         </Link>
       ))}

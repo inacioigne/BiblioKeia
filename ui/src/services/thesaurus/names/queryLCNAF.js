@@ -138,15 +138,12 @@ async function QueryLCNAF(uri, setLCNAFDetails, setImg) {
         })
         .then((files) => {
           if (typeof files == "undefined") {
-            console.log(undefined);
             setImg(false);
           } else {
             let file = files[0];
-            //let img = `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`;
             setImg(
               `http://commons.wikimedia.org/wiki/Special:FilePath/${file.mainsnak.datavalue.value}`
             );
-            //return file.mainsnak.datavalue.value;
           }
         });
     }

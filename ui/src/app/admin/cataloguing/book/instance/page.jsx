@@ -11,6 +11,7 @@ import {
   ListItemText,
   Typography,
   Button,
+  IconButton,
 } from "@mui/material/";
 
 // MUI ICONS
@@ -23,12 +24,12 @@ import {
   PeopleAlt,
   LocationCity,
   Filter1,
-  FileCopy
+  FileCopy,
 } from "@mui/icons-material/";
 import TitleIcon from "@mui/icons-material/Title";
 import SubjectIcon from "@mui/icons-material/Subject";
 import LanguageIcon from "@mui/icons-material/Language";
-
+import PhotoCamera from "@mui/icons-material/PhotoCamera";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
@@ -39,9 +40,10 @@ import ProvisionActivity from "src/components/bibframe/instance/provisionActivit
 import ResponsibilityStatement from "src/components/bibframe/instance/responsibilityStatement";
 import Edition from "src/components/bibframe/instance/editionStatement";
 import Item from "src/components/bibframe/item";
+import ImagemBK from "src/components/buttons/imagem";
 
 // React Hooks
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // BiblioKeia Styles
 import { menuStyle } from "src/styles/mui";
@@ -53,7 +55,6 @@ import { useAlertBK } from "src/providers/alerts";
 
 // BiblioKeia Services
 import { api } from "src/services/api/api";
-
 
 const previousPaths = [
   {
@@ -84,31 +85,30 @@ const metadados = [
 ];
 
 export default function Instance() {
+  const [visible, setVisible] = useState(0);
+  const [openItem, setOpenItem] = useState(false);
+  const { instance } = useBf();
+  const { setProgress } = useProgress();
+  const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
-    const [visible, setVisible] = useState(0);
-    const [openItem, setOpenItem] = useState(false)
-    const { instance } = useBf();
-    const { setProgress } = useProgress();
-    const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
+  function postInstance(instance) {
+    setProgress(true);
 
-    function postInstance(instance) {
-      setProgress(true);
-  
-      setOpenItem(true)
-      api
-        .post(`/cataloguing/instance`, instance)
-        .then((response) => {
-          setProgress(false);
-          if (response.status == 201) {
-            setTypeAlert("success");
-            setMessage("Registro salvo com sucesso!");
-            setOpenSnack(true);
-          }
-        })
-        .catch(function (error) {
-          console.log("ERROOO!!", error);
-        });
-    }
+    setOpenItem(true);
+    api
+      .post(`/cataloguing/instance`, instance)
+      .then((response) => {
+        setProgress(false);
+        if (response.status == 201) {
+          setTypeAlert("success");
+          setMessage("Registro salvo com sucesso!");
+          setOpenSnack(true);
+        }
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
+  }
 
   return (
     <Container maxWidth="xl">
@@ -143,7 +143,7 @@ export default function Instance() {
                     setVisible(index);
                   }}
                 >
-                    <ListItemIcon>
+                  <ListItemIcon>
                     <metadado.icon />
                   </ListItemIcon>
                   <ListItemText>{metadado.label}</ListItemText>
@@ -151,21 +151,33 @@ export default function Instance() {
               ))}
             </MenuList>
           </Paper>
+          <Button
+            sx={{ textTransform: "none"}}
+            variant="outlined"
+            onClick={() => postInstance(instance)}
+          >
+            Salvar e Adicionar exemplar
+          </Button>
         </Grid>
         <Grid item xs={9}>
-        <Paper>
-        {visible === 0 && <Type />}
-        {visible === 1 && <Title />}
-        {visible === 2 && <ResponsibilityStatement />}
-        {visible === 3 && <Extent />}
-        {visible === 4 && <Edition />}
-        {visible === 5 && <ProvisionActivity />}
-        </Paper>
+          <Paper>
+            {visible === 0 && <Type />}
+            {visible === 1 && <Title />}
+            {visible === 2 && <ResponsibilityStatement />}
+            {visible === 3 && <Extent />}
+            {visible === 4 && <Edition />}
+            {visible === 5 && <ProvisionActivity />}
+          </Paper>
+          <ImagemBK />
         </Grid>
         <Grid item xs={12}>
-            <Button variant="outlined" onClick={() => postInstance(instance)}>
-              Salvar e Adicionar exemplar
-            </Button> 
+          <Button
+            sx={{ textTransform: "none"}}
+            variant="outlined"
+            onClick={() => postInstance(instance)}
+          >
+            Salvar e Adicionar exemplar
+          </Button>
         </Grid>
       </Grid>
       <Item open={openItem} setOpen={setOpenItem} />

@@ -16,11 +16,7 @@ import {
 } from "@mui/material/";
 
 // MUI Icons
-import {
-  LocalLibrary,
-  DashboardCustomize,
-  Home,
-} from "@mui/icons-material/";
+import { LocalLibrary, DashboardCustomize, Home } from "@mui/icons-material/";
 
 // MUI Styles
 import { styled } from "@mui/material/styles";
@@ -121,33 +117,33 @@ export default function SideBar({ open }) {
           </MenuItem>
         </Link>
         <Link href="/admin/cataloguing">
-                <MenuItem
-                  sx={{
-                    borderRadius: "6px",
-                    mx: "0.5rem",
-                    pl: "0.5rem",
-                    ":hover": { backgroundColor: "hover.background" },
-                  }}
-                  onClick={initProgress}
-                >
-                  <ListItemIcon>
-                    <DashboardCustomize />
-                  </ListItemIcon>
-                  <ListItemText>
-                    <Typography
-                      variant="h6"
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "0.9rem",
-                        lineHeight: 1.3,
-                        ml: "0.5rem",
-                      }}
-                    >
-                      Catalogação
-                    </Typography>
-                  </ListItemText>
-                </MenuItem>
-              </Link>
+          <MenuItem
+            sx={{
+              borderRadius: "6px",
+              mx: "0.5rem",
+              pl: "0.5rem",
+              ":hover": { backgroundColor: "hover.background" },
+            }}
+            onClick={initProgress}
+          >
+            <ListItemIcon>
+              <DashboardCustomize />
+            </ListItemIcon>
+            <ListItemText>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 400,
+                  fontSize: "0.9rem",
+                  lineHeight: 1.3,
+                  ml: "0.5rem",
+                }}
+              >
+                Catalogação
+              </Typography>
+            </ListItemText>
+          </MenuItem>
+        </Link>
       </MenuList>
     </Drawer>
   );

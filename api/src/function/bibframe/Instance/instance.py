@@ -12,7 +12,7 @@ from src.function.bibframe.Work.updateWork import UpdateWork
 
 def BfInstance(request): 
     instance_uri = URIRef(
-        f"http://bibliokeia.com/bibframe/instance/{request.instanceOf}")
+        f"https://bibliokeia.com/bibframe/instance/{request.instanceOf}")
     
     g = Graph(identifier=instance_uri)
 

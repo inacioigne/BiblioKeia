@@ -5,30 +5,29 @@
 
 <http://bibliokeia.com/bibframe/instance/bk-23-1> a ns1:Instance,
         ns1:Print ;
-    rdfs:label "Conjectures and refutations : : the growth of scientific knowledge" ;
+    rdfs:label "That glorious forest" ;
     ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns1:creationDate "2023-01-18"^^xsd:date ;
+            ns1:creationDate "2023-01-20"^^xsd:date ;
             ns1:generationProcess [ a ns1:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    ns1:generationDate "2023-01-18T12:50:19.595125"^^xsd:dateTime ] ;
+                    ns1:generationDate "2023-01-20T14:45:21.153333"^^xsd:dateTime ] ;
             ns1:identifiedBy [ a ns1:Local ;
                     ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-23-1" ] ;
             ns1:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     ns1:editionStatement "" ;
     ns1:extent [ a ns1:Extent ;
-            rdfs:label "xiii, 417 p." ] ;
-    ns1:instanceOf <http://bibliokeia.com/bibframe/work/bk-23-1> ;
+            rdfs:label "" ] ;
+    ns1:instanceOf <https://bibliokeia.com/bibframe/work/bk-23-1> ;
     ns1:provisionActivity [ a ns1:ProvisionActivity,
                 ns1:Publication ;
             ns1:agent [ a ns1:Agent ;
-                    rdfs:label "Harper & Row" ] ;
-            ns1:date "1968" ;
+                    rdfs:label "USA New York Botanical Garden Press " ] ;
+            ns1:date "2014" ;
             ns1:place [ a ns1:Place ;
-                    rdfs:label "New York" ] ] ;
-    ns1:responsibilityStatement "Karl R. Popper" ;
+                    rdfs:label "Bronx, New York, " ] ] ;
+    ns1:responsibilityStatement "Ghillean T. Prance" ;
     ns1:title [ a ns1:Title ;
-            rdfs:label "Conjectures and refutations : : the growth of scientific knowledge" ;
-            ns1:mainTitle "Conjectures and refutations : " ;
-            ns1:subtitle "the growth of scientific knowledge" ] .
+            rdfs:label "That glorious forest" ;
+            ns1:mainTitle "That glorious forest" ] .
 

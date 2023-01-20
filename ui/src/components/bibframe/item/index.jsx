@@ -82,7 +82,7 @@ export default function Item({ open, setOpen }) {
     };
 
     api.post("/cataloguing/items", data).then((response) => {
-      console.log(response);
+      //console.log(response);
       if (response.status == 201) {
         setTypeAlert("success");
         setMessage("Itens salvo com sucesso!");

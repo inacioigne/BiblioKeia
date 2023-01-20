@@ -9,13 +9,13 @@ router = APIRouter()
 
 @router.post("/{item_id}/imagem", status_code=201) 
 async def upload_imagem(
-    item_id: int, file: UploadFile):
+    item_id: str, file: UploadFile):
     # item = session.query(Item).filter_by(id = item_id).first()
     # if item is None:
     #     raise HTTPException(status_code=404, detail="Item not found")
 
     format = file.content_type.split('/')[1]
-    path_img = f'./api/storage/capas/{item_id}.{format}'
+    path_img = f'./api/storage/cover/{item_id}.{format}'
 
     with open(path_img, 'wb') as buffer:
         shutil.copyfileobj(file.file, buffer)

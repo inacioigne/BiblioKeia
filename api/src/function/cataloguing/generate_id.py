@@ -1,5 +1,5 @@
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
-from datetime import date, datetime
+from datetime import datetime
 
 def GenerateId():
 

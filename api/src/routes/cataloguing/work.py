@@ -31,10 +31,11 @@ async def create_work(request: Work_Schema):
         { \n"""+nt+"} }" 
 
     response =  fuseki_update.run_sparql(G)
+    #print("WORK: ", response.convert())
 
     DocWork(request, work_id)
 
-    return {"msg": work_id }
+    return {"id": work_id, "jena": response.convert() }
 
     
     #return {"msg": response.convert()}

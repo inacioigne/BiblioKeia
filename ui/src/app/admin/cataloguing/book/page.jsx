@@ -84,7 +84,7 @@ export default function Book() {
 
   function postWork(work) {
     setProgress(true);
-    console.log(work);
+    
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
@@ -92,12 +92,14 @@ export default function Book() {
         if (response.status == 201) {
           setInstances((prevState) => ({
             ...prevState,
-            instanceOf: response.data.msg,
+            instanceOf: response.data.id,
           }));
-          router.push("/admin/cataloguing/book/instance");
+          console.log(response.data)
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
+
+          router.push("/admin/cataloguing/book/instance");
         }
       })
       .catch(function (error) {
@@ -162,7 +164,11 @@ export default function Book() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Button variant="outlined" onClick={() => postWork(work)}>
+          <Button
+            sx={{ textTransform: "none" }}
+            variant="outlined"
+            onClick={() => postWork(work)}
+          >
             Salvar e Adicionar Instancia
           </Button>
         </Grid>
