@@ -56,7 +56,6 @@ def BfWork(request, work_id):
     g = Title(g, request, work_uri, label, BF)
 
     #PrimaryContribution
-    # g = PrimaryContribution(g, request, work_uri, BF, BFLC),
     g = Contributor(g, request, work_uri, BF, BFLC)
 
     #Subject

@@ -1,33 +1,33 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://bibliokeia.com/bibframe/instance/bk-23-1> a ns1:Instance,
-        ns1:Print ;
-    rdfs:label "That glorious forest" ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns1:creationDate "2023-01-20"^^xsd:date ;
-            ns1:generationProcess [ a ns1:GenerationProcess ;
+<https://bibliokeia.com/bibframe/instance/bk-8> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Literature" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:creationDate "2023-01-22"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    ns1:generationDate "2023-01-20T14:45:21.153333"^^xsd:dateTime ] ;
-            ns1:identifiedBy [ a ns1:Local ;
-                    ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-23-1" ] ;
-            ns1:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
-    ns1:editionStatement "" ;
-    ns1:extent [ a ns1:Extent ;
+                    bf:generationDate "2023-01-22T18:23:26.254156"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-7" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:editionStatement "" ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "" ] ;
-    ns1:instanceOf <https://bibliokeia.com/bibframe/work/bk-23-1> ;
-    ns1:provisionActivity [ a ns1:ProvisionActivity,
-                ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
-                    rdfs:label "USA New York Botanical Garden Press " ] ;
-            ns1:date "2014" ;
-            ns1:place [ a ns1:Place ;
-                    rdfs:label "Bronx, New York, " ] ] ;
-    ns1:responsibilityStatement "Ghillean T. Prance" ;
-    ns1:title [ a ns1:Title ;
-            rdfs:label "That glorious forest" ;
-            ns1:mainTitle "That glorious forest" ] .
+    bf:instanceOf <https://bibliokeia.com/bibframe/work/bk-7> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "" ] ;
+            bf:date "" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "" ] ] ;
+    bf:responsibilityStatement "" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Literature" ;
+            bf:mainTitle "Literature" ] .
 

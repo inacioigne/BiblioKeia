@@ -87,26 +87,32 @@ const metadados = [
 export default function Instance() {
   const [visible, setVisible] = useState(0);
   const [openItem, setOpenItem] = useState(false);
+  const [instance_id, setInstanceID] = useState(null)
   const { instance } = useBf();
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
   function postInstance(instance) {
-    setProgress(true);
-
-    setOpenItem(true);
+    setProgress(true); 
     api
       .post(`/cataloguing/instance`, instance)
       .then((response) => {
-        setProgress(false);
+        
         if (response.status == 201) {
+          let idResponse = response.data.id
+          console.log(response)
+          setInstanceID(idResponse)
+
+          setOpenItem(true);
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
+          setProgress(false);
         }
       })
       .catch(function (error) {
         console.log("ERROOO!!", error);
+        setProgress(false);
       });
   }
 
@@ -170,7 +176,7 @@ export default function Instance() {
           </Paper>
           <ImagemBK />
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Button
             sx={{ textTransform: "none"}}
             variant="outlined"
@@ -178,9 +184,9 @@ export default function Instance() {
           >
             Salvar e Adicionar exemplar
           </Button>
-        </Grid>
+        </Grid> */}
       </Grid>
-      <Item open={openItem} setOpen={setOpenItem} />
+      <Item open={openItem} setOpen={setOpenItem} instance_id={instance_id} />
     </Container>
   );
 }

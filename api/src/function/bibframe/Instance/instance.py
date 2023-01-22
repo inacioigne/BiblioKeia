@@ -10,9 +10,10 @@ from src.function.bibframe.Instance.editionStatement import Edition
 from src.function.bibframe.Instance.instanceOf import InstanceOf
 from src.function.bibframe.Work.updateWork import UpdateWork
 
-def BfInstance(request): 
+def BfInstance(request, instance_id): 
+    print("INSTSANCE: ", instance_id)
     instance_uri = URIRef(
-        f"https://bibliokeia.com/bibframe/instance/{request.instanceOf}")
+        f"https://bibliokeia.com/bibframe/instance/{instance_id}")
     
     g = Graph(identifier=instance_uri)
 
@@ -57,7 +58,7 @@ def BfInstance(request):
     g = SeriesStatement(g, request, instance_uri, BF)
 
     g = InstanceOf(g, request, instance_uri, BF)
-    UpdateWork(request.instanceOf)
+    UpdateWork(request.instanceOf, instance_id)
 
     return g
 

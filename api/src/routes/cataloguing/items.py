@@ -2,14 +2,13 @@ from fastapi import APIRouter
 from src.schemas.bibframe.items import Items_Schema
 from src.function.bibframe.Item.item import BfItem
 from pyfuseki import FusekiUpdate
+from src.function.solr.docItem import DocItem
 
 router = APIRouter()
 
 @router.post("/items", status_code=201)
 async def create_items(request: Items_Schema):
     fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
-
-   
 
     c = 1
     for item in request.items:
@@ -21,8 +20,9 @@ async def create_items(request: Items_Schema):
         { \n"""+nt+"} }" 
 
         response = fuseki_update.run_sparql(G)
-        print("ITEM", response.convert())
+        DocItem(item, request.itemOf)
+        #print("ITEM", response.convert())
         #g.serialize(f"item{c}.nt")
-        c += 1 
+        #
 
     return {'msg': 'item criados com sucesso'}

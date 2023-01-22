@@ -1,0 +1,131 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n79139258> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    bflc:marcKey "1001 $aBradbury, Ray,$d1920-2012" ;
+    identifiers:lccn "n 79139258" ;
+    identifiers:local "(OCoLC)oca00370527" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1980-03-20T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2020-04-08T12:39:28"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Bradbury, Ray, 1920-2012" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PS3503.R167" ] ;
+    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Bradbury, Ray," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1920-2012" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1797620>,
+        <http://id.worldcat.org/fast/46581>,
+        <http://vocab.getty.edu/ulan/500292267>,
+        <http://www.wikidata.org/entity/Q40640> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79139258#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "(Ray Bradbury; b. Raymond Douglas Bradbury, Aug. 22, 1920, Waukegan, Ill.; d. Tuesday [June 5, 2012], Los Angeles, aged 91; master of science fiction whose lyrical evocations of the future reflected both the optimism and the anxieties of his own postwar America)" ;
+            madsrdf:citationSource "New York times WWW site, June 6, 2012" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Rėĭ Brėdberi)" ;
+            madsrdf:citationSource "Marsianskie khroniki, 2000:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Bradbury, Ray, 1920-; full name, Ray Douglas Bradbury)" ;
+            madsrdf:citationSource "NUCMC data from Bowling Green State Univ., Center for Archival Collections, for His Papers, 1936-1985" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Rej Bredbëri)" ;
+            madsrdf:citationSource "451° fahrenhajt, 1983:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "His Dark carnival, 1947." ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(b. in Waukegan, Illinois; an American fantasy, horror, science fiction, and mystery writer; grew up in Tucson, Arizona and Los Angeles, California)" ;
+            madsrdf:citationSource "Wikipedia, via WWW, Oct. 13, 2011" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Ray Bradbury, born 22 Aug. 1920)" ;
+            madsrdf:citationSource "ALCS database, 22 Mar. 2005" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Ray Bradbury) p. 11 (pseud. William Elliott)" ;
+            madsrdf:citationSource "His The last circus, 1980:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Elliott, William," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-2012" ] ) ;
+            madsrdf:variantLabel "Elliott, William, 1920-2012" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Brėdberi, Rėĭ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-2012" ] ) ;
+            madsrdf:variantLabel "Brėdberi, Rėĭ, 1920-2012" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Bradbury, Raymond Douglas," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-2012" ] ) ;
+            madsrdf:variantLabel "Bradbury, Raymond Douglas, 1920-2012" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Брэдбери, Рэй," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-2012" ] ) ;
+            madsrdf:variantLabel "Брэдбери, Рэй, 1920-2012" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "ברדבורי, ריי," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-" ] ) ;
+            madsrdf:variantLabel "ברדבורי, ריי, 1920-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Bredbëri, Rej," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1920-2012" ] ) ;
+            madsrdf:variantLabel "Bredbëri, Rej, 1920-2012" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79139258> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/rwo/agents/n79139258> a bf:Person,
+        madsrdf:RWO,
+        <http://xmlns.com/foaf/0.1/Person> ;
+    rdfs:label "Bradbury, Ray, 1920-2012" ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+    madsrdf:birthDate "1920-08-22"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:birthPlace [ a madsrdf:Geographic ;
+            rdfs:label "Waukegan, Ill." ] ;
+    madsrdf:deathDate "2012-06-05"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:fieldOfActivity [ a skos:Concept ;
+            rdfs:label "Science fiction" ],
+        [ a skos:Concept ;
+            rdfs:label "Literature" ] ;
+    madsrdf:occupation [ a madsrdf:Occupation ;
+            rdfs:label "Author" ] .
+
+<http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
+    madsrdf:authoritativeLabel "English"@en .
+

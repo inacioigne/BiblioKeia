@@ -23,28 +23,31 @@ import { useForm, useFieldArray, Controller, useWatch } from "react-hook-form";
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
 import { useAlertBK } from "src/providers/alerts";
+import { useProgress } from "src/providers/progress";
 
 // React Hook
 import { useEffect, useState } from "react";
 
-export default function Item({ open, setOpen }) {
+export default function Item({ open, setOpen, instance_id }) {
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const { work, instance, setInstances } = useBf();
+  const { setProgress } = useProgress();
+
   const [identifier, setIdentifier] = useState(null);
 
-  const [inputs, setInput] = useState([]);
+  // const [inputs, setInput] = useState([]);
 
   function generateID(identifier, index) {
     let ex = identifier[index];
 
     let id = ex.item.split("-");
-    let count = parseInt(id[2]);
+    let count = parseInt(id[1]);
     let next = count + 1;
     let newId = {
       library: "Biblioteca do INPA",
       call: "542.6 F452a",
       shelf: "E1.P1",
-      item: `bk-${id[1]}-${next}`,
+      item: `bk-${next}`,
     };
     setIdentifier((prevState) => [...prevState, newId]);
     console.log(next);
@@ -54,30 +57,31 @@ export default function Item({ open, setOpen }) {
       return i !== index;
     });
     setIdentifier(newItems);
-    //console.log(newItems);
   }
 
   useEffect(() => {
-    api.get("/items/next_id").then((response) => {
-      console.log(response);
+    if (instance_id) {
+      let count = instance_id.split("-")[1];
+      let id = parseInt(count) + 1;
       setIdentifier([
         {
           library: "Biblioteca do INPA",
           call: "542.6 F452a",
           shelf: "E1.P1",
-          item: response.data.id,
+          item: `bk-${id}`,
         },
       ]);
-    });
-  }, []);
+    }
+  }, [instance_id]);
 
   const handleClose = () => {
     setOpen(false);
   };
 
   const handleSalve = () => {
+    setProgress(true);
     const data = {
-      itemOf: instance.instanceOf,
+      itemOf: instance_id,
       items: identifier,
     };
 
@@ -92,6 +96,7 @@ export default function Item({ open, setOpen }) {
         setMessage("Algo deu errado!");
         setOpenSnack(true);
       }
+      setProgress(false);
       setOpen(false);
     });
   };

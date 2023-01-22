@@ -1,8 +1,11 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
+import pysolr 
 
 def UpdateSubject(subject, work_uri): 
+
+    solr = pysolr.Solr('http://localhost:8983/solr/thesaurus/', timeout=10)
 
     store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/thesaurus/update')
     query_endpoint = 'http://localhost:3030/thesaurus/query'
@@ -16,6 +19,14 @@ def UpdateSubject(subject, work_uri):
                     <"""+str(subject.uri)+">  bflc:subjectOf <"+str(work_uri)+"> } }"
 
     store.update(up)
+
+    subjectID = subject.uri.split("/")[-1]
+
+    doc = {
+        "id": subjectID,
+        "subjectOf": {"add": [work_uri]}
+     }
+    solr.add([doc], commit=True)
     
 
 

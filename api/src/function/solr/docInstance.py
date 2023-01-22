@@ -3,10 +3,11 @@ import pysolr
 #SOLR
 solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 
-def DocInstance(request):
+def DocInstance(request, instance_id):
 
     doc = {
-        "instanceOf": f"in_{request.instanceOf}",
+        "id": instance_id,
+        "instanceOf": request.instanceOf,
         "bibrame": "instance",
         "contentType": request.type,
         "mainTitle": request.mainTitle,
@@ -21,8 +22,8 @@ def DocInstance(request):
         }
     
     work = {
-        "id": f"wk_{request.instanceOf}",
-         "hasInstance": {"add": [f"in_{request.instanceOf}"]}
+        "id": request.instanceOf,
+         "hasInstance": {"add": [instance_id]}
     }
 
     solr.add([doc, work], commit=True)

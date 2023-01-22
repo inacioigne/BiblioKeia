@@ -5,11 +5,16 @@ solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 
 def DocWork(request, work_id):
 
+    # doc = request.dict()
+    # doc['id'] = work_id
+
     doc = {
-        "id": f"wk_{work_id}",
+        "id": work_id,
         "bibrame": "work",
         "contentType": request.contentType,
         "mainTitle": request.mainTitle,
+        "subtitle": request.subtitle,
+        "contributionID" : request.contributionID,
         "contribution": request.contributionAgent,
         "language": request.language,
         "cdd": request.cdd,

@@ -1,0 +1,97 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85021828> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2023-01-22T15:48:11.679520"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Censura"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Censura"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85077568> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4067601-8>,
+        <http://data.bnf.fr/ark:/12148/cb11936077h>,
+        <http://id.worldcat.org/fast/850568>,
+        <http://www.wikidata.org/entity/Q543>,
+        <http://www.yso.fi/onto/yso/p7005> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85021828> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2021005802>,
+        <http://id.loc.gov/authorities/subjects/sh85015608>,
+        <http://id.loc.gov/authorities/subjects/sh85051711>,
+        <http://id.loc.gov/authorities/subjects/sh85076506>,
+        <http://id.loc.gov/authorities/subjects/sh87004415> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh2002004241>,
+        <http://id.loc.gov/authorities/subjects/sh85046546>,
+        <http://id.loc.gov/authorities/subjects/sh85107326>,
+        <http://id.loc.gov/authorities/subjects/sh96000828>,
+        <http://id.loc.gov/authorities/subjects/sh96003227> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "censura de livros"@pt ] ) ;
+            madsrdf:variantLabel "censura de livros"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Literatura - Censura"@pt ] ) ;
+            madsrdf:variantLabel "Literatura - Censura"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Livros - Censura"@pt ] ) ;
+            madsrdf:variantLabel "Livros - Censura"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Censura - Lei e Legislação"@pt ] ) ;
+            madsrdf:variantLabel "Censura - Lei e Legislação"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2002004241> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "liberdade intelectual"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2021005802> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliotecas--Coleções especiais--Censura"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85015608> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Queima de livro"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85046546> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "livros expurgados"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85051711> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Liberdade de imprensa"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85076506> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Bibliotecas - Censura"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85077568> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Literatura e moral"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85107326> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "livros proibidos"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh87004415> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Restrição prévia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh96000828> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "ativistas anticensura"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh96003227> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "livros desafiados"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+

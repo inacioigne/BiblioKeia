@@ -8,6 +8,7 @@ from src.function.bibframe.Instance.extent import Extent
 from src.function.bibframe.Instance.instance import BfInstance
 from pyfuseki import FusekiUpdate
 from src.function.solr.docInstance import DocInstance
+from src.function.cataloguing.generate_id import GenerateId
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
@@ -15,23 +16,21 @@ fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
 @router.post("/instance", status_code=201)
 async def create_instance(request: Instance_Schema):
 
-    g = BfInstance(request)
+    instance_id = GenerateId()
+    instance_id = instance_id['id']
+
+    g = BfInstance(request, instance_id)
     g.serialize("instance.nt") 
     nt = g.serialize(format='nt')
 
-    G = """PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
-    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/> 
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>
-    PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    
 
+    G = """
     INSERT DATA {
-        GRAPH <https://bibliokeia.com/bibframe/instance/"""+str(request.instanceOf)+""">
+        GRAPH <https://bibliokeia.com/bibframe/instance/"""+instance_id+""">
         { \n"""+nt+"} }" 
     
-    fuseki_update.run_sparql(G)
-    DocInstance(request)
+    response = fuseki_update.run_sparql(G)
+    DocInstance(request, instance_id)
 
-    return { "instance": request.instanceOf }
+    return {"id": instance_id, "jena": response.convert() }

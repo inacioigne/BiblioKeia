@@ -4,28 +4,27 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/bibframe/work/bk-23-1> a bf:Text,
+<https://bibliokeia.com/bibframe/work/bk-7> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-20"^^xsd:date ;
+            bf:creationDate "2023-01-22"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-20T14:42:27.111515"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-22T18:19:40.872286"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-23-1" ] ;
+                    rdf:value "bk-7" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "548.2" ;
-            bf:itemPortion "A587s" ] ;
+            bf:classificationPortion "" ;
+            bf:itemPortion "" ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "Prance, Ghillean T., 1937-" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n79041937> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh86004822> ;
+            rdfs:label "Bradbury, Ray, 1920-2012" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n79139258> ;
+            bf:role <> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/> ;
     bf:title [ a bf:Title ;
-            rdfs:label "That glorious forest" ;
-            bf:mainTitle "That glorious forest" ] .
+            rdfs:label "Literature" ;
+            bf:mainTitle "Literature" ] .
 
