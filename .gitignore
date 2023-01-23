@@ -1,7 +1,7 @@
 /apache-jena-fuseki-4.5.0
 Bibframe/**
 Jena
-/solr
+/solr/solr-9.0.0
 /venv
 /cli/out
 **/__pycache__/**
