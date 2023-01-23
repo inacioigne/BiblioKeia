@@ -13,7 +13,7 @@
         "venv": true,
         "apache-jena-fuseki-4.5.0": true,
         "Jena": true,
-        "Solr": true,
+        "Solr": false,
         "ui/.next": true,
         "ui/node_modules": true
 
