@@ -28,7 +28,13 @@ import { useProgress } from "src/providers/progress";
 // React Hook
 import { useEffect, useState } from "react";
 
+// Next Hooks
+import { useRouter } from "next/navigation";
+
 export default function Item({ open, setOpen, instance_id }) {
+
+  const router = useRouter();
+
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const { work, instance, setInstances } = useBf();
   const { setProgress } = useProgress();
@@ -50,7 +56,7 @@ export default function Item({ open, setOpen, instance_id }) {
       item: `bk-${next}`,
     };
     setIdentifier((prevState) => [...prevState, newId]);
-    console.log(next);
+    //console.log(next);
   }
   function handleRemove(identifier, index) {
     let newItems = identifier.filter((_, i) => {
@@ -60,8 +66,9 @@ export default function Item({ open, setOpen, instance_id }) {
   }
 
   useEffect(() => {
-    if (instance_id) {
-      let count = instance_id.split("-")[1];
+    if (instance.instance_id) {
+      //let count = instance_id.split("-")[1];
+      let count = instance.instance_id.split("-")[1];
       let id = parseInt(count) + 1;
       setIdentifier([
         {
@@ -72,25 +79,29 @@ export default function Item({ open, setOpen, instance_id }) {
         },
       ]);
     }
-  }, [instance_id]);
+  }, [instance.instance_id]);
 
   const handleClose = () => {
     setOpen(false);
   };
 
   const handleSalve = () => {
+    console.log(work)
     setProgress(true);
     const data = {
-      itemOf: instance_id,
+      itemOf: instance.instance_id,
       items: identifier,
     };
 
     api.post("/cataloguing/items", data).then((response) => {
-      //console.log(response);
+      
       if (response.status == 201) {
         setTypeAlert("success");
         setMessage("Itens salvo com sucesso!");
         setOpenSnack(true);
+
+        router.push(`/admin/acervo/work/${work.work_id}`);
+        
       } else {
         setTypeAlert("error");
         setMessage("Algo deu errado!");
@@ -116,7 +127,7 @@ export default function Item({ open, setOpen, instance_id }) {
         </IconButton>
       </DialogTitle>
       <Divider />
-      <form //onSubmit={handleSubmit(onSubmit)}
+      <form 
       >
         <DialogContent>
           {identifier?.map((item, index) => (

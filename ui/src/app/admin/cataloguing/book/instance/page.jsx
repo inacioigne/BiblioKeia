@@ -43,7 +43,7 @@ import Item from "src/components/bibframe/item";
 import ImagemBK from "src/components/buttons/imagem";
 
 // React Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // BiblioKeia Styles
 import { menuStyle } from "src/styles/mui";
@@ -88,11 +88,13 @@ export default function Instance() {
   const [visible, setVisible] = useState(0);
   const [openItem, setOpenItem] = useState(false);
   const [instance_id, setInstanceID] = useState(null)
-  const { instance } = useBf();
+  const { instance, setInstances } = useBf();
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
 
   function postInstance(instance) {
+    console.log(instance)
+    setOpenItem(true)
     setProgress(true); 
     api
       .post(`/cataloguing/instance`, instance)
@@ -115,6 +117,17 @@ export default function Instance() {
         setProgress(false);
       });
   }
+
+  useEffect(() => {
+    api.get("http://localhost:8000/items/next_id")
+    .then((response) => {
+      setInstances((prevState) => ({
+        ...prevState,
+        instance_id: response.data.id,
+      }));
+      
+    })
+  }, [])
 
   return (
     <Container maxWidth="xl">

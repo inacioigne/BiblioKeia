@@ -45,7 +45,7 @@ export default function ImagemBK() {
     const body = new FormData();
     body.append("file", image);
     api
-      .post(`/items/${instance.instanceOf}/imagem`, body, {
+      .post(`/items/${instance.instance_id}/imagem`, body, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

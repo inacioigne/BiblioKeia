@@ -9,122 +9,362 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n79139258> a madsrdf:Authority,
+<http://id.loc.gov/authorities/names/n78078534> a madsrdf:Authority,
         madsrdf:PersonalName ;
-    bflc:marcKey "1001 $aBradbury, Ray,$d1920-2012" ;
-    identifiers:lccn "n 79139258" ;
-    identifiers:local "(OCoLC)oca00370527" ;
+    bflc:marcKey "1001 $aHemingway, Ernest,$d1899-1961" ;
+    identifiers:lccn "n 78078534" ;
+    identifiers:local "(OCoLC)oca00213880" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "1980-03-20T00:00:00"^^xsd:dateTime ;
+            ri:recordChangeDate "2022-04-13T05:36:26"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ],
+            ri:recordStatus "revised"^^xsd:string ],
         [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2020-04-08T12:39:28"^^xsd:dateTime ;
+            ri:recordChangeDate "1978-11-02T00:00:00"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "revised"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Bradbury, Ray, 1920-2012" ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Hemingway, Ernest, 1899-1961" ;
     madsrdf:classification [ a lcc:ClassNumber ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            madsrdf:code "PS3503.R167" ] ;
+            madsrdf:code "PS3515.E37" ] ;
     madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
         "[Non-Latin script references not evaluated.]" ;
     madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                madsrdf:elementValue "Bradbury, Ray," ] [ a madsrdf:DateNameElement ;
-                madsrdf:elementValue "1920-2012" ] ) ;
-    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1797620>,
-        <http://id.worldcat.org/fast/46581>,
-        <http://vocab.getty.edu/ulan/500292267>,
-        <http://www.wikidata.org/entity/Q40640> ;
-    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79139258#skos:Concept> ;
+                madsrdf:elementValue "Hemingway, Ernest," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1899-1961" ] ) ;
+    madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "Ernest Miller" ] ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/27488>,
+        <http://vocab.getty.edu/ulan/500277629>,
+        <http://www.wikidata.org/entity/Q23434> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++78078534#skos:Concept> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/names/no2019035326>,
+        <http://id.loc.gov/authorities/names/no2019035641> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "(Ray Bradbury; b. Raymond Douglas Bradbury, Aug. 22, 1920, Waukegan, Ill.; d. Tuesday [June 5, 2012], Los Angeles, aged 91; master of science fiction whose lyrical evocations of the future reflected both the optimism and the anxieties of his own postwar America)" ;
-            madsrdf:citationSource "New York times WWW site, June 6, 2012" ;
+            madsrdf:citationNote "t.p. (Ernesṭ Hemingṿey)" ;
+            madsrdf:citationSource "Der alṭer un der yam, 1955:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Rėĭ Brėdberi)" ;
-            madsrdf:citationSource "Marsianskie khroniki, 2000:" ;
+            madsrdf:citationNote "title page (Aranaisaṭa Haimiṅgawe)" ;
+            madsrdf:citationSource "Satta pattanāṃ dā tārū, Akatūbara 2021:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(Bradbury, Ray, 1920-; full name, Ray Douglas Bradbury)" ;
-            madsrdf:citationSource "NUCMC data from Bowling Green State Univ., Center for Archival Collections, for His Papers, 1936-1985" ;
+            madsrdf:citationNote "t.p. (Ernest Ḣeminguei̐) colophons (Ėrnest Kheminguėĭ; Ernest Ḣeminguei̐) USSR CIP data (Ḣeminguei̐, E.)" ;
+            madsrdf:citationSource "Ălvida, silaḣ! 1986:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Rej Bredbëri)" ;
-            madsrdf:citationSource "451° fahrenhajt, 1983:" ;
+            madsrdf:citationNote "t.p. (Arnist Haminghwāy)" ;
+            madsrdf:citationSource "ʻAbr al-nahr wa-naḥwa al-ashjār-- , 1963:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationSource "His Dark carnival, 1947." ;
+            madsrdf:citationNote "cover" ;
+            madsrdf:citationSource "Bābā Himinghwāy, 1967:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(b. in Waukegan, Illinois; an American fantasy, horror, science fiction, and mystery writer; grew up in Tucson, Arizona and Los Angeles, California)" ;
-            madsrdf:citationSource "Wikipedia, via WWW, Oct. 13, 2011" ;
+            madsrdf:citationNote "(statements of responsibility: Ānesuto Heminguwei; Eneisite Haimingwei; Ouneisite Haimingwei; Ennasite Haimingwei; Ŏnesŭtʻŭ Hemingwei)" ;
+            madsrdf:citationSource "OCLC, Oct. 22, 2007" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(Ray Bradbury, born 22 Aug. 1920)" ;
-            madsrdf:citationSource "ALCS database, 22 Mar. 2005" ;
+            madsrdf:citationNote "t.p. (Ernest Chemingouaiē)" ;
+            madsrdf:citationSource "Na echēs kai na mēn echēs, 1968:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Ray Bradbury) p. 11 (pseud. William Elliott)" ;
-            madsrdf:citationSource "His The last circus, 1980:" ;
+            madsrdf:citationNote "t.p. (Ernest Chaiminkouaiē)" ;
+            madsrdf:citationSource "Hē syntomē eutychismenē zōē tou Makomper, 1949:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Ernest Heminguej) cover (E. Heminguej)" ;
+            madsrdf:citationSource "Plaku dhe deti, 1985:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(access point: Hemingway, Ernest, 1899-1961)" ;
+            madsrdf:citationSource "LAC internal file, February 7, 2022" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Ernest Hemingway)" ;
+            madsrdf:citationSource "In our time, 1925:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Ernesṭ Hemingṿe [voc.])" ;
+            madsrdf:citationSource "ha-Zaḳen ṿeha-yam, 1961:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Ernest Miller Hemingway; born July 21, 1899 in Oak Park, Ill.; died July 2, 1961 in Ketchum, Idaho; American author and journalist. His economical and understated style had a strong influence on 20th-century fiction, while his life of adventure and his public image influenced later generations. Hemingway produced most of his work between the mid-1920s and the mid-1950s, and won the Nobel Prize in Literature in 1954)" ;
+            madsrdf:citationSource "Wikipedia, Dec. 14, 2012" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Ernests Hemingvejs)" ;
+            madsrdf:citationSource "--Īsais laimes brīdis, 1986:" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Elliott, William," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-2012" ] ) ;
-            madsrdf:variantLabel "Elliott, William, 1920-2012" ],
+                        madsrdf:elementValue "Himinghwāy," ] [ a madsrdf:TermsOfAddressNameElement ;
+                        madsrdf:elementValue "Bābā," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Himinghwāy, Bābā, 1899-1961" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Brėdberi, Rėĭ," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-2012" ] ) ;
-            madsrdf:variantLabel "Brėdberi, Rėĭ, 1920-2012" ],
+                        madsrdf:elementValue "E. ヘミングウェイ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "E. ヘミングウェイ, 1899-1961" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Bradbury, Raymond Douglas," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-2012" ] ) ;
-            madsrdf:variantLabel "Bradbury, Raymond Douglas, 1920-2012" ],
+                        madsrdf:elementValue "Hemingṿe, Ernesṭ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingṿe, Ernesṭ, 1899-1961" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Брэдбери, Рэй," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-2012" ] ) ;
-            madsrdf:variantLabel "Брэдбери, Рэй, 1920-2012" ],
+                        madsrdf:elementValue "海明威, 欧内斯特," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "海明威, 欧内斯特, 1899-1961" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "ברדבורי, ריי," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-" ] ) ;
-            madsrdf:variantLabel "ברדבורי, ריי, 1920-" ],
+                        madsrdf:elementValue "Heminguej, Ernest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Heminguej, Ernest, 1899-1961" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Bredbëri, Rej," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1920-2012" ] ) ;
-            madsrdf:variantLabel "Bredbëri, Rej, 1920-2012" ] ;
-    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79139258> ;
+                        madsrdf:elementValue "Ḣeminguei̐, Ernest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Ḣeminguei̐, Ernest, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hīminjwāy, Arnist," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hīminjwāy, Arnist, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Хемингуэй, Э. М.," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Хемингуэй, Э. М., 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "همينگوى، ارنست" ] ) ;
+            madsrdf:variantLabel "همينگوى، ارنست" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "海明威," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "海明威, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "העמינגוועי, ערנעסט" ] ) ;
+            madsrdf:variantLabel "העמינגוועי, ערנעסט" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Himinghwāy, Arnist," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Himinghwāy, Arnist, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Haimingwei, Eneisite," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Haimingwei, Eneisite, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Haimingwei, Ouneisite," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Haimingwei, Ouneisite, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hemingwei, Ŏnesŭtʻŭ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingwei, Ŏnesŭtʻŭ, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Haimiṅgawe, Aranaisaṭa," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Haimiṅgawe, Aranaisaṭa, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "המינגוי, ארנסט" ] ) ;
+            madsrdf:variantLabel "המינגוי, ארנסט" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "헤밍웨이, 어네스트," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "헤밍웨이, 어네스트, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Ḣeminguei̐, E." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Ernest)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Ḣeminguei̐, E. (Ernest), 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Chemingouaiē, Ernest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Chemingouaiē, Ernest, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Heminguej, E." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Ernest)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Heminguej, E. (Ernest), 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hemingwei," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingwei, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hemingṿey, Ernesṭ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingṿey, Ernesṭ, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Kheminguėĭ, Ėrnest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Kheminguėĭ, Ėrnest, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hemingvej, Ernest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingvej, Ernest, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Хемингуэй, Эрнест," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Хемингуэй, Эрнест, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Heminguwei, Ānesuto," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Heminguwei, Ānesuto, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "ヘミングウェイ, アーネスト," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "ヘミングウェイ, アーネスト, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "המינגווי, ארנסט" ] ) ;
+            madsrdf:variantLabel "המינגווי, ארנסט" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hemingvejs, Ernests," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hemingvejs, Ernests, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "همنغواي، ارنست" ] ) ;
+            madsrdf:variantLabel "همنغواي، ارنست" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hai-ming-wei," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hai-ming-wei, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Chaiminkouaiē, Ernest," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Chaiminkouaiē, Ernest, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "המינגווי, ארנסט," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "המינגווי, ארנסט, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "המינגוי, ארנסט," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "המינגוי, ארנסט, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Hayminghwāy, Arnist," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Hayminghwāy, Arnist, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Haimingwei, Ennasite," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Haimingwei, Ennasite, 1899-1961" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Haminghwāy, Arnist," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1899-1961" ] ) ;
+            madsrdf:variantLabel "Haminghwāy, Arnist, 1899-1961" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n78078534> ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
         <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
-    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    madsrdf:note "[Ernest Hemingway (1899-1961) was an American author and journalist, and a winner of the Pulitzer Prize for Fiction (1953, for The Old Man and the Sea) and the Nobel Prize in Literature (1954).]" .
 
-<http://id.loc.gov/rwo/agents/n79139258> a bf:Person,
+<http://id.loc.gov/authorities/genreForms/gf2014026542> a skos:Concept ;
+    madsrdf:authoritativeLabel "Short stories" .
+
+<http://id.loc.gov/authorities/genreForms/gf2015026020> a skos:Concept ;
+    madsrdf:authoritativeLabel "Novels" .
+
+<http://id.loc.gov/authorities/subjects/sh85048050> a skos:Concept ;
+    madsrdf:authoritativeLabel "Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh85070736> a skos:Concept ;
+    madsrdf:authoritativeLabel "Journalism" .
+
+<http://id.loc.gov/authorities/subjects/sh85070788> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Journalists" .
+
+<http://id.loc.gov/authorities/subjects/sh85092863> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Novelists" .
+
+<http://id.loc.gov/rwo/agents/n78078534> a bf:Person,
         madsrdf:RWO,
         <http://xmlns.com/foaf/0.1/Person> ;
-    rdfs:label "Bradbury, Ray, 1920-2012" ;
+    rdfs:label "Hemingway, Ernest, 1899-1961" ;
     madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
-    madsrdf:birthDate "1920-08-22"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:birthDate "1899-07-21"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
     madsrdf:birthPlace [ a madsrdf:Geographic ;
-            rdfs:label "Waukegan, Ill." ] ;
-    madsrdf:deathDate "2012-06-05"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
-    madsrdf:fieldOfActivity [ a skos:Concept ;
-            rdfs:label "Science fiction" ],
-        [ a skos:Concept ;
-            rdfs:label "Literature" ] ;
-    madsrdf:occupation [ a madsrdf:Occupation ;
-            rdfs:label "Author" ] .
+            rdfs:label "Oak Park (Ill.)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    madsrdf:deathDate "1961-07-02"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:entityDescriptor [ a skos:Concept ;
+            rdfs:label "Americans" ] ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/genreForms/gf2014026542>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/subjects/sh85048050>,
+        <http://id.loc.gov/authorities/subjects/sh85070736> ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85070788>,
+        <http://id.loc.gov/authorities/subjects/sh85092863> .
 
 <http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
     madsrdf:authoritativeLabel "English"@en .

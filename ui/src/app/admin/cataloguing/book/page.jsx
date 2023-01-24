@@ -60,7 +60,7 @@ const previousPaths = [
 ];
 
 // React Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Next Hooks
 import { useRouter } from "next/navigation";
@@ -78,13 +78,12 @@ export default function Book() {
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
-  const { work, setInstances } = useBf();
+  const { work, setWork, setInstances } = useBf();
 
   const router = useRouter();
 
   function postWork(work) {
     setProgress(true);
-    
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
@@ -94,7 +93,7 @@ export default function Book() {
             ...prevState,
             instanceOf: response.data.id,
           }));
-          console.log(response.data)
+          console.log(response.data);
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
@@ -106,6 +105,17 @@ export default function Book() {
         console.log("ERROOO!!", error);
       });
   }
+
+  useEffect(() => {
+    api.get("http://localhost:8000/items/next_id")
+    .then((response) => {
+      setWork((prevState) => ({
+        ...prevState,
+        work_id: response.data.id,
+      }));
+      
+    })
+  }, [])
 
   return (
     <Container maxWidth="xl">

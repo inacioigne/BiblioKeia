@@ -5,7 +5,7 @@ import pysolr
 
 def UpdateSubject(subject, work_uri): 
 
-    solr = pysolr.Solr('http://localhost:8983/solr/thesaurus/', timeout=10)
+    
 
     store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/thesaurus/update')
     query_endpoint = 'http://localhost:3030/thesaurus/query'
@@ -22,6 +22,7 @@ def UpdateSubject(subject, work_uri):
 
     subjectID = subject.uri.split("/")[-1]
 
+    solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10)
     doc = {
         "id": subjectID,
         "subjectOf": {"add": [work_uri]}

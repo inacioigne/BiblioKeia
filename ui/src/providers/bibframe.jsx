@@ -4,7 +4,7 @@ export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
   const [work, setWork] = useState({
-    //work_id: "",
+    work_id: "",
     contentType: "",
     mainTitle: "",
     subtitle: "",
@@ -20,6 +20,7 @@ export const BfProvider = ({ children }) => {
   });
 
   const [instance, setInstances] = useState({
+    instance_id: null,
     instanceOf: null,
     type: "Print",
     mainTitle: "",

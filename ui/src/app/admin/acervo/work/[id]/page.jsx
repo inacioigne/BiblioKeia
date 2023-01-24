@@ -12,6 +12,7 @@ import {
   Typography,
   Button,
   Divider,
+  List,
 } from "@mui/material/";
 import {
   ImportContacts,
@@ -85,28 +86,38 @@ export default function Work({ params }) {
               <Typography variant="h6" gutterBottom>
                 Autor
               </Typography>
-              <Typography variant="subtitle1" gutterBottom>
+              <Button variant="outlined" startIcon={<Person3 />}>
                 {work?.contribution}
-              </Typography>
+              </Button>
             </Box>
             <Box>
               <Typography variant="h6" gutterBottom>
                 Assuntos
               </Typography>
-              {work.subjects?.map((subject) => (
-                <Typography variant="subtitle1" gutterBottom>
-                  {subject}
-                </Typography>
-              ))}
+              <List>
+                {work?.subjects?.map((subject, index) => (
+                  <Button
+                    variant="outlined"
+                    key={index}
+                    onClick={() => console.log(subject.uri)}
+                    size={"small"}
+                    sx={{ textTransform: "none" }}
+                  >
+                    {/* <Typography variant="subtitle1"  >
+                  {subject.label}
+                </Typography> */}
+                    {subject.label}
+                  </Button>
+                ))}
+              </List>
             </Box>
           </Grid>
         )}
         <Grid item xs={6}>
-        <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             Instâncias
           </Typography>
           <Divider />
-
         </Grid>
       </Grid>
     </Container>

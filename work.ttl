@@ -4,27 +4,28 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/bibframe/work/bk-7> a bf:Text,
+<https://bibliokeia.com/bibframe/work/bk-12> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-22"^^xsd:date ;
+            bf:creationDate "2023-01-23"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-22T18:19:40.872286"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-23T13:05:45.623855"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-7" ] ;
+                    rdf:value "bk-12" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "" ;
-            bf:itemPortion "" ] ;
+            bf:classificationPortion "548.2" ;
+            bf:itemPortion "A587s" ] ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            rdfs:label "Bradbury, Ray, 1920-2012" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n79139258> ;
-            bf:role <> ] ;
-    bf:language <http://id.loc.gov/vocabulary/languages/> ;
+            rdfs:label "Hemingway, Ernest, 1899-1961" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n78078534> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh99001562> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Literature" ;
-            bf:mainTitle "Literature" ] .
+            rdfs:label "Green hills of Africa" ;
+            bf:mainTitle "Green hills of Africa" ] .
 

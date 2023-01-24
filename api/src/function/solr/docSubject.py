@@ -1,7 +1,7 @@
 import pysolr 
 
 #SOLR
-solr = pysolr.Solr('http://localhost:8983/solr/thesaurus/', timeout=10)
+solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
 
 def DocSubject(request):

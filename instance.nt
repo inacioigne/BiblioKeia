@@ -3,31 +3,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/bibframe/instance/bk-8> a bf:Instance,
+<https://bibliokeia.com/bibframe/instance/bk-13> a bf:Instance,
         bf:Print ;
-    rdfs:label "Literature" ;
+    rdfs:label "Green hills of Africa" ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bf:creationDate "2023-01-22"^^xsd:date ;
+            bf:creationDate "2023-01-23"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-22T18:23:26.254156"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-23T13:15:10.783973"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-7" ] ;
+                    rdf:value "bk-12" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:editionStatement "" ;
     bf:extent [ a bf:Extent ;
             rdfs:label "" ] ;
-    bf:instanceOf <https://bibliokeia.com/bibframe/work/bk-7> ;
+    bf:instanceOf <https://bibliokeia.com/bibframe/work/bk-12> ;
     bf:provisionActivity [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "" ] ;
-            bf:date "" ;
+                    rdfs:label "Scribner" ] ;
+            bf:date "1935" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "" ] ] ;
+                    rdfs:label "New York, " ] ] ;
     bf:responsibilityStatement "" ;
     bf:title [ a bf:Title ;
-            rdfs:label "Literature" ;
-            bf:mainTitle "Literature" ] .
+            rdfs:label "Green hills of Africa" ;
+            bf:mainTitle "Green hills of Africa" ] .
 
