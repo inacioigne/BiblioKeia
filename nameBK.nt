@@ -1,5 +1,6 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,21 +9,21 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n79138841> a madsrdf:Authority,
+<https://bibliokeia.com/authorities/names/n79138841> a madsrdf:Authority,
         madsrdf:CorporateName ;
     bflc:marcKey "1102 $aNew York Botanical Garden" ;
     identifiers:lccn "n 79138841" ;
     identifiers:local "(OCoLC)oca00370115" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2018-09-29T07:36:47"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/wau> ;
-            ri:recordStatus "revised"^^xsd:string ],
-        [ a ri:RecordInfo ;
-            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
             ri:recordChangeDate "1980-02-13T00:00:00"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ] ;
+            ri:recordStatus "new" ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2018-09-29T07:36:47"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/wau> ;
+            ri:recordStatus "revised" ] ;
     madsrdf:authoritativeLabel "New York Botanical Garden" ;
     madsrdf:elementList ( [ a madsrdf:NameElement ;
                 madsrdf:elementValue "New York Botanical Garden" ] ) ;
@@ -30,12 +31,12 @@
         <http://www.wikidata.org/entity/Q636275> ;
     madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79138841#skos:Concept> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "CIP t.p. (New York Botanical Garden)" ;
-            madsrdf:citationSource "Proctor, G.R. Ferns of Puerto Rico and the Virgin Islands, c1989:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
             madsrdf:citationNote "(The New York Botanical Garden (NYBG) is a National Historic Landmark located in the Bronx, New York City; established on 28 April 1891; museum of living plant collections arranged in gardens and landscapes; comprehensive education programs in horticulture and plant science; research programs of the International Plant Science Center; 40°51ʹ49ʺN 73°52ʹ42ʺW)" ;
             madsrdf:citationSource "Wikipedia, September 28, 2018" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "CIP t.p. (New York Botanical Garden)" ;
+            madsrdf:citationSource "Proctor, G.R. Ferns of Puerto Rico and the Virgin Islands, c1989:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
             madsrdf:citationNote "CIP t.p. (New York Botanical Garden; NYBG)" ;
@@ -70,7 +71,7 @@
 
 <http://id.loc.gov/rwo/agents/n79138841> a bf:Organization,
         madsrdf:RWO,
-        <http://xmlns.com/foaf/0.1/Organization> ;
+        foaf:Organization ;
     rdfs:label "New York Botanical Garden" ;
     madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
     madsrdf:associatedLocale [ a madsrdf:Geographic ;

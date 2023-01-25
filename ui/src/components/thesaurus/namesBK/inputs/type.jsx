@@ -14,7 +14,7 @@ export default function Type({ type, setType }) {
       >
         <MenuItem value={"PersonalName"}>Nome Pessoal</MenuItem>
         <MenuItem value={"family"}>Family</MenuItem>
-        <MenuItem value={"CorporateName"}>Corporate</MenuItem>
+        <MenuItem value={"CorporateName"}>Entidade</MenuItem>
         <MenuItem value={"jurisdiction"}>Jurisdiction</MenuItem>
         <MenuItem value={"conference"}>Conference</MenuItem>
         <MenuItem value={"NameTitle"}>Name Title</MenuItem>

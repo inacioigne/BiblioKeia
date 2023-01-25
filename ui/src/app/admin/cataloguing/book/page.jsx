@@ -31,6 +31,7 @@ import Contribution from "src/components/bibframe/work/contribution";
 import Subject from "src/components/bibframe/work/subject";
 import Language from "src/components/bibframe/work/language";
 import Classification from "src/components/bibframe/work/classification";
+import Serie from "src/components/bibframe/work/serie";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
@@ -72,6 +73,7 @@ const metadados = [
   { label: "Assunto", icon: SubjectIcon },
   { label: "Idioma", icon: LanguageIcon },
   { label: "Classificação", icon: Class },
+  { label: "Série", icon: Class },
 ];
 
 export default function Book() {
@@ -171,6 +173,8 @@ export default function Book() {
             </Box>
             {visible === 4 && <Language />}
             {visible === 5 && <Classification />}
+            {visible === 6 && <Serie />}
+        
           </Paper>
         </Grid>
         <Grid item xs={12}>

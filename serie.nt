@@ -1,0 +1,137 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/hubs/3035b85d-c7b5-649a-aa12-05ce677f9f11> a bf:Hub,
+        bf:Series,
+        bf:Work ;
+    bflc:aap "Memoirs of the New York Botanical Garden" ;
+    bflc:aap-normalized "memoirsofthenewyorkbotanicalgarden" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2015-08-25T07:37:17"^^xsd:dateTime ;
+            bf:creationDate "1983-05-06"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/local>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier [ a bf:Agent ;
+                    bf:code "DNLM" ] ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v2.0.0" ;
+                    bf:generationDate "2022-08-25T17:04:45.779827-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "3035b85d-c7b5-649a-aa12-05ce677f9f11" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QK1" ;
+            bf:itemPortion ".N525" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79138841> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasExpression <http://id.loc.gov/resources/works/11158840> ;
+    bf:identifiedBy [ a bf:Issn ;
+            rdf:value "0077-8931" ],
+        [ a bf:Local ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/ocolc> ;
+            rdf:value "oca00015449" ],
+        [ a bf:Lccn ;
+            rdf:value "n  42016337 " ] ;
+    bf:note [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/datasource> ;
+            rdfs:label "CIP t.p. (Memoirs of the New York Botanical Garden ; v. 50) galley (NYBG memoirs)" ;
+            bf:preferredCitation "Renner, S. Systematic studies in the Melastomataceae, 1989" ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/descsource> ;
+            rdfs:label "Created from auth." ],
+        [ a bf:Note,
+                <http://id.loc.gov/vocabulary/mnotetype/datasource> ;
+            bf:preferredCitation "Carpenter, S. E. Monograph of Crocicreas (Ascomycetes, Helotiales, Leotiaceae) c1981" ] ;
+    bf:seriesOf <http://id.loc.gov/resources/works/1022394>,
+        <http://id.loc.gov/resources/works/1052927>,
+        <http://id.loc.gov/resources/works/11373505>,
+        <http://id.loc.gov/resources/works/13158002>,
+        <http://id.loc.gov/resources/works/13525131>,
+        <http://id.loc.gov/resources/works/13541905>,
+        <http://id.loc.gov/resources/works/13549064>,
+        <http://id.loc.gov/resources/works/13854622>,
+        <http://id.loc.gov/resources/works/14072930>,
+        <http://id.loc.gov/resources/works/14141848>,
+        <http://id.loc.gov/resources/works/1492387>,
+        <http://id.loc.gov/resources/works/15172473>,
+        <http://id.loc.gov/resources/works/15214521>,
+        <http://id.loc.gov/resources/works/15214529>,
+        <http://id.loc.gov/resources/works/1523953>,
+        <http://id.loc.gov/resources/works/1523954>,
+        <http://id.loc.gov/resources/works/15375636>,
+        <http://id.loc.gov/resources/works/1579705>,
+        <http://id.loc.gov/resources/works/1599488>,
+        <http://id.loc.gov/resources/works/1655729>,
+        <http://id.loc.gov/resources/works/16769561>,
+        <http://id.loc.gov/resources/works/16781484>,
+        <http://id.loc.gov/resources/works/17336552>,
+        <http://id.loc.gov/resources/works/17400010>,
+        <http://id.loc.gov/resources/works/17417684>,
+        <http://id.loc.gov/resources/works/17662898>,
+        <http://id.loc.gov/resources/works/1776011>,
+        <http://id.loc.gov/resources/works/1791426>,
+        <http://id.loc.gov/resources/works/18334774>,
+        <http://id.loc.gov/resources/works/1933818>,
+        <http://id.loc.gov/resources/works/2031821>,
+        <http://id.loc.gov/resources/works/2049519>,
+        <http://id.loc.gov/resources/works/2421427>,
+        <http://id.loc.gov/resources/works/2436069>,
+        <http://id.loc.gov/resources/works/2468996>,
+        <http://id.loc.gov/resources/works/2629532>,
+        <http://id.loc.gov/resources/works/2629638>,
+        <http://id.loc.gov/resources/works/2789004>,
+        <http://id.loc.gov/resources/works/2879395>,
+        <http://id.loc.gov/resources/works/2944930>,
+        <http://id.loc.gov/resources/works/3138153>,
+        <http://id.loc.gov/resources/works/3260576>,
+        <http://id.loc.gov/resources/works/3383901>,
+        <http://id.loc.gov/resources/works/3399506>,
+        <http://id.loc.gov/resources/works/3399510>,
+        <http://id.loc.gov/resources/works/3525433>,
+        <http://id.loc.gov/resources/works/3871100>,
+        <http://id.loc.gov/resources/works/3977433>,
+        <http://id.loc.gov/resources/works/3980273>,
+        <http://id.loc.gov/resources/works/4155549>,
+        <http://id.loc.gov/resources/works/4171967>,
+        <http://id.loc.gov/resources/works/4298052>,
+        <http://id.loc.gov/resources/works/4344007>,
+        <http://id.loc.gov/resources/works/4344049>,
+        <http://id.loc.gov/resources/works/4359949>,
+        <http://id.loc.gov/resources/works/4379110>,
+        <http://id.loc.gov/resources/works/4395543>,
+        <http://id.loc.gov/resources/works/443146>,
+        <http://id.loc.gov/resources/works/4469252>,
+        <http://id.loc.gov/resources/works/4544835>,
+        <http://id.loc.gov/resources/works/4651004>,
+        <http://id.loc.gov/resources/works/4696369>,
+        <http://id.loc.gov/resources/works/4731825>,
+        <http://id.loc.gov/resources/works/4785753>,
+        <http://id.loc.gov/resources/works/4785763>,
+        <http://id.loc.gov/resources/works/4803198>,
+        <http://id.loc.gov/resources/works/4817012>,
+        <http://id.loc.gov/resources/works/4886535>,
+        <http://id.loc.gov/resources/works/4926516>,
+        <http://id.loc.gov/resources/works/4945268>,
+        <http://id.loc.gov/resources/works/4946498>,
+        <http://id.loc.gov/resources/works/4994255>,
+        <http://id.loc.gov/resources/works/533729>,
+        <http://id.loc.gov/resources/works/549326>,
+        <http://id.loc.gov/resources/works/599433>,
+        <http://id.loc.gov/resources/works/6791348>,
+        <http://id.loc.gov/resources/works/709025>,
+        <http://id.loc.gov/resources/works/740480>,
+        <http://id.loc.gov/resources/works/897604> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "NYBG memoirs" ],
+        [ a bf:Title ;
+            bf:mainTitle "Memoirs of the New York Botanical Garden" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+

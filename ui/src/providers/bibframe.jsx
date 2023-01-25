@@ -31,11 +31,25 @@ export const BfProvider = ({ children }) => {
     place: "",
     date: "",
     responsibility: "",
-    series: "",
+    series: null,
   });
 
+  const [serie, setSerie] = useState({
+    mainTitle: "",
+    subtitle: "",
+    contributionAgent: "",
+    contributionRole: "",
+    contributionRoleUri: "",
+    contributionID: "",
+    cdd: "",
+    cutter: "",
+    issn: ""
+    
+  }
+  )
+
   return (
-    <BfContext.Provider value={{ work, setWork, instance, setInstances }}>
+    <BfContext.Provider value={{ work, setWork, instance, setInstances, serie, setSerie}}>
       {children}
     </BfContext.Provider>
   );

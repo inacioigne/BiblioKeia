@@ -1,7 +1,21 @@
 def DocName(g, token):
 
-    doc = {"id": token,
-    "type": "PersonalName"}
+    doc = {"id": token}
+
+    qType = """
+PREFIX lc: <http://id.loc.gov/authorities/names/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT  ?o
+WHERE { lc:"""+token+" rdf:type ?o}"
+
+    r = g.query(qType)
+
+    for i in r:
+        tipo = i.o.split("#")[1]
+        if tipo != "Authority":
+            doc['type'] = tipo
+
+
 
     qName = """
 PREFIX lc: <http://id.loc.gov/authorities/names/>
