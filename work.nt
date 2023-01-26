@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/resources/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/work/bk-2> a ns1:Text,
+        ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ns1:creationDate "2023-01-26"^^xsd:date ;
+            ns1:generationProcess [ a ns1:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    ns1:generationDate "2023-01-26T13:29:31.416065"^^xsd:dateTime ] ;
+            ns1:identifiedBy [ a ns1:Local ;
+                    ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-2" ] ;
+            ns1:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    ns1:classification [ a ns1:ClassificationDdc ;
+            ns1:classificationPortion "548.2" ;
+            ns1:itemPortion "A587s" ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            rdfs:label "Prance, Ghillean T., 1937-" ;
+            ns1:agent <https://bibliokeia.com/authorities/names/n79041937> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:hasSeries <https://bibliokeia.com/resources/hub/bk-1> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:subject _:n1e3711b23d0f43e382026a0f9b5d4ac5b6,
+        <https://bibliokeia.com/authorities/subjects/sh86004822> ;
+    ns1:title [ a ns1:Title ;
+            rdfs:label "That glorious forest" ;
+            ns1:mainTitle "That glorious forest" ] ;
+    ns2:hasInstance <https://bibliokeia.com/resources/instance/bk-3> .
+
+_:n1e3711b23d0f43e382026a0f9b5d4ac5b6 a ns1:Topic ;
+    ns1:subject _:n1e3711b23d0f43e382026a0f9b5d4ac5b6 .
+

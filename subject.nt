@@ -1,0 +1,390 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/subjects/sh85072732> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2023-01-26T15:47:55.506848"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Teoria do conhecimento"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Teoria do conhecimento"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85100849>,
+        <http://id.loc.gov/authorities/subjects/sh85108459> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4070914-0>,
+        <http://d-nb.info/gnd/4112520-4>,
+        <http://d-nb.info/gnd/4117665-0>,
+        <http://data.bnf.fr/ark:/12148/cb119339073>,
+        <http://data.bnf.fr/ark:/12148/cb119339193>,
+        <http://id.worldcat.org/fast/988194>,
+        <http://www.wikidata.org/entity/Q9471>,
+        <http://www.yso.fi/onto/yso/p15994> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85072732> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00002298>,
+        <http://id.loc.gov/authorities/subjects/sh2003005284>,
+        <http://id.loc.gov/authorities/subjects/sh2006003446>,
+        <http://id.loc.gov/authorities/subjects/sh2008002937>,
+        <http://id.loc.gov/authorities/subjects/sh2010012461>,
+        <http://id.loc.gov/authorities/subjects/sh2010015469>,
+        <http://id.loc.gov/authorities/subjects/sh2011005653>,
+        <http://id.loc.gov/authorities/subjects/sh85000019>,
+        <http://id.loc.gov/authorities/subjects/sh85004775>,
+        <http://id.loc.gov/authorities/subjects/sh85009064>,
+        <http://id.loc.gov/authorities/subjects/sh85013004>,
+        <http://id.loc.gov/authorities/subjects/sh85020993>,
+        <http://id.loc.gov/authorities/subjects/sh85022164>,
+        <http://id.loc.gov/authorities/subjects/sh85028999>,
+        <http://id.loc.gov/authorities/subjects/sh85029309>,
+        <http://id.loc.gov/authorities/subjects/sh85029423>,
+        <http://id.loc.gov/authorities/subjects/sh85029623>,
+        <http://id.loc.gov/authorities/subjects/sh85034130>,
+        <http://id.loc.gov/authorities/subjects/sh85038061>,
+        <http://id.loc.gov/authorities/subjects/sh85041430>,
+        <http://id.loc.gov/authorities/subjects/sh85042851>,
+        <http://id.loc.gov/authorities/subjects/sh85044451>,
+        <http://id.loc.gov/authorities/subjects/sh85044723>,
+        <http://id.loc.gov/authorities/subjects/sh85046433>,
+        <http://id.loc.gov/authorities/subjects/sh85046453>,
+        <http://id.loc.gov/authorities/subjects/sh85048070>,
+        <http://id.loc.gov/authorities/subjects/sh85050813>,
+        <http://id.loc.gov/authorities/subjects/sh85054723>,
+        <http://id.loc.gov/authorities/subjects/sh85064120>,
+        <http://id.loc.gov/authorities/subjects/sh85064155>,
+        <http://id.loc.gov/authorities/subjects/sh85064214>,
+        <http://id.loc.gov/authorities/subjects/sh85064394>,
+        <http://id.loc.gov/authorities/subjects/sh85065993>,
+        <http://id.loc.gov/authorities/subjects/sh85066548>,
+        <http://id.loc.gov/authorities/subjects/sh85067132>,
+        <http://id.loc.gov/authorities/subjects/sh85067232>,
+        <http://id.loc.gov/authorities/subjects/sh85070913>,
+        <http://id.loc.gov/authorities/subjects/sh85071149>,
+        <http://id.loc.gov/authorities/subjects/sh85072731>,
+        <http://id.loc.gov/authorities/subjects/sh85086411>,
+        <http://id.loc.gov/authorities/subjects/sh85093660>,
+        <http://id.loc.gov/authorities/subjects/sh85093747>,
+        <http://id.loc.gov/authorities/subjects/sh85094699>,
+        <http://id.loc.gov/authorities/subjects/sh85096028>,
+        <http://id.loc.gov/authorities/subjects/sh85097744>,
+        <http://id.loc.gov/authorities/subjects/sh85100119>,
+        <http://id.loc.gov/authorities/subjects/sh85100679>,
+        <http://id.loc.gov/authorities/subjects/sh85106059>,
+        <http://id.loc.gov/authorities/subjects/sh85111520>,
+        <http://id.loc.gov/authorities/subjects/sh85112496>,
+        <http://id.loc.gov/authorities/subjects/sh85113058>,
+        <http://id.loc.gov/authorities/subjects/sh85118695>,
+        <http://id.loc.gov/authorities/subjects/sh85119766>,
+        <http://id.loc.gov/authorities/subjects/sh85120041>,
+        <http://id.loc.gov/authorities/subjects/sh85120047>,
+        <http://id.loc.gov/authorities/subjects/sh85124666>,
+        <http://id.loc.gov/authorities/subjects/sh85129469>,
+        <http://id.loc.gov/authorities/subjects/sh85129642>,
+        <http://id.loc.gov/authorities/subjects/sh85139690>,
+        <http://id.loc.gov/authorities/subjects/sh85141083>,
+        <http://id.loc.gov/authorities/subjects/sh85141939>,
+        <http://id.loc.gov/authorities/subjects/sh88000079>,
+        <http://id.loc.gov/authorities/subjects/sh88001233>,
+        <http://id.loc.gov/authorities/subjects/sh89004801>,
+        <http://id.loc.gov/authorities/subjects/sh94002873>,
+        <http://id.loc.gov/authorities/subjects/sh95007788>,
+        <http://id.loc.gov/authorities/subjects/sh96011227>,
+        <http://id.loc.gov/authorities/subjects/sh98001235>,
+        <http://id.loc.gov/authorities/subjects/sh98004398> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Teoria do conhecimento"@pt ] ) ;
+            madsrdf:variantLabel "Teoria do conhecimento"@pt ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Epistemologia"@pt ] ) ;
+            madsrdf:variantLabel "Epistemologia"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh00002298> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "epistemologia da virtude"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2003005284> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Fundacionalismo (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2006003446> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Internalismo (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2008002937> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "problema de Gettier"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2010012461> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Subdeterminação (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2010015469> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Testemunho (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh2011005653> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "metaética"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85000019> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "A priori"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85004775> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Analogia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85009064> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ataraxia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85013004> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Crença e dúvida"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85020993> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Categorias (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85022164> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Certeza"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85028999> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Senso comum"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029309> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Comparação (Psicologia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029423> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Compreensão (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85029623> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Conceitos"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85034130> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Critério (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85038061> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ding an sich"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85041430> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ejeção (Psicologia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85042851> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Empirismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85044451> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "epistêmica"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85044723> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Erro"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85046433> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Experiência"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85046453> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Explicação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85048070> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ficções, Teoria da"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85050813> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Formalização (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85054723> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "psicologia da gestalt"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85064120> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ideia (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85064155> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ideologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85064214> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ignorância (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85064394> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Ilusão (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85065993> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Infalibilidade (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85066548> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Investigação (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85067132> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Integração (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85067232> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Abordagem interdisciplinar do conhecimento"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85070913> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Julgamento"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85071149> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Justificação (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85072731> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Conhecimento, Sociologia da"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85086411> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Modalidade (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85093660> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Objetividade"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85093747> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Observação (Psicologia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85094699> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Onisciência (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85096028> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Outras mentes (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85097744> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Paradigma (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85100119> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Personalidade (Teoria do conhecimento)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85100679> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "fenomenalismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85100849> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Filosofia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85106059> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Pragmatismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85108459> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Psicologia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85111520> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Racionalismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85112496> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Relatividade"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85113058> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Semelhança (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85118695> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "cientificismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85119766> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Autoconhecimento, Teoria da"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85120041> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Dados de detecção"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85120047> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Sentidos e sensação"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85124666> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Solipsismo"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85129469> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Subjetividade"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85129642> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Motivo suficiente"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85139690> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Uniformidade da natureza"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85141083> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Universais (Filosofia)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85141939> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "valores"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88000079> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Perícia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh88001233> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Conhecimento, Teoria de, em crianças"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh89004801> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "epistemologia genética"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh94002873> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "epistemologia social"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh95007788> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Autoevidência (Lógica)"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh96011227> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "memética"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98001235> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "qualia"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh98004398> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Conhecimento tácito"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+

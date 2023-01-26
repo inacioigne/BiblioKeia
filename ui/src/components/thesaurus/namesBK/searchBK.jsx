@@ -150,6 +150,7 @@ export default function SearchBK({
           setNameDetails={setNameDetails}
           setImgBK={setImg}
           name={name}
+          autorityType={type}
         />
       )}
     </>

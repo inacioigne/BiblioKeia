@@ -6,7 +6,7 @@ from src.function.bibframe.Item.sublocation import Sublocation
 
 def BfItem(item, itemOf): 
     item_uri = URIRef(
-        f"https://bibliokeia.com/bibframe/item/{item.item}")
+        f"https://bibliokeia.com/resources/item/{item.item}")
     g = Graph(identifier=item_uri)
 
     #Prefix
@@ -28,7 +28,7 @@ def BfItem(item, itemOf):
     g.add((item_uri, BF.heldBy, heldBy)) 
 
     #itemOf
-    itemOf_uri = URIRef(f"http://bibliokeia.com/bibframe/instance/{itemOf}")
+    itemOf_uri = URIRef(f"http://bibliokeia.com/bibframe/resources/{itemOf}")
     g.add((item_uri, BF.itemOf, itemOf_uri)) 
 
     g = ShelfMarkDdc(g, item, item_uri, BF)

@@ -17,8 +17,9 @@ async function QueryWork(id, setWork) {
     madsrdf: namespace("http://www.loc.gov/mads/rdf/v1#"),
   };
 
-  let uri = `https://bibliokeia.com/bibframe/work/${id}`;
+  let uri = `https://bibliokeia.com/resources/work/${id}`;
   let graph = `http://localhost:3030/acervo?graph=${uri}`;
+  console.log("blk", graph)
 
   let dataset = await fetch(graph).then((response) => response.dataset());
 
@@ -44,8 +45,6 @@ async function QueryWork(id, setWork) {
   let typeLabel = type.value.split("/")[5]
 
 
-  console.log(typeLabel)
-
   // Contribution
   const contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
 
@@ -53,6 +52,7 @@ async function QueryWork(id, setWork) {
   const s = work.out(ns.bf.subject).map((subject) => {
     return subject.term.value;
   });
+  console.log("SB", s)
 
 
 
@@ -77,12 +77,12 @@ async function QueryWork(id, setWork) {
   }
 
 
-  const promises = s.map((uri) => Subject(uri))
-  let response = await Promise.all(promises).then((response) => {
-    return response;
-  });
+  // const promises = s.map((uri) => Subject(uri))
+  // let response = await Promise.all(promises).then((response) => {
+  //   return response;
+  // });
 
-  wk["subjects"] = response;
+  // wk["subjects"] = response;
 
 
   setWork(wk);

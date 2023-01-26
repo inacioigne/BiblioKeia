@@ -100,7 +100,7 @@ export default function Item({ open, setOpen, instance_id }) {
         setMessage("Itens salvo com sucesso!");
         setOpenSnack(true);
 
-        router.push(`/admin/acervo/work/${work.work_id}`);
+        router.push(`/admin/acervo/work/${instance.instanceOf}`); 
         
       } else {
         setTypeAlert("error");

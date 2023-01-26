@@ -39,9 +39,7 @@ export default function SearchSerie({
 }) {
   const [openCreate, setOpenCreate] = useState(false);
 
-  // useEffect(() => {
-  //   SolrSerie(value, setResponse);
-  // }, []);
+
 
   const handleClose = () => {
     setOpen(false);
@@ -85,7 +83,6 @@ export default function SearchSerie({
             <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
               <TextField
                 fullWidth
-                //onClick={handleClick}
                 onChange={(e) => {
                   setValue(e.target.value);
                   SolrSerie(e.target.value, setResponse);

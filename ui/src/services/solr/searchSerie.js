@@ -11,7 +11,7 @@ export const SolrSerie = (value = "", setResponse) => {
       },
     })
     .then((response) => {
-      console.log(response)
+      //console.log(response)
       setResponse(response.data.response.docs);
     });
 };

@@ -7,24 +7,30 @@
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-            bf:creationDate "2023-01-25"^^xsd:date ;
+            bf:creationDate "2023-01-26"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-25T17:31:38.970987"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-26T17:12:50.310026"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-7" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "" ] ;
+            bf:classificationPortion "001" ;
+            bf:itemPortion "P831c" ] ;
     bf:contribution [ a bf:Contribution ;
             rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
             bf:agent <https://bibliokeia.com/authorities/names/n80032184> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/act> ] ;
-    bf:hasSeries <https://bibliokeia.com/resources/hub/bk-2> ;
-    bf:language <http://id.loc.gov/vocabulary/languages/> ;
-    bf:subject [ ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:hasSeries <https://bibliokeia.com/resources/hub/bk-5> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject _:Ne4a016c5c2b2444daf19b57712782ffb,
+        <https://bibliokeia.com/authorities/subjects/sh85072732>,
+        <https://bibliokeia.com/authorities/subjects/sh85084414> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Memoirs of the New York Botanical Garden" ;
-            bf:mainTitle "Memoirs of the New York Botanical Garden" ] .
+            rdfs:label "Conjecturas e refutações" ;
+            bf:mainTitle "Conjecturas e refutações" ] .
+
+_:Ne4a016c5c2b2444daf19b57712782ffb a bf:Topic ;
+    bf:subject _:Ne4a016c5c2b2444daf19b57712782ffb .
 

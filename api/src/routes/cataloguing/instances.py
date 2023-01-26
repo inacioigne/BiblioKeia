@@ -23,11 +23,9 @@ async def create_instance(request: Instance_Schema):
     g.serialize("instance.nt") 
     nt = g.serialize(format='nt')
 
-    
-
     G = """
     INSERT DATA {
-        GRAPH <https://bibliokeia.com/bibframe/instance/"""+instance_id+""">
+        GRAPH <https://bibliokeia.com/resources/instance/"""+instance_id+""">
         { \n"""+nt+"} }" 
     
     response = fuseki_update.run_sparql(G)

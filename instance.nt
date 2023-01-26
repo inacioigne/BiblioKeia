@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/instance/bk-3> a bf:Instance,
+        bf:Print ;
+    rdfs:label "That glorious forest: Exploring the plants and their indigenous uses in Amazonia" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2023-01-26"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-01-26T13:39:55.409000"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-2" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:editionStatement "" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "214 páginas" ] ;
+    bf:instanceOf <https://bibliokeia.com/bibframe/work/bk-2> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "New York Botanical Garden Press" ] ;
+            bf:date "2014" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Bronx, New York, USA" ] ] ;
+    bf:responsibilityStatement "Ghillean T. Prance" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "That glorious forest: Exploring the plants and their indigenous uses in Amazonia" ;
+            bf:mainTitle "That glorious forest" ;
+            bf:subtitle "Exploring the plants and their indigenous uses in Amazonia" ] .
+

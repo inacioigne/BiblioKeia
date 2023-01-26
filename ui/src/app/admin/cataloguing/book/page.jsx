@@ -86,7 +86,7 @@ export default function Book() {
 
   function postWork(work) {
     setProgress(true);
-    console.log(work)
+    //console.log(work)
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
@@ -101,24 +101,13 @@ export default function Book() {
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
 
-          //router.push("/admin/cataloguing/book/instance");
+          router.push("/admin/cataloguing/book/instance");
         }
       })
       .catch(function (error) {
         console.log("ERROOO!!", error);
       });
   }
-
-  useEffect(() => {
-    api.get("http://localhost:8000/items/next_id")
-    .then((response) => {
-      setWork((prevState) => ({
-        ...prevState,
-        work_id: response.data.id,
-      }));
-      
-    })
-  }, [])
 
   return (
     <Container maxWidth="xl">

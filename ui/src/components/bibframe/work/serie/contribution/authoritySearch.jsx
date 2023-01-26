@@ -5,7 +5,7 @@ import { Search } from "@mui/icons-material";
 // BiblioKeia Services
 import SearchAuthority from "src/services/solr/searchAuthority";
 
-export default function AuthoritySearch({ name, setName, type, setResponse }) {
+export default function AuthoritySearch({ name, setName, value, setValue, type, setResponse }) {
   const inputPros = {
     endAdornment: (
       <InputAdornment position="end">
@@ -17,15 +17,19 @@ export default function AuthoritySearch({ name, setName, type, setResponse }) {
   };
 
   return (
-    <TextField
+    <>
+       <TextField
       onChange={(e) => {
-        setName(e.target.value);
+        setValue(e.target.value);
         SearchAuthority(e.target.value, type, setResponse);
+        //console.log(e.target.value)
       }}
-      value={name}
+      value={value}
       fullWidth
       label="Autor"
       InputProps={inputPros}
     />
+    </>
+ 
   );
 }

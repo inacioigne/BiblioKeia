@@ -69,7 +69,7 @@ export default function ImagemBK() {
         sx={{
           mt: "1rem",
           width: 200,
-          height: 220,
+          height: 230,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

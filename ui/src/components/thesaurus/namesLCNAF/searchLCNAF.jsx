@@ -36,8 +36,9 @@ export default function SearchLCNAF({
   name,
   setNameDetails,
   setImgBK,
+  autorityType
 }) {
-  const [type, setType] = useState("PersonalName");
+  const [type, setType] = useState(autorityType);
   const [nameLCNAF, setNameLCNAF] = useState(name);
   const [hits, setHits] = useState([]);
   const [LCNAFDetails, setLCNAFDetails] = useState(null);
@@ -51,6 +52,7 @@ export default function SearchLCNAF({
         },
       })
       .then((response) => {
+        //console.log(response)
         setHits(response.data.hits);
       })
       .catch(function (error) {

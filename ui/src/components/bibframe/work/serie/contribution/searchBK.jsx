@@ -40,6 +40,7 @@ export default function SearchBK({
   setResponse,
   disabled,
   setDisabled,
+  value
 }) {
   const [nameDetails, setNameDetails] = useState(null);
   const [img, setImg] = useState(null);
@@ -81,6 +82,8 @@ export default function SearchBK({
                 <AuthoritySearch
                   name={name}
                   setName={setName}
+                  setValue={setValue}
+                  value={value}
                   type={type}
                   setResponse={setResponse}
                 />
@@ -153,7 +156,8 @@ export default function SearchBK({
           setOpen={setOpenLCNAF}
           setNameDetails={setNameDetails}
           setImgBK={setImg}
-          name={name}
+          name={value}
+          autorityType={"CorporateName"}
         />
       )}
     </>

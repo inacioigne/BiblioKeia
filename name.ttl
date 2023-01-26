@@ -5,123 +5,51 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n80032184> a madsrdf:Authority,
-        madsrdf:PersonalName ;
-    bflc:marcKey "1001 $aPopper, Karl R.$q(Karl Raimund),$d1902-1994" ;
-    identifiers:lccn "n 80032184" ;
-    identifiers:local "(OCoLC)oca00414387" ;
+<http://id.loc.gov/authorities/names/n82023179> a madsrdf:Authority,
+        madsrdf:CorporateName ;
+    bflc:marcKey "11020$aUniversidade de Brasília.$bEditora" ;
+    identifiers:lccn "n 82023179" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2013-05-14T14:34:14"^^xsd:dateTime ;
+            ri:recordChangeDate "1991-11-06T09:58:48"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ri:recordStatus "revised"^^xsd:string ],
         [ a ri:RecordInfo ;
-            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "1980-05-22T00:00:00"^^xsd:dateTime ;
+            ri:recordChangeDate "1982-02-24T00:00:00"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ri:recordStatus "new"^^xsd:string ] ;
-    madsrdf:authoritativeLabel "Popper, Karl R. (Karl Raimund), 1902-1994" ;
-    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                madsrdf:elementValue "Popper, Karl R." ] [ a madsrdf:FullNameElement ;
-                madsrdf:elementValue "(Karl Raimund)," ] [ a madsrdf:DateNameElement ;
-                madsrdf:elementValue "1902-1994" ] ) ;
-    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1717209>,
-        <http://id.worldcat.org/fast/51773>,
-        <http://vocab.getty.edu/ulan/500256162>,
-        <http://www.wikidata.org/entity/Q81244> ;
-    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++80032184#skos:Concept> ;
+    madsrdf:authoritativeLabel "Universidade de Brasília. Editora" ;
+    madsrdf:elementList ( [ a madsrdf:NameElement ;
+                madsrdf:elementValue "Universidade de Brasília." ] [ a madsrdf:NameElement ;
+                madsrdf:elementValue "Editora" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://www.wikidata.org/entity/Q10270389> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++82023179#skos:Concept> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Kʻal Pʻopʻŏ)" ;
-            madsrdf:citationSource "Yi, H.G. Yŏksajuŭi wa yŏksa chʻŏrhak, 1986:" ;
+            madsrdf:citationNote "t.p. (Editora Universidade de Brasília)" ;
+            madsrdf:citationSource "Coleção Temas brasileiros (used in hdg.) Vieira, D.G. O protestantismo, a maçonaria e a questão religiosa no Brasil, c1980:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "v. 1, t.p. (Kāru R. Popā [in kana]) v. 1, verso t.p. (Karl R. Popper [in rom.])" ;
-            madsrdf:citationSource "Hateshinaki tankyū, 2004:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Karl Popper)" ;
-            madsrdf:citationSource "Artigas, M. Karl Popper, búsqueda sin termino, 1979:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Kʻa-erh Pa-po) cover (Karl Popper)" ;
-            madsrdf:citationSource "Chu, H.Y. Kʻa-erh Pa-po, 1991:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationSource "Marinov, M. Logikata na naukata i metodologii︠a︡ta na Karl Popŭr, 1992." ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (K. Poppera)" ;
-            madsrdf:citationSource "Sokuler, Z. A. Problema obosnovanii︠a︡ znanii︠a︡, 1988:" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationSource "NYtimes, 9/18/94, sect a, p. 22 (Sir Karl Popper, d. Sept. 17, 1994)" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
-            madsrdf:citationSource "His Logik der ... 1935." ;
+            madsrdf:citationNote "t.p. (Editora UnB)" ;
+            madsrdf:citationSource "Sant'Ana, M. de A. Desempenho industrial e tecnoloógico ... c1990:" ;
             madsrdf:citationStatus "found" ] ;
-    madsrdf:hasVariant [ a madsrdf:PersonalName,
+    madsrdf:hasVariant [ a madsrdf:CorporateName,
                 madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Pʻopʻŏ, Kʻa," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Pʻopʻŏ, Kʻa, 1902-1994" ],
-        [ a madsrdf:PersonalName,
+            madsrdf:elementList ( [ a madsrdf:NameElement ;
+                        madsrdf:elementValue "Editora Universidade de Brasília" ] ) ;
+            madsrdf:variantLabel "Editora Universidade de Brasília" ],
+        [ a madsrdf:CorporateName,
                 madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Popŭr, Karl," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Popŭr, Karl, 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Pabo, Kaer," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Pabo, Kaer, 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Popper, Karl," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Popper, Karl, 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Poper, Karl," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Poper, Karl, 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Popper, Karl Raimund," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Popper, Karl Raimund, 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Popper, K. R." ] [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "(Karl Raimund)," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Popper, K. R. (Karl Raimund), 1902-1994" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Popā, Kāru R.," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1902-1994" ] ) ;
-            madsrdf:variantLabel "Popā, Kāru R., 1902-1994" ] ;
-    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80032184> ;
+            madsrdf:elementList ( [ a madsrdf:NameElement ;
+                        madsrdf:elementValue "Editora UnB" ] ) ;
+            madsrdf:variantLabel "Editora UnB" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n82023179> ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
         <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
     madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
 
-<http://id.loc.gov/rwo/agents/n80032184> a bf:Person,
+<http://id.loc.gov/rwo/agents/n82023179> a bf:Organization,
         madsrdf:RWO,
-        <http://xmlns.com/foaf/0.1/Person> ;
-    rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
-    madsrdf:birthDate [ a skos:Concept ;
-            rdfs:label "1902" ] ;
-    madsrdf:deathDate [ a skos:Concept ;
-            rdfs:label "1994" ] .
+        <http://xmlns.com/foaf/0.1/Organization> ;
+    rdfs:label "Universidade de Brasília. Editora" .
 

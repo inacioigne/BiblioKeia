@@ -2,10 +2,11 @@ from pydantic import BaseModel
 from typing import Optional
 
 class Instance_Schema(BaseModel):
-    instanceOf: str
+    instanceOf: str 
     type: str
     mainTitle: str
     subtitle: Optional[str]
+    variantTitle: Optional[str]
     extent: str
     publication: str
     edition: Optional[str]

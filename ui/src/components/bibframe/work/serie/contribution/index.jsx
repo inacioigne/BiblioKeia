@@ -40,7 +40,8 @@ export default function Contribution() {
   const handleSearch = (e) => {
     e.preventDefault();
     setOpen(true);
-    SearchAuthority(name, type, setResponse);
+    ///console.log("okkk", value, type)
+    SearchAuthority(value, type, setResponse);
   };
 
   const inputPros = {
@@ -133,12 +134,6 @@ export default function Contribution() {
                   label="Autor"
                   InputProps={inputPros}
                 />
-                {/* <Authority
-                value={name}
-                setValue={setName}
-                setDisabled={setDisabled}
-                disabled={disabled}
-              /> */}
               </Grid>
             </Grid>
           </form>
@@ -152,6 +147,7 @@ export default function Contribution() {
         type={type}
         setType={setType}
         setValue={setValue}
+        value={value}
         name={name}
         setName={setName}
         response={response}

@@ -80,8 +80,7 @@ const metadados = [
   { label: "Responsabilidades", icon: PeopleAlt },
   { label: "Extensão", icon: FileCopy },
   { label: "Edição", icon: Filter1 },
-  { label: "Publicação", icon: LocationCity },
-  { label: "Série", icon: Class },
+  { label: "Publicação", icon: LocationCity }
 ];
 
 export default function Instance() {

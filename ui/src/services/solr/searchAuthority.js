@@ -11,6 +11,7 @@ const SearchAuthority = (name = "*", type = "*", setResponse) => {
         },
       })
       .then((response) => {
+        //console.log(response)
         setResponse(response.data.response.docs);
       });
   };

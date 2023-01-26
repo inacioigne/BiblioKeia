@@ -16,7 +16,7 @@ async def create_items(request: Items_Schema):
         nt = g.serialize(format='nt')
         G = """
     INSERT DATA {
-        GRAPH <https://bibliokeia.com/bibframe/item/"""+item.item+""">
+        GRAPH <https://bibliokeia.com/resources/item/"""+item.item+""">
         { \n"""+nt+"} }" 
 
         response = fuseki_update.run_sparql(G)

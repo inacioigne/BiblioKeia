@@ -48,7 +48,7 @@ export default function CreateSerie({ open, setOpen, setSerieDetails }) {
       .then((response) => {
         setProgress(false);
         if (response.status == 201) {
-          console.log(response.data);
+          //console.log(response.data);
           SolrSerieByID(response.data.id, setSerieDetails )
           setTypeAlert("success");
           setMessage("Registro salvo com sucesso!");

@@ -14,7 +14,8 @@ fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
 async def create_work(request: Work_Schema):
     response = GenerateId()
     work_id = response['id']
-    print("WORK: ", work_id)
+
+    #print("WORK: ", work_id)
     g = BfWork(request, work_id )
     g.serialize("work.ttl") 
     nt = g.serialize(format='nt')
