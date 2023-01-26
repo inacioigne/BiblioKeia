@@ -61,7 +61,7 @@ import {
   
     const handleOnChange = (str) => {
       let data = str.charAt(0).toUpperCase() + str.slice(1);
-      console.log(data)
+
       getRelators(data);
     };
     const handleClick = (e) => {

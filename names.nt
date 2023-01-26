@@ -15,14 +15,14 @@
     identifiers:local "(OCoLC)oca00370115" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "1980-02-13T00:00:00"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ],
-        [ a ri:RecordInfo ;
-            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
             ri:recordChangeDate "2018-09-29T07:36:47"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/wau> ;
-            ri:recordStatus "revised"^^xsd:string ] ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1980-02-13T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "New York Botanical Garden" ;
     madsrdf:elementList ( [ a madsrdf:NameElement ;
                 madsrdf:elementValue "New York Botanical Garden" ] ) ;
@@ -34,12 +34,12 @@
             madsrdf:citationSource "Proctor, G.R. Ferns of Puerto Rico and the Virgin Islands, c1989:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(The New York Botanical Garden (NYBG) is a National Historic Landmark located in the Bronx, New York City; established on 28 April 1891; museum of living plant collections arranged in gardens and landscapes; comprehensive education programs in horticulture and plant science; research programs of the International Plant Science Center; 40°51ʹ49ʺN 73°52ʹ42ʺW)" ;
-            madsrdf:citationSource "Wikipedia, September 28, 2018" ;
-            madsrdf:citationStatus "found" ],
-        [ a madsrdf:Source ;
             madsrdf:citationNote "CIP t.p. (New York Botanical Garden; NYBG)" ;
             madsrdf:citationSource "Floristic inventory of tropical countries, 1988:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(The New York Botanical Garden (NYBG) is a National Historic Landmark located in the Bronx, New York City; established on 28 April 1891; museum of living plant collections arranged in gardens and landscapes; comprehensive education programs in horticulture and plant science; research programs of the International Plant Science Center; 40°51ʹ49ʺN 73°52ʹ42ʺW)" ;
+            madsrdf:citationSource "Wikipedia, September 28, 2018" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:CorporateName,
                 madsrdf:Variant ;

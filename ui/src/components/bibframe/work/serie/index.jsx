@@ -22,14 +22,38 @@ import { useBf } from "src/providers/bibframe";
 // BiblioKeia Components
 import SearchSerie from "./searchSerie";
 
+// BiblioKeia Services
+import {SolrSerie} from "src/services/solr/searchSerie";
+
 export default function Serie() {
   const [openMenu, setOpenMenu] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("");
   const [series, setSeries] = useState(null);
   const [open, setOpen] = useState(false);
+  const [serieDetails, setSerieDetails] = useState(null);
+  const [response, setResponse] = useState([]);
 
   const { work, setWork } = useBf();
+
+  const handleChoose = () => {
+    setDisabled(true);
+    setOpen(false);
+    setValue("");
+    let [serie] = serieDetails.mainTitle
+    setWork((prevState) => ({
+      ...prevState,
+      serie: serie,
+      serieID: serieDetails.id,
+    }));
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    SolrSerie(value, setResponse);
+    setOpen(true);
+
+  };
 
   const inputPros = {
     disabled: disabled,
@@ -52,7 +76,7 @@ export default function Serie() {
               backgroundColor: blue[200],
             }}
           >
-            {work.contentType}
+            {work.serie}
           </Box>
           <Close
             sx={{
@@ -68,10 +92,8 @@ export default function Serie() {
               setDisabled(false);
               setWork((prevState) => ({
                 ...prevState,
-                contentType: "",
+                serie: "",
               }));
-              let rect = e.currentTarget.getBoundingClientRect();
-              setOpenMenu(rect.top + rect.height + 19);
             }}
           />
         </Typography>
@@ -85,7 +107,6 @@ export default function Serie() {
           component="button"
           onClick={() => {
             setOpen(true);
-            console.log("ok");
           }}
         >
           <Search />
@@ -100,53 +121,30 @@ export default function Serie() {
         Série
       </Typography>
       <Box sx={{ px: "2rem", pb: "2rem" }}>
-        <TextField
-          fullWidth
-          //onClick={handleClick}
-          onChange={(e) => {
-            setValue(e.target.value);
-            //GetType(e.target.value, setContentTypes);
-          }}
-          value={value}
-          label="Série"
-          InputProps={inputPros}
-        />
-        <SearchSerie
-          open={open}
-          setOpen={setOpen}
-          setValue={setValue}
-          value={value}
-        />
-        {/* <Paper
-          sx={
-            openMenu
-              ? {
-                  display: "block",
-                  position: "absolute",
-                  zIndex: "100",
-                  top: openMenu,
-                }
-              : { display: "none", position: "absolute", zIndex: "100" }
-          }
-        >
-          <MenuList>
-            {series &&
-              series.map((serie, index) => (
-                <MenuItem
-                  key={index}
-                  onClick={handleCloseMenu}
-                  sx={{
-                    borderRadius: "6px",
-                    mx: "0.5rem",
-                    pl: "0.5rem",
-                    ":hover": { backgroundColor: blue[100] },
-                  }}
-                >
-                  {serie}
-                </MenuItem>
-              ))}
-          </MenuList>
-        </Paper> */}
+        <form onSubmit={handleSearch}>
+          <TextField
+            fullWidth
+            //onClick={handleClick}
+            onChange={(e) => {
+              setValue(e.target.value);
+              //GetType(e.target.value, setContentTypes);
+            }}
+            value={value}
+            label="Série"
+            InputProps={inputPros}
+          />
+          <SearchSerie
+            open={open}
+            setOpen={setOpen}
+            setValue={setValue}
+            value={value}
+            handleChoose={handleChoose}
+            serieDetails={serieDetails}
+            setSerieDetails={setSerieDetails}
+            response={response}
+            setResponse={setResponse}
+          />
+        </form>
       </Box>
     </Box>
   );

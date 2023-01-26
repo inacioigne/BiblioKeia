@@ -5,9 +5,6 @@ solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 
 def DocWork(request, work_id):
 
-    # doc = request.dict()
-    # doc['id'] = work_id
-
     doc = {
         "id": work_id,
         "bibrame": "work",
@@ -18,7 +15,8 @@ def DocWork(request, work_id):
         "contribution": request.contributionAgent,
         "language": request.language,
         "cdd": request.cdd,
-        "cutter": request.cutter
+        "cutter": request.cutter,
+        "hasSeries": request.serie
         }
 
     subjects = list()

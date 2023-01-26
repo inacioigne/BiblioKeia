@@ -16,14 +16,32 @@ import {
 } from "@mui/material/";
 import ClearIcon from "@mui/icons-material/Clear";
 import { Search, Close } from "@mui/icons-material/";
-import { useState } from "react";
+
+// React Hooks
+import { useState, useEffect } from "react";
 
 // BiblioKeia Components
 import CreateSerie from "./createSerie";
+import CardSerie from "src/components/cards/cardSerie";
+// BiblioKeia Services
+import {SolrSerie} from "src/services/solr/searchSerie";
 
-export default function SearchSerie({ open, setOpen, value, setValue }) {
-  const [response, setResponse] = useState(null);
-  const [openCreate, setOpenCreate] = useState(false)
+export default function SearchSerie({
+  open,
+  setOpen,
+  value,
+  setValue,
+  handleChoose,
+  serieDetails,
+  setSerieDetails,
+  response,
+  setResponse,
+}) {
+  const [openCreate, setOpenCreate] = useState(false);
+
+  // useEffect(() => {
+  //   SolrSerie(value, setResponse);
+  // }, []);
 
   const handleClose = () => {
     setOpen(false);
@@ -38,7 +56,7 @@ export default function SearchSerie({ open, setOpen, value, setValue }) {
           component="button"
           onClick={() => {
             setOpen(true);
-            console.log("ok");
+            //console.log("ok");
           }}
         >
           <Search />
@@ -49,62 +67,92 @@ export default function SearchSerie({ open, setOpen, value, setValue }) {
 
   return (
     <>
-    <Dialog fullWidth maxWidth={"md"} open={open} onClose={handleClose}>
-      <DialogTitle
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <Typography variant="div">Séries</Typography>
-        <IconButton color="primary" component="label" onClick={handleClose}>
-          <ClearIcon />
-        </IconButton>
-      </DialogTitle>
-      <Divider />
-      <DialogContent>
-        <Grid container>
-          <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
-            <TextField
-              fullWidth
-              //onClick={handleClick}
-              onChange={(e) => {
-                setValue(e.target.value);
-                //GetType(e.target.value, setContentTypes);
-              }}
-              value={value}
-              label="Série"
-              InputProps={inputPros}
-            />
-            {response ? (
-              <Box></Box>
-            ) : (
-              <Box pt={"0.5rem"}>
-                <Typography
-                  variant="subtitle2"
-                  gutterBottom
-                  sx={{
-                    mt: "0.5rem",
-                  }}
-                >
-                  <i>Nenhum registro encontrado::</i>
-                </Typography>
-                <Button
-                  onClick={() => {
-                    setOpenCreate(true)
-                  }}
-                >
-                  Criar registros
-                </Button>
-              </Box>
-            )}
+      <Dialog fullWidth maxWidth={"xl"} open={open} onClose={handleClose}>
+        <DialogTitle
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Typography variant="div">Séries</Typography>
+          <IconButton color="primary" component="label" onClick={handleClose}>
+            <ClearIcon />
+          </IconButton>
+        </DialogTitle>
+        <Divider />
+        <DialogContent>
+          <Grid container spacing={2}>
+            <Grid item xs={5} sx={{ borderRight: "solid 1px", pr: "1rem" }}>
+              <TextField
+                fullWidth
+                //onClick={handleClick}
+                onChange={(e) => {
+                  setValue(e.target.value);
+                  SolrSerie(e.target.value, setResponse);
+                }}
+                value={value}
+                label="Série"
+                InputProps={inputPros}
+              />
+              {response.length > 0 ? (
+                <Box>
+                  <Typography
+                    variant="subtitle2"
+                    gutterBottom
+                    sx={{
+                      mt: "0.5rem",
+                    }}
+                  >
+                    <i>Resultados:</i>
+                  </Typography>
+                  <List>
+                    {response.map((serie, index) => (
+                      <ListItem key={index} disablePadding>
+                        <Button
+                          onClick={() => {
+                            console.log(serie);
+                            setSerieDetails(serie);
+                          }}
+                        >
+                          {serie.mainTitle}
+                        </Button>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              ) : (
+                <Box pt={"0.5rem"}>
+                  <Typography
+                    variant="subtitle2"
+                    gutterBottom
+                    sx={{
+                      mt: "0.5rem",
+                    }}
+                  >
+                    <i>Nenhum registro encontrado::</i>
+                  </Typography>
+                  <Button
+                    onClick={() => {
+                      setOpenCreate(true);
+                    }}
+                  >
+                    Criar registros
+                  </Button>
+                </Box>
+              )}
+            </Grid>
+            <Grid item xs={7}>
+              {serieDetails && (
+                <CardSerie
+                  serieDetails={serieDetails}
+                  handleChoose={handleChoose}
+                />
+              )}
+            </Grid>
           </Grid>
-        </Grid>
-      </DialogContent>
-      
-    </Dialog>
-    <CreateSerie open={openCreate} setOpen={setOpenCreate} />
+        </DialogContent>
+      </Dialog>
+      <CreateSerie open={openCreate} setOpen={setOpenCreate} setSerieDetails={setSerieDetails} />
     </>
-    
   );
 }

@@ -17,6 +17,8 @@ export const BfProvider = ({ children }) => {
     languageCode: "",
     cdd: "",
     cutter: "",
+    serie: "",
+    serieID: ""
   });
 
   const [instance, setInstances] = useState({
@@ -35,8 +37,10 @@ export const BfProvider = ({ children }) => {
   });
 
   const [serie, setSerie] = useState({
+    type: "Series",
     mainTitle: "",
     subtitle: "",
+    variantTitle: "",
     contributionAgent: "",
     contributionRole: "",
     contributionRoleUri: "",

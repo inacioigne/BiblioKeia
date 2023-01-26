@@ -45,7 +45,7 @@
             bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
             bf:classificationPortion "QK5" ;
             bf:itemPortion ".P73 2014" ] ;
-    bf:content [ a bf:Content ;
+    bf:content [ a bf:Content ; 
             rdfs:label "text" ;
             bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ],
         <http://id.loc.gov/vocabulary/contentTypes/txt> ;

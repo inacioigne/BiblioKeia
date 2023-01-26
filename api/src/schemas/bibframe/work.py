@@ -9,6 +9,7 @@ class Work_Schema(BaseModel):
     contentType: str
     mainTitle: str
     subtitle: Optional[str]
+    variantTitle: Optional[str]
     contributionAgent: str
     contributionID: str
     contributionRole: str
@@ -18,6 +19,8 @@ class Work_Schema(BaseModel):
     languageCode: str 
     cdd: str
     cutter: str
+    serie: Optional[str]
+    serieID: Optional[str]
 
     
 test = {

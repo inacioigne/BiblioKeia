@@ -21,6 +21,13 @@ export default function Title() {
     }));
   };
 
+  const handleVariantTitle = (e) => {
+    setSerie((prevState) => ({
+      ...prevState,
+      variantTitle: e.target.value,
+    }));
+  };
+
   return (
     <Box>
       <Typography variant="subtitle2" sx={{ p: "1rem" }}>
@@ -46,6 +53,12 @@ export default function Title() {
           value={serie.subtitle}
           fullWidth
           label="Subtítulo"
+        />
+        <TextField
+          onChange={handleVariantTitle}
+          value={serie.variantTitle}
+          fullWidth
+          label="Título alternativo"
         />
       </Box>
     </Box>

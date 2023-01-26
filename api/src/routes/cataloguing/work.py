@@ -21,7 +21,7 @@ async def create_work(request: Work_Schema):
 
     G = """
     INSERT DATA {
-        GRAPH <https://bibliokeia.com/bibframe/work/"""+work_id+""">
+        GRAPH <https://bibliokeia.com/resources/work/"""+work_id+""">
         { \n"""+nt+"} }" 
 
     response = fuseki_update.run_sparql(G)

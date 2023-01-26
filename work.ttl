@@ -1,0 +1,30 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/work/bk-7> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2023-01-25"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-01-25T17:31:38.970987"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-7" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "" ] ;
+    bf:contribution [ a bf:Contribution ;
+            rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n80032184> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/act> ] ;
+    bf:hasSeries <https://bibliokeia.com/resources/hub/bk-2> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/> ;
+    bf:subject [ ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Memoirs of the New York Botanical Garden" ;
+            bf:mainTitle "Memoirs of the New York Botanical Garden" ] .
+

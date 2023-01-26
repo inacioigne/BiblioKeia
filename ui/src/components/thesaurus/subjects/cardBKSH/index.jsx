@@ -6,18 +6,12 @@ import {
   Divider,
   Grid,
   Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
   Card,
   CardContent,
   Tooltip,
-  ListItemText,
-  Pagination,
 } from "@mui/material/";
 import TranslateIcon from "@mui/icons-material/Translate";
-import { Search, Clear, FileDownloadDone } from "@mui/icons-material/";
+import { FileDownloadDone } from "@mui/icons-material/";
 
 // React Hooks
 import { useState, useEffect } from "react";

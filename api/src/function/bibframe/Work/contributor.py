@@ -23,19 +23,18 @@ def UpdateContribution(request, work_uri):
      }
     solr.add([doc], commit=True)
 
-def Contributor(g, request, work_uri, BF, BFLC):
+def Contributor(g, request, uri, BF, BFLC):
 
     contribution = BNode()
-    uri = f"https://bibliokeia.com/authorities/names/{request.contributionID}"
-    agent = URIRef(uri)
+    agent = URIRef(f"https://bibliokeia.com/authorities/names/{request.contributionID}")
     role = URIRef(request.contributionRoleUri)
-    g.add((work_uri, BF.contribution, contribution))
-    g.add((contribution, RDF.type, BFLC.PrimaryContribution))
+    g.add((uri, BF.contribution, contribution))
+    #g.add((contribution, RDF.type, BFLC.PrimaryContribution))
     g.add((contribution, RDF.type, BF.Contribution))
     g.add((contribution, BF.agent, agent))
     g.add((contribution, RDFS.label, Literal(request.contributionAgent)))
     g.add((contribution, BF.role, role))
 
-    UpdateContribution(request, work_uri)
+    UpdateContribution(request, uri)
 
     return g

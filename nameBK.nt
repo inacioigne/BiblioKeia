@@ -11,6 +11,7 @@
 
 <https://bibliokeia.com/authorities/names/n79138841> a madsrdf:Authority,
         madsrdf:CorporateName ;
+    bflc:contributorTo <https://bibliokeia.com/resources/hub/bk-1> ;
     bflc:marcKey "1102 $aNew York Botanical Garden" ;
     identifiers:lccn "n 79138841" ;
     identifiers:local "(OCoLC)oca00370115" ;
@@ -31,16 +32,16 @@
         <http://www.wikidata.org/entity/Q636275> ;
     madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79138841#skos:Concept> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "(The New York Botanical Garden (NYBG) is a National Historic Landmark located in the Bronx, New York City; established on 28 April 1891; museum of living plant collections arranged in gardens and landscapes; comprehensive education programs in horticulture and plant science; research programs of the International Plant Science Center; 40°51ʹ49ʺN 73°52ʹ42ʺW)" ;
-            madsrdf:citationSource "Wikipedia, September 28, 2018" ;
+            madsrdf:citationNote "CIP t.p. (New York Botanical Garden; NYBG)" ;
+            madsrdf:citationSource "Floristic inventory of tropical countries, 1988:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
             madsrdf:citationNote "CIP t.p. (New York Botanical Garden)" ;
             madsrdf:citationSource "Proctor, G.R. Ferns of Puerto Rico and the Virgin Islands, c1989:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "CIP t.p. (New York Botanical Garden; NYBG)" ;
-            madsrdf:citationSource "Floristic inventory of tropical countries, 1988:" ;
+            madsrdf:citationNote "(The New York Botanical Garden (NYBG) is a National Historic Landmark located in the Bronx, New York City; established on 28 April 1891; museum of living plant collections arranged in gardens and landscapes; comprehensive education programs in horticulture and plant science; research programs of the International Plant Science Center; 40°51ʹ49ʺN 73°52ʹ42ʺW)" ;
+            madsrdf:citationSource "Wikipedia, September 28, 2018" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:CorporateName,
                 madsrdf:Variant ;
@@ -50,14 +51,14 @@
         [ a madsrdf:CorporateName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:NameElement ;
-                        madsrdf:elementValue "NYBG" ] ) ;
-            madsrdf:variantLabel "NYBG" ],
+                        madsrdf:elementValue "New York (N.Y.)." ] [ a madsrdf:NameElement ;
+                        madsrdf:elementValue "Botanical Garden" ] ) ;
+            madsrdf:variantLabel "New York (N.Y.). Botanical Garden" ],
         [ a madsrdf:CorporateName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:NameElement ;
-                        madsrdf:elementValue "New York (N.Y.)." ] [ a madsrdf:NameElement ;
-                        madsrdf:elementValue "Botanical Garden" ] ) ;
-            madsrdf:variantLabel "New York (N.Y.). Botanical Garden" ] ;
+                        madsrdf:elementValue "NYBG" ] ) ;
+            madsrdf:variantLabel "NYBG" ] ;
     madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79138841> ;
     madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
         <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
