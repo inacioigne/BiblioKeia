@@ -54,7 +54,6 @@ export default function SearchSerie({
           component="button"
           onClick={() => {
             setOpen(true);
-            //console.log("ok");
           }}
         >
           <Search />
@@ -107,7 +106,6 @@ export default function SearchSerie({
                       <ListItem key={index} disablePadding>
                         <Button
                           onClick={() => {
-                            console.log(serie);
                             setSerieDetails(serie);
                           }}
                         >

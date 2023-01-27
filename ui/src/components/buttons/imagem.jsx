@@ -68,7 +68,7 @@ export default function ImagemBK() {
       <Paper
         sx={{
           mt: "1rem",
-          width: 200,
+          width: 180,
           height: 230,
           display: "flex",
           justifyContent: "center",
@@ -78,7 +78,7 @@ export default function ImagemBK() {
         }}
       >
         {image ? (
-          <Image src={createObjectURL} width={200} height={220} alt="cover" />
+          <Image src={createObjectURL} width={180} height={230} alt="cover" />
         ) : (
           <Box>
             <IconButton

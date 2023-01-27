@@ -5,14 +5,11 @@ import {
   Paper,
   Grid,
   Box,
-  MenuList,
-  MenuItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
   Button,
   Divider,
   List,
+  ListItem,
 } from "@mui/material/";
 import {
   ImportContacts,
@@ -30,6 +27,10 @@ import { useEffect, useState } from "react";
 
 // BiblioKeia Services
 import QueryWork from "src/services/acervo/work";
+
+// Nextjs Hooks
+import Image from "next/image";
+import Link from "next/link";
 
 const previousPaths = [
   {
@@ -90,26 +91,30 @@ export default function Work({ params }) {
                 {work?.contribution}
               </Button>
             </Box>
-            <Box>
+            <Box sx={{ mt: 2 }}>
               <Typography variant="h6" gutterBottom>
                 Assuntos
               </Typography>
               <List>
                 {work?.subjects?.map((subject, index) => (
-                  <Button
-                    variant="outlined"
-                    key={index}
-                    onClick={() => console.log(subject.uri)}
-                    size={"small"}
-                    sx={{ textTransform: "none" }}
-                  >
-                    {/* <Typography variant="subtitle1"  >
-                  {subject.label}
-                </Typography> */}
-                    {subject.label}
-                  </Button>
+                  <ListItem key={index}>
+                    <Button
+                      variant="outlined"
+                      onClick={() => console.log(subject.uri)}
+                      size={"small"}
+                      sx={{ textTransform: "none" }}
+                    >
+                      {subject.label}
+                    </Button>
+                  </ListItem>
                 ))}
               </List>
+            </Box>
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="h6" gutterBottom>
+                Série
+              </Typography>
+              <Button>{work.serie?.title}</Button>
             </Box>
           </Grid>
         )}
@@ -118,6 +123,27 @@ export default function Work({ params }) {
             Instâncias
           </Typography>
           <Divider />
+          <Link href={`/admin/acervo/instance/${work?.instanceID}`}>
+          <Paper
+            sx={{
+              mt: "1rem",
+              width: 180,
+              height: 230,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "10px",
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              src={`/cover/${work?.instanceID}.jpeg`}
+              width={180}
+              height={230}
+              alt="cover"
+            />
+          </Paper>
+          </Link>
         </Grid>
       </Grid>
     </Container>

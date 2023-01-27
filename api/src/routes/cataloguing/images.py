@@ -15,7 +15,8 @@ async def upload_imagem(
     #     raise HTTPException(status_code=404, detail="Item not found")
 
     format = file.content_type.split('/')[1]
-    path_img = f'./api/storage/cover/{item_id}.{format}'
+    #path_img = f'./api/storage/cover/{item_id}.{format}'
+    path_img = f'./ui/public/cover/{item_id}.{format}'
 
     with open(path_img, 'wb') as buffer:
         shutil.copyfileobj(file.file, buffer)
@@ -27,7 +28,7 @@ async def upload_imagem(
     return {"filename": path_img }
 
 @router.get("/{item_id}/imagem")
-async def get_imagem(item_id: int):
+async def get_imagem(item_id: str):
     #item = session.query(Item).filter_by(id = item_id).first()
    
     # if item is None:
@@ -36,4 +37,4 @@ async def get_imagem(item_id: int):
     #     #raise HTTPException(status_code=404, detail="Item without imagem")
     #     return FileResponse("./storage/items/default.png")
 
-    return FileResponse(f"./api/storage/capas/{item_id}.jpg")
+    return FileResponse(f"./api/storage/cover/{item_id}.jpeg")

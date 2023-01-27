@@ -4,7 +4,7 @@ from pyfuseki import FusekiUpdate
 def UpdateWork(work_id, instance_id):
     fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
 
-    up = """PREFIX bf: <http://id.loc.gov/ontologies/resources/>
+    up = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
         INSERT DATA
             { GRAPH  <https://bibliokeia.com/resources/work/"""+work_id+"""> { 
                     <https://bibliokeia.com/resources/work/"""+work_id+""">  

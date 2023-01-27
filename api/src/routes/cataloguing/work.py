@@ -17,7 +17,7 @@ async def create_work(request: Work_Schema):
 
     #print("WORK: ", work_id)
     g = BfWork(request, work_id )
-    g.serialize("work.ttl") 
+    g.serialize("work1.ttl") 
     nt = g.serialize(format='nt')
 
     G = """

@@ -55,14 +55,14 @@ def BfWork(request, work_id):
     g = Contributor(g, request, work_uri, BF, BFLC)
 
     #Subject
-    BNsubject = BNode()
-    g.add((work_uri, BF.subject, BNsubject))
+    # BNsubject = BNode()
+    # g.add((work_uri, BF.subject, BNsubject))
     for subject in request.subjects:
-        g.add((BNsubject, BF.subject, BNsubject))
+       # g.add((BNsubject, BF.subject, BNsubject))
 
         
-        g.add((work_uri, BF.subject, BNsubject))
-        g.add((BNsubject, RDF.type, BF.Topic))
+        # g.add((work_uri, BF.subject, BNsubject))
+        # g.add((BNsubject, RDF.type, BF.Topic))
         
         uriSubject = URIRef(subject.uri)
         #g = Subject(g, subject, work_uri, BF, MADSRDF)

@@ -3,31 +3,28 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/resources/instance/bk-26> a bf:Instance,
-        bf:Print ;
-    rdfs:label "That glorious forest" ;
+<https://bibliokeia.com/resources/work/bk-25> a bf:Text,
+        bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
             bf:creationDate "2023-01-27"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-01-27T17:54:43.412887"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-01-27T17:52:44.306449"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-25" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
-    bf:editionStatement "" ;
-    bf:extent [ a bf:Extent ;
-            rdfs:label "245 páginas" ] ;
-    bf:instanceOf <https://bibliokeia.com/bibframe/work/bk-25> ;
-    bf:provisionActivity [ a bf:ProvisionActivity,
-                bf:Publication ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Bronx" ] ;
-            bf:date "2014" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "New York" ] ] ;
-    bf:responsibilityStatement "" ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "580.5" ;
+            bf:itemPortion "M533" ] ;
+    bf:contribution [ a bf:Contribution ;
+            rdfs:label "Prance, Ghillean T., 1937-" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n79041937> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:hasSeries <https://bibliokeia.com/resources/hub/bk-1> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh86004822> ;
     bf:title [ a bf:Title ;
             rdfs:label "That glorious forest" ;
             bf:mainTitle "That glorious forest" ] .

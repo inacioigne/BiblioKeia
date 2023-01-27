@@ -19,7 +19,6 @@ async function QueryWork(id, setWork) {
 
   let uri = `https://bibliokeia.com/resources/work/${id}`;
   let graph = `http://localhost:3030/acervo?graph=${uri}`;
-  console.log("blk", graph)
 
   let dataset = await fetch(graph).then((response) => response.dataset());
 
@@ -30,40 +29,26 @@ async function QueryWork(id, setWork) {
   const title = work.out(ns.bf.title).out(ns.bf.mainTitle).value;
 
   // Type
-  // const type = work.out(ns.rdf.type)._context[0].term.value;
-  // const typeLabel = type.split("/")[5];
-  const types = work.out(ns.rdf.type)
-  // types.map((type) => {
-  //   const typeLabel = type.value.split("/")[5];
-  //   console.log(typeLabel)
-
-  // })
+  const types = work.out(ns.rdf.type);
 
   const type = types.filter((type) => {
-    return type.value.split("/")[5] != "Work"
-  })
-  let typeLabel = type.value.split("/")[5]
-
+    return type.value.split("/")[5] != "Work";
+  });
+  let typeLabel = type.value.split("/")[5];
 
   // Contribution
   const contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
 
   // Subject
-  const s = work.out(ns.bf.subject).map((subject) => {
+  const urisSubjects = work.out(ns.bf.subject).map((subject) => {
     return subject.term.value;
   });
-  console.log("SB", s)
 
+  // Instance
+  const hasInstance = work.out(ns.bf.hasInstance).value
+  let instanceID = hasInstance.split("/")[5]
+  console.log(hasInstance.split("/")[5])
 
-
-  const wk = {
-    title: title,
-    //typeUri: type,
-    typeLabel: typeLabel,
-    contribution: contribution,
-  };
-
- 
 
   async function Subject(uri) {
     let graphSubjects = `http://localhost:3030/thesaurus?graph=${uri}`;
@@ -77,13 +62,41 @@ async function QueryWork(id, setWork) {
   }
 
 
-  // const promises = s.map((uri) => Subject(uri))
-  // let response = await Promise.all(promises).then((response) => {
-  //   return response;
-  // });
+  const promises = urisSubjects.map((uri) => Subject(uri));
+  let response = await Promise.all(promises).then((response) => {
+    return response;
+  });
 
-  // wk["subjects"] = response;
+  const wk = {
+    title: title,
+    typeLabel: typeLabel,
+    contribution: contribution,
+    subjects: response,
+    serie: null,
+    hasInstance: hasInstance,
+    instanceID: instanceID
+  };
 
+  // Serie
+  async function GetSerie(uri) {
+    let graph = `http://localhost:3030/acervo?graph=${uri}`;
+    dataset = await fetch(graph).then((response) => response.dataset());
+    let tbbt = cf({ dataset });
+    let serie = tbbt.namedNode(uri);
+    let title = serie.out(ns.bf.title).out(ns.bf.mainTitle).value;
+
+    return { title: title, uri: uri };
+  }
+  const hasSeries = work.out(ns.bf.hasSeries);
+
+  if (hasSeries._context.length > 0) {
+    let [serie] = await Promise.all([GetSerie(hasSeries.value)]).then(
+      (response) => {
+        return response;
+      }
+    );
+    wk["serie"] = serie;
+  }
 
   setWork(wk);
 }
