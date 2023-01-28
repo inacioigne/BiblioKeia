@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Extension-Name: org.apache.solr
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Title: org.apache.solr
+Implementation-Version: 9.1.0 aa4f3d98ab19c201e7f3c74cd14c99174148616d -
+  ishan - 2022-11-11 13:00:47
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 9.1.0
+Specification-Title: Apache Solr Search Server: webapp
+X-Compile-Source-JDK: 11
+X-Compile-Target-JDK: 11
+X-Build-JDK: 11.0.15 (Red Hat, Inc. 11.0.15+10)
+X-Build-OS: Linux amd64 5.17.12-100.fc34.x86_64
+

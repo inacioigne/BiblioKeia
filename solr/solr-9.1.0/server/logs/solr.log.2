@@ -1,0 +1,103 @@
+2022-12-25 19:41:35.016 INFO  (main) [] o.e.j.u.log Logging initialized @6345ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-12-25 19:41:35.385 INFO  (main) [] o.e.j.s.Server jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 18.0.1.1+2-6
+2022-12-25 19:41:36.371 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-12-25 19:41:36.386 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.1.0
+2022-12-25 19:41:36.386 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-12-25 19:41:36.386 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0
+2022-12-25 19:41:36.390 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2022-12-25T19:41:36.390524200Z
+2022-12-25 19:41:36.403 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr (source: system property: solr.solr.home)
+2022-12-25 19:41:36.403 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr\solr.xml
+2022-12-25 19:41:36.592 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/C:/Users/inaci/Desktop/BiblioKeia/solr/solr-9.1.0/lib]
+2022-12-25 19:41:38.877 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2022-12-25 19:41:38.886 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-12-25 19:41:57.471 WARN  (main) [] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.373 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2022-12-25 19:41:57.682 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr
+2022-12-25 19:41:57.682 INFO  (main) [] o.a.s.c.CorePropertiesLocator Cores are: [authorities]
+2022-12-25 19:41:57.689 INFO  (coreLoadExecutor-10-thread-1) [] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-12-25 19:41:57.733 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.3.0
+2022-12-25 19:41:57.840 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.s.IndexSchema Schema name=default-config
+2022-12-25 19:41:58.414 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-12-25 19:41:58.414 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.c.CoreContainer Creating SolrCore 'authorities' using configuration from configset C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr\configsets\_default, trusted=true
+2022-12-25 19:41:58.487 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.c.SolrCore Opening new SolrCore at [C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr\authorities], dataDir=[C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr\authorities\data\]
+2022-12-25 19:41:58.897 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3591009c{/solr,file:///C:/Users/inaci/Desktop/BiblioKeia/solr/solr-9.1.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server/solr-webapp/webapp}
+2022-12-25 19:41:58.920 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\logs\2022_12_25.request.log
+2022-12-25 19:41:58.937 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@73db4768{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2022-12-25 19:41:58.937 INFO  (main) [] o.e.j.s.Server Started @30268ms
+2022-12-25 19:42:03.883 INFO  (qtp1234586997-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=155
+2022-12-25 19:42:17.575 WARN  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.h.a.SystemInfoHandler Resolving canonical hostname for local host took 18.437 seconds, possible DNS misconfiguration. Set the 'solr.dns.prevent.reverse.lookup'  sysprop to true on startup to prevent future lookups if DNS can not be fixed.
+2022-12-25 19:42:17.767 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-12-25 19:42:17.767 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-12-25 19:42:17.817 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-12-25 19:42:17.818 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-12-25 19:42:18.029 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\inaci\Desktop\BiblioKeia\solr\solr-9.1.0\server\solr\configsets\_default\conf
+2022-12-25 19:42:18.052 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2022-12-25 19:42:18.063 INFO  (coreLoadExecutor-10-thread-1) [ x:authorities] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-12-25 19:42:18.079 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-12-25 19:42:18.080 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-12-25 19:42:18.094 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2022-12-25 19:45:25.575 INFO  (qtp1234586997-20) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramago*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=466
+2022-12-25 19:47:56.982 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:d*&q.op=AND&fq=type:PersonalName&wt=json} hits=1 status=0 QTime=33
+2022-12-25 19:48:00.219 INFO  (qtp1234586997-19) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:*&q.op=AND&fq=type:PersonalName&wt=json} hits=2 status=0 QTime=9
+2022-12-25 19:48:00.931 INFO  (qtp1234586997-28) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:D*&q.op=AND&fq=type:PersonalName&wt=json} hits=1 status=0 QTime=1
+2022-12-25 19:48:01.739 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Da*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 19:50:53.630 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:d*&q.op=AND&fq=type:PersonalName&wt=json} hits=1 status=0 QTime=2
+2022-12-25 19:51:12.334 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:da*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=1
+2022-12-25 19:51:13.085 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:dav*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 19:51:13.304 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:davi*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=26
+2022-12-25 19:51:13.388 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:david*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 19:51:17.634 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:davi*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 19:51:17.843 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:dav*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=26
+2022-12-25 19:51:18.000 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:da*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=1
+2022-12-25 19:51:18.167 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:d*&q.op=AND&fq=type:PersonalName&wt=json} hits=1 status=0 QTime=1
+2022-12-25 19:51:18.347 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:*&q.op=AND&fq=type:PersonalName&wt=json} hits=2 status=0 QTime=1
+2022-12-25 19:51:20.639 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:W*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 19:53:05.287 INFO  (qtp1234586997-19) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:w*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=1
+2022-12-25 19:56:23.359 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-12-25 19:56:23.405 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.SolrCore Registered new searcher autowarm time: 22 ms
+2022-12-25 19:56:23.431 INFO  (qtp1234586997-25) [ x:authorities] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{add=[n86001949 (1753217166611578880)], commit=} 0 813
+2022-12-25 20:01:07.151 INFO  (qtp1234586997-21) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:D*&q.op=AND&fq=type:PersonalName&wt=json} hits=2 status=0 QTime=64
+2022-12-25 20:04:07.693 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} hits=3 status=0 QTime=155
+2022-12-25 20:04:07.698 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={} status=0 QTime=162
+2022-12-25 20:04:16.689 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-12-25 20:04:16.745 INFO  (searcherExecutor-12-thread-1-processing-authorities) [ x:authorities] o.a.s.c.SolrCore Registered new searcher autowarm time: 3 ms
+2022-12-25 20:04:16.819 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1753217663208783872), commit=} 0 710
+2022-12-25 20:04:40.363 INFO  (qtp1234586997-28) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:A*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=17
+2022-12-25 21:26:03.809 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=328
+2022-12-25 21:26:51.534 INFO  (qtp1234586997-28) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=12
+2022-12-25 21:27:30.644 INFO  (qtp1234586997-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=28
+2022-12-25 21:27:30.913 INFO  (qtp1234586997-21) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=293
+2022-12-25 21:27:31.060 INFO  (qtp1234586997-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=137
+2022-12-25 21:27:34.427 INFO  (qtp1234586997-26) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=10
+2022-12-25 21:31:03.844 INFO  (qtp1234586997-19) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=5
+2022-12-25 21:32:56.861 INFO  (qtp1234586997-25) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=11
+2022-12-25 21:33:16.611 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=3
+2022-12-25 21:36:28.463 INFO  (qtp1234586997-46) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:**&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=6
+2022-12-25 21:41:07.966 INFO  (qtp1234586997-47) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramago*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=20
+2022-12-25 21:41:23.784 INFO  (qtp1234586997-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=13
+2022-12-25 21:41:23.838 INFO  (qtp1234586997-25) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1672003650535&ts=1672003650535} status=503 QTime=65
+2022-12-25 21:41:23.865 INFO  (qtp1234586997-26) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1672004483445} status=0 QTime=95
+2022-12-25 21:41:23.868 INFO  (qtp1234586997-51) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1672004483445} status=0 QTime=98
+2022-12-25 21:41:23.900 INFO  (qtp1234586997-46) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=0
+2022-12-25 21:41:23.952 INFO  (qtp1234586997-45) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1672004483445} status=0 QTime=49
+2022-12-25 21:41:24.314 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1672004483445} status=0 QTime=544
+2022-12-25 21:41:24.325 INFO  (qtp1234586997-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=555
+2022-12-25 21:41:24.473 INFO  (qtp1234586997-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=142
+2022-12-25 21:41:26.479 INFO  (qtp1234586997-22) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=0
+2022-12-25 21:41:26.502 INFO  (qtp1234586997-25) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1672004486156} status=0 QTime=22
+2022-12-25 21:41:26.625 INFO  (qtp1234586997-48) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=146
+2022-12-25 21:41:27.820 INFO  (qtp1234586997-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=0
+2022-12-25 21:41:27.826 INFO  (qtp1234586997-27) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1672004486156} status=0 QTime=0
+2022-12-25 21:41:27.826 INFO  (qtp1234586997-50) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1672004486156} hits=0 status=0 QTime=3
+2022-12-25 21:41:27.950 INFO  (qtp1234586997-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=131
+2022-12-25 21:41:31.852 INFO  (qtp1234586997-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1672003650535} status=0 QTime=0
+2022-12-25 21:41:31.857 INFO  (qtp1234586997-22) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1672004486156} status=0 QTime=0
+2022-12-25 21:41:31.861 INFO  (qtp1234586997-26) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1672004486156} hits=0 status=0 QTime=1
+2022-12-25 21:41:31.995 INFO  (qtp1234586997-43) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1672003650535} status=0 QTime=143
+2022-12-25 21:43:06.009 INFO  (qtp1234586997-43) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramago*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=5
+2022-12-25 21:43:47.501 INFO  (qtp1234586997-26) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramago*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=3
+2022-12-25 21:43:50.198 INFO  (qtp1234586997-25) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramag*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=3
+2022-12-25 21:43:51.432 INFO  (qtp1234586997-50) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Sarama*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=3
+2022-12-25 21:43:51.439 INFO  (qtp1234586997-48) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saram*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=2
+2022-12-25 21:44:29.006 INFO  (qtp1234586997-54) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Sarama*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=3
+2022-12-25 21:44:30.698 INFO  (qtp1234586997-50) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramag*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=1
+2022-12-25 21:44:31.242 INFO  (qtp1234586997-54) [ x:authorities] o.a.s.c.S.Request webapp=/solr path=/select params={q=general_search:Saramago*&q.op=AND&fq=type:PersonalName&wt=json} hits=0 status=0 QTime=1
