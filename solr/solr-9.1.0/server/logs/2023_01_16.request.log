@@ -1,2 +1,0 @@
-127.0.0.1 - - [16/jan./2023:00:01:09 +0000] "GET /solr/authorities/select?q=general_search:*&fq=type:PersonalName&q.op=AND&wt=json HTTP/1.1" 200 888
-127.0.0.1 - - [16/jan./2023:00:03:29 +0000] "GET /solr/authorities/select?q=general_search:*&fq=type:PersonalName&q.op=AND&wt=json HTTP/1.1" 200 889
