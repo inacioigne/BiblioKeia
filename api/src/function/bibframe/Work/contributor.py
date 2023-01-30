@@ -5,7 +5,7 @@ import pysolr
 
 def UpdateContribution(request, work_uri):
 
-    thesaurusUpdate = FusekiUpdate('http://localhost:3030', 'thesaurus') 
+    thesaurusUpdate = FusekiUpdate('http://localhost:3030', 'authorities') 
     
 
     up = """PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>

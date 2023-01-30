@@ -6,7 +6,7 @@ async function ParserBK(uri, setSubjectBK) {
  
   const SubjectDetails = {uri : uri};
 
-  let graph = `http://localhost:3030/thesaurus?graph=${uri}`;
+  let graph = `http://localhost:3030/authorities?graph=${uri}`;
   const dataset = await fetch(graph).then((response) => response.dataset());
 
   const tbbt = cf({ dataset });

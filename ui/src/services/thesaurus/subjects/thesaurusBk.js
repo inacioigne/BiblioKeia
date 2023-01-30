@@ -3,7 +3,7 @@ import SparqlClient from "sparql-http-client";
 export default async function queryThesaurusBK(data, setResponse) {
   setResponse([]);
   const client = new SparqlClient({
-    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+    endpointUrl: "http://localhost:3030/authorities/sparql",
   });
 
   const query = `PREFIX madsrdf:  <http://www.loc.gov/mads/rdf/v1#> 

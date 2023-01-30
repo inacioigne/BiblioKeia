@@ -9,12 +9,10 @@ router = APIRouter()
 
 def GraphExist(token):
     store = SPARQLUpdateStore()
-    query_endpoint = 'http://localhost:3030/thesaurus/query'
-    update_endpoint = 'http://localhost:3030/thesaurus/update'
+    query_endpoint = 'http://localhost:3030/authorities/query'
+    update_endpoint = 'http://localhost:3030/authorities/update'
     store.open((query_endpoint, update_endpoint))
 
-    # store = SPARQLUpdateStore(
-    #     update_endpoint='http://localhost:3030/thesaurus/update')
 
     query = "PREFIX bk: <https://bibliokeia.com/authorities/names/>\n \
                 ASK WHERE { GRAPH bk:" + token +" { ?s ?p ?o } }"
@@ -28,8 +26,7 @@ def GraphExist(token):
 async def create_name(token: str):
 
     response = GraphExist(token)
-    print("GraphExist: ", response)
-
+   
     if response:
         raise HTTPException(status_code=409, detail="Registro ja existe no Thesaurs")
     else:

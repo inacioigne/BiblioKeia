@@ -43,7 +43,7 @@ import Translate from "../translate";
 
 async function GraphExist(token) {
   const client = new SparqlClient({
-    endpointUrl: "http://localhost:3030/thesaurus/sparql",
+    endpointUrl: "http://localhost:3030/authorities/sparql",
   });
 
   const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>

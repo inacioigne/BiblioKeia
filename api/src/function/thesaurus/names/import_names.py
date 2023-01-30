@@ -6,7 +6,7 @@ from src.function.solr.docName import DocName
  
 
 #JENA
-fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
+fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 
 #SOLR
 solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10) 

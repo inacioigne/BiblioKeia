@@ -7,7 +7,7 @@ from pyfuseki import FusekiUpdate
 
 
 router = APIRouter()
-fuseki_update = FusekiUpdate('http://localhost:3030', 'thesaurus')
+fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 
 @router.post("/subject", status_code=201) 
 async def create_subject(request: Subject_Schema):
@@ -62,14 +62,6 @@ async def update(request: Update_Thesarus):
                     WHERE { lc:" + data.metadata + " madsrdf:isMemberOfMADSCollection ?o }"
         
         fuseki_update.run_sparql(q3)
-                    
-
-
-
-    # nt = CreateSubject(request)
-    # G = Make_Graph(nt, request.tokenLSCH)
-
-    #fuseki_update.run_sparql(q)
 
     return {'msg': "registro atualizado com sucesso"}
     

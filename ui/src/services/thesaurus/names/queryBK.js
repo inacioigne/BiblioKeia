@@ -22,7 +22,7 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
   let uri = `https://bibliokeia.com/authorities/names/${token}`;
   let rwo_uri = `http://id.loc.gov/rwo/agents/${token}`;
 
-  let graph = `http://localhost:3030/thesaurus?graph=${uri}`;
+  let graph = `http://localhost:3030/authorities?graph=${uri}`;
   let dataset = await fetch(graph).then((response) => response.dataset());
 
   let tbbt = cf({ dataset });
@@ -51,7 +51,6 @@ async function QueryNamesBK(token, setNameDetails, setImg) {
   }
 
   // identifiesRWO
-
   let rwo = tbbt.namedNode(rwo_uri);
 
   // birth
