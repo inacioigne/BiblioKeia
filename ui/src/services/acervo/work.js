@@ -1,4 +1,3 @@
-import axios from "axios";
 import fetch from "@rdfjs/fetch";
 import cf from "clownface";
 import namespace from "@rdfjs/namespace";
@@ -47,7 +46,7 @@ async function QueryWork(id, setWork) {
   // Instance
   const hasInstance = work.out(ns.bf.hasInstance).value
   let instanceID = hasInstance.split("/")[5]
-  console.log(hasInstance.split("/")[5])
+  // console.log(hasInstance.split("/")[5])
 
 
   async function Subject(uri) {

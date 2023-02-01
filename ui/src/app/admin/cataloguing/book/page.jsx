@@ -80,7 +80,7 @@ export default function Book() {
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
-  const { work, setWork, setInstances } = useBf();
+  const { work, setInstances } = useBf();
 
   const router = useRouter();
 

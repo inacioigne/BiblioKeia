@@ -1,0 +1,34 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/items/748300-051-11> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/1> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2021-10-20T13:33:01"^^xsd:dateTime ;
+            bf:creationDate "1973-01-02"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/local> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-10-21T01:30:06.415662-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "748300" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ocip $f 19 $g y-gencatlg" ] ;
+    bf:heldBy <http://id.loc.gov/vocabulary/organizations/dlc> ;
+    bf:itemOf <http://id.loc.gov/resources/instances/748300> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Copy 2." ] ;
+    bf:shelfMark [ a bf:ShelfMarkLcc ;
+            rdfs:label "PS3515.E37 O4" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/items> .
+

@@ -21,6 +21,8 @@ export const BfProvider = ({ children }) => {
     serieID: ""
   });
 
+  const [workEdit, setWorkEdit] = useState(null);
+
   const [instance, setInstances] = useState({
     instance_id: null,
     instanceOf: null,
@@ -53,7 +55,7 @@ export const BfProvider = ({ children }) => {
   )
 
   return (
-    <BfContext.Provider value={{ work, setWork, instance, setInstances, serie, setSerie}}>
+    <BfContext.Provider value={{ work, setWork, instance, setInstances, serie, setSerie, workEdit, setWorkEdit}}>
       {children}
     </BfContext.Provider>
   );

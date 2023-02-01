@@ -11,13 +11,7 @@ import {
   List,
   ListItem,
 } from "@mui/material/";
-import {
-  ImportContacts,
-  Home,
-  Person3,
-  Class,
-  DashboardCustomize,
-} from "@mui/icons-material/";
+import { Home, Person3, Delete, EditRoad } from "@mui/icons-material/";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
@@ -32,21 +26,20 @@ import QueryWork from "src/services/acervo/work";
 import Image from "next/image";
 import Link from "next/link";
 
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
+
 const previousPaths = [
   {
     link: "/admin",
     label: "Início",
     icon: <Home fontSize="small" />,
   },
-  {
-    link: "/admin/cataloguing",
-    label: "Catalogação",
-    icon: <DashboardCustomize fontSize="small" />,
-  },
 ];
 
 export default function Work({ params }) {
   const [work, setWork] = useState(null);
+  const { setWorkEdit } = useBf();
 
   useEffect(() => {
     let id = params.id;
@@ -56,13 +49,28 @@ export default function Work({ params }) {
   return (
     <Container maxWidth="xl">
       <Box my={"1rem"}>
-        <BreadcrumbsBK previousPaths={previousPaths} currentPath="Livros" />
+        <BreadcrumbsBK previousPaths={previousPaths} currentPath="Obra" />
       </Box>
       <Grid container spacing={2}>
         <Grid item xs={12}>
+          <Box sx={{ display: "flex", justifyContent: "space-between"}}>
           <Typography variant="h4" gutterBottom>
             Obra
           </Typography>
+          <Box>
+          <Button sx={{ mr: "1rem"}} variant="outlined" startIcon={<EditRoad />}>
+            Editar
+          </Button>
+          <Button variant="outlined" color="error" startIcon={<Delete />}>
+            Excluir
+          </Button>
+         
+
+          </Box>
+        
+
+          </Box>
+          
           <Divider />
         </Grid>
         {work && (
@@ -123,27 +131,29 @@ export default function Work({ params }) {
             Instâncias
           </Typography>
           <Divider />
-          <Link href={`/admin/acervo/instance/${work?.instanceID}`}>
-          <Paper
-            sx={{
-              mt: "1rem",
-              width: 180,
-              height: 230,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "10px",
-              overflow: "hidden",
-            }}
-          >
-            <Image
-              src={`/cover/${work?.instanceID}.jpeg`}
-              width={180}
-              height={230}
-              alt="cover"
-            />
-          </Paper>
-          </Link>
+          {work?.instanceID && (
+            <Link href={`/admin/acervo/instance/${work?.instanceID}`}>
+              <Paper
+                sx={{
+                  mt: "1rem",
+                  width: 180,
+                  height: 230,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                }}
+              >
+                <Image
+                  src={`/cover/${work?.instanceID}.jpeg`}
+                  width={180}
+                  height={230}
+                  alt="cover"
+                />
+              </Paper>
+            </Link>
+          )}
         </Grid>
       </Grid>
     </Container>

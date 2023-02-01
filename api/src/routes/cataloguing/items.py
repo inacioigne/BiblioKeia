@@ -3,6 +3,7 @@ from src.schemas.bibframe.items import Items_Schema
 from src.function.bibframe.Item.item import BfItem
 from pyfuseki import FusekiUpdate
 from src.function.solr.docItem import DocItem
+from src.function.bibframe.Instance.updateInstance import UpdateInstance
 
 router = APIRouter()
 
@@ -21,8 +22,9 @@ async def create_items(request: Items_Schema):
 
         response = fuseki_update.run_sparql(G)
         DocItem(item, request.itemOf)
+        UpdateInstance(request.itemOf, item.item)
         #print("ITEM", response.convert())
-        #g.serialize(f"item{c}.nt")
+        g.serialize(f"item{c}.nt")
         #
 
     return {'msg': 'item criados com sucesso'}

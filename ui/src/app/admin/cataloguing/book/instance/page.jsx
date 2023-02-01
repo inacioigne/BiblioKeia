@@ -170,7 +170,7 @@ export default function Instance() {
             </MenuList>
           </Paper>
           <Button
-            sx={{ textTransform: "none"}}
+            sx={{ textTransform: "none", pt: "1rem"}}
             variant="outlined"
             onClick={() => postInstance(instance)}
           >
@@ -188,15 +188,7 @@ export default function Instance() {
           </Paper>
           <ImagemBK />
         </Grid>
-        {/* <Grid item xs={12}>
-          <Button
-            sx={{ textTransform: "none"}}
-            variant="outlined"
-            onClick={() => postInstance(instance)}
-          >
-            Salvar e Adicionar exemplar
-          </Button>
-        </Grid> */}
+      
       </Grid>
       <Item open={openItem} setOpen={setOpenItem} instance_id={instance_id} />
     </Container>

@@ -1,0 +1,31 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/work/bk-36> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2023-01-31"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-01-31T14:30:04.274109"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-36" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "001" ;
+            bf:itemPortion "P831c" ] ;
+    bf:contribution [ a bf:Contribution ;
+            rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n80032184> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:hasSeries <https://bibliokeia.com/resources/hub/bk-5> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjecturas e refatuções" ;
+            bf:mainTitle "Conjecturas e refatuções" ] .
+
