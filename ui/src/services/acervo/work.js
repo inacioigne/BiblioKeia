@@ -1,6 +1,7 @@
 import fetch from "@rdfjs/fetch";
 import cf from "clownface";
 import namespace from "@rdfjs/namespace";
+import { ConnectingAirportsOutlined } from "@mui/icons-material";
 
 async function QueryWork(id, setWork) {
   const ns = {
@@ -36,7 +37,10 @@ async function QueryWork(id, setWork) {
   let typeLabel = type.value.split("/")[5];
 
   // Contribution
-  const contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
+  let contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
+  let contributionRoleUri = work.out(ns.bf.contribution).out(ns.bf.agent).value;
+  let contributionID = contributionRoleUri.split("/")[5]
+
 
   // Subject
   const urisSubjects = work.out(ns.bf.subject).map((subject) => {
@@ -69,11 +73,24 @@ async function QueryWork(id, setWork) {
   const wk = {
     title: title,
     typeLabel: typeLabel,
-    contribution: contribution,
-    subjects: response,
+    contribution: contribution, 
     serie: null,
     hasInstance: hasInstance,
-    instanceID: instanceID
+    instanceID: instanceID,
+    contentType: typeLabel,
+    mainTitle: title,
+    subtitle: "",
+    contributionAgent: contribution,
+    contributionRole: "Autor",
+    contributionRoleUri: contributionRoleUri,
+    contributionID: contributionID,
+    subjects: response,
+    language: "",
+    languageCode: "",
+    cdd: "",
+    cutter: "",
+    serie: "",
+    serieUri: ""
   };
 
   // Serie
@@ -94,8 +111,13 @@ async function QueryWork(id, setWork) {
         return response;
       }
     );
-    wk["serie"] = serie;
+    wk["serie"] = serie.title;
+    wk["serieUri"] = serie.uri;
+
+
   }
+
+  console.log("W", wk)
 
   setWork(wk);
 }

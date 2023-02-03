@@ -19,16 +19,10 @@ export default function Subject() {
 
   const [listSubject, setListSubject] = useState([]);
 
-  useEffect(() => {
-    setWork((prevState) => ({
-      ...prevState,
-      subjects: listSubject,
-    }));
-  }, [listSubject]);
-
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      subjects: [{ subject: "" }],
+      //subjects: [{ label: "test1" }],
+      subjects: work?.subjects
     },
   });
 
@@ -36,6 +30,21 @@ export default function Subject() {
     control,
     name: "subjects",
   });
+
+  useEffect(() => {
+    work.subjects.forEach(element => {
+      console.log("E:", element.label)
+      append(element);
+      
+    });
+
+    setWork((prevState) => ({
+      ...prevState,
+      subjects: listSubject,
+    }));
+
+    
+  }, [listSubject]);
 
   return (
     <Box sx={{ p: "1rem" }}>
@@ -48,6 +57,7 @@ export default function Subject() {
             <ThesarusBK
               listSubject={listSubject}
               setListSubject={setListSubject}
+             
             />
             <IconButton
               onClick={() => {
@@ -56,6 +66,7 @@ export default function Subject() {
                 });
                 setListSubject(recuse);
                 remove(index);
+                console.log(subject);
               }}
             >
               <RemoveIcon />

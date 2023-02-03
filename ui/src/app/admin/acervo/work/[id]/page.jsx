@@ -53,24 +53,27 @@ export default function Work({ params }) {
       </Box>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Box sx={{ display: "flex", justifyContent: "space-between"}}>
-          <Typography variant="h4" gutterBottom>
-            Obra
-          </Typography>
-          <Box>
-          <Button sx={{ mr: "1rem"}} variant="outlined" startIcon={<EditRoad />}>
-            Editar
-          </Button>
-          <Button variant="outlined" color="error" startIcon={<Delete />}>
-            Excluir
-          </Button>
-         
-
+          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Typography variant="h4" gutterBottom>
+              Obra
+            </Typography>
+            <Box>
+            <Link href={`/admin/acervo/work/${params.id}/edit`}>
+              <Button
+                sx={{ mr: "1rem" }}
+                variant="outlined"
+                startIcon={<EditRoad />}
+                onClick={() => setWorkEdit(work)}
+              >
+                Editar
+              </Button>
+              </Link>
+              <Button variant="outlined" color="error" startIcon={<Delete />}>
+                Excluir
+              </Button>
+            </Box>
           </Box>
-        
 
-          </Box>
-          
           <Divider />
         </Grid>
         {work && (

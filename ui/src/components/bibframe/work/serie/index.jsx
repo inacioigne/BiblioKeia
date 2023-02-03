@@ -44,7 +44,7 @@ export default function Serie() {
     setWork((prevState) => ({
       ...prevState,
       serie: serie,
-      serieID: serieDetails.id,
+      serieUri: serieDetails.id,
     }));
   };
 
@@ -118,7 +118,7 @@ export default function Serie() {
   return (
     <Box sx={{ p: "1rem" }}>
       <Typography variant="subtitle2" sx={{ pb: "1rem" }}>
-        Série
+        Série {work?.serie}
       </Typography>
       <Box sx={{ px: "2rem", pb: "2rem" }}>
         <form onSubmit={handleSearch}>

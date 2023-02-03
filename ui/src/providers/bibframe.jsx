@@ -18,7 +18,7 @@ export const BfProvider = ({ children }) => {
     cdd: "",
     cutter: "",
     serie: "",
-    serieID: ""
+    serieUri: ""
   });
 
   const [workEdit, setWorkEdit] = useState(null);
@@ -62,3 +62,4 @@ export const BfProvider = ({ children }) => {
 };
 
 export const useBf = () => useContext(BfContext);
+ 

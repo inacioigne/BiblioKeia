@@ -27,9 +27,15 @@ import { useState, useEffect } from "react";
 
 // BiblioKeia Services
 import queryThesaurusBK from "src/services/thesaurus/subjects/thesaurusBk";
+import ParserBK from "src/services/thesaurus/subjects/parserBK";
 
 // BiblioKeia Components
 import SearchBK from "src/components/thesaurus/subjects/searchBK";
+
+// BiblioKeia Hooks
+import { useBf } from "src/providers/bibframe";
+
+
 
 async function GraphExist(token) {
   const client = new SparqlClient({
@@ -44,7 +50,7 @@ async function GraphExist(token) {
   return ask;
 }
 
-export default function ThesarusBK({listSubject, setListSubject}) {
+export default function ThesarusBK({listSubject, setListSubject, index, defaultSubject, defaultUri}) {
 
   const [open, setOpen] = useState(false);
   const [response, setResponse] = useState([]);
@@ -53,10 +59,23 @@ export default function ThesarusBK({listSubject, setListSubject}) {
   const [choise, setChoise] = useState(false);
   const [subjectBK, setSubjectBK] = useState(null);
   const [autorityBK, setautorityBK] = useState(null);
+
+  const { work, setWork } = useBf();
   
 
   useEffect(() => {
+    // setSubjectBK({authority: defaultSubject.label})
+    // setChoise(true)
+    //ParserBK(subject.uri, setSubjectBK);
+    
+
+    if (defaultSubject) {
+      ParserBK(defaultUri, setSubjectBK)
+      setChoise(true)
+    }
+
     if (subjectBK?.tokenLSCH) {
+      console.log("subjectBK", subjectBK)
       (async () => {
         let graph = await GraphExist(subjectBK?.tokenLSCH);
         if (graph) {
@@ -71,12 +90,20 @@ export default function ThesarusBK({listSubject, setListSubject}) {
     } else {
       setautorityBK(null);
     }
-  });
+  }, [defaultSubject]);
   
   const handleChoose = () => {
  
     setChoise(subjectBK.authority);
-    setListSubject(prevSate => [...prevSate, {label: subjectBK.authority, uri: subjectBK.uri}])
+    listSubject[index] = {label: subjectBK.authority, uri: subjectBK.uri}
+    // console.log("ch: ", listSubject)
+    setListSubject(listSubject)
+    setWork((prevState) => ({
+      ...prevState,
+      subjects: listSubject,
+    }));
+
+    //setListSubject(prevSate => [...prevSate, {label: subjectBK.authority, uri: subjectBK.uri}])
     setSubject("");
     setOpen(false);
     setActive(true);
@@ -115,7 +142,7 @@ export default function ThesarusBK({listSubject, setListSubject}) {
               backgroundColor: blue[200],
             }}
           >
-            {subjectBK.authority}
+            {subjectBK?.authority}
           </Box>
           <Close
             sx={{
@@ -147,6 +174,8 @@ export default function ThesarusBK({listSubject, setListSubject}) {
 
   return (
     <Box sx={{ width: "100%" }}>
+    
+
       <form onSubmit={handleSearch}>
         <TextField
           disabled={active}

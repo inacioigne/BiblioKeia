@@ -101,6 +101,7 @@ async function ParserBK(uri, setSubjectBK) {
   });
   SubjectDetails["narrower"] = narrower;
 
+
   setSubjectBK(SubjectDetails);
 }
 

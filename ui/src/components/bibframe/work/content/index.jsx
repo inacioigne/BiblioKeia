@@ -22,22 +22,13 @@ import { useBf } from "src/providers/bibframe";
 // BiblioKeia Services
 import GetType from "src/services/thesaurus/types";
 
-export default function Content({ defaultType }) {
+export default function Content() {
   const [openMenu, setOpenMenu] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const [value, setValue] = useState("");
   const [contentTypes, setContentTypes] = useState(null);
 
   const { work, setWork } = useBf();
-
-  useEffect(() => {
-    setDisabled(true);
-    setValue("");
-    setWork((prevState) => ({
-      ...prevState,
-      contentType: defaultType,
-    }));
-  }, []);
 
   const inputPros = {
     disabled: disabled,
