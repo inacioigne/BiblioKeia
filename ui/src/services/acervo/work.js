@@ -39,8 +39,7 @@ async function QueryWork(id, setWork) {
   // Contribution
   let contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
   let contributionRoleUri = work.out(ns.bf.contribution).out(ns.bf.agent).value;
-  let contributionID = contributionRoleUri.split("/")[5]
-
+  let contributionID = contributionRoleUri.split("/")[5];
 
   // Subject
   const urisSubjects = work.out(ns.bf.subject).map((subject) => {
@@ -48,13 +47,12 @@ async function QueryWork(id, setWork) {
   });
 
   // Instance
-  const hasInstance = work.out(ns.bf.hasInstance).value
-  let instanceID = hasInstance.split("/")[5]
-  // console.log(hasInstance.split("/")[5])
+  const hasInstance = work.out(ns.bf.hasInstance).value;
+  let instanceID = hasInstance.split("/")[5];
 
-
+  // Subject
   async function Subject(uri) {
-    let graphSubjects = `http://localhost:3030/thesaurus?graph=${uri}`;
+    let graphSubjects = `http://localhost:3030/authorities?graph=${uri}`;
     let dataset = await fetch(graphSubjects).then((response) =>
       response.dataset()
     );
@@ -64,16 +62,22 @@ async function QueryWork(id, setWork) {
     return { uri: uri, label: label };
   }
 
-
   const promises = urisSubjects.map((uri) => Subject(uri));
   let response = await Promise.all(promises).then((response) => {
     return response;
   });
 
+  // CDD
+  const cdd = work
+    .out(ns.bf.classification)
+    .out(ns.bf.classificationPortion).value;
+  const cutter = work.out(ns.bf.classification).out(ns.bf.itemPortion).value;
+ 
+
   const wk = {
     title: title,
     typeLabel: typeLabel,
-    contribution: contribution, 
+    contribution: contribution,
     serie: null,
     hasInstance: hasInstance,
     instanceID: instanceID,
@@ -87,10 +91,10 @@ async function QueryWork(id, setWork) {
     subjects: response,
     language: "",
     languageCode: "",
-    cdd: "",
-    cutter: "",
+    cdd: cdd,
+    cutter: cutter,
     serie: "",
-    serieUri: ""
+    serieUri: "",
   };
 
   // Serie
@@ -113,11 +117,12 @@ async function QueryWork(id, setWork) {
     );
     wk["serie"] = serie.title;
     wk["serieUri"] = serie.uri;
-
-
   }
 
-  console.log("W", wk)
+  console.log(
+    "work: ",
+    wk
+  );
 
   setWork(wk);
 }

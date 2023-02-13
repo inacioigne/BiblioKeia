@@ -28,7 +28,8 @@ import BreadcrumbsBK from "src/components/nav/breadcrumbs";
 import Content from "src/components/bibframe/work/content";
 import Title from "src/components/bibframe/work/title";
 import Contribution from "src/components/bibframe/work/contribution";
-import Subject from "src/components/bibframe/work/subject";
+//import Subject from "src/components/bibframe/work/subject";
+import Subject from "../../acervo/work/[id]/edit/subject";
 import Language from "src/components/bibframe/work/language";
 import Classification from "src/components/bibframe/work/classification";
 import Serie from "src/components/bibframe/work/serie";
@@ -80,9 +81,18 @@ export default function Book() {
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
-  const { work, setInstances } = useBf();
+  const { work, setWork, setInstances } = useBf();
+  const [listSubject, setListSubject] = useState([{ label: "", uri: "" }]);
 
   const router = useRouter();
+
+  useEffect(() => {
+    
+    setWork((prevState) => ({
+      ...prevState,
+      contentType: "Texto"
+    }))
+  }, [])
 
   function postWork(work) {
     setProgress(true);
@@ -153,13 +163,16 @@ export default function Book() {
         </Grid>
         <Grid item xs={9}>
           <Paper>
-            {visible === 0 && <Content defaultType="Texto" />}
+            {visible === 0 && <Content />}
             {visible === 1 && <Title />}
             {visible === 2 && <Contribution />}
             <Box
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
-              <Subject />
+              <Subject 
+                listSubject={listSubject}
+                setListSubject={setListSubject}
+              />
             </Box>
             {visible === 4 && <Language />}
             {visible === 5 && <Classification />}

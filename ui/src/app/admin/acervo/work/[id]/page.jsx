@@ -58,15 +58,15 @@ export default function Work({ params }) {
               Obra
             </Typography>
             <Box>
-            <Link href={`/admin/acervo/work/${params.id}/edit`}>
-              <Button
-                sx={{ mr: "1rem" }}
-                variant="outlined"
-                startIcon={<EditRoad />}
-                onClick={() => setWorkEdit(work)}
-              >
-                Editar
-              </Button>
+              <Link href={`/admin/acervo/work/${params.id}/edit`}>
+                <Button
+                  sx={{ mr: "1rem" }}
+                  variant="outlined"
+                  startIcon={<EditRoad />}
+                  onClick={() => setWorkEdit(work)}
+                >
+                  Editar
+                </Button>
               </Link>
               <Button variant="outlined" color="error" startIcon={<Delete />}>
                 Excluir
@@ -121,14 +121,39 @@ export default function Work({ params }) {
                 ))}
               </List>
             </Box>
+            {work.serie?.title && (
+              <Box sx={{ mt: 2 }}>
+                <Typography variant="h6" gutterBottom>
+                  Série
+                </Typography>
+                <Button>{work.serie.title}</Button>
+              </Box>
+            )}
+            {/* Classificação */}
             <Box sx={{ mt: 2 }}>
               <Typography variant="h6" gutterBottom>
-                Série
+                Classificação
               </Typography>
-              <Button>{work.serie?.title}</Button>
+              <Box sx={{ display: "flex" }}>
+                <Box sx={{ display: "flex", "alignItems": "baseline" }}>
+                  <Typography variant="subtitle2" gutterBottom>
+                    CDD:
+                  </Typography>
+                  <Button>{work.cdd}</Button>
+                </Box>
+                <Box sx={{ display: "flex", "alignItems": "baseline" }}>
+                  <Typography variant="subtitle2" gutterBottom>
+                    Cutter:
+                  </Typography>
+                  <Button>{work.cutter}</Button>
+                </Box>
+
+                
+              </Box>
             </Box>
           </Grid>
         )}
+
         <Grid item xs={6}>
           <Typography variant="h5" gutterBottom>
             Instâncias
