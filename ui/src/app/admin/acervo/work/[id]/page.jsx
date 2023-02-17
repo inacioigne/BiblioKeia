@@ -121,12 +121,12 @@ export default function Work({ params }) {
                 ))}
               </List>
             </Box>
-            {work.serie?.title && (
+            {work.serie && (
               <Box sx={{ mt: 2 }}>
                 <Typography variant="h6" gutterBottom>
                   Série
                 </Typography>
-                <Button>{work.serie.title}</Button>
+                <Button>{work.serie}</Button>
               </Box>
             )}
             {/* Classificação */}

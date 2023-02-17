@@ -25,7 +25,8 @@ def BfWork(request, work_id):
     g.bind('madsrdf', MADSRDF)
      
     content = {
-        "Texto": BF.Text
+        "Texto": BF.Text,
+        "Text": BF.Text
     }
     contentType =  content[request.contentType]
 
@@ -71,6 +72,7 @@ def BfWork(request, work_id):
 
     # Serie
     if request.serie:
+        print("WORK: ", request)
         g = Serie(g, request, work_uri, BF)
 
     return g

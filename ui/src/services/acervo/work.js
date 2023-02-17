@@ -94,7 +94,7 @@ async function QueryWork(id, setWork) {
     cdd: cdd,
     cutter: cutter,
     serie: "",
-    serieUri: "",
+    serieURI: "",
   };
 
   // Serie
@@ -116,13 +116,8 @@ async function QueryWork(id, setWork) {
       }
     );
     wk["serie"] = serie.title;
-    wk["serieUri"] = serie.uri;
+    wk["serieURI"] = serie.uri;
   }
-
-  console.log(
-    "work: ",
-    wk
-  );
 
   setWork(wk);
 }

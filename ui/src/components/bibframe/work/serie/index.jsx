@@ -41,10 +41,12 @@ export default function Serie() {
     setOpen(false);
     setValue("");
     let [serie] = serieDetails.mainTitle
+
     setWork((prevState) => ({
       ...prevState,
       serie: serie,
-      serieUri: serieDetails.id,
+      //serieID: serieDetails.id,
+      serieURI: `https://bibliokeia.com/resources/hub/${serieDetails.id}`
     }));
   };
 

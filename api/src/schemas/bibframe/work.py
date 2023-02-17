@@ -20,7 +20,8 @@ class Work_Schema(BaseModel):
     cdd: str
     cutter: str
     serie: Optional[str]
-    serieID: Optional[str]
+    # serieID: Optional[str]
+    serieURI: Optional[str]
 
     
 test = {

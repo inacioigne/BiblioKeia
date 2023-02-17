@@ -96,7 +96,7 @@ export default function Book() {
 
   function postWork(work) {
     setProgress(true);
-    //console.log(work)
+    //console.log("Ws", work)
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {

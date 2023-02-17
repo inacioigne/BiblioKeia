@@ -28,6 +28,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 
 // BiblioKeia Hooks
 import { useBf } from "src/providers/bibframe";
+import { useProgress } from "src/providers/progress";
 
 // BiblioKeia Components
 import BreadcrumbsBK from "src/components/nav/breadcrumbs";
@@ -45,6 +46,7 @@ import { useEffect, useState } from "react";
 
 // BiblioKeia Services
 import QueryWork from "src/services/acervo/work";
+import { api } from "src/services/api/api";
 
 // BiblioKeia Styles
 import { menuStyle } from "src/styles/mui";
@@ -61,6 +63,7 @@ const metadados = [
 
 export default function Edit({ params }) {
   const { workEdit, work, setWork } = useBf();
+  const { setProgress } = useProgress();
   const [visible, setVisible] = useState(0);
   const [listSubject, setListSubject] = useState([{ label: "", uri: "" }]);
 
@@ -84,6 +87,33 @@ export default function Edit({ params }) {
     let id = params.id;
     QueryWork(id, setWork);
   }, []);
+
+  function putWork(work) {
+
+    setProgress(true);
+    console.log("Before", work)
+    api
+      .put(`/cataloguing/work`, work)
+      .then((response) => {
+        setProgress(false);
+        console.log(response)
+        // if (response.status == 201) {
+        //   setInstances((prevState) => ({
+        //     ...prevState,
+        //     instanceOf: response.data.id,
+        //   }));
+        //   console.log(response.data);
+        //   setTypeAlert("success");
+        //   setMessage("Registro salvo com sucesso!");
+        //   setOpenSnack(true);
+
+        //   router.push("/admin/cataloguing/book/instance");
+        // }
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
+  }
 
   return (
     <Container maxWidth="xl">
@@ -133,7 +163,6 @@ export default function Edit({ params }) {
             {visible === 0 && <Content />}
             {visible === 1 && <Title />}
             {visible === 2 && <Contribution />}
-
             <Box
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
@@ -152,11 +181,7 @@ export default function Edit({ params }) {
             sx={{ textTransform: "none" }}
             variant="outlined"
             onClick={() => {
-              // setWork((prevState) => ({
-              //   ...prevState,
-              //   subjects: listSubject,
-              // }));
-              console.log(work);
+              putWork(work)
             }}
           >
             Salvar

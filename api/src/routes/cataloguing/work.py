@@ -15,7 +15,6 @@ async def create_work(request: Work_Schema):
     response = GenerateId()
     work_id = response['id']
 
-    #print("WORK: ", work_id)
     g = BfWork(request, work_id )
     g.serialize("work1.ttl") 
     nt = g.serialize(format='nt')
@@ -30,4 +29,19 @@ async def create_work(request: Work_Schema):
     DocWork(request, work_id)
 
     return {"id": work_id, "jena": response.convert() }
-    #return request.dict()
+
+@router.put("/work", status_code=201)
+async def update_work(request: Work_Schema, work_id: str):
+    g = BfWork(request, work_id )
+    nt = g.serialize(format='nt')
+    up = """
+        WITH <https://bibliokeia.com/resources/work/bk-19> 
+        DELETE { ?a ?b ?c } 
+        INSERT {"""+nt+"""}
+        WHERE {?a ?b ?c }
+        """
+    fuseki_update.run_sparql(up)
+
+    g.serialize("put.ttl") 
+
+    return request.dict()
