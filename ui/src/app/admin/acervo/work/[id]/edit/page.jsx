@@ -86,33 +86,118 @@ export default function Edit({ params }) {
   useEffect(() => {
     let id = params.id;
     QueryWork(id, setWork);
+    
+    
+    
   }, []);
+
+  function Diff(workB, workA) {
+    const entriesB = Object.entries(workB)
+    const diff = {}
+    for (let [k, v] of entriesB) {
+      if (Array.isArray(v)) {
+        // const isEqual1 = v.every((val, index) => val === workA[k][index]);
+        // console.log(k, v, isEqual1)
+        const arr1 = [1, 2, {uri: 'https://bibliokeia.com/authorities/subjects/sh85084414', label: 'Metodologia'}];
+        const arr2 = [1, 2, {uri: 'https://bibliokeia.com/authorities/subjects/sh85084414', label: 'Metodologia'}];
+        const isEqual1 = arr1.every((val, index) => val === arr2[index]);
+        console.log(isEqual1);
+      }
+
+      // if (v != workA[k]) {
+      //   console.log(workA[k])
+
+      // }
+
+      
+    }
+    
+    
+    
+  }
 
   function putWork(work) {
 
-    setProgress(true);
-    console.log("Before", work)
-    api
-      .put(`/cataloguing/work`, work)
-      .then((response) => {
-        setProgress(false);
-        console.log(response)
-        // if (response.status == 201) {
-        //   setInstances((prevState) => ({
-        //     ...prevState,
-        //     instanceOf: response.data.id,
-        //   }));
-        //   console.log(response.data);
-        //   setTypeAlert("success");
-        //   setMessage("Registro salvo com sucesso!");
-        //   setOpenSnack(true);
+    const workB = {
+      "title": "Conjecturas e refutações",
+      "typeLabel": "Text",
+      "contribution": "Popper, Karl R. (Karl Raimund), 1902-1994",
+      "serie": "Pensamento científico",
+      "hasInstance": "https://bibliokeia.com/resources/instance/bk-31",
+      "instanceID": "bk-31",
+      "contentType": "Text",
+      "mainTitle": "Conjecturas e refutações",
+      "subtitle": "",
+      "contributionAgent": "Popper, Karl R. (Karl Raimund), 1902-1994",
+      "contributionRole": "Autor",
+      "contributionRoleUri": "https://bibliokeia.com/authorities/names/n80032184",
+      "contributionID": "n80032184",
+      "subjects": [
+          {
+              "uri": "https://bibliokeia.com/authorities/subjects/sh85084414",
+              "label": "Metodologia"
+          }
+      ],
+      "language": "",
+      "languageCode": "",
+      "cdd": "001",
+      "cutter": "P831c",
+      "serieURI": "https://bibliokeia.com/resources/hub/bk-5"
+  }
 
-        //   router.push("/admin/cataloguing/book/instance");
-        // }
-      })
-      .catch(function (error) {
-        console.log("ERROOO!!", error);
-      });
+  const workA = {
+    "title": "NOVO TITULO",
+    "typeLabel": "Text",
+    "contribution": "Popper, Karl R. (Karl Raimund), 1902-1994",
+    "serie": "Pensamento científico",
+    "hasInstance": "https://bibliokeia.com/resources/instance/bk-31",
+    "instanceID": "bk-31",
+    "contentType": "Text",
+    "mainTitle": "Conjecturas e refutações",
+    "subtitle": "",
+    "contributionAgent": "Popper, Karl R. (Karl Raimund), 1902-1994",
+    "contributionRole": "Autor",
+    "contributionRoleUri": "https://bibliokeia.com/authorities/names/n80032184",
+    "contributionID": "n80032184",
+    "subjects": [
+        {
+            "uri": "https://bibliokeia.com/authorities/subjects/sh85084414",
+            "label": "Metodologia"
+        }
+    ],
+    "language": "",
+    "languageCode": "",
+    "cdd": "001",
+    "cutter": "P831c",
+    "serieURI": "https://bibliokeia.com/resources/hub/bk-5"
+}
+// Diff(workB, workA)
+console.log("B: ", workBefore)
+console.log("A", work)
+
+    //setProgress(true);
+    //console.log("Before", work)
+    // api
+    //   .put(`/cataloguing/work`, work)
+    //   .then((response) => {
+    //     setProgress(false);
+    //     console.log(response)
+    //     // if (response.status == 201) {
+    //     //   setInstances((prevState) => ({
+    //     //     ...prevState,
+    //     //     instanceOf: response.data.id,
+    //     //   }));
+    //     //   console.log(response.data);
+    //     //   setTypeAlert("success");
+    //     //   setMessage("Registro salvo com sucesso!");
+    //     //   setOpenSnack(true);
+
+    //     //   router.push("/admin/cataloguing/book/instance");
+    //     // }
+    //   })
+    //   .catch(function (error) {
+    //     console.log("ERROOO!!", error);
+    //   });
   }
 
   return (

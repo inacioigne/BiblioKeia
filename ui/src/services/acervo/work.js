@@ -120,6 +120,7 @@ async function QueryWork(id, setWork) {
   }
 
   setWork(wk);
+  return wk
 }
 
 export default QueryWork;

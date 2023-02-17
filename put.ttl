@@ -27,5 +27,5 @@
     bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414> ;
     bf:title [ a bf:Title ;
             rdfs:label "Conjecturas e refatuções v. I" ;
-            bf:mainTitle "Conjecturas e refatuções v. I" ] .
+            bf:mainTitle "Conjecturas e refatuções v. I" ] . 
 
