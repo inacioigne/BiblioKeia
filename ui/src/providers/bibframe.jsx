@@ -4,7 +4,7 @@ export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
   const [work, setWork] = useState({
-    //work_id: "",
+    work_id: "",
     contentType: "",
     mainTitle: "",
     subtitle: "",

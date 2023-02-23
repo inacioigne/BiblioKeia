@@ -6,6 +6,7 @@ class Subject(BaseModel):
     uri: str
 
 class Work_Schema(BaseModel):
+    work_id: Optional[str]
     contentType: str
     mainTitle: str
     subtitle: Optional[str]
@@ -20,7 +21,6 @@ class Work_Schema(BaseModel):
     cdd: str
     cutter: str
     serie: Optional[str]
-    # serieID: Optional[str]
     serieURI: Optional[str]
 
     

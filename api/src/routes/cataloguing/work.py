@@ -5,6 +5,7 @@ from src.function.cataloguing.generate_id import GenerateId
 from src.function.bibframe.Work.work import BfWork
 from pyfuseki import FusekiUpdate
 from src.function.solr.docWork import DocWork
+from src.function.bibframe.Work.editWork import EditWork
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
@@ -32,8 +33,9 @@ async def create_work(request: Work_Schema):
 
 @router.put("/work", status_code=201)
 async def update_work(request: Work_Schema, work_id: str):
+    EditWork(request, work_id)
 
     #fuseki_update.run_sparql(up)
 
 
-    return request.dict()
+    return {'msg': 'Item editado com sucesso!'}

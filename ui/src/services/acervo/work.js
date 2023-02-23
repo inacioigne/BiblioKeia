@@ -84,8 +84,9 @@ async function QueryWork(id, setWork) {
  
 
   const wk = {
-    title: title,
-    typeLabel: typeLabel,
+    //title: title,
+    //typeLabel: typeLabel,
+    work_id: id,
     contribution: contribution,
     serie: null,
     hasInstance: hasInstance,

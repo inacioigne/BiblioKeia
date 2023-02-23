@@ -89,48 +89,29 @@ export default function Edit({ params }) {
     
   }, []);
 
-  function Diff(workB, workA) {
-    const entriesB = Object.entries(workB)
-    const diff = {}
-    for (let [k, v] of entriesB) {
-      if (Array.isArray(v)) {
-        // const isEqual1 = v.every((val, index) => val === workA[k][index]);
-        // console.log(k, v, isEqual1)
-        const arr1 = [1, 2, {uri: 'https://bibliokeia.com/authorities/subjects/sh85084414', label: 'Metodologia'}];
-        const arr2 = [1, 2, {uri: 'https://bibliokeia.com/authorities/subjects/sh85084414', label: 'Metodologia'}];
-        const isEqual1 = arr1.every((val, index) => val === arr2[index]);
-        console.log(isEqual1);
-      }
-    }
-    
-  }
+  
 
   function putWork(work) {
-
-    //setProgress(true);
-    //console.log("ANTES: ", workBefore)
-    console.log("DEPOIS: ", work)
-
-    // api
-    //   .put(`/cataloguing/work`, work)
-    //   .then((response) => {
-    //     //setProgress(false);
-    //     console.log(response)
-    //     // if (response.status == 201) {
-    //     //   setInstances((prevState) => ({
-    //     //     ...prevState,
-    //     //     instanceOf: response.data.id,
-    //     //   }));
-    //     //   console.log(response.data);
-    //     //   setTypeAlert("success");
-    //     //   setMessage("Registro salvo com sucesso!");
-    //     //   setOpenSnack(true);
-    //     //   router.push("/admin/cataloguing/book/instance");
-    //     // }
-    //   })
-    //   .catch(function (error) {
-    //     console.log("ERROOO!!", error);
-    //   });
+    api
+      .put(`/cataloguing/work?work_id=${work.work_id}`, work)
+      .then((response) => {
+        //setProgress(false);
+        console.log(response)
+        // if (response.status == 201) {
+        //   setInstances((prevState) => ({
+        //     ...prevState,
+        //     instanceOf: response.data.id,
+        //   }));
+        //   console.log(response.data);
+        //   setTypeAlert("success");
+        //   setMessage("Registro salvo com sucesso!");
+        //   setOpenSnack(true);
+        //   router.push("/admin/cataloguing/book/instance");
+        // }
+      })
+      .catch(function (error) {
+        console.log("ERROOO!!", error);
+      });
   }
 
   return (
