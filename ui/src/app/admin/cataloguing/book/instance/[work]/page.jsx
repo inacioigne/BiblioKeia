@@ -55,6 +55,7 @@ import { useAlertBK } from "src/providers/alerts";
 
 // BiblioKeia Services
 import { api } from "src/services/api/api";
+import QueryWork from "src/services/acervo/work";
 
 const previousPaths = [
   {
@@ -83,13 +84,24 @@ const metadados = [
   { label: "Publicação", icon: LocationCity }
 ];
 
-export default function Instance() {
+export default function Instance({ params }) {
   const [visible, setVisible] = useState(0);
   const [openItem, setOpenItem] = useState(false);
   const [instance_id, setInstanceID] = useState(null)
-  const { instance, setInstances } = useBf();
+  const { instance, setInstances, setWork } = useBf();
   const { setProgress } = useProgress();
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
+
+  useEffect(() => {
+    let id = params.work;
+    setInstances((prevState) => ({
+      ...prevState,
+      instanceOf: id,
+    }));
+    QueryWork(id, setWork);
+    console.log(id)
+    
+  }, []);
 
   function postInstance(instance) {
     console.log(instance)

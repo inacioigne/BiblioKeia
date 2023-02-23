@@ -49,6 +49,15 @@ async function QueryWork(id, setWork) {
   // Instance
   const hasInstance = work.out(ns.bf.hasInstance).value;
   let instanceID = hasInstance.split("/")[5];
+  if (hasInstance) {
+    let instanceID = hasInstance.split("/")[5];
+
+  } else {
+    console.log("Sem instanceia", hasInstance)
+    let instanceID = null
+  }
+  
+  //let instanceID = hasInstance.split("/")[5];
 
   // Subject
   async function Subject(uri) {

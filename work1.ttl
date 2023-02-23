@@ -10,7 +10,7 @@
             bf:creationDate "2023-02-22"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-02-22T16:20:56.488400"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-02-22T15:16:02.706229"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-2" ] ;
@@ -21,12 +21,12 @@
     bf:contribution [ a bf:Contribution ;
             rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
             bf:agent <https://bibliokeia.com/authorities/names/n80032184> ;
-            bf:role <https://bibliokeia.com/authorities/names/n80032184> ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:hasSeries <https://bibliokeia.com/resources/hub/bk-1> ;
-    bf:language <http://id.loc.gov/vocabulary/languages/> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
     bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414>,
         <https://bibliokeia.com/authorities/subjects/sh85118553> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Conjecturas e refutações TESTE" ;
-            bf:mainTitle "Conjecturas e refutações TESTE" ] .
+            rdfs:label "Conjecturas e refutações" ;
+            bf:mainTitle "Conjecturas e refutações" ] .
 

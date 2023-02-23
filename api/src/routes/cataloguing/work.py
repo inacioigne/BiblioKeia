@@ -32,16 +32,8 @@ async def create_work(request: Work_Schema):
 
 @router.put("/work", status_code=201)
 async def update_work(request: Work_Schema, work_id: str):
-    g = BfWork(request, work_id )
-    nt = g.serialize(format='nt')
-    up = """
-        WITH <https://bibliokeia.com/resources/work/bk-19> 
-        DELETE { ?a ?b ?c } 
-        INSERT {"""+nt+"""}
-        WHERE {?a ?b ?c }
-        """
-    fuseki_update.run_sparql(up)
 
-    g.serialize("put.ttl") 
+    #fuseki_update.run_sparql(up)
+
 
     return request.dict()
