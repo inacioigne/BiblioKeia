@@ -1,6 +1,6 @@
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
-from pyfuseki import FusekiUpdate
+from pyfuseki import FusekiUpdate, FusekiQuery
 import pysolr 
 
 def UpdateContribution(request, work_uri):
@@ -38,3 +38,33 @@ def Contributor(g, request, uri, BF, BFLC):
     UpdateContribution(request, uri)
 
     return g
+
+def EditContributor(work, bkID):
+
+    acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+    acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+
+    prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
+
+    askAgent = prefix+"""
+                    ASK { graph work:bk-2
+                    {work:bk-2 bf:contribution ?o .
+                        ?o bf:agent <"""+work.contributionUri+"""> }}"""
+
+    response = acervoQuery.run_sparql(askAgent)
+    response = response.convert()
+    if not response['boolean']:
+        up = prefix+"WITH work:"+bkID+"""
+                DELETE {work:"""+bkID+""" bf:contribution ?o .
+                        ?o ?p ?agent }
+                INSERT {work:"""+bkID+""" bf:contribution ?o .
+                ?o rdf:type bf:Contribution .
+                ?o rdfs:label '"""+work.contributionAgent+"""' .
+                ?o bf:role '"""+work.contributionRoleUri+"""' .
+                ?o bf:agent <"""+work.contributionUri+"""> }
+                WHERE {work:"""+bkID+""" bf:contribution ?o .
+                        ?o ?p ?agent }"""
+        acervoUpdate.run_sparql(up)

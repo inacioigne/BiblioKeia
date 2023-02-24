@@ -28,6 +28,9 @@ async function QueryWork(id, setWork) {
   // Title
   const title = work.out(ns.bf.title).out(ns.bf.mainTitle).value;
 
+  // Subtitle
+  const subtitle = work.out(ns.bf.title).out(ns.bf.subtitle).value
+
   // Type
   const types = work.out(ns.rdf.type);
 
@@ -38,8 +41,10 @@ async function QueryWork(id, setWork) {
 
   // Contribution
   let contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
-  let contributionRoleUri = work.out(ns.bf.contribution).out(ns.bf.agent).value;
-  let contributionID = contributionRoleUri.split("/")[5];
+  let contributionUri = work.out(ns.bf.contribution).out(ns.bf.agent).value;
+  let contributionRoleUri = work.out(ns.bf.contribution).out(ns.bf.role).value
+  console.log(contributionRoleUri)
+  //let contributionID = contributionRoleUri.split("/");
 
   // Subject
   const urisSubjects = work.out(ns.bf.subject).map((subject) => {
@@ -93,11 +98,12 @@ async function QueryWork(id, setWork) {
     instanceID: instanceID,
     contentType: typeLabel,
     mainTitle: title,
-    subtitle: "",
+    subtitle: subtitle,
     contributionAgent: contribution,
     contributionRole: "Autor",
     contributionRoleUri: contributionRoleUri,
-    contributionID: contributionID,
+    contributionUri: contributionUri,
+    //contributionID: contributionID,
     subjects: response,
     language: "",
     languageCode: "",

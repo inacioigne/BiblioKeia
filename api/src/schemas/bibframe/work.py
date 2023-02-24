@@ -15,6 +15,7 @@ class Work_Schema(BaseModel):
     contributionID: str
     contributionRole: str
     contributionRoleUri: str
+    contributionUri: str
     subjects: list[Subject]
     language: str
     languageCode: str 
