@@ -13,8 +13,6 @@ import { useBf } from "src/providers/bibframe";
 
 export default function Contribution() {
 
-  const { setWork } = useBf();
-
   return (
     <Box>
       <Typography variant="subtitle2" sx={{ p: "1rem" }}>

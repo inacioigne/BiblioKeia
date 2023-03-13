@@ -43,6 +43,7 @@ import {
         ...prevState,
         contributionAgent: nameDetails.name,
         contributionID: nameDetails.token,
+        contributionUri: `https://bibliokeia.com/authorities/names/${nameDetails.token}`,
       }));
     };
   

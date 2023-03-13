@@ -2,7 +2,7 @@
 import { Grid } from "@mui/material/";
 
 // React Hooks
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // BiblioKeia Components
 import Type from "src/components/thesaurus/namesBK/inputs/type";

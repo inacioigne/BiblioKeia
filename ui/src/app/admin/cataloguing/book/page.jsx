@@ -96,7 +96,7 @@ export default function Book() {
 
   function postWork(work) {
     setProgress(true);
-    //console.log("Ws", work)
+    console.log("Ws", work)
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
@@ -111,7 +111,7 @@ export default function Book() {
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
 
-          router.push("/admin/cataloguing/book/instance");
+          router.push(`/admin/cataloguing/book/instance/${response.data.id}`);
         }
       })
       .catch(function (error) {

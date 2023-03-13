@@ -99,7 +99,7 @@ export default function Instance({ params }) {
       instanceOf: id,
     }));
     QueryWork(id, setWork);
-    console.log(id)
+    //console.log(id)
     
   }, []);
 

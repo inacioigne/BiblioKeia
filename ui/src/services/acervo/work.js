@@ -43,8 +43,7 @@ async function QueryWork(id, setWork) {
   let contribution = work.out(ns.bf.contribution).out(ns.rdfs.label).value;
   let contributionUri = work.out(ns.bf.contribution).out(ns.bf.agent).value;
   let contributionRoleUri = work.out(ns.bf.contribution).out(ns.bf.role).value
-  console.log(contributionRoleUri)
-  //let contributionID = contributionRoleUri.split("/");
+
 
   // Subject
   const urisSubjects = work.out(ns.bf.subject).map((subject) => {
@@ -52,17 +51,12 @@ async function QueryWork(id, setWork) {
   });
 
   // Instance
-  const hasInstance = work.out(ns.bf.hasInstance).value;
-  let instanceID = hasInstance.split("/")[5];
-  if (hasInstance) {
-    let instanceID = hasInstance.split("/")[5];
+  const hasInstance = work.out(ns.bf.hasInstance);
+  const instanceID = hasInstance._context.length > 0 ? hasInstance.value : null
 
-  } else {
-    console.log("Sem instanceia", hasInstance)
-    let instanceID = null
-  }
-  
-  //let instanceID = hasInstance.split("/")[5];
+  console.log("Sem instanceia", instanceID)
+
+
 
   // Subject
   async function Subject(uri) {
