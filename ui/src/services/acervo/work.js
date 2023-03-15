@@ -28,6 +28,7 @@ async function QueryWork(id, setWork) {
   // Title
   const title = work.out(ns.bf.title).out(ns.bf.mainTitle).value;
 
+
   // Subtitle
   const subtitle = work.out(ns.bf.title).out(ns.bf.subtitle).value
 

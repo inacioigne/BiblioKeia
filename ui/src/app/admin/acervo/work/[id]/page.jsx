@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 
 // BiblioKeia Services
 import QueryWork from "src/services/acervo/work";
+import { SolrWorkByID } from "src/services/solr/work";
 
 // Nextjs Hooks
 import Image from "next/image";
@@ -43,7 +44,8 @@ export default function Work({ params }) {
 
   useEffect(() => {
     let id = params.id;
-    QueryWork(id, setWork);
+    //QueryWork(id, setWork);
+    SolrWorkByID(id, setWork)
   }, []);
 
   return (
@@ -83,15 +85,15 @@ export default function Work({ params }) {
                 Título
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                {work?.title}
+                {work.mainTitle}
               </Typography>
             </Box>
-            <Box>
+             <Box>
               <Typography variant="h6" gutterBottom>
                 Tipo
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                {work?.typeLabel}
+                {work?.contentType}
               </Typography>
             </Box>
             <Box>
@@ -107,7 +109,7 @@ export default function Work({ params }) {
                 Assuntos
               </Typography>
               <List>
-                {work?.subjects?.map((subject, index) => (
+                {work.subjects?.map((subject, index) => (
                   <ListItem key={index}>
                     <Button
                       variant="outlined"
@@ -115,7 +117,7 @@ export default function Work({ params }) {
                       size={"small"}
                       sx={{ textTransform: "none" }}
                     >
-                      {subject.label}
+                      {subject.authority}
                     </Button>
                   </ListItem>
                 ))}
@@ -130,7 +132,7 @@ export default function Work({ params }) {
               </Box>
             )}
             {/* Classificação */}
-            <Box sx={{ mt: 2 }}>
+            {/* <Box sx={{ mt: 2 }}>
               <Typography variant="h6" gutterBottom>
                 Classificação
               </Typography>
@@ -150,10 +152,10 @@ export default function Work({ params }) {
 
                 
               </Box>
-            </Box>
+            </Box>  */}
           </Grid>
         )}
-
+{/* 
         <Grid item xs={6}>
           <Typography variant="h5" gutterBottom>
             Instâncias
@@ -182,7 +184,7 @@ export default function Work({ params }) {
               </Paper>
             </Link>
           )}
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );
