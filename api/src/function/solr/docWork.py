@@ -7,17 +7,19 @@ def DocWork(request, work_id):
 
     doc = {
         "id": work_id,
-        "bibrame": "work",
-        "contentType": request.contentType,
+        "type": "work",
+        "content": request.content,
         "mainTitle": request.mainTitle,
         "subtitle": request.subtitle,
-        "contributionID" : request.contributionID,
-        "contribution": request.contributionAgent,
+        "primaryContributionAgent" : request.primaryContributionAgent,
+        "primaryContributionUri": request.primaryContributionUri,
         "language": request.language,
         "cdd": request.cdd,
         "cutter": request.cutter,
         "hasSeries": request.serie
         }
+    
+    
 
     subjects = list()
     for subject in request.subjects:

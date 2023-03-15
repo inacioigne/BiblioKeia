@@ -17,7 +17,7 @@ async def create_work(request: Work_Schema):
     work_id = response['id']
 
     g = BfWork(request, work_id )
-    g.serialize("work1.ttl") 
+    g.serialize("work.ttl") 
     nt = g.serialize(format='nt')
 
     G = """
@@ -30,6 +30,7 @@ async def create_work(request: Work_Schema):
     DocWork(request, work_id)
 
     return {"id": work_id, "jena": response.convert() }
+    #return {"id": work_id}
 
 @router.put("/work", status_code=201)
 async def update_work(request: Work_Schema, work_id: str):

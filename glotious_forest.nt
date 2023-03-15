@@ -1,0 +1,102 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/18334774> a bf:Text,
+        bf:Work ;
+    bflc:aap "Prance, Ghillean T., 1937- That glorious forest" ;
+    bflc:aap-normalized "pranceghilleant1937thatgloriousforest" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/8> ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "DNAL/DLC" ;
+                    xml:comment "No  left-anchor matches found" ] ;
+            bf:changeDate "2014-10-17T06:43:56"^^xsd:dateTime ;
+            bf:creationDate "2014-10-06"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0" ;
+                    bf:generationDate "2022-03-05T03:21:23.007858-05:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "18334774" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $d CIP copy to go to DNAL $x policy default" ;
+            lclocal:d955 "=955     $a DNAL $e rl02 2014-10-15 to Dewey $w xl05 2014-10-17 (telework)" ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "580.7381/1" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ],
+        [ a bf:Classification ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dnal> ;
+            bf:classificationPortion "QK5" ;
+            bf:itemPortion ".P73 2014" ],
+        [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "QK5" ;
+            bf:itemPortion ".P73 2014" ] ;
+    bf:content [ a bf:Content ;
+            rdfs:label "text" ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> ],
+        <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79041937> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:geographicCoverage <http://id.loc.gov/vocabulary/geographicAreas/as> ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/18334774> ;
+    bf:hasSeries <http://id.loc.gov/resources/hubs/3035b85d-c7b5-649a-aa12-05ce677f9f11> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Scientific expeditions--Amazon River Region--Anecdotes." ;
+            bflc:aap-normalized "scientificexpeditionsamazonriverregionanecdotes" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Scientific expeditions--Amazon River Region--Anecdotes." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Scientific expeditions" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazon River Region" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Anecdotes" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Plant collecting--Amazon River Region--Anecdotes." ;
+            bflc:aap-normalized "plantcollectingamazonriverregionanecdotes" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Plant collecting--Amazon River Region--Anecdotes." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Plant collecting" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazon River Region" ] [ a madsrdf:GenreForm ;
+                        madsrdf:authoritativeLabel "Anecdotes" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Plants--Amazon River Region." ;
+            bflc:aap-normalized "plantsamazonriverregion" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Plants--Amazon River Region." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Plants" ] [ a madsrdf:Geographic ;
+                        madsrdf:authoritativeLabel "Amazon River Region" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ] ;
+    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Exploring the plants and their indigenous uses in Amazonia" ;
+            bf:variantType "portion" ],
+        [ a bf:Title ;
+            bf:mainTitle "That glorious forest" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+

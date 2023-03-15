@@ -2,6 +2,7 @@ from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 import pysolr 
+from pyfuseki import FusekiUpdate, FusekiQuery
 
 def UpdateSubject(subject, work_uri): 
 
@@ -27,7 +28,6 @@ def UpdateSubject(subject, work_uri):
      }
     solr.add([doc], commit=True)
     
-
 
 def Subject(g, subject, work_uri, BF, MADSRDF):
 
@@ -63,8 +63,23 @@ def Subject(g, subject, work_uri, BF, MADSRDF):
         g.add((BNlist2, RDF.rest, RDF.nil))
 
 
-
     return g
+
+def EditSubject(subject, bkID):
+    acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+    acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+
+    prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
+
+    askSubject = prefix+"ASK { graph work:"+bkID+"""
+                    {work:"""+bkID+""" bf:subject <"""+subject.uri+"> . }}"
+    response = acervoQuery.run_sparql(askSubject)
+    response = response.convert()
+    if not response['boolean']:
+        pass
 
 
 

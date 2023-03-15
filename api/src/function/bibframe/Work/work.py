@@ -28,7 +28,7 @@ def BfWork(request, work_id):
         "Texto": BF.Text,
         "Text": BF.Text
     }
-    contentType =  content[request.contentType]
+    contentType =  content[request.content]
 
     #Work
     g.add((work_uri, RDF.type, contentType))
@@ -56,23 +56,15 @@ def BfWork(request, work_id):
     g = Contributor(g, request, work_uri, BF, BFLC)
 
     #Subject
-    # BNsubject = BNode()
-    # g.add((work_uri, BF.subject, BNsubject))
-    for subject in request.subjects:
-       # g.add((BNsubject, BF.subject, BNsubject))
-
-        
-        # g.add((work_uri, BF.subject, BNsubject))
-        # g.add((BNsubject, RDF.type, BF.Topic))
-        
+    for subject in request.subjects:        
         uriSubject = URIRef(subject.uri)
-        #g = Subject(g, subject, work_uri, BF, MADSRDF)
+
         g.add((work_uri, BF.subject, uriSubject))
         UpdateSubject(subject, work_uri)
 
     # Serie
     if request.serie:
-        print("WORK: ", request)
+        #print("WORK: ", request)
         g = Serie(g, request, work_uri, BF)
 
     return g

@@ -1,0 +1,31 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/work/bk-1> a bf:Text,
+        bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:creationDate "2023-03-15"^^xsd:date ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-03-15T14:52:06.302900"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-1" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
+    bf:classification [ a bf:ClassificationDdc ;
+            bf:classificationPortion "540.2" ;
+            bf:itemPortion "O47p" ] ;
+    bf:contribution [ a bf:Contribution ;
+            rdfs:label "Machado de Assis" ;
+            bf:agent <https://bibliokeia.com/authorities/names/n82023179> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations: the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations" ;
+            bf:subtitle "the growth of scientific knowledge" ] .
+

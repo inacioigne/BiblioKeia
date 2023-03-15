@@ -6,16 +6,14 @@ class Subject(BaseModel):
     uri: str
 
 class Work_Schema(BaseModel):
-    work_id: Optional[str]
-    contentType: str
+    ID: Optional[str]
+    content: str
     mainTitle: str
     subtitle: Optional[str]
     variantTitle: Optional[str]
-    contributionAgent: str
-    contributionID: str
-    contributionRole: str
-    contributionRoleUri: str
-    contributionUri: str
+    primaryContributionAgent: str
+    primaryContributionUri: str
+    primaryContributionRole: str
     subjects: list[Subject]
     language: str
     languageCode: str 
