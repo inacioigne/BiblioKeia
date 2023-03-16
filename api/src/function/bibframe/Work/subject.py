@@ -65,7 +65,11 @@ def Subject(g, subject, work_uri, BF, MADSRDF):
 
     return g
 
-def EditSubject(subject, bkID):
+def EditSubject(subjects, bkID):
+
+    responses = list()
+    listSubjects = list()
+
     acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
     acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
 
@@ -74,12 +78,23 @@ def EditSubject(subject, bkID):
     PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
 
-    askSubject = prefix+"ASK { graph work:"+bkID+"""
+    for subject in subjects:
+        s = f" bf:subject <{subject.uri}> "
+        listSubjects.append(s)
+
+        askSubject = prefix+"ASK { graph work:"+bkID+"""
                     {work:"""+bkID+""" bf:subject <"""+subject.uri+"> . }}"
-    response = acervoQuery.run_sparql(askSubject)
-    response = response.convert()
-    if not response['boolean']:
-        pass
+        response = acervoQuery.run_sparql(askSubject)
+        response = response.convert()
+        responses.append(response['boolean'])
+    
+    if False in responses:
+        sub = "; ".join(listSubjects)
+        up = prefix+"WITH work:"+bkID+"""
+                DELETE {work:"""+bkID+""" bf:subject ?o }
+                INSERT {work:"""+bkID+sub+""" }
+                WHERE {work:"""+bkID+""" bf:subject ?o }"""
+        acervoUpdate.run_sparql(up)
 
 
 

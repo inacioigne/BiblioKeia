@@ -52,9 +52,17 @@ def EditContributor(request, bkID):
                     {work:"""+bkID+""" bf:contribution ?o .
                         ?o bf:agent <"""+request.primaryContributionUri+"""> }}"""
 
-    response = acervoQuery.run_sparql(askAgent)
-    response = response.convert()
-    if not response['boolean']:
+    responseAgent = acervoQuery.run_sparql(askAgent)
+    responseAgent = responseAgent.convert()
+
+    askRole = prefix+"ASK { graph work:"+bkID+"""
+                    {work:"""+bkID+""" bf:contribution ?o .
+                        ?o bf:role <http://id.loc.gov/vocabulary/relators/"""+request.primaryContributionRole+"""> }}"""
+    responseRole = acervoQuery.run_sparql(askRole)
+    responseRole = responseRole.convert()
+    responses = [responseAgent['boolean'], responseRole['boolean']]
+
+    if False in responses:
         up = prefix+"WITH work:"+bkID+"""
                 DELETE {work:"""+bkID+""" bf:contribution ?o .
                         ?o ?p ?agent }

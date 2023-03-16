@@ -7,25 +7,25 @@
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-            bf:creationDate "2023-03-15"^^xsd:date ;
+            bf:creationDate "2023-03-16"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-03-15T14:52:06.302900"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-03-16T13:06:24.558446"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-1" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "540.2" ;
-            bf:itemPortion "O47p" ] ;
+            bf:classificationPortion "584.6" ;
+            bf:itemPortion "A586w" ] ;
     bf:contribution [ a bf:Contribution ;
-            rdfs:label "Machado de Assis" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n82023179> ;
+            rdfs:label "Inácio Oliveira" ;
+            bf:agent <n80032184> ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/sh85103704> ;
     bf:title [ a bf:Title ;
-            rdfs:label "Conjectures and refutations: the growth of scientific knowledge" ;
-            bf:mainTitle "Conjectures and refutations" ;
-            bf:subtitle "the growth of scientific knowledge" ] .
+            rdfs:label "Conjecturas e refutações: refutações" ;
+            bf:mainTitle "Conjecturas e refutações" ;
+            bf:subtitle "refutações" ] .
 
