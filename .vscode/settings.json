@@ -12,7 +12,7 @@
         "**/__init__.py": false,
         "venv": true,
         "apache-jena-fuseki-4.5.0": true,
-        "Jena": true,
+        "Jena": false,
         "solr": false,
         "ui/.next": true,
         "ui/node_modules": true,

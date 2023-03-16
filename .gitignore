@@ -1,6 +1,6 @@
 /apache-jena-fuseki-4.5.0
 Bibframe/**
-Jena
+/Jena
 /solr/**
 /venv
 /cli/out
