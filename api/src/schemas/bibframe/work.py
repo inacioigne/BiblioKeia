@@ -24,23 +24,16 @@ class Work_Schema(BaseModel):
 
     
 test = {
-  "contentType": "text",
+  "content": "text",
   "mainTitle": "Conjecturas e refutações",
   "subtitle": "refutações",
-  "contributionAgent": "Inácio Oliveira",
-  "contributionID": "n80032184",
-  "contributionRole": "Autor",
-  "contributionRoleUri": "http://id.loc.gov/vocabulary/relators/ctb",
+  "primaryContributionAgent": "Inácio Oliveira",
+  "primaryContributionUri": "n80032184",
+  "primaryContributionRole": "Autor",
   "subjects": [
     {
     "label": "Methodology",
-     "lang": "en", 
-     "type": "SimpleType", "schema": "http://id.loc.gov/authorities/subjects"
-    },
-     {
-    "label": "Science--Methodology",
-     "lang": "en", 
-     "type": "ComplexType", "schema": "http://id.loc.gov/authorities/subjects"
+     "uri": "http://id.loc.gov/authorities/subjects"
     }
   ],
   "language": "Portugues",
