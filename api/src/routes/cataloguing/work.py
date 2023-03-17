@@ -30,11 +30,12 @@ async def create_work(request: Work_Schema):
     DocWork(request, work_id)
 
     return {"id": work_id, "jena": response.convert() }
-    #return {"id": work_id}
+
 
 @router.put("/work", status_code=201)
 async def update_work(request: Work_Schema, work_id: str):
     EditWork(request, work_id)
+    DocWork(request, work_id)
 
     #fuseki_update.run_sparql(up)
 

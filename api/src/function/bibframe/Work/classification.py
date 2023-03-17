@@ -25,15 +25,29 @@ def EditClassification(request, bkID):
     PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
 
-    askClassification = prefix+"ASK { graph work:"+bkID+"""
+    askCDD = prefix+"ASK { graph work:"+bkID+"""
                     {work:"""+bkID+""" bf:classification ?obj .
-                        ?obj bf:classificationPortion """+request.cdd+" }} "
-    response = acervoQuery.run_sparql(askClassification)
-    response = response.convert()
+                        ?obj bf:classificationPortion '"""+request.cdd+"' }} "
+    responseCDD = acervoQuery.run_sparql(askCDD)
+    responseCDD = responseCDD.convert()
 
-    if not response['boolean']:
+    askCutter = prefix+"ASK { graph work:"+bkID+"""
+                    {work:"""+bkID+""" bf:classification ?obj .
+                        ?obj bf:itemPortion '"""+request.cutter+"' }} "
+    responseCutter = acervoQuery.run_sparql(askCutter)
+    responseCutter = responseCutter.convert()
+    responseCutter
+
+    responses =  [responseCDD['boolean'], responseCutter['boolean']]
+
+    if False in responses:
         up = prefix+"WITH work:"+bkID+"""
-                DELETE {work:"""+bkID+""" bf:language ?o }
-                INSERT {work:"""+bkID+" bf:language <http://id.loc.gov/vocabulary/languages/"+request.languageCode+"""> }
-                WHERE {work:"""+bkID+""" bf:language ?o }"""
+               DELETE {work:"""+bkID+""" bf:classification ?obj . 
+                   ?obj ?p ?o }
+                INSERT {work:"""+bkID+""" bf:classification ?obj . 
+                  ?obj rdf:type bf:ClassificationDdc .
+                  ?obj bf:classificationPortion """+request.cdd+""" . 
+                  ?obj bf:itemPortion '"""+request.cutter+"""'  }
+                WHERE {work:"""+bkID+""" bf:classification ?obj .
+                   ?obj ?p ?o }"""
         acervoUpdate.run_sparql(up)

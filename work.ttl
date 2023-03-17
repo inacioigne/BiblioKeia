@@ -10,7 +10,7 @@
             bf:creationDate "2023-03-16"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-03-16T13:06:24.558446"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-03-16T19:53:11.860588"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-1" ] ;
@@ -23,7 +23,9 @@
             bf:agent <n80032184> ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh85103704> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/n80002329>,
+        <https://bibliokeia.com/authorities/subjects/sh85084414>,
+        <https://bibliokeia.com/authorities/subjects/sh85103704> ;
     bf:title [ a bf:Title ;
             rdfs:label "Conjecturas e refutações: refutações" ;
             bf:mainTitle "Conjecturas e refutações" ;

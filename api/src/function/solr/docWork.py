@@ -17,9 +17,7 @@ def DocWork(request, work_id):
         "cdd": request.cdd,
         "cutter": request.cutter,
         "hasSeries": request.serie
-        }
-    
-    
+        }  
 
     subjects = list()
     for subject in request.subjects:
