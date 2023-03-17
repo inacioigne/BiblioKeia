@@ -47,6 +47,7 @@ import { useEffect, useState } from "react";
 // BiblioKeia Services
 import QueryWork from "src/services/acervo/work";
 import { api } from "src/services/api/api";
+import { SolrWorkByID } from "src/services/solr/work";
 
 // BiblioKeia Styles
 import { menuStyle } from "src/styles/mui";
@@ -84,6 +85,7 @@ export default function Edit({ params }) {
     let id = params.id;
     QueryWork(id, setWork);
     //const workBefore = work
+    //SolrWorkByID(id, setWork)
     
     
     

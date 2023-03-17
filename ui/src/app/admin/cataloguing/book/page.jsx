@@ -82,7 +82,7 @@ export default function Book() {
   const { setOpenSnack, setMessage, setTypeAlert } = useAlertBK();
   const [visible, setVisible] = useState(0);
   const { work, setWork, setInstances } = useBf();
-  const [listSubject, setListSubject] = useState([{ label: "", uri: "" }]);
+  const [listSubject, setListSubject] = useState([]);
 
   const router = useRouter();
 
@@ -90,13 +90,13 @@ export default function Book() {
     
     setWork((prevState) => ({
       ...prevState,
-      contentType: "Texto"
+      content: "Texto"
     }))
   }, [])
 
   function postWork(work) {
-    setProgress(true);
     console.log("Ws", work)
+    setProgress(true); 
     api
       .post(`/cataloguing/work`, work)
       .then((response) => {
@@ -111,7 +111,7 @@ export default function Book() {
           setMessage("Registro salvo com sucesso!");
           setOpenSnack(true);
 
-          router.push(`/admin/cataloguing/book/instance/${response.data.id}`);
+          //router.push(`/admin/cataloguing/book/instance/${response.data.id}`);
         }
       })
       .catch(function (error) {
@@ -169,10 +169,10 @@ export default function Book() {
             <Box
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
-              <Subject 
+              {/* <Subject 
                 listSubject={listSubject}
                 setListSubject={setListSubject}
-              />
+              /> */}
             </Box>
             {visible === 4 && <Language />}
             {visible === 5 && <Classification />}

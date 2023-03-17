@@ -54,7 +54,6 @@ import {
         //setRelators(prevState => [...prevState, relator])
       }
       if (r.length != 0) {
-        ///console.log('RELATOR: ', relators)
         setRelators(r);
       } else {
         setRelators(null);
@@ -82,17 +81,16 @@ import {
       setName("");
       setWork((prevState) => ({
         ...prevState,
-        contributionRole: relator.target.innerText,
-        contributionRoleUri: relator.target.id
+        primaryContributionRole: relator.target.innerText,
+        primaryContributionRoleUri: relator.target.id
       }));
-      // console.log(relator.target.id)
     };
   
   
     const inputPros = {
       disabled: disabled,
       startAdornment: 
-      work.contributionRole !== "" ? (
+      work.primaryContributionRole !== "" ? (
         <InputAdornment position="start">
           <Typography
             variant="subtitle2"
@@ -111,7 +109,7 @@ import {
                 backgroundColor: blue[200],
               }}
             >
-               {work.contributionRole}
+               {work.primaryContributionRole}
             </Box>
   
             <Close
@@ -128,7 +126,7 @@ import {
                 setDisabled(false);
                 setWork((prevState) => ({
                   ...prevState,
-                  contributionRole: "",
+                  primaryContributionRole: "",
                 }));
                 let rect = e.currentTarget.getBoundingClientRect();
                 setOpenMenu(rect.top + rect.height + 19);

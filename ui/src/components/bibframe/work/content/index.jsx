@@ -52,7 +52,7 @@ export default function Content() {
                 backgroundColor: blue[200],
               }}
             >
-              {work.contentType}
+              {work.content}
             </Box>
             <Close
               sx={{
@@ -68,7 +68,7 @@ export default function Content() {
                 setDisabled(false);
                 setWork((prevState) => ({
                   ...prevState,
-                  contentType: "",
+                  content: "",
                 }));
                 let rect = e.currentTarget.getBoundingClientRect();
                 setOpenMenu(rect.top + rect.height + 19);
@@ -100,7 +100,7 @@ export default function Content() {
     setValue("");
     setWork((prevState) => ({
       ...prevState,
-      contentType: relator.target.innerText,
+      content: relator.target.innerText,
     }));
   };
 

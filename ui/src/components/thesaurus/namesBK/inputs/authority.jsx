@@ -18,7 +18,7 @@ export default function Authority({ value, setValue, disabled, setDisabled }) {
   const inputPros = {
     disabled: disabled,
     startAdornment:
-      work.contributionAgent !== "" ? (
+      work.primaryContributionAgent !== "" ? (
         <InputAdornment position="start">
           <Typography
             variant="subtitle2"
@@ -37,7 +37,7 @@ export default function Authority({ value, setValue, disabled, setDisabled }) {
                 backgroundColor: blue[200],
               }}
             >
-              {work.contributionAgent}
+              {work.primaryContributionAgent}
             </Box>
             <Close
               sx={{
@@ -53,7 +53,7 @@ export default function Authority({ value, setValue, disabled, setDisabled }) {
                 setDisabled(false);
                 setWork((prevState) => ({
                   ...prevState,
-                  contributionAgent: "",
+                  primaryContributionAgent: "",
                 }));
               }}
             />

@@ -5,7 +5,6 @@ export const SolrWorkByID = (id, setWork) => {
       .get("acervo/select", {
         params: {
           q: `id:${id}*`,
-          "fl":"*,[child]",
           "q.op": "AND",
           wt: "json",
         },

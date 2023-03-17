@@ -41,9 +41,9 @@ import {
       setName("");
       setWork((prevState) => ({
         ...prevState,
-        contributionAgent: nameDetails.name,
-        contributionID: nameDetails.token,
-        contributionUri: `https://bibliokeia.com/authorities/names/${nameDetails.token}`,
+        primaryContributionAgent: nameDetails.name,
+        //contributionID: nameDetails.token,
+        primaryContributionUri: `https://bibliokeia.com/authorities/names/${nameDetails.token}`,
       }));
     };
   

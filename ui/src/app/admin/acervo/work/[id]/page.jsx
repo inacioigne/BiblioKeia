@@ -93,7 +93,7 @@ export default function Work({ params }) {
                 Tipo
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
-                {work?.contentType}
+                {work?.content}
               </Typography>
             </Box>
             <Box>
@@ -101,7 +101,7 @@ export default function Work({ params }) {
                 Autor
               </Typography>
               <Button variant="outlined" startIcon={<Person3 />}>
-                {work?.contribution}
+                {work?.primaryContributionAgent}
               </Button>
             </Box>
             <Box sx={{ mt: 2 }}>
@@ -117,7 +117,7 @@ export default function Work({ params }) {
                       size={"small"}
                       sx={{ textTransform: "none" }}
                     >
-                      {subject.authority}
+                      {subject}
                     </Button>
                   </ListItem>
                 ))}

@@ -68,9 +68,11 @@ export default function ThesarusBK({listSubject, setListSubject, index, defaultS
     // setChoise(true)
     //ParserBK(subject.uri, setSubjectBK);
     
+    
 
     if (defaultSubject) {
-      ParserBK(defaultUri, setSubjectBK)
+      // ParserBK(defaultUri, setSubjectBK)
+      setSubjectBK({'authority': defaultSubject})
       setChoise(true)
     }
 
@@ -142,7 +144,7 @@ export default function ThesarusBK({listSubject, setListSubject, index, defaultS
               backgroundColor: blue[200],
             }}
           >
-            {subjectBK?.authority}
+            {subjectBK.authority}
           </Box>
           <Close
             sx={{

@@ -55,7 +55,7 @@ async function QueryWork(id, setWork) {
   const hasInstance = work.out(ns.bf.hasInstance);
   const instanceID = hasInstance._context.length > 0 ? hasInstance.value : null
 
-  console.log("Sem instanceia", instanceID)
+  //console.log("Sem instanceia", instanceID)
 
 
 
@@ -84,21 +84,15 @@ async function QueryWork(id, setWork) {
  
 
   const wk = {
-    //title: title,
-    //typeLabel: typeLabel,
-    work_id: id,
-    contribution: contribution,
-    serie: null,
-    hasInstance: hasInstance,
-    instanceID: instanceID,
-    contentType: typeLabel,
+    ID: id,
+    content: typeLabel,
     mainTitle: title,
     subtitle: subtitle,
-    contributionAgent: contribution,
-    contributionRole: "Autor",
-    contributionRoleUri: contributionRoleUri,
-    contributionUri: contributionUri,
-    //contributionID: contributionID,
+    variantTitle: "",
+    primaryContributionAgent: contribution,
+    primaryContributionUri: contributionUri,
+    primaryContributionRole: "",
+    primaryContributionRoleUri: contributionRoleUri,
     subjects: response,
     language: "",
     languageCode: "",
@@ -106,6 +100,8 @@ async function QueryWork(id, setWork) {
     cutter: cutter,
     serie: "",
     serieURI: "",
+    hasInstance: hasInstance,
+    instanceID: instanceID
   };
 
   // Serie

@@ -4,21 +4,21 @@ export const BfContext = createContext({});
 
 export const BfProvider = ({ children }) => {
   const [work, setWork] = useState({
-    work_id: "",
-    contentType: "",
+    ID: "",
+    content: "",
     mainTitle: "",
     subtitle: "",
-    contributionAgent: "",
-    contributionRole: "",
-    contributionRoleUri: "",
-    contributionID: "",
+    variantTitle: "",
+    primaryContributionAgent: "",
+    primaryContributionUri: "",
+    primaryContributionRole: "",
+    primaryContributionRoleUri: "",
     subjects: [],
     language: "",
     languageCode: "",
     cdd: "",
     cutter: "",
     serie: "",
-    serieID: "",
     serieURI: ""
   });
 
