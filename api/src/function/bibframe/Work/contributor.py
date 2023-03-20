@@ -25,7 +25,7 @@ def UpdateContribution(request, work_uri):
 
 def Contributor(g, request, uri, BF, BFLC):
 
-    contribution = BNode()
+    contribution = BNode() 
     agent = URIRef(request.primaryContributionUri)
     role = URIRef(request.primaryContributionRoleUri)
     g.add((uri, BF.contribution, contribution))

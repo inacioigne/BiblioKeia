@@ -3,28 +3,29 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/resources/work/bk-3> a bf:Text,
+<https://bibliokeia.com/resources/work/bk-1> a bf:Text,
         bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-            bf:creationDate "2023-03-17"^^xsd:date ;
+            bf:creationDate "2023-03-20"^^xsd:date ;
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    bf:generationDate "2023-03-17T14:44:31.797814"^^xsd:dateTime ] ;
+                    bf:generationDate "2023-03-20T13:34:18.283156"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-                    rdf:value "bk-3" ] ;
+                    rdf:value "bk-1" ] ;
             bf:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     bf:classification [ a bf:ClassificationDdc ;
-            bf:classificationPortion "548.2" ;
-            bf:itemPortion "A587s" ] ;
+            bf:classificationPortion "584.6" ;
+            bf:itemPortion "A586w" ] ;
     bf:contribution [ a bf:Contribution ;
-            rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994" ;
-            bf:agent <https://bibliokeia.com/authorities/names/n80032184> ;
+            rdfs:label "Karl R. Popper" ;
+            bf:agent <n80032184> ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/por> ;
-    bf:subject <https://bibliokeia.com/authorities/subjects/sh85084414>,
-        <https://bibliokeia.com/authorities/subjects/sh85118553> ;
+    bf:subject <https://bibliokeia.com/authorities/subjects/n80002329>,
+        <https://bibliokeia.com/authorities/subjects/sh85084414>,
+        <https://bibliokeia.com/authorities/subjects/sh85103704> ;
     bf:title [ a bf:Title ;
             rdfs:label "Conjecturas e refutações" ;
             bf:mainTitle "Conjecturas e refutações" ] .

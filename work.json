@@ -1,12 +1,13 @@
 {
     "content": "Text",
-    "mainTitle": "Conjecturas e refutações",
-    "primaryContributionAgent": "Karl R. Popper",
-    "primaryContributionUri": "n80032184",
+    "mainTitle": "Conjecturas e refutações MUDADO",
+    "primaryContributionAgent": "Karl R. Popper MUDADO",
+    "primaryContributionUri": "https://bibliokeia.com/authorities/names/n80032184",
     "primaryContributionRole": "aut",
+    "primaryContributionRoleUri": "http://id.loc.gov/vocabulary/relators/aut",
     "subjects": [
       {
-      "label": "Methodology",
+      "label": "Methodology MUDADO",
        "uri": "https://bibliokeia.com/authorities/subjects/sh85103704"
       }, 
       {
@@ -18,8 +19,13 @@
        "uri": "https://bibliokeia.com/authorities/subjects/sh85084414"
       }    
     ],
-    "language": "Portugues",
-    "languageCode": "por",
+    "language": "Inglês",
+    "languageCode": "eng",
     "cdd": "584.6",
-    "cutter": "A586w"
+    "cutter": "O48c"
+  }
+
+  {
+    "mainTitle": "Conjecturas e refutações MUDADO DE NOVO"
+   
   }

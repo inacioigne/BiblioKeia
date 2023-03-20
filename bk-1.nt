@@ -7,26 +7,27 @@
         ns1:Work ;
     ns1:adminMetadata [ a ns1:AdminMetadata ;
             ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-            ns1:creationDate "2023-03-15"^^xsd:date ;
+            ns1:changeDate "2023-03-20T15:54:01"^^xsd:dateTime ;
+            ns1:creationDate "2023-03-20"^^xsd:date ;
             ns1:generationProcess [ a ns1:GenerationProcess ;
                     rdfs:label "BiblioKeia" ;
-                    ns1:generationDate "2023-03-15T14:52:06.302900"^^xsd:dateTime ] ;
+                    ns1:generationDate "2023-03-20T13:34:18.283156"^^xsd:dateTime ] ;
             ns1:identifiedBy [ a ns1:Local ;
                     ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "bk-1" ] ;
             ns1:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     ns1:classification [ a ns1:ClassificationDdc ;
-            ns1:classificationPortion "540.2" ;
-            ns1:itemPortion "O47p" ] ;
+            ns1:classificationPortion 584.6 ;
+            ns1:itemPortion "O48c" ] ;
     ns1:contribution [ a ns1:Contribution ;
-            rdfs:label "MACHADÃO de Assis" ;
-            ns1:agent <https://bibliokeia.com/authorities/names/n79143148> ;
+            rdfs:label "Karl R. Popper MUDADO" ;
+            ns1:agent <https://bibliokeia.com/authorities/names/n80032184> ;
             ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/por> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
     ns1:subject <https://bibliokeia.com/authorities/subjects/n80002329>,
+        <https://bibliokeia.com/authorities/subjects/sh85084414>,
         <https://bibliokeia.com/authorities/subjects/sh85103704> ;
     ns1:title [ a ns1:Title ;
-            rdfs:label "Conjectures and refutations MUDADO" ;
-            ns1:mainTitle "Conjectures and refutations MUDADO" ;
-            ns1:subtitle "the growth of scientific knowledge" ] .
+            rdfs:label "Conjecturas e refutações MOVAMENTE" ;
+            ns1:mainTitle "Conjecturas e refutações MOVAMENTE" ] .
 

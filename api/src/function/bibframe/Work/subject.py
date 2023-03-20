@@ -82,19 +82,19 @@ def EditSubject(subjects, bkID):
         s = f" bf:subject <{subject.uri}> "
         listSubjects.append(s)
 
-        askSubject = prefix+"ASK { graph work:"+bkID+"""
-                    {work:"""+bkID+""" bf:subject <"""+subject.uri+"> . }}"
-        response = acervoQuery.run_sparql(askSubject)
-        response = response.convert()
-        responses.append(response['boolean'])
+        # askSubject = prefix+"ASK { graph work:"+bkID+"""
+        #             {work:"""+bkID+""" bf:subject <"""+subject.uri+"> . }}"
+        # response = acervoQuery.run_sparql(askSubject)
+        # response = response.convert()
+        # responses.append(response['boolean'])
     
-    if False in responses:
-        sub = "; ".join(listSubjects)
-        up = prefix+"WITH work:"+bkID+"""
+    #if False in responses:
+    sub = "; ".join(listSubjects)
+    up = prefix+"WITH work:"+bkID+"""
                 DELETE {work:"""+bkID+""" bf:subject ?o }
                 INSERT {work:"""+bkID+sub+""" }
                 WHERE {work:"""+bkID+""" bf:subject ?o }"""
-        acervoUpdate.run_sparql(up)
+    acervoUpdate.run_sparql(up)
 
 
 

@@ -40,7 +40,6 @@ def BfWork(request, work_id):
     #Classification
     g = Classification(g, request, work_uri, BF)
 
-
     #Language
     g = Language(g, request, work_uri, BF) 
 

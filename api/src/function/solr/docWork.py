@@ -27,3 +27,10 @@ def DocWork(request, work_id):
 
     solr.add([doc], commit=True)
 
+def EditDocWork(request, work_id):
+    doc = {"id": work_id}
+    for k, v in request:
+        if v:
+            doc[k] = {"set": v}
+    solr.add([doc], commit=True)
+

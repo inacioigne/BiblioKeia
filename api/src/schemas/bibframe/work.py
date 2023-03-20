@@ -23,6 +23,24 @@ class Work_Schema(BaseModel):
     serie: Optional[str]
     serieURI: Optional[str]
 
+class Work_Edit(BaseModel):
+    ID: Optional[str]
+    content: Optional[str]
+    mainTitle: Optional[str]
+    subtitle: Optional[str]
+    variantTitle: Optional[str]
+    primaryContributionAgent: Optional[str]
+    primaryContributionUri: Optional[str]
+    primaryContributionRole: Optional[str]
+    primaryContributionRoleUri: Optional[str]
+    subjects: Optional[list[Subject]]
+    language: Optional[str]
+    languageCode: Optional[str] 
+    cdd: Optional[str]
+    cutter: Optional[str]
+    serie: Optional[str]
+    serieURI: Optional[str]
+
     
 test = {
   "content": "text",

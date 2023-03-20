@@ -1,0 +1,118 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/1893399> a bf:Text,
+        bf:Work ;
+    rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+    bflc:aap "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" ;
+    bflc:aap-normalized "popperkarlr(karlraimund)19021994conjecturesandrefutations:thegrowthofscientificknowledge" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "MH" ;
+                    xml:comment "No  left-anchor matches found" ] ;
+            bf:changeDate "2008-05-09T11:03:06"^^xsd:dateTime ; 
+            bf:creationDate "1983-12-01"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T20:33:57-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "1893399" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "BD241" ;
+            bf:itemPortion ".P65x 1968" ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80032184> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/1893399> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:subject [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Methodology." ;
+            bflc:aap-normalized "methodology" ;
+            madsrdf:authoritativeLabel "Methodology." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Prediction (Logic)" ;
+            bflc:aap-normalized "prediction(logic)" ;
+            madsrdf:authoritativeLabel "Prediction (Logic)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:ComplexSubject ;
+            rdfs:label "Science--Methodology." ;
+            bflc:aap-normalized "sciencemethodology" ;
+            madsrdf:authoritativeLabel "Science--Methodology." ;
+            madsrdf:componentList ( [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Science" ] [ a madsrdf:Topic ;
+                        madsrdf:authoritativeLabel "Methodology" ] ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
+        [ a bf:Topic,
+                madsrdf:Topic ;
+            rdfs:label "Knowledge, Theory of." ;
+            bflc:aap-normalized "knowledgetheoryof" ;
+            madsrdf:authoritativeLabel "Knowledge, Theory of." ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references and indexes." ],
+        <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
+        <http://id.loc.gov/vocabulary/msupplcont/index> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations : the growth of scientific knowledge" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/resources/instances/1893399> a bf:Instance ;
+    bf:provisionActivityStatement "New York : Harper & Row, 1968, c1965." ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations" ;
+            bf:subtitle "the growth of scientific knowledge" ] .
+
+<http://id.loc.gov/rwo/agents/n80032184> a bf:Agent,
+        bf:Person ;
+    rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994." ;
+    madsrdf:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n80032184> .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
+    rdfs:label "text" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "aacr" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
+    rdfs:label "corrected or revised" ;
+    bf:code "c" .
+
+<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
+    rdfs:label "bibliography" .
+
+<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
+    rdfs:label "index" .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role ;
+    rdfs:label "Contributor" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    bf:code "DLC" .
+
