@@ -13,6 +13,7 @@ def DocWork(request, work_id):
         "subtitle": request.subtitle,
         "primaryContributionAgent" : request.primaryContributionAgent,
         "primaryContributionUri": request.primaryContributionUri,
+        "primaryContributionRole": request.primaryContributionRole,
         "language": request.language,
         "cdd": request.cdd,
         "cutter": request.cutter,

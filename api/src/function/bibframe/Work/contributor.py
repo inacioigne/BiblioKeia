@@ -27,7 +27,7 @@ def Contributor(g, request, uri, BF, BFLC):
 
     contribution = BNode()
     agent = URIRef(request.primaryContributionUri)
-    role = URIRef(f"http://id.loc.gov/vocabulary/relators/{request.primaryContributionRole}")
+    role = URIRef(request.primaryContributionRoleUri)
     g.add((uri, BF.contribution, contribution))
     g.add((contribution, RDF.type, BF.Contribution))
     g.add((contribution, BF.agent, agent))
@@ -57,7 +57,7 @@ def EditContributor(request, bkID):
 
     askRole = prefix+"ASK { graph work:"+bkID+"""
                     {work:"""+bkID+""" bf:contribution ?o .
-                        ?o bf:role <http://id.loc.gov/vocabulary/relators/"""+request.primaryContributionRole+"""> }}"""
+                        ?o bf:role <"""+request.primaryContributionRoleUri+"""> }}"""
     responseRole = acervoQuery.run_sparql(askRole)
     responseRole = responseRole.convert()
     responses = [responseAgent['boolean'], responseRole['boolean']]

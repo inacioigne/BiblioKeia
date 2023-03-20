@@ -14,6 +14,7 @@ class Work_Schema(BaseModel):
     primaryContributionAgent: str
     primaryContributionUri: str
     primaryContributionRole: str
+    primaryContributionRoleUri: str
     subjects: list[Subject]
     language: str
     languageCode: str 

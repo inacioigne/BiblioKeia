@@ -1,0 +1,25 @@
+{
+    "content": "Text",
+    "mainTitle": "Conjecturas e refutações",
+    "primaryContributionAgent": "Karl R. Popper",
+    "primaryContributionUri": "n80032184",
+    "primaryContributionRole": "aut",
+    "subjects": [
+      {
+      "label": "Methodology",
+       "uri": "https://bibliokeia.com/authorities/subjects/sh85103704"
+      }, 
+      {
+      "label": "Ciência",
+       "uri": "https://bibliokeia.com/authorities/subjects/n80002329"
+      },
+      {
+      "label": "Manga",
+       "uri": "https://bibliokeia.com/authorities/subjects/sh85084414"
+      }    
+    ],
+    "language": "Portugues",
+    "languageCode": "por",
+    "cdd": "584.6",
+    "cutter": "A586w"
+  }
