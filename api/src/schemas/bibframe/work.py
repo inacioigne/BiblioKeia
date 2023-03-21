@@ -5,6 +5,16 @@ class Subject(BaseModel):
     label: str
     uri: str
 
+class Contribution(BaseModel):
+    label: str
+    role: str
+    uri: str
+
+class Classification(BaseModel):
+    type: str
+    classificationPortion: str
+    itemPortion: str
+
 class Work_Schema(BaseModel):
     ID: Optional[str]
     content: str
@@ -40,6 +50,11 @@ class Work_Edit(BaseModel):
     cutter: Optional[str]
     serie: Optional[str]
     serieURI: Optional[str]
+
+class Work_Response(BaseModel):
+    type: list
+    classification: Classification
+    contribution: Contribution
 
     
 test = {

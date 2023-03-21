@@ -2,6 +2,14 @@ from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF
 from pyfuseki import FusekiUpdate, FusekiQuery
 
+acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+
+prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
+
 def Classification(g, request, uri, BF): 
 
     classification = BNode()
@@ -16,14 +24,6 @@ def Classification(g, request, uri, BF):
 def EditClassification(request, bkID):
 
     responses = list()
-
-    acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
-    acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
-
-    prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
 
     askCDD = prefix+"ASK { graph work:"+bkID+"""
                     {work:"""+bkID+""" bf:classification ?obj .
@@ -51,3 +51,31 @@ def EditClassification(request, bkID):
                 WHERE {work:"""+bkID+""" bf:classification ?obj .
                    ?obj ?p ?o }"""
         acervoUpdate.run_sparql(up)
+
+def GetClassification(bkID, bkDict):
+
+    query = "SELECT ?p ?o WHERE { graph work:"+bkID+""" {
+    work:"""+bkID+"""  bf:classification ?classification .
+        ?classification ?p ?o 
+    } }"""
+
+    queryClassfication = prefix+query
+    response = acervoQuery.run_sparql(queryClassfication)
+    response = response.convert()
+    bindings = response['results']['bindings']
+    classification = {}
+    for i in bindings:
+        metadadoUri = i['p']['value']
+        if metadadoUri == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type':
+            value = i['o']['value'].split('/')[-1]
+            classification['type'] = value
+        else:
+            metadado = i['p']['value'].split('/')[-1]
+            value = i['o']['value'].split('/')[-1]
+            classification[metadado] = value
+    bkDict['classification'] = classification
+    print(bkDict)
+    
+    return bkDict
+
+

@@ -17,7 +17,7 @@
                     rdf:value "bk-1" ] ;
             ns1:status <http://id.loc.gov/vocabulary/mstatus/n> ] ;
     ns1:classification [ a ns1:ClassificationDdc ;
-            ns1:classificationPortion 584.6 ;
+            ns1:classificationPortion 584.6 ; 
             ns1:itemPortion "O48c" ] ;
     ns1:contribution [ a ns1:Contribution ;
             rdfs:label "Karl R. Popper MUDADO" ;
