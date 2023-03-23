@@ -39,3 +39,8 @@ def GetLanguage(bkID, bkDict):
     response = acervoQuery.run_sparql(queryLanguage)
     response = response.convert()
     bindings = response['results']['bindings']
+    for i in bindings:
+        code = i['language']['value'].split("/")[-1]
+        bkDict['language'] = code
+        
+    return bkDict

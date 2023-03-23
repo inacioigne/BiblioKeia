@@ -99,7 +99,7 @@ def GetContribution(bkID, bkDict):
             value = i['o']['value']
             contribution['uri'] = value
 
-    bkDict['contribution'] = contribution
+    bkDict['primaryContribution'] = contribution
 
     return bkDict
     

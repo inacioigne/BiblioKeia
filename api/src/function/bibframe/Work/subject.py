@@ -4,6 +4,17 @@ from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 import pysolr 
 from pyfuseki import FusekiUpdate, FusekiQuery
 
+acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+authorityQuery = FusekiQuery('http://localhost:3030', 'authorities')
+
+prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX subjects: <https://bibliokeia.com/authorities/subjects/>
+    PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>"""
+
 def UpdateSubject(subject, work_uri): 
 
     store = SPARQLUpdateStore(update_endpoint='http://localhost:3030/authorities/update')
@@ -70,31 +81,50 @@ def EditSubject(subjects, bkID):
     responses = list()
     listSubjects = list()
 
-    acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
-    acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
-
-    prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
+    
 
     for subject in subjects:
         s = f" bf:subject <{subject.uri}> "
         listSubjects.append(s)
 
-        # askSubject = prefix+"ASK { graph work:"+bkID+"""
-        #             {work:"""+bkID+""" bf:subject <"""+subject.uri+"> . }}"
-        # response = acervoQuery.run_sparql(askSubject)
-        # response = response.convert()
-        # responses.append(response['boolean'])
-    
-    #if False in responses:
     sub = "; ".join(listSubjects)
     up = prefix+"WITH work:"+bkID+"""
                 DELETE {work:"""+bkID+""" bf:subject ?o }
                 INSERT {work:"""+bkID+sub+""" }
                 WHERE {work:"""+bkID+""" bf:subject ?o }"""
     acervoUpdate.run_sparql(up)
+
+def GetSubject(bkID, bkDict):
+
+    query = "SELECT * WHERE { graph work:"+bkID+""" {
+  work:"""+bkID+"""  bf:subject ?subject } }"""
+
+    querySubject = prefix+query
+    response = acervoQuery.run_sparql(querySubject)
+    response = response.convert()
+    bindings = response['results']['bindings']
+    subjects = list()
+    for i in bindings:
+        subjectID = i['subject']['value'].split("/")[-1]
+        query = """SELECT * WHERE { graph subjects:"""+subjectID+""" {
+        subjects:"""+subjectID+""" madsrdf:authoritativeLabel ?label .
+        subjects:"""+subjectID+""" rdf:type ?type .
+        FILTER(?type != madsrdf:Authority)
+    } }"""
+        querySubject = prefix+query
+        response = authorityQuery.run_sparql(querySubject)
+        response = response.convert()
+        [response] = response['results']['bindings']
+        label = response['label']['value']
+        tipo = response['type']['value'].split("#")[-1]
+        s = {"label": label, "type": tipo,
+            "uri": f"https://bibliokeia.com/authorities/subjects/{subjectID}"}
+
+        subjects.append(s)
+    bkDict["subjects"] = subjects
+
+    return bkDict
+    
 
 
 

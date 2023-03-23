@@ -3,6 +3,7 @@ from src.function.bibframe.types import GetType
 from src.function.bibframe.Work.classification import GetClassification
 from src.function.bibframe.Work.contributor import GetContribution
 from src.function.bibframe.Work.language import GetLanguage
+from src.function.bibframe.Work.subject import GetSubject
 
 acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
 
@@ -18,22 +19,9 @@ def QueryWork(bkID):
     bkDict = GetClassification(bkID, bkDict)
     bkDict = GetContribution(bkID, bkDict)
     bkDict = GetLanguage(bkID, bkDict)
+    bkDict = GetSubject(bkID, bkDict)
+    print("WORK: ", bkDict)
 
     return bkDict
-
-    # Type
-#     queryType = prefix+"""SELECT * WHERE { 
-#   graph work:bk-1 {
-#   work:bk-1 rdf:type ?o } }"""
-#     response = acervoQuery.run_sparql(queryType)
-#     response = response.convert()
-#     bindings = response['results']['bindings']
-#     values = list()
-#     for i in bindings:
-#         value = i['o']['value'].split("/")[-1]
-#         values.append(value)
-#     work['type'] = values
-
-#     return work
 
     

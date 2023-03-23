@@ -9,11 +9,11 @@ def DocWork(request, work_id):
         "id": work_id,
         "type": "work",
         "content": request.content,
-        "mainTitle": request.mainTitle,
-        "subtitle": request.subtitle,
-        "primaryContributionAgent" : request.primaryContributionAgent,
-        "primaryContributionUri": request.primaryContributionUri,
-        "primaryContributionRole": request.primaryContributionRole,
+        "mainTitle": request.title.mainTitle,
+        "subtitle": request.title.subtitle,
+        "primaryContribution" : request.primaryContribution.label,
+        "primaryContributionUri": request.primaryContribution.uri,
+        "primaryContributionRole": request.primaryContribution.role,
         "language": request.language,
         "cdd": request.cdd,
         "cutter": request.cutter,
@@ -31,6 +31,12 @@ def EditDocWork(request, work_id):
     doc = {"id": work_id}
     for k, v in request:
         if v:
-            doc[k] = {"set": v}
+            if k == 'subjects':
+                subs = [i.label for i in v]
+                doc[k] = {"set": subs}
+            else:
+                doc[k] = {"set": v}
+
+                
     solr.add([doc], commit=True)
 

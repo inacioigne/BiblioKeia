@@ -5,14 +5,14 @@ from pyfuseki import FusekiUpdate, FusekiQuery
 acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
 acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
 
-def Title(g, request, uri, label, BF):
+def Title(g, request, uri, BF):
     title = BNode()
     g.add((uri, BF.title, title))
     g.add((title, RDF.type, BF.Title))
     g.add((title, BF.mainTitle, Literal(request.mainTitle)))
     if request.subtitle: 
         g.add((title, BF.subtitle, Literal(request.subtitle)))
-    g.add((title, RDFS.label, label))
+   # g.add((title, RDFS.label, label))
 
     # VariantTitle 
     if request.variantTitle:

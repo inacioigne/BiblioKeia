@@ -3,6 +3,7 @@ from typing import Optional
 
 class Subject(BaseModel):
     label: str
+    type: str
     uri: str
 
 class Contribution(BaseModel):
@@ -15,16 +16,16 @@ class Classification(BaseModel):
     classificationPortion: str
     itemPortion: str
 
-class Work_Schema(BaseModel):
-    ID: Optional[str]
-    content: str
+class Title(BaseModel):
     mainTitle: str
     subtitle: Optional[str]
     variantTitle: Optional[str]
-    primaryContributionAgent: str
-    primaryContributionUri: str
-    primaryContributionRole: str
-    primaryContributionRoleUri: str
+
+class Work_Schema(BaseModel):
+    #ID: Optional[str]
+    content: str
+    title: Title
+    primaryContribution: Optional[Contribution]
     subjects: list[Subject]
     language: str
     languageCode: str 
@@ -34,15 +35,12 @@ class Work_Schema(BaseModel):
     serieURI: Optional[str]
 
 class Work_Edit(BaseModel):
-    ID: Optional[str]
+    #ID: Optional[str]
     content: Optional[str]
     mainTitle: Optional[str]
     subtitle: Optional[str]
     variantTitle: Optional[str]
-    primaryContributionAgent: Optional[str]
-    primaryContributionUri: Optional[str]
-    primaryContributionRole: Optional[str]
-    primaryContributionRoleUri: Optional[str]
+    primaryContribution: Optional[Contribution]
     subjects: Optional[list[Subject]]
     language: Optional[str]
     languageCode: Optional[str] 
@@ -54,24 +52,7 @@ class Work_Edit(BaseModel):
 class Work_Response(BaseModel):
     type: list
     classification: Classification
-    contribution: Contribution
+    primaryContribution: Contribution
+    language: str
+    subjects: list[Subject]
 
-    
-test = {
-  "content": "text",
-  "mainTitle": "Conjecturas e refutações",
-  "subtitle": "refutações",
-  "primaryContributionAgent": "Inácio Oliveira",
-  "primaryContributionUri": "n80032184",
-  "primaryContributionRole": "Autor",
-  "subjects": [
-    {
-    "label": "Methodology",
-     "uri": "http://id.loc.gov/authorities/subjects"
-    }
-  ],
-  "language": "Portugues",
-  "languageCode": "por",
-  "cdd": "584.6",
-  "cutter": "A586w"
-}
