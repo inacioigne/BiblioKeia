@@ -46,7 +46,7 @@ app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work']
 app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
-app.include_router(subjects.router, prefix='/thesaurus', tags=['Thesaurus'])
+app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
 app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 
 if __name__ == "__main__":

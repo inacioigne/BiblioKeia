@@ -4,6 +4,17 @@ from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 
+prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX work: <https://bibliokeia.com/resources/work/>
+PREFIX subjects: <https://bibliokeia.com/authorities/subjects/>
+PREFIX names: <https://bibliokeia.com/authorities/names/>
+PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>"""
+
+acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+
 def UpdateContribution(primaryContribution, work_uri):
 
     thesaurusUpdate = FusekiUpdate('http://localhost:3030', 'authorities') 
@@ -39,3 +50,19 @@ def PrimaryContribution(g, primaryContribution, work_uri, BF, BFLC):
     UpdateContribution(primaryContribution, work_uri)
 
     return g
+
+def EditPrimaryContribution(primaryContribution, bkID):
+
+    up = prefix+"WITH work:"+bkID+"""
+                DELETE {work:"""+bkID+""" bf:contribution ?o .
+                        ?o ?p ?contribution }
+                INSERT {work:"""+bkID+""" bf:contribution ?o .
+                ?o rdf:type bf:Contribution .
+                ?o rdf:type bflc:PrimaryContribution .
+                ?o rdfs:label '"""+primaryContribution.label+"""'.
+                ?o bf:role <http://id.loc.gov/vocabulary/relators/"""+primaryContribution.role+"""> .
+                ?o bf:agent <"""+primaryContribution.uri+"""> .}
+                WHERE {work:"""+bkID+""" bf:contribution ?o .
+                        ?o ?p ?contribution }"""
+       
+    acervoUpdate.run_sparql(up)

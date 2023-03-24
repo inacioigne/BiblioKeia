@@ -1,4 +1,4 @@
-import pysolr 
+import pysolr  
 
 #SOLR
 solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
@@ -34,6 +34,10 @@ def EditDocWork(request, work_id):
             if k == 'subjects':
                 subs = [i.label for i in v]
                 doc[k] = {"set": subs}
+            elif k == 'primaryContribution':
+                doc['primaryContribution'] = {"set": v.label}
+                doc['primaryContributionUri'] = {"set": v.uri}
+                doc['primaryContributionRole'] = {"set": v.role}
             else:
                 doc[k] = {"set": v}
 

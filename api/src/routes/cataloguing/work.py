@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from src.schemas.bibframe.work import Work_Schema, Work_Edit, Work_Response
 from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
@@ -15,9 +15,17 @@ acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
 # GET
 @router.get("/work", status_code=200)
 async def get_work(id: str) -> Work_Response:
-    bkDict = QueryWork(id)
+    ask = """ASK WHERE { 
+        graph <https://bibliokeia.com/resources/work/"""+id+"""> {
+        ?s ?p ?o } }"""
 
-    return  Work_Response(**bkDict)
+    response = acervoQuery.run_sparql(ask)
+    response = response.convert()['boolean']
+    if response:
+        bkDict = QueryWork(id)
+        return  Work_Response(**bkDict)
+    else:
+        raise HTTPException(status_code=410, detail="O item não existe")
 
 # POST
 @router.post("/work", status_code=201)
@@ -30,6 +38,11 @@ async def create_work(request: Work_Schema):
     nt = g.serialize(format='nt')
 
     G = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX bflc: <http://www.loc.gov/mads/rdf/v1#>
+    PREFIX madsrdf: <http://id.loc.gov/ontologies/bflc/> 
     INSERT DATA {
         GRAPH <https://bibliokeia.com/resources/work/"""+work_id+""">
         { \n"""+nt+"} }" 

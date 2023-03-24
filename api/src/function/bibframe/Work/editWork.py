@@ -1,6 +1,7 @@
 from src.function.bibframe.types import EditType
 from src.function.bibframe.Work.title import EditTitle, EditSubtitle
-from src.function.bibframe.Work.contributor import EditContributor
+#from src.function.bibframe.Work.contributor import EditContributor
+from src.function.bibframe.Work.primaryContribution import EditPrimaryContribution
 from src.function.bibframe.Work.subject import EditSubject
 from src.function.bibframe.Work.language import EditLanguage
 from src.function.bibframe.Work.classification import EditClassification
@@ -35,8 +36,9 @@ def EditWork(request, bkID):
             EditTitle(request.mainTitle, bkID)
         elif k == 'subtitle' and v:
             EditSubtitle(request.subtitle, request.mainTitle, bkID)
-        elif k == 'primaryContributionAgent' and v:
-            EditContributor(request, bkID)
+        elif k == 'primaryContribution' and v:
+            # EditContributor(request, bkID)
+            EditPrimaryContribution(request.primaryContribution, bkID)
         elif k == 'subjects' and v:
             EditSubject(request.subjects, bkID)
         elif k == 'language' and v:
