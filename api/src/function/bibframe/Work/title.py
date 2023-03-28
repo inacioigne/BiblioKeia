@@ -28,14 +28,6 @@ def EditTitle(mainTitle, bkID):
     prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
                 PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
-
-    # ask = prefix+""" ASK { graph work:"""+bkID+"""
-    #         {work:"""+bkID+""" bf:title ?o .
-    #         ?o bf:mainTitle '"""+mainTitle+"' }}"""
-    # response = acervoQuery.run_sparql(ask)
-    # response = response.convert()
-    
-    # if not response['boolean']:
         
     up = prefix+"WITH work:"+bkID+"""
                     DELETE {work:"""+bkID+""" bf:title ?o .

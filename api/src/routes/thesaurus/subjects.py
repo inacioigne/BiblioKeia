@@ -1,8 +1,9 @@
 from fastapi import APIRouter
-from src.schemas.thesaurus.subject import Subject_Schema, Update_Thesarus
+from src.schemas.thesaurus.subject import Subject_Schema, Update_Thesarus, Subject_Edit
 from src.function.thesaurus.subjects.makeGraph import Make_Graph
 from src.function.thesaurus.subjects.subject import CreateSubject
 from src.function.solr.docSubject import DocSubject
+from src.function.thesaurus.subjects.editSubject import EditSuject
 from pyfuseki import FusekiUpdate
 
 
@@ -32,6 +33,13 @@ async def get_subject(tokenBK: str):
         }
         LIMIT 10"""
     return {'subject': tokenBK}
+
+# PUT
+@router.put("/subject", status_code=201)
+async def update_work(request: Subject_Edit, subject_id: str):
+    EditSuject(request, subject_id)
+
+    return request.dict()
 
 @router.put("/update", status_code=201) 
 async def update(request: Update_Thesarus):

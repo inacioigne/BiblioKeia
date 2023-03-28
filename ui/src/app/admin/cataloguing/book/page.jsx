@@ -29,7 +29,8 @@ import Content from "src/components/bibframe/work/content";
 import Title from "src/components/bibframe/work/title";
 import Contribution from "src/components/bibframe/work/contribution";
 //import Subject from "src/components/bibframe/work/subject";
-import Subject from "../../acervo/work/[id]/edit/subject";
+//import Subject from "../../acervo/work/[id]/edit/subject";
+import Subject from "./subject"
 import Language from "src/components/bibframe/work/language";
 import Classification from "src/components/bibframe/work/classification";
 import Serie from "src/components/bibframe/work/serie";
@@ -169,10 +170,7 @@ export default function Book() {
             <Box
               sx={visible === 3 ? { display: "block" } : { display: "none" }}
             >
-              {/* <Subject 
-                listSubject={listSubject}
-                setListSubject={setListSubject}
-              /> */}
+              <Subject />
             </Box>
             {visible === 4 && <Language />}
             {visible === 5 && <Classification />}

@@ -160,8 +160,9 @@ export default function Translate({
       setOpenSnack(true);
     } else {
       initProgress();
+      console.log(data)
       api
-        .post("/thesaurus/subject", await data)
+        .post("/authorities/subjects", await data)
         .then((response) => {
           if (response.status == 201) {
             setProgress(false);

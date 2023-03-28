@@ -57,7 +57,6 @@ export default function Subject() {
             <ThesarusBK
               listSubject={listSubject}
               setListSubject={setListSubject}
-             
             />
             <IconButton
               onClick={() => {

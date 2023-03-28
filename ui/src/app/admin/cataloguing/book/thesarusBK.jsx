@@ -9,78 +9,34 @@ import {
 import { Search, Close } from "@mui/icons-material";
 import { blue, red } from "@mui/material/colors/";
 
+import queryThesaurusBK from "src/services/thesaurus/subjects/thesaurusBk";
+
 // React Hooks
 import { useState, useEffect } from "react";
-
-// BiblioKeia Services
-import queryThesaurusBK from "src/services/thesaurus/subjects/thesaurusBk";
-import ParserBK from "src/services/thesaurus/subjects/parserBK";
 
 // BiblioKeia Components
 import SearchBK from "src/components/thesaurus/subjects/searchBK";
 
-// BiblioKeia Hooks
-import { useBf } from "src/providers/bibframe";
-
-
-
-async function GraphExist(token) {
-  const client = new SparqlClient({
-    endpointUrl: "http://localhost:3030/thesaurus/sparql",
-  });
-
-  const ask_query = `PREFIX bk: <https://bibliokeia.com/authorities/subjects/>
-    ASK WHERE { GRAPH bk:${token} { ?s ?p ?o } }`;
-
-  const ask = await client.query.ask(ask_query);
-
-  return ask;
-}
-
-export default function ThesarusBK({listSubject, setListSubject, index, defaultSubject, defaultUri}) {
-
-  const [open, setOpen] = useState(false);
-  const [response, setResponse] = useState([]);
+export default function ThesarusBK({
+  listSubject,
+  setListSubject,
+  index,
+  defaultSubject,
+  defaultUri,
+}) {
   const [subject, setSubject] = useState("");
   const [active, setActive] = useState(false);
   const [choise, setChoise] = useState(false);
   const [subjectBK, setSubjectBK] = useState(null);
-  const [autorityBK, setautorityBK] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [response, setResponse] = useState([]);
 
-  const { work, setWork } = useBf();
-  
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setOpen(true);
+    queryThesaurusBK(subject, setResponse);
+  };
 
-  useEffect(() => {
-    // setSubjectBK({authority: defaultSubject.label})
-    // setChoise(true)
-    //ParserBK(subject.uri, setSubjectBK);
-    
-    
-
-    if (defaultSubject) {
-      // ParserBK(defaultUri, setSubjectBK)
-      setSubjectBK({'authority': defaultSubject})
-      setChoise(true)
-    }
-
-    if (subjectBK?.tokenLSCH) {
-      console.log("subjectBK", subjectBK)
-      (async () => {
-        let graph = await GraphExist(subjectBK?.tokenLSCH);
-        if (graph) {
-          let uri = `https://bibliokeia.com/authorities/subjects/${subjectBK.tokenLSCH}`;
-          setautorityBK(uri);
-          return;
-        } else {
-          setautorityBK(null);
-          return;
-        }
-      })();
-    } else {
-      setautorityBK(null);
-    }
-  }, [defaultSubject]);
-  
   const handleChoose = () => {
  
     setChoise(subjectBK.authority);
@@ -92,24 +48,11 @@ export default function ThesarusBK({listSubject, setListSubject, index, defaultS
       subjects: listSubject,
     }));
 
-    //setListSubject(prevSate => [...prevSate, {label: subjectBK.authority, uri: subjectBK.uri}])
     setSubject("");
     setOpen(false);
     setActive(true);
   };
 
-  const handleRecuse = () => {
-    let recuse = listSubject.filter((value) => {return subjectBK.authority !== value.label })
-    setListSubject(recuse)
-    setChoise(false);
-    setActive(false);
-  };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    setOpen(true);
-    queryThesaurusBK(subject, setResponse);
-  };
 
   const inputPros = {
     startAdornment: choise && (
@@ -174,6 +117,7 @@ export default function ThesarusBK({listSubject, setListSubject, index, defaultS
           label="Assunto"
           InputProps={inputPros}
         />
+        
       </form>
       <SearchBK
         open={open}

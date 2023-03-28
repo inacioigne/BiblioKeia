@@ -29,7 +29,16 @@ class Update_Thesarus(BaseModel):
     graph: str
     data: list[Authority_Update]
 
-{
+class Subject_Edit(BaseModel):
+    authority: Optional[Authority]
+    variant: Optional[list[Authority]]
+    broader: Optional[list[AuthorityExternal]]
+    narrower: Optional[list[AuthorityExternal]]
+    reciprocalAuthority: Optional[list[AuthorityExternal]]
+    exactExternalAuthority: Optional[list]
+    closeExternalAuthority: Optional[list]
+
+obj = {
     "note": {
         "value": "Aqui são inseridos trabalhos gerais de pesquisa, e com subdivisão local, trabalhos de pesquisa realizados em locais específicos. Trabalhos de pesquisa sobre uma determinada região, país, etc. são inseridos sob o nome da região, país, etc. com a subdivisão [Pesquisa.]",
         "lang": "pt"
