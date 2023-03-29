@@ -1,0 +1,43 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ 
+<https://bibliokeia.com/authorities/subjects/sh85002507> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2023-03-29T10:44:21.484772"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Agrofloresta"@pt ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Agrofloresta"@pt ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85002415>,
+        <http://id.loc.gov/authorities/subjects/sh85050707> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4273558-0>,
+        <http://data.bnf.fr/ark:/12148/cb12003291v>,
+        <http://id.worldcat.org/fast/801850>,
+        <http://www.wikidata.org/entity/Q397350>,
+        <http://www.yso.fi/onto/yso/p24995> ;
+    madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh85002507>,
+        <http://lod.nal.usda.gov/nalt/5256> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85137223> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Sistemas agroflorestais"@pt ] ) ;
+            madsrdf:variantLabel "Sistemas agroflorestais"@pt ] ;
+    madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85002415> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Agricultura"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85050707> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Florestas e silvicultura"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+
+<http://id.loc.gov/authorities/subjects/sh85137223> a madsrdf:Authority ;
+    madsrdf:authoritativeLabel "Culturas de árvores"@pt ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+

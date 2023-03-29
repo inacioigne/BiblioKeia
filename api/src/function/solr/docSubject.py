@@ -34,6 +34,17 @@ def DocSubject(request):
 
     rs = solr.add([doc], commit=True)
     print(rs, doc)
+
+def EditDocSubject(request, subject_id):
+
+    doc = {"id": subject_id}
+    for k, v in request:
+        if v:
+             if k == 'authority':
+                 doc['authority'] = {"set": v.value}
+
+    solr.add([doc], commit=True)
+
     
     
     

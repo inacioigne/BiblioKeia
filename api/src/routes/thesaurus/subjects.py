@@ -4,6 +4,7 @@ from src.function.thesaurus.subjects.makeGraph import Make_Graph
 from src.function.thesaurus.subjects.subject import CreateSubject
 from src.function.solr.docSubject import DocSubject
 from src.function.thesaurus.subjects.editSubject import EditSuject
+from src.function.solr.docSubject import EditDocSubject
 from pyfuseki import FusekiUpdate
 
 
@@ -38,8 +39,9 @@ async def get_subject(tokenBK: str):
 @router.put("/subject", status_code=201)
 async def update_work(request: Subject_Edit, subject_id: str):
     EditSuject(request, subject_id)
+    EditDocSubject(request, subject_id)
 
-    return request.dict()
+    return { "msg": "item atualizado com sucesso"}
 
 @router.put("/update", status_code=201) 
 async def update(request: Update_Thesarus):

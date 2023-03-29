@@ -1,5 +1,5 @@
 from pyfuseki import FusekiUpdate
-
+from src.function.thesaurus.subjects.editAuthority import EditAuthority
 
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 
@@ -15,10 +15,9 @@ PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>"""
 
 
 def EditSuject(request, subject_id):
-
-    query = "WITH subjects:"+subject_id+"""
-            DELETE { subjects:"""+subject_id+""" madsrdf:authoritativeLabel ?o }
-            INSERT { subjects:"""+subject_id+""" madsrdf:authoritativeLabel 'Sistemas Agroflorestais'@pt  }
-            WHERE { subjects:"""+subject_id+""" madsrdf:authoritativeLabel ?o }"""
-
-    pass
+    
+    for k, v in request:
+        if v:
+             if k == 'authority':
+                 EditAuthority(v, subject_id)
+                 

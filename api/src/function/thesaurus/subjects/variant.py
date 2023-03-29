@@ -5,9 +5,6 @@ from src.function.thesaurus.subjects.elementList import ElementList
 
 def Variant(g, uri, MADSRDF, variants):
 
-    # variantList = BNode()    
-    # g.add((uri, MADSRDF.hasVariant, variantList))
-
     for variant in variants: 
         variantList = BNode()    
         g.add((uri, MADSRDF.hasVariant, variantList))
