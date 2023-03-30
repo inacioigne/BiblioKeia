@@ -162,7 +162,7 @@ export default function Translate({
       initProgress();
       console.log(data)
       api
-        .post("/authorities/subjects", await data)
+        .post("/authorities/subject", await data)
         .then((response) => {
           if (response.status == 201) {
             setProgress(false);
