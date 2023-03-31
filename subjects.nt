@@ -1,38 +1,48 @@
-@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
-@prefix ns2: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns1: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://bibliokeia.com/authorities/subjects/sh2018002121> a ns1:Authority,
-        ns1:Topic ;
-    ns1:adminMetadata [ a ns2:RecordInfo ;
-            ns2:recordChangeDate "2023-03-30T15:55:59.205214"^^xsd:dateTime ;
-            ns2:recordContentSource <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
-            ns2:recordStatus "new" ] ;
-    ns1:authoritativeLabel "Dark Web"@pt ;
-    ns1:elementList ( [ a ns1:TopicElement ;
-                ns1:elementValue "Dark Web"@pt ] ) ;
-    ns1:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh2008009697> ;
-    ns1:hasCloseExternalAuthority <http://id.worldcat.org/fast/2003430> ;
-    ns1:hasExactExternalAuthority <http://id.loc.gov/authorities/subjects/sh2018002121> ;
-    ns1:hasVariant [ a ns1:Topic,
-                ns1:Variant ;
-            ns1:elementList ( [ a ns1:TopicElement ;
-                        ns1:elementValue "NOVA VARIANTE" ] ) ;
-            ns1:variantLabel "NOVA VARIANTE" ],
-        [ a ns1:Topic,
-                ns1:Variant ;
-            ns1:elementList ( [ a ns1:TopicElement ;
-                        ns1:elementValue "Internet escura"@pt ] ) ;
-            ns1:variantLabel "Internet escura"@pt ],
-        [ a ns1:Topic,
-                ns1:Variant ;
-            ns1:elementList ( [ a ns1:TopicElement ;
-                        ns1:elementValue "Darknet"@pt ] ) ;
-            ns1:variantLabel "Darknet"@pt ] ;
-    ns1:isMemberOfMADSCollection <https://bibliokeia.com/authorities/subjects/collection_BKSH_General> .
-
-<http://id.loc.gov/authorities/subjects/sh2008009697> a ns1:Authority ;
-    ns1:authoritativeLabel "Web Invisível"@pt ;
-    ns1:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSH_General> .
+<https://bibliokeia.com/authorities/subjects/sh85017405> a ns2:Authority,
+        ns2:Topic ;
+    ns2:adminMetadata [ a ns1:RecordInfo ;
+            ns1:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            ns1:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:recordStatus "new" ] ;
+    ns2:authoritativeLabel "Bubo bubo"@en ;
+    ns2:classification "QL696.S83" ;
+    ns2:elementList ( [ a ns2:TopicElement ;
+                ns2:elementValue "Bubo bubo" ] ) ;
+    ns2:hasBroaderAuthority <http://id.loc.gov/authorities/sh85017404> ;
+    ns2:hasEarlierEstablishedForm <http://id.loc.gov/authorities/sh85017405> ;
+    ns2:hasSource [ a ns2:Source ;
+            ns2:citation-note "(for Genus bubo)"@en ;
+            ns2:citation-source "Web. 3" ;
+            ns2:citation-status "found" ],
+        [ a ns2:Source ;
+            ns2:citation-note "(Bubo bubo)"@en ;
+            ns2:citation-source "Howard birds world" ;
+            ns2:citation-status "found" ] ;
+    ns2:hasVariant [ a ns2:Topic,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:TopicElement ;
+                        ns2:elementValue "Northern eagle owl" ] ) ;
+            ns2:variantLabel "Northern eagle owl"@en ],
+        [ a ns2:Topic,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:TopicElement ;
+                        ns2:elementValue "Eagle owl" ] ) ;
+            ns2:variantLabel "Eagle owl"@en ],
+        [ a ns2:Topic,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:TopicElement ;
+                        ns2:elementValue "Great eagle owl" ] ) ;
+            ns2:variantLabel "Great eagle owl"@en ] ;
+    ns2:isMemberOfMADSCollection <http://id.loc.gov/authorities/collection_AuthorizedHeadings>,
+        <http://id.loc.gov/authorities/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/collection_SubdivideGeographicalIndirect> ;
+    ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/lcsh> ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85017405#concept>,
+        <info:lc/authorities/sh85017405> .
 
