@@ -1,48 +1,71 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/sh85017405> a madsrdf:Authority, 
+<http://id.loc.gov/authorities/subjects/sh85017405> a madsrdf:Authority,
         madsrdf:Topic ;
+    bflc:marcKey "150 0$aBubo bubo" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/22804511>,
+        <http://id.loc.gov/resources/works/6695080>,
+        <http://id.loc.gov/resources/works/9480902> ;
+    identifiers:lccn "sh 85017405" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "1992-07-30T14:59:41"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
             ri:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ri:recordStatus "new"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Bubo bubo"@en ;
-    madsrdf:classification "QL696.S83" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            madsrdf:code "QL696.S83" ;
+            madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/QL696.S83> ] ;
     madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                madsrdf:elementValue "Bubo bubo" ] ) ;
-    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/sh85017404> ;
-    madsrdf:hasEarlierEstablishedForm <http://id.loc.gov/authorities/sh85017405> ;
+                madsrdf:elementValue "Bubo bubo"@en ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85017404> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4061488-8>,
+        <http://data.bnf.fr/ark:/12148/cb12345685v>,
+        <http://id.worldcat.org/fast/839960>,
+        <http://www.wikidata.org/entity/Q130933>,
+        <http://www.yso.fi/onto/yso/p21203> ;
+    madsrdf:hasEarlierEstablishedForm [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Eagle owl"@en ] ) ;
+            madsrdf:variantLabel "Eagle owl"@en ] ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citation-note "(for Genus bubo)"@en ;
-            madsrdf:citation-source "Web. 3" ;
-            madsrdf:citation-status "found" ],
+            madsrdf:citationNote "(Bubo bubo)"@en ;
+            madsrdf:citationSource "Howard birds world" ;
+            madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citation-note "(Bubo bubo)"@en ;
-            madsrdf:citation-source "Howard birds world" ;
-            madsrdf:citation-status "found" ] ;
+            madsrdf:citationNote "(for Genus bubo)"@en ;
+            madsrdf:citationSource "Web. 3" ;
+            madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:Topic,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "Northern eagle owl" ] ) ;
+                        madsrdf:elementValue "Northern eagle owl"@en ] ) ;
             madsrdf:variantLabel "Northern eagle owl"@en ],
         [ a madsrdf:Topic,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "Eagle owl" ] ) ;
-            madsrdf:variantLabel "Eagle owl"@en ],
+                        madsrdf:elementValue "Great eagle owl"@en ] ) ;
+            madsrdf:variantLabel "Great eagle owl"@en ],
         [ a madsrdf:Topic,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:TopicElement ;
-                        madsrdf:elementValue "Great eagle owl" ] ) ;
-            madsrdf:variantLabel "Great eagle owl"@en ] ;
-    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/collection_AuthorizedHeadings>,
-        <http://id.loc.gov/authorities/collection_LCSH_General>,
-        <http://id.loc.gov/authorities/collection_SubdivideGeographicalIndirect> ;
-    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/lcsh> ;
+                        madsrdf:elementValue "Eagle owl"@en ] ) ;
+            madsrdf:variantLabel "Eagle owl"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
     owl:sameAs <http://id.loc.gov/authorities/sh85017405#concept>,
         <info:lc/authorities/sh85017405> .
 
