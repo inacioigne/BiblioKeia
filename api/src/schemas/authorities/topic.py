@@ -2,6 +2,25 @@ from pydantic import BaseModel, validator
 from typing import Optional, Union
 from datetime import datetime
 
+class Uri(BaseModel):
+    uri: str
+    mads: str
+
+    _mads = [
+        "hasReciprocalAuthority", 
+        "hasBroaderAuthority",
+        "hasNarrowerAuthority",
+        "hasCloseExternalAuthority",
+        "hasExactExternalAuthority",
+        "subjectOf"
+        ]
+
+    @validator('mads')
+    def mads_permitido(cls, v):
+        if v not in cls._mads:
+            raise ValueError(f"Mads deve ser um dos seguintes valores: {', '.join(cls._mads)}")
+        return v
+
 class Authority(BaseModel):
     value: Union[list, str]
     lang: str

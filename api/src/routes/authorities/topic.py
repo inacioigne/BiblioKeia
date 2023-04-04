@@ -1,8 +1,11 @@
-from fastapi import APIRouter
-from src.schemas.authorities.topic import Topic, Authority
-from src.function.authorities.topic import MakeGraph, MakeDoc
+from fastapi import APIRouter, HTTPException
+from src.schemas.authorities.topic import Topic, Authority, Uri
+from src.function.authorities.topic.create_topic import MakeGraph, MakeDoc
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.topic.edit_authority import EditAuthority
+from src.function.authorities.topic.delete_topic import DeleteGraph
+from src.function.authorities.topic.edit_mads import DelMads, PostMads
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
@@ -20,45 +23,22 @@ async def create_topic(request: Topic):
         'jena': responseJena.convert(), 
         'solr': responseSolr }
 
+@router.delete("/topic", status_code=201) 
+async def delete_topic(id: str):
+    upTopic = DeleteGraph(id)
+    
+    responseJena = fuseki_update.run_sparql(upTopic)
+    return {
+        'jena': responseJena.convert(), 
+        # 'solr': responseSolr 
+        }
+
 @router.put("/topic/authority", status_code=201) 
 async def edit_authority(id:str, request: Authority):
 
-    label = """PREFIX topic: <https://bibliokeia.com/authorities/topic/>
-                PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-                
-                WITH topic:{id}
-                DELETE {{ topic:{id} madsrdf:authoritativeLabel ?o  }}
-                INSERT {{ topic:{id} madsrdf:authoritativeLabel '{value}'@{lang} }}
-                WHERE {{ topic:{id} madsrdf:authoritativeLabel ?o }}"""
-
-    elementValue = """PREFIX topic: <https://bibliokeia.com/authorities/topic/>
-            PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            
-            WITH topic:{id}
-            DELETE {{ topic:{id} madsrdf:elementList ?elementList .
-                        ?elementList rdf:rest rdf:nil .
-                        ?elementList rdf:first ?element .
-                        ?element rdf:type madsrdf:TopicElement .
-                        ?element madsrdf:elementValue ?value  }}
-            INSERT {{ topic:{id} madsrdf:elementList ?elementList .
-                        ?elementList rdf:rest rdf:nil .
-                        ?elementList rdf:first ?element .
-                        ?element rdf:type madsrdf:TopicElement .
-                        ?element madsrdf:elementValue '{value}'@{lang} }}
-            WHERE {{ topic:{id} madsrdf:elementList ?elementList .
-                        ?elementList rdf:rest rdf:nil .
-                        ?elementList rdf:first ?element .
-                        ?element rdf:type madsrdf:TopicElement .
-                        ?element madsrdf:elementValue ?value }}"""
-
-    d = request.dict()
-    d['id'] = id
-    upLabel = label.format(**d)
+    upLabel, upElementValue = EditAuthority(id, request)
 
     responseLabel = fuseki_update.run_sparql(upLabel)
-
-    upElementValue = elementValue.format(**d)
     responseElement = fuseki_update.run_sparql(upElementValue)
 
     doc = {
@@ -72,3 +52,40 @@ async def edit_authority(id:str, request: Authority):
         "label": responseLabel.convert()['message'],
         "element": responseElement.convert()['message'],
         'solr': responseSolr }
+
+@router.delete("/topic/mads", status_code=201) 
+async def delete_mads(id:str, request: Uri):
+
+    upMads = DelMads(id, request)
+    responseUpMads = fuseki_update.run_sparql(upMads)
+
+    doc = {
+    'id': id,
+    f'{request.mads}': {"remove": request.uri}
+      }
+    responseSolr = solr.add([doc], commit=True)
+
+    return {
+        "jena": responseUpMads.convert()['message'],
+        "solr": responseSolr
+        } 
+
+@router.post("/topic/mads", status_code=201) 
+async def post_mads(id:str, request: Uri):
+
+    upMads = PostMads(id, request)
+    if upMads:
+        responseUpMads = fuseki_update.run_sparql(upMads)
+        doc = {'id': id,
+                f'{request.mads}': {"add": request.uri}  }
+        responseSolr = solr.add([doc], commit=True)
+
+        return {
+        "jena": responseUpMads.convert()['message'],
+        "solr": responseSolr
+        } 
+    else:
+        raise HTTPException(status_code=409, detail="Metadado já existe")
+
+    
+
