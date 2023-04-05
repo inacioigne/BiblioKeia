@@ -33,6 +33,10 @@ class Authority(BaseModel):
         if v not in cls._types:
             raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
         return v
+    
+class EditVariant(BaseModel):
+    oldVariant: Authority
+    newVariant: Authority
 
 class Topic(BaseModel):
     type = "Topic"

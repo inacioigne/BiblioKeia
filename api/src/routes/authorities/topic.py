@@ -1,16 +1,18 @@
 from fastapi import APIRouter, HTTPException
-from src.schemas.authorities.topic import Topic, Authority, Uri
+from src.schemas.authorities.topic import Topic, Authority, Uri, EditVariant
 from src.function.authorities.topic.create_topic import MakeGraph, MakeDoc
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.function.authorities.topic.edit_authority import EditAuthority
 from src.function.authorities.topic.delete_topic import DeleteGraph
 from src.function.authorities.topic.edit_mads import DelMads, PostMads
+from src.function.authorities.topic.edit_variant import editVariant
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
+# Create Graph
 @router.post("/topic", status_code=201) 
 async def create_topic(request: Topic):
     
@@ -22,7 +24,7 @@ async def create_topic(request: Topic):
     return {
         'jena': responseJena.convert(), 
         'solr': responseSolr }
-
+# Delete Graph
 @router.delete("/topic", status_code=201) 
 async def delete_topic(id: str):
     upTopic = DeleteGraph(id)
@@ -33,6 +35,7 @@ async def delete_topic(id: str):
         # 'solr': responseSolr 
         }
 
+# Edit Authority
 @router.put("/topic/authority", status_code=201) 
 async def edit_authority(id:str, request: Authority):
 
@@ -42,7 +45,7 @@ async def edit_authority(id:str, request: Authority):
     responseElement = fuseki_update.run_sparql(upElementValue)
 
     doc = {
-    'id': 'sh85017405',
+    'id': id,
     'label': {"set": request.value},
     'lang': {"set": request.lang} }
     
@@ -53,6 +56,7 @@ async def edit_authority(id:str, request: Authority):
         "element": responseElement.convert()['message'],
         'solr': responseSolr }
 
+# Delete URI
 @router.delete("/topic/mads", status_code=201) 
 async def delete_mads(id:str, request: Uri):
 
@@ -70,6 +74,7 @@ async def delete_mads(id:str, request: Uri):
         "solr": responseSolr
         } 
 
+# Add URI
 @router.post("/topic/mads", status_code=201) 
 async def post_mads(id:str, request: Uri):
 
@@ -86,6 +91,26 @@ async def post_mads(id:str, request: Uri):
         } 
     else:
         raise HTTPException(status_code=409, detail="Metadado já existe")
+
+# Edit Variant
+@router.put("/topic/variant", status_code=201) 
+async def edit_variant(id:str, request: EditVariant):
+
+    variant = editVariant(id, request)
+    response = fuseki_update.run_sparql(variant)
+
+    doc = {
+    'id': id,
+    'hasVariant': {"set": "Método"} }
+    
+    responseSolr = solr.add([doc], commit=True)
+
+    return {
+        "jena": response.convert()['message'],
+        #"solr": responseSolr
+        } 
+    # return request.dict()
+
 
     
 
