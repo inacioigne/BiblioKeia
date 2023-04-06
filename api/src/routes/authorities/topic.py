@@ -6,7 +6,7 @@ from pysolr import Solr
 from src.function.authorities.topic.edit_authority import EditAuthority
 from src.function.authorities.topic.delete_topic import DeleteGraph
 from src.function.authorities.topic.edit_mads import DelMads, PostMads
-from src.function.authorities.topic.edit_variant import editVariant
+from src.function.authorities.topic.edit_variant import editVariant, deleteVariant, addVariant
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
@@ -24,19 +24,21 @@ async def create_topic(request: Topic):
     return {
         'jena': responseJena.convert(), 
         'solr': responseSolr }
+
 # Delete Graph
 @router.delete("/topic", status_code=201) 
 async def delete_topic(id: str):
     upTopic = DeleteGraph(id)
+    responseSolr = solr.delete(q=f"id:{id}",  commit=True)
     
     responseJena = fuseki_update.run_sparql(upTopic)
     return {
         'jena': responseJena.convert(), 
-        # 'solr': responseSolr 
+        'solr': responseSolr 
         }
 
 # Edit Authority
-@router.put("/topic/authority", status_code=201) 
+@router.put("/topic/authority", status_code=200) 
 async def edit_authority(id:str, request: Authority):
 
     upLabel, upElementValue = EditAuthority(id, request)
@@ -57,7 +59,7 @@ async def edit_authority(id:str, request: Authority):
         'solr': responseSolr }
 
 # Delete URI
-@router.delete("/topic/mads", status_code=201) 
+@router.delete("/topic/uri", status_code=200) 
 async def delete_mads(id:str, request: Uri):
 
     upMads = DelMads(id, request)
@@ -75,7 +77,7 @@ async def delete_mads(id:str, request: Uri):
         } 
 
 # Add URI
-@router.post("/topic/mads", status_code=201) 
+@router.post("/topic/uri", status_code=201) 
 async def post_mads(id:str, request: Uri):
 
     upMads = PostMads(id, request)
@@ -99,18 +101,57 @@ async def edit_variant(id:str, request: EditVariant):
     variant = editVariant(id, request)
     response = fuseki_update.run_sparql(variant)
 
-    doc = {
+    remove = {
     'id': id,
-    'hasVariant': {"set": "Método"} }
+    'hasVariant': {"remove": request.oldVariant.value } }
+    add = {
+    'id': id,
+    'hasVariant': {"add": request.newVariant.value } }
     
+    responseSolr = solr.add([remove, add], commit=True)
+
+    return {
+        "jena": response.convert()['message'],
+        "solr": responseSolr
+        } 
+
+# Edit Variant
+@router.delete("/topic/variant", status_code=200) 
+async def delete_variant(id:str, request: Authority):
+
+    variant = deleteVariant(id, request)
+    response = fuseki_update.run_sparql(variant)
+
+    doc = {
+        'id': id,
+        'hasVariant': {"remove": request.value } }
     responseSolr = solr.add([doc], commit=True)
 
     return {
         "jena": response.convert()['message'],
-        #"solr": responseSolr
+        "solr": responseSolr
         } 
-    # return request.dict()
 
+# Add Variant
+@router.post("/topic/variant", status_code=201) 
+async def add_variant(id:str, request: Authority):
 
-    
+    variant = addVariant(id, request)
+    response = fuseki_update.run_sparql(variant)
 
+    if request.type == 'Topic':
+        doc = {
+        'id': id,
+        'hasVariant': {"add": request.value } }
+    elif request.type == 'ComplexSubject':
+        label = "--".join(request.value)
+        doc = {
+        'id': id,
+        'hasVariant': {"add": label } }
+
+    responseSolr = solr.add([doc], commit=True)
+
+    return {
+        "jena": response.convert()['message'],
+        "solr": responseSolr
+        } 

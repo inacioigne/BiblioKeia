@@ -81,8 +81,8 @@ def MakeDoc(request):
     doc = request.dict()
     doc['id'] = request.identifier
     doc['uri'] = f'https://bibliokeia.com/authorities/topic/{request.identifier}'
+    
     if request.hasVariant:
-        #variant = [i['value'] for i in request.hasVariant]
         variant = ["--".join(i.value) if i.type == 'ComplexSubject' else i.value for i in request.hasVariant]
         doc['hasVariant'] = variant
 

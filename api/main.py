@@ -7,7 +7,7 @@ from src.routes.cataloguing import images, generateId, work, instances, items, h
 from src.routes.translate import translate
 from src.routes.thesaurus import subjects
 from src.routes.thesaurus import names
-from src.routes.authorities import topic
+from src.routes.authorities import topic, personalName
 import uvicorn
 
 initializeDatabase()
@@ -50,6 +50,7 @@ app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Su
 app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 # Authorities
 app.include_router(topic.router, prefix='/authorities', tags=['Authorities Topic'])
+app.include_router(personalName.router, prefix='/authorities', tags=['Authorities PersonalName'])
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
