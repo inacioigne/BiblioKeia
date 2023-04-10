@@ -14,7 +14,7 @@
     bflc:marcKey "1001 $aMachado de Assis,$d1839-1908" ;
     identifiers:lccn "n 80002329" ;
     identifiers:local "(OCoLC)oca00385024",
-        "(Uk)000462837" ; 
+        "(Uk)000462837" ;  
     madsrdf:adminMetadata [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
             ri:recordChangeDate "2023-01-27T05:25:19"^^xsd:dateTime ;

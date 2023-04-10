@@ -3,10 +3,11 @@ from typing import Optional, Union
 
 class Authority(BaseModel):
     value: Union[list, str]
-    lang: str
+    lang: Optional[str]
+    date: Optional[str]
     type: str
 
-    _types = ["Topic", "ComplexSubject"]
+    _types = ["Topic", "ComplexSubject", "PersonalName"]
 
     @validator('type')
     def type_permitido(cls, v):

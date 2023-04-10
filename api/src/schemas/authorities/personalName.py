@@ -16,6 +16,12 @@ class Authority(BaseModel):
         if v not in cls._types:
             raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
         return v
+    
+class Affiliation(BaseModel):
+    organization: str
+    affiliationStart: str
+    affiliationEnd: Optional[str]
+    
 
 class PersonalName(BaseModel):
     type = "PersonalName"
@@ -30,7 +36,10 @@ class PersonalName(BaseModel):
     hasCloseExternalAuthority: Optional[list] 
     hasExactExternalAuthority: Optional[list]
     hasVariant: Optional[list[Authority]]
-    # subjectOf: Optional[list]
+    hasAffiliation: Optional[list[Affiliation]]
+    occupation: Optional[list] 
+    contributorTo: Optional[list]
+    subjectOf: Optional[list]
 
     @validator('recordChangeDate', pre=True, always=True)
     def set_date_now(cls, v):
