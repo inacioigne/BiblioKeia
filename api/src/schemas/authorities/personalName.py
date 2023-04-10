@@ -23,14 +23,13 @@ class PersonalName(BaseModel):
     id: str
     label: str
     date: Optional[str]
+    birthDate: Optional[str]
+    birthPlace: Optional[str]
+    deathDate: Optional[str]
     fullerName: str
     hasCloseExternalAuthority: Optional[list] 
     hasExactExternalAuthority: Optional[list]
     hasVariant: Optional[list[Authority]]
-    # hasReciprocalAuthority: Optional[list]
-    # hasBroaderAuthority: Optional[list]
-    # hasNarrowerAuthority: Optional[list]
-    # 
     # subjectOf: Optional[list]
 
     @validator('recordChangeDate', pre=True, always=True)

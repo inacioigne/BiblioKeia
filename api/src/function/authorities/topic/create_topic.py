@@ -63,7 +63,7 @@ def MakeGraph(request):
     hasVariant = "madsrdf:hasVariant {} ; \n"
 
     if request.hasVariant:
-        variants = MakeVariant(request.hasVariant)
+        variants = MakeVariant(request.hasVariant) 
         
 
     graph = f"{g} \
