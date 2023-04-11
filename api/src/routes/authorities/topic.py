@@ -6,7 +6,7 @@ from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.function.authorities.topic.edit_authority import EditAuthority
 from src.function.authorities.topic.delete_topic import DeleteGraph
-from src.function.authorities.topic.edit_mads import DelMads, PostMads
+#from src.function.authorities.topic.edit_mads import DelMads, PostMads
 from src.function.authorities.topic.edit_variant import editVariant, deleteVariant, addVariant
 
 router = APIRouter()
@@ -59,42 +59,6 @@ async def edit_authority(id:str, request: Authority):
         "element": responseElement.convert()['message'],
         'solr': responseSolr }
 
-# Delete URI
-@router.delete("/topic/uri", status_code=200) 
-async def delete_mads(id:str, request: Uri):
-
-    upMads = DelMads(id, request)
-    responseUpMads = fuseki_update.run_sparql(upMads)
-
-    doc = {
-    'id': id,
-    f'{request.mads}': {"remove": request.uri}
-      }
-    responseSolr = solr.add([doc], commit=True)
-
-    return {
-        "jena": responseUpMads.convert()['message'],
-        "solr": responseSolr
-        } 
-
-# Add URI
-@router.post("/topic/uri", status_code=201) 
-async def post_mads(id:str, request: Uri):
-
-    upMads = PostMads(id, request)
-    if upMads:
-        responseUpMads = fuseki_update.run_sparql(upMads)
-        doc = {'id': id,
-                f'{request.mads}': {"add": request.uri}  }
-        responseSolr = solr.add([doc], commit=True)
-
-        return {
-        "jena": responseUpMads.convert()['message'],
-        "solr": responseSolr
-        } 
-    else:
-        raise HTTPException(status_code=409, detail="Metadado já existe")
-
 # Edit Variant
 @router.put("/topic/variant", status_code=201) 
 async def edit_variant(id:str, request: EditVariant):
@@ -116,7 +80,7 @@ async def edit_variant(id:str, request: EditVariant):
         "solr": responseSolr
         } 
 
-# Edit Variant
+# Delete Variant
 @router.delete("/topic/variant", status_code=200) 
 async def delete_variant(id:str, request: Authority):
 

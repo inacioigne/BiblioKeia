@@ -8,6 +8,7 @@ from src.routes.translate import translate
 from src.routes.thesaurus import subjects
 from src.routes.thesaurus import names
 from src.routes.authorities import topic, personalName
+from src.routes.authorities import mads
 import uvicorn
 
 initializeDatabase()
@@ -49,6 +50,7 @@ app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
 app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 # Authorities
+app.include_router(mads.router, prefix='/authorities', tags=['Authorities'])
 app.include_router(topic.router, prefix='/authorities', tags=['Authorities Topic'])
 app.include_router(personalName.router, prefix='/authorities', tags=['Authorities PersonalName'])
 

@@ -14,3 +14,32 @@ class Authority(BaseModel):
         if v not in cls._types:
             raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
         return v
+    
+class Uri(BaseModel):
+    id: str
+    uri: str
+    mads: str
+    collection: str
+
+    _mads = [
+        "hasReciprocalAuthority", 
+        "hasBroaderAuthority",
+        "hasNarrowerAuthority",
+        "hasCloseExternalAuthority",
+        "hasExactExternalAuthority",
+        "subjectOf"
+        ]
+
+    @validator('mads')
+    def mads_permitido(cls, v):
+        if v not in cls._mads:
+            raise ValueError(f"Mads deve ser um dos seguintes valores: {', '.join(cls._mads)}")
+        return v
+    
+    _types = ["topic", "name"]
+
+    @validator('collection')
+    def type_permitido(cls, v):
+        if v not in cls._types:
+            raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
+        return v

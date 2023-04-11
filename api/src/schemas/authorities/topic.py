@@ -6,6 +6,7 @@ from src.schemas.authorities.authority import Authority
 class Uri(BaseModel):
     uri: str
     mads: str
+    type: str
 
     _mads = [
         "hasReciprocalAuthority", 

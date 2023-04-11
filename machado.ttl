@@ -30,7 +30,7 @@
             madsrdf:code "PQ9697.M18" ;
             madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/PQ9697.M18> ] ;
     madsrdf:editorialNote "[Pseudonym not found on published works: Lélio, Manassés, Bruxo do Cosme Velho.]" ;
-    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ; 
                 madsrdf:elementValue "Machado de Assis," ] [ a madsrdf:DateNameElement ;
                 madsrdf:elementValue "1839-1908" ] ) ;
     madsrdf:fullerName [ a madsrdf:PersonalName ;

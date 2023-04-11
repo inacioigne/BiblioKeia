@@ -21,6 +21,18 @@ class Affiliation(BaseModel):
     organization: str
     affiliationStart: str
     affiliationEnd: Optional[str]
+
+class Dates(BaseModel):
+    value: str
+    type: str
+
+    _types = ["birthDate", "deathDate"]
+
+    @validator('type')
+    def type_permitido(cls, v):
+        if v not in cls._types:
+            raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
+        return v
     
 
 class PersonalName(BaseModel):
