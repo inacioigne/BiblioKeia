@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator
 from typing import Optional, Union
 from datetime import datetime
-from src.schemas.authorities.authority import Authority
+from src.schemas.authorities.mads import Authority
 
 class Uri(BaseModel):
     uri: str

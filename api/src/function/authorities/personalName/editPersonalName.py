@@ -53,3 +53,25 @@ def EditFullerName(id, request):
                 WHERE {{ name:{id} madsrdf:fullerName ?fullerName .
         ?fullerName rdfs:label ?o }}"""
     return name
+
+def DeleteFullerName(id, request):
+    name = f"""{prefix}             
+                WITH name:{id}
+                DELETE {{ name:{id} madsrdf:fullerName ?fullerName .
+    ?fullerName rdf:type madsrdf:PersonalName .
+    ?fullerName rdfs:label "{request.value}" }}
+                
+                WHERE {{ name:{id} madsrdf:fullerName ?fullerName .
+    ?fullerName rdf:type madsrdf:PersonalName .
+    ?fullerName rdfs:label "{request.value}"  }}"""
+    return name
+
+def PostFullerName(id, request):
+    name = f"""{prefix}
+        INSERT DATA {{ 
+        GRAPH name:{id} {{
+        name:{id} madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "{request.value}" ] ;
+                }}
+        }}"""
+    return name

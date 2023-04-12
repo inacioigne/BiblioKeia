@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
-from src.schemas.authorities.authority import Uri
+from src.schemas.authorities.mads import Uri
 from src.function.authorities.edit_uri import DelMads, PostMads
 
 router = APIRouter()

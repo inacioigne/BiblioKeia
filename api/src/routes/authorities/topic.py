@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from src.schemas.authorities.authority import Authority
+from src.schemas.authorities.mads import Authority
 from src.schemas.authorities.topic import Topic, Uri, EditVariant
 from src.function.authorities.topic.create_topic import MakeGraph, MakeDoc
 from pyfuseki import FusekiUpdate
