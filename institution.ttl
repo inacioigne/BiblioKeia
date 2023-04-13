@@ -1,0 +1,587 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix ns4: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n82059239> a ns2:Authority,
+        ns2:CorporateName ;
+    ns1:marcKey "1102 $aAcademia Brasileira de Letras" ;
+    ns4:lccn "n 82059239" ;
+    ns4:local "(OCoLC)oca00756119" ;
+    ns2:adminMetadata [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "1982-05-27T00:00:00"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns3:recordStatus "new"^^xsd:string ],
+        [ a ns3:RecordInfo ;
+            ns3:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ns3:recordChangeDate "2022-12-12T06:45:17"^^xsd:dateTime ;
+            ns3:recordContentSource <http://id.loc.gov/vocabulary/organizations/nnu> ;
+            ns3:recordStatus "revised"^^xsd:string ] ;
+    ns2:authoritativeLabel "Academia Brasileira de Letras" ;
+    ns2:elementList ( [ a ns2:NameElement ;
+                ns2:elementValue "Academia Brasileira de Letras" ] ) ;
+    ns2:hasCloseExternalAuthority <http://id.worldcat.org/fast/568023>,
+        <http://www.wikidata.org/entity/Q337224> ;
+    ns2:hasEarlierEstablishedForm [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Academia Brasileira de Letras, Rio de Janeiro" ] ) ;
+            ns2:variantLabel "Academia Brasileira de Letras, Rio de Janeiro" ] ;
+    ns2:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++82059239#skos:Concept> ;
+    ns2:hasSource [ a ns2:Source ;
+            ns2:citationNote "t.p. (Brazilian Academy of Literature)" ;
+            ns2:citationSource "Cony, C.H. Orlando Teruz, painter, 1985:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "p. fac t.p., etc. (Academia Brasileira de Letras) p. 5 (Academia Brasileira)" ;
+            ns2:citationSource "Niskier, A. João Francisco Lisboa, 1986:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "t.p. (Comitê Cultural Feminino da ABL; Academia Brasileira de Letras) spine (ABL)" ;
+            ns2:citationSource "A mulher no terceiro milênio, 2000:" ;
+            ns2:citationStatus "found" ],
+        [ a ns2:Source ;
+            ns2:citationNote "translator's introducation, page xxiii (The Brazilian Academy of Letters unanimously elected Machado its president, a title that he held from the founding of the Academy in 1897 till his death in 1908)" ;
+            ns2:citationSource "Machado de Assis. Epitaph of a small winner, 1990:" ;
+            ns2:citationStatus "found" ] ;
+    ns2:hasVariant [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Brazilian Academy of Literature" ] ) ;
+            ns2:variantLabel "Brazilian Academy of Literature" ],
+        [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Académie brésilienne des lettres" ] ) ;
+            ns2:variantLabel "Académie brésilienne des lettres" ],
+        [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Academia Brasileira de Letras, Rio de Janeiro" ] ) ;
+            ns2:variantLabel "Academia Brasileira de Letras, Rio de Janeiro" ],
+        [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Academia Brasileira" ] ) ;
+            ns2:variantLabel "Academia Brasileira" ],
+        [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "Brazilian Academy of Letters" ] ) ;
+            ns2:variantLabel "Brazilian Academy of Letters" ],
+        [ a ns2:CorporateName,
+                ns2:Variant ;
+            ns2:elementList ( [ a ns2:NameElement ;
+                        ns2:elementValue "ABL" ] ) ;
+            ns2:variantLabel "ABL" ] ;
+    ns2:identifiesRWO <http://id.loc.gov/rwo/agents/n82059239>,
+        <http://isni.org/isni/000000010943409X>,
+        <http://viaf.org/viaf/139117438>,
+        <http://www.wikidata.org/entity/Q337224> ;
+    ns2:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
+<http://id.loc.gov/resources/works/10179298> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Caeiro, José, 1712-1791. Primeira publicação após 160 anos do manuscrito inédito de José Caeiro sobre os jesuitas do Brasil e da India," .
+
+<http://id.loc.gov/resources/works/10192563> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ricardo, Cassiano. Recepção de Cassiano Ricardo na Academia brasileira a 28 de dezembro de 1937" .
+
+<http://id.loc.gov/resources/works/10357687> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Discursos acadêmicos" .
+
+<http://id.loc.gov/resources/works/10387622> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Soares, Alexandre de Souza, Nova ortografia; guia prático para a arte de escrever sem erros," .
+
+<http://id.loc.gov/resources/works/11140034> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras Discursos acadêmicos" .
+
+<http://id.loc.gov/resources/works/11504916> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Anais da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/11504917> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Revista da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/11914019> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Montello, Josué, 1917-2006. Academia Brasileira entre o Silogeu e o Petit Trianon" .
+
+<http://id.loc.gov/resources/works/12093727> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras Boletim da Academia braziliera de letras" .
+
+<http://id.loc.gov/resources/works/12216185> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico da língua portuguesa" .
+
+<http://id.loc.gov/resources/works/12261891> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Castro, Renato Berbert de. candidaturas de Almachio Diniz e Wanderley Pinho" .
+
+<http://id.loc.gov/resources/works/12293575> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário onomástico da língua portuguesa" .
+
+<http://id.loc.gov/resources/works/13070077> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Rodrigues, João Paulo Coelho de Souza, 1973- dança das cadeiras : literatura e política na Academia Brasileira de Letras (1896-1913)" .
+
+<http://id.loc.gov/resources/works/13072209> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Atas da Academia Brasileira de Letras : presidência Machado de Assis, 1896-1908" .
+
+<http://id.loc.gov/resources/works/13166859> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Meyer, Augusto, 1902-1970. pêssegos verdes" .
+
+<http://id.loc.gov/resources/works/13166860> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Castello Branco, Carlos, 1920-1993. Continhos brasileiros e outros contos" .
+
+<http://id.loc.gov/resources/works/13166875> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Sales, Fernando. Bahia de Afrânio Peixoto" .
+
+<http://id.loc.gov/resources/works/13294790> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Piñon, Nélida. presumível coração da América" .
+
+<http://id.loc.gov/resources/works/13427712> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Junqueira, Ivan, 1934-2014. Ivan Junqueira" .
+
+<http://id.loc.gov/resources/works/13427714> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ivo, Lêdo. Lêdo Ivo" .
+
+<http://id.loc.gov/resources/works/13427715> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Silva, Alberto da Costa e. Alberto da Costa e Silva" .
+
+<http://id.loc.gov/resources/works/13624847> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Castro, Sílvio, 1931- Academia Brasileira de Letras e eu" .
+
+<http://id.loc.gov/resources/works/13894481> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Cem anos de cultura brasileira : ciclo de conferências--I centenário da ABL" .
+
+<http://id.loc.gov/resources/works/13961627> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Piza, Daniel. Academia Brasileira de Letras : histórias e revelações" .
+
+<http://id.loc.gov/resources/works/14020904> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Jobim, José Luis. biblioteca de Machado de Assis" .
+
+<http://id.loc.gov/resources/works/14083503> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Senna, Homero. Rui Barbosa e a Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/14108697> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Niskier, Arnaldo. Ciclo de painéis sobre a contribuição dos judeus ao desenvolvimento brasileiro" .
+
+<http://id.loc.gov/resources/works/14192930> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Nascentes, Antenor, 1886-1972. Estudos filológicos" .
+
+<http://id.loc.gov/resources/works/14257931> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Couto, Rui Ribeiro, 1898-1963. Três retratos de Manuel Bandeira" .
+
+<http://id.loc.gov/resources/works/14308935> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico da língua portuguesa" .
+
+<http://id.loc.gov/resources/works/14347578> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Junqueira, Ivan, 1934-2014. Escolas literárias no Brasil" .
+
+<http://id.loc.gov/resources/works/1452843> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Arquivo camoniano" .
+
+<http://id.loc.gov/resources/works/14650837> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Homenagem a Eduardo Portella" .
+
+<http://id.loc.gov/resources/works/14680640> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Arquivo Machado de Assis : inventário" .
+
+<http://id.loc.gov/resources/works/14832664> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Castro, Sílvio, 1931- Modernização, modernidade : 7 poetas contemporâneos da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/14832736> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Barbosa, Ana Maria. língua portuguesa na Revista Brasileira" .
+
+<http://id.loc.gov/resources/works/14869530> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Madeira, Marcos Almir, 1916- Na Província e na Corte : memórias" .
+
+<http://id.loc.gov/resources/works/15280542> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Melo Filho, Murilo. Acadêmicos no Jornal do Brasil : 1897 a 2005" .
+
+<http://id.loc.gov/resources/works/15443032> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Martins, Mário Ribeiro. Dicionário biobibliográfico de membros da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/15596481> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Montello, Josué, 1917-2006. Discursos acadêmicos de Josué Montello" .
+
+<http://id.loc.gov/resources/works/15601190> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Corrêa, Oscar Dias, 1921- Tribuna acadêmica" .
+
+<http://id.loc.gov/resources/works/15615064> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Lacerda, Rodrigo. 110 anos da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/15736367> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico da língua portuguesa" .
+
+<http://id.loc.gov/resources/works/15750727> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Huidobro, Vicente, 1893-1948. Vicente Huidobro & Manuel Bandeira" .
+
+<http://id.loc.gov/resources/works/15759159> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Neves, Fernão. Academia Brasileira de Letras : notas e documentos para a sua história, 1896-1940" .
+
+<http://id.loc.gov/resources/works/16373102> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Bueno, Alexei, 1963- Machado vive : exposição comemorativa de 100 anos de morte de Machado de Assis" .
+
+<http://id.loc.gov/resources/works/16378620> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ricciardi, Giovanni, 1937- Biografia e criação literária" .
+
+<http://id.loc.gov/resources/works/16482598> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Carvalho, José Murilo de. Academia Brasileira de Letras : subsídios para sua história (1940-2008)" .
+
+<http://id.loc.gov/resources/works/16904732> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Maciel, Marco, 1940- Discurso de posse do acadêmico Marco Maciel e discurso de recepção do acadêmico Marcos Vilaça" .
+
+<http://id.loc.gov/resources/works/17323151> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Bueno, Alexei, 1963- Machado vive : dedicatórias : exposição comemorativa de 100 anos de morte de Machado de Assis" .
+
+<http://id.loc.gov/resources/works/17511962> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Guzmán Cruchaga, Juan, 1895-1979. Juan Guzmán Cruchaga e Mauro Mota" .
+
+<http://id.loc.gov/resources/works/17641221> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Espínola, Adriano. Gregório de Matos" .
+
+<http://id.loc.gov/resources/works/17981184> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Silva, Maurício Pedro, sorriso da sociedade : literatura e academicismo no Brasil da virada do século (1890-1920)" .
+
+<http://id.loc.gov/resources/works/18158141> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Proença Filho, Domício, Antologias ABL poesia" .
+
+<http://id.loc.gov/resources/works/18180844> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Begliomini, Helio, 1955- Esculápios da Casa de Machado de Assis" .
+
+<http://id.loc.gov/resources/works/18521801> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Boletim da Academia braziliera de letras" .
+
+<http://id.loc.gov/resources/works/18780354> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cavalcanti, Geraldo Holanda, Antologias ABL. Ficção" .
+
+<http://id.loc.gov/resources/works/18913140> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Melo Filho, Murilo, senhores da palavra : Academia Brasileira de Letras humanas e bem-humoradas" .
+
+<http://id.loc.gov/resources/works/19000862> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Arinos Filho, Afonso, 1930- Palestras na Academia" .
+
+<http://id.loc.gov/resources/works/191824> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Mendonça, Lucio de, 1854-1909. Primeiras notícias da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/191930> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Efemérides acadêmicas" .
+
+<http://id.loc.gov/resources/works/20366494> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Almeida, Alexandre Miranda de, 1971- O certo e o errado" .
+
+<http://id.loc.gov/resources/works/20389943> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vieira, Celso, Origens acadêmicas : estudo feito para o cinquentenario da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/21687481> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cunha, Diogo, A Academia Brasileira de Letras durante a ditadura militar : os intelectuais conservadores entre cultura e política" .
+
+<http://id.loc.gov/resources/works/2592144> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vargas, Getúlio, 1883-1954. Discurso de posse na Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/2744677> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Nascentes, Antenor, 1886-1972. Dicionário ilustrado da língua portuguesa da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/3084280> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Marques, Xavier, 1861-1942. Xavier Marques e a Academia Brasileira de Letras : correspondência" .
+
+<http://id.loc.gov/resources/works/3344839> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cony, Carlos Heitor. Orlando Teruz, painter" .
+
+<http://id.loc.gov/resources/works/339257> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Efemérides da Academia Brasileira de Letras, 1897-1972" .
+
+<http://id.loc.gov/resources/works/340397> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Nova ortografía oficial, 1974 : com as palavras mais usadas que perderam a acentuação : com vocabulário exemplificativo : regras oficiais para escrever corretamente, formuladas pela Academia Brasileira de Letras : texto atualizado e completo do formulário ortográfico oficial" .
+
+<http://id.loc.gov/resources/works/3427529> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Del Cima, Marcelo, 1964- Celebridades & mitos : o mundo do teatro em antigos cartões-postais : [exposição], Academia Brasileira de Letras, Rio de Janeiro, novembro-dezembro de 1989, Brasil" .
+
+<http://id.loc.gov/resources/works/3572623> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Lima, Israel Souza. Biobibliografia dos patronos" .
+
+<http://id.loc.gov/resources/works/3974928> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Montello, Josué, 1917-2006. modernismo na academia : testemunhos e documentos" .
+
+<http://id.loc.gov/resources/works/4316526> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Montello, Josué, 1917-2006. Presidente Machado de Assis nos papéis e relíquias da Academia Brasileira" .
+
+<http://id.loc.gov/resources/works/4811831> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Nascentes, Antenor, 1886-1972. Dicionário da línqua portuquesa da Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/5984408> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Castro Alves" .
+
+<http://id.loc.gov/resources/works/6108164> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Pequeno vocabulário ortográfico da língua portuguêsa" .
+
+<http://id.loc.gov/resources/works/6154794> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Formulário ortográfico" .
+
+<http://id.loc.gov/resources/works/6439250> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Homenagem da Academia brasileira de letras á Republica argentina e ao embaixador d. Ramón J. Cárcano em 28 de janeiro de 1937" .
+
+<http://id.loc.gov/resources/works/6442647> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Galvão, Francisco, 1906-1948. Academia de letras na intimidade" .
+
+<http://id.loc.gov/resources/works/6451151> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Estatutos," .
+
+<http://id.loc.gov/resources/works/6456803> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Rodrigues de Mello, José, active 18th century Geórgicas brasileiras (cantos sôbre coisas rusticas do Brasil) (1781)" .
+
+<http://id.loc.gov/resources/works/6524345> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico resumido da língua portuguesa" .
+
+<http://id.loc.gov/resources/works/6902391> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Melo, Martinho Nobre de, 1891-1985. Compreensão" .
+
+<http://id.loc.gov/resources/works/6940729> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vieira, Celso, 1878- Estudos e orac̜ões (trabalhos da presidencia de 1940)" .
+
+<http://id.loc.gov/resources/works/7001737> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Carneiro, Levi, 1882- Na Academia (2a. série)" .
+
+<http://id.loc.gov/resources/works/7057551> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Figueiredo, Guilherme. An excelências; ou, Como entrar para a Academia" .
+
+<http://id.loc.gov/resources/works/7106843> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. In memoriam de Múcio Leão" .
+
+<http://id.loc.gov/resources/works/7382274> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vieira, Celso, 1878- Tobias Barreto (1839-1939)" .
+
+<http://id.loc.gov/resources/works/7809840> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Ribeiro, João, 1860-1934, Paginas escolhidas dentre as obras dos primeiros academicos e dos seus sucessores (1897-1912)" .
+
+<http://id.loc.gov/resources/works/7815131> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Lopes Pereira da Carvalho, José, membros da Academia brasileira em 1915 (traços bio-bibliographicos, acompanhados de excerptos de suas producções)" .
+
+<http://id.loc.gov/resources/works/7865269> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Motta, Arthur, 1879- Vultos e livros" .
+
+<http://id.loc.gov/resources/works/7866121> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vitor, Edgar d'Almeida, 1914- \"Ad imortalitatem,\"" .
+
+<http://id.loc.gov/resources/works/7897112> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Gonçalves Dias; conferências realizadas na Academia Brasileira" .
+
+<http://id.loc.gov/resources/works/8127574> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Anuário" .
+
+<http://id.loc.gov/resources/works/8303678> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico e ortoépico da lingua portuguesa," .
+
+<http://id.loc.gov/resources/works/8332262> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Carneiro, Levi, 1882- Na Academia" .
+
+<http://id.loc.gov/resources/works/8338714> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Panorama da literatura estrangeira contemporânea" .
+
+<http://id.loc.gov/resources/works/8620383> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulario ortográfico e ortoépico da lingua portuguesa," .
+
+<http://id.loc.gov/resources/works/8745020> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Anthologia da Academia brasileira de letras" .
+
+<http://id.loc.gov/resources/works/8766777> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Bailly, Gustavo Adolpho, Direitos autoraes" .
+
+<http://id.loc.gov/resources/works/8775438> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Cárcano, Ramón J. (Ramón José), 1860-1946. Volando sobre siglos" .
+
+<http://id.loc.gov/resources/works/8792973> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Albuquerque, Medeiros e, 1867-1934. Homens e cousas da Academia brasileira" .
+
+<http://id.loc.gov/resources/works/9218620> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Alves, Constancio, 1862- Discurso de recepção do sr. : Constancio Alves e resposta do sr" .
+
+<http://id.loc.gov/resources/works/9258546> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Marques Pereira, Nuno, 1652-1718. Compêndio narrativo do peregrino da América" .
+
+<http://id.loc.gov/resources/works/9262115> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Oliveira e Franklin, José R. de. Ad immortalitatem .." .
+
+<http://id.loc.gov/resources/works/9455712> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Carneiro, Paulo Estevão Berrêdo, 1901- Discursos na Academia Brasileira de Letras," .
+
+<http://id.loc.gov/resources/works/9462517> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Anibal Freire, in memoriam" .
+
+<http://id.loc.gov/resources/works/9688351> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Formulario ortografico da lingua portuguesa," .
+
+<http://id.loc.gov/resources/works/9709471> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Vocabulário ortográfico e ortoépico da lingua portuguesa," .
+
+<http://id.loc.gov/resources/works/9716125> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Casas, Álvaro de las, 1901-1950, Sonetos brasileños," .
+
+<http://id.loc.gov/resources/works/9724211> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Prosatori brasiliani," .
+
+<http://id.loc.gov/resources/works/9728033> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Neves, Fernão. Academia Brasileira de Letras" .
+
+<http://id.loc.gov/resources/works/9728823> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Gama, José Basilio da, 1740-1795. Uraguai" .
+
+<http://id.loc.gov/resources/works/9741182> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Soares, José Carlos de Macedo, 1883-1968. Recepção de José Carlos de Macedo Soares na Academia brasileira de letras em 10 de dezembro de 1938 : discurso do recipiendário e resposta de Ataulfo de Paiva" .
+
+<http://id.loc.gov/rwo/agents/n82059239> a <http://id.loc.gov/ontologies/bibframe/Organization>,
+        ns2:RWO,
+        <http://xmlns.com/foaf/0.1/Organization> ;
+    rdfs:label "Academia Brasileira de Letras" ;
+    ns1:contributorTo <http://id.loc.gov/resources/works/10179298>,
+        <http://id.loc.gov/resources/works/10192563>,
+        <http://id.loc.gov/resources/works/10357687>,
+        <http://id.loc.gov/resources/works/10387622>,
+        <http://id.loc.gov/resources/works/11140034>,
+        <http://id.loc.gov/resources/works/11504916>,
+        <http://id.loc.gov/resources/works/11504917>,
+        <http://id.loc.gov/resources/works/12093727>,
+        <http://id.loc.gov/resources/works/12216185>,
+        <http://id.loc.gov/resources/works/12293575>,
+        <http://id.loc.gov/resources/works/13072209>,
+        <http://id.loc.gov/resources/works/13166859>,
+        <http://id.loc.gov/resources/works/13166860>,
+        <http://id.loc.gov/resources/works/13294790>,
+        <http://id.loc.gov/resources/works/13427712>,
+        <http://id.loc.gov/resources/works/13427714>,
+        <http://id.loc.gov/resources/works/13427715>,
+        <http://id.loc.gov/resources/works/13894481>,
+        <http://id.loc.gov/resources/works/14020904>,
+        <http://id.loc.gov/resources/works/14108697>,
+        <http://id.loc.gov/resources/works/14192930>,
+        <http://id.loc.gov/resources/works/14308935>,
+        <http://id.loc.gov/resources/works/14347578>,
+        <http://id.loc.gov/resources/works/1452843>,
+        <http://id.loc.gov/resources/works/14650837>,
+        <http://id.loc.gov/resources/works/14680640>,
+        <http://id.loc.gov/resources/works/14832736>,
+        <http://id.loc.gov/resources/works/14869530>,
+        <http://id.loc.gov/resources/works/15596481>,
+        <http://id.loc.gov/resources/works/15601190>,
+        <http://id.loc.gov/resources/works/15615064>,
+        <http://id.loc.gov/resources/works/15736367>,
+        <http://id.loc.gov/resources/works/15750727>,
+        <http://id.loc.gov/resources/works/16373102>,
+        <http://id.loc.gov/resources/works/16378620>,
+        <http://id.loc.gov/resources/works/16983891>,
+        <http://id.loc.gov/resources/works/17323151>,
+        <http://id.loc.gov/resources/works/17511962>,
+        <http://id.loc.gov/resources/works/17511995>,
+        <http://id.loc.gov/resources/works/17519406>,
+        <http://id.loc.gov/resources/works/17641221>,
+        <http://id.loc.gov/resources/works/18144428>,
+        <http://id.loc.gov/resources/works/18158141>,
+        <http://id.loc.gov/resources/works/18521801>,
+        <http://id.loc.gov/resources/works/191930>,
+        <http://id.loc.gov/resources/works/2592144>,
+        <http://id.loc.gov/resources/works/2744677>,
+        <http://id.loc.gov/resources/works/3084280>,
+        <http://id.loc.gov/resources/works/3344839>,
+        <http://id.loc.gov/resources/works/339257>,
+        <http://id.loc.gov/resources/works/340397>,
+        <http://id.loc.gov/resources/works/3427529>,
+        <http://id.loc.gov/resources/works/3572609>,
+        <http://id.loc.gov/resources/works/4811831>,
+        <http://id.loc.gov/resources/works/5984408>,
+        <http://id.loc.gov/resources/works/6108164>,
+        <http://id.loc.gov/resources/works/6154794>,
+        <http://id.loc.gov/resources/works/6439250>,
+        <http://id.loc.gov/resources/works/6451151>,
+        <http://id.loc.gov/resources/works/6456803>,
+        <http://id.loc.gov/resources/works/6524345>,
+        <http://id.loc.gov/resources/works/6902391>,
+        <http://id.loc.gov/resources/works/6940729>,
+        <http://id.loc.gov/resources/works/7001737>,
+        <http://id.loc.gov/resources/works/7106843>,
+        <http://id.loc.gov/resources/works/7382274>,
+        <http://id.loc.gov/resources/works/7809840>,
+        <http://id.loc.gov/resources/works/7815131>,
+        <http://id.loc.gov/resources/works/7897112>,
+        <http://id.loc.gov/resources/works/8127574>,
+        <http://id.loc.gov/resources/works/8303678>,
+        <http://id.loc.gov/resources/works/8332262>,
+        <http://id.loc.gov/resources/works/8338714>,
+        <http://id.loc.gov/resources/works/8620383>,
+        <http://id.loc.gov/resources/works/8745020>,
+        <http://id.loc.gov/resources/works/8766777>,
+        <http://id.loc.gov/resources/works/8775438>,
+        <http://id.loc.gov/resources/works/9218620>,
+        <http://id.loc.gov/resources/works/9258546>,
+        <http://id.loc.gov/resources/works/9262115>,
+        <http://id.loc.gov/resources/works/9281603>,
+        <http://id.loc.gov/resources/works/9455712>,
+        <http://id.loc.gov/resources/works/9462517>,
+        <http://id.loc.gov/resources/works/9688351>,
+        <http://id.loc.gov/resources/works/9709471>,
+        <http://id.loc.gov/resources/works/9716125>,
+        <http://id.loc.gov/resources/works/9724211>,
+        <http://id.loc.gov/resources/works/9728823>,
+        <http://id.loc.gov/resources/works/9741182> ;
+    ns1:subjectOf <http://id.loc.gov/resources/works/11914019>,
+        <http://id.loc.gov/resources/works/12261891>,
+        <http://id.loc.gov/resources/works/13070077>,
+        <http://id.loc.gov/resources/works/13166875>,
+        <http://id.loc.gov/resources/works/13624847>,
+        <http://id.loc.gov/resources/works/13961627>,
+        <http://id.loc.gov/resources/works/14083503>,
+        <http://id.loc.gov/resources/works/14257931>,
+        <http://id.loc.gov/resources/works/14832664>,
+        <http://id.loc.gov/resources/works/15280542>,
+        <http://id.loc.gov/resources/works/15443032>,
+        <http://id.loc.gov/resources/works/15759159>,
+        <http://id.loc.gov/resources/works/16482598>,
+        <http://id.loc.gov/resources/works/16904732>,
+        <http://id.loc.gov/resources/works/16983891>,
+        <http://id.loc.gov/resources/works/17511995>,
+        <http://id.loc.gov/resources/works/17519406>,
+        <http://id.loc.gov/resources/works/17981184>,
+        <http://id.loc.gov/resources/works/18144428>,
+        <http://id.loc.gov/resources/works/18180844>,
+        <http://id.loc.gov/resources/works/18780354>,
+        <http://id.loc.gov/resources/works/18913140>,
+        <http://id.loc.gov/resources/works/19000862>,
+        <http://id.loc.gov/resources/works/191824>,
+        <http://id.loc.gov/resources/works/20366494>,
+        <http://id.loc.gov/resources/works/20389943>,
+        <http://id.loc.gov/resources/works/21687481>,
+        <http://id.loc.gov/resources/works/3572609>,
+        <http://id.loc.gov/resources/works/3572623>,
+        <http://id.loc.gov/resources/works/3974928>,
+        <http://id.loc.gov/resources/works/4316526>,
+        <http://id.loc.gov/resources/works/6442647>,
+        <http://id.loc.gov/resources/works/7057551>,
+        <http://id.loc.gov/resources/works/7865269>,
+        <http://id.loc.gov/resources/works/7866121>,
+        <http://id.loc.gov/resources/works/8792973>,
+        <http://id.loc.gov/resources/works/9281603>,
+        <http://id.loc.gov/resources/works/9728033> ;
+    ns2:associatedLanguage <http://id.loc.gov/vocabulary/languages/por> .
+
+<http://id.loc.gov/vocabulary/languages/por> a ns2:Language ;
+    ns2:authoritativeLabel "Portuguese"@en .
+
+<http://id.loc.gov/resources/works/16983891> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Relatório de atividades" .
+
+<http://id.loc.gov/resources/works/17511995> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vilaça, Marcos Vinicios. De novo presidente : Marcos Vinicios Vilaça, 2010-2011" .
+
+<http://id.loc.gov/resources/works/17519406> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Vilaça, Marcos Vinicios. Tarefas do Presidente Marcos Vinicios Vilaça, 2006-2007" .
+
+<http://id.loc.gov/resources/works/18144428> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Machado, Ana Maria, 1941- Antologias ABL. Ficção / Fiction / conception and foreword, Ana Maria Machado, organization, Domićo Proença Filho, Marco Lucchesi" .
+
+<http://id.loc.gov/resources/works/3572609> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Academia Brasileira de Letras. Academia Brasileira de Letras : 100 anos, 1897-1997" .
+
+<http://id.loc.gov/resources/works/9281603> a <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ns1:aap "Revista brasileira" .
+

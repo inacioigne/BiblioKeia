@@ -22,8 +22,10 @@ class EditVariant(BaseModel):
 class Uri(BaseModel):
     id: str
     uri: str
+    label: str
     mads: str
     collection: str
+    base: str
 
     _mads = [
         "hasReciprocalAuthority", 
@@ -42,7 +44,7 @@ class Uri(BaseModel):
     
     _types = ["topic", "name"]
 
-    @validator('collection')
+    @validator('base')
     def type_permitido(cls, v):
         if v not in cls._types:
             raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")

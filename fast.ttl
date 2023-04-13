@@ -1,0 +1,62 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.worldcat.org/fast/48407/rdf.xml> a foaf:Document ;
+    dc:format "application/rdf+xml" ;
+    dct:created "2004-09-24T00:00:00"^^xsd:dateTime ;
+    dct:language <http://lexvo.org/id/iso639-3/eng> ;
+    dct:modified "2023-01-18T10:47:10"^^xsd:dateTime ;
+    void:inDataset <http://id.worldcat.org/fast/void/0.1> ;
+    skos:changeNote "Cataloged by agency: OCoLC"@en,
+        "Transcribed by agency: OCoLC"@en ;
+    foaf:primaryTopic <http://id.worldcat.org/fast/48407> .
+
+<http://id.worldcat.org/fast/fst00048407> rdfs:comment "This identifier is deprecated. See the rdfs:seeAlso link for the new identifier." ;
+    rdfs:seeAlso <http://id.worldcat.org/fast/48407> .
+
+<http://en.wikipedia.org/wiki/Machado_de_Assis> rdfs:label "Machado de Assis" .
+
+<http://id.loc.gov/authorities/names/n80002329> rdfs:label "Machado de Assis, 1839-1908" .
+
+<http://id.worldcat.org/fast/void/0.1> a void:Dataset ;
+    dct:license <http://www.oclc.org/research/activities/fast/odcby.htm> ;
+    dct:title "FAST (Faceted Application of Subject Terminology) Data" .
+
+<http://www.oclc.org/research/activities/fast/odcby.htm> dct:title "Open Data Commons Attribution License (ODC-By) v1.0" ;
+    rdfs:comment "This is OCLC's \"local copy\" of the ODC-By license" ;
+    rdfs:seeAlso <http://opendatacommons.org/licenses/by/#toc-anchor-337-3> ;
+    owl:sameAs <http://opendatacommons.org/licenses/by/1-0/> .
+
+<https://viaf.org/viaf/95151633> rdfs:label "Machado de Assis, 1839-1908" .
+
+<http://id.worldcat.org/fast/48407> a schema:Person ;
+    dct:identifier "48407" ;
+    schema:name "Assis, Joaquim Maria Machado de, 1839-1908",
+        "Assis, Machado de, 1839-1908",
+        "De Assis, Joaquim Maria Machado, 1839-1908",
+        "De Assis, Machado, 1839-1908",
+        "Machado de Assis, 1839-1908",
+        "Machado de Assis, Joaquim Maria, 1839-1908",
+        "Machado de Assis, Joaquín María, 1839-1908",
+        "Mashado de Assiz, Zhoakin, 1839-1908" ;
+    schema:sameAs <http://id.loc.gov/authorities/names/n80002329>,
+        <https://viaf.org/viaf/95151633> ;
+    skos:altLabel "Assis, Joaquim Maria Machado de, 1839-1908",
+        "Assis, Machado de, 1839-1908",
+        "De Assis, Joaquim Maria Machado, 1839-1908",
+        "De Assis, Machado, 1839-1908",
+        "Machado de Assis, Joaquim Maria, 1839-1908",
+        "Machado de Assis, Joaquín María, 1839-1908",
+        "Mashado de Assiz, Zhoakin, 1839-1908" ;
+    skos:inScheme <http://id.worldcat.org/fast/ontology/1.0/#facet-Personal>,
+        <http://id.worldcat.org/fast/ontology/1.0/#fast> ;
+    skos:prefLabel "Machado de Assis, 1839-1908" ;
+    foaf:focus <http://en.wikipedia.org/wiki/Machado_de_Assis> .
+

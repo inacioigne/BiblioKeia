@@ -3,7 +3,7 @@ from pyfuseki import FusekiQuery
 
 def DelMads(request):
 
-    del_mads = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.collection}/>
+    del_mads = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.base}/>
                 PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 
                 DELETE DATA
@@ -16,7 +16,7 @@ def PostMads(request):
 
     fuseki_query = FusekiQuery('http://localhost:3030', 'authorities')
 
-    ask = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.collection}/>
+    ask = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.base}/>
                     PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 
             ASK {{ graph graph:{request.id} {{
@@ -29,7 +29,7 @@ def PostMads(request):
     if exist:
         return False
     else:
-        post_mads = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.collection}/>
+        post_mads = f"""PREFIX graph: <https://bibliokeia.com/authorities/{request.base}/>
                 PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 
                 INSERT DATA

@@ -3,6 +3,7 @@ from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.schemas.authorities.mads import Uri
 from src.function.authorities.edit_uri import DelMads, PostMads
+from src.function.authorities.personalName.docPersonalName import GetLabelLoc
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
@@ -15,11 +16,14 @@ async def delete_mads(request: Uri):
     upMads = DelMads(request)
     responseUpMads = fuseki_update.run_sparql(upMads)
 
-    doc = {
-    'id': id,
-    f'{request.mads}': {"remove": request.uri}
-      }
-    responseSolr = solr.add([doc], commit=True)
+    # doc = {
+    # 'id': id,
+    # f'{request.mads}': {"remove": request.uri}
+    #   }
+    # responseSolr = solr.add([doc], commit=True)
+    child = request.uri.split("/")[-1]
+    q = f"id:{request.id}!{child}"
+    responseSolr = solr.delete(q=q, commit=True)
 
     return {
         "jena": responseUpMads.convert()['message'],
@@ -33,8 +37,19 @@ async def post_mads(request: Uri):
     upMads = PostMads(request)
     if upMads:
         responseUpMads = fuseki_update.run_sparql(upMads)
+
+        # doc = {'id': request.id,
+        #         f'{request.mads}': {"add": request.uri}  }
+        # label = GetLabelLoc(request.uri)
+        child = request.uri.split("/")[-1]
+        
+        uri = {'id': f'{request.id}!{child}',
+        'collection': request.collection,
+        'label': request.label,
+        'uri': request.uri}
+
         doc = {'id': request.id,
-                f'{request.mads}': {"add": request.uri}  }
+                f'{request.mads}': {"add": uri}  }
         responseSolr = solr.add([doc], commit=True)
 
         return {
