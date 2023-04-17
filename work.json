@@ -1,0 +1,31 @@
+{
+  "type": ["bf:Monograph", "bf:Text", "bf:Work"],
+  "adminMetadata": {
+    "encodingLevel": "menclvl:1",
+    "generationProcess": {
+      "label": "BiblioKeia"
+    }
+  },
+  "classification": {
+    "classificationPortion": "869.3",
+    "itemPortion": "M513",
+    "edition": 23
+  },
+  "content": "contentTypes:txt",
+  "contribution": [
+    {
+        "type": [
+            "bf:Contribution"
+        ],
+        "agent": "http://id.loc.gov/rwo/agents/no2015001378",
+        "role": "relators:trl"
+    },
+    {
+        "type": [
+            "bf:Contribution", "bflc:PrimaryContribution"
+        ],
+        "agent": "http://id.loc.gov/rwo/agents/n80002329",
+        "role": "relators:aut"
+    }
+  ]
+}

@@ -1,0 +1,1103 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns3: <http://purl.org/vocab/changeset/schema#> .
+@prefix ns4: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/vocabulary/relators> a ns1:MADSScheme,
+        ns2:ConceptScheme ;
+    rdfs:label "Relators"@en ;
+    ns1:adminMetadata [ a ns4:RecordInfo ;
+            ns4:recordChangeDate "2021-08-02T00:00:00"^^xsd:dateTime ;
+            ns4:recordContentSource <https://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns4:recordStatus "new"^^xsd:string ] ;
+    ns1:definitionNote "Relator terms and their associated codes designate the relationship between an agent and a bibliographic resource."@en ;
+    ns1:hasMADSSchemeMember <http://id.loc.gov/vocabulary/relators/abr>,
+        <http://id.loc.gov/vocabulary/relators/acp>,
+        <http://id.loc.gov/vocabulary/relators/act>,
+        <http://id.loc.gov/vocabulary/relators/adi>,
+        <http://id.loc.gov/vocabulary/relators/adp>,
+        <http://id.loc.gov/vocabulary/relators/aft>,
+        <http://id.loc.gov/vocabulary/relators/anl>,
+        <http://id.loc.gov/vocabulary/relators/anm>,
+        <http://id.loc.gov/vocabulary/relators/ann>,
+        <http://id.loc.gov/vocabulary/relators/ant>,
+        <http://id.loc.gov/vocabulary/relators/ape>,
+        <http://id.loc.gov/vocabulary/relators/apl>,
+        <http://id.loc.gov/vocabulary/relators/app>,
+        <http://id.loc.gov/vocabulary/relators/aqt>,
+        <http://id.loc.gov/vocabulary/relators/arc>,
+        <http://id.loc.gov/vocabulary/relators/ard>,
+        <http://id.loc.gov/vocabulary/relators/arr>,
+        <http://id.loc.gov/vocabulary/relators/art>,
+        <http://id.loc.gov/vocabulary/relators/asg>,
+        <http://id.loc.gov/vocabulary/relators/asn>,
+        <http://id.loc.gov/vocabulary/relators/ato>,
+        <http://id.loc.gov/vocabulary/relators/att>,
+        <http://id.loc.gov/vocabulary/relators/auc>,
+        <http://id.loc.gov/vocabulary/relators/aud>,
+        <http://id.loc.gov/vocabulary/relators/aui>,
+        <http://id.loc.gov/vocabulary/relators/aus>,
+        <http://id.loc.gov/vocabulary/relators/aut>,
+        <http://id.loc.gov/vocabulary/relators/bdd>,
+        <http://id.loc.gov/vocabulary/relators/bjd>,
+        <http://id.loc.gov/vocabulary/relators/bkd>,
+        <http://id.loc.gov/vocabulary/relators/bkp>,
+        <http://id.loc.gov/vocabulary/relators/blw>,
+        <http://id.loc.gov/vocabulary/relators/bnd>,
+        <http://id.loc.gov/vocabulary/relators/bpd>,
+        <http://id.loc.gov/vocabulary/relators/brd>,
+        <http://id.loc.gov/vocabulary/relators/brl>,
+        <http://id.loc.gov/vocabulary/relators/bsl>,
+        <http://id.loc.gov/vocabulary/relators/cas>,
+        <http://id.loc.gov/vocabulary/relators/ccp>,
+        <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cli>,
+        <http://id.loc.gov/vocabulary/relators/cll>,
+        <http://id.loc.gov/vocabulary/relators/clr>,
+        <http://id.loc.gov/vocabulary/relators/clt>,
+        <http://id.loc.gov/vocabulary/relators/cmm>,
+        <http://id.loc.gov/vocabulary/relators/cmp>,
+        <http://id.loc.gov/vocabulary/relators/cmt>,
+        <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/cng>,
+        <http://id.loc.gov/vocabulary/relators/cns>,
+        <http://id.loc.gov/vocabulary/relators/coe>,
+        <http://id.loc.gov/vocabulary/relators/col>,
+        <http://id.loc.gov/vocabulary/relators/com>,
+        <http://id.loc.gov/vocabulary/relators/con>,
+        <http://id.loc.gov/vocabulary/relators/cor>,
+        <http://id.loc.gov/vocabulary/relators/cos>,
+        <http://id.loc.gov/vocabulary/relators/cot>,
+        <http://id.loc.gov/vocabulary/relators/cou>,
+        <http://id.loc.gov/vocabulary/relators/cov>,
+        <http://id.loc.gov/vocabulary/relators/cpc>,
+        <http://id.loc.gov/vocabulary/relators/cpe>,
+        <http://id.loc.gov/vocabulary/relators/cph>,
+        <http://id.loc.gov/vocabulary/relators/cpl>,
+        <http://id.loc.gov/vocabulary/relators/cpt>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/crp>,
+        <http://id.loc.gov/vocabulary/relators/crr>,
+        <http://id.loc.gov/vocabulary/relators/crt>,
+        <http://id.loc.gov/vocabulary/relators/csl>,
+        <http://id.loc.gov/vocabulary/relators/csp>,
+        <http://id.loc.gov/vocabulary/relators/cst>,
+        <http://id.loc.gov/vocabulary/relators/ctb>,
+        <http://id.loc.gov/vocabulary/relators/cte>,
+        <http://id.loc.gov/vocabulary/relators/ctg>,
+        <http://id.loc.gov/vocabulary/relators/ctr>,
+        <http://id.loc.gov/vocabulary/relators/cts>,
+        <http://id.loc.gov/vocabulary/relators/ctt>,
+        <http://id.loc.gov/vocabulary/relators/cur>,
+        <http://id.loc.gov/vocabulary/relators/cwt>,
+        <http://id.loc.gov/vocabulary/relators/dbp>,
+        <http://id.loc.gov/vocabulary/relators/dfd>,
+        <http://id.loc.gov/vocabulary/relators/dfe>,
+        <http://id.loc.gov/vocabulary/relators/dft>,
+        <http://id.loc.gov/vocabulary/relators/dgc>,
+        <http://id.loc.gov/vocabulary/relators/dgg>,
+        <http://id.loc.gov/vocabulary/relators/dgs>,
+        <http://id.loc.gov/vocabulary/relators/dis>,
+        <http://id.loc.gov/vocabulary/relators/dln>,
+        <http://id.loc.gov/vocabulary/relators/dnc>,
+        <http://id.loc.gov/vocabulary/relators/dnr>,
+        <http://id.loc.gov/vocabulary/relators/dpc>,
+        <http://id.loc.gov/vocabulary/relators/dpt>,
+        <http://id.loc.gov/vocabulary/relators/drm>,
+        <http://id.loc.gov/vocabulary/relators/drt>,
+        <http://id.loc.gov/vocabulary/relators/dsr>,
+        <http://id.loc.gov/vocabulary/relators/dst>,
+        <http://id.loc.gov/vocabulary/relators/dtc>,
+        <http://id.loc.gov/vocabulary/relators/dte>,
+        <http://id.loc.gov/vocabulary/relators/dtm>,
+        <http://id.loc.gov/vocabulary/relators/dto>,
+        <http://id.loc.gov/vocabulary/relators/dub>,
+        <http://id.loc.gov/vocabulary/relators/edc>,
+        <http://id.loc.gov/vocabulary/relators/edm>,
+        <http://id.loc.gov/vocabulary/relators/edt>,
+        <http://id.loc.gov/vocabulary/relators/egr>,
+        <http://id.loc.gov/vocabulary/relators/elg>,
+        <http://id.loc.gov/vocabulary/relators/elt>,
+        <http://id.loc.gov/vocabulary/relators/eng>,
+        <http://id.loc.gov/vocabulary/relators/enj>,
+        <http://id.loc.gov/vocabulary/relators/etr>,
+        <http://id.loc.gov/vocabulary/relators/evp>,
+        <http://id.loc.gov/vocabulary/relators/exp>,
+        <http://id.loc.gov/vocabulary/relators/fac>,
+        <http://id.loc.gov/vocabulary/relators/fds>,
+        <http://id.loc.gov/vocabulary/relators/fld>,
+        <http://id.loc.gov/vocabulary/relators/flm>,
+        <http://id.loc.gov/vocabulary/relators/fmd>,
+        <http://id.loc.gov/vocabulary/relators/fmk>,
+        <http://id.loc.gov/vocabulary/relators/fmo>,
+        <http://id.loc.gov/vocabulary/relators/fmp>,
+        <http://id.loc.gov/vocabulary/relators/fnd>,
+        <http://id.loc.gov/vocabulary/relators/fpy>,
+        <http://id.loc.gov/vocabulary/relators/frg>,
+        <http://id.loc.gov/vocabulary/relators/gis>,
+        <http://id.loc.gov/vocabulary/relators/his>,
+        <http://id.loc.gov/vocabulary/relators/hnr>,
+        <http://id.loc.gov/vocabulary/relators/hst>,
+        <http://id.loc.gov/vocabulary/relators/ill>,
+        <http://id.loc.gov/vocabulary/relators/ilu>,
+        <http://id.loc.gov/vocabulary/relators/ins>,
+        <http://id.loc.gov/vocabulary/relators/inv>,
+        <http://id.loc.gov/vocabulary/relators/isb>,
+        <http://id.loc.gov/vocabulary/relators/itr>,
+        <http://id.loc.gov/vocabulary/relators/ive>,
+        <http://id.loc.gov/vocabulary/relators/ivr>,
+        <http://id.loc.gov/vocabulary/relators/jud>,
+        <http://id.loc.gov/vocabulary/relators/jug>,
+        <http://id.loc.gov/vocabulary/relators/lbr>,
+        <http://id.loc.gov/vocabulary/relators/lbt>,
+        <http://id.loc.gov/vocabulary/relators/ldr>,
+        <http://id.loc.gov/vocabulary/relators/led>,
+        <http://id.loc.gov/vocabulary/relators/lee>,
+        <http://id.loc.gov/vocabulary/relators/lel>,
+        <http://id.loc.gov/vocabulary/relators/len>,
+        <http://id.loc.gov/vocabulary/relators/let>,
+        <http://id.loc.gov/vocabulary/relators/lgd>,
+        <http://id.loc.gov/vocabulary/relators/lie>,
+        <http://id.loc.gov/vocabulary/relators/lil>,
+        <http://id.loc.gov/vocabulary/relators/lit>,
+        <http://id.loc.gov/vocabulary/relators/lsa>,
+        <http://id.loc.gov/vocabulary/relators/lse>,
+        <http://id.loc.gov/vocabulary/relators/lso>,
+        <http://id.loc.gov/vocabulary/relators/ltg>,
+        <http://id.loc.gov/vocabulary/relators/lyr>,
+        <http://id.loc.gov/vocabulary/relators/mcp>,
+        <http://id.loc.gov/vocabulary/relators/mdc>,
+        <http://id.loc.gov/vocabulary/relators/med>,
+        <http://id.loc.gov/vocabulary/relators/mfp>,
+        <http://id.loc.gov/vocabulary/relators/mfr>,
+        <http://id.loc.gov/vocabulary/relators/mod>,
+        <http://id.loc.gov/vocabulary/relators/mon>,
+        <http://id.loc.gov/vocabulary/relators/mrb>,
+        <http://id.loc.gov/vocabulary/relators/mrk>,
+        <http://id.loc.gov/vocabulary/relators/msd>,
+        <http://id.loc.gov/vocabulary/relators/mte>,
+        <http://id.loc.gov/vocabulary/relators/mtk>,
+        <http://id.loc.gov/vocabulary/relators/mus>,
+        <http://id.loc.gov/vocabulary/relators/nrt>,
+        <http://id.loc.gov/vocabulary/relators/opn>,
+        <http://id.loc.gov/vocabulary/relators/org>,
+        <http://id.loc.gov/vocabulary/relators/orm>,
+        <http://id.loc.gov/vocabulary/relators/osp>,
+        <http://id.loc.gov/vocabulary/relators/oth>,
+        <http://id.loc.gov/vocabulary/relators/own>,
+        <http://id.loc.gov/vocabulary/relators/pad>,
+        <http://id.loc.gov/vocabulary/relators/pan>,
+        <http://id.loc.gov/vocabulary/relators/pat>,
+        <http://id.loc.gov/vocabulary/relators/pbd>,
+        <http://id.loc.gov/vocabulary/relators/pbl>,
+        <http://id.loc.gov/vocabulary/relators/pdr>,
+        <http://id.loc.gov/vocabulary/relators/pfr>,
+        <http://id.loc.gov/vocabulary/relators/pht>,
+        <http://id.loc.gov/vocabulary/relators/plt>,
+        <http://id.loc.gov/vocabulary/relators/pma>,
+        <http://id.loc.gov/vocabulary/relators/pmn>,
+        <http://id.loc.gov/vocabulary/relators/pop>,
+        <http://id.loc.gov/vocabulary/relators/ppm>,
+        <http://id.loc.gov/vocabulary/relators/ppt>,
+        <http://id.loc.gov/vocabulary/relators/pra>,
+        <http://id.loc.gov/vocabulary/relators/prc>,
+        <http://id.loc.gov/vocabulary/relators/prd>,
+        <http://id.loc.gov/vocabulary/relators/pre>,
+        <http://id.loc.gov/vocabulary/relators/prf>,
+        <http://id.loc.gov/vocabulary/relators/prg>,
+        <http://id.loc.gov/vocabulary/relators/prm>,
+        <http://id.loc.gov/vocabulary/relators/prn>,
+        <http://id.loc.gov/vocabulary/relators/pro>,
+        <http://id.loc.gov/vocabulary/relators/prp>,
+        <http://id.loc.gov/vocabulary/relators/prs>,
+        <http://id.loc.gov/vocabulary/relators/prt>,
+        <http://id.loc.gov/vocabulary/relators/prv>,
+        <http://id.loc.gov/vocabulary/relators/pta>,
+        <http://id.loc.gov/vocabulary/relators/pte>,
+        <http://id.loc.gov/vocabulary/relators/ptf>,
+        <http://id.loc.gov/vocabulary/relators/pth>,
+        <http://id.loc.gov/vocabulary/relators/ptt>,
+        <http://id.loc.gov/vocabulary/relators/pup>,
+        <http://id.loc.gov/vocabulary/relators/rbr>,
+        <http://id.loc.gov/vocabulary/relators/rcd>,
+        <http://id.loc.gov/vocabulary/relators/rce>,
+        <http://id.loc.gov/vocabulary/relators/rcp>,
+        <http://id.loc.gov/vocabulary/relators/rdd>,
+        <http://id.loc.gov/vocabulary/relators/red>,
+        <http://id.loc.gov/vocabulary/relators/ren>,
+        <http://id.loc.gov/vocabulary/relators/res>,
+        <http://id.loc.gov/vocabulary/relators/rev>,
+        <http://id.loc.gov/vocabulary/relators/rpc>,
+        <http://id.loc.gov/vocabulary/relators/rps>,
+        <http://id.loc.gov/vocabulary/relators/rpt>,
+        <http://id.loc.gov/vocabulary/relators/rpy>,
+        <http://id.loc.gov/vocabulary/relators/rse>,
+        <http://id.loc.gov/vocabulary/relators/rsg>,
+        <http://id.loc.gov/vocabulary/relators/rsp>,
+        <http://id.loc.gov/vocabulary/relators/rsr>,
+        <http://id.loc.gov/vocabulary/relators/rst>,
+        <http://id.loc.gov/vocabulary/relators/rth>,
+        <http://id.loc.gov/vocabulary/relators/rtm>,
+        <http://id.loc.gov/vocabulary/relators/sad>,
+        <http://id.loc.gov/vocabulary/relators/sce>,
+        <http://id.loc.gov/vocabulary/relators/scl>,
+        <http://id.loc.gov/vocabulary/relators/scr>,
+        <http://id.loc.gov/vocabulary/relators/sds>,
+        <http://id.loc.gov/vocabulary/relators/sec>,
+        <http://id.loc.gov/vocabulary/relators/sgd>,
+        <http://id.loc.gov/vocabulary/relators/sgn>,
+        <http://id.loc.gov/vocabulary/relators/sht>,
+        <http://id.loc.gov/vocabulary/relators/sll>,
+        <http://id.loc.gov/vocabulary/relators/sng>,
+        <http://id.loc.gov/vocabulary/relators/spk>,
+        <http://id.loc.gov/vocabulary/relators/spn>,
+        <http://id.loc.gov/vocabulary/relators/spy>,
+        <http://id.loc.gov/vocabulary/relators/srv>,
+        <http://id.loc.gov/vocabulary/relators/std>,
+        <http://id.loc.gov/vocabulary/relators/stg>,
+        <http://id.loc.gov/vocabulary/relators/stl>,
+        <http://id.loc.gov/vocabulary/relators/stm>,
+        <http://id.loc.gov/vocabulary/relators/stn>,
+        <http://id.loc.gov/vocabulary/relators/str>,
+        <http://id.loc.gov/vocabulary/relators/tcd>,
+        <http://id.loc.gov/vocabulary/relators/tch>,
+        <http://id.loc.gov/vocabulary/relators/ths>,
+        <http://id.loc.gov/vocabulary/relators/tld>,
+        <http://id.loc.gov/vocabulary/relators/tlp>,
+        <http://id.loc.gov/vocabulary/relators/trc>,
+        <http://id.loc.gov/vocabulary/relators/trl>,
+        <http://id.loc.gov/vocabulary/relators/tyd>,
+        <http://id.loc.gov/vocabulary/relators/tyg>,
+        <http://id.loc.gov/vocabulary/relators/uvp>,
+        <http://id.loc.gov/vocabulary/relators/vac>,
+        <http://id.loc.gov/vocabulary/relators/vdg>,
+        <http://id.loc.gov/vocabulary/relators/wac>,
+        <http://id.loc.gov/vocabulary/relators/wal>,
+        <http://id.loc.gov/vocabulary/relators/wam>,
+        <http://id.loc.gov/vocabulary/relators/wat>,
+        <http://id.loc.gov/vocabulary/relators/wdc>,
+        <http://id.loc.gov/vocabulary/relators/wde>,
+        <http://id.loc.gov/vocabulary/relators/win>,
+        <http://id.loc.gov/vocabulary/relators/wit>,
+        <http://id.loc.gov/vocabulary/relators/wpr>,
+        <http://id.loc.gov/vocabulary/relators/wst> ;
+    rdfs:comment "" ;
+    ns2:changeNote [ a ns3:ChangeSet ;
+            ns3:changeReason "new"^^xsd:string ;
+            ns3:createdDate "2021-08-02T00:00:00"^^xsd:dateTime ;
+            ns3:creatorName <https://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns3:subjectOfChange <http://id.loc.gov/vocabulary/relators> ] ;
+    ns2:definition "Relator terms and their associated codes designate the relationship between an agent and a bibliographic resource."@en .
+
+<http://id.loc.gov/vocabulary/relators/abr> a ns1:Authority ;
+    ns1:authoritativeLabel "Abridger" .
+
+<http://id.loc.gov/vocabulary/relators/acp> a ns1:Authority ;
+    ns1:authoritativeLabel "Art copyist" .
+
+<http://id.loc.gov/vocabulary/relators/act> a ns1:Authority ;
+    ns1:authoritativeLabel "Actor" .
+
+<http://id.loc.gov/vocabulary/relators/adi> a ns1:Authority ;
+    ns1:authoritativeLabel "Art director" .
+
+<http://id.loc.gov/vocabulary/relators/adp> a ns1:Authority ;
+    ns1:authoritativeLabel "Adapter" .
+
+<http://id.loc.gov/vocabulary/relators/aft> a ns1:Authority ;
+    ns1:authoritativeLabel "Author of afterword, colophon, etc." .
+
+<http://id.loc.gov/vocabulary/relators/anl> a ns1:Authority ;
+    ns1:authoritativeLabel "Analyst" .
+
+<http://id.loc.gov/vocabulary/relators/anm> a ns1:Authority ;
+    ns1:authoritativeLabel "Animator" .
+
+<http://id.loc.gov/vocabulary/relators/ann> a ns1:Authority ;
+    ns1:authoritativeLabel "Annotator" .
+
+<http://id.loc.gov/vocabulary/relators/ant> a ns1:Authority ;
+    ns1:authoritativeLabel "Bibliographic antecedent" .
+
+<http://id.loc.gov/vocabulary/relators/ape> a ns1:Authority ;
+    ns1:authoritativeLabel "Appellee" .
+
+<http://id.loc.gov/vocabulary/relators/apl> a ns1:Authority ;
+    ns1:authoritativeLabel "Appellant" .
+
+<http://id.loc.gov/vocabulary/relators/app> a ns1:Authority ;
+    ns1:authoritativeLabel "Applicant" .
+
+<http://id.loc.gov/vocabulary/relators/aqt> a ns1:Authority ;
+    ns1:authoritativeLabel "Author in quotations or text abstracts" .
+
+<http://id.loc.gov/vocabulary/relators/arc> a ns1:Authority ;
+    ns1:authoritativeLabel "Architect" .
+
+<http://id.loc.gov/vocabulary/relators/ard> a ns1:Authority ;
+    ns1:authoritativeLabel "Artistic director" .
+
+<http://id.loc.gov/vocabulary/relators/arr> a ns1:Authority ;
+    ns1:authoritativeLabel "Arranger" .
+
+<http://id.loc.gov/vocabulary/relators/art> a ns1:Authority ;
+    ns1:authoritativeLabel "Artist" .
+
+<http://id.loc.gov/vocabulary/relators/asg> a ns1:Authority ;
+    ns1:authoritativeLabel "Assignee" .
+
+<http://id.loc.gov/vocabulary/relators/asn> a ns1:Authority ;
+    ns1:authoritativeLabel "Associated name" .
+
+<http://id.loc.gov/vocabulary/relators/ato> a ns1:Authority ;
+    ns1:authoritativeLabel "Autographer" .
+
+<http://id.loc.gov/vocabulary/relators/att> a ns1:Authority ;
+    ns1:authoritativeLabel "Attributed name" .
+
+<http://id.loc.gov/vocabulary/relators/auc> a ns1:Authority ;
+    ns1:authoritativeLabel "Auctioneer" .
+
+<http://id.loc.gov/vocabulary/relators/aud> a ns1:Authority ;
+    ns1:authoritativeLabel "Author of dialog" .
+
+<http://id.loc.gov/vocabulary/relators/aui> a ns1:Authority ;
+    ns1:authoritativeLabel "Author of introduction, etc." .
+
+<http://id.loc.gov/vocabulary/relators/aus> a ns1:Authority ;
+    ns1:authoritativeLabel "Screenwriter" .
+
+<http://id.loc.gov/vocabulary/relators/aut> a ns1:Authority ;
+    ns1:authoritativeLabel "Author" .
+
+<http://id.loc.gov/vocabulary/relators/bdd> a ns1:Authority ;
+    ns1:authoritativeLabel "Binding designer" .
+
+<http://id.loc.gov/vocabulary/relators/bjd> a ns1:Authority ;
+    ns1:authoritativeLabel "Bookjacket designer" .
+
+<http://id.loc.gov/vocabulary/relators/bkd> a ns1:Authority ;
+    ns1:authoritativeLabel "Book designer" .
+
+<http://id.loc.gov/vocabulary/relators/bkp> a ns1:Authority ;
+    ns1:authoritativeLabel "Book producer" .
+
+<http://id.loc.gov/vocabulary/relators/blw> a ns1:Authority ;
+    ns1:authoritativeLabel "Blurb writer" .
+
+<http://id.loc.gov/vocabulary/relators/bnd> a ns1:Authority ;
+    ns1:authoritativeLabel "Binder" .
+
+<http://id.loc.gov/vocabulary/relators/bpd> a ns1:Authority ;
+    ns1:authoritativeLabel "Bookplate designer" .
+
+<http://id.loc.gov/vocabulary/relators/brd> a ns1:Authority ;
+    ns1:authoritativeLabel "Broadcaster" .
+
+<http://id.loc.gov/vocabulary/relators/brl> a ns1:Authority ;
+    ns1:authoritativeLabel "Braille embosser" .
+
+<http://id.loc.gov/vocabulary/relators/bsl> a ns1:Authority ;
+    ns1:authoritativeLabel "Bookseller" .
+
+<http://id.loc.gov/vocabulary/relators/cas> a ns1:Authority ;
+    ns1:authoritativeLabel "Caster" .
+
+<http://id.loc.gov/vocabulary/relators/ccp> a ns1:Authority ;
+    ns1:authoritativeLabel "Conceptor" .
+
+<http://id.loc.gov/vocabulary/relators/chr> a ns1:Authority ;
+    ns1:authoritativeLabel "Choreographer" .
+
+<http://id.loc.gov/vocabulary/relators/cli> a ns1:Authority ;
+    ns1:authoritativeLabel "Client" .
+
+<http://id.loc.gov/vocabulary/relators/cll> a ns1:Authority ;
+    ns1:authoritativeLabel "Calligrapher" .
+
+<http://id.loc.gov/vocabulary/relators/clr> a ns1:Authority ;
+    ns1:authoritativeLabel "Colorist" .
+
+<http://id.loc.gov/vocabulary/relators/clt> a ns1:Authority ;
+    ns1:authoritativeLabel "Collotyper" .
+
+<http://id.loc.gov/vocabulary/relators/cmm> a ns1:Authority ;
+    ns1:authoritativeLabel "Commentator" .
+
+<http://id.loc.gov/vocabulary/relators/cmp> a ns1:Authority ;
+    ns1:authoritativeLabel "Composer" .
+
+<http://id.loc.gov/vocabulary/relators/cmt> a ns1:Authority ;
+    ns1:authoritativeLabel "Compositor" .
+
+<http://id.loc.gov/vocabulary/relators/cnd> a ns1:Authority ;
+    ns1:authoritativeLabel "Conductor" .
+
+<http://id.loc.gov/vocabulary/relators/cng> a ns1:Authority ;
+    ns1:authoritativeLabel "Cinematographer" .
+
+<http://id.loc.gov/vocabulary/relators/cns> a ns1:Authority ;
+    ns1:authoritativeLabel "Censor" .
+
+<http://id.loc.gov/vocabulary/relators/coe> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestant-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/col> a ns1:Authority ;
+    ns1:authoritativeLabel "Collector" .
+
+<http://id.loc.gov/vocabulary/relators/com> a ns1:Authority ;
+    ns1:authoritativeLabel "Compiler" .
+
+<http://id.loc.gov/vocabulary/relators/con> a ns1:Authority ;
+    ns1:authoritativeLabel "Conservator" .
+
+<http://id.loc.gov/vocabulary/relators/cor> a ns1:Authority ;
+    ns1:authoritativeLabel "Collection registrar" .
+
+<http://id.loc.gov/vocabulary/relators/cos> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestant" .
+
+<http://id.loc.gov/vocabulary/relators/cot> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestant-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/cou> a ns1:Authority ;
+    ns1:authoritativeLabel "Court governed" .
+
+<http://id.loc.gov/vocabulary/relators/cov> a ns1:Authority ;
+    ns1:authoritativeLabel "Cover designer" .
+
+<http://id.loc.gov/vocabulary/relators/cpc> a ns1:Authority ;
+    ns1:authoritativeLabel "Copyright claimant" .
+
+<http://id.loc.gov/vocabulary/relators/cpe> a ns1:Authority ;
+    ns1:authoritativeLabel "Complainant-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/cph> a ns1:Authority ;
+    ns1:authoritativeLabel "Copyright holder" .
+
+<http://id.loc.gov/vocabulary/relators/cpl> a ns1:Authority ;
+    ns1:authoritativeLabel "Complainant" .
+
+<http://id.loc.gov/vocabulary/relators/cpt> a ns1:Authority ;
+    ns1:authoritativeLabel "Complainant-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/cre> a ns1:Authority ;
+    ns1:authoritativeLabel "Creator" .
+
+<http://id.loc.gov/vocabulary/relators/crp> a ns1:Authority ;
+    ns1:authoritativeLabel "Correspondent" .
+
+<http://id.loc.gov/vocabulary/relators/crr> a ns1:Authority ;
+    ns1:authoritativeLabel "Corrector" .
+
+<http://id.loc.gov/vocabulary/relators/crt> a ns1:Authority ;
+    ns1:authoritativeLabel "Court reporter" .
+
+<http://id.loc.gov/vocabulary/relators/csl> a ns1:Authority ;
+    ns1:authoritativeLabel "Consultant" .
+
+<http://id.loc.gov/vocabulary/relators/csp> a ns1:Authority ;
+    ns1:authoritativeLabel "Consultant to a project" .
+
+<http://id.loc.gov/vocabulary/relators/cst> a ns1:Authority ;
+    ns1:authoritativeLabel "Costume designer" .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a ns1:Authority ;
+    ns1:authoritativeLabel "Contributor" .
+
+<http://id.loc.gov/vocabulary/relators/cte> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestee-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/ctg> a ns1:Authority ;
+    ns1:authoritativeLabel "Cartographer" .
+
+<http://id.loc.gov/vocabulary/relators/ctr> a ns1:Authority ;
+    ns1:authoritativeLabel "Contractor" .
+
+<http://id.loc.gov/vocabulary/relators/cts> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestee" .
+
+<http://id.loc.gov/vocabulary/relators/ctt> a ns1:Authority ;
+    ns1:authoritativeLabel "Contestee-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/cur> a ns1:Authority ;
+    ns1:authoritativeLabel "Curator" .
+
+<http://id.loc.gov/vocabulary/relators/cwt> a ns1:Authority ;
+    ns1:authoritativeLabel "Commentator for written text" .
+
+<http://id.loc.gov/vocabulary/relators/dbp> a ns1:Authority ;
+    ns1:authoritativeLabel "Distribution place" .
+
+<http://id.loc.gov/vocabulary/relators/dfd> a ns1:Authority ;
+    ns1:authoritativeLabel "Defendant" .
+
+<http://id.loc.gov/vocabulary/relators/dfe> a ns1:Authority ;
+    ns1:authoritativeLabel "Defendant-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/dft> a ns1:Authority ;
+    ns1:authoritativeLabel "Defendant-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/dgc> a ns1:Authority ;
+    ns1:authoritativeLabel "Degree committee member" .
+
+<http://id.loc.gov/vocabulary/relators/dgg> a ns1:Authority ;
+    ns1:authoritativeLabel "Degree granting institution" .
+
+<http://id.loc.gov/vocabulary/relators/dgs> a ns1:Authority ;
+    ns1:authoritativeLabel "Degree supervisor" .
+
+<http://id.loc.gov/vocabulary/relators/dis> a ns1:Authority ;
+    ns1:authoritativeLabel "Dissertant" .
+
+<http://id.loc.gov/vocabulary/relators/dln> a ns1:Authority ;
+    ns1:authoritativeLabel "Delineator" .
+
+<http://id.loc.gov/vocabulary/relators/dnc> a ns1:Authority ;
+    ns1:authoritativeLabel "Dancer" .
+
+<http://id.loc.gov/vocabulary/relators/dnr> a ns1:Authority ;
+    ns1:authoritativeLabel "Donor" .
+
+<http://id.loc.gov/vocabulary/relators/dpc> a ns1:Authority ;
+    ns1:authoritativeLabel "Depicted" .
+
+<http://id.loc.gov/vocabulary/relators/dpt> a ns1:Authority ;
+    ns1:authoritativeLabel "Depositor" .
+
+<http://id.loc.gov/vocabulary/relators/drm> a ns1:Authority ;
+    ns1:authoritativeLabel "Draftsman" .
+
+<http://id.loc.gov/vocabulary/relators/drt> a ns1:Authority ;
+    ns1:authoritativeLabel "Director" .
+
+<http://id.loc.gov/vocabulary/relators/dsr> a ns1:Authority ;
+    ns1:authoritativeLabel "Designer" .
+
+<http://id.loc.gov/vocabulary/relators/dst> a ns1:Authority ;
+    ns1:authoritativeLabel "Distributor" .
+
+<http://id.loc.gov/vocabulary/relators/dtc> a ns1:Authority ;
+    ns1:authoritativeLabel "Data contributor" .
+
+<http://id.loc.gov/vocabulary/relators/dte> a ns1:Authority ;
+    ns1:authoritativeLabel "Dedicatee" .
+
+<http://id.loc.gov/vocabulary/relators/dtm> a ns1:Authority ;
+    ns1:authoritativeLabel "Data manager" .
+
+<http://id.loc.gov/vocabulary/relators/dto> a ns1:Authority ;
+    ns1:authoritativeLabel "Dedicator" .
+
+<http://id.loc.gov/vocabulary/relators/dub> a ns1:Authority ;
+    ns1:authoritativeLabel "Dubious author" .
+
+<http://id.loc.gov/vocabulary/relators/edc> a ns1:Authority ;
+    ns1:authoritativeLabel "Editor of compilation" .
+
+<http://id.loc.gov/vocabulary/relators/edm> a ns1:Authority ;
+    ns1:authoritativeLabel "Editor of moving image work" .
+
+<http://id.loc.gov/vocabulary/relators/edt> a ns1:Authority ;
+    ns1:authoritativeLabel "Editor" .
+
+<http://id.loc.gov/vocabulary/relators/egr> a ns1:Authority ;
+    ns1:authoritativeLabel "Engraver" .
+
+<http://id.loc.gov/vocabulary/relators/elg> a ns1:Authority ;
+    ns1:authoritativeLabel "Electrician" .
+
+<http://id.loc.gov/vocabulary/relators/elt> a ns1:Authority ;
+    ns1:authoritativeLabel "Electrotyper" .
+
+<http://id.loc.gov/vocabulary/relators/eng> a ns1:Authority ;
+    ns1:authoritativeLabel "Engineer" .
+
+<http://id.loc.gov/vocabulary/relators/enj> a ns1:Authority ;
+    ns1:authoritativeLabel "Enacting jurisdiction" .
+
+<http://id.loc.gov/vocabulary/relators/etr> a ns1:Authority ;
+    ns1:authoritativeLabel "Etcher" .
+
+<http://id.loc.gov/vocabulary/relators/evp> a ns1:Authority ;
+    ns1:authoritativeLabel "Event place" .
+
+<http://id.loc.gov/vocabulary/relators/exp> a ns1:Authority ;
+    ns1:authoritativeLabel "Expert" .
+
+<http://id.loc.gov/vocabulary/relators/fac> a ns1:Authority ;
+    ns1:authoritativeLabel "Facsimilist" .
+
+<http://id.loc.gov/vocabulary/relators/fds> a ns1:Authority ;
+    ns1:authoritativeLabel "Film distributor" .
+
+<http://id.loc.gov/vocabulary/relators/fld> a ns1:Authority ;
+    ns1:authoritativeLabel "Field director" .
+
+<http://id.loc.gov/vocabulary/relators/flm> a ns1:Authority ;
+    ns1:authoritativeLabel "Film editor" .
+
+<http://id.loc.gov/vocabulary/relators/fmd> a ns1:Authority ;
+    ns1:authoritativeLabel "Film director" .
+
+<http://id.loc.gov/vocabulary/relators/fmk> a ns1:Authority ;
+    ns1:authoritativeLabel "Filmmaker" .
+
+<http://id.loc.gov/vocabulary/relators/fmo> a ns1:Authority ;
+    ns1:authoritativeLabel "Former owner" .
+
+<http://id.loc.gov/vocabulary/relators/fmp> a ns1:Authority ;
+    ns1:authoritativeLabel "Film producer" .
+
+<http://id.loc.gov/vocabulary/relators/fnd> a ns1:Authority ;
+    ns1:authoritativeLabel "Funder" .
+
+<http://id.loc.gov/vocabulary/relators/fpy> a ns1:Authority ;
+    ns1:authoritativeLabel "First party" .
+
+<http://id.loc.gov/vocabulary/relators/frg> a ns1:Authority ;
+    ns1:authoritativeLabel "Forger" .
+
+<http://id.loc.gov/vocabulary/relators/gis> a ns1:Authority ;
+    ns1:authoritativeLabel "Geographic information specialist" .
+
+<http://id.loc.gov/vocabulary/relators/his> a ns1:Authority ;
+    ns1:authoritativeLabel "Host institution" .
+
+<http://id.loc.gov/vocabulary/relators/hnr> a ns1:Authority ;
+    ns1:authoritativeLabel "Honoree" .
+
+<http://id.loc.gov/vocabulary/relators/hst> a ns1:Authority ;
+    ns1:authoritativeLabel "Host" .
+
+<http://id.loc.gov/vocabulary/relators/ill> a ns1:Authority ;
+    ns1:authoritativeLabel "Illustrator" .
+
+<http://id.loc.gov/vocabulary/relators/ilu> a ns1:Authority ;
+    ns1:authoritativeLabel "Illuminator" .
+
+<http://id.loc.gov/vocabulary/relators/ins> a ns1:Authority ;
+    ns1:authoritativeLabel "Inscriber" .
+
+<http://id.loc.gov/vocabulary/relators/inv> a ns1:Authority ;
+    ns1:authoritativeLabel "Inventor" .
+
+<http://id.loc.gov/vocabulary/relators/isb> a ns1:Authority ;
+    ns1:authoritativeLabel "Issuing body" .
+
+<http://id.loc.gov/vocabulary/relators/itr> a ns1:Authority ;
+    ns1:authoritativeLabel "Instrumentalist" .
+
+<http://id.loc.gov/vocabulary/relators/ive> a ns1:Authority ;
+    ns1:authoritativeLabel "Interviewee" .
+
+<http://id.loc.gov/vocabulary/relators/ivr> a ns1:Authority ;
+    ns1:authoritativeLabel "Interviewer" .
+
+<http://id.loc.gov/vocabulary/relators/jud> a ns1:Authority ;
+    ns1:authoritativeLabel "Judge" .
+
+<http://id.loc.gov/vocabulary/relators/jug> a ns1:Authority ;
+    ns1:authoritativeLabel "Jurisdiction governed" .
+
+<http://id.loc.gov/vocabulary/relators/lbr> a ns1:Authority ;
+    ns1:authoritativeLabel "Laboratory" .
+
+<http://id.loc.gov/vocabulary/relators/lbt> a ns1:Authority ;
+    ns1:authoritativeLabel "Librettist" .
+
+<http://id.loc.gov/vocabulary/relators/ldr> a ns1:Authority ;
+    ns1:authoritativeLabel "Laboratory director" .
+
+<http://id.loc.gov/vocabulary/relators/led> a ns1:Authority ;
+    ns1:authoritativeLabel "Lead" .
+
+<http://id.loc.gov/vocabulary/relators/lee> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelee-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/lel> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelee" .
+
+<http://id.loc.gov/vocabulary/relators/len> a ns1:Authority ;
+    ns1:authoritativeLabel "Lender" .
+
+<http://id.loc.gov/vocabulary/relators/let> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelee-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/lgd> a ns1:Authority ;
+    ns1:authoritativeLabel "Lighting designer" .
+
+<http://id.loc.gov/vocabulary/relators/lie> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelant-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/lil> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelant" .
+
+<http://id.loc.gov/vocabulary/relators/lit> a ns1:Authority ;
+    ns1:authoritativeLabel "Libelant-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/lsa> a ns1:Authority ;
+    ns1:authoritativeLabel "Landscape architect" .
+
+<http://id.loc.gov/vocabulary/relators/lse> a ns1:Authority ;
+    ns1:authoritativeLabel "Licensee" .
+
+<http://id.loc.gov/vocabulary/relators/lso> a ns1:Authority ;
+    ns1:authoritativeLabel "Licensor" .
+
+<http://id.loc.gov/vocabulary/relators/ltg> a ns1:Authority ;
+    ns1:authoritativeLabel "Lithographer" .
+
+<http://id.loc.gov/vocabulary/relators/lyr> a ns1:Authority ;
+    ns1:authoritativeLabel "Lyricist" .
+
+<http://id.loc.gov/vocabulary/relators/mcp> a ns1:Authority ;
+    ns1:authoritativeLabel "Music copyist" .
+
+<http://id.loc.gov/vocabulary/relators/mdc> a ns1:Authority ;
+    ns1:authoritativeLabel "Metadata contact" .
+
+<http://id.loc.gov/vocabulary/relators/med> a ns1:Authority ;
+    ns1:authoritativeLabel "Medium" .
+
+<http://id.loc.gov/vocabulary/relators/mfp> a ns1:Authority ;
+    ns1:authoritativeLabel "Manufacture place" .
+
+<http://id.loc.gov/vocabulary/relators/mfr> a ns1:Authority ;
+    ns1:authoritativeLabel "Manufacturer" .
+
+<http://id.loc.gov/vocabulary/relators/mod> a ns1:Authority ;
+    ns1:authoritativeLabel "Moderator" .
+
+<http://id.loc.gov/vocabulary/relators/mon> a ns1:Authority ;
+    ns1:authoritativeLabel "Monitor" .
+
+<http://id.loc.gov/vocabulary/relators/mrb> a ns1:Authority ;
+    ns1:authoritativeLabel "Marbler" .
+
+<http://id.loc.gov/vocabulary/relators/mrk> a ns1:Authority ;
+    ns1:authoritativeLabel "Markup editor" .
+
+<http://id.loc.gov/vocabulary/relators/msd> a ns1:Authority ;
+    ns1:authoritativeLabel "Musical director" .
+
+<http://id.loc.gov/vocabulary/relators/mte> a ns1:Authority ;
+    ns1:authoritativeLabel "Metal engraver" .
+
+<http://id.loc.gov/vocabulary/relators/mtk> a ns1:Authority ;
+    ns1:authoritativeLabel "Minute taker" .
+
+<http://id.loc.gov/vocabulary/relators/mus> a ns1:Authority ;
+    ns1:authoritativeLabel "Musician" .
+
+<http://id.loc.gov/vocabulary/relators/nrt> a ns1:Authority ;
+    ns1:authoritativeLabel "Narrator" .
+
+<http://id.loc.gov/vocabulary/relators/opn> a ns1:Authority ;
+    ns1:authoritativeLabel "Opponent" .
+
+<http://id.loc.gov/vocabulary/relators/org> a ns1:Authority ;
+    ns1:authoritativeLabel "Originator" .
+
+<http://id.loc.gov/vocabulary/relators/orm> a ns1:Authority ;
+    ns1:authoritativeLabel "Organizer" .
+
+<http://id.loc.gov/vocabulary/relators/osp> a ns1:Authority ;
+    ns1:authoritativeLabel "Onscreen presenter" .
+
+<http://id.loc.gov/vocabulary/relators/oth> a ns1:Authority ;
+    ns1:authoritativeLabel "Other" .
+
+<http://id.loc.gov/vocabulary/relators/own> a ns1:Authority ;
+    ns1:authoritativeLabel "Owner" .
+
+<http://id.loc.gov/vocabulary/relators/pad> a ns1:Authority ;
+    ns1:authoritativeLabel "Place of address" .
+
+<http://id.loc.gov/vocabulary/relators/pan> a ns1:Authority ;
+    ns1:authoritativeLabel "Panelist" .
+
+<http://id.loc.gov/vocabulary/relators/pat> a ns1:Authority ;
+    ns1:authoritativeLabel "Patron" .
+
+<http://id.loc.gov/vocabulary/relators/pbd> a ns1:Authority ;
+    ns1:authoritativeLabel "Publisher director" .
+
+<http://id.loc.gov/vocabulary/relators/pbl> a ns1:Authority ;
+    ns1:authoritativeLabel "Publisher" .
+
+<http://id.loc.gov/vocabulary/relators/pdr> a ns1:Authority ;
+    ns1:authoritativeLabel "Project director" .
+
+<http://id.loc.gov/vocabulary/relators/pfr> a ns1:Authority ;
+    ns1:authoritativeLabel "Proofreader" .
+
+<http://id.loc.gov/vocabulary/relators/pht> a ns1:Authority ;
+    ns1:authoritativeLabel "Photographer" .
+
+<http://id.loc.gov/vocabulary/relators/plt> a ns1:Authority ;
+    ns1:authoritativeLabel "Platemaker" .
+
+<http://id.loc.gov/vocabulary/relators/pma> a ns1:Authority ;
+    ns1:authoritativeLabel "Permitting agency" .
+
+<http://id.loc.gov/vocabulary/relators/pmn> a ns1:Authority ;
+    ns1:authoritativeLabel "Production manager" .
+
+<http://id.loc.gov/vocabulary/relators/pop> a ns1:Authority ;
+    ns1:authoritativeLabel "Printer of plates" .
+
+<http://id.loc.gov/vocabulary/relators/ppm> a ns1:Authority ;
+    ns1:authoritativeLabel "Papermaker" .
+
+<http://id.loc.gov/vocabulary/relators/ppt> a ns1:Authority ;
+    ns1:authoritativeLabel "Puppeteer" .
+
+<http://id.loc.gov/vocabulary/relators/pra> a ns1:Authority ;
+    ns1:authoritativeLabel "Praeses" .
+
+<http://id.loc.gov/vocabulary/relators/prc> a ns1:Authority ;
+    ns1:authoritativeLabel "Process contact" .
+
+<http://id.loc.gov/vocabulary/relators/prd> a ns1:Authority ;
+    ns1:authoritativeLabel "Production personnel" .
+
+<http://id.loc.gov/vocabulary/relators/pre> a ns1:Authority ;
+    ns1:authoritativeLabel "Presenter" .
+
+<http://id.loc.gov/vocabulary/relators/prf> a ns1:Authority ;
+    ns1:authoritativeLabel "Performer" .
+
+<http://id.loc.gov/vocabulary/relators/prg> a ns1:Authority ;
+    ns1:authoritativeLabel "Programmer" .
+
+<http://id.loc.gov/vocabulary/relators/prm> a ns1:Authority ;
+    ns1:authoritativeLabel "Printmaker" .
+
+<http://id.loc.gov/vocabulary/relators/prn> a ns1:Authority ;
+    ns1:authoritativeLabel "Production company" .
+
+<http://id.loc.gov/vocabulary/relators/pro> a ns1:Authority ;
+    ns1:authoritativeLabel "Producer" .
+
+<http://id.loc.gov/vocabulary/relators/prp> a ns1:Authority ;
+    ns1:authoritativeLabel "Production place" .
+
+<http://id.loc.gov/vocabulary/relators/prs> a ns1:Authority ;
+    ns1:authoritativeLabel "Production designer" .
+
+<http://id.loc.gov/vocabulary/relators/prt> a ns1:Authority ;
+    ns1:authoritativeLabel "Printer" .
+
+<http://id.loc.gov/vocabulary/relators/prv> a ns1:Authority ;
+    ns1:authoritativeLabel "Provider" .
+
+<http://id.loc.gov/vocabulary/relators/pta> a ns1:Authority ;
+    ns1:authoritativeLabel "Patent applicant" .
+
+<http://id.loc.gov/vocabulary/relators/pte> a ns1:Authority ;
+    ns1:authoritativeLabel "Plaintiff-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/ptf> a ns1:Authority ;
+    ns1:authoritativeLabel "Plaintiff" .
+
+<http://id.loc.gov/vocabulary/relators/pth> a ns1:Authority ;
+    ns1:authoritativeLabel "Patent holder" .
+
+<http://id.loc.gov/vocabulary/relators/ptt> a ns1:Authority ;
+    ns1:authoritativeLabel "Plaintiff-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/pup> a ns1:Authority ;
+    ns1:authoritativeLabel "Publication place" .
+
+<http://id.loc.gov/vocabulary/relators/rbr> a ns1:Authority ;
+    ns1:authoritativeLabel "Rubricator" .
+
+<http://id.loc.gov/vocabulary/relators/rcd> a ns1:Authority ;
+    ns1:authoritativeLabel "Recordist" .
+
+<http://id.loc.gov/vocabulary/relators/rce> a ns1:Authority ;
+    ns1:authoritativeLabel "Recording engineer" .
+
+<http://id.loc.gov/vocabulary/relators/rcp> a ns1:Authority ;
+    ns1:authoritativeLabel "Addressee" .
+
+<http://id.loc.gov/vocabulary/relators/rdd> a ns1:Authority ;
+    ns1:authoritativeLabel "Radio director" .
+
+<http://id.loc.gov/vocabulary/relators/red> a ns1:Authority ;
+    ns1:authoritativeLabel "Redaktor" .
+
+<http://id.loc.gov/vocabulary/relators/ren> a ns1:Authority ;
+    ns1:authoritativeLabel "Renderer" .
+
+<http://id.loc.gov/vocabulary/relators/res> a ns1:Authority ;
+    ns1:authoritativeLabel "Researcher" .
+
+<http://id.loc.gov/vocabulary/relators/rev> a ns1:Authority ;
+    ns1:authoritativeLabel "Reviewer" .
+
+<http://id.loc.gov/vocabulary/relators/rpc> a ns1:Authority ;
+    ns1:authoritativeLabel "Radio producer" .
+
+<http://id.loc.gov/vocabulary/relators/rps> a ns1:Authority ;
+    ns1:authoritativeLabel "Repository" .
+
+<http://id.loc.gov/vocabulary/relators/rpt> a ns1:Authority ;
+    ns1:authoritativeLabel "Reporter" .
+
+<http://id.loc.gov/vocabulary/relators/rpy> a ns1:Authority ;
+    ns1:authoritativeLabel "Responsible party" .
+
+<http://id.loc.gov/vocabulary/relators/rse> a ns1:Authority ;
+    ns1:authoritativeLabel "Respondent-appellee" .
+
+<http://id.loc.gov/vocabulary/relators/rsg> a ns1:Authority ;
+    ns1:authoritativeLabel "Restager" .
+
+<http://id.loc.gov/vocabulary/relators/rsp> a ns1:Authority ;
+    ns1:authoritativeLabel "Respondent" .
+
+<http://id.loc.gov/vocabulary/relators/rsr> a ns1:Authority ;
+    ns1:authoritativeLabel "Restorationist" .
+
+<http://id.loc.gov/vocabulary/relators/rst> a ns1:Authority ;
+    ns1:authoritativeLabel "Respondent-appellant" .
+
+<http://id.loc.gov/vocabulary/relators/rth> a ns1:Authority ;
+    ns1:authoritativeLabel "Research team head" .
+
+<http://id.loc.gov/vocabulary/relators/rtm> a ns1:Authority ;
+    ns1:authoritativeLabel "Research team member" .
+
+<http://id.loc.gov/vocabulary/relators/sad> a ns1:Authority ;
+    ns1:authoritativeLabel "Scientific advisor" .
+
+<http://id.loc.gov/vocabulary/relators/sce> a ns1:Authority ;
+    ns1:authoritativeLabel "Scenarist" .
+
+<http://id.loc.gov/vocabulary/relators/scl> a ns1:Authority ;
+    ns1:authoritativeLabel "Sculptor" .
+
+<http://id.loc.gov/vocabulary/relators/scr> a ns1:Authority ;
+    ns1:authoritativeLabel "Scribe" .
+
+<http://id.loc.gov/vocabulary/relators/sds> a ns1:Authority ;
+    ns1:authoritativeLabel "Sound designer" .
+
+<http://id.loc.gov/vocabulary/relators/sec> a ns1:Authority ;
+    ns1:authoritativeLabel "Secretary" .
+
+<http://id.loc.gov/vocabulary/relators/sgd> a ns1:Authority ;
+    ns1:authoritativeLabel "Stage director" .
+
+<http://id.loc.gov/vocabulary/relators/sgn> a ns1:Authority ;
+    ns1:authoritativeLabel "Signer" .
+
+<http://id.loc.gov/vocabulary/relators/sht> a ns1:Authority ;
+    ns1:authoritativeLabel "Supporting host" .
+
+<http://id.loc.gov/vocabulary/relators/sll> a ns1:Authority ;
+    ns1:authoritativeLabel "Seller" .
+
+<http://id.loc.gov/vocabulary/relators/sng> a ns1:Authority ;
+    ns1:authoritativeLabel "Singer" .
+
+<http://id.loc.gov/vocabulary/relators/spk> a ns1:Authority ;
+    ns1:authoritativeLabel "Speaker" .
+
+<http://id.loc.gov/vocabulary/relators/spn> a ns1:Authority ;
+    ns1:authoritativeLabel "Sponsor" .
+
+<http://id.loc.gov/vocabulary/relators/spy> a ns1:Authority ;
+    ns1:authoritativeLabel "Second party" .
+
+<http://id.loc.gov/vocabulary/relators/srv> a ns1:Authority ;
+    ns1:authoritativeLabel "Surveyor" .
+
+<http://id.loc.gov/vocabulary/relators/std> a ns1:Authority ;
+    ns1:authoritativeLabel "Set designer" .
+
+<http://id.loc.gov/vocabulary/relators/stg> a ns1:Authority ;
+    ns1:authoritativeLabel "Setting" .
+
+<http://id.loc.gov/vocabulary/relators/stl> a ns1:Authority ;
+    ns1:authoritativeLabel "Storyteller" .
+
+<http://id.loc.gov/vocabulary/relators/stm> a ns1:Authority ;
+    ns1:authoritativeLabel "Stage manager" .
+
+<http://id.loc.gov/vocabulary/relators/stn> a ns1:Authority ;
+    ns1:authoritativeLabel "Standards body" .
+
+<http://id.loc.gov/vocabulary/relators/str> a ns1:Authority ;
+    ns1:authoritativeLabel "Stereotyper" .
+
+<http://id.loc.gov/vocabulary/relators/tcd> a ns1:Authority ;
+    ns1:authoritativeLabel "Technical director" .
+
+<http://id.loc.gov/vocabulary/relators/tch> a ns1:Authority ;
+    ns1:authoritativeLabel "Teacher" .
+
+<http://id.loc.gov/vocabulary/relators/ths> a ns1:Authority ;
+    ns1:authoritativeLabel "Thesis advisor" .
+
+<http://id.loc.gov/vocabulary/relators/tld> a ns1:Authority ;
+    ns1:authoritativeLabel "Television director" .
+
+<http://id.loc.gov/vocabulary/relators/tlp> a ns1:Authority ;
+    ns1:authoritativeLabel "Television producer" .
+
+<http://id.loc.gov/vocabulary/relators/trc> a ns1:Authority ;
+    ns1:authoritativeLabel "Transcriber" .
+
+<http://id.loc.gov/vocabulary/relators/trl> a ns1:Authority ;
+    ns1:authoritativeLabel "Translator" .
+
+<http://id.loc.gov/vocabulary/relators/tyd> a ns1:Authority ;
+    ns1:authoritativeLabel "Type designer" .
+
+<http://id.loc.gov/vocabulary/relators/tyg> a ns1:Authority ;
+    ns1:authoritativeLabel "Typographer" .
+
+<http://id.loc.gov/vocabulary/relators/uvp> a ns1:Authority ;
+    ns1:authoritativeLabel "University place" .
+
+<http://id.loc.gov/vocabulary/relators/vac> a ns1:Authority ;
+    ns1:authoritativeLabel "Voice actor" .
+
+<http://id.loc.gov/vocabulary/relators/vdg> a ns1:Authority ;
+    ns1:authoritativeLabel "Videographer" .
+
+<http://id.loc.gov/vocabulary/relators/wac> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of added commentary" .
+
+<http://id.loc.gov/vocabulary/relators/wal> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of added lyrics" .
+
+<http://id.loc.gov/vocabulary/relators/wam> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of accompanying material" .
+
+<http://id.loc.gov/vocabulary/relators/wat> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of added text" .
+
+<http://id.loc.gov/vocabulary/relators/wdc> a ns1:Authority ;
+    ns1:authoritativeLabel "Woodcutter" .
+
+<http://id.loc.gov/vocabulary/relators/wde> a ns1:Authority ;
+    ns1:authoritativeLabel "Wood engraver" .
+
+<http://id.loc.gov/vocabulary/relators/win> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of introduction" .
+
+<http://id.loc.gov/vocabulary/relators/wit> a ns1:Authority ;
+    ns1:authoritativeLabel "Witness" .
+
+<http://id.loc.gov/vocabulary/relators/wpr> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of preface" .
+
+<http://id.loc.gov/vocabulary/relators/wst> a ns1:Authority ;
+    ns1:authoritativeLabel "Writer of supplementary textual content" .
+
