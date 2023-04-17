@@ -22,7 +22,7 @@ class Title(BaseModel):
     variantTitle: Optional[str]
 
 class Work_Schema(BaseModel):
-    #ID: Optional[str]
+    type: list[str]
     content: str
     title: Title
     primaryContribution: Optional[Contribution]

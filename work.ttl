@@ -1,0 +1,133 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+ 
+<http://id.loc.gov/resources/works/21313495> a ns1:Monograph,
+        ns1:Text,
+        ns1:Work ;
+    ns2:aap "Machado de Assis, 1839-1908 The posthumous memoirs of Brás Cubas" ;
+    ns2:aap-normalized "machadodeassis18391908theposthumousmemoirsofbráscubas" ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:changeDate "2023-02-06T08:03:19"^^xsd:dateTime ;
+            ns1:creationDate "2019-11-26"^^xsd:date ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:generationProcess [ a ns1:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v2.2.1" ;
+                    ns1:generationDate "2023-02-07T01:58:10.983465-05:00"^^xsd:dateTime ] ;
+            ns1:identifiedBy [ a ns1:Local ;
+                    ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "21313495" ] ;
+            ns1:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            ns3:d906 "=906 $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg" ;
+            ns3:d925 "=925 0 $a acquire $b 1 shelf copy $x policy default" ;
+            ns3:d955 "=955 $b xk33 2019-11-26 $i xk33 2019-11-26 to review $r xk04 2019-12-02 to CIP $a xk33 2020-03-27 (telework) change request: modify 240 field $a xn11 2021-03-16 1 copy rec'd., to CIP ver. $f xk25 2021-04-06 to PresSrvs" ] ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:classificationPortion "PQ9697.M18" ;
+            ns1:itemPortion "M513 2020" ],
+        [ a ns1:ClassificationDdc ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:classificationPortion "869.3/3" ;
+            ns1:edition "full" ;
+            ns1:source [ a ns1:Source ;
+                    ns1:code "23" ] ] ;
+    ns1:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no2015001378> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a ns2:PrimaryContribution,
+                ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n80002329> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:expressionOf <http://id.loc.gov/resources/hubs/83ffc803-c205-176c-8646-13e1f4d8587c> ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    ns1:hasInstance <http://id.loc.gov/resources/instances/21313495> ;
+    ns1:language [ a ns1:Language ;
+            ns1:part "original" ;
+            rdf:value <http://id.loc.gov/vocabulary/languages/por> ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Includes translation" ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "\"A revelatory new translation of the playful, incomparable masterpiece of one of the greatest black authors in the Americas. The mixed-race grandson of ex-slaves, Machado de Assis is not only Brazil's most celebrated writer but also a writer of world stature, who has been championed by the likes of Philip Roth, Susan Sontag, Allen Ginsburg, John Updike, and Salman Rushdie. In his masterpiece, the 1881 novel The Posthumous Memoirs of Brás Cubas (translated also as Epitaph of a Small Winner), the ghost of a decadent and disagreeable aristocrat decides to write his memoir. He dedicates it to the worms gnawing at his corpse and, in 160 brief chapters, tells of his failed romances and halfhearted political ambitions, serves up harebrained philosophies, and complains with gusto from the depths of his grave. Wildly imaginative, wickedly witty, and utterly unforgettable, it is a novel ahead of its time that has been compared to the work of everyone from Cervantes to Sterne to Borges to Joyce to Nabokov to Calvino, and that has influenced generations of writers around the world. This new English translation is the first to include extensive notes providing crucial historical and cultural context and also includes excerpts from previous versions of the novel never before published in English\"-- Provided by publisher." ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The posthumous memoirs of Brás Cubas" ] ;
+    ns4:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a ns1:GenreForm ;
+    rdfs:label "Fiction" .
+
+<http://id.loc.gov/resources/hubs/83ffc803-c205-176c-8646-13e1f4d8587c> a ns1:Hub ;
+    ns2:aap "Machado de Assis, 1839-1908 Memorias posthumas de Braz Cubas. English" ;
+    ns2:aap-normalized "machadodeassis18391908memoriasposthumasdebrazcubasenglish" ;
+    ns2:marcKey "1001 $aMachado de Assis,$d1839-1908,$eauthor.$tMemorias posthumas de Braz Cubas.$lEnglish" ;
+    ns1:contribution [ a ns2:PrimaryContribution,
+                ns1:Contribution ;
+            ns1:agent [ a ns1:Agent,
+                        ns1:Person ;
+                    rdfs:label "Machado de Assis, 1839-1908" ] ;
+            ns1:role [ a ns1:Role ;
+                    rdfs:label "author" ] ] ;
+    ns1:language [ a ns1:Language ;
+            rdfs:label "English" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Memorias posthumas de Braz Cubas. English" ] .
+
+<http://id.loc.gov/resources/instances/21313495> a ns1:Instance ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The posthumous memoirs of Brás Cubas" ] .
+
+<http://id.loc.gov/rwo/agents/n80002329> a ns1:Agent,
+        ns1:Person ;
+    rdfs:label "Machado de Assis, 1839-1908" ;
+    ns5:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/n80002329> .
+
+<http://id.loc.gov/rwo/agents/no2015001378> a ns1:Agent,
+        ns1:Person ;
+    rdfs:label "Thomson-DeVeaux, Flora" ;
+    ns5:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/no2015001378> .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a ns1:Content ;
+    rdfs:label "text" ;
+    ns1:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a ns1:DescriptionConventions ;
+    ns1:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a ns1:DescriptionConventions ;
+    ns1:code "rda" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a ns1:Source .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a ns1:DescriptionAuthentication ;
+    ns1:code "pcc" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a ns2:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a ns1:Status ;
+    rdfs:label "changed" .
+
+<http://id.loc.gov/vocabulary/relators/aut> a ns1:Role ;
+    rdfs:label "author" .
+
+<http://id.loc.gov/vocabulary/relators/trl> a ns1:Role ;
+    rdfs:label "translator" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a ns1:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a ns1:Agent ;
+    ns1:code "DLC" .
+
