@@ -14,18 +14,29 @@
   "content": "contentTypes:txt",
   "contribution": [
     {
-        "type": [
-            "bf:Contribution"
-        ],
-        "agent": "http://id.loc.gov/rwo/agents/no2015001378",
-        "role": "relators:trl"
+      "type": ["bf:Contribution"],
+      "agent": "http://id.loc.gov/rwo/agents/no2015001378",
+      "role": "relators:trl"
     },
     {
-        "type": [
-            "bf:Contribution", "bflc:PrimaryContribution"
-        ],
-        "agent": "http://id.loc.gov/rwo/agents/n80002329",
-        "role": "relators:aut"
+      "type": ["bf:Contribution", "bflc:PrimaryContribution"],
+      "agent": "http://id.loc.gov/rwo/agents/n80002329",
+      "role": "relators:aut"
     }
-  ]
+  ],
+  "genreForm": "genreForms:gf2014026339",
+  "language": [
+    {
+      "value": "http://id.loc.gov/vocabulary/languages/por",
+      "part": "Original",
+      "label": "Português"
+    },
+    {
+      "value": "http://id.loc.gov/vocabulary/languages/eng",
+      "label": "Inglês"
+    }
+  ],
+  "note": {
+    "label": "Includes translation"
+  }
 }

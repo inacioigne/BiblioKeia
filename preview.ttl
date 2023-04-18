@@ -1,0 +1,57 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/instances/e9bb8f28-b280-495f-8039-17c350380290> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerId "1" ;
+            bflc:profile "lc:RT:bf2:Monograph:Instance" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2023-04-18T18:38:12+00:00"^^xsd:dateTime ;
+            bf:creationDate "2023-04-18T18:38:12+00:00"^^xsd:dateTime ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:instanceOf <http://id.loc.gov/resources/works/e9bb8f28-b280-495f-8039-17c350380290> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> .
+
+<http://id.loc.gov/authorities/names/n2021252774> a bf:Agent,
+        madsrdf:PersonalName ;
+    rdfs:label "Assis, Renata Machado de" .
+
+<http://id.loc.gov/resources/works/e9bb8f28-b280-495f-8039-17c350380290> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerId "1" ;
+            bflc:profile "lc:RT:bf2:Monograph:Work" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2023-04-18T18:38:12+00:00"^^xsd:dateTime ;
+            bf:creationDate "2023-04-18T18:38:12+00:00"^^xsd:dateTime ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n2021252774> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    rdfs:label "Author" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    rdfs:label "rda" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a bf:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    rdfs:label "pcc" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Agent ;
+    rdfs:label "DLC" .
+

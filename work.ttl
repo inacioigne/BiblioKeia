@@ -41,7 +41,7 @@
             ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
             ns1:classificationPortion "869.3/3" ;
             ns1:edition "full" ;
-            ns1:source [ a ns1:Source ;
+            ns1:source [ a ns1:Source ; 
                     ns1:code "23" ] ] ;
 
     ns1:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
@@ -58,6 +58,7 @@
         
     ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
     ns1:hasInstance <http://id.loc.gov/resources/instances/21313495> ;
+    
     ns1:language [ a ns1:Language ;
             ns1:part "original" ;
             rdf:value <http://id.loc.gov/vocabulary/languages/por> ],
