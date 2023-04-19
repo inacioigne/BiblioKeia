@@ -1,5 +1,5 @@
 <rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bfsimple="http://id.loc.gov/ontologies/bfsimple/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:datatypes="http://id.loc.gov/datatypes/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:void="http://rdfs.org/ns/void#" xmlns:mstatus="https://id.loc.gov/vocabulary/mstatus/" xmlns:mnotetype="http://id.loc.gov/vocabulary/mnotetype/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dcterms="http://purl.org/dc/terms/">
- <bf:Instance xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://id.loc.gov/resources/instances/e9bb8f28-b280-495f-8039-17c350380290">
+ <bf:Instance xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://id.loc.gov/resources/instances/ef758c6a-d978-417f-b7b4-6709ee21578d">
   <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
   <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
   <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
@@ -32,27 +32,75 @@
      </bf:Agent>
     </bf:descriptionModifier>
     <bflc:profile xmlns:bflc="http://id.loc.gov/ontologies/bflc/">lc:RT:bf2:Monograph:Instance</bflc:profile>
-    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-18T18:38:12Z</bf:changeDate>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-18T18:38:12Z</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-19T18:48:01Z</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-19T18:48:01Z</bf:creationDate>
    </bf:AdminMetadata>
   </bf:adminMetadata>
   <bf:instanceOf>
-   <bf:Work xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://id.loc.gov/resources/works/e9bb8f28-b280-495f-8039-17c350380290">
+   <bf:Work xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://id.loc.gov/resources/works/ef758c6a-d978-417f-b7b4-6709ee21578d">
+    <bf:title>
+     <bf:Title>
+      <bf:mainTitle>The posthumous memoirs of Brás Cubas</bf:mainTitle>
+     </bf:Title>
+    </bf:title>
+    <bf:genreForm>
+     <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026339">
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Fiction</rdfs:label>
+     </bf:GenreForm>
+    </bf:genreForm>
+    <bf:intendedAudience>
+     <bf:IntendedAudience rdf:about="http://id.loc.gov/vocabulary/maudience/adu">
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Adult</rdfs:label>
+     </bf:IntendedAudience>
+    </bf:intendedAudience>
     <bf:contribution>
-     <bflc:PrimaryContribution xmlns:bflc="http://id.loc.gov/ontologies/bflc/">
+     <bf:Contribution>
       <bf:agent>
-       <bf:Agent rdf:about="http://id.loc.gov/authorities/names/n2021252774">
+       <bf:Agent rdf:about="http://id.loc.gov/authorities/names/nr2001045700">
         <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
-        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Assis, Renata Machado de</rdfs:label>
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Poe, Andrew Jackson, 1817-1902</rdfs:label>
        </bf:Agent>
       </bf:agent>
       <bf:role>
-       <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
-        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Author</rdfs:label>
+       <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/anl">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Analyst</rdfs:label>
        </bf:Role>
       </bf:role>
-     </bflc:PrimaryContribution>
+     </bf:Contribution>
     </bf:contribution>
+    <bf:note>
+     <bf:Note>
+      <bf:noteType>
+       <rdfs:Literal xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" rdf:about="http://id.loc.gov/vocabulary/mnotetype/adminhist">
+        <rdfs:label>Administrative history</rdfs:label>
+       </rdfs:Literal>
+      </bf:noteType>
+     </bf:Note>
+    </bf:note>
+    <bf:subject>
+     <madsrdf:Topic xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" rdf:about="http://id.loc.gov/authorities/subjects/sh2008106994">
+      <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      <bf:source>
+       <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Library of Congress subject headings</rdfs:label>
+       </bf:Source>
+      </bf:source>
+      <madsrdf:authoritativeLabel>Literacy--Brazil</madsrdf:authoritativeLabel>
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Literacy--Brazil</rdfs:label>
+     </madsrdf:Topic>
+    </bf:subject>
+    <bf:subject>
+     <madsrdf:Topic xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" rdf:about="http://id.loc.gov/authorities/subjects/sh85092863">
+      <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      <bf:source>
+       <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Library of Congress subject headings</rdfs:label>
+       </bf:Source>
+      </bf:source>
+      <madsrdf:authoritativeLabel>Novelists</madsrdf:authoritativeLabel>
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Novelists</rdfs:label>
+     </madsrdf:Topic>
+    </bf:subject>
     <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
     <bf:adminMetadata>
      <bf:AdminMetadata>
@@ -83,8 +131,8 @@
        </bf:Agent>
       </bf:descriptionModifier>
       <bflc:profile xmlns:bflc="http://id.loc.gov/ontologies/bflc/">lc:RT:bf2:Monograph:Work</bflc:profile>
-      <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-18T18:38:12Z</bf:changeDate>
-      <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-18T18:38:12Z</bf:creationDate>
+      <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-19T18:48:01Z</bf:changeDate>
+      <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-19T18:48:01Z</bf:creationDate>
      </bf:AdminMetadata>
     </bf:adminMetadata>
    </bf:Work>

@@ -10,6 +10,8 @@ prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX contentTypes: <http://id.loc.gov/vocabulary/contentTypes/>
     PREFIX relators: <http://id.loc.gov/vocabulary/relators/>
     PREFIX genreForms: <http://id.loc.gov/authorities/genreForms/>
+    PREFIX msupplcont: <http://id.loc.gov/vocabulary/msupplcont/>
+    PREFIX millus: <http://id.loc.gov/vocabulary/millus/>    
     """
 
        
@@ -36,6 +38,7 @@ def MakeLanguage(languages):
 
         return language
 
+
 def MakeGraph(request, id):
     graph = f"""{prefix}    
     INSERT DATA {{
@@ -61,15 +64,19 @@ def MakeGraph(request, id):
                 bf:itemPortion "{request.classification.itemPortion}" ;
                 bf:source [ a bf:Source ;
                     bf:code "{request.classification.edition}" ] ] ;
-        bf:content {request.content} ;
-        bf:contribution  { MakeContribution(request.contribution) }
-        { f'bf:genreForm {request.genreForm} ;' if request.genreForm else ''}
-        bf:language { MakeLanguage(request.language) }
+        bf:content { ", ".join([content.value for content in request.content]) } ;
+        bf:contribution  { MakeContribution(request.contribution) } ;
+        { f'bf:genreForm { ", ".join([genreForm.value for genreForm in request.genreForm]) } ; ' if request.genreForm else ''}
+        bf:language { MakeLanguage(request.language) } ;
         { f'bf:note [ a bf:Note ; rdfs:label "{request.note}" ] ; ' if request.note else '' }
+        { f'bf:summary [ a bf:Summary ; rdfs:label "{request.summary}" ] ; ' if request.summary else '' }
         { f'bf:expressionOf <{request.expressionOf}> ;' if request.expressionOf else ''}
         { f'bf:hasInstance <{request.hasInstance}> ;' if request.hasInstance else ''}
-       
-
+        { f'bf:supplementaryContent { ", ".join([supplementaryContent.value for supplementaryContent in request.supplementaryContent ])} ;' if request.supplementaryContent else ''}
+        bf:subject { ", ".join([f'<{subject.value}>' for subject in request.subject]) } ;
+        bf:title [ a bf:Title ;
+            bf:mainTitle "{request.title.mainTitle}" 
+            { f'; bf:subtitle "{request.title.subtitle}" ' if request.title.subtitle else ''} ] .
         }} 
         }}
         """

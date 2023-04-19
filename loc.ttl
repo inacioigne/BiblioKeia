@@ -1,0 +1,175 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/22651093> a ns1:Monograph,
+        ns1:Text,
+        ns1:Work ;
+    ns4:aap "Silver, Gail Where did Poppy go?" ;
+    ns4:aap-normalized "silvergailwheredidpoppygo?" ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:encodingLevel <http://id.loc.gov/vocabulary/menclvl/8> ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:changeDate "2022-11-22T08:10:49"^^xsd:dateTime ;
+            ns1:creationDate "2022-06-13"^^xsd:date ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/cyac>,
+                <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:generationProcess [ a ns1:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v2.1.0" ;
+                    ns1:generationDate "2022-11-23T01:57:26.993350-05:00"^^xsd:dateTime ] ;
+            ns1:identifiedBy [ a ns1:Local ;
+                    ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "22651093" ] ;
+            ns1:status <http://id.loc.gov/vocabulary/mstatus/c> ;
+            ns3:d906 "=906 $a 0 $b vip $c orignew $d 1 $e ecip $f 20 $g y-gencatlg" ;
+            ns3:d925 "=925 0 $a acquire $b 1 shelf copy $x policy default" ;
+            ns3:d955 "=955 $b xk04 2022-06-13 (OT) $i xk04 2022-06-13 (OT) to CIP $a xn16 2022-11-22 1 copy rec'd., to CIP ver." ] ;
+    ns1:classification [ a ns1:ClassificationDdc ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:classificationPortion "[E]" ;
+            ns1:edition "full" ;
+            ns1:source [ a ns1:Source ;
+                    ns1:code "23" ] ],
+        [ a ns1:ClassificationLcc ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:classificationPortion "PZ8.3.S58412" ;
+            ns1:itemPortion "Wh 2022" ] ;
+    ns1:content <http://id.loc.gov/vocabulary/contentTypes/sti>,
+        <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no2021100829> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/ill> ],
+        [ a ns4:PrimaryContribution,
+                ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no2008107877> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026559>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026096> ;
+    ns1:hasInstance <http://id.loc.gov/resources/instances/22651093> ;
+    ns1:intendedAudience [ a ns1:IntendedAudience ;
+            rdfs:label "Grades 2-3. Parallax Press." ],
+        [ a ns1:IntendedAudience ;
+            rdfs:label "Ages 4-8. Parallax Press." ],
+        <http://id.loc.gov/vocabulary/maudience/pri> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:otherPhysicalFormat <http://id.loc.gov/resources/works/22655782> ;
+    ns1:subject [ a ns1:Topic,
+                ns2:ComplexSubject ;
+            rdfs:label "Loss--Fiction" ;
+            ns4:aap-normalized "lossfiction" ;
+            ns1:source <http://id.loc.gov/authorities/childrensSubjects> ;
+            ns2:authoritativeLabel "Loss--Fiction" ;
+            ns2:componentList ( [ a ns2:Topic ;
+                        ns2:authoritativeLabel "Loss" ] [ a ns2:GenreForm ;
+                        ns2:authoritativeLabel "Fiction" ] ) ;
+            ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/childrensSubjects> ],
+        [ a ns1:Topic,
+                ns2:Topic ;
+            rdfs:label "Stories in rhyme" ;
+            ns4:aap-normalized "storiesinrhyme" ;
+            ns1:source <http://id.loc.gov/authorities/childrensSubjects> ;
+            ns2:authoritativeLabel "Stories in rhyme" ;
+            ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/childrensSubjects> ],
+        [ a ns1:Topic,
+                ns2:ComplexSubject ;
+            rdfs:label "Grief--Fiction" ;
+            ns4:aap-normalized "grieffiction" ;
+            ns1:source <http://id.loc.gov/authorities/childrensSubjects> ;
+            ns2:authoritativeLabel "Grief--Fiction" ;
+            ns2:componentList ( [ a ns2:Topic ;
+                        ns2:authoritativeLabel "Grief" ] [ a ns2:GenreForm ;
+                        ns2:authoritativeLabel "Fiction" ] ) ;
+            ns2:isMemberOfMADSScheme <http://id.loc.gov/authorities/childrensSubjects> ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "After a grandfather dies, a father and son journey forward through seasons and time, discovering how our loved ones remain with us even after they pass on." ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Where did Poppy go?" ] ;
+    ns5:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a ns1:GenreForm ;
+    rdfs:label "Fiction" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026559> a ns1:GenreForm,
+        ns2:GenreForm ;
+    rdfs:label "Stories in rhyme" ;
+    ns1:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    ns2:authoritativeLabel "Stories in rhyme" .
+
+<http://id.loc.gov/authorities/genreForms/gf2016026096> a ns1:GenreForm,
+        ns2:GenreForm ;
+    rdfs:label "Picture books" ;
+    ns1:source <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> ;
+    ns2:authoritativeLabel "Picture books" .
+
+<http://id.loc.gov/resources/instances/22651093> a ns1:Instance ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Where did Poppy go?" ] .
+
+<http://id.loc.gov/resources/works/22655782> a ns1:Work ;
+    ns4:aap "Silver, Gail Where did Poppy go?" .
+
+<http://id.loc.gov/rwo/agents/no2008107877> a ns1:Agent,
+        ns1:Person ;
+    rdfs:label "Silver, Gail" ;
+    ns2:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/no2008107877> .
+
+<http://id.loc.gov/rwo/agents/no2021100829> a ns1:Agent,
+        ns1:Person ;
+    rdfs:label "Quartey, Amanda" ;
+    ns2:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/no2021100829> .
+
+<http://id.loc.gov/vocabulary/contentTypes/sti> a ns1:Content ;
+    rdfs:label "still image" ;
+    ns1:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a ns1:Content ;
+    rdfs:label "text" ;
+    ns1:source <http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a ns1:DescriptionConventions ;
+    ns1:code "isbd" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a ns1:DescriptionConventions ;
+    ns1:code "rda" .
+
+<http://id.loc.gov/vocabulary/marcauthen/cyac> a ns1:DescriptionAuthentication ;
+    ns1:code "cyac" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a ns1:DescriptionAuthentication ;
+    ns1:code "pcc" .
+
+<http://id.loc.gov/vocabulary/maudience/pri> a ns1:IntendedAudience ;
+    rdfs:label "primary" .
+
+<http://id.loc.gov/vocabulary/menclvl/8> a ns4:EncodingLevel ;
+    rdfs:label "prepublication" .
+
+<http://id.loc.gov/vocabulary/mstatus/c> a ns1:Status ;
+    rdfs:label "changed" .
+
+<http://id.loc.gov/vocabulary/relators/aut> a ns1:Role ;
+    rdfs:label "author" .
+
+<http://id.loc.gov/vocabulary/relators/ill> a ns1:Role ;
+    rdfs:label "illustrator" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> a ns1:Source ;
+    ns1:code "lcgft" .
+
+<http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent> a ns1:Source .
+
+<http://id.loc.gov/vocabulary/languages/eng> a ns1:Language ;
+    rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a ns1:Agent ;
+    ns1:code "DLC" .
+

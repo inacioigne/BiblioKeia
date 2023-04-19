@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/resources/work/bk-1> a ns1:Monograph,
+        ns1:Text,
+        ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:encodingLevel <http://id.loc.gov/vocabulary/menclvl/1> ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ns1:creationDate "2023-04-19"^^xsd:date ;
+            ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd> ;
+            ns1:descriptionLanguage <http://id.loc.gov/vocabulary/languages/por> ;
+            ns1:generationProcess [ a ns1:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    ns1:generationDate "2023-04-19T15:50:56"^^xsd:dateTime ] ;
+            ns1:identifiedBy [ a ns1:Local ;
+                    ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+                    rdf:value "bk-1" ] ;
+            ns1:status <http://id.loc.gov/vocabulary/mstatus/new> ] ;
+    ns1:classification [ a ns1:ClassificationDdc ;
+            ns1:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ns1:classificationPortion "869.3" ;
+            ns1:itemPortion "M513" ;
+            ns1:source [ a ns1:Source ;
+                    ns1:code "23" ] ] ;
+    ns1:content <http://id.loc.gov/vocabulary/contentTypes/>,
+        <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no2015001378> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a ns2:PrimaryContribution,
+                ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n80002329> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    ns1:language [ a ns1:Language ;
+            rdfs:label "PortuguÃªs" ;
+            ns1:part "Original" ;
+            rdf:value <http://id.loc.gov/vocabulary/languages/por> ],
+        [ a ns1:Language ;
+            rdfs:label "InglÃªs" ;
+            rdf:value <http://id.loc.gov/vocabulary/languages/eng> ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Includes translation" ] ;
+    ns1:subject <http://id.loc.gov/authorities/childrensSubjects> ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "A revelatory new translation of the playful, incomparable masterpiece of one of the greatest black authors in the Americas. The mixed-race grandson of ex-slaves, Machado de Assis is not only Brazil's most celebrated writer but also a writer of world stature, who has been championed by the likes of Philip Roth, Susan Sontag, Allen Ginsburg, John Updike, and Salman Rushdie. In his masterpiece, the 1881 novel The Posthumous Memoirs of BrÃ¡s Cubas (translated also as Epitaph of a Small Winner), the ghost of a decadent and disagreeable aristocrat decides to write his memoir. He dedicates it to the worms gnawing at his corpse and, in 160 brief chapters, tells of his failed romances and halfhearted political ambitions, serves up harebrained philosophies, and complains with gusto from the depths of his grave. Wildly imaginative, wickedly witty, and utterly unforgettable, it is a novel ahead of its time that has been compared to the work of everyone from Cervantes to Sterne to Borges to Joyce to Nabokov to Calvino, and that has influenced generations of writers around the world. This new English translation is the first to include extensive notes providing crucial historical and cultural context and also includes excerpts from previous versions of the novel never before published in English" ] ;
+    ns1:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The posthumous memoirs of BrÃ¡s Cubas" ] .
+

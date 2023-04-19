@@ -1,0 +1,425 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/subjects/sh85077482> a madsrdf:Authority,
+        madsrdf:Topic ;
+    madsrdf:authoritativeLabel "Literacy"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Literacy"@en ] ) .
+
+<http://id.loc.gov/resources/works/1101859> a bf:Work ;
+    bflc:aap "Hara, Regina. Ler, escrever, contar : construção de cartilhas para alfabetização de adultos" .
+
+<http://id.loc.gov/resources/works/1139085> a bf:Work ;
+    bflc:aap "Kramer, Sonia. Por entre as pedras : arma e sonho na escola" .
+
+<http://id.loc.gov/resources/works/12138259> a bf:Work ;
+    bflc:aap "Analfabetismo no Brasil : ano internacional da alfabetização : materiais de imprensa 89-90 & dados básicos" .
+
+<http://id.loc.gov/resources/works/1310109> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Project for training literacy instructors by radio" .
+
+<http://id.loc.gov/resources/works/13926497> a bf:Work ;
+    bflc:aap "Pelandré, Nilcéa Lemos. Ensinar e aprender com Paulo Freire : 40 horas, 40 anos depois" .
+
+<http://id.loc.gov/resources/works/13989004> a bf:Work ;
+    bflc:aap "Moreira, Daniel Augusto. Analfabetismo funcional : o mal nosso de cada dia" .
+
+<http://id.loc.gov/resources/works/14087947> a bf:Work ;
+    bflc:aap "Ribeiro, Vera Masagão. Letramento no Brasil : reflexões a partir do INAF 2001" .
+
+<http://id.loc.gov/resources/works/14140461> a bf:Work ;
+    bflc:aap "Guimarães, Susana Martelletti Grillo. aquisição da escrita e diversidade cultural : a prática dos professores Xerente" .
+
+<http://id.loc.gov/resources/works/14206999> a bf:Work ;
+    bflc:aap "Lodi, Ana Claudia Balieiro. Letramento e minorias" .
+
+<http://id.loc.gov/resources/works/14371927> a bf:Work ;
+    bflc:aap "Fonseca, Maria da Conceição Ferreira Reis. Letramento no Brasil : habilidades matemáticas : reflexões a partir do INAF 2002" .
+
+<http://id.loc.gov/resources/works/14378833> a bf:Work ;
+    bflc:aap "Andrade, Ludimila Thomé de. Professores-leitores e sua formação : transformações discursivas de conhecimento e de saberes" .
+
+<http://id.loc.gov/resources/works/14394314> a bf:Work ;
+    bflc:aap "Batista, Antônio Augusto Gomes. Livros de alfabetização e de Português : os professores e suas escolhas" .
+
+<http://id.loc.gov/resources/works/14396509> a bf:Work ;
+    bflc:aap "Saraiva, Irene Skorupski. Educação de jovens e adultos : dialogando sobre aprender e ensinar" .
+
+<http://id.loc.gov/resources/works/14410532> a bf:Work ;
+    bflc:aap "Alfabetização" .
+
+<http://id.loc.gov/resources/works/14502988> a bf:Work ;
+    bflc:aap "Santos, Maria Lêda Lóss dos. Onde eles estão? : desvelando o analfabetismo no Brasil" .
+
+<http://id.loc.gov/resources/works/14559653> a bf:Work ;
+    bflc:aap "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. Mapa do analfabetismo no Brasil" .
+
+<http://id.loc.gov/resources/works/14597568> a bf:Work ;
+    bflc:aap "Albuquerque, Eliana Borges Correia de. alfabetização de jovens e adultos em uma perspectiva de letramento" .
+
+<http://id.loc.gov/resources/works/14668920> a bf:Work ;
+    bflc:aap "Mari, Hugo. Ensaios sobre leitura" .
+
+<http://id.loc.gov/resources/works/1472851> a bf:Work ;
+    bflc:aap "Mendonça, Terezinha Nádia Jaime. Movimento Brasileiro de Alfabetização : subsídios para uma leitura crítica do discurso oficial" .
+
+<http://id.loc.gov/resources/works/14772016> a bf:Work ;
+    bflc:aap "Lobo, Carla Marina Neto das Neves. Educação de jovens e adultos : vivências e experiências" .
+
+<http://id.loc.gov/resources/works/14809572> a bf:Work ;
+    bflc:aap "Soares, Leôncio. Diálogos na educação de jovens e adultos" .
+
+<http://id.loc.gov/resources/works/14824909> a bf:Work ;
+    bflc:aap "Programa Alfabetização Solidária (Brazil) Escrevendo as páginas do futuro : relatório de quatro anos de atividade Programa Alfabetização Solidária : janeiro de 1997 a dezembro de 2000" .
+
+<http://id.loc.gov/resources/works/1486355> a bf:Work ;
+    bflc:aap "Dave, R. H. Learning strategies for post-literacy and continuing education in Brazil, Colombia, Jamaica and Venezuela : outcomes of an international research project of the Unesco Institute for Education organized in co-operation with the German Commission for Unesco, Bonn" .
+
+<http://id.loc.gov/resources/works/14878496> a bf:Work ;
+    bflc:aap "Moll, Jaqueline. Múltiplos alfabetismos : diálogos com a escola pública na formação de professores" .
+
+<http://id.loc.gov/resources/works/14933100> a bf:Work ;
+    bflc:aap "Meneses, Branca Maria de. sujeito construtivista da alfabetização : uma reflexão crítica" .
+
+<http://id.loc.gov/resources/works/14971310> a bf:Work ;
+    bflc:aap "Pereira, Marina Lúcia. construção do letramento na educação de jovens e adultos" .
+
+<http://id.loc.gov/resources/works/14986492> a bf:Work ;
+    bflc:aap "Berberian, Ana Paula. Letramento : referências em saúde e educação" .
+
+<http://id.loc.gov/resources/works/15006283> a bf:Work ;
+    bflc:aap "Scholze, Lia. Teorias e práticas de letramento" .
+
+<http://id.loc.gov/resources/works/15026072> a bf:Work ;
+    bflc:aap "Lopes, Roberto, 1953- 10 anos de alianças : a história da Alfabetização Solidária pela redução do analfabetismo no Brasil" .
+
+<http://id.loc.gov/resources/works/15035243> a bf:Work ;
+    bflc:aap "Carvalho, Maria Angélica Freire de. Práticas de leitura e escrita" .
+
+<http://id.loc.gov/resources/works/15408657> a bf:Work ;
+    bflc:aap "Corti, Ana Paula. Jovens na alfabetização : para além das palavras, decifrar mundos" .
+
+<http://id.loc.gov/resources/works/15481602> a bf:Work ;
+    bflc:aap "Ireland, Vera. Repensando a escola : um estudo sobre os desafios de aprender, ler e escrever" .
+
+<http://id.loc.gov/resources/works/15654296> a bf:Work ;
+    bflc:aap "Leite, Sérgio Antonio da Silva, 1946- Alfabetização e letramento : contribuições para as práticas pedagógicas" .
+
+<http://id.loc.gov/resources/works/15703147> a bf:Work ;
+    bflc:aap "Sena, Vera Olinda. Caderno de alfabetização" .
+
+<http://id.loc.gov/resources/works/15708564> a bf:Work ;
+    bflc:aap "Dacach, Solange. Cidadania e gênero : manual para alfabetização de jovens e adultos (as)" .
+
+<http://id.loc.gov/resources/works/15734722> a bf:Work ;
+    bflc:aap "Prado, Guilherme do Val Toledo. Porque escrever é fazer história : revelações, subversões, superações" .
+
+<http://id.loc.gov/resources/works/15753283> a bf:Work ;
+    bflc:aap "Di Pierro, Maria Clara. Alfabetização de jovens e adultos no Brasil : lições da prática" .
+
+<http://id.loc.gov/resources/works/15841935> a bf:Work ;
+    bflc:aap "Meliá, Bartomeu. Educación indígena y alfabetización" .
+
+<http://id.loc.gov/resources/works/15876437> a bf:Work ;
+    bflc:aap "Silva, Ezequiel Theodoro da, 1948- Alfabetização no Brasil : questões e provocações da atualidade" .
+
+<http://id.loc.gov/resources/works/1592800> a bf:Work ;
+    bflc:aap "Kleiman, Angela. Oficina de leitura : teoria e prática" .
+
+<http://id.loc.gov/resources/works/16302728> a bf:Work ;
+    bflc:aap "Ferreira, Norma Sandra de Almeida, Livros, catálogos, revistas e sites para o universo escolar" .
+
+<http://id.loc.gov/resources/works/17165669> a bf:Work ;
+    bflc:aap "Colóquio Internacional sobre Letramento e Cultura Escrita (1st : 2007? : Universidade de Minas Gerais. Faculdade de Educação) Cultura escrita e letramento" .
+
+<http://id.loc.gov/resources/works/17901346> a bf:Work ;
+    bflc:aap "Guedes-Pinto, Ana Lúcia. Letramentos múltiplos : agentes, práticas, representações" .
+
+<http://id.loc.gov/resources/works/18024338> a bf:Work ;
+    bflc:aap "Souza, Ana Lúcia Silva, Letramentos de reexistência : poesia, grafite, música, dança : hip-hop" .
+
+<http://id.loc.gov/resources/works/18229535> a bf:Work ;
+    bflc:aap "Interação, gêneros e letramento" .
+
+<http://id.loc.gov/resources/works/18325771> a bf:Work ;
+    bflc:aap "Educação, linguagem e memória" .
+
+<http://id.loc.gov/resources/works/18462274> a bf:Work ;
+    bflc:aap "Cunha, Célio da, 1943- Saber, viver e lutar : uma experiência de letramento : avaliação do Programa Saber, Viver e Lutar no contexto do Programa de Promoção da Cidadania e Desenvolvimento Sustentável de Comunidades em Situação de Risco Social" .
+
+<http://id.loc.gov/resources/works/18656585> a bf:Work ;
+    bflc:aap "Ler e escrever na escola" .
+
+<http://id.loc.gov/resources/works/18699420> a bf:Work ;
+    bflc:aap "Belintane, Claudemir Oralidade e alfabetização" .
+
+<http://id.loc.gov/resources/works/18776109> a bf:Work ;
+    bflc:aap "Becalli, Fernanda Zanetti, 1978- Política de formação de professores alfabetizadores e ensino da leitura" .
+
+<http://id.loc.gov/resources/works/18870315> a bf:Work ;
+    bflc:aap "Ribeiro, Vera Masagão, Alfabetismo e letramento no Brasil : 10 anos do INAF" .
+
+<http://id.loc.gov/resources/works/192077> a bf:Work ;
+    bflc:aap "Craidy, Carmem Maria. Meninos de rua e analfabetismo" .
+
+<http://id.loc.gov/resources/works/1925431> a bf:Work ;
+    bflc:aap "Freire, Paulo, 1921-1997. Essa escola chamada vida : depoimentos ao reporter Ricardo Kotscho" .
+
+<http://id.loc.gov/resources/works/19385331> a bf:Work ;
+    bflc:aap "Leitura e formação do leitor" .
+
+<http://id.loc.gov/resources/works/19974758> a bf:Work ;
+    bflc:aap "Gomes, Maria de Fátima Cardoso. Entre textos e pretextos : a produção escrita de crianças e adultos na perspectiva histórico-cultural" .
+
+<http://id.loc.gov/resources/works/20682749> a bf:Work ;
+    bflc:aap "Alfabetização e(m) debate" .
+
+<http://id.loc.gov/resources/works/21342439> a bf:Work ;
+    bflc:aap "Cipiniuk, Tatiana Arnaud Analfabetos num mundo letrado" .
+
+<http://id.loc.gov/resources/works/22400701> a bf:Work ;
+    bflc:aap "Novaes, Henrique T. A tragédia educacional brasileira no século XX" .
+
+<http://id.loc.gov/resources/works/2293840> a bf:Work ;
+    bflc:aap "Movimento Brasileiro de Alfabetização. Mobral, sua origem e evolução" .
+
+<http://id.loc.gov/resources/works/2518598> a bf:Work ;
+    bflc:aap "Lima, Adriana Flávia Santos de Oliveira. Alfabetização de jovens e adultos e a reconstrução da escola" .
+
+<http://id.loc.gov/resources/works/2611331> a bf:Work ;
+    bflc:aap "Demo, Pedro. Brasil mal-educado" .
+
+<http://id.loc.gov/resources/works/2742453> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Workshop : organization and management in adult education" .
+
+<http://id.loc.gov/resources/works/2808522> a bf:Work ;
+    bflc:aap "Poel, Maria Salete van der. Alfabetização de adultos : sistema Paulo Freire : estudo de caso num presídio" .
+
+<http://id.loc.gov/resources/works/3168739> a bf:Work ;
+    bflc:aap "Sant'Anna, Flávia Maria. processo de alfabetização e um modelo em tentativa" .
+
+<http://id.loc.gov/resources/works/3171444> a bf:Work ;
+    bflc:aap "Farhat, Emil. Educação, a nova ideologia" .
+
+<http://id.loc.gov/resources/works/3251136> a bf:Work ;
+    bflc:aap "Góes, Moacyr de. De Pé no Chão Também Se Aprende a Ler (1961-64) : uma escola democrática" .
+
+<http://id.loc.gov/resources/works/3358165> a bf:Work ;
+    bflc:aap "Sadek, Maria Tereza Aina. Educación y ciudadanía : la exclusión política de los analfabetos en el Brasil" .
+
+<http://id.loc.gov/resources/works/3370841> a bf:Work ;
+    bflc:aap "Carneiro, Moaci Alves. Extensão universitária : versão e perversões : estudo tentativo de identificação do débito social das universidades federais do Nordeste" .
+
+<http://id.loc.gov/resources/works/3464125> a bf:Work ;
+    bflc:aap "Rodrigues, Marlene. Cartilhas da dominação" .
+
+<http://id.loc.gov/resources/works/3520579> a bf:Work ;
+    bflc:aap "Colello, Silvia M. Gasparian (Silvia Mattos Gasparian) Alfabetização em questão" .
+
+<http://id.loc.gov/resources/works/3721924> a bf:Work ;
+    bflc:aap "Institut d'action culturelle. Vivendo e aprendendo : experiências do Idac em educação popular" .
+
+<http://id.loc.gov/resources/works/3764811> a bf:Work ;
+    bflc:aap "Beisiegel, Celso de Rui. Política e educação popular : a teoria e a prática de Paulo Freire no Brasil" .
+
+<http://id.loc.gov/resources/works/382196> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Publicações do MOBRAL : um estudo preliminar : ASVAP 1975" .
+
+<http://id.loc.gov/resources/works/4144074> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Education : a process of human promotion" .
+
+<http://id.loc.gov/resources/works/4410073> a bf:Work ;
+    bflc:aap "Silva, Neubauer da. Analfabetismo e subescolarização : ainda um desafio" .
+
+<http://id.loc.gov/resources/works/4428876> a bf:Work ;
+    bflc:aap "Fuck, Irene Terezinha. Alfabetização de adultos : relato de uma experiência construtivista" .
+
+<http://id.loc.gov/resources/works/4584640> a bf:Work ;
+    bflc:aap "Unesco. Regional Office for Education in Latin America and the Caribbean. MOBRAL, the Brazilian adult literacy experiment" .
+
+<http://id.loc.gov/resources/works/4621984> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Subsídios para avaliação do programa de alfabetização funcional" .
+
+<http://id.loc.gov/resources/works/4635753> a bf:Work ;
+    bflc:aap "Fundação Movimento Brasileiro de Alfabetização. Soletre Mobral e leia Brasil : cinco anos de luta pela alfabetização" .
+
+<http://id.loc.gov/resources/works/4665486> a bf:Work ;
+    bflc:aap "Meliá, Bartomeu. Educação indígena e alfabetização" .
+
+<http://id.loc.gov/resources/works/4823942> a bf:Work ;
+    bflc:aap "GEEMPA (Organization) Alfabetização em classes populares" .
+
+<http://id.loc.gov/resources/works/4824567> a bf:Work ;
+    bflc:aap "Kramer, Sonia. Alfabetização : dilemas da prática" .
+
+<http://id.loc.gov/resources/works/4826518> a bf:Work ;
+    bflc:aap "Borges, José Antônio. voto do analfabeto : limites de participação e cidadania" .
+
+<http://id.loc.gov/resources/works/4939988> a bf:Work ;
+    bflc:aap "Alves, Maria Leila. Alfabetização : passado, presente, futuro" .
+
+<http://id.loc.gov/resources/works/6155278> a bf:Work ;
+    bflc:aap "Brazil. Departamento Nacional de Educação. Alfabetização: exigência cívica" .
+
+<http://id.loc.gov/resources/works/6644568> a bf:Work ;
+    bflc:aap "Poppovic, Ana Maria. Alfabetização: uma problema interdisciplinar" .
+
+<http://id.loc.gov/resources/works/667253> a bf:Work ;
+    bflc:aap "Pino, Angel. Educação e os trabalhadores" .
+
+<http://id.loc.gov/resources/works/7919780> a bf:Work ;
+    bflc:aap "Brazil. Conselho Nacional de Estatistica. Questionário do Instituto Interamericano de Estatística destinado ao Seminário Interamericano de Alfabetização e Educação de Adultos: dados e esclarecimentos da resposta do Brasil," .
+
+<http://id.loc.gov/resources/works/868073> a bf:Work ;
+    bflc:aap "Corrêa, Arlindo Lopes. Educação de massa e ação comunitária" .
+
+<http://id.loc.gov/resources/works/884721> a bf:Work ;
+    bflc:aap "Freire, Paulo, 1921-1997. Conciencia e historia : la praxis educativa de Paulo Freire : antología" .
+
+<http://id.loc.gov/resources/works/975813> a bf:Work ;
+    bflc:aap "Borba, Sérgio da Costa. problemática do analfabetismo no Brasil" .
+
+<http://id.loc.gov/authorities/subjects/sh2008106994> a madsrdf:Authority,
+        madsrdf:ComplexSubject,
+        skos:Concept ;
+    bflc:marcKey "150  $aLiteracy$zBrazil" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/1101859>,
+        <http://id.loc.gov/resources/works/1139085>,
+        <http://id.loc.gov/resources/works/12138259>,
+        <http://id.loc.gov/resources/works/1310109>,
+        <http://id.loc.gov/resources/works/13926497>, 
+        <http://id.loc.gov/resources/works/13989004>,
+        <http://id.loc.gov/resources/works/14087947>,
+        <http://id.loc.gov/resources/works/14140461>,
+        <http://id.loc.gov/resources/works/14206999>,
+        <http://id.loc.gov/resources/works/14371927>,
+        <http://id.loc.gov/resources/works/14378833>,
+        <http://id.loc.gov/resources/works/14394314>,
+        <http://id.loc.gov/resources/works/14396509>,
+        <http://id.loc.gov/resources/works/14410532>,
+        <http://id.loc.gov/resources/works/14502988>,
+        <http://id.loc.gov/resources/works/14559653>,
+        <http://id.loc.gov/resources/works/14597568>,
+        <http://id.loc.gov/resources/works/14668920>,
+        <http://id.loc.gov/resources/works/1472851>,
+        <http://id.loc.gov/resources/works/14772016>,
+        <http://id.loc.gov/resources/works/14809572>,
+        <http://id.loc.gov/resources/works/14824909>,
+        <http://id.loc.gov/resources/works/1486355>,
+        <http://id.loc.gov/resources/works/14878496>,
+        <http://id.loc.gov/resources/works/14933100>,
+        <http://id.loc.gov/resources/works/14971310>,
+        <http://id.loc.gov/resources/works/14986492>,
+        <http://id.loc.gov/resources/works/15006283>,
+        <http://id.loc.gov/resources/works/15026072>,
+        <http://id.loc.gov/resources/works/15035243>,
+        <http://id.loc.gov/resources/works/15408657>,
+        <http://id.loc.gov/resources/works/15481602>,
+        <http://id.loc.gov/resources/works/15654296>,
+        <http://id.loc.gov/resources/works/15703147>,
+        <http://id.loc.gov/resources/works/15708564>,
+        <http://id.loc.gov/resources/works/15734722>,
+        <http://id.loc.gov/resources/works/15753283>,
+        <http://id.loc.gov/resources/works/15841935>,
+        <http://id.loc.gov/resources/works/15876437>,
+        <http://id.loc.gov/resources/works/1592800>,
+        <http://id.loc.gov/resources/works/16302728>,
+        <http://id.loc.gov/resources/works/17165669>,
+        <http://id.loc.gov/resources/works/17901346>,
+        <http://id.loc.gov/resources/works/18024338>,
+        <http://id.loc.gov/resources/works/18229535>,
+        <http://id.loc.gov/resources/works/18325771>,
+        <http://id.loc.gov/resources/works/18462274>,
+        <http://id.loc.gov/resources/works/18656585>,
+        <http://id.loc.gov/resources/works/18699420>,
+        <http://id.loc.gov/resources/works/18776109>,
+        <http://id.loc.gov/resources/works/18870315>,
+        <http://id.loc.gov/resources/works/192077>,
+        <http://id.loc.gov/resources/works/1925431>,
+        <http://id.loc.gov/resources/works/19385331>,
+        <http://id.loc.gov/resources/works/19974758>,
+        <http://id.loc.gov/resources/works/20682749>,
+        <http://id.loc.gov/resources/works/21342439>,
+        <http://id.loc.gov/resources/works/22400701>,
+        <http://id.loc.gov/resources/works/2293840>,
+        <http://id.loc.gov/resources/works/2518598>,
+        <http://id.loc.gov/resources/works/2611331>,
+        <http://id.loc.gov/resources/works/2742453>,
+        <http://id.loc.gov/resources/works/2808522>,
+        <http://id.loc.gov/resources/works/3168739>,
+        <http://id.loc.gov/resources/works/3171444>,
+        <http://id.loc.gov/resources/works/3251136>,
+        <http://id.loc.gov/resources/works/3358165>,
+        <http://id.loc.gov/resources/works/3370841>,
+        <http://id.loc.gov/resources/works/3464125>,
+        <http://id.loc.gov/resources/works/3520579>,
+        <http://id.loc.gov/resources/works/3721924>,
+        <http://id.loc.gov/resources/works/3764811>,
+        <http://id.loc.gov/resources/works/382196>,
+        <http://id.loc.gov/resources/works/4144074>,
+        <http://id.loc.gov/resources/works/4410073>,
+        <http://id.loc.gov/resources/works/4428876>,
+        <http://id.loc.gov/resources/works/4584640>,
+        <http://id.loc.gov/resources/works/4621984>,
+        <http://id.loc.gov/resources/works/4635753>,
+        <http://id.loc.gov/resources/works/4665486>,
+        <http://id.loc.gov/resources/works/4823942>,
+        <http://id.loc.gov/resources/works/4824567>,
+        <http://id.loc.gov/resources/works/4826518>,
+        <http://id.loc.gov/resources/works/4939988>,
+        <http://id.loc.gov/resources/works/6155278>,
+        <http://id.loc.gov/resources/works/6644568>,
+        <http://id.loc.gov/resources/works/667253>,
+        <http://id.loc.gov/resources/works/7919780>,
+        <http://id.loc.gov/resources/works/868073>,
+        <http://id.loc.gov/resources/works/884721>,
+        <http://id.loc.gov/resources/works/975813> ;
+    identifiers:lccn "sh2008106994" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2008-02-29T07:41:34"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2008-02-27T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Literacy--Brazil"@en ;
+    madsrdf:componentList ( <http://id.loc.gov/authorities/subjects/sh85077482> [ a madsrdf:Authority,
+                    madsrdf:Geographic ;
+                madsrdf:authoritativeLabel "Brazil"@en ;
+                madsrdf:elementList ( [ a madsrdf:GeographicElement ;
+                            madsrdf:elementValue "Brazil"@en ] ) ] ) ;
+    madsrdf:editorialNote "[Record generated for validation purposes.]" ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationSource "Work cat.: Analfabetismo funcional, c2003" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    owl:sameAs <http://id.loc.gov/authorities/sh2008106994#concept>,
+        <info:lc/authorities/sh2008106994> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2008-02-29T07:41:34"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh2008106994> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "2008-02-27T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh2008106994> ] ;
+    skos:editorialNote "[Record generated for validation purposes.]" ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:prefLabel "Literacy--Brazil"@en .
+

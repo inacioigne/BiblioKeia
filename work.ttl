@@ -64,7 +64,7 @@
             rdf:value <http://id.loc.gov/vocabulary/languages/por> ],
         <http://id.loc.gov/vocabulary/languages/eng> ;
     ns1:note [ a ns1:Note ;
-            rdfs:label "Includes translation" ] ;
+            rdfs:label "Includes translation" ] ; 
     ns1:summary [ a ns1:Summary ;
             rdfs:label "\"A revelatory new translation of the playful, incomparable masterpiece of one of the greatest black authors in the Americas. The mixed-race grandson of ex-slaves, Machado de Assis is not only Brazil's most celebrated writer but also a writer of world stature, who has been championed by the likes of Philip Roth, Susan Sontag, Allen Ginsburg, John Updike, and Salman Rushdie. In his masterpiece, the 1881 novel The Posthumous Memoirs of Brás Cubas (translated also as Epitaph of a Small Winner), the ghost of a decadent and disagreeable aristocrat decides to write his memoir. He dedicates it to the worms gnawing at his corpse and, in 160 brief chapters, tells of his failed romances and halfhearted political ambitions, serves up harebrained philosophies, and complains with gusto from the depths of his grave. Wildly imaginative, wickedly witty, and utterly unforgettable, it is a novel ahead of its time that has been compared to the work of everyone from Cervantes to Sterne to Borges to Joyce to Nabokov to Calvino, and that has influenced generations of writers around the world. This new English translation is the first to include extensive notes providing crucial historical and cultural context and also includes excerpts from previous versions of the novel never before published in English\"-- Provided by publisher." ] ;
     ns1:title [ a ns1:Title ;

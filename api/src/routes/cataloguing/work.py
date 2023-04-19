@@ -1,5 +1,8 @@
 from fastapi import APIRouter, HTTPException
-from src.schemas.bibframe.work import Work_Schema, Work_Edit, Work_Response
+from src.function.bibframe.Work.contributionOf import ContributionOf
+from src.function.bibframe.Work.subjectOf import SubjectOf
+from src.schemas.bibframe._work import Work_Schema, Work_Edit, Work_Response
+from src.schemas.bibframe.work import Work
 from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
 from src.function.bibframe.Work.work import BfWork
@@ -7,6 +10,7 @@ from pyfuseki import FusekiUpdate, FusekiQuery
 from src.function.solr.docWork import DocWork, EditDocWork
 from src.function.bibframe.Work.editWork import EditWork
 from src.function.cataloguing.queryWork import QueryWork
+from src.function.bibframe.Work.graph import MakeGraph
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
@@ -29,30 +33,30 @@ async def get_work(id: str) -> Work_Response:
 
 # POST
 @router.post("/work", status_code=201)
-async def create_work(request: Work_Schema):
+async def create_work(request: Work):
+
     response = GenerateId()
     work_id = response['id']
 
-    g = BfWork(request, work_id )
-    g.serialize("work.ttl") 
-    nt = g.serialize(format='nt')
 
-    G = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-    PREFIX bflc: <http://www.loc.gov/mads/rdf/v1#>
-    PREFIX madsrdf: <http://id.loc.gov/ontologies/bflc/> 
-    INSERT DATA {
-        GRAPH <https://bibliokeia.com/resources/work/"""+work_id+""">
-        { \n"""+nt+"} }" 
-    
+    G = MakeGraph(request, work_id)
     # Jena
     response = fuseki_update.run_sparql(G)
-    # Solr
+    # Update Sujects
+    SubjectOf(request.subject, 'work', work_id)
+    
+    # Update Contributions
+    ContributionOf(request.contribution, 'work', work_id)
+
+    
+    
+    # # Solr
     DocWork(request, work_id)
 
-    return {"id": work_id, "jena": response.convert() }
+    return {
+        #"id": work_id, 
+        "jena": response.convert() }
+    # return request.dict()
 
 # PUT
 @router.put("/work", status_code=201)
