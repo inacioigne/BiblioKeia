@@ -20,6 +20,20 @@ class GenerationProcess(BaseModel):
         
         return now
 
+class Status(BaseModel):
+    value: str = Field(default="mstatus:new")
+    label: str = Field(default="novo")
+
+    _status = vocabulary['mstatus']
+
+    @validator('value')
+    def status_accepted(cls, v):
+        if v not in cls._status:
+            raise ValueError(f"the status code must be one of the following : {', '.join(cls._status)}")
+        return v
+
+
+
 class AdminMetadata(BaseModel):
     encodingLevel: str = Field(default="menclvl:f")
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
@@ -27,17 +41,10 @@ class AdminMetadata(BaseModel):
     descriptionConventions: str = Field(default="http://id.loc.gov/vocabulary/descriptionConventions/isbd")
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: Optional[GenerationProcess]
-    status: str = Field(default="mstatus:new")
+    status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
-    _status = vocabulary['mstatus']
     
     _level = vocabulary['menclvl']
-
-    @validator('status')
-    def status_accepted(cls, v):
-        if v not in cls._status:
-            raise ValueError(f"the status code must be one of the following : {', '.join(cls._status)}")
-        return v
     
     @validator('encodingLevel')
     def level_accepted(cls, v):

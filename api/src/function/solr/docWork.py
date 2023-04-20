@@ -4,6 +4,7 @@ import pysolr
 solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 
 def PostSolr(request, id):
+    pass
     
 
 def DocWork(request, work_id):
