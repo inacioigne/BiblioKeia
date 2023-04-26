@@ -2,12 +2,22 @@ from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.schemas.authorities.mads import Uri
+from src.schemas.authorities.authority import Authority
 from src.function.authorities.edit_uri import DelMads, PostMads
 from src.function.authorities.personalName.docPersonalName import GetLabelLoc
+from src.function.authorities.makeGraph import MakeGraph
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+
+# Add Autority
+@router.post("/", status_code=201) 
+async def post_authority(request: Authority):
+
+    MakeGraph(request, id)
+
+    return request.dict()
 
 # Delete URI
 @router.delete("/uri", status_code=200) 

@@ -42,7 +42,6 @@ class AdminMetadata(BaseModel):
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: Optional[GenerationProcess]
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
-
     
     _level = vocabulary['menclvl']
     
