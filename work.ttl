@@ -21,7 +21,7 @@
             ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
                 <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             ns1:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ns1:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ; 
             ns1:generationProcess [ a ns1:GenerationProcess ;
                     rdfs:label "DLC marc2bibframe2 v2.2.1" ;
                     ns1:generationDate "2023-02-07T01:58:10.983465-05:00"^^xsd:dateTime ] ;
