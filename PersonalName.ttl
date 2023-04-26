@@ -1,0 +1,140 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n50048460> a madsrdf:Authority,
+        madsrdf:PersonalName ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2000-03-30T07:09:34"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1980-08-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Oliphant, Mrs. (Margaret), 1828-1897"@en ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Oliphant," ] [ a madsrdf:TermsOfAddressNameElement ;
+                madsrdf:elementValue "Mrs."@en ] [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "(Margaret),"@en ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1828-1897"@en ] ) ;
+    madsrdf:hasEarlierEstablishedForm <http://id.loc.gov/authorities/names/n50048460> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Author of Margaret Maitland) [info. from InU]"@en ;
+            madsrdf:citation-source "Her The days of my life, 1857:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Author of passages in the life of Mrs. Margaret Maitland, Merkland, Adam Graeme, etc.) [info. from InU]"@en ;
+            madsrdf:citation-source "Her Harry Muir, 1853:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Mrs. Oliphant)"@en ;
+            madsrdf:citation-source "Her Agnes, 1866:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Margaret Oliphant W. Oliphant) [info. from InU]"@en ;
+            madsrdf:citation-source "Her Memoirs of the life of Laurence Oliphant and of Alice Oliphant his wife, 1891:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Mrs. M.O.W. Oliphant) [info. from InU]"@en ;
+            madsrdf:citation-source "Her The autobiography and letters of Mrs. M.O.W. Oliphant, 1899:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Mrs. Olyphant) [info. from InU]"@en ;
+            madsrdf:citation-source "Her Magdalen Hepburn, 186-?:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Margaret Oliphant) [info. from InU]"@en ;
+            madsrdf:citation-source "Her Salem chapel, 1907:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Author of Chronicles of Carlingford) [info. from InU]"@en ;
+            madsrdf:citation-source "Her The perpetual curate, 1865:" ;
+            madsrdf:citation-status "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citation-note "t.p. (Author of A little pilgrim and Old Lady Mary) [info. from InU]"@en ;
+            madsrdf:citation-source "Her The open door, 1885:" ;
+            madsrdf:citation-status "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Passages in the life of Mrs. Margaret Maitland, Merkland, Adam Graeme, etc., Author of," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Passages in the life of Mrs. Margaret Maitland, Merkland, Adam Graeme, etc., Author of, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Author of Chronicles of Carlingford," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Author of Chronicles of Carlingford, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Chronicles of Carlingford, Author of," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Chronicles of Carlingford, Author of, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Author of A little pilgrim and Old Lady Mary," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Author of A little pilgrim and Old Lady Mary, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Olyphant," ] [ a madsrdf:TermsOfAddressNameElement ;
+                        madsrdf:elementValue "Mrs.,"@en ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Olyphant, Mrs., 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Oliphant, Margaret," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Oliphant, Margaret, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Oliphant, M. O. W." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Margaret Oliphant Wilson),"@en ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Oliphant, M. O. W. (Margaret Oliphant Wilson), 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Author of Margaret Maitland," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Author of Margaret Maitland, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Author of Passages in the life of Mrs. Margaret Maitland, Merkland, Adam Graeme, etc.," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Author of Passages in the life of Mrs. Margaret Maitland, Merkland, Adam Graeme, etc., 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Little pilgrim and Old Lady Mary, Author of," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Little pilgrim and Old Lady Mary, Author of, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Margaret Maitland, Author of," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Margaret Maitland, Author of, 1828-1897"@en ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Oliphant, Margaret Oliphant Wilson," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1828-1897"@en ] ) ;
+            madsrdf:variantLabel "Oliphant, Margaret Oliphant Wilson, 1828-1897"@en ] ;
+    madsrdf:identifiesRWO [ a madsrdf:RWO,
+                <http://xmlns.com/foaf/0.1/Person> ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/collection_AuthorizedHeadings>,
+        <http://id.loc.gov/authorities/names/collection_LCNAF> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> .
+
