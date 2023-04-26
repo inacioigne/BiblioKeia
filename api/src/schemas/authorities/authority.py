@@ -5,6 +5,7 @@ from datetime import datetime, date
 class Uri(BaseModel):
     value: str
     label: str
+    base: str
 
 class Label(BaseModel):
     value: str
@@ -25,34 +26,37 @@ class Affiliation(BaseModel):
 
 class GenerationProcess(BaseModel):
     label: str = Field(default="BiblioKeia v.1")
-    generationDate: Optional[str]
+    generationDate: datetime = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
 
-    @validator('generationDate', pre=True, always=True)
-    def set_date_now(cls, v):
-        now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
-        
-        return now
+    # @validator('generationDate', pre=True, always=True)
+    # def set_date_now(cls, v):
+    #     now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
+    #     return now
+    
 class Status(BaseModel):
     value: str = Field(default="mstatus:new")
     label: str = Field(default="novo")
 
-class AdminMetadata(BaseModel):
-    encodingLevel: str = Field(default="menclvl:f")
+class IdentifiedBy(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
+    value: str
+
+class AdminMetadata(BaseModel):
+    assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
+    descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     creationDate: date = Field(default=date.today())
-    descriptionConventions: str = Field(default="http://id.loc.gov/vocabulary/descriptionConventions/isbd")
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
-    generationProcess: Optional[GenerationProcess]
+    generationProcess: GenerationProcess
+    identifiedBy: IdentifiedBy
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
 class Authority(BaseModel):
     type: str
     adminMetadata: AdminMetadata
-    recordChangeDate: datetime = Field(default=datetime.now())
     elementList: list[Element]
     fullerName: Optional[Element]
     birthDate: Optional[str]
-    birthPlace: Optional[Label]
+    birthPlace: Optional[Uri]
     deathDate: Optional[str]
     occupation: Optional[list[Uri]]
     hasAffiliation: Optional[list[Affiliation]]

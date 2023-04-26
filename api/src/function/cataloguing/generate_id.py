@@ -36,16 +36,11 @@ def GenerateId():
 
     queryAcervo = FusekiQuery('http://localhost:3030', 'acervo')
 
-    # q = """SELECT ?g  
-    #     {graph ?g {?s ?p ?o}} 
-    #     group by ?g 
-    #     ORDER BY DESC(?g)
-    #     LIMIT 1"""
     q = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-SELECT ?g
-{graph ?g {?s bf:generationDate ?o}} 
-ORDER BY DESC(?o)
-LIMIT 1"""
+    SELECT ?g
+    {graph ?g {?s bf:generationDate ?o}} 
+    ORDER BY DESC(?o)
+    LIMIT 1"""
     
     response = queryAcervo.run_sparql(q)
     r = response.convert()

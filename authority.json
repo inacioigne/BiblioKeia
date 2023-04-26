@@ -1,0 +1,14 @@
+{
+    "type": "PersonalName",
+    "adminMetadata": { "recordStatus": "novo"},
+    "elementList": [
+        {
+            "type": "FullNameElement",
+            "value": "Machado de Assis"
+        },
+        {
+            "type": "DateNameElement",
+            "value": "1839-1908"
+        }
+    ]
+}
