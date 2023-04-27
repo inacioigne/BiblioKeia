@@ -15,23 +15,25 @@ class Element(BaseModel):
     type: str
     elementValue: Label
 
-class Variant(BaseModel):
+class ComponentList(BaseModel): 
     type: str
     elementList: list[Element]
 
+
+class Variant(BaseModel):
+    type: str
+    elementList: Optional[list[Element]]
+    componentList: Optional[list[ComponentList]]
+
 class Affiliation(BaseModel):
-    organization: Uri
+    organization: str
+    uri: str
     affiliationStart: Optional[str]
     affiliationEnd: Optional[str]
 
 class GenerationProcess(BaseModel):
     label: str = Field(default="BiblioKeia v.1")
     generationDate: datetime = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
-
-    # @validator('generationDate', pre=True, always=True)
-    # def set_date_now(cls, v):
-    #     now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
-    #     return now
     
 class Status(BaseModel):
     value: str = Field(default="mstatus:new")
@@ -53,7 +55,8 @@ class AdminMetadata(BaseModel):
 class Authority(BaseModel):
     type: str
     adminMetadata: AdminMetadata
-    elementList: list[Element]
+    elementList: Optional[list[Element]]
+    componentList: Optional[list[Union[Uri, ComponentList]]]
     fullerName: Optional[Element]
     birthDate: Optional[str]
     birthPlace: Optional[Uri]

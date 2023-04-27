@@ -4,6 +4,6 @@ def MakeAfilliation(hasAffiliation):
         a = f"""[ a madsrdf:Affiliation ;
             { f'madsrdf:affiliationEnd "{i.affiliationEnd}" ;' if i.affiliationEnd else ''}
             { f'madsrdf:affiliationStart "{i.affiliationStart}" ;' if i.affiliationStart else ''}
-            madsrdf:organization <{i.organization.value}> ]"""
+            madsrdf:organization <{i.uri}> ]"""
         aList.append(a)
     return ", ".join(aList)

@@ -1,0 +1,96 @@
+{
+    "type": "NameTitle",
+    "adminMetadata": {
+      "generationProcess": {
+        "label": "BiblioKeia Beta"
+      },
+      "identifiedBy": {
+        "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+        "value": "n00000707"
+      }
+    },
+    "componentList": [
+        {"type": "PersonalName",
+        "elementList": [
+            {
+              "type": "FullNameElement",
+              "elementValue": {
+                "value": "Gogh, Vincent van"
+              }
+            },
+            {
+              "type": "DateNameElement",
+              "elementValue": {
+                "value": "1853-1890"
+              }
+            }
+          ]
+    },
+    {"type": "Title",
+    "elementList": [
+        {
+          "type": "TitleElement",
+          "elementValue": {
+            "value": "Peat boat"
+          }
+        }
+      ]
+}
+    ],
+    "hasVariant": [
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Semana"
+            }
+          },
+          {
+            "type": "TermsOfAddressNameElement",
+            "elementValue": {
+              "value": "Dr."
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1839-1908"
+            }
+          }
+        ]
+      }
+    ],
+    "birthDate": "1839-06-21",
+    "birthPlace": {
+      "value": "http://id.loc.gov/authorities/names",
+      "label": "Rio de Janeiro",
+      "base": "bibliokeia"
+    },
+    "deathDate": "1908-09-29",
+    "occupation": [
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85034154",
+        "label": "Bureaucrats",
+        "base": "LOC"
+      }
+    ],
+    "hasAffiliation": [
+      {
+        "organization": "Academia",
+        "uri": "http://id.loc.gov/authorities/subjects/sh85034154",
+        "affiliationStart": "1897",
+        "affiliationEnd": "1908"
+      }
+    ],
+    "hasExactExternalAuthority": [
+      {
+        "value": "http://viaf.org/viaf/sourceID/LC%7Cn++80002329#skos:Concept",
+        "label": "Machado",
+        "base": "LOC"
+      }
+    ],
+    "isMemberOfMADSCollection": "https://bibliokeia.com/authorities/name/"
+  }
+  

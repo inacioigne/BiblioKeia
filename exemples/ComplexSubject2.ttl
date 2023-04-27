@@ -1,0 +1,56 @@
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/sh85067964> a madsrdf:Geographic .
+
+<http://id.loc.gov/authorities/sh85068030> a madsrdf:Authority,
+        madsrdf:ComplexSubject ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "2000-10-02T10:44:24"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Nobility--Ireland"@en ;
+    madsrdf:componentList ( <http://id.loc.gov/authorities/sh85092138> <http://id.loc.gov/authorities/sh85067964> ) ;
+    madsrdf:hasEarlierEstablishedForm <http://id.loc.gov/authorities/sh85068030> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/sh85075905> ;
+    madsrdf:hasVariant [ a madsrdf:ComplexSubject,
+                madsrdf:Variant ;
+            madsrdf:componentList ( 
+                [ a madsrdf:Geographic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:GeographicElement ;
+                                    madsrdf:elementValue "Ireland" ] ) ;
+                        madsrdf:variantLabel "Ireland"@en ] 
+                        [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Nobility" ] ) ;
+                        madsrdf:variantLabel "Nobility"@en ] ) ;
+            madsrdf:variantLabel "Ireland--Nobility"@en ],
+        [ a madsrdf:ComplexSubject,
+                madsrdf:Variant ;
+            madsrdf:componentList ( [ a madsrdf:Geographic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:GeographicElement ;
+                                    madsrdf:elementValue "Ireland" ] ) ;
+                        madsrdf:variantLabel "Ireland"@en ] [ a madsrdf:Topic,
+                            madsrdf:Variant ;
+                        madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                                    madsrdf:elementValue "Peerage" ] ) ;
+                        madsrdf:variantLabel "Peerage"@en ] ) ;
+            madsrdf:variantLabel "Ireland--Peerage"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/collection_AuthorizedHeadings>,
+        <http://id.loc.gov/authorities/collection_LCSH_General> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/lcsh> ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85068030#concept>,
+        <info:lc/authorities/sh85068030> .
+
+<http://id.loc.gov/authorities/sh85092138> a madsrdf:Topic .
+

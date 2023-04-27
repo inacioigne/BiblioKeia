@@ -82,11 +82,8 @@
   ],
   "hasAffiliation": [
     {
-      "organization": {
-        "value": "http://id.loc.gov/authorities/subjects/sh85034154",
-        "label": "Academia",
-        "base": "LOC"
-      },
+      "organization": "Academia",
+      "uri": "http://id.loc.gov/authorities/subjects/sh85034154",
       "affiliationStart": "1897",
       "affiliationEnd": "1908"
     }

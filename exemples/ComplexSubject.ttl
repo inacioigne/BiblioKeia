@@ -1,0 +1,140 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/subjects/sh2008116817> a madsrdf:Authority,
+        madsrdf:ComplexSubject ;
+    bflc:marcKey "151  $aZimbabwe$xEconomic policy" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/1003573>,
+        <http://id.loc.gov/resources/works/1098548>,
+        <http://id.loc.gov/resources/works/1122528>,
+        <http://id.loc.gov/resources/works/1122581>,
+        <http://id.loc.gov/resources/works/11321947>,
+        <http://id.loc.gov/resources/works/1141431>,
+        <http://id.loc.gov/resources/works/1178671>,
+        <http://id.loc.gov/resources/works/11912473>,
+        <http://id.loc.gov/resources/works/11912476>,
+        <http://id.loc.gov/resources/works/11912563>,
+        <http://id.loc.gov/resources/works/11912587>,
+        <http://id.loc.gov/resources/works/11995699>,
+        <http://id.loc.gov/resources/works/11995701>,
+        <http://id.loc.gov/resources/works/11995710>,
+        <http://id.loc.gov/resources/works/12213663>,
+        <http://id.loc.gov/resources/works/12213665>,
+        <http://id.loc.gov/resources/works/12213761>,
+        <http://id.loc.gov/resources/works/12219317>,
+        <http://id.loc.gov/resources/works/12257056>,
+        <http://id.loc.gov/resources/works/12300879>,
+        <http://id.loc.gov/resources/works/12314879>,
+        <http://id.loc.gov/resources/works/12365822>,
+        <http://id.loc.gov/resources/works/12450961>,
+        <http://id.loc.gov/resources/works/12454219>,
+        <http://id.loc.gov/resources/works/12773782>,
+        <http://id.loc.gov/resources/works/12780533>,
+        <http://id.loc.gov/resources/works/13018424>,
+        <http://id.loc.gov/resources/works/1343711>,
+        <http://id.loc.gov/resources/works/13482032>,
+        <http://id.loc.gov/resources/works/13537967>,
+        <http://id.loc.gov/resources/works/14180268>,
+        <http://id.loc.gov/resources/works/14219395>,
+        <http://id.loc.gov/resources/works/14298377>,
+        <http://id.loc.gov/resources/works/14301259>,
+        <http://id.loc.gov/resources/works/14533243>,
+        <http://id.loc.gov/resources/works/1474006>,
+        <http://id.loc.gov/resources/works/15010776>,
+        <http://id.loc.gov/resources/works/15245245>,
+        <http://id.loc.gov/resources/works/1551098>,
+        <http://id.loc.gov/resources/works/15587862>,
+        <http://id.loc.gov/resources/works/15655973>,
+        <http://id.loc.gov/resources/works/15830135>,
+        <http://id.loc.gov/resources/works/15842741>,
+        <http://id.loc.gov/resources/works/15862798>,
+        <http://id.loc.gov/resources/works/16104822>,
+        <http://id.loc.gov/resources/works/16106339>,
+        <http://id.loc.gov/resources/works/1611888>,
+        <http://id.loc.gov/resources/works/16239693>,
+        <http://id.loc.gov/resources/works/16386072>,
+        <http://id.loc.gov/resources/works/16433855>,
+        <http://id.loc.gov/resources/works/1668359>,
+        <http://id.loc.gov/resources/works/16872388>,
+        <http://id.loc.gov/resources/works/16987435>,
+        <http://id.loc.gov/resources/works/17081855>,
+        <http://id.loc.gov/resources/works/17239278>,
+        <http://id.loc.gov/resources/works/17462990>,
+        <http://id.loc.gov/resources/works/17489340>,
+        <http://id.loc.gov/resources/works/17608652>,
+        <http://id.loc.gov/resources/works/17813051>,
+        <http://id.loc.gov/resources/works/17907685>,
+        <http://id.loc.gov/resources/works/18036418>,
+        <http://id.loc.gov/resources/works/18087749>,
+        <http://id.loc.gov/resources/works/18229578>,
+        <http://id.loc.gov/resources/works/18229669>,
+        <http://id.loc.gov/resources/works/18313897>,
+        <http://id.loc.gov/resources/works/18336210>,
+        <http://id.loc.gov/resources/works/18456312>,
+        <http://id.loc.gov/resources/works/18577718>,
+        <http://id.loc.gov/resources/works/1873324>,
+        <http://id.loc.gov/resources/works/19040409>,
+        <http://id.loc.gov/resources/works/19132358>,
+        <http://id.loc.gov/resources/works/19172236>,
+        <http://id.loc.gov/resources/works/19261233>,
+        <http://id.loc.gov/resources/works/19405127>,
+        <http://id.loc.gov/resources/works/1995430>,
+        <http://id.loc.gov/resources/works/20497046>,
+        <http://id.loc.gov/resources/works/2066781>,
+        <http://id.loc.gov/resources/works/2071024>,
+        <http://id.loc.gov/resources/works/20850706>,
+        <http://id.loc.gov/resources/works/20852591>,
+        <http://id.loc.gov/resources/works/20976385>,
+        <http://id.loc.gov/resources/works/2140241>,
+        <http://id.loc.gov/resources/works/2155877>,
+        <http://id.loc.gov/resources/works/21698003>,
+        <http://id.loc.gov/resources/works/22734636>,
+        <http://id.loc.gov/resources/works/22768815>,
+        <http://id.loc.gov/resources/works/22768828>,
+        <http://id.loc.gov/resources/works/22992779>,
+        <http://id.loc.gov/resources/works/23011347>,
+        <http://id.loc.gov/resources/works/2376015>,
+        <http://id.loc.gov/resources/works/2502471>,
+        <http://id.loc.gov/resources/works/2539596>,
+        <http://id.loc.gov/resources/works/2743263>,
+        <http://id.loc.gov/resources/works/2994566>,
+        <http://id.loc.gov/resources/works/3031411>,
+        <http://id.loc.gov/resources/works/3050369>,
+        <http://id.loc.gov/resources/works/3259484>,
+        <http://id.loc.gov/resources/works/3267076>,
+        <http://id.loc.gov/resources/works/3415221>,
+        <http://id.loc.gov/resources/works/3447977> ;
+    identifiers:lccn "sh2008116817" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2008-03-19T08:13:06"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2008-03-18T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Zimbabwe--Economic policy"@en ;
+    madsrdf:componentList ( [ a madsrdf:Authority, 
+                    madsrdf:Geographic ;
+                madsrdf:authoritativeLabel "Zimbabwe"@en ;
+                madsrdf:elementList ( [ a madsrdf:GeographicElement ;
+                            madsrdf:elementValue "Zimbabwe"@en ] ) ] <http://id.loc.gov/authorities/subjects/sh99005752> ) ;
+    madsrdf:editorialNote "[Record generated for validation purposes.]" ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationSource "Work cat.: Second five-year national development plan, 1991-1995, [1991]" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    owl:sameAs <http://id.loc.gov/authorities/sh2008116817#concept>,
+        <info:lc/authorities/sh2008116817> .
+
+<http://id.loc.gov/authorities/subjects/sh99005752> a madsrdf:Topic .
+

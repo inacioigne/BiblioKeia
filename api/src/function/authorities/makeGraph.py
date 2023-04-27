@@ -38,11 +38,12 @@ def MakeGraph(request, id):
                     rdfs:label "{request.adminMetadata.generationProcess.label}" ;
                     bf:generationDate "{request.adminMetadata.generationProcess.generationDate}"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
-                    bf:assigner <{request.adminMetadata.assigner}> ;
-                    rdf:value "{id}" ] ;
+                    bf:assigner <{request.adminMetadata.identifiedBy.assigner}> ;
+                    rdf:value "{request.adminMetadata.identifiedBy.value}" ] ;
             bf:status {request.adminMetadata.status.value} ] ; 
-            madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
-            madsrdf:elementList ( {MakeElement(request.elementList)} ) ;
+            { f'madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ; ' if request.elementList else  f'madsrdf:authoritativeLabel "{"--".join([i.label for i in request.componentList])}" ; '} 
+            { f'madsrdf:elementList ( {MakeElement(request.elementList)} ) ; ' if request.elementList else ''} 
+            { f'madsrdf:componentList ( { " ".join([ f"<{i.value}>" for i in request.componentList])} ) ; ' if request.componentList else '' } 
             { f'madsrdf:fullerName [ a madsrdf:PersonalName ; rdfs:label "{request.fullerName.elementValue.value}" ] ;' if request.fullerName else ''}            
             { f'madsrdf:birthDate "{request.birthDate}" ; ' if request.birthDate else ''}     
             { f'madsrdf:birthPlace <{request.birthPlace.value}> ; ' if request.birthPlace else ''}

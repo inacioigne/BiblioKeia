@@ -7,6 +7,7 @@ from src.function.authorities.edit_uri import DelMads, PostMads
 from src.function.authorities.personalName.docPersonalName import GetLabelLoc
 from src.function.authorities.makeGraph import MakeGraph
 from src.function.authorities.generateID import GenerateId
+from src.function.solr.docAuthority import MakeDoc
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
@@ -19,10 +20,13 @@ async def post_authority(request: Authority):
 
     graph = MakeGraph(request, id)
     response = fuseki_update.run_sparql(graph)
+    doc = MakeDoc(request, id)
+    responseSolr = solr.add([doc], commit=True)
 
     return {
+        "id": id,
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
 # Delete URI

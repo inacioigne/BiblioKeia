@@ -1,0 +1,61 @@
+{
+  "type": "ComplexSubject",
+  "adminMetadata": {
+    "generationProcess": {
+      "label": "BiblioKeia Beta"
+    },
+    "identifiedBy": {
+      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+      "value": "sh85068030"
+    }
+  },
+  "componentList": [
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh99005752",
+      "label": "Nobility",
+      "base": "loc"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh99005752",
+      "label": "Ireland",
+      "base": "loc"
+    }
+  ],
+  "hasNarrowerAuthority": [
+    {
+      "value": "http://id.loc.gov/authorities/sh85075905",
+      "label": "Machado",
+      "base": "loc"
+    }
+  ],
+  "hasVariant": [
+        {
+      "type": "ComplexSubject",
+      "componentList": [
+        {
+          "type": "Geographic",
+          "elementList": [
+            {
+              "type": "GeographicElement",
+              "elementValue": {
+                "value": "Ireland"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Topic",
+          "elementList": [
+            {
+              "type": "TopicElement",
+              "elementValue": {
+                "value": "Peerage"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "isMemberOfMADSCollection": "https://bibliokeia.com/authorities/ComplexSubject/"
+}
