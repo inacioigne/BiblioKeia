@@ -17,7 +17,7 @@ class Element(BaseModel):
 
 class ComponentList(BaseModel): 
     type: str
-    elementList: list[Element]
+    elementList: list[Element] 
 
 
 class Variant(BaseModel):

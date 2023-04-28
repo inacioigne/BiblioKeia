@@ -1,5 +1,5 @@
-#from api.src.function.authorities.makeLabel import MakeLabel
-#from src.function.authorities.makeLabel import MakeLabel
+#from api.src.function.authorities.makeLabel import ComponentLabel
+from src.function.authorities.makeLabel import ComponentLabel
 def MakeLabel(elementList):
     labels = [i.elementValue.value for i in elementList]
     label = ", ".join(labels)
@@ -16,8 +16,6 @@ def MakeVariantLabel(hasVariant):
             label = ", ".join([j.elementValue.value for j in i.elementList])
             variantes.append(label)
 
-
-
     return variantes
 
 def MakeDoc(request, id):
@@ -25,7 +23,7 @@ def MakeDoc(request, id):
         'id': id,
         'type': request.type,
         "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
-        "label": f'{MakeLabel(request.elementList)}' if request.elementList else "--".join([i.label for i in request.componentList]),
+        "label": f'{MakeLabel(request.elementList)}' if request.elementList else f'{ComponentLabel(request.componentList)}' ,
         "isMemberOfMADSCollection": request.isMemberOfMADSCollection
     }
     if request.fullerName:

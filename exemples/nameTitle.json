@@ -10,7 +10,7 @@
       }
     },
     "componentList": [
-        {"type": "PersonalName",
+        {"type": "PersonalName", 
         "elementList": [
             {
               "type": "FullNameElement",
