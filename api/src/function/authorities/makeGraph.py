@@ -39,7 +39,7 @@ def MakeGraph(request, id):
                     bf:generationDate "{request.adminMetadata.generationProcess.generationDate}"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <{request.adminMetadata.identifiedBy.assigner}> ;
-                    rdf:value "{request.adminMetadata.identifiedBy.value}" ] ;
+                    rdf:value "{request.adminMetadata.identifiedBy.value}" ] ; 
             bf:status {request.adminMetadata.status.value} ] ; 
             { f'madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ; ' if request.elementList else  f'madsrdf:authoritativeLabel "{ComponentLabel(request.componentList)}" ; '} 
             { f'madsrdf:elementList ( {MakeElement(request.elementList)} ) ; ' if request.elementList else ''} 

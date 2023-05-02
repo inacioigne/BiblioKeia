@@ -2,14 +2,16 @@ from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
 from datetime import datetime, date
 
-class Uri(BaseModel):
-    value: str
-    label: str
-    base: str
-
 class Label(BaseModel):
     value: str
     lang: Optional[str]
+
+class Uri(BaseModel):
+    value: str
+    label: Label
+    #base: Optional[str]
+
+
 
 class Element(BaseModel):
     type: str
@@ -54,7 +56,8 @@ class AdminMetadata(BaseModel):
 
 class Authority(BaseModel):
     type: str
-    adminMetadata: AdminMetadata
+    identifiers: Optional[str]
+    adminMetadata: AdminMetadata 
     elementList: Optional[list[Element]]
     componentList: Optional[list[Union[Uri, ComponentList]]]
     fullerName: Optional[Element]
