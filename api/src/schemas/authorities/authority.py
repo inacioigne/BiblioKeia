@@ -11,16 +11,13 @@ class Uri(BaseModel):
     label: Label
     #base: Optional[str]
 
-
-
 class Element(BaseModel):
     type: str
     elementValue: Label
 
 class ComponentList(BaseModel): 
     type: str
-    elementList: list[Element] 
-
+    elementList: list[Element]
 
 class Variant(BaseModel):
     type: str
@@ -72,5 +69,6 @@ class Authority(BaseModel):
     hasCloseExternalAuthority: Optional[list[Uri]]
     hasExactExternalAuthority: Optional[list[Uri]]
     hasNarrowerAuthority: Optional[list[Uri]]
+    hasNarrowerExternalAuthority: Optional[list[Uri]]
     hasVariant: Optional[list[Variant]]
     isMemberOfMADSCollection: str
