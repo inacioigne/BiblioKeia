@@ -1,0 +1,205 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/17012664> a bf:Work ;
+    bflc:aap "Chen, Hsinchun. Dark Web : exploring and data mining the dark side of the web" .
+
+<http://id.loc.gov/resources/works/19755415> a bf:Work ;
+    bflc:aap "Information Resources Management Association, dark web : breakthroughs in research and practice" .
+
+<http://id.loc.gov/resources/works/20616886> a bf:Work ;
+    bflc:aap "Gehl, Robert W., Weaving the dark web : legitimacy on Freenet, Tor, and I2P" .
+
+<http://id.loc.gov/resources/works/20764445> a bf:Work ;
+    bflc:aap "Edwards, Sue Bradford, Dark Web" .
+
+<http://id.loc.gov/resources/works/20809893> a bf:Work ;
+    bflc:aap "Chatfield, Tom, 1980- The Gomorrah gambit" .
+
+<http://id.loc.gov/resources/works/20860122> a bf:Work ;
+    bflc:aap "Encyclopedia of criminal activities and the Deep Web" .
+
+<http://id.loc.gov/resources/works/20865290> a bf:Work ;
+    bflc:aap "Ozkaya, Erdal, Inside the dark web" .
+
+<http://id.loc.gov/resources/works/21404571> a bf:Work ;
+    bflc:aap "Martin, James, 1981- Cyrptomarkets" .
+
+<http://id.loc.gov/resources/works/21632846> a bf:Work ;
+    bflc:aap "Ozkaya, Erdal Inside the dark web" .
+
+<http://id.loc.gov/resources/works/22307723> a bf:Work ;
+    bflc:aap "Murray, Drew (Novelist) Broken genius" .
+
+<http://id.loc.gov/resources/works/22362825> a bf:Work ;
+    bflc:aap "Dark Web pattern recognition and crime analysis using machine intelligence" .
+
+<http://id.loc.gov/resources/works/22369450> a bf:Work ;
+    bflc:aap "Dark Web pattern recognition and crime analysis using machine intelligence" .
+
+<http://id.loc.gov/resources/works/22423597> a bf:Work ;
+    bflc:aap "Lund, Brady, 1994- A guide to using the anonymous web in libraries and information organizations" .
+
+<http://id.loc.gov/resources/works/22443638> a bf:Work ;
+    bflc:aap "Lund, Brady, 1994- A guide to using the anonymous web in libraries and information organizations" .
+
+<http://id.loc.gov/resources/works/22555559> a bf:Work ;
+    bflc:aap "Using computational intelligence for the dark web and illicit behavior detection" .
+
+<http://id.loc.gov/resources/works/22562352> a bf:Work ;
+    bflc:aap "Encyclopedia of criminal activities and the Deep Web" .
+
+<http://id.loc.gov/resources/works/22562359> a bf:Work ;
+    bflc:aap "Edwards, Sue Bradford The Dark Web" .
+
+<http://id.loc.gov/resources/works/22681260> a bf:Work ;
+    bflc:aap "Using computational intelligence for the dark web and illicit behavior detection" .
+
+<http://id.loc.gov/resources/works/22717497> a bf:Work ;
+    bflc:aap "Hostettler, Otto, 1967- Underground Economy" .
+
+<http://id.loc.gov/resources/works/22851048> a bf:Work ;
+    bflc:aap "Topor, Lev Phishing for Nazis" .
+
+<http://id.loc.gov/resources/works/22869491> a bf:Work ;
+    bflc:aap "Topor, Lev Phishing for Nazis" .
+
+<http://id.loc.gov/resources/works/22871426> a bf:Work ;
+    bflc:aap "Nicaso, Antonio The dark mafia" .
+
+<http://id.loc.gov/resources/works/22983379> a bf:Work ;
+    bflc:aap "Eaton, Kit What the f*ck is the Dark Web?" .
+
+<http://id.loc.gov/authorities/subjects/sh2008009697> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Invisible Web"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Invisible Web"@en ] ) ;
+    skos:prefLabel "Invisible Web"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2018002121> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    bflc:marcKey "150  $aDark Web" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/17012664>,
+        <http://id.loc.gov/resources/works/19755415>,
+        <http://id.loc.gov/resources/works/20616886>,
+        <http://id.loc.gov/resources/works/20764445>,
+        <http://id.loc.gov/resources/works/20809893>,
+        <http://id.loc.gov/resources/works/20860122>,
+        <http://id.loc.gov/resources/works/20865290>,
+        <http://id.loc.gov/resources/works/21404571>,
+        <http://id.loc.gov/resources/works/21632846>,
+        <http://id.loc.gov/resources/works/22307723>,
+        <http://id.loc.gov/resources/works/22362825>,
+        <http://id.loc.gov/resources/works/22369450>,
+        <http://id.loc.gov/resources/works/22423597>,
+        <http://id.loc.gov/resources/works/22443638>,
+        <http://id.loc.gov/resources/works/22555559>,
+        <http://id.loc.gov/resources/works/22562352>,
+        <http://id.loc.gov/resources/works/22562359>,
+        <http://id.loc.gov/resources/works/22681260>,
+        <http://id.loc.gov/resources/works/22717497>,
+        <http://id.loc.gov/resources/works/22851048>,
+        <http://id.loc.gov/resources/works/22869491>,
+        <http://id.loc.gov/resources/works/22871426>,
+        <http://id.loc.gov/resources/works/22983379> ;
+    identifiers:lccn "sh2018002121" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2018-08-07T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dgpo> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2019-01-24T10:09:11"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Dark Web"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Dark Web"@en ] ) ;
+    madsrdf:exampleNote "Note under [Invisible Web]" ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh2008009697> ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/2003430> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "\"Dark Web 101\" (darknet refers to the peer-to-peer network itself, whereas dark web is the content served up on these networks)"@en ;
+            madsrdf:citationSource "CNET website, Oct. 29, 2018:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "Merriam-Webster online, Aug. 13, 2018;Web. 3" ;
+            madsrdf:citationStatus "notfound" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(There are also parts of the Invisible Web that are only accessible via specialized software, these parts are most commonly known as the Dark Web or DarkNet. The Dark Web can best be described as the 'seedy underbelly' of the web; shady dealings and illegalities can be found here, but it's also becoming a haven for journalists and whistleblowers, ... In order to visit the Dark Web, users must install special software that anonymizes their network connections)"@en ;
+            madsrdf:citationSource "What is the Dark Web, Aug. 2018, via Lifewire WWW site, Dec. 17, 2018:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "\"Meet Darknet, the hidden, anonymous underbelly of the searchable Web\" (Darknets are small niches of the Deep Web)"@en ;
+            madsrdf:citationSource "PCWorld online, Oct. 29, 2018:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "darknet (refers to networks that are not indexed by search engines, only available to a select group of people, and only accessible via authorization, specific software and configurations; includes academic databases and corporate sites, as well as those with shadier subjects; includes peer-to-peer networks and self-hosted websites; became a haven for free speech and expression, especially in countries where the Internet is heavily policed and blocked) dark Web (dark Web can be visited by anyone on the Internet but requires special kinds of software to access; ranges from small peer-to-peer networks to large networks such as Freenet, I2P and Tor; mostly used in black markets as it promises total anonymity)"@en ;
+            madsrdf:citationSource "Techopedia online dictionary, Oct. 29, 2018:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "search: darknet, result: dark Internet ([2nd definition:] dark web) dark web (the portion of the Internet that is intentionally hidden from search engines, uses masked IP addresses, and is accessible only with a special web browser; part of the deep web) Everything after Z, \"The Deep Web vs. The Dark Web\" (deep web accounts for 90-something percent of the Internet, while the dark web likely accounts for about .01%; dark web, sometimes referred to as Darknet; dark web isn't all illicit deals and seedy undertakings; journalists use the dark web to help protect the anonymity of their sources, and others use it because they believe strongly in their right to privacy; dark web and deep web are not interchangeable)"@en ;
+            madsrdf:citationSource "Dictionary.com, Oct. 29, 2018:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "p. 19 (darknet)"@en ;
+            madsrdf:citationSource "Work cat: United States. Congress. Commission on Security and Cooperation in Europe. The opioid crisis and the Dark Web, 2018:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Darknet"@en ] ) ;
+            madsrdf:variantLabel "Darknet"@en ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Dark Internet"@en ] ) ;
+            madsrdf:variantLabel "Dark Internet"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    madsrdf:note "Here are entered works on the portion of the World Wide Web that is intentionally hidden from search engines and is accessible only with anonymity software and special authorizations. Works on the portion of the World Wide Web that may not be accessible through general-purpose search engines are entered under [Invisible Web.]" ;
+    owl:sameAs <http://id.loc.gov/authorities/sh2018002121#concept>,
+        <info:lc/authorities/sh2018002121> ;
+    skos:altLabel "Dark Internet"@en,
+        "Darknet"@en ;
+    skos:broader <http://id.loc.gov/authorities/subjects/sh2008009697> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "2018-08-07T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dgpo> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh2018002121> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2019-01-24T10:09:11"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh2018002121> ] ;
+    skos:closeMatch <http://id.worldcat.org/fast/2003430> ;
+    skos:example "Note under [Invisible Web]" ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:note "Here are entered works on the portion of the World Wide Web that is intentionally hidden from search engines and is accessible only with anonymity software and special authorizations. Works on the portion of the World Wide Web that may not be accessible through general-purpose search engines are entered under [Invisible Web.]" ;
+    skos:prefLabel "Dark Web"@en ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Dark Internet"@en ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Darknet"@en ] .
+
+<http://id.worldcat.org/fast/2003430> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Dark Web" ;
+    skos:prefLabel "Dark Web" .
+

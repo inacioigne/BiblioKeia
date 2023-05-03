@@ -29,21 +29,7 @@ async def post_authority(request: Authority):
         "solr": responseSolr
         } 
 
-# Import 
-@router.post("/import/loc", status_code=201) 
-async def post_authority(request: Authority):
-    # id = GenerateId()
 
-    # graph = MakeGraph(request, id)
-    # response = fuseki_update.run_sparql(graph)
-    # doc = MakeDoc(request, id)
-    # responseSolr = solr.add([doc], commit=True)
-
-    return {
-        "id": id,
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
 
 # Delete URI
 @router.delete("/uri", status_code=200) 

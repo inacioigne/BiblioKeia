@@ -47,8 +47,9 @@ class AdminMetadata(BaseModel):
     descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     creationDate: date = Field(default=date.today())
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
-    generationProcess: GenerationProcess
-    identifiedBy: IdentifiedBy
+    generationProcess: str = Field(default="BiblioKeia v.1")
+    generationDate: datetime = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
+    identifiedBy: list[IdentifiedBy]
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
 class Authority(BaseModel):
