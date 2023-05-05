@@ -24,11 +24,6 @@ from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Eleme
 #             raise ValueError(f"Mads deve ser um dos seguintes valores: {', '.join(cls._mads)}")
 #         return v
 
-
-# class EditVariant(BaseModel):
-#     oldVariant: Authority
-#     newVariant: Authority
-
 class Subject(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 
@@ -41,4 +36,4 @@ class Subject(BaseModel):
     hasNarrowerExternalAuthority: Optional[list[Uri]]
     hasVariant: Optional[list[Variant]]
     subjectOf: Optional[list[Uri]]
-    isMemberOfMADSCollection: str = Field(default='http://bibliokeia.com/authorities/Topic/')
+    isMemberOfMADSCollection: str

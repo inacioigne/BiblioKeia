@@ -17,20 +17,17 @@ def ParserSubject(graph, authority):
        }}"""
   r = graph.query(qtype)
   tipo = r.bindings[0].get('type').split("#")[1]
-
-  # identifiers
-  qlccn = f"""{prefix}
-  SELECT ?o WHERE {{ 
-      <{authority}> identifiers:lccn ?o }}"""
-  [lccn] = [i[0].value for i in graph.query(qlccn) ]
+  
 
   # adminMetadata
   adminMetadata = {
       "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
       "identifiedBy": [ {
           "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
-          "value": lccn        
-      }]
+          "value": authority.split('/')[-1]        
+      }],
+      
+      
   }
   # ElementList
   qElementList = f"""{prefix}
@@ -56,9 +53,11 @@ def ParserSubject(graph, authority):
   obj = {
      "type": tipo,
       "adminMetadata": adminMetadata,
-      "elementList": elementList
+      "elementList": elementList,
+      "isMemberOfMADSCollection": f'http://bibliokeia.com/authorities/{tipo}/'
   }
-# Note 
+
+  # Note 
   qNote = f"""{prefix}
   SELECT ?note WHERE {{ 
       <{authority}> madsrdf:note ?note .
