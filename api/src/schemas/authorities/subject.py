@@ -4,26 +4,6 @@ from datetime import datetime
 from src.schemas.authorities.mads import Authority
 from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Element
 
-# class Uri(BaseModel):
-#     uri: str
-#     mads: str
-#     type: str
-
-#     _mads = [
-#         "hasReciprocalAuthority", 
-#         "hasBroaderAuthority",
-#         "hasNarrowerAuthority",
-#         "hasCloseExternalAuthority",
-#         "hasExactExternalAuthority",
-#         "subjectOf"
-#         ]
-
-#     @validator('mads')
-#     def mads_permitido(cls, v):
-#         if v not in cls._mads:
-#             raise ValueError(f"Mads deve ser um dos seguintes valores: {', '.join(cls._mads)}")
-#         return v
-
 class Subject(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 
