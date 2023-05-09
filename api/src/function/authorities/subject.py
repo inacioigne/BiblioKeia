@@ -3,7 +3,6 @@ from src.schemas.authorities.subject import Subject
 
 def ParserSubject(graph, authority):
       
-#   authority = 'http://id.loc.gov/authorities/subjects/sh2018002121'
   prefix = """PREFIX identifiers: <http://id.loc.gov/vocabulary/identifiers/>
   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
   PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>"""
@@ -23,11 +22,10 @@ def ParserSubject(graph, authority):
   adminMetadata = {
       "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
       "identifiedBy": [ {
+         "type": "Lccn",
           "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
           "value": authority.split('/')[-1]        
-      }],
-      
-      
+      }]      
   }
   # ElementList
   qElementList = f"""{prefix}

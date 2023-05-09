@@ -39,6 +39,7 @@ class Status(BaseModel):
     label: str = Field(default="novo")
 
 class IdentifiedBy(BaseModel):
+    type: str = Field(default='Local')
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     value: str
 
@@ -73,3 +74,4 @@ class Authority(BaseModel):
     hasNarrowerExternalAuthority: Optional[list[Uri]]
     hasVariant: Optional[list[Variant]]
     isMemberOfMADSCollection: str
+

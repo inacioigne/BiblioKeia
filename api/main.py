@@ -50,7 +50,7 @@ app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
 app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 # Authorities
-# app.include_router(mads.router, prefix='/authorities', tags=['Authorities'])
+app.include_router(mads.router, prefix='/authorities', tags=['Authorities'])
 app.include_router(loc.router, prefix='/authorities', tags=['Authorities'])
 
 # app.include_router(topic.router, prefix='/authorities', tags=['Authorities Topic'])

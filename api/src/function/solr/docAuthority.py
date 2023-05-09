@@ -50,3 +50,17 @@ def MakeDoc(request, id):
         doc['hasVariant'] = MakeVariantLabel(request.hasVariant)
 
     return doc
+
+def MakeDocSubject(request, id):
+    doc = {
+            'id': id,
+            'type': request.type,
+            "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
+            "label": f'{MakeLabel(request.elementList)}' ,
+            "isMemberOfMADSCollection": request.isMemberOfMADSCollection
+        }
+    for k, v in request:
+        if v and k not in ['type', 'adminMetadata', 'elementList', 'isMemberOfMADSCollection']:
+                uri = [{'uri': i.value, 'label': i.label.value, 'lang': i.label.lang} for i in v]
+                doc[f'{k}'] = uri
+    return doc
