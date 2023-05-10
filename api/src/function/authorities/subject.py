@@ -95,9 +95,9 @@ def ParserSubject(graph, authority):
 
   # URIS
   metadados = ['hasBroaderAuthority', 
-               'hasCloseExternalAuthority',
+  'hasNarrowerAuthority',
+  'hasCloseExternalAuthority',
     'hasExactExternalAuthority',
-    'hasNarrowerAuthority',
     'hasNarrowerExternalAuthority']
   for metadado in metadados:
      obj = GetUri(obj, metadado, authority, graph)

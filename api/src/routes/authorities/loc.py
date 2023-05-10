@@ -1,21 +1,25 @@
 from fastapi import APIRouter, HTTPException
 from rdflib import Graph
+from src.function.loc.graphExist import GraphExist
 from src.routes.translate.makeTranslate import MakeTranslate
-# from src.function.authorities.makeGraph import MakeGraphSubject
-
 from src.function.authorities.subject import ParserSubject
 from src.schemas.authorities.subject import Subject
 
 from src.function.authorities.generateID import GenerateId
 
 router = APIRouter()
+graph = Graph()
 
 # Get Authority Loc
 @router.get("/loc/subject", status_code=200, response_model=Subject) 
 async def get_subject(uri: str):
-    graph = Graph()
+
+    exist = GraphExist(uri)
+    if exist:
+        raise HTTPException(status_code=409, detail="Esse registro já existe")
+    
     graph.parse(f'{uri}.rdf')
-    # id = GenerateId()
+
     response = ParserSubject(graph, uri)
     # MakeTranslate
     translator = MakeTranslate(

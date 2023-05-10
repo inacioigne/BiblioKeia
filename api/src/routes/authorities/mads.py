@@ -17,7 +17,7 @@ solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 # Add Autority
 @router.post("/mads/subject/", status_code=201) 
 async def post_subject(request: Subject):
-    # return request.dict()
+  
     id = GenerateId()
 
     graph = MakeGraphSubject(request, id)
