@@ -7,7 +7,7 @@ from src.function.authorities.edit_uri import DelMads, PostMads
 from src.function.authorities.personalName.docPersonalName import GetLabelLoc
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId
-from src.function.solr.docAuthority import MakeDocSubject
+from src.function.solr.docSubject import MakeDocSubject
 from src.schemas.authorities.subject import Subject
 
 router = APIRouter()

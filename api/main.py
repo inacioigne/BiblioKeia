@@ -5,8 +5,8 @@ from src.routes.users import login
 from src.routes.users import users
 from src.routes.cataloguing import images, generateId, work, instances, items, hub
 from src.routes.translate import translate
-from src.routes.thesaurus import subjects
-from src.routes.thesaurus import names
+# from src.routes.thesaurus import subjects
+# from src.routes.thesaurus import names
 # from src.routes.authorities import topic, personalName
 from src.routes.authorities import mads, loc
 import uvicorn
@@ -47,8 +47,8 @@ app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work']
 app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
-app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
-app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
+# app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
+# app.include_router(names.router, prefix='/thesaurus', tags=['Thesaurus Names'])
 # Authorities
 app.include_router(mads.router, prefix='/authorities', tags=['Authorities'])
 app.include_router(loc.router, prefix='/authorities', tags=['Authorities'])

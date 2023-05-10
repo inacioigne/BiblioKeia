@@ -7,7 +7,7 @@ def GetUriBK(url):
     token = url.split("/")[-1]
     queryBK = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
       PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
       SELECT ?uri ?label WHERE {{ graph ?g {{
           ?uri madsrdf:authoritativeLabel ?label .
         ?sub bf:identifiedBy ?identifiedBy .

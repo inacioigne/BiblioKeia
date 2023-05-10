@@ -1,50 +1,66 @@
-import pysolr 
+#from api.src.function.authorities.makeLabel import ComponentLabel
+from src.function.authorities.makeLabel import ComponentLabel
+def MakeLabel(elementList):
+    labels = [i.elementValue.value for i in elementList]
+    label = ", ".join(labels)
+    
+    return label
 
-#SOLR
-solr = pysolr.Solr('http://localhost:8983/solr/authorities/', timeout=10)
+def MakeVariantLabel(hasVariant):
+    variantes = list()
+    for i in hasVariant:
+        if i.type =='ComplexSubject':
+            label = "--".join([j.elementList.elementValue.value for j in i.componentList])
+            variantes.append(label)
+        else:
+            label = ", ".join([j.elementValue.value for j in i.elementList])
+            variantes.append(label)
 
+    return variantes
 
-def DocSubject(request):
-
+def MakeDoc(request, id):
     doc = {
-        "id": request.tokenLSCH,
-        "type": "Topic",
-        "authority": request.authority.value
+        'id': id,
+        'type': request.type,
+        "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
+        "label": f'{MakeLabel(request.elementList)}' if request.elementList else f'{ComponentLabel(request.componentList)}' ,
+        "isMemberOfMADSCollection": request.isMemberOfMADSCollection
+    }
+    if request.fullerName:
+        doc['fullerName'] = request.fullerName.elementValue.value
+    if request.birthDate:
+        doc['birthDate'] = request.birthDate
+    if request.birthPlace:
+        doc['birthPlace'] = request.birthPlace.label
+    if request.deathDate:
+        doc['deathDate'] = request.deathDate
+    if request.occupation:
+        doc['occupation'] = [i.label for i in request.occupation]
+    if request.hasAffiliation:
+        doc['hasAffiliation'] = [i.dict() for i in request.hasAffiliation]
+    if request.hasBroaderAuthority:
+        doc['hasBroaderAuthority']  = "TESTE"
+    if request.hasCloseExternalAuthority:
+        doc['hasCloseExternalAuthority']  = [i.dict() for i in request.hasCloseExternalAuthority]
+    if request.hasExactExternalAuthority:
+        doc['hasExactExternalAuthority']  = [i.dict() for i in request.hasExactExternalAuthority]
+    if request.hasNarrowerAuthority:
+        doc['hasNarrowerAuthority']  = [i.dict() for i in request.hasNarrowerAuthority]
+    if request.hasVariant:
+        doc['hasVariant'] = MakeVariantLabel(request.hasVariant)
+
+    return doc
+
+def MakeDocSubject(request, id):
+    doc = {
+            'id': id,
+            'type': request.type,
+            "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
+            "label": f'{MakeLabel(request.elementList)}' ,
+            "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
-    
-    variants = list()
-    for variant in request.variant:
-        variants.append(variant.value)
-    doc["variants"] = variants
-
-    broaders = list()
-    for broader in request.broader:
-        broaders.append(broader.value) 
-    doc["broaders"] = broaders
-
-    narrowers = list()
-    for narrower in request.narrower:
-        narrowers.append(narrower.value)  
-    doc["narrowers"] = narrowers 
-
-    reciprocalAuthoritys = list()
-    for reciprocalAuthority in request.reciprocalAuthority:
-        reciprocalAuthoritys.append(reciprocalAuthority.value) 
-    doc["reciprocalAuthoritys"] = reciprocalAuthoritys 
-
-    rs = solr.add([doc], commit=True)
-    print(rs, doc)
-
-def EditDocSubject(request, subject_id):
-
-    doc = {"id": subject_id}
     for k, v in request:
-        if v:
-             if k == 'authority':
-                 doc['authority'] = {"set": v.value}
-
-    solr.add([doc], commit=True)
-
-    
-    
-    
+        if v and k not in ['type', 'adminMetadata', 'elementList', 'isMemberOfMADSCollection']:
+                uri = [{'uri': i.value, 'label': i.label.value, 'lang': i.label.lang} for i in v]
+                doc[f'{k}'] = uri
+    return doc

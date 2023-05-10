@@ -41,6 +41,7 @@ def MakeGraphSubject(request, id):
             bf:status {request.adminMetadata.status.value} ] ; 
             { f'madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ; ' if request.elementList else  f'madsrdf:authoritativeLabel "{ComponentLabel(request.componentList)}" ; '} 
             { f'madsrdf:elementList ( {MakeElement(request.elementList)} ) ; ' if request.elementList else ''} 
+            { f'madsrdf:hasNarrowerAuthority {", ".join([ f"<{i.value}>" for i in request.hasNarrowerAuthority])} ;' if request.hasNarrowerAuthority else ''}
             { f'madsrdf:hasBroaderAuthority {", ".join([ f"<{i.value}>" for i in request.hasBroaderAuthority])} ;' if request.hasBroaderAuthority else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}

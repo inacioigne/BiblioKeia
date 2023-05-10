@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from rdflib import Graph
+from src.function.loc.makeTranslateLoc import MakeTranslateLoc
 from src.function.loc.graphExist import GraphExist
 from src.routes.translate.makeTranslate import MakeTranslate
 from src.function.authorities.subject import ParserSubject
@@ -8,7 +9,7 @@ from src.schemas.authorities.subject import Subject
 from src.function.authorities.generateID import GenerateId
 
 router = APIRouter()
-graph = Graph()
+
 
 # Get Authority Loc
 @router.get("/loc/subject", status_code=200, response_model=Subject) 
@@ -17,23 +18,24 @@ async def get_subject(uri: str):
     exist = GraphExist(uri)
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
-    
+    graph = Graph()
     graph.parse(f'{uri}.rdf')
 
-    response = ParserSubject(graph, uri)
+    subject = ParserSubject(graph, uri)
     # MakeTranslate
-    translator = MakeTranslate(
-            source_language='en',
-            target_language='pt',
-            timeout=10
-        )
-    for k, v in response:
-        if k == 'elementList':
-            for j in v:
-                term = j.elementValue.value
-                result = translator.translate(term)
-                j.elementValue.value = result.capitalize()
-                j.elementValue.lang = 'pt'
+    subject = MakeTranslateLoc(subject)
+    # translator = MakeTranslate(
+    #         source_language='en',
+    #         target_language='pt',
+    #         timeout=10
+    #     )
+    # for k, v in response:
+    #     if k == 'elementList':
+    #         for j in v:
+    #             term = j.elementValue.value
+    #             result = translator.translate(term)
+    #             j.elementValue.value = result.capitalize()
+    #             j.elementValue.lang = 'pt'
 
 
-    return response.dict()
+    return subject.dict()
