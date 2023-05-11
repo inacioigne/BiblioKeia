@@ -9,7 +9,7 @@ class Label(BaseModel):
 class Uri(BaseModel):
     value: str
     label: Label
-    #base: Optional[str]
+    base: Optional[str]
 
 class Element(BaseModel):
     type: str
