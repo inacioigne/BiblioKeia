@@ -1,3 +1,4 @@
+from src.function.loc.hasReciprocal import GetHasReciprocal
 from .ElementList import GetElementList
 from .HasBroader import GetHasBroader
 from .getType import GetType
@@ -63,8 +64,9 @@ def ParserSubject(graph, authority):
   
   # CloseExternal
   obj = GetCloseExternal(authority, graph, obj)
-
+ 
   # hasReciprocalAuthority
+  obj = GetHasReciprocal(authority, graph, obj)
   response = Subject(**obj)
 
   return response

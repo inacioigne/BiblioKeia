@@ -1,0 +1,989 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/10024914> a bf:Work ;
+    bflc:aap "Toshokan kenkyū shirīzu 図書館硏究シリーズ" .
+
+<http://id.loc.gov/resources/works/10067125> a bf:Work ;
+    bflc:aap "Edwards, Edward, 1812-1886 Memoirs of libraries" .
+
+<http://id.loc.gov/resources/works/1007191> a bf:Work ;
+    bflc:aap "Berman, Sanford, 1933- Worth noting" .
+
+<http://id.loc.gov/resources/works/10074062> a bf:Work ;
+    bflc:aap "Dewey, Melvil, 1851-1931 ... Library school rules: 1. Card catalog rules" .
+
+<http://id.loc.gov/resources/works/10083356> a bf:Work ;
+    bflc:aap "Société Franklin, Paris Bulletin .." .
+
+<http://id.loc.gov/resources/works/10127091> a bf:Work ;
+    bflc:aap "Dana, John Cotton, 1856-1929. library primer," .
+
+<http://id.loc.gov/resources/works/10157493> a bf:Work ;
+    bflc:aap "Doubleday, W. E. (William Elliott), 1865- primer of librarianship, being chapters of practical instruction by recognised authorities," .
+
+<http://id.loc.gov/resources/works/10236700> a bf:Work ;
+    bflc:aap "Broadfield, A. philosophy of librarianship" .
+
+<http://id.loc.gov/resources/works/10268907> a bf:Work ;
+    bflc:aap "Elliott, Charles A. Library tecnique" .
+
+<http://id.loc.gov/resources/works/10298385> a bf:Work ;
+    bflc:aap "Harrison, K. C. (Kenneth Cecil) First steps in librarianship: a students' guide" .
+
+<http://id.loc.gov/resources/works/1032830> a bf:Work ;
+    bflc:aap "Ranganathan, S. R. (Shiyali Ramamrita), 1892-1972. five laws of library science" .
+
+<http://id.loc.gov/resources/works/10342099> a bf:Work ;
+    bflc:aap "Sharma, Jagdish Saran, 1924-1993. substance of library science" .
+
+<http://id.loc.gov/resources/works/10531140> a bf:Work ;
+    bflc:aap "Dana, John Cotton, 1856-1929 library primer" .
+
+<http://id.loc.gov/resources/works/10533272> a bf:Work ;
+    bflc:aap "American Library Association Proceedings of the ... annual conference .." .
+
+<http://id.loc.gov/resources/works/10540243> a bf:Work ;
+    bflc:aap "American Library Association Leads" .
+
+<http://id.loc.gov/resources/works/10545691> a bf:Work ;
+    bflc:aap "Thư-viên tâp san" .
+
+<http://id.loc.gov/resources/works/10556129> a bf:Work ;
+    bflc:aap "Journal" .
+
+<http://id.loc.gov/resources/works/10563527> a bf:Work ;
+    bflc:aap "Čtenář" .
+
+<http://id.loc.gov/resources/works/10570346> a bf:Work ;
+    bflc:aap "Mitteilungen und Materialien" .
+
+<http://id.loc.gov/resources/works/10581160> a bf:Work ;
+    bflc:aap "Biuletyn-Biblioteki Jagiellońskiej" .
+
+<http://id.loc.gov/resources/works/10629971> a bf:Work ;
+    bflc:aap "Bibliotecas" .
+
+<http://id.loc.gov/resources/works/10642454> a bf:Work ;
+    bflc:aap "College of Librarianship, Wales. Students projects" .
+
+<http://id.loc.gov/resources/works/10654477> a bf:Work ;
+    bflc:aap "Jaipur India (Rajasthan). University of Rajasthan. Department of Library Science. Das Gupta studies in library service" .
+
+<http://id.loc.gov/resources/works/10660038> a bf:Work ;
+    bflc:aap "Bulletin" .
+
+<http://id.loc.gov/resources/works/10682534> a bf:Work ;
+    bflc:aap "Havana. Biblioteca Municipal. Publicaciones" .
+
+<http://id.loc.gov/resources/works/10702036> a bf:Work ;
+    bflc:aap "Jiao yu zi liao yu tu shu guan xue 敎育資料與圖書館學" .
+
+<http://id.loc.gov/resources/works/10705199> a bf:Work ;
+    bflc:aap "Kingston, Ont. Queen's University. Library. Douglas Library occasional papers" .
+
+<http://id.loc.gov/resources/works/10710123> a bf:Work ;
+    bflc:aap "Leicestershire, Eng. County Library. Report series" .
+
+<http://id.loc.gov/resources/works/10710552> a bf:Work ;
+    bflc:aap "Library Association. Library History Group. Occasional publication" .
+
+<http://id.loc.gov/resources/works/10712087> a bf:Work ;
+    bflc:aap "Publications" .
+
+<http://id.loc.gov/resources/works/10713262> a bf:Work ;
+    bflc:aap "London. North-western Polytechnic. School of Librarianship. Occasional papers" .
+
+<http://id.loc.gov/resources/works/10727539> a bf:Work ;
+    bflc:aap "Library series" .
+
+<http://id.loc.gov/resources/works/10732040> a bf:Work ;
+    bflc:aap "Mysore Library Association. Mysore library Association series" .
+
+<http://id.loc.gov/resources/works/10752272> a bf:Work ;
+    bflc:aap "Organization of American States. Library Development Program. Cuadernos bibliotecológicos" .
+
+<http://id.loc.gov/resources/works/10752656> a bf:Work ;
+    bflc:aap "Oregon. State Library, Salem. Library research paper" .
+
+<http://id.loc.gov/resources/works/10756120> a bf:Work ;
+    bflc:aap "Pakistan library review" .
+
+<http://id.loc.gov/resources/works/10760696> a bf:Work ;
+    bflc:aap "Posen. Uniwersytet. Biblioteka" .
+
+<http://id.loc.gov/resources/works/10760873> a bf:Work ;
+    bflc:aap "Pretoria. State Library. Contributions to library science" .
+
+<http://id.loc.gov/resources/works/10790071> a bf:Work ;
+    bflc:aap "Stockholm. Kungliga Biblioteket. Acta Bibliothecæ Regiæ Stockholmiensis" .
+
+<http://id.loc.gov/resources/works/10793336> a bf:Work ;
+    bflc:aap "Sveriges allmänna biblioteksförening. Sveriges allmänna biblioteksförenings småskrifter" .
+
+<http://id.loc.gov/resources/works/10800381> a bf:Work ;
+    bflc:aap "Toshokankai 図書館界" .
+
+<http://id.loc.gov/resources/works/10868594> a bf:Work ;
+    bflc:aap "Godišnjak Годишњак" .
+
+<http://id.loc.gov/resources/works/10870665> a bf:Work ;
+    bflc:aap "Bengal Library Association. English series" .
+
+<http://id.loc.gov/resources/works/10879920> a bf:Work ;
+    bflc:aap "Az Országos Széchényi Könyvtár évkönyve" .
+
+<http://id.loc.gov/resources/works/10901772> a bf:Work ;
+    bflc:aap "Columbia university. Library. Annual report" .
+
+<http://id.loc.gov/resources/works/10915710> a bf:Work ;
+    bflc:aap "Drexel Institute of Technology, Philadelphia. Graduate School of Library Science. Drexel Library School series" .
+
+<http://id.loc.gov/resources/works/10971043> a bf:Work ;
+    bflc:aap "Könyvtártudományi beszámoló" .
+
+<http://id.loc.gov/resources/works/10971045> a bf:Work ;
+    bflc:aap "Budapest. Országos Könyvtári Központ. Könyvtárügyi szemle" .
+
+<http://id.loc.gov/resources/works/10975509> a bf:Work ;
+    bflc:aap "Tu shu guan xue ji kan 圖書館學季刊" .
+
+<http://id.loc.gov/resources/works/10977001> a bf:Work ;
+    bflc:aap "Lietuvos Mokslų akademija. Biblioteka. Bibliotekininkystė ir bibliografija" .
+
+<http://id.loc.gov/resources/works/11012754> a bf:Work ;
+    bflc:aap "Pennsylvania. State Library, Harrisburg. Monograph" .
+
+<http://id.loc.gov/resources/works/11021552> a bf:Work ;
+    bflc:aap "Prague. Universita Karlova. Knihovna. Ročenka" .
+
+<http://id.loc.gov/resources/works/11037938> a bf:Work ;
+    bflc:aap "Saratov, Russia (City) Universitet. Nauchnai︠a︡ biblioteka. Trudy" .
+
+<http://id.loc.gov/resources/works/11056250> a bf:Work ;
+    bflc:aap "Karnatak University, Dharwar, India. Library Science Association. Timeless fellowship" .
+
+<http://id.loc.gov/resources/works/11061254> a bf:Work ;
+    bflc:aap "Unesco. Department of Cultural Activities. Resumen de los programas de la UNESCO sobre bibliotecas y bibliográfias" .
+
+<http://id.loc.gov/resources/works/11067564> a bf:Work ;
+    bflc:aap "Bibliotekoznanie, bibliografii︠a︡, knigoznanie Библиотекознание, библиография, книгознание" .
+
+<http://id.loc.gov/resources/works/11094196> a bf:Work ;
+    bflc:aap "West Virginia university. Library. Library publication" .
+
+<http://id.loc.gov/resources/works/11100550> a bf:Work ;
+    bflc:aap "Russell, Harold Garfield, 1889-1956. Use of books and libraries" .
+
+<http://id.loc.gov/resources/works/11120312> a bf:Work ;
+    bflc:aap "United States. Work Projects Administration. W. P. A. technical series: library service circular" .
+
+<http://id.loc.gov/resources/works/11133494> a bf:Work ;
+    bflc:aap "Library Association Annual report of the Council of the Association for the year ended .." .
+
+<http://id.loc.gov/resources/works/11133681> a bf:Work ;
+    bflc:aap "Library journal" .
+
+<http://id.loc.gov/resources/works/11134025> a bf:Work ;
+    bflc:aap "The Library" .
+
+<http://id.loc.gov/resources/works/11134026> a bf:Work ;
+    bflc:aap "Zentralblatt für Bibliothekswesen" .
+
+<http://id.loc.gov/resources/works/11134027> a bf:Work ;
+    bflc:aap "The Assistant librarian" .
+
+<http://id.loc.gov/resources/works/11134028> a bf:Work ;
+    bflc:aap "Library Association Library Association record" .
+
+<http://id.loc.gov/resources/works/11134029> a bf:Work ;
+    bflc:aap "Le Bibliographe moderne" .
+
+<http://id.loc.gov/resources/works/11134136> a bf:Work ;
+    bflc:aap "Bulletin of bibliography" .
+
+<http://id.loc.gov/resources/works/11134156> a bf:Work ;
+    bflc:aap "Publications of the Clark University Library" .
+
+<http://id.loc.gov/resources/works/11134482> a bf:Work ;
+    bflc:aap "Association des bibliothécaires français Bulletin de l'Association des bibliothécaires français" .
+
+<http://id.loc.gov/resources/works/11134502> a bf:Work ;
+    bflc:aap "Wisconsin library bulletin" .
+
+<http://id.loc.gov/resources/works/11135801> a bf:Work ;
+    bflc:aap "Minnesota libraries" .
+
+<http://id.loc.gov/resources/works/11136257> a bf:Work ;
+    bflc:aap "Ontario Library Association The Proceedings of the Ontario Library Association" .
+
+<http://id.loc.gov/resources/works/11138158> a bf:Work ;
+    bflc:aap "Biblioteksbladet" .
+
+<http://id.loc.gov/resources/works/11138164> a bf:Work ;
+    bflc:aap "Magyar könyvszemle" .
+
+<http://id.loc.gov/resources/works/11138533> a bf:Work ;
+    bflc:aap "Przegląd biblioteczny" .
+
+<http://id.loc.gov/resources/works/11138564> a bf:Work ;
+    bflc:aap "College and reference library yearbook" .
+
+<http://id.loc.gov/resources/works/11138606> a bf:Work ;
+    bflc:aap "Illinois libraries" .
+
+<http://id.loc.gov/resources/works/11138709> a bf:Work ;
+    bflc:aap "Wilson library bulletin" .
+
+<http://id.loc.gov/resources/works/11139034> a bf:Work ;
+    bflc:aap "The library quarterly" .
+
+<http://id.loc.gov/resources/works/11139349> a bf:Work ;
+    bflc:aap "An Leabharlann" .
+
+<http://id.loc.gov/resources/works/11139635> a bf:Work ;
+    bflc:aap "Library bulletin" .
+
+<http://id.loc.gov/resources/works/11139700> a bf:Work ;
+    bflc:aap "South African libraries" .
+
+<http://id.loc.gov/resources/works/11139765> a bf:Work ;
+    bflc:aap "Library literature" .
+
+<http://id.loc.gov/resources/works/11140134> a bf:Work ;
+    bflc:aap "Pacific Northwest Library Association PNLA quarterly" .
+
+<http://id.loc.gov/resources/works/11140220> a bf:Work ;
+    bflc:aap "The Catholic library world" .
+
+<http://id.loc.gov/resources/works/11140340> a bf:Work ;
+    bflc:aap "Australian Institute of Librarians. Conference. Proceedings and other papers" .
+
+<http://id.loc.gov/resources/works/11141033> a bf:Work ;
+    bflc:aap "College and research libraries" .
+
+<http://id.loc.gov/resources/works/11141336> a bf:Work ;
+    bflc:aap "California librarian" .
+
+<http://id.loc.gov/resources/works/11141790> a bf:Work ;
+    bflc:aap "Bibliotekarz" .
+
+<http://id.loc.gov/resources/works/11141818> a bf:Work ;
+    bflc:aap "New Zealand libraries" .
+
+<http://id.loc.gov/resources/works/11142947> a bf:Work ;
+    bflc:aap "Michigan librarian" .
+
+<http://id.loc.gov/resources/works/11142987> a bf:Work ;
+    bflc:aap "Universidad de Buenos Aires. Instituto Bibliotecológico. Memoria" .
+
+<http://id.loc.gov/resources/works/11143448> a bf:Work ;
+    bflc:aap "American Theological Library Association Summary of proceedings" .
+
+<http://id.loc.gov/resources/works/11143577> a bf:Work ;
+    bflc:aap "Bibliotekarʹ Библиотекарь" .
+
+<http://id.loc.gov/resources/works/11144373> a bf:Work ;
+    bflc:aap "Fénix" .
+
+<http://id.loc.gov/resources/works/11144545> a bf:Work ;
+    bflc:aap "American Library Association A.L.A. membership directory" .
+
+<http://id.loc.gov/resources/works/11144696> a bf:Work ;
+    bflc:aap "Library service news" .
+
+<http://id.loc.gov/resources/works/11144778> a bf:Work ;
+    bflc:aap "Indian librarian" .
+
+<http://id.loc.gov/resources/works/11145137> a bf:Work ;
+    bflc:aap "Occasional papers" .
+
+<http://id.loc.gov/resources/works/11145187> a bf:Work ;
+    bflc:aap "University of California, Berkeley University of California publications in librarianship" .
+
+<http://d-nb.info/gnd/4006465-7> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Bibliothekswissenschaft"@de ;
+    skos:prefLabel "Bibliothekswissenschaft"@de .
+
+<http://data.bnf.fr/ark:/12148/cb119316669> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Bibliothéconomie"@fr ;
+    skos:prefLabel "Bibliothéconomie"@fr .
+
+<http://id.loc.gov/authorities/subjects/sh2004007348> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Medical librarianship"@en ;
+    skos:prefLabel "Medical librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2007007218> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Web librarianship"@en ;
+    skos:prefLabel "Web librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021006014> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Libraries--Special collections--Library science"@en ;
+    skos:prefLabel "Libraries--Special collections--Library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85013838> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Bibliography"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Bibliography"@en ] ) ;
+    skos:prefLabel "Bibliography"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85026747> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Classification--Books--Library science"@en ;
+    skos:prefLabel "Classification--Books--Library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85027982> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Collectanea files"@en ;
+    skos:prefLabel "Collectanea files"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029074> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication in library science"@en ;
+    skos:prefLabel "Communication in library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029300> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Comparative librarianship"@en ;
+    skos:prefLabel "Comparative librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85038731> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Documentation"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Documentation"@en ] ) ;
+    skos:prefLabel "Documentation"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066150> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information science"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Information science"@en ] ) ;
+    skos:prefLabel "Information science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85067425> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "International librarianship"@en ;
+    skos:prefLabel "International librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85076635> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Public services (Libraries)"@en ;
+    skos:prefLabel "Public services (Libraries)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85076723> a madsrdf:Authority, 
+        madsrdf:Topic,
+        skos:Concept ;
+    bflc:marcKey "150  $aLibrary science" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/10024914>,
+        <http://id.loc.gov/resources/works/10067125>,
+        <http://id.loc.gov/resources/works/1007191>,
+        <http://id.loc.gov/resources/works/10074062>,
+        <http://id.loc.gov/resources/works/10083356>,
+        <http://id.loc.gov/resources/works/10127091>,
+        <http://id.loc.gov/resources/works/10157493>,
+        <http://id.loc.gov/resources/works/10236700>,
+        <http://id.loc.gov/resources/works/10268907>,
+        <http://id.loc.gov/resources/works/10298385>,
+        <http://id.loc.gov/resources/works/1032830>,
+        <http://id.loc.gov/resources/works/10342099>,
+        <http://id.loc.gov/resources/works/10531140>,
+        <http://id.loc.gov/resources/works/10533272>,
+        <http://id.loc.gov/resources/works/10540243>,
+        <http://id.loc.gov/resources/works/10545691>,
+        <http://id.loc.gov/resources/works/10556129>,
+        <http://id.loc.gov/resources/works/10563527>,
+        <http://id.loc.gov/resources/works/10570346>,
+        <http://id.loc.gov/resources/works/10581160>,
+        <http://id.loc.gov/resources/works/10629971>,
+        <http://id.loc.gov/resources/works/10642454>,
+        <http://id.loc.gov/resources/works/10654477>,
+        <http://id.loc.gov/resources/works/10660038>,
+        <http://id.loc.gov/resources/works/10682534>,
+        <http://id.loc.gov/resources/works/10702036>,
+        <http://id.loc.gov/resources/works/10705199>,
+        <http://id.loc.gov/resources/works/10710123>,
+        <http://id.loc.gov/resources/works/10710552>,
+        <http://id.loc.gov/resources/works/10712087>,
+        <http://id.loc.gov/resources/works/10713262>,
+        <http://id.loc.gov/resources/works/10727539>,
+        <http://id.loc.gov/resources/works/10732040>,
+        <http://id.loc.gov/resources/works/10752272>,
+        <http://id.loc.gov/resources/works/10752656>,
+        <http://id.loc.gov/resources/works/10756120>,
+        <http://id.loc.gov/resources/works/10760696>,
+        <http://id.loc.gov/resources/works/10760873>,
+        <http://id.loc.gov/resources/works/10790071>,
+        <http://id.loc.gov/resources/works/10793336>,
+        <http://id.loc.gov/resources/works/10800381>,
+        <http://id.loc.gov/resources/works/10868594>,
+        <http://id.loc.gov/resources/works/10870665>,
+        <http://id.loc.gov/resources/works/10879920>,
+        <http://id.loc.gov/resources/works/10901772>,
+        <http://id.loc.gov/resources/works/10915710>,
+        <http://id.loc.gov/resources/works/10971043>,
+        <http://id.loc.gov/resources/works/10971045>,
+        <http://id.loc.gov/resources/works/10975509>,
+        <http://id.loc.gov/resources/works/10977001>,
+        <http://id.loc.gov/resources/works/11012754>,
+        <http://id.loc.gov/resources/works/11021552>,
+        <http://id.loc.gov/resources/works/11037938>,
+        <http://id.loc.gov/resources/works/11056250>,
+        <http://id.loc.gov/resources/works/11061254>,
+        <http://id.loc.gov/resources/works/11067564>,
+        <http://id.loc.gov/resources/works/11094196>,
+        <http://id.loc.gov/resources/works/11100550>,
+        <http://id.loc.gov/resources/works/11120312>,
+        <http://id.loc.gov/resources/works/11133494>,
+        <http://id.loc.gov/resources/works/11133681>,
+        <http://id.loc.gov/resources/works/11134025>,
+        <http://id.loc.gov/resources/works/11134026>,
+        <http://id.loc.gov/resources/works/11134027>,
+        <http://id.loc.gov/resources/works/11134028>,
+        <http://id.loc.gov/resources/works/11134029>,
+        <http://id.loc.gov/resources/works/11134136>,
+        <http://id.loc.gov/resources/works/11134156>,
+        <http://id.loc.gov/resources/works/11134482>,
+        <http://id.loc.gov/resources/works/11134502>,
+        <http://id.loc.gov/resources/works/11135801>,
+        <http://id.loc.gov/resources/works/11136257>,
+        <http://id.loc.gov/resources/works/11138158>,
+        <http://id.loc.gov/resources/works/11138164>,
+        <http://id.loc.gov/resources/works/11138533>,
+        <http://id.loc.gov/resources/works/11138564>,
+        <http://id.loc.gov/resources/works/11138606>,
+        <http://id.loc.gov/resources/works/11138709>,
+        <http://id.loc.gov/resources/works/11139034>,
+        <http://id.loc.gov/resources/works/11139349>,
+        <http://id.loc.gov/resources/works/11139635>,
+        <http://id.loc.gov/resources/works/11139700>,
+        <http://id.loc.gov/resources/works/11139765>,
+        <http://id.loc.gov/resources/works/11140134>,
+        <http://id.loc.gov/resources/works/11140220>,
+        <http://id.loc.gov/resources/works/11140340>,
+        <http://id.loc.gov/resources/works/11141033>,
+        <http://id.loc.gov/resources/works/11141336>,
+        <http://id.loc.gov/resources/works/11141790>,
+        <http://id.loc.gov/resources/works/11141818>,
+        <http://id.loc.gov/resources/works/11142947>,
+        <http://id.loc.gov/resources/works/11142987>,
+        <http://id.loc.gov/resources/works/11143448>,
+        <http://id.loc.gov/resources/works/11143577>,
+        <http://id.loc.gov/resources/works/11144373>,
+        <http://id.loc.gov/resources/works/11144545>,
+        <http://id.loc.gov/resources/works/11144696>,
+        <http://id.loc.gov/resources/works/11144778>,
+        <http://id.loc.gov/resources/works/11145137>,
+        <http://id.loc.gov/resources/works/11145187> ;
+    identifiers:lccn "sh 85076723" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "2010-05-13T13:19:05"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Library science"@en ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "Z665-Z718" ] ;
+    madsrdf:editorialNote "headings beginning with the word [Library]" ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Library science"@en ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4006465-7>,
+        <http://data.bnf.fr/ark:/12148/cb119316669>,
+        <http://id.worldcat.org/fast/997916>,
+        <http://purl.org/bncf/tid/1818>,
+        <http://www.wikidata.org/entity/Q199655>,
+        <http://www.yso.fi/onto/yso/p3713> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh2004007348>,
+        <http://id.loc.gov/authorities/subjects/sh2007007218>,
+        <http://id.loc.gov/authorities/subjects/sh2021006014>,
+        <http://id.loc.gov/authorities/subjects/sh85026747>,
+        <http://id.loc.gov/authorities/subjects/sh85027982>,
+        <http://id.loc.gov/authorities/subjects/sh85029074>,
+        <http://id.loc.gov/authorities/subjects/sh85029300>,
+        <http://id.loc.gov/authorities/subjects/sh85067425>,
+        <http://id.loc.gov/authorities/subjects/sh85076635>,
+        <http://id.loc.gov/authorities/subjects/sh85085826>,
+        <http://id.loc.gov/authorities/subjects/sh85088931>,
+        <http://id.loc.gov/authorities/subjects/sh85094875>,
+        <http://id.loc.gov/authorities/subjects/sh85107141>,
+        <http://id.loc.gov/authorities/subjects/sh85107547>,
+        <http://id.loc.gov/authorities/subjects/sh85111809>,
+        <http://id.loc.gov/authorities/subjects/sh85111836>,
+        <http://id.loc.gov/authorities/subjects/sh85147586>,
+        <http://id.loc.gov/authorities/subjects/sh90006221>,
+        <http://id.loc.gov/authorities/subjects/sh95007591>,
+        <http://id.loc.gov/authorities/subjects/sh98000880>,
+        <http://id.loc.gov/authorities/subjects/sh98001165>,
+        <http://id.loc.gov/authorities/subjects/sh98005480> ;
+    madsrdf:hasNarrowerExternalAuthority <http://id.worldcat.org/fast/997917>,
+        <http://id.worldcat.org/fast/997918>,
+        <http://id.worldcat.org/fast/997919>,
+        <http://id.worldcat.org/fast/997920>,
+        <http://id.worldcat.org/fast/997921>,
+        <http://id.worldcat.org/fast/997923>,
+        <http://id.worldcat.org/fast/997925>,
+        <http://id.worldcat.org/fast/997926>,
+        <http://id.worldcat.org/fast/997927>,
+        <http://id.worldcat.org/fast/997928>,
+        <http://id.worldcat.org/fast/997929>,
+        <http://id.worldcat.org/fast/997935>,
+        <http://id.worldcat.org/fast/997936>,
+        <http://id.worldcat.org/fast/997937>,
+        <http://id.worldcat.org/fast/997938>,
+        <http://id.worldcat.org/fast/997939>,
+        <http://id.worldcat.org/fast/997940>,
+        <http://id.worldcat.org/fast/997943>,
+        <http://id.worldcat.org/fast/997945>,
+        <http://id.worldcat.org/fast/997946>,
+        <http://id.worldcat.org/fast/997947>,
+        <http://id.worldcat.org/fast/997948>,
+        <http://id.worldcat.org/fast/997951>,
+        <http://id.worldcat.org/fast/997953>,
+        <http://id.worldcat.org/fast/997955>,
+        <http://id.worldcat.org/fast/997956>,
+        <http://id.worldcat.org/fast/997957>,
+        <http://id.worldcat.org/fast/997965>,
+        <http://id.worldcat.org/fast/997967>,
+        <http://id.worldcat.org/fast/997973>,
+        <http://id.worldcat.org/fast/997974>,
+        <http://id.worldcat.org/fast/997975>,
+        <http://id.worldcat.org/fast/997976>,
+        <http://id.worldcat.org/fast/997977>,
+        <http://id.worldcat.org/fast/997978>,
+        <http://id.worldcat.org/fast/997979>,
+        <http://id.worldcat.org/fast/997980>,
+        <http://id.worldcat.org/fast/997981>,
+        <http://id.worldcat.org/fast/997982>,
+        <http://id.worldcat.org/fast/997983>,
+        <http://id.worldcat.org/fast/997984>,
+        <http://id.worldcat.org/fast/997985> ;
+    madsrdf:hasReciprocalAuthority <http://id.loc.gov/authorities/subjects/sh85013838>,
+        <http://id.loc.gov/authorities/subjects/sh85038731>,
+        <http://id.loc.gov/authorities/subjects/sh85066150> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Librarianship"@en ] ) ;
+            madsrdf:variantLabel "Librarianship"@en ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Library economy"@en ] ) ;
+            madsrdf:variantLabel "Library economy"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85076723#concept>,
+        <info:lc/authorities/sh85076723> ;
+    skos:altLabel "Librarianship"@en,
+        "Library economy"@en ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85076723> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2010-05-13T13:19:05"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85076723> ] ;
+    skos:closeMatch <http://d-nb.info/gnd/4006465-7>,
+        <http://data.bnf.fr/ark:/12148/cb119316669>,
+        <http://id.worldcat.org/fast/997916>,
+        <http://purl.org/bncf/tid/1818>,
+        <http://www.wikidata.org/entity/Q199655>,
+        <http://www.yso.fi/onto/yso/p3713> ;
+    skos:editorialNote "headings beginning with the word [Library]" ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:narrowMatch <http://id.worldcat.org/fast/997917>,
+        <http://id.worldcat.org/fast/997918>,
+        <http://id.worldcat.org/fast/997919>,
+        <http://id.worldcat.org/fast/997920>,
+        <http://id.worldcat.org/fast/997921>,
+        <http://id.worldcat.org/fast/997923>,
+        <http://id.worldcat.org/fast/997925>,
+        <http://id.worldcat.org/fast/997926>,
+        <http://id.worldcat.org/fast/997927>,
+        <http://id.worldcat.org/fast/997928>,
+        <http://id.worldcat.org/fast/997929>,
+        <http://id.worldcat.org/fast/997935>,
+        <http://id.worldcat.org/fast/997936>,
+        <http://id.worldcat.org/fast/997937>,
+        <http://id.worldcat.org/fast/997938>,
+        <http://id.worldcat.org/fast/997939>,
+        <http://id.worldcat.org/fast/997940>,
+        <http://id.worldcat.org/fast/997943>,
+        <http://id.worldcat.org/fast/997945>,
+        <http://id.worldcat.org/fast/997946>,
+        <http://id.worldcat.org/fast/997947>,
+        <http://id.worldcat.org/fast/997948>,
+        <http://id.worldcat.org/fast/997951>,
+        <http://id.worldcat.org/fast/997953>,
+        <http://id.worldcat.org/fast/997955>,
+        <http://id.worldcat.org/fast/997956>,
+        <http://id.worldcat.org/fast/997957>,
+        <http://id.worldcat.org/fast/997965>,
+        <http://id.worldcat.org/fast/997967>,
+        <http://id.worldcat.org/fast/997973>,
+        <http://id.worldcat.org/fast/997974>,
+        <http://id.worldcat.org/fast/997975>,
+        <http://id.worldcat.org/fast/997976>,
+        <http://id.worldcat.org/fast/997977>,
+        <http://id.worldcat.org/fast/997978>,
+        <http://id.worldcat.org/fast/997979>,
+        <http://id.worldcat.org/fast/997980>,
+        <http://id.worldcat.org/fast/997981>,
+        <http://id.worldcat.org/fast/997982>,
+        <http://id.worldcat.org/fast/997983>,
+        <http://id.worldcat.org/fast/997984>,
+        <http://id.worldcat.org/fast/997985> ;
+    skos:narrower <http://id.loc.gov/authorities/subjects/sh2004007348>,
+        <http://id.loc.gov/authorities/subjects/sh2007007218>,
+        <http://id.loc.gov/authorities/subjects/sh2021006014>,
+        <http://id.loc.gov/authorities/subjects/sh85026747>,
+        <http://id.loc.gov/authorities/subjects/sh85027982>,
+        <http://id.loc.gov/authorities/subjects/sh85029074>,
+        <http://id.loc.gov/authorities/subjects/sh85029300>,
+        <http://id.loc.gov/authorities/subjects/sh85067425>,
+        <http://id.loc.gov/authorities/subjects/sh85076635>,
+        <http://id.loc.gov/authorities/subjects/sh85085826>,
+        <http://id.loc.gov/authorities/subjects/sh85088931>,
+        <http://id.loc.gov/authorities/subjects/sh85094875>,
+        <http://id.loc.gov/authorities/subjects/sh85107141>,
+        <http://id.loc.gov/authorities/subjects/sh85107547>,
+        <http://id.loc.gov/authorities/subjects/sh85111809>,
+        <http://id.loc.gov/authorities/subjects/sh85111836>,
+        <http://id.loc.gov/authorities/subjects/sh85147586>,
+        <http://id.loc.gov/authorities/subjects/sh90006221>,
+        <http://id.loc.gov/authorities/subjects/sh95007591>,
+        <http://id.loc.gov/authorities/subjects/sh98000880>,
+        <http://id.loc.gov/authorities/subjects/sh98001165>,
+        <http://id.loc.gov/authorities/subjects/sh98005480> ;
+    skos:prefLabel "Library science"@en ;
+    skos:related <http://id.loc.gov/authorities/subjects/sh85013838>,
+        <http://id.loc.gov/authorities/subjects/sh85038731>,
+        <http://id.loc.gov/authorities/subjects/sh85066150> ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Library economy"@en ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Librarianship"@en ] .
+
+<http://id.loc.gov/authorities/subjects/sh85085826> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Minorities in library science"@en ;
+    skos:prefLabel "Minorities in library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85088931> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Music librarianship"@en ;
+    skos:prefLabel "Music librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85094875> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Open and closed shelves"@en ;
+    skos:prefLabel "Open and closed shelves"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85107141> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Technical services (Libraries)"@en ;
+    skos:prefLabel "Technical services (Libraries)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85107547> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Proposal writing in library science"@en ;
+    skos:prefLabel "Proposal writing in library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85111809> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Recataloging"@en ;
+    skos:prefLabel "Recataloging"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85111836> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Reclassification (Libraries)"@en ;
+    skos:prefLabel "Reclassification (Libraries)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85147586> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women in library science"@en ;
+    skos:prefLabel "Women in library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh90006221> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Team librarianship"@en ;
+    skos:prefLabel "Team librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh95007591> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Theater librarianship"@en ;
+    skos:prefLabel "Theater librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh98000880> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Mentoring in library science"@en ;
+    skos:prefLabel "Mentoring in library science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh98001165> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Rare book librarianship"@en ;
+    skos:prefLabel "Rare book librarianship"@en .
+
+<http://id.loc.gov/authorities/subjects/sh98005480> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Serials librarianship"@en ;
+    skos:prefLabel "Serials librarianship"@en .
+
+<http://id.worldcat.org/fast/997916> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science" ;
+    skos:prefLabel "Library science" .
+
+<http://id.worldcat.org/fast/997917> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Abstracting and indexing" ;
+    skos:prefLabel "Library science--Abstracting and indexing" .
+
+<http://id.worldcat.org/fast/997918> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Audio-visual aids" ;
+    skos:prefLabel "Library science--Audio-visual aids" .
+
+<http://id.worldcat.org/fast/997919> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Authorship" ;
+    skos:prefLabel "Library science--Authorship" .
+
+<http://id.worldcat.org/fast/997920> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Authorship--Marketing" ;
+    skos:prefLabel "Library science--Authorship--Marketing" .
+
+<http://id.worldcat.org/fast/997921> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Automation" ;
+    skos:prefLabel "Library science--Automation" .
+
+<http://id.worldcat.org/fast/997923> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Bibliography" ;
+    skos:prefLabel "Library science--Bibliography" .
+
+<http://id.worldcat.org/fast/997925> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Collectibles" ;
+    skos:prefLabel "Library science--Collectibles" .
+
+<http://id.worldcat.org/fast/997926> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Computer network resources" ;
+    skos:prefLabel "Library science--Computer network resources" .
+
+<http://id.worldcat.org/fast/997927> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Computer programs" ;
+    skos:prefLabel "Library science--Computer programs" .
+
+<http://id.worldcat.org/fast/997928> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Computer-assisted instruction" ;
+    skos:prefLabel "Library science--Computer-assisted instruction" .
+
+<http://id.worldcat.org/fast/997929> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Congresses" ;
+    skos:prefLabel "Library science--Congresses" .
+
+<http://id.worldcat.org/fast/997935> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Dictionaries" ;
+    skos:prefLabel "Library science--Dictionaries" .
+
+<http://id.worldcat.org/fast/997936> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Economic aspects" ;
+    skos:prefLabel "Library science--Economic aspects" .
+
+<http://id.worldcat.org/fast/997937> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Field work" ;
+    skos:prefLabel "Library science--Field work" .
+
+<http://id.worldcat.org/fast/997938> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Forecasting" ;
+    skos:prefLabel "Library science--Forecasting" .
+
+<http://id.worldcat.org/fast/997939> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Forms" ;
+    skos:prefLabel "Library science--Forms" .
+
+<http://id.worldcat.org/fast/997940> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Forms--Standards" ;
+    skos:prefLabel "Library science--Forms--Standards" .
+
+<http://id.worldcat.org/fast/997943> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Information services" ;
+    skos:prefLabel "Library science--Information services" .
+
+<http://id.worldcat.org/fast/997945> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Library resources" ;
+    skos:prefLabel "Library science--Library resources" .
+
+<http://id.worldcat.org/fast/997946> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Manuscripts" ;
+    skos:prefLabel "Library science--Manuscripts" .
+
+<http://id.worldcat.org/fast/997947> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Mathematical models" ;
+    skos:prefLabel "Library science--Mathematical models" .
+
+<http://id.worldcat.org/fast/997948> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Methodology" ;
+    skos:prefLabel "Library science--Methodology" .
+
+<http://id.worldcat.org/fast/997951> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Periodicals" ;
+    skos:prefLabel "Library science--Periodicals" .
+
+<http://id.worldcat.org/fast/997953> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Political aspects" ;
+    skos:prefLabel "Library science--Political aspects" .
+
+<http://id.worldcat.org/fast/997955> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Psychological aspects" ;
+    skos:prefLabel "Library science--Psychological aspects" .
+
+<http://id.worldcat.org/fast/997956> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Public opinion" ;
+    skos:prefLabel "Library science--Public opinion" .
+
+<http://id.worldcat.org/fast/997957> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Reference books" ;
+    skos:prefLabel "Library science--Reference books" .
+
+<http://id.worldcat.org/fast/997965> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Research grants" ;
+    skos:prefLabel "Library science--Research grants" .
+
+<http://id.worldcat.org/fast/997967> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Social aspects" ;
+    skos:prefLabel "Library science--Social aspects" .
+
+<http://id.worldcat.org/fast/997973> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Software" ;
+    skos:prefLabel "Library science--Software" .
+
+<http://id.worldcat.org/fast/997974> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Standards" ;
+    skos:prefLabel "Library science--Standards" .
+
+<http://id.worldcat.org/fast/997975> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Study and teaching (Continuing education)" ;
+    skos:prefLabel "Library science--Study and teaching (Continuing education)" .
+
+<http://id.worldcat.org/fast/997976> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Study and teaching (Graduate)" ;
+    skos:prefLabel "Library science--Study and teaching (Graduate)" .
+
+<http://id.worldcat.org/fast/997977> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Study and teaching (Higher)" ;
+    skos:prefLabel "Library science--Study and teaching (Higher)" .
+
+<http://id.worldcat.org/fast/997978> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Technological innovations" ;
+    skos:prefLabel "Library science--Technological innovations" .
+
+<http://id.worldcat.org/fast/997979> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Technological innovations--Management" ;
+    skos:prefLabel "Library science--Technological innovations--Management" .
+
+<http://id.worldcat.org/fast/997980> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Technological innovations--Standards" ;
+    skos:prefLabel "Library science--Technological innovations--Standards" .
+
+<http://id.worldcat.org/fast/997981> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Technological innovations--Study and teaching" ;
+    skos:prefLabel "Library science--Technological innovations--Study and teaching" .
+
+<http://id.worldcat.org/fast/997982> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Terminology" ;
+    skos:prefLabel "Library science--Terminology" .
+
+<http://id.worldcat.org/fast/997983> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Translations into English" ;
+    skos:prefLabel "Library science--Translations into English" .
+
+<http://id.worldcat.org/fast/997984> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Vocational guidance" ;
+    skos:prefLabel "Library science--Vocational guidance" .
+
+<http://id.worldcat.org/fast/997985> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Vocational guidance--Information services" ;
+    skos:prefLabel "Library science--Vocational guidance--Information services" .
+
+<http://purl.org/bncf/tid/1818> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Biblioteconomia"@it ;
+    skos:prefLabel "Biblioteconomia"@it .
+
+<http://www.wikidata.org/entity/Q199655> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "library science" ;
+    skos:prefLabel "library science" .
+
+<http://www.yso.fi/onto/yso/p3713> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "kirjastotiede"@fi ;
+    skos:prefLabel "kirjastotiede"@fi .
+
