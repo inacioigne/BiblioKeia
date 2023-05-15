@@ -10,10 +10,11 @@ class Subject(BaseModel):
     elementList: list[Element]
     note: Optional[str]
     hasBroaderAuthority: Optional[list[Uri]]
-    hasCloseExternalAuthority: Optional[list[Uri]]
-    hasExactExternalAuthority: Optional[list[Uri]]
+    hasBroaderExternalAuthority: Optional[list[Uri]]
     hasNarrowerAuthority: Optional[list[Uri]]
     hasNarrowerExternalAuthority: Optional[list[Uri]]
+    hasCloseExternalAuthority: Optional[list[Uri]]
+    hasExactExternalAuthority: Optional[list[Uri]]
     hasVariant: Optional[list[Variant]]
     subjectOf: Optional[list[Uri]]
     isMemberOfMADSCollection: str

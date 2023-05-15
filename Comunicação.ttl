@@ -1,0 +1,1218 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/1000621> a bf:Work ;
+    bflc:aap "Ri︠a︡bt︠s︡eva, N. K. (Nadezhda Konstantinovna) Informat︠s︡ionnye prot︠s︡essy i mashinnyĭ perevod" .
+
+<http://id.loc.gov/resources/works/10017880> a bf:Work ;
+    bflc:aap "Takahashi, Masato, 1912- Zusetsu shimboru dezain" .
+
+<http://id.loc.gov/resources/works/1001860> a bf:Work ;
+    bflc:aap "Texte zur Musiktherapie" .
+
+<http://id.loc.gov/resources/works/1005315> a bf:Work ;
+    bflc:aap "Hargie, Owen Social skills in interpersonal communication" .
+
+<http://id.loc.gov/resources/works/1011794> a bf:Work ;
+    bflc:aap "Bernard, Olivier. Expression professionnelle" .
+
+<http://id.loc.gov/resources/works/1013110> a bf:Work ;
+    bflc:aap "Majello, Carlo. arte di comunicare : nuova edizione" .
+
+<http://id.loc.gov/resources/works/1014429> a bf:Work ;
+    bflc:aap "Prieto Castillo, Daniel. Discurso autoritario y comunicación alternativa" .
+
+<http://id.loc.gov/resources/works/1019127> a bf:Work ;
+    bflc:aap "Fennell, Mary L. diffusion of medical innovations : an applied network analysis" .
+
+<http://id.loc.gov/resources/works/1022887> a bf:Work ;
+    bflc:aap "Galvin, Kathleen M. Person to person : an introduction to speech communication" .
+
+<http://id.loc.gov/resources/works/1022918> a bf:Work ;
+    bflc:aap "Sussman, Lyle, 1944- COMEX, the communication experience in human relations" .
+
+<http://id.loc.gov/resources/works/10236146> a bf:Work ;
+    bflc:aap "Klapper, Joseph T. [ effects of mass media" .
+
+<http://id.loc.gov/resources/works/10247056> a bf:Work ;
+    bflc:aap "Huth, Arno George, 1905- Communications and economic development" .
+
+<http://id.loc.gov/resources/works/10254694> a bf:Work ;
+    bflc:aap "Berelson, Bernard, 1912-1979, Reader in public opinion and communication," .
+
+<http://id.loc.gov/resources/works/10272259> a bf:Work ;
+    bflc:aap "Unesco. Department of Mass Communications. World communications, press, radio film, television" .
+
+<http://id.loc.gov/resources/works/10278334> a bf:Work ;
+    bflc:aap "Seldes, Gilbert, 1893-1970. You and the mass media; an experimental program for adult group discussion" .
+
+<http://id.loc.gov/resources/works/10278806> a bf:Work ;
+    bflc:aap "Ruesch, Jurgen, 1909-1995. Disturbed communication," .
+
+<http://id.loc.gov/resources/works/10305265> a bf:Work ;
+    bflc:aap "Dean, Howard H. Effective communication; a guide to reading, writing, speaking, and listening" .
+
+<http://id.loc.gov/resources/works/10305905> a bf:Work ;
+    bflc:aap "Sherif, Muzafer, 1905- Social judgment; assimilation and contrast effects in communication and attitude change," .
+
+<http://id.loc.gov/resources/works/10309694> a bf:Work ;
+    bflc:aap "Unesco. Department of Mass Communications. Mass media in the developing countries; a Unesco report to the United Nations" .
+
+<http://id.loc.gov/resources/works/10310288> a bf:Work ;
+    bflc:aap "Inoue, Kichijirō, 1889-1976. Taishū bunka" .
+
+<http://id.loc.gov/resources/works/10310620> a bf:Work ;
+    bflc:aap "Inoue, Kichijirō, 1889-1976. Taishū to taishū dentatsu no genri" .
+
+<http://id.loc.gov/resources/works/10313806> a bf:Work ;
+    bflc:aap "Ducassé, Pierre, 1905- Formation intellectuelle et méthodes d'expression" .
+
+<http://id.loc.gov/resources/works/10323091> a bf:Work ;
+    bflc:aap "Voice of America (Organization) Mass communication series" .
+
+<http://id.loc.gov/resources/works/10325604> a bf:Work ;
+    bflc:aap "Oliver, Robert T. (Robert Tarbell), 1909-2000 Becomimg an informed citizen" .
+
+<http://id.loc.gov/resources/works/10326717> a bf:Work ;
+    bflc:aap "Jewish Theological Seminary of America. Institute for Religious and Social Studies. communication of ideas, a series of addresses" .
+
+<http://id.loc.gov/resources/works/10331324> a bf:Work ;
+    bflc:aap "Ajiki, Masao, 1923- Masu komyunikēshon genkai ron" .
+
+<http://id.loc.gov/resources/works/10343962> a bf:Work ;
+    bflc:aap "Lerner, Daniel, 1917-1980, Communication and change in the developing countries" .
+
+<http://id.loc.gov/resources/works/1035159> a bf:Work ;
+    bflc:aap "Tulloch, John. Television drama : agency, audience, and myth" .
+
+<http://id.loc.gov/resources/works/1035191> a bf:Work ;
+    bflc:aap "Mosco, Vincent. pay-per society : computers and communication in the information age : essays in critical theory and public policy" .
+
+<http://id.loc.gov/resources/works/10352335> a bf:Work ;
+    bflc:aap "Katō, Hidetoshi, 1930- Ningen kankei" .
+
+<http://id.loc.gov/resources/works/10357477> a bf:Work ;
+    bflc:aap "Prieto, Luis J. (Jorge) Messages et signaux," .
+
+<http://id.loc.gov/resources/works/10363857> a bf:Work ;
+    bflc:aap "Kitagawa, Toshio, 1909- Soshiki to jōhō" .
+
+<http://id.loc.gov/resources/works/10371321> a bf:Work ;
+    bflc:aap "Gonçalves, José Julio. Sociologia da informação" .
+
+<http://id.loc.gov/resources/works/10374280> a bf:Work ;
+    bflc:aap "Aponowicz, Antoni. Współdziałanie" .
+
+<http://id.loc.gov/resources/works/1037478> a bf:Work ;
+    bflc:aap "Smith, Ted J. Propaganda : a pluralistic perspective" .
+
+<http://id.loc.gov/resources/works/10376926> a bf:Work ;
+    bflc:aap "Majello, Carlo. arte di comunicare" .
+
+<http://id.loc.gov/resources/works/10382809> a bf:Work ;
+    bflc:aap "Torii, Hiroshi, 1909- Masukomi to gendai shakai マスコミと現代社会" .
+
+<http://id.loc.gov/resources/works/10389348> a bf:Work ;
+    bflc:aap "Pignotti, Lamberto, 1926- Fra parola e immagine. Arte e comunicazione nella società i massa" .
+
+<http://id.loc.gov/resources/works/10390618> a bf:Work ;
+    bflc:aap "Béville, Gilbert. Méthodes de communication; ou, Le chemin des écoliers. Quelques problémes suivis, parfois, de solutions" .
+
+<http://id.loc.gov/resources/works/10392197> a bf:Work ;
+    bflc:aap "Weidmann, Fred. Grundlagen einer Kommunikationssoziologie / Fred Weidman.--" .
+
+<http://id.loc.gov/resources/works/10392334> a bf:Work ;
+    bflc:aap "Ungeheuer, Gerold. Sprache und Kommunikation" .
+
+<http://id.loc.gov/resources/works/10399382> a bf:Work ;
+    bflc:aap "Melo, José Marques de. Comunicação de atualidades : TV e cinema" .
+
+<http://id.loc.gov/resources/works/10403971> a bf:Work ;
+    bflc:aap "Toscano, Giuseppe, 1939- Percezione, linguaggio, comunicazione. Saggio su Merleau-Ponty" .
+
+<http://id.loc.gov/resources/works/10404822> a bf:Work ;
+    bflc:aap "Löber, Werner. Marktkommunikation" .
+
+<http://id.loc.gov/resources/works/10406271> a bf:Work ;
+    bflc:aap "Goth, Joachim, 1939- Rhetorik, Ästhetik, Ideologie: Aspekte e. krit. Kulturwiss" .
+
+<http://id.loc.gov/resources/works/10410040> a bf:Work ;
+    bflc:aap "Kabashima, Tadao, 1927- Jōhō bunshō shisūtemu" .
+
+<http://id.loc.gov/resources/works/10410088> a bf:Work ;
+    bflc:aap "Sakamoto, Ichirō, 1904-1987, Shakai kyōiku no shinri" .
+
+<http://id.loc.gov/resources/works/10412759> a bf:Work ;
+    bflc:aap "Fèvre, Fermín. Comunicación, participación y lenguaje" .
+
+<http://id.loc.gov/resources/works/1041355> a bf:Work ;
+    bflc:aap "Gumbrich, Hans Ulrich. Materialität der Kommunikation" .
+
+<http://id.loc.gov/resources/works/10417897> a bf:Work ;
+    bflc:aap "Vázquez Montalbán, Manuel. Las noticias y la información" .
+
+<http://id.loc.gov/resources/works/10435691> a bf:Work ;
+    bflc:aap "Tamburstuen, Trygve. Informasjons- og kontaktarbeid" .
+
+<http://id.loc.gov/resources/works/104505> a bf:Work ;
+    bflc:aap "Grize, Jean-Blaise, 1922- Logique naturelle et communications" .
+
+<http://id.loc.gov/resources/works/10466208> a bf:Work ;
+    bflc:aap "Morioka, Kenji, 1917-2008 Gengo to ningen" .
+
+<http://id.loc.gov/resources/works/1052686> a bf:Work ;
+    bflc:aap "Dixon, Malcolm. Communications" .
+
+<http://id.loc.gov/resources/works/1053849> a bf:Work ;
+    bflc:aap "DeVito, Joseph A. Human communication : the basic course" .
+
+<http://id.loc.gov/resources/works/1055059> a bf:Work ;
+    bflc:aap "Kramer, Patricia M., 1944- Discovering self-expression and communication" .
+
+<http://id.loc.gov/resources/works/10562041> a bf:Work ;
+    bflc:aap "Comunicarte" .
+
+<http://id.loc.gov/resources/works/1064440> a bf:Work ;
+    bflc:aap "Hemánus, Pertti Johdatusta tiedotusoppiin" .
+
+<http://id.loc.gov/resources/works/10646874> a bf:Work ;
+    bflc:aap "Conference on Cybernetics Cybernetics" .
+
+<http://id.loc.gov/resources/works/10650837> a bf:Work ;
+    bflc:aap "Communicatie : driemaandelijks tijdschrift voor audiovisuele massamedia" .
+
+<http://id.loc.gov/resources/works/1069049> a bf:Work ;
+    bflc:aap "Litowitz, Bonnie E. Semiotic perspectives on clinical theory and practice : medicine, neuropsychiatry, and psychoanalysis" .
+
+<http://id.loc.gov/resources/works/1070509> a bf:Work ;
+    bflc:aap "Hatch, Evelyn Marcussen. Discourse and language education" .
+
+<http://id.loc.gov/resources/works/1070853> a bf:Work ;
+    bflc:aap "Ellis, Donald G. From language to communication" .
+
+<http://id.loc.gov/resources/works/10716252> a bf:Work ;
+    bflc:aap "Communication reports" .
+
+<http://id.loc.gov/resources/works/10720378> a bf:Work ;
+    bflc:aap "Massachusetts Institute of Technology. Center for International Studies. Research program in international communication; progress report" .
+
+<http://id.loc.gov/resources/works/1072983> a bf:Work ;
+    bflc:aap "Smith, Robert E. (Robert Edward), 1943- Principles of human communication" .
+
+<http://id.loc.gov/resources/works/1073472> a bf:Work ;
+    bflc:aap "Berko, Roy M. Communicating : a social and career focus" .
+
+<http://id.loc.gov/resources/works/1086363> a bf:Work ;
+    bflc:aap "DeVito, Joseph A. Essentials of human communication" .
+
+<http://id.loc.gov/resources/works/1086414> a bf:Work ;
+    bflc:aap "Myerscough, P. R. (Philip Roger) Talking with patients : a basic clinical skill" .
+
+<http://id.loc.gov/resources/works/1089377> a bf:Work ;
+    bflc:aap "Dijk, Teun A. van, 1943- Elite discourse and racism" .
+
+<http://id.loc.gov/resources/works/1089628> a bf:Work ;
+    bflc:aap "Brown, Stephen W. How to talk so people will listen" .
+
+<http://id.loc.gov/resources/works/1090695> a bf:Work ;
+    bflc:aap "O'Hair, Dan. Competent Communication" .
+
+<http://id.loc.gov/resources/works/1093687> a bf:Work ;
+    bflc:aap "Susov, Ivan Pavlovich. I︠A︡zyk, diskurs i lichnostʹ : mezhvuzovskiĭ sbornik nauchnykh trudov" .
+
+<http://id.loc.gov/resources/works/1096667> a bf:Work ;
+    bflc:aap "Gifreu, Josep. Estructura general de la comunicación pública" .
+
+<http://id.loc.gov/resources/works/1098996> a bf:Work ;
+    bflc:aap "Bellebaum, Alfred. Schweigen und Verschweigen : Bedeutungen und Erscheinungsvielfalt einer Kommunikationsform" .
+
+<http://id.loc.gov/resources/works/1099894> a bf:Work ;
+    bflc:aap "Rauch, Elisabeth, 1958- Sprachrituale in institutionellen und institutionalisierten Text- und Gesprächssorten" .
+
+<http://id.loc.gov/resources/works/11087515> a bf:Work ;
+    bflc:aap "C & E, cultura y educación" .
+
+<http://id.loc.gov/resources/works/11133974> a bf:Work ;
+    bflc:aap "Rand McNally and Company Rand McNally commercial atlas and marketing guide" .
+
+<http://id.loc.gov/resources/works/11138484> a bf:Work ;
+    bflc:aap "Bell Telephone Laboratories Bell Laboratories record" .
+
+<http://id.loc.gov/resources/works/11138644> a bf:Work ;
+    bflc:aap "The Bell System technical journal" .
+
+<http://id.loc.gov/resources/works/11139666> a bf:Work ;
+    bflc:aap "Speech monographs" .
+
+<http://id.loc.gov/resources/works/11145208> a bf:Work ;
+    bflc:aap "American documentation" .
+
+<http://id.loc.gov/resources/works/11149273> a bf:Work ;
+    bflc:aap "Audio visual communication review" .
+
+<http://id.loc.gov/resources/works/11150012> a bf:Work ;
+    bflc:aap "Journal of communication" .
+
+<http://id.loc.gov/resources/works/11152696> a bf:Work ;
+    bflc:aap "Publizistik" .
+
+<http://id.loc.gov/resources/works/11152840> a bf:Work ;
+    bflc:aap "Institute in Technical and Industrial Communications Proceedings of the ... Institute in Technical and Industrial Communications" .
+
+<http://id.loc.gov/resources/works/11155650> a bf:Work ;
+    bflc:aap "Communications" .
+
+<http://id.loc.gov/resources/works/11157528> a bf:Work ;
+    bflc:aap "The Ohio speech journal" .
+
+<http://id.loc.gov/resources/works/11158354> a bf:Work ;
+    bflc:aap "Transport and communication" .
+
+<http://id.loc.gov/resources/works/11158383> a bf:Work ;
+    bflc:aap "Australia. Commonwealth Bureau of Census and Statistics. New South Wales Office. Statistical register: trade, transport, and communication" .
+
+<http://id.loc.gov/resources/works/11160015> a bf:Work ;
+    bflc:aap "Methods of information in medicine" .
+
+<http://id.loc.gov/resources/works/11160628> a bf:Work ;
+    bflc:aap "George Washington University. Biological Sciences Communication Project. BSCP communiqué" .
+
+<http://id.loc.gov/resources/works/11161145> a bf:Work ;
+    bflc:aap "Communicator" .
+
+<http://id.loc.gov/resources/works/11161156> a bf:Work ;
+    bflc:aap "The Word" .
+
+<http://id.loc.gov/resources/works/11161283> a bf:Work ;
+    bflc:aap "Journal of communication disorders" .
+
+<http://id.loc.gov/resources/works/11165056> a bf:Work ;
+    bflc:aap "Communiqué" .
+
+<http://id.loc.gov/resources/works/11165621> a bf:Work ;
+    bflc:aap "University of the Philippines. Institute of Mass Communication. Philippine journal of communications studies" .
+
+<http://id.loc.gov/resources/works/11165726> a bf:Work ;
+    bflc:aap "Electronics & communications abstracts journal" .
+
+<http://id.loc.gov/resources/works/1116582> a bf:Work ;
+    bflc:aap "Wold, Astri Heen. Dialogical alternative : towards a theory of language and mind" .
+
+<http://id.loc.gov/resources/works/11168779> a bf:Work ;
+    bflc:aap "Lugar em comunicação" .
+
+<http://d-nb.info/gnd/4031883-7> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Kommunikation"@de ;
+    skos:prefLabel "Kommunikation"@de .
+
+<http://d-nb.info/gnd/4127996-7> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Nachricht"@de ;
+    skos:prefLabel "Nachricht"@de .
+
+<http://data.bnf.fr/ark:/12148/cb11938923j> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication"@fr ;
+    skos:prefLabel "Communication"@fr .
+
+<http://data.bnf.fr/ark:/12148/cb119767371> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information"@fr ;
+    skos:prefLabel "Information"@fr .
+
+<http://id.loc.gov/authorities/subjects/sh00002232> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Hearing impaired children--Means of communication"@en ;
+    skos:prefLabel "Hearing impaired children--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh00004200> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Minorities in communication"@en ;
+    skos:prefLabel "Minorities in communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2001010616> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Chinese walls (Communication barriers)"@en ;
+    skos:prefLabel "Chinese walls (Communication barriers)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2002005790> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Learning disabled--Means of communication"@en ;
+    skos:prefLabel "Learning disabled--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2004003366> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Publications"@en ;
+    skos:prefLabel "Publications"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2006001192> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Children with visual disabilities--Means of communication"@en ;
+    skos:prefLabel "Children with visual disabilities--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2006003620> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Gay men--Communication"@en ;
+    skos:prefLabel "Gay men--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2006007023> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social media"@en ;
+    skos:prefLabel "Social media"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2007006459> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Children with disabilities--Means of communication"@en ;
+    skos:prefLabel "Children with disabilities--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2009000132> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Autistic children--Means of communication"@en ;
+    skos:prefLabel "Autistic children--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2009006429> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Hearing impaired--Means of communication"@en ;
+    skos:prefLabel "Hearing impaired--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2009006606> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Indigenous peoples--Communication"@en ;
+    skos:prefLabel "Indigenous peoples--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2010001550> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Multilingual communication"@en ;
+    skos:prefLabel "Multilingual communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021005144> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Classification--Books--Communication"@en ;
+    skos:prefLabel "Classification--Books--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021005621> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Generation Y--Communication"@en ;
+    skos:prefLabel "Generation Y--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021005832> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Libraries--Special collections--Communication"@en ;
+    skos:prefLabel "Libraries--Special collections--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021007021> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Speech disorders--Patients--Means of communication"@en ;
+    skos:prefLabel "Speech disorders--Patients--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85014881> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Deafblind people--Means of communication"@en ;
+    skos:prefLabel "Deafblind people--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85022098> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Cerebral palsied--Means of communication"@en ;
+    skos:prefLabel "Cerebral palsied--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029027> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    bflc:marcKey "150 0$aCommunication" ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/1000621>,
+        <http://id.loc.gov/resources/works/10017880>,
+        <http://id.loc.gov/resources/works/1001860>,
+        <http://id.loc.gov/resources/works/1005315>,
+        <http://id.loc.gov/resources/works/1011794>,
+        <http://id.loc.gov/resources/works/1013110>,
+        <http://id.loc.gov/resources/works/1014429>,
+        <http://id.loc.gov/resources/works/1019127>,
+        <http://id.loc.gov/resources/works/1022887>,
+        <http://id.loc.gov/resources/works/1022918>,
+        <http://id.loc.gov/resources/works/10236146>,
+        <http://id.loc.gov/resources/works/10247056>,
+        <http://id.loc.gov/resources/works/10254694>,
+        <http://id.loc.gov/resources/works/10272259>,
+        <http://id.loc.gov/resources/works/10278334>,
+        <http://id.loc.gov/resources/works/10278806>,
+        <http://id.loc.gov/resources/works/10305265>,
+        <http://id.loc.gov/resources/works/10305905>,
+        <http://id.loc.gov/resources/works/10309694>,
+        <http://id.loc.gov/resources/works/10310288>,
+        <http://id.loc.gov/resources/works/10310620>,
+        <http://id.loc.gov/resources/works/10313806>,
+        <http://id.loc.gov/resources/works/10323091>,
+        <http://id.loc.gov/resources/works/10325604>,
+        <http://id.loc.gov/resources/works/10326717>,
+        <http://id.loc.gov/resources/works/10331324>,
+        <http://id.loc.gov/resources/works/10343962>,
+        <http://id.loc.gov/resources/works/1035159>,
+        <http://id.loc.gov/resources/works/1035191>,
+        <http://id.loc.gov/resources/works/10352335>,
+        <http://id.loc.gov/resources/works/10357477>,
+        <http://id.loc.gov/resources/works/10363857>,
+        <http://id.loc.gov/resources/works/10371321>,
+        <http://id.loc.gov/resources/works/10374280>,
+        <http://id.loc.gov/resources/works/1037478>,
+        <http://id.loc.gov/resources/works/10376926>,
+        <http://id.loc.gov/resources/works/10382809>,
+        <http://id.loc.gov/resources/works/10389348>,
+        <http://id.loc.gov/resources/works/10390618>,
+        <http://id.loc.gov/resources/works/10392197>,
+        <http://id.loc.gov/resources/works/10392334>,
+        <http://id.loc.gov/resources/works/10399382>,
+        <http://id.loc.gov/resources/works/10403971>,
+        <http://id.loc.gov/resources/works/10404822>,
+        <http://id.loc.gov/resources/works/10406271>,
+        <http://id.loc.gov/resources/works/10410040>,
+        <http://id.loc.gov/resources/works/10410088>,
+        <http://id.loc.gov/resources/works/10412759>,
+        <http://id.loc.gov/resources/works/1041355>,
+        <http://id.loc.gov/resources/works/10417897>,
+        <http://id.loc.gov/resources/works/10435691>,
+        <http://id.loc.gov/resources/works/104505>,
+        <http://id.loc.gov/resources/works/10466208>,
+        <http://id.loc.gov/resources/works/1052686>,
+        <http://id.loc.gov/resources/works/1053849>,
+        <http://id.loc.gov/resources/works/1055059>,
+        <http://id.loc.gov/resources/works/10562041>,
+        <http://id.loc.gov/resources/works/1064440>,
+        <http://id.loc.gov/resources/works/10646874>,
+        <http://id.loc.gov/resources/works/10650837>,
+        <http://id.loc.gov/resources/works/1069049>,
+        <http://id.loc.gov/resources/works/1070509>,
+        <http://id.loc.gov/resources/works/1070853>,
+        <http://id.loc.gov/resources/works/10716252>,
+        <http://id.loc.gov/resources/works/10720378>,
+        <http://id.loc.gov/resources/works/1072983>,
+        <http://id.loc.gov/resources/works/1073472>,
+        <http://id.loc.gov/resources/works/1086363>,
+        <http://id.loc.gov/resources/works/1086414>,
+        <http://id.loc.gov/resources/works/1089377>,
+        <http://id.loc.gov/resources/works/1089628>,
+        <http://id.loc.gov/resources/works/1090695>,
+        <http://id.loc.gov/resources/works/1093687>,
+        <http://id.loc.gov/resources/works/1096667>,
+        <http://id.loc.gov/resources/works/1098996>,
+        <http://id.loc.gov/resources/works/1099894>,
+        <http://id.loc.gov/resources/works/11087515>,
+        <http://id.loc.gov/resources/works/11133974>,
+        <http://id.loc.gov/resources/works/11138484>,
+        <http://id.loc.gov/resources/works/11138644>,
+        <http://id.loc.gov/resources/works/11139666>,
+        <http://id.loc.gov/resources/works/11145208>,
+        <http://id.loc.gov/resources/works/11149273>,
+        <http://id.loc.gov/resources/works/11150012>,
+        <http://id.loc.gov/resources/works/11152696>,
+        <http://id.loc.gov/resources/works/11152840>,
+        <http://id.loc.gov/resources/works/11155650>,
+        <http://id.loc.gov/resources/works/11157528>,
+        <http://id.loc.gov/resources/works/11158354>,
+        <http://id.loc.gov/resources/works/11158383>,
+        <http://id.loc.gov/resources/works/11160015>,
+        <http://id.loc.gov/resources/works/11160628>,
+        <http://id.loc.gov/resources/works/11161145>,
+        <http://id.loc.gov/resources/works/11161156>,
+        <http://id.loc.gov/resources/works/11161283>,
+        <http://id.loc.gov/resources/works/11165056>,
+        <http://id.loc.gov/resources/works/11165621>,
+        <http://id.loc.gov/resources/works/11165726>,
+        <http://id.loc.gov/resources/works/1116582>,
+        <http://id.loc.gov/resources/works/11168779> ;
+    identifiers:lccn "sh 85029027" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "1994-01-04T11:11:31"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Communication"@en ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            madsrdf:code "P87-P96" ;
+            madsrdf:hasExactExternalAuthority <http://id.loc.gov/authorities/classification/P87-P96> ] ;
+    madsrdf:editorialNote "subdivision [Communication] under ethnic groups" ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Communication"@en ] ) ;
+    madsrdf:exampleNote "Notes under [Communication and traffic; Mass media]" ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85124200> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4031883-7>,
+        <http://d-nb.info/gnd/4127996-7>,
+        <http://data.bnf.fr/ark:/12148/cb11938923j>,
+        <http://data.bnf.fr/ark:/12148/cb119767371>,
+        <http://id.worldcat.org/fast/869952>,
+        <http://www.wikidata.org/entity/Q11024>,
+        <http://www.wikidata.org/entity/Q11028>,
+        <http://www.yso.fi/onto/yso/p36> ;
+    madsrdf:hasEarlierEstablishedForm [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Communication, Primitive"@en ] ) ;
+            madsrdf:variantLabel "Communication, Primitive"@en ] ;
+    madsrdf:hasExactExternalAuthority <http://aims.fao.org/aos/agrovoc/c_37866> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00002232>,
+        <http://id.loc.gov/authorities/subjects/sh00004200>,
+        <http://id.loc.gov/authorities/subjects/sh2001010616>,
+        <http://id.loc.gov/authorities/subjects/sh2002005790>,
+        <http://id.loc.gov/authorities/subjects/sh2004003366>,
+        <http://id.loc.gov/authorities/subjects/sh2006001192>,
+        <http://id.loc.gov/authorities/subjects/sh2006003620>,
+        <http://id.loc.gov/authorities/subjects/sh2006007023>,
+        <http://id.loc.gov/authorities/subjects/sh2007006459>,
+        <http://id.loc.gov/authorities/subjects/sh2009000132>,
+        <http://id.loc.gov/authorities/subjects/sh2009006429>,
+        <http://id.loc.gov/authorities/subjects/sh2009006606>,
+        <http://id.loc.gov/authorities/subjects/sh2010001550>,
+        <http://id.loc.gov/authorities/subjects/sh2021005144>,
+        <http://id.loc.gov/authorities/subjects/sh2021005621>,
+        <http://id.loc.gov/authorities/subjects/sh2021005832>,
+        <http://id.loc.gov/authorities/subjects/sh2021007021>,
+        <http://id.loc.gov/authorities/subjects/sh85014881>,
+        <http://id.loc.gov/authorities/subjects/sh85022098>,
+        <http://id.loc.gov/authorities/subjects/sh85029042>,
+        <http://id.loc.gov/authorities/subjects/sh85029044>,
+        <http://id.loc.gov/authorities/subjects/sh85029112>,
+        <http://id.loc.gov/authorities/subjects/sh85036058>,
+        <http://id.loc.gov/authorities/subjects/sh85037940>,
+        <http://id.loc.gov/authorities/subjects/sh85055982>,
+        <http://id.loc.gov/authorities/subjects/sh85058677>,
+        <http://id.loc.gov/authorities/subjects/sh85062837>,
+        <http://id.loc.gov/authorities/subjects/sh85066150>,
+        <http://id.loc.gov/authorities/subjects/sh85066289>,
+        <http://id.loc.gov/authorities/subjects/sh85067222>,
+        <http://id.loc.gov/authorities/subjects/sh85067481>,
+        <http://id.loc.gov/authorities/subjects/sh85072731>,
+        <http://id.loc.gov/authorities/subjects/sh85074518>,
+        <http://id.loc.gov/authorities/subjects/sh85074546>,
+        <http://id.loc.gov/authorities/subjects/sh85075493>,
+        <http://id.loc.gov/authorities/subjects/sh85077935>,
+        <http://id.loc.gov/authorities/subjects/sh85081863>,
+        <http://id.loc.gov/authorities/subjects/sh85092368>,
+        <http://id.loc.gov/authorities/subjects/sh85095226>,
+        <http://id.loc.gov/authorities/subjects/sh85100175>,
+        <http://id.loc.gov/authorities/subjects/sh85104904>,
+        <http://id.loc.gov/authorities/subjects/sh85122402>,
+        <http://id.loc.gov/authorities/subjects/sh85131416>,
+        <http://id.loc.gov/authorities/subjects/sh85133270>,
+        <http://id.loc.gov/authorities/subjects/sh85140767>,
+        <http://id.loc.gov/authorities/subjects/sh85143916>,
+        <http://id.loc.gov/authorities/subjects/sh85143917>,
+        <http://id.loc.gov/authorities/subjects/sh85147281>,
+        <http://id.loc.gov/authorities/subjects/sh85147568>,
+        <http://id.loc.gov/authorities/subjects/sh85148659>,
+        <http://id.loc.gov/authorities/subjects/sh86001197>,
+        <http://id.loc.gov/authorities/subjects/sh86007016>,
+        <http://id.loc.gov/authorities/subjects/sh87002567>,
+        <http://id.loc.gov/authorities/subjects/sh87004551>,
+        <http://id.loc.gov/authorities/subjects/sh88007764>,
+        <http://id.loc.gov/authorities/subjects/sh95001924>,
+        <http://id.loc.gov/authorities/subjects/sh95004992>,
+        <http://id.loc.gov/authorities/subjects/sh97005843> ;
+    madsrdf:hasNarrowerExternalAuthority <http://id.worldcat.org/fast/869953>,
+        <http://id.worldcat.org/fast/869956>,
+        <http://id.worldcat.org/fast/869957>,
+        <http://id.worldcat.org/fast/869958>,
+        <http://id.worldcat.org/fast/869959>,
+        <http://id.worldcat.org/fast/869961>,
+        <http://id.worldcat.org/fast/869963>,
+        <http://id.worldcat.org/fast/869964>,
+        <http://id.worldcat.org/fast/869965>,
+        <http://id.worldcat.org/fast/869966>,
+        <http://id.worldcat.org/fast/869967>,
+        <http://id.worldcat.org/fast/869968>,
+        <http://id.worldcat.org/fast/869971>,
+        <http://id.worldcat.org/fast/869973>,
+        <http://id.worldcat.org/fast/869974>,
+        <http://id.worldcat.org/fast/869975>,
+        <http://id.worldcat.org/fast/869980>,
+        <http://id.worldcat.org/fast/869983>,
+        <http://id.worldcat.org/fast/869987>,
+        <http://id.worldcat.org/fast/869988>,
+        <http://id.worldcat.org/fast/869989>,
+        <http://id.worldcat.org/fast/870006>,
+        <http://id.worldcat.org/fast/870008>,
+        <http://id.worldcat.org/fast/870014>,
+        <http://id.worldcat.org/fast/870015>,
+        <http://id.worldcat.org/fast/870016>,
+        <http://id.worldcat.org/fast/870022>,
+        <http://id.worldcat.org/fast/870023>,
+        <http://id.worldcat.org/fast/870024>,
+        <http://id.worldcat.org/fast/870025>,
+        <http://id.worldcat.org/fast/870026>,
+        <http://id.worldcat.org/fast/870027>,
+        <http://id.worldcat.org/fast/870028>,
+        <http://id.worldcat.org/fast/870029>,
+        <http://id.worldcat.org/fast/870030>,
+        <http://id.worldcat.org/fast/870033>,
+        <http://id.worldcat.org/fast/870034>,
+        <http://id.worldcat.org/fast/870035> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Mass communication"@en ] ) ;
+            madsrdf:variantLabel "Mass communication"@en ],
+        [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Communication, Primitive"@en ] ) ;
+            madsrdf:variantLabel "Communication, Primitive"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    madsrdf:note "Here are entered works on human communication, including both the primary techniques of language, pictures, etc., and the secondary techniques, such as the press and radio. Works on the modern means of mass communication are entered under [Mass media.] Works on the communications industries treated collectively are entered under [Communication and traffic.]" ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85029027#concept>,
+        <info:lc/authorities/sh85029027> ;
+    skos:altLabel "Communication, Primitive"@en,
+        "Mass communication"@en ;
+    skos:broader <http://id.loc.gov/authorities/subjects/sh85124200> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "1994-01-04T11:11:31"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85029027> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1986-02-11T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85029027> ] ;
+    skos:closeMatch <http://d-nb.info/gnd/4031883-7>,
+        <http://d-nb.info/gnd/4127996-7>,
+        <http://data.bnf.fr/ark:/12148/cb11938923j>,
+        <http://data.bnf.fr/ark:/12148/cb119767371>,
+        <http://id.worldcat.org/fast/869952>,
+        <http://www.wikidata.org/entity/Q11024>,
+        <http://www.wikidata.org/entity/Q11028>,
+        <http://www.yso.fi/onto/yso/p36> ;
+    skos:editorialNote "subdivision [Communication] under ethnic groups" ;
+    skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_37866> ;
+    skos:example "Notes under [Communication and traffic; Mass media]" ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:narrowMatch <http://id.worldcat.org/fast/869953>,
+        <http://id.worldcat.org/fast/869956>,
+        <http://id.worldcat.org/fast/869957>,
+        <http://id.worldcat.org/fast/869958>,
+        <http://id.worldcat.org/fast/869959>,
+        <http://id.worldcat.org/fast/869961>,
+        <http://id.worldcat.org/fast/869963>,
+        <http://id.worldcat.org/fast/869964>,
+        <http://id.worldcat.org/fast/869965>,
+        <http://id.worldcat.org/fast/869966>,
+        <http://id.worldcat.org/fast/869967>,
+        <http://id.worldcat.org/fast/869968>,
+        <http://id.worldcat.org/fast/869971>,
+        <http://id.worldcat.org/fast/869973>,
+        <http://id.worldcat.org/fast/869974>,
+        <http://id.worldcat.org/fast/869975>,
+        <http://id.worldcat.org/fast/869980>,
+        <http://id.worldcat.org/fast/869983>,
+        <http://id.worldcat.org/fast/869987>,
+        <http://id.worldcat.org/fast/869988>,
+        <http://id.worldcat.org/fast/869989>,
+        <http://id.worldcat.org/fast/870006>,
+        <http://id.worldcat.org/fast/870008>,
+        <http://id.worldcat.org/fast/870014>,
+        <http://id.worldcat.org/fast/870015>,
+        <http://id.worldcat.org/fast/870016>,
+        <http://id.worldcat.org/fast/870022>,
+        <http://id.worldcat.org/fast/870023>,
+        <http://id.worldcat.org/fast/870024>,
+        <http://id.worldcat.org/fast/870025>,
+        <http://id.worldcat.org/fast/870026>,
+        <http://id.worldcat.org/fast/870027>,
+        <http://id.worldcat.org/fast/870028>,
+        <http://id.worldcat.org/fast/870029>,
+        <http://id.worldcat.org/fast/870030>,
+        <http://id.worldcat.org/fast/870033>,
+        <http://id.worldcat.org/fast/870034>,
+        <http://id.worldcat.org/fast/870035> ;
+    skos:narrower <http://id.loc.gov/authorities/subjects/sh00002232>,
+        <http://id.loc.gov/authorities/subjects/sh00004200>,
+        <http://id.loc.gov/authorities/subjects/sh2001010616>,
+        <http://id.loc.gov/authorities/subjects/sh2002005790>,
+        <http://id.loc.gov/authorities/subjects/sh2004003366>,
+        <http://id.loc.gov/authorities/subjects/sh2006001192>,
+        <http://id.loc.gov/authorities/subjects/sh2006003620>,
+        <http://id.loc.gov/authorities/subjects/sh2006007023>,
+        <http://id.loc.gov/authorities/subjects/sh2007006459>,
+        <http://id.loc.gov/authorities/subjects/sh2009000132>,
+        <http://id.loc.gov/authorities/subjects/sh2009006429>,
+        <http://id.loc.gov/authorities/subjects/sh2009006606>,
+        <http://id.loc.gov/authorities/subjects/sh2010001550>,
+        <http://id.loc.gov/authorities/subjects/sh2021005144>,
+        <http://id.loc.gov/authorities/subjects/sh2021005621>,
+        <http://id.loc.gov/authorities/subjects/sh2021005832>,
+        <http://id.loc.gov/authorities/subjects/sh2021007021>,
+        <http://id.loc.gov/authorities/subjects/sh85014881>,
+        <http://id.loc.gov/authorities/subjects/sh85022098>,
+        <http://id.loc.gov/authorities/subjects/sh85029042>,
+        <http://id.loc.gov/authorities/subjects/sh85029044>,
+        <http://id.loc.gov/authorities/subjects/sh85029112>,
+        <http://id.loc.gov/authorities/subjects/sh85036058>,
+        <http://id.loc.gov/authorities/subjects/sh85037940>,
+        <http://id.loc.gov/authorities/subjects/sh85055982>,
+        <http://id.loc.gov/authorities/subjects/sh85058677>,
+        <http://id.loc.gov/authorities/subjects/sh85062837>,
+        <http://id.loc.gov/authorities/subjects/sh85066150>,
+        <http://id.loc.gov/authorities/subjects/sh85066289>,
+        <http://id.loc.gov/authorities/subjects/sh85067222>,
+        <http://id.loc.gov/authorities/subjects/sh85067481>,
+        <http://id.loc.gov/authorities/subjects/sh85072731>,
+        <http://id.loc.gov/authorities/subjects/sh85074518>,
+        <http://id.loc.gov/authorities/subjects/sh85074546>,
+        <http://id.loc.gov/authorities/subjects/sh85075493>,
+        <http://id.loc.gov/authorities/subjects/sh85077935>,
+        <http://id.loc.gov/authorities/subjects/sh85081863>,
+        <http://id.loc.gov/authorities/subjects/sh85092368>,
+        <http://id.loc.gov/authorities/subjects/sh85095226>,
+        <http://id.loc.gov/authorities/subjects/sh85100175>,
+        <http://id.loc.gov/authorities/subjects/sh85104904>,
+        <http://id.loc.gov/authorities/subjects/sh85122402>,
+        <http://id.loc.gov/authorities/subjects/sh85131416>,
+        <http://id.loc.gov/authorities/subjects/sh85133270>,
+        <http://id.loc.gov/authorities/subjects/sh85140767>,
+        <http://id.loc.gov/authorities/subjects/sh85143916>,
+        <http://id.loc.gov/authorities/subjects/sh85143917>,
+        <http://id.loc.gov/authorities/subjects/sh85147281>,
+        <http://id.loc.gov/authorities/subjects/sh85147568>,
+        <http://id.loc.gov/authorities/subjects/sh85148659>,
+        <http://id.loc.gov/authorities/subjects/sh86001197>,
+        <http://id.loc.gov/authorities/subjects/sh86007016>,
+        <http://id.loc.gov/authorities/subjects/sh87002567>,
+        <http://id.loc.gov/authorities/subjects/sh87004551>,
+        <http://id.loc.gov/authorities/subjects/sh88007764>,
+        <http://id.loc.gov/authorities/subjects/sh95001924>,
+        <http://id.loc.gov/authorities/subjects/sh95004992>,
+        <http://id.loc.gov/authorities/subjects/sh97005843> ;
+    skos:note "Here are entered works on human communication, including both the primary techniques of language, pictures, etc., and the secondary techniques, such as the press and radio. Works on the modern means of mass communication are entered under [Mass media.] Works on the communications industries treated collectively are entered under [Communication and traffic.]" ;
+    skos:prefLabel "Communication"@en ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Communication, Primitive"@en ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Mass communication"@en ] .
+
+<http://id.loc.gov/authorities/subjects/sh85029042> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication, International"@en ;
+    skos:prefLabel "Communication, International"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029044> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication and traffic"@en ;
+    skos:prefLabel "Communication and traffic"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029112> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communicative competence"@en ;
+    skos:prefLabel "Communicative competence"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85036058> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Deaf--Means of communication"@en ;
+    skos:prefLabel "Deaf--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85037940> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Diffusion of innovations"@en ;
+    skos:prefLabel "Diffusion of innovations"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85055982> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Gossip"@en ;
+    skos:prefLabel "Gossip"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85058677> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "People with disabilities--Means of communication"@en ;
+    skos:prefLabel "People with disabilities--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85062837> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Human-animal communication"@en ;
+    skos:prefLabel "Human-animal communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066150> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information science"@en ;
+    skos:prefLabel "Information science"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066289> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information theory"@en ;
+    skos:prefLabel "Information theory"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85067222> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Intercultural communication"@en ;
+    skos:prefLabel "Intercultural communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85067481> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Interpersonal communication"@en ;
+    skos:prefLabel "Interpersonal communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85072731> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Knowledge, Sociology of"@en ;
+    skos:prefLabel "Knowledge, Sociology of"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85074518> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Language and languages"@en ;
+    skos:prefLabel "Language and languages"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85074546> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Language arts"@en ;
+    skos:prefLabel "Language arts"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85075493> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Leaflets dropped from aircraft"@en ;
+    skos:prefLabel "Leaflets dropped from aircraft"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85077935> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Local mass media"@en ;
+    skos:prefLabel "Local mass media"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85081863> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Mass media"@en ;
+    skos:prefLabel "Mass media"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85092368> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Nonverbal communication"@en ;
+    skos:prefLabel "Nonverbal communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85095226> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Oral communication"@en ;
+    skos:prefLabel "Oral communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85100175> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Persuasion (Psychology)"@en ;
+    skos:prefLabel "Persuasion (Psychology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85104904> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Popular culture"@en ;
+    skos:prefLabel "Popular culture"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85122402> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Signals and signaling"@en ;
+    skos:prefLabel "Signals and signaling"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124200> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Sociology"@en ] ) ;
+    skos:prefLabel "Sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85131416> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Symbolism in communication"@en ;
+    skos:prefLabel "Symbolism in communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85133270> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Telecommunication"@en ;
+    skos:prefLabel "Telecommunication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85140767> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "United States. Congress--Constituent communication"@en ;
+    skos:prefLabel "United States. Congress--Constituent communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85143916> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Visual aids"@en ;
+    skos:prefLabel "Visual aids"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85143917> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Visual communication"@en ;
+    skos:prefLabel "Visual communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85147281> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women--Communication"@en ;
+    skos:prefLabel "Women--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85147568> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women in communication"@en ;
+    skos:prefLabel "Women in communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85148659> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Written communication"@en ;
+    skos:prefLabel "Written communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh86001197> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "People with mental disabilities--Means of communication"@en ;
+    skos:prefLabel "People with mental disabilities--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh86007016> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Older people--Communication"@en ;
+    skos:prefLabel "Older people--Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh87002567> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "People with visual disabilities--Means of communication"@en ;
+    skos:prefLabel "People with visual disabilities--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh87004551> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Business communication"@en ;
+    skos:prefLabel "Business communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88007764> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Developmentally disabled--Means of communication"@en ;
+    skos:prefLabel "Developmentally disabled--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh95001924> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Deafblind children--Means of communication"@en ;
+    skos:prefLabel "Deafblind children--Means of communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh95004992> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Interpretation of cultural and natural resources"@en ;
+    skos:prefLabel "Interpretation of cultural and natural resources"@en .
+
+<http://id.loc.gov/authorities/subjects/sh97005843> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Miscommunication"@en ;
+    skos:prefLabel "Miscommunication"@en .
+
+<http://id.worldcat.org/fast/869952> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication" ;
+    skos:prefLabel "Communication" .
+
+<http://id.worldcat.org/fast/869953> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Ability testing" ;
+    skos:prefLabel "Communication--Ability testing" .
+
+<http://id.worldcat.org/fast/869956> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Citizen participation" ;
+    skos:prefLabel "Communication--Citizen participation" .
+
+<http://id.worldcat.org/fast/869957> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Computer network resources" ;
+    skos:prefLabel "Communication--Computer network resources" .
+
+<http://id.worldcat.org/fast/869958> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Computer programs" ;
+    skos:prefLabel "Communication--Computer programs" .
+
+<http://id.worldcat.org/fast/869959> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Computer-assisted instruction" ;
+    skos:prefLabel "Communication--Computer-assisted instruction" .
+
+<http://id.worldcat.org/fast/869961> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Documentation" ;
+    skos:prefLabel "Communication--Documentation" .
+
+<http://id.worldcat.org/fast/869963> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Equipment and supplies" ;
+    skos:prefLabel "Communication--Equipment and supplies" .
+
+<http://id.worldcat.org/fast/869964> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Evaluation" ;
+    skos:prefLabel "Communication--Evaluation" .
+
+<http://id.worldcat.org/fast/869965> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Examinations" ;
+    skos:prefLabel "Communication--Examinations" .
+
+<http://id.worldcat.org/fast/869966> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Finance" ;
+    skos:prefLabel "Communication--Finance" .
+
+<http://id.worldcat.org/fast/869967> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Forecasting" ;
+    skos:prefLabel "Communication--Forecasting" .
+
+<http://id.worldcat.org/fast/869968> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Graphic methods" ;
+    skos:prefLabel "Communication--Graphic methods" .
+
+<http://id.worldcat.org/fast/869971> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Information services" ;
+    skos:prefLabel "Communication--Information services" .
+
+<http://id.worldcat.org/fast/869973> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Law and legislation" ;
+    skos:prefLabel "Communication--Law and legislation" .
+
+<http://id.worldcat.org/fast/869974> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Management" ;
+    skos:prefLabel "Communication--Management" .
+
+<http://id.worldcat.org/fast/869975> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Mathematical models" ;
+    skos:prefLabel "Communication--Mathematical models" .
+
+<http://id.worldcat.org/fast/869980> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Periodicals" ;
+    skos:prefLabel "Communication--Periodicals" .
+
+<http://id.worldcat.org/fast/869983> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Physiological aspects" ;
+    skos:prefLabel "Communication--Physiological aspects" .
+
+<http://id.worldcat.org/fast/869987> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Psychology" ;
+    skos:prefLabel "Communication--Psychology" .
+
+<http://id.worldcat.org/fast/869988> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Public opinion" ;
+    skos:prefLabel "Communication--Public opinion" .
+
+<http://id.worldcat.org/fast/869989> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Reference books" ;
+    skos:prefLabel "Communication--Reference books" .
+
+<http://id.worldcat.org/fast/870006> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Research grants" ;
+    skos:prefLabel "Communication--Research grants" .
+
+<http://id.worldcat.org/fast/870008> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Simulation methods" ;
+    skos:prefLabel "Communication--Simulation methods" .
+
+<http://id.worldcat.org/fast/870014> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Societies, etc." ;
+    skos:prefLabel "Communication--Societies, etc." .
+
+<http://id.worldcat.org/fast/870015> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Sociological aspects" ;
+    skos:prefLabel "Communication--Sociological aspects" .
+
+<http://id.worldcat.org/fast/870016> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Statistical methods" ;
+    skos:prefLabel "Communication--Statistical methods" .
+
+<http://id.worldcat.org/fast/870022> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Continuing education)" ;
+    skos:prefLabel "Communication--Study and teaching (Continuing education)" .
+
+<http://id.worldcat.org/fast/870023> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Early childhood)" ;
+    skos:prefLabel "Communication--Study and teaching (Early childhood)" .
+
+<http://id.worldcat.org/fast/870024> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Elementary)" ;
+    skos:prefLabel "Communication--Study and teaching (Elementary)" .
+
+<http://id.worldcat.org/fast/870025> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Graduate)" ;
+    skos:prefLabel "Communication--Study and teaching (Graduate)" .
+
+<http://id.worldcat.org/fast/870026> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Higher)" ;
+    skos:prefLabel "Communication--Study and teaching (Higher)" .
+
+<http://id.worldcat.org/fast/870027> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Internship)" ;
+    skos:prefLabel "Communication--Study and teaching (Internship)" .
+
+<http://id.worldcat.org/fast/870028> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Preschool)" ;
+    skos:prefLabel "Communication--Study and teaching (Preschool)" .
+
+<http://id.worldcat.org/fast/870029> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Primary)" ;
+    skos:prefLabel "Communication--Study and teaching (Primary)" .
+
+<http://id.worldcat.org/fast/870030> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Study and teaching (Secondary)" ;
+    skos:prefLabel "Communication--Study and teaching (Secondary)" .
+
+<http://id.worldcat.org/fast/870033> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Technological innovations--Social aspects" ;
+    skos:prefLabel "Communication--Technological innovations--Social aspects" .
+
+<http://id.worldcat.org/fast/870034> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Technology" ;
+    skos:prefLabel "Communication--Technology" .
+
+<http://id.worldcat.org/fast/870035> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication--Testing" ;
+    skos:prefLabel "Communication--Testing" .
+
+<http://www.wikidata.org/entity/Q11024> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "communication" ;
+    skos:prefLabel "communication" .
+
+<http://www.wikidata.org/entity/Q11028> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "information" ;
+    skos:prefLabel "information" .
+
+<http://www.yso.fi/onto/yso/p36> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "viestintä"@fi ;
+    skos:prefLabel "viestintä"@fi .
+

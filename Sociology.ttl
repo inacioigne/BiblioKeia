@@ -1,0 +1,1553 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/10002856> a bf:Work ;
+    bflc:aap "Kurokawa, Junʼichi, 1904- Shakaigaku" .
+
+<http://id.loc.gov/resources/works/10003107> a bf:Work ;
+    bflc:aap "Shakaigaku" .
+
+<http://id.loc.gov/resources/works/10003260> a bf:Work ;
+    bflc:aap "Koyama, Takashi, 1900-1983 Kiseki gojūnen" .
+
+<http://id.loc.gov/resources/works/10017112> a bf:Work ;
+    bflc:aap "Kōnstantinidēs, K. D. Ta psychopathologika phainomena tēs synchronou koinōnias" .
+
+<http://id.loc.gov/resources/works/1003333> a bf:Work ;
+    bflc:aap "ʻAbd, Ṣalāḥ ʻIlm al-ijtimāʻ al-taṭbīqī wa-tanmiyat al-mujtamaʻ al-ʻArabī" .
+
+<http://id.loc.gov/resources/works/1004476> a bf:Work ;
+    bflc:aap "Perry, John A. (John Ambrose), 1931- The social web" .
+
+<http://id.loc.gov/resources/works/1005039> a bf:Work ;
+    bflc:aap "Smith, Dorothy E., 1926- The everyday world as problematic" .
+
+<http://id.loc.gov/resources/works/1006351> a bf:Work ;
+    bflc:aap "Brinkerhoff, David B. Sociology" .
+
+<http://id.loc.gov/resources/works/10063608> a bf:Work ;
+    bflc:aap "Schäffle, A. (Albert), 1831-1903 Bau und leben des socialen körpers" .
+
+<http://id.loc.gov/resources/works/10064474> a bf:Work ;
+    bflc:aap "Coste, Adolphe, 1842-1901 L'expérience des peuples et les prévisions qu'elle autorise" .
+
+<http://id.loc.gov/resources/works/1006528> a bf:Work ;
+    bflc:aap "Expanding the past" .
+
+<http://id.loc.gov/resources/works/10070628> a bf:Work ;
+    bflc:aap "Defourny, Maurice La sociologie positiviste" .
+
+<http://id.loc.gov/resources/works/10071778> a bf:Work ;
+    bflc:aap "Greef, Guillaume de, 1842-1924 Le transformisme social" .
+
+<http://id.loc.gov/resources/works/10072581> a bf:Work ;
+    bflc:aap "Holmes, George Frederick, 1820-1897 The science of society" .
+
+<http://id.loc.gov/resources/works/10072780> a bf:Work ;
+    bflc:aap "Kidd, Benjamin, 1858-1916 Social evolution" .
+
+<http://id.loc.gov/resources/works/10073871> a bf:Work ;
+    bflc:aap "Morgan, Lewis Henry, 1818-1881 Ancient society; or, Researches in the lines of human progress from savagery, through barbarism to civilization" .
+
+<http://id.loc.gov/resources/works/10078483> a bf:Work ;
+    bflc:aap "Small, Albion W., 1854-1926. General sociology; an exposition of the main development in sociological theory from Spencer to Ratzenhofer," .
+
+<http://id.loc.gov/resources/works/10078779> a bf:Work ;
+    bflc:aap "Hostos, Eugenio María de, 1839-1903. Tratado de sociología," .
+
+<http://id.loc.gov/resources/works/10080780> a bf:Work ;
+    bflc:aap "Haycraft, John Berry, -1922. Darwinism and race progress," .
+
+<http://id.loc.gov/resources/works/10082844> a bf:Work ;
+    bflc:aap "Giddings, Franklin Henry, 1855-1931, Readings in descriptive and historical sociology" .
+
+<http://id.loc.gov/resources/works/10086909> a bf:Work ;
+    bflc:aap "Small, Albion W., 1854-1926. Adam Smith and modern sociology; a study in the methodology of the social sciences" .
+
+<http://id.loc.gov/resources/works/10087732> a bf:Work ;
+    bflc:aap "Chatterton-Hill, Georges, 1883- Heredity and selection in sociology," .
+
+<http://id.loc.gov/resources/works/10089670> a bf:Work ;
+    bflc:aap "Stammler, Rudolf, 1856-1938. Wirtschaft und recht nach der materialistischen geschichtsauffassung; eine sozialphilosophische untersuchung," .
+
+<http://id.loc.gov/resources/works/10090806> a bf:Work ;
+    bflc:aap "Rey, Joseph-Auguste, 1779-1855. Théorie et pratique de la science sociale, ou, Exposé des principes de morale, d'économie publique et de politique : et application a l'état actuel de la société, de moyens généraux, immédiats et successifs d'améliorer la condition des travailleurs et même des propriétaires" .
+
+<http://id.loc.gov/resources/works/10090821> a bf:Work ;
+    bflc:aap "Loria, Achille, 1857-1943. economic foundations of society," .
+
+<http://id.loc.gov/resources/works/1009189> a bf:Work ;
+    bflc:aap "Zich, František. Sociální procesy : metodologické otázky zkoumání dialektiky společenského vývoje" .
+
+<http://id.loc.gov/resources/works/10093642> a bf:Work ;
+    bflc:aap "Worms, René, 1869- Philosophie des sciences sociales," .
+
+<http://id.loc.gov/resources/works/10093797> a bf:Work ;
+    bflc:aap "La Grasserie, Raoul de, 1839-1914. principes sociologiques du droit civil" .
+
+<http://id.loc.gov/resources/works/10093875> a bf:Work ;
+    bflc:aap "Mumford, Eben. origins of leadership" .
+
+<http://id.loc.gov/resources/works/10095577> a bf:Work ;
+    bflc:aap "Novicow, J. (Jacques), 1849-1912 La critique du Darwinisme social" .
+
+<http://id.loc.gov/resources/works/10095677> a bf:Work ;
+    bflc:aap "Comte, Auguste, 1798-1857. Système de politique positive" .
+
+<http://id.loc.gov/resources/works/10096238> a bf:Work ;
+    bflc:aap "García, Juan Agustín, 1862-1923. Introducción al estudio de las ciencias sociales argentinas," .
+
+<http://id.loc.gov/resources/works/10096827> a bf:Work ;
+    bflc:aap "Huré, Jules, 1867- assises sociales universelles, de la connaissance de l'homme .." .
+
+<http://id.loc.gov/resources/works/10098038> a bf:Work ;
+    bflc:aap "Levi, Alessandro, 1881-1953. société et l'ordre juridique," .
+
+<http://id.loc.gov/resources/works/10101576> a bf:Work ;
+    bflc:aap "Brugeilles, Raoul. droit et la sociologie," .
+
+<http://id.loc.gov/resources/works/10101825> a bf:Work ;
+    bflc:aap "Hobhouse, L. T. (Leonard Trelawny), 1864-1929. Social evolution and political theory," .
+
+<http://id.loc.gov/resources/works/10101907> a bf:Work ;
+    bflc:aap "Sumner, William Graham, 1840-1910. War, and other essays," .
+
+<http://id.loc.gov/resources/works/10103106> a bf:Work ;
+    bflc:aap "Crozier, John Beattie, 1849-1921. Sociology applied to practical politics," .
+
+<http://id.loc.gov/resources/works/10104215> a bf:Work ;
+    bflc:aap "Folkmar, Daniel, 1861-1932. Leçons d'anthropologie philosophique; ses applications à la morale positive," .
+
+<http://id.loc.gov/resources/works/10106270> a bf:Work ;
+    bflc:aap "Gumplowicz, Ludwig, 1838-1909. lutte des races; recherches sociologiques," .
+
+<http://id.loc.gov/resources/works/10106474> a bf:Work ;
+    bflc:aap "Escard, François. Solutions anciennes et renaissantes de la question sociale.." .
+
+<http://id.loc.gov/resources/works/10106735> a bf:Work ;
+    bflc:aap "Gillette, John Morris, 1866- Constructive rural sociology," .
+
+<http://id.loc.gov/resources/works/10112245> a bf:Work ;
+    bflc:aap "Tarde, Gabriel de, 1843-1904. lois de l'imitation; étude sociologique," .
+
+<http://id.loc.gov/resources/works/10113974> a bf:Work ;
+    bflc:aap "León, Carlos. Elementos de sociología," .
+
+<http://id.loc.gov/resources/works/10115617> a bf:Work ;
+    bflc:aap "Dellepiane, Antonio. Estudios de filosofía jurídica y social" .
+
+<http://id.loc.gov/resources/works/10116255> a bf:Work ;
+    bflc:aap "Martínez Paz, Enrique. Los elementos de la sociología," .
+
+<http://id.loc.gov/resources/works/10116496> a bf:Work ;
+    bflc:aap "Wines, Frederick Howard, 1838-1912. Sociology and philanthropy" .
+
+<http://id.loc.gov/resources/works/10118384> a bf:Work ;
+    bflc:aap "Hariou, Maurice i. e. Jean Claude Eugène Maurice, 1856-" .
+
+<http://id.loc.gov/resources/works/10122102> a bf:Work ;
+    bflc:aap "Roberty, E. de (Eugène), 1843-1915. Evgeniĭ Valentinovich de Roberti de Kastro de la Serda" .
+
+<http://id.loc.gov/resources/works/10123215> a bf:Work ;
+    bflc:aap "Stern, Daniel, 1805-1876. Essai sur la liberté considérée comme pricipe et fi de l'activité humaine," .
+
+<http://id.loc.gov/resources/works/10125211> a bf:Work ;
+    bflc:aap "Cole, G. D. H. (George Douglas Howard), 1889-1959. Social theory" .
+
+<http://id.loc.gov/resources/works/10126537> a bf:Work ;
+    bflc:aap "Loria, Achille, 1857-1943. Sot︠s︡īologīi︠a︡" .
+
+<http://id.loc.gov/resources/works/10126538> a bf:Work ;
+    bflc:aap "Spencer, Herbert, 1820-1903. Osnovanīi︠a︡ sot︠s︡īologīi" .
+
+<http://id.loc.gov/resources/works/10126619> a bf:Work ;
+    bflc:aap "Kareev, Nikolaĭ Ivanovich, 1850-1931. Vvedenīe v izuchenīe sot︠s︡īologīi" .
+
+<http://id.loc.gov/resources/works/10127856> a bf:Work ;
+    bflc:aap "Hayes, Edward Cary, 1868-1928. Sociology and ethics; the facts of social life as the source of solutions for the theoretical and practical problems of ethics," .
+
+<http://id.loc.gov/resources/works/10129095> a bf:Work ;
+    bflc:aap "Cordero, Juan N. vida psiquica" .
+
+<http://id.loc.gov/resources/works/10130334> a bf:Work ;
+    bflc:aap "Bogardus, Emory S. (Emory Stephen), 1882-1973. Introduction to sociology," .
+
+<http://id.loc.gov/resources/works/10130594> a bf:Work ;
+    bflc:aap "Heermance, Edgar Laing, 1876- Chaos or cosmos?" .
+
+<http://id.loc.gov/resources/works/10132492> a bf:Work ;
+    bflc:aap "Ross, Edward Alsworth, 1866-1951. outlines of sociology," .
+
+<http://id.loc.gov/resources/works/10133926> a bf:Work ;
+    bflc:aap "Snedden, David Samuel, 1868- Educational applications of sociology," .
+
+<http://id.loc.gov/resources/works/10134289> a bf:Work ;
+    bflc:aap "Eldridge, Seba, 1885- Political action, a naturalistic interpretation of the labor movement in relation to the state" .
+
+<http://id.loc.gov/resources/works/10138406> a bf:Work ;
+    bflc:aap "Odum, Howard Washington, 1884- Sociology and social problems," .
+
+<http://id.loc.gov/resources/works/10138863> a bf:Work ;
+    bflc:aap "Bousquet, Georges Henri. Précis de sociologie d'après Vilfredo Pareto" .
+
+<http://id.loc.gov/resources/works/1013891> a bf:Work ;
+    bflc:aap "Radenović, Predrag N. Sociološka hrestomatija : sa komentarima" .
+
+<http://id.loc.gov/resources/works/10140630> a bf:Work ;
+    bflc:aap "De Laguna, Theodore de Leo, 1876-1930. factors of social evolution," .
+
+<http://id.loc.gov/resources/works/10141085> a bf:Work ;
+    bflc:aap "Bouglé, Célestin Charles Alfred, 1870-1940. evolution of values; studies in sociology with special applications to teaching," .
+
+<http://id.loc.gov/resources/works/10141133> a bf:Work ;
+    bflc:aap "Wiese, Leopold von, 1876-1969. Soziologie : Geschichte und Hauptprobleme" .
+
+<http://id.loc.gov/resources/works/10142206> a bf:Work ;
+    bflc:aap "Soziologische lesestücke" .
+
+<http://id.loc.gov/resources/works/10142851> a bf:Work ;
+    bflc:aap "Janes, George Milton, 1869-1936. Man and society," .
+
+<http://id.loc.gov/resources/works/10143276> a bf:Work ;
+    bflc:aap "Wallis, Wilson Dallam, 1886- introduction to sociology," .
+
+<http://id.loc.gov/resources/works/10143296> a bf:Work ;
+    bflc:aap "Lundquist, Gustav Adolph. Principles of rural sociology," .
+
+<http://id.loc.gov/resources/works/10144312> a bf:Work ;
+    bflc:aap "Needham, H. A. (Harold Alfred) développement de l'esthétique sociologique en France et en Angleterre au XIXe siècle," .
+
+<http://id.loc.gov/resources/works/10145532> a bf:Work ;
+    bflc:aap "Roche-Agussol, Maurice. Tarde et l'économie psychologique," .
+
+<http://id.loc.gov/resources/works/10146622> a bf:Work ;
+    bflc:aap "Chapin, Francis Stuart, 1888- Cultural change," .
+
+<http://id.loc.gov/resources/works/10146768> a bf:Work ;
+    bflc:aap "Corliss, J. B. (John Blaisdell), 1877- Peace versus politics," .
+
+<http://id.loc.gov/resources/works/10146822> a bf:Work ;
+    bflc:aap "Wells, H. G. (Herbert George), 1866-1946. open conspiracy; blue prints for a world revolution" .
+
+<http://id.loc.gov/resources/works/10148328> a bf:Work ;
+    bflc:aap "Gottl-Ottlilienfeld, Friedrich von, 1868-1958. Wirtschaft als Leben; eine Sammlung erkenntniskritischer Arbeiten," .
+
+<http://id.loc.gov/resources/works/10148823> a bf:Work ;
+    bflc:aap "Klapper, Paul, 1885- Contemporary education," .
+
+<http://id.loc.gov/resources/works/10149728> a bf:Work ;
+    bflc:aap "Weiss, Carl. Pädagogische soziologie," .
+
+<http://id.loc.gov/resources/works/10150719> a bf:Work ;
+    bflc:aap "Gumplowicz, Ludwig, 1838-1909. Filozofia społeczna," .
+
+<http://id.loc.gov/resources/works/10152051> a bf:Work ;
+    bflc:aap "Peters, Charles C. (Charles Clinton), 1881-1973. Objectives and procedures in civic education; an intensive study in curriculum construction," .
+
+<http://id.loc.gov/resources/works/10152059> a bf:Work ;
+    bflc:aap "Finney, Ross L. (Ross Lee), 1875-1934. Elementary sociology, a constructive textbook for high schools and junior colleges," .
+
+<http://id.loc.gov/resources/works/10152252> a bf:Work ;
+    bflc:aap "Haas, Francis Joseph, 1889- Man and society; an introduction to sociology," .
+
+<http://id.loc.gov/resources/works/10153807> a bf:Work ;
+    bflc:aap "American sociological association Social conflict .." .
+
+<http://id.loc.gov/resources/works/10155267> a bf:Work ;
+    bflc:aap "Snedden, David Samuel, 1868- Cultural educations and common sense; a study of some sociological foundations of education designed to refine, increase, and render more functional the personal cultures of men," .
+
+<http://id.loc.gov/resources/works/10156294> a bf:Work ;
+    bflc:aap "Ward, Lester F. (Lester Frank), 1841-1913. The substance of the sociology of Lester F. Ward," .
+
+<http://id.loc.gov/resources/works/10156389> a bf:Work ;
+    bflc:aap "Smith, Henry Lester, 1876- philosophy of human relations, individual and collective; a source book" .
+
+<http://id.loc.gov/resources/works/10158035> a bf:Work ;
+    bflc:aap "Eubank, Earle Edward, 1887-1945. concepts of sociology, a treatise presenting a suggested organization of sociological theory in terms of its major concepts," .
+
+<http://id.loc.gov/resources/works/10158301> a bf:Work ;
+    bflc:aap "Hogben, Lancelot Thomas, 1895-1975. Genetic principles in medicine and social science," .
+
+<http://id.loc.gov/resources/works/10158421> a bf:Work ;
+    bflc:aap "Thurnwald, Richard, 1869-1954. menschliche Gesellschaft in ihren ethno-soziologischen Grundlagen," .
+
+<http://id.loc.gov/resources/works/10158811> a bf:Work ;
+    bflc:aap "Hernández Alfonso, Luis. Miedo al porvenir? Democracia y comunismo" .
+
+<http://id.loc.gov/resources/works/10159330> a bf:Work ;
+    bflc:aap "Fernández de Rota y Tournan, Antonio, 1887- Ciencia de la guerra," .
+
+<http://id.loc.gov/resources/works/10159895> a bf:Work ;
+    bflc:aap "Coste, Adolphe, 1842-1901. principes d'une sociologie objective" .
+
+<http://id.loc.gov/resources/works/10160099> a bf:Work ;
+    bflc:aap "Maeztu, Ramiro de, 1875-1936. crisis del humanismo; los principios de autoridad," .
+
+<http://id.loc.gov/resources/works/10160500> a bf:Work ;
+    bflc:aap "Simmel, Georg, 1858-1918. Grundfragen der Soziologie (Individuum und Gesellschaft)" .
+
+<http://id.loc.gov/resources/works/10161180> a bf:Work ;
+    bflc:aap "Miller, Herbert Adolphus, 1875-1951. beginnings of to-morrow; an introduction to the sociology of the great society," .
+
+<http://id.loc.gov/resources/works/10161331> a bf:Work ;
+    bflc:aap "Kilpatrick, William Heard, 1871-1965, educational frontier," .
+
+<http://id.loc.gov/resources/works/10162417> a bf:Work ;
+    bflc:aap "Izoulet, Jean Bernard Joachim, 1854-1929. cité moderne:" .
+
+<http://id.loc.gov/resources/works/10162496> a bf:Work ;
+    bflc:aap "American Education Fellowship. Committee on Social and Economic Problems. call to the teachers of the nation" .
+
+<http://id.loc.gov/resources/works/10163046> a bf:Work ;
+    bflc:aap "Corteano, André. évolution de l'état" .
+
+<http://d-nb.info/gnd/4077624-4> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Soziologie"@de ;
+    skos:prefLabel "Soziologie"@de .
+
+<http://data.bnf.fr/ark:/12148/cb133408573> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociologie"@fr ;
+    skos:prefLabel "Sociologie"@fr .
+
+<http://id.loc.gov/authorities/subjects/sh00009986> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social capital (Sociology)"@en ;
+    skos:prefLabel "Social capital (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2004014028> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Hegemony"@en ;
+    skos:prefLabel "Hegemony"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2006006372> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sikh sociology"@en ;
+    skos:prefLabel "Sikh sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2007003246> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Triads (Sociology)"@en ;
+    skos:prefLabel "Triads (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2009007461> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Memory--Sociological aspects"@en ;
+    skos:prefLabel "Memory--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2009010555> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Environmental sociology"@en ;
+    skos:prefLabel "Environmental sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2010006126> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information science--Sociological aspects"@en ;
+    skos:prefLabel "Information science--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2010010550> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Bible and sociology"@en ;
+    skos:prefLabel "Bible and sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2012003306> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Frames (Sociology)"@en ;
+    skos:prefLabel "Frames (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2013001662> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Ethnosociology"@en ;
+    skos:prefLabel "Ethnosociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2017003056> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Intersectionality (Sociology)"@en ;
+    skos:prefLabel "Intersectionality (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2018001200> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Zoroastrian sociology"@en ;
+    skos:prefLabel "Zoroastrian sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2020012257> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociophonetics"@en ;
+    skos:prefLabel "Sociophonetics"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021005424> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Classification--Books--Sociology"@en ;
+    skos:prefLabel "Classification--Books--Sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh2021006160> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Libraries--Special collections--Sociology"@en ;
+    skos:prefLabel "Libraries--Special collections--Sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85005412> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Anomy"@en ;
+    skos:prefLabel "Anomy"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85023257> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Chicago school of sociology"@en ;
+    skos:prefLabel "Chicago school of sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85027068> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Clinical sociology"@en ;
+    skos:prefLabel "Clinical sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029027> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communication"@en ;
+    skos:prefLabel "Communication"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85029167> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Communism and society"@en ;
+    skos:prefLabel "Communism and society"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85031272> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Conservatism"@en ;
+    skos:prefLabel "Conservatism"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85036472> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Degeneration"@en ;
+    skos:prefLabel "Degeneration"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85040049> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Durkheimian school of sociology"@en ;
+    skos:prefLabel "Durkheimian school of sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85041146> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Educational sociology"@en ;
+    skos:prefLabel "Educational sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85044503> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Equality"@en ;
+    skos:prefLabel "Equality"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85045182> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Ethnic relations"@en ;
+    skos:prefLabel "Ethnic relations"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85046234> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Exchange theory (Sociology)"@en ;
+    skos:prefLabel "Exchange theory (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85057489> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Group medical practice--Sociological aspects"@en ;
+    skos:prefLabel "Group medical practice--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85061208> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Historical sociology"@en ;
+    skos:prefLabel "Historical sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85062894> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Human settlements"@en ;
+    skos:prefLabel "Human settlements"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85065686> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Individualism"@en ;
+    skos:prefLabel "Individualism"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85065946> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Industrial sociology"@en ;
+    skos:prefLabel "Industrial sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85066302> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information theory in sociology"@en ;
+    skos:prefLabel "Information theory in sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85072731> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Knowledge, Sociology of"@en ;
+    skos:prefLabel "Knowledge, Sociology of"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85079472> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Macrosociology"@en ;
+    skos:prefLabel "Macrosociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85081057> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Marginality, Social"@en ;
+    skos:prefLabel "Marginality, Social"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85081906> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Mass society"@en ;
+    skos:prefLabel "Mass society"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85082132> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Mathematical sociology"@en ;
+    skos:prefLabel "Mathematical sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85084916> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Microsociology"@en ;
+    skos:prefLabel "Microsociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85099145> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Pediatric clinics--Sociological aspects"@en ;
+    skos:prefLabel "Pediatric clinics--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85100681> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Phenomenological sociology"@en ;
+    skos:prefLabel "Phenomenological sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85104457> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Political sociology"@en ;
+    skos:prefLabel "Political sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85104910> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Population"@en ;
+    skos:prefLabel "Population"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85105976> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Power (Social sciences)"@en ;
+    skos:prefLabel "Power (Social sciences)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85107273> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Professions--Sociological aspects"@en ;
+    skos:prefLabel "Professions--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85108344> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Psychiatric clinics--Sociological aspects"@en ;
+    skos:prefLabel "Psychiatric clinics--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85108370> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Psychiatric hospitals--Sociological aspects"@en ;
+    skos:prefLabel "Psychiatric hospitals--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85110249> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Race relations"@en ;
+    skos:prefLabel "Race relations"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85112587> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Religion and sociology"@en ;
+    skos:prefLabel "Religion and sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85119438> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Secret societies"@en ;
+    skos:prefLabel "Secret societies"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85119749> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Self-fulfilling prophecy"@en ;
+    skos:prefLabel "Self-fulfilling prophecy"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123927> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social conflict"@en ;
+    skos:prefLabel "Social conflict"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123930> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social contract"@en ;
+    skos:prefLabel "Social contract"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123931> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social control"@en ;
+    skos:prefLabel "Social control"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123939> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social ethics"@en ;
+    skos:prefLabel "Social ethics"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123948> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social history"@en ;
+    skos:prefLabel "Social history"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123963> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social institutions"@en ;
+    skos:prefLabel "Social institutions"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123964> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social integration"@en ;
+    skos:prefLabel "Social integration"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123973> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social medicine"@en ;
+    skos:prefLabel "Social medicine"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123976> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social mobility"@en ;
+    skos:prefLabel "Social mobility"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123986> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social prediction"@en ;
+    skos:prefLabel "Social prediction"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85123994> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social psychology",
+        "Social psychology"@en ;
+    skos:prefLabel "Social psychology",
+        "Social psychology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124003> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social sciences"@en ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Social sciences"@en ] ) ;
+    skos:prefLabel "Social sciences"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124075> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social stability"@en ;
+    skos:prefLabel "Social stability"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124078> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social structure"@en ;
+    skos:prefLabel "Social structure"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124081> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social systems"@en ;
+    skos:prefLabel "Social systems"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124152> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Socialization"@en ;
+    skos:prefLabel "Socialization"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124195> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociolinguistics"@en ;
+    skos:prefLabel "Sociolinguistics"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124198> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociological jurisprudence"@en ;
+    skos:prefLabel "Sociological jurisprudence"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124200> a madsrdf:Authority,
+        madsrdf:Topic,
+        skos:Concept ;
+    bflc:marcKey "150  $aSociology" ; 
+    bflc:subjectOf <http://id.loc.gov/resources/works/10002856>,
+        <http://id.loc.gov/resources/works/10003107>,
+        <http://id.loc.gov/resources/works/10003260>,
+        <http://id.loc.gov/resources/works/10017112>,
+        <http://id.loc.gov/resources/works/1003333>,
+        <http://id.loc.gov/resources/works/1004476>,
+        <http://id.loc.gov/resources/works/1005039>,
+        <http://id.loc.gov/resources/works/1006351>,
+        <http://id.loc.gov/resources/works/10063608>,
+        <http://id.loc.gov/resources/works/10064474>,
+        <http://id.loc.gov/resources/works/1006528>,
+        <http://id.loc.gov/resources/works/10070628>,
+        <http://id.loc.gov/resources/works/10071778>,
+        <http://id.loc.gov/resources/works/10072581>,
+        <http://id.loc.gov/resources/works/10072780>,
+        <http://id.loc.gov/resources/works/10073871>,
+        <http://id.loc.gov/resources/works/10078483>,
+        <http://id.loc.gov/resources/works/10078779>,
+        <http://id.loc.gov/resources/works/10080780>,
+        <http://id.loc.gov/resources/works/10082844>,
+        <http://id.loc.gov/resources/works/10086909>,
+        <http://id.loc.gov/resources/works/10087732>,
+        <http://id.loc.gov/resources/works/10089670>,
+        <http://id.loc.gov/resources/works/10090806>,
+        <http://id.loc.gov/resources/works/10090821>,
+        <http://id.loc.gov/resources/works/1009189>,
+        <http://id.loc.gov/resources/works/10093642>,
+        <http://id.loc.gov/resources/works/10093797>,
+        <http://id.loc.gov/resources/works/10093875>,
+        <http://id.loc.gov/resources/works/10095577>,
+        <http://id.loc.gov/resources/works/10095677>,
+        <http://id.loc.gov/resources/works/10096238>,
+        <http://id.loc.gov/resources/works/10096827>,
+        <http://id.loc.gov/resources/works/10098038>,
+        <http://id.loc.gov/resources/works/10101576>,
+        <http://id.loc.gov/resources/works/10101825>,
+        <http://id.loc.gov/resources/works/10101907>,
+        <http://id.loc.gov/resources/works/10103106>,
+        <http://id.loc.gov/resources/works/10104215>,
+        <http://id.loc.gov/resources/works/10106270>,
+        <http://id.loc.gov/resources/works/10106474>,
+        <http://id.loc.gov/resources/works/10106735>,
+        <http://id.loc.gov/resources/works/10112245>,
+        <http://id.loc.gov/resources/works/10113974>,
+        <http://id.loc.gov/resources/works/10115617>,
+        <http://id.loc.gov/resources/works/10116255>,
+        <http://id.loc.gov/resources/works/10116496>,
+        <http://id.loc.gov/resources/works/10118384>,
+        <http://id.loc.gov/resources/works/10122102>,
+        <http://id.loc.gov/resources/works/10123215>,
+        <http://id.loc.gov/resources/works/10125211>,
+        <http://id.loc.gov/resources/works/10126537>,
+        <http://id.loc.gov/resources/works/10126538>,
+        <http://id.loc.gov/resources/works/10126619>,
+        <http://id.loc.gov/resources/works/10127856>,
+        <http://id.loc.gov/resources/works/10129095>,
+        <http://id.loc.gov/resources/works/10130334>,
+        <http://id.loc.gov/resources/works/10130594>,
+        <http://id.loc.gov/resources/works/10132492>,
+        <http://id.loc.gov/resources/works/10133926>,
+        <http://id.loc.gov/resources/works/10134289>,
+        <http://id.loc.gov/resources/works/10138406>,
+        <http://id.loc.gov/resources/works/10138863>,
+        <http://id.loc.gov/resources/works/1013891>,
+        <http://id.loc.gov/resources/works/10140630>,
+        <http://id.loc.gov/resources/works/10141085>,
+        <http://id.loc.gov/resources/works/10141133>,
+        <http://id.loc.gov/resources/works/10142206>,
+        <http://id.loc.gov/resources/works/10142851>,
+        <http://id.loc.gov/resources/works/10143276>,
+        <http://id.loc.gov/resources/works/10143296>,
+        <http://id.loc.gov/resources/works/10144312>,
+        <http://id.loc.gov/resources/works/10145532>,
+        <http://id.loc.gov/resources/works/10146622>,
+        <http://id.loc.gov/resources/works/10146768>,
+        <http://id.loc.gov/resources/works/10146822>,
+        <http://id.loc.gov/resources/works/10148328>,
+        <http://id.loc.gov/resources/works/10148823>,
+        <http://id.loc.gov/resources/works/10149728>,
+        <http://id.loc.gov/resources/works/10150719>,
+        <http://id.loc.gov/resources/works/10152051>,
+        <http://id.loc.gov/resources/works/10152059>,
+        <http://id.loc.gov/resources/works/10152252>,
+        <http://id.loc.gov/resources/works/10153807>,
+        <http://id.loc.gov/resources/works/10155267>,
+        <http://id.loc.gov/resources/works/10156294>,
+        <http://id.loc.gov/resources/works/10156389>,
+        <http://id.loc.gov/resources/works/10158035>,
+        <http://id.loc.gov/resources/works/10158301>,
+        <http://id.loc.gov/resources/works/10158421>,
+        <http://id.loc.gov/resources/works/10158811>,
+        <http://id.loc.gov/resources/works/10159330>,
+        <http://id.loc.gov/resources/works/10159895>,
+        <http://id.loc.gov/resources/works/10160099>,
+        <http://id.loc.gov/resources/works/10160500>,
+        <http://id.loc.gov/resources/works/10161180>,
+        <http://id.loc.gov/resources/works/10161331>,
+        <http://id.loc.gov/resources/works/10162417>,
+        <http://id.loc.gov/resources/works/10162496>,
+        <http://id.loc.gov/resources/works/10163046> ;
+    identifiers:lccn "sh 85124200" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:recordChangeDate "2005-07-06T10:49:42"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "2005-06-23T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Sociology"@en ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "HM" ] ;
+    madsrdf:editorialNote "subdivision [Sociological aspects] under types of institutions, e.g. [Universities and colleges--Sociological aspects]" ;
+    madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                madsrdf:elementValue "Sociology"@en ] ) ;
+    madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85124003> ;
+    madsrdf:hasCloseExternalAuthority <http://d-nb.info/gnd/4077624-4>,
+        <http://data.bnf.fr/ark:/12148/cb133408573>,
+        <http://id.worldcat.org/fast/1123875>,
+        <http://www.wikidata.org/entity/Q21201>,
+        <http://www.yso.fi/onto/yso/p331> ;
+    madsrdf:hasExactExternalAuthority <http://lod.nal.usda.gov/nalt/2136> ;
+    madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00009986>,
+        <http://id.loc.gov/authorities/subjects/sh2004014028>,
+        <http://id.loc.gov/authorities/subjects/sh2006006372>,
+        <http://id.loc.gov/authorities/subjects/sh2007003246>,
+        <http://id.loc.gov/authorities/subjects/sh2009007461>,
+        <http://id.loc.gov/authorities/subjects/sh2009010555>,
+        <http://id.loc.gov/authorities/subjects/sh2010006126>,
+        <http://id.loc.gov/authorities/subjects/sh2010010550>,
+        <http://id.loc.gov/authorities/subjects/sh2012003306>,
+        <http://id.loc.gov/authorities/subjects/sh2013001662>,
+        <http://id.loc.gov/authorities/subjects/sh2017003056>,
+        <http://id.loc.gov/authorities/subjects/sh2018001200>,
+        <http://id.loc.gov/authorities/subjects/sh2020012257>,
+        <http://id.loc.gov/authorities/subjects/sh2021005424>,
+        <http://id.loc.gov/authorities/subjects/sh2021006160>,
+        <http://id.loc.gov/authorities/subjects/sh85005412>,
+        <http://id.loc.gov/authorities/subjects/sh85023257>,
+        <http://id.loc.gov/authorities/subjects/sh85027068>,
+        <http://id.loc.gov/authorities/subjects/sh85029027>,
+        <http://id.loc.gov/authorities/subjects/sh85029167>,
+        <http://id.loc.gov/authorities/subjects/sh85031272>,
+        <http://id.loc.gov/authorities/subjects/sh85036472>,
+        <http://id.loc.gov/authorities/subjects/sh85040049>,
+        <http://id.loc.gov/authorities/subjects/sh85041146>,
+        <http://id.loc.gov/authorities/subjects/sh85044503>,
+        <http://id.loc.gov/authorities/subjects/sh85045182>,
+        <http://id.loc.gov/authorities/subjects/sh85046234>,
+        <http://id.loc.gov/authorities/subjects/sh85057489>,
+        <http://id.loc.gov/authorities/subjects/sh85061208>,
+        <http://id.loc.gov/authorities/subjects/sh85062894>,
+        <http://id.loc.gov/authorities/subjects/sh85065686>,
+        <http://id.loc.gov/authorities/subjects/sh85065946>,
+        <http://id.loc.gov/authorities/subjects/sh85066302>,
+        <http://id.loc.gov/authorities/subjects/sh85072731>,
+        <http://id.loc.gov/authorities/subjects/sh85079472>,
+        <http://id.loc.gov/authorities/subjects/sh85081057>,
+        <http://id.loc.gov/authorities/subjects/sh85081906>,
+        <http://id.loc.gov/authorities/subjects/sh85082132>,
+        <http://id.loc.gov/authorities/subjects/sh85084916>,
+        <http://id.loc.gov/authorities/subjects/sh85099145>,
+        <http://id.loc.gov/authorities/subjects/sh85100681>,
+        <http://id.loc.gov/authorities/subjects/sh85104457>,
+        <http://id.loc.gov/authorities/subjects/sh85104910>,
+        <http://id.loc.gov/authorities/subjects/sh85105976>,
+        <http://id.loc.gov/authorities/subjects/sh85107273>,
+        <http://id.loc.gov/authorities/subjects/sh85108344>,
+        <http://id.loc.gov/authorities/subjects/sh85108370>,
+        <http://id.loc.gov/authorities/subjects/sh85110249>,
+        <http://id.loc.gov/authorities/subjects/sh85112587>,
+        <http://id.loc.gov/authorities/subjects/sh85119438>,
+        <http://id.loc.gov/authorities/subjects/sh85119749>,
+        <http://id.loc.gov/authorities/subjects/sh85123927>,
+        <http://id.loc.gov/authorities/subjects/sh85123930>,
+        <http://id.loc.gov/authorities/subjects/sh85123931>,
+        <http://id.loc.gov/authorities/subjects/sh85123939>,
+        <http://id.loc.gov/authorities/subjects/sh85123948>,
+        <http://id.loc.gov/authorities/subjects/sh85123963>,
+        <http://id.loc.gov/authorities/subjects/sh85123964>,
+        <http://id.loc.gov/authorities/subjects/sh85123973>,
+        <http://id.loc.gov/authorities/subjects/sh85123976>,
+        <http://id.loc.gov/authorities/subjects/sh85123986>,
+        <http://id.loc.gov/authorities/subjects/sh85123994>,
+        <http://id.loc.gov/authorities/subjects/sh85124075>,
+        <http://id.loc.gov/authorities/subjects/sh85124078>,
+        <http://id.loc.gov/authorities/subjects/sh85124081>,
+        <http://id.loc.gov/authorities/subjects/sh85124152>,
+        <http://id.loc.gov/authorities/subjects/sh85124195>,
+        <http://id.loc.gov/authorities/subjects/sh85124198>,
+        <http://id.loc.gov/authorities/subjects/sh85124212>,
+        <http://id.loc.gov/authorities/subjects/sh85124213>,
+        <http://id.loc.gov/authorities/subjects/sh85124224>,
+        <http://id.loc.gov/authorities/subjects/sh85124225>,
+        <http://id.loc.gov/authorities/subjects/sh85124226>,
+        <http://id.loc.gov/authorities/subjects/sh85124227>,
+        <http://id.loc.gov/authorities/subjects/sh85124229>,
+        <http://id.loc.gov/authorities/subjects/sh85124232>,
+        <http://id.loc.gov/authorities/subjects/sh85127552>,
+        <http://id.loc.gov/authorities/subjects/sh85145155>,
+        <http://id.loc.gov/authorities/subjects/sh85147303>,
+        <http://id.loc.gov/authorities/subjects/sh86004605>,
+        <http://id.loc.gov/authorities/subjects/sh87001440>,
+        <http://id.loc.gov/authorities/subjects/sh88001829>,
+        <http://id.loc.gov/authorities/subjects/sh88002456>,
+        <http://id.loc.gov/authorities/subjects/sh88005447>,
+        <http://id.loc.gov/authorities/subjects/sh88007109>,
+        <http://id.loc.gov/authorities/subjects/sh89000606>,
+        <http://id.loc.gov/authorities/subjects/sh89004351>,
+        <http://id.loc.gov/authorities/subjects/sh89004803>,
+        <http://id.loc.gov/authorities/subjects/sh89005675>,
+        <http://id.loc.gov/authorities/subjects/sh89005882>,
+        <http://id.loc.gov/authorities/subjects/sh89006494>,
+        <http://id.loc.gov/authorities/subjects/sh89006495>,
+        <http://id.loc.gov/authorities/subjects/sh89006497>,
+        <http://id.loc.gov/authorities/subjects/sh89006498>,
+        <http://id.loc.gov/authorities/subjects/sh89006499>,
+        <http://id.loc.gov/authorities/subjects/sh89006500>,
+        <http://id.loc.gov/authorities/subjects/sh89006501>,
+        <http://id.loc.gov/authorities/subjects/sh89006502>,
+        <http://id.loc.gov/authorities/subjects/sh89006503>,
+        <http://id.loc.gov/authorities/subjects/sh89006504>,
+        <http://id.loc.gov/authorities/subjects/sh89006505>,
+        <http://id.loc.gov/authorities/subjects/sh89006507>,
+        <http://id.loc.gov/authorities/subjects/sh89006508>,
+        <http://id.loc.gov/authorities/subjects/sh89006510>,
+        <http://id.loc.gov/authorities/subjects/sh89006513>,
+        <http://id.loc.gov/authorities/subjects/sh90005431>,
+        <http://id.loc.gov/authorities/subjects/sh91001970>,
+        <http://id.loc.gov/authorities/subjects/sh91002392>,
+        <http://id.loc.gov/authorities/subjects/sh91003105>,
+        <http://id.loc.gov/authorities/subjects/sh91005578>,
+        <http://id.loc.gov/authorities/subjects/sh91006446>,
+        <http://id.loc.gov/authorities/subjects/sh93006019>,
+        <http://id.loc.gov/authorities/subjects/sh95008901>,
+        <http://id.loc.gov/authorities/subjects/sh96008293>,
+        <http://id.loc.gov/authorities/subjects/sh97000478>,
+        <http://id.loc.gov/authorities/subjects/sh98003718>,
+        <http://id.loc.gov/authorities/subjects/sh98007550> ;
+    madsrdf:hasNarrowerExternalAuthority <http://id.worldcat.org/fast/1123876>,
+        <http://id.worldcat.org/fast/1123877>,
+        <http://id.worldcat.org/fast/1123878>,
+        <http://id.worldcat.org/fast/1123882>,
+        <http://id.worldcat.org/fast/1123884>,
+        <http://id.worldcat.org/fast/1123885>,
+        <http://id.worldcat.org/fast/1123886>,
+        <http://id.worldcat.org/fast/1123887>,
+        <http://id.worldcat.org/fast/1123888>,
+        <http://id.worldcat.org/fast/1123889>,
+        <http://id.worldcat.org/fast/1123890>,
+        <http://id.worldcat.org/fast/1123891>,
+        <http://id.worldcat.org/fast/1123892>,
+        <http://id.worldcat.org/fast/1123893>,
+        <http://id.worldcat.org/fast/1123894>,
+        <http://id.worldcat.org/fast/1123895>,
+        <http://id.worldcat.org/fast/1123897>,
+        <http://id.worldcat.org/fast/1123898>,
+        <http://id.worldcat.org/fast/1123902>,
+        <http://id.worldcat.org/fast/1123903>,
+        <http://id.worldcat.org/fast/1123906>,
+        <http://id.worldcat.org/fast/1123907>,
+        <http://id.worldcat.org/fast/1123908>,
+        <http://id.worldcat.org/fast/1123918>,
+        <http://id.worldcat.org/fast/1123919>,
+        <http://id.worldcat.org/fast/1123927>,
+        <http://id.worldcat.org/fast/1123928>,
+        <http://id.worldcat.org/fast/1123929>,
+        <http://id.worldcat.org/fast/1123931>,
+        <http://id.worldcat.org/fast/1123932>,
+        <http://id.worldcat.org/fast/1123933> ;
+    madsrdf:hasVariant [ a madsrdf:Topic,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:TopicElement ;
+                        madsrdf:elementValue "Social theory"@en ] ) ;
+            madsrdf:variantLabel "Social theory"@en ] ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/subjects/collection_LCSHAuthorizedHeadings>,
+        <http://id.loc.gov/authorities/subjects/collection_LCSH_General>,
+        <http://id.loc.gov/authorities/subjects/collection_SubdivideGeographically> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ;
+    madsrdf:note "Here are entered works on sociology as a branch of learning. This heading may be divided geographically for works on this branch of learning in a specific place. Works on the social conditions of particular regions, countries, cities, etc., are entered under the name of the place subdivided by [Social conditions.]" ;
+    owl:sameAs <http://id.loc.gov/authorities/sh85124200#concept>,
+        <info:lc/authorities/sh85124200> ;
+    skos:altLabel "Social theory"@en ;
+    skos:broader <http://id.loc.gov/authorities/subjects/sh85124003> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2005-07-06T10:49:42"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85124200> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "2005-06-23T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85124200> ] ;
+    skos:closeMatch <http://d-nb.info/gnd/4077624-4>,
+        <http://data.bnf.fr/ark:/12148/cb133408573>,
+        <http://id.worldcat.org/fast/1123875>,
+        <http://www.wikidata.org/entity/Q21201>,
+        <http://www.yso.fi/onto/yso/p331> ;
+    skos:editorialNote "subdivision [Sociological aspects] under types of institutions, e.g. [Universities and colleges--Sociological aspects]" ;
+    skos:exactMatch <http://lod.nal.usda.gov/nalt/2136> ;
+    skos:inScheme <http://id.loc.gov/authorities/subjects> ;
+    skos:narrowMatch <http://id.worldcat.org/fast/1123876>,
+        <http://id.worldcat.org/fast/1123877>,
+        <http://id.worldcat.org/fast/1123878>,
+        <http://id.worldcat.org/fast/1123882>,
+        <http://id.worldcat.org/fast/1123884>,
+        <http://id.worldcat.org/fast/1123885>,
+        <http://id.worldcat.org/fast/1123886>,
+        <http://id.worldcat.org/fast/1123887>,
+        <http://id.worldcat.org/fast/1123888>,
+        <http://id.worldcat.org/fast/1123889>,
+        <http://id.worldcat.org/fast/1123890>,
+        <http://id.worldcat.org/fast/1123891>,
+        <http://id.worldcat.org/fast/1123892>,
+        <http://id.worldcat.org/fast/1123893>,
+        <http://id.worldcat.org/fast/1123894>,
+        <http://id.worldcat.org/fast/1123895>,
+        <http://id.worldcat.org/fast/1123897>,
+        <http://id.worldcat.org/fast/1123898>,
+        <http://id.worldcat.org/fast/1123902>,
+        <http://id.worldcat.org/fast/1123903>,
+        <http://id.worldcat.org/fast/1123906>,
+        <http://id.worldcat.org/fast/1123907>,
+        <http://id.worldcat.org/fast/1123908>,
+        <http://id.worldcat.org/fast/1123918>,
+        <http://id.worldcat.org/fast/1123919>,
+        <http://id.worldcat.org/fast/1123927>,
+        <http://id.worldcat.org/fast/1123928>,
+        <http://id.worldcat.org/fast/1123929>,
+        <http://id.worldcat.org/fast/1123931>,
+        <http://id.worldcat.org/fast/1123932>,
+        <http://id.worldcat.org/fast/1123933> ;
+    skos:narrower <http://id.loc.gov/authorities/subjects/sh00009986>,
+        <http://id.loc.gov/authorities/subjects/sh2004014028>,
+        <http://id.loc.gov/authorities/subjects/sh2006006372>,
+        <http://id.loc.gov/authorities/subjects/sh2007003246>,
+        <http://id.loc.gov/authorities/subjects/sh2009007461>,
+        <http://id.loc.gov/authorities/subjects/sh2009010555>,
+        <http://id.loc.gov/authorities/subjects/sh2010006126>,
+        <http://id.loc.gov/authorities/subjects/sh2010010550>,
+        <http://id.loc.gov/authorities/subjects/sh2012003306>,
+        <http://id.loc.gov/authorities/subjects/sh2013001662>,
+        <http://id.loc.gov/authorities/subjects/sh2017003056>,
+        <http://id.loc.gov/authorities/subjects/sh2018001200>,
+        <http://id.loc.gov/authorities/subjects/sh2020012257>,
+        <http://id.loc.gov/authorities/subjects/sh2021005424>,
+        <http://id.loc.gov/authorities/subjects/sh2021006160>,
+        <http://id.loc.gov/authorities/subjects/sh85005412>,
+        <http://id.loc.gov/authorities/subjects/sh85023257>,
+        <http://id.loc.gov/authorities/subjects/sh85027068>,
+        <http://id.loc.gov/authorities/subjects/sh85029027>,
+        <http://id.loc.gov/authorities/subjects/sh85029167>,
+        <http://id.loc.gov/authorities/subjects/sh85031272>,
+        <http://id.loc.gov/authorities/subjects/sh85036472>,
+        <http://id.loc.gov/authorities/subjects/sh85040049>,
+        <http://id.loc.gov/authorities/subjects/sh85041146>,
+        <http://id.loc.gov/authorities/subjects/sh85044503>,
+        <http://id.loc.gov/authorities/subjects/sh85045182>,
+        <http://id.loc.gov/authorities/subjects/sh85046234>,
+        <http://id.loc.gov/authorities/subjects/sh85057489>,
+        <http://id.loc.gov/authorities/subjects/sh85061208>,
+        <http://id.loc.gov/authorities/subjects/sh85062894>,
+        <http://id.loc.gov/authorities/subjects/sh85065686>,
+        <http://id.loc.gov/authorities/subjects/sh85065946>,
+        <http://id.loc.gov/authorities/subjects/sh85066302>,
+        <http://id.loc.gov/authorities/subjects/sh85072731>,
+        <http://id.loc.gov/authorities/subjects/sh85079472>,
+        <http://id.loc.gov/authorities/subjects/sh85081057>,
+        <http://id.loc.gov/authorities/subjects/sh85081906>,
+        <http://id.loc.gov/authorities/subjects/sh85082132>,
+        <http://id.loc.gov/authorities/subjects/sh85084916>,
+        <http://id.loc.gov/authorities/subjects/sh85099145>,
+        <http://id.loc.gov/authorities/subjects/sh85100681>,
+        <http://id.loc.gov/authorities/subjects/sh85104457>,
+        <http://id.loc.gov/authorities/subjects/sh85104910>,
+        <http://id.loc.gov/authorities/subjects/sh85105976>,
+        <http://id.loc.gov/authorities/subjects/sh85107273>,
+        <http://id.loc.gov/authorities/subjects/sh85108344>,
+        <http://id.loc.gov/authorities/subjects/sh85108370>,
+        <http://id.loc.gov/authorities/subjects/sh85110249>,
+        <http://id.loc.gov/authorities/subjects/sh85112587>,
+        <http://id.loc.gov/authorities/subjects/sh85119438>,
+        <http://id.loc.gov/authorities/subjects/sh85119749>,
+        <http://id.loc.gov/authorities/subjects/sh85123927>,
+        <http://id.loc.gov/authorities/subjects/sh85123930>,
+        <http://id.loc.gov/authorities/subjects/sh85123931>,
+        <http://id.loc.gov/authorities/subjects/sh85123939>,
+        <http://id.loc.gov/authorities/subjects/sh85123948>,
+        <http://id.loc.gov/authorities/subjects/sh85123963>,
+        <http://id.loc.gov/authorities/subjects/sh85123964>,
+        <http://id.loc.gov/authorities/subjects/sh85123973>,
+        <http://id.loc.gov/authorities/subjects/sh85123976>,
+        <http://id.loc.gov/authorities/subjects/sh85123986>,
+        <http://id.loc.gov/authorities/subjects/sh85123994>,
+        <http://id.loc.gov/authorities/subjects/sh85124075>,
+        <http://id.loc.gov/authorities/subjects/sh85124078>,
+        <http://id.loc.gov/authorities/subjects/sh85124081>,
+        <http://id.loc.gov/authorities/subjects/sh85124152>,
+        <http://id.loc.gov/authorities/subjects/sh85124195>,
+        <http://id.loc.gov/authorities/subjects/sh85124198>,
+        <http://id.loc.gov/authorities/subjects/sh85124212>,
+        <http://id.loc.gov/authorities/subjects/sh85124213>,
+        <http://id.loc.gov/authorities/subjects/sh85124224>,
+        <http://id.loc.gov/authorities/subjects/sh85124225>,
+        <http://id.loc.gov/authorities/subjects/sh85124226>,
+        <http://id.loc.gov/authorities/subjects/sh85124227>,
+        <http://id.loc.gov/authorities/subjects/sh85124229>,
+        <http://id.loc.gov/authorities/subjects/sh85124232>,
+        <http://id.loc.gov/authorities/subjects/sh85127552>,
+        <http://id.loc.gov/authorities/subjects/sh85145155>,
+        <http://id.loc.gov/authorities/subjects/sh85147303>,
+        <http://id.loc.gov/authorities/subjects/sh86004605>,
+        <http://id.loc.gov/authorities/subjects/sh87001440>,
+        <http://id.loc.gov/authorities/subjects/sh88001829>,
+        <http://id.loc.gov/authorities/subjects/sh88002456>,
+        <http://id.loc.gov/authorities/subjects/sh88005447>,
+        <http://id.loc.gov/authorities/subjects/sh88007109>,
+        <http://id.loc.gov/authorities/subjects/sh89000606>,
+        <http://id.loc.gov/authorities/subjects/sh89004351>,
+        <http://id.loc.gov/authorities/subjects/sh89004803>,
+        <http://id.loc.gov/authorities/subjects/sh89005675>,
+        <http://id.loc.gov/authorities/subjects/sh89005882>,
+        <http://id.loc.gov/authorities/subjects/sh89006494>,
+        <http://id.loc.gov/authorities/subjects/sh89006495>,
+        <http://id.loc.gov/authorities/subjects/sh89006497>,
+        <http://id.loc.gov/authorities/subjects/sh89006498>,
+        <http://id.loc.gov/authorities/subjects/sh89006499>,
+        <http://id.loc.gov/authorities/subjects/sh89006500>,
+        <http://id.loc.gov/authorities/subjects/sh89006501>,
+        <http://id.loc.gov/authorities/subjects/sh89006502>,
+        <http://id.loc.gov/authorities/subjects/sh89006503>,
+        <http://id.loc.gov/authorities/subjects/sh89006504>,
+        <http://id.loc.gov/authorities/subjects/sh89006505>,
+        <http://id.loc.gov/authorities/subjects/sh89006507>,
+        <http://id.loc.gov/authorities/subjects/sh89006508>,
+        <http://id.loc.gov/authorities/subjects/sh89006510>,
+        <http://id.loc.gov/authorities/subjects/sh89006513>,
+        <http://id.loc.gov/authorities/subjects/sh90005431>,
+        <http://id.loc.gov/authorities/subjects/sh91001970>,
+        <http://id.loc.gov/authorities/subjects/sh91002392>,
+        <http://id.loc.gov/authorities/subjects/sh91003105>,
+        <http://id.loc.gov/authorities/subjects/sh91005578>,
+        <http://id.loc.gov/authorities/subjects/sh91006446>,
+        <http://id.loc.gov/authorities/subjects/sh93006019>,
+        <http://id.loc.gov/authorities/subjects/sh95008901>,
+        <http://id.loc.gov/authorities/subjects/sh96008293>,
+        <http://id.loc.gov/authorities/subjects/sh97000478>,
+        <http://id.loc.gov/authorities/subjects/sh98003718>,
+        <http://id.loc.gov/authorities/subjects/sh98007550> ;
+    skos:note "Here are entered works on sociology as a branch of learning. This heading may be divided geographically for works on this branch of learning in a specific place. Works on the social conditions of particular regions, countries, cities, etc., are entered under the name of the place subdivided by [Social conditions.]" ;
+    skos:prefLabel "Sociology"@en ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Social theory"@en ] .
+
+<http://id.loc.gov/authorities/subjects/sh85124212> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Buddhist sociology"@en ;
+    skos:prefLabel "Buddhist sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124213> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Christian sociology"@en ;
+    skos:prefLabel "Christian sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124224> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Confucian sociology"@en ;
+    skos:prefLabel "Confucian sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124225> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Hindu sociology"@en ;
+    skos:prefLabel "Hindu sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124226> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Islamic sociology"@en ;
+    skos:prefLabel "Islamic sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124227> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Jewish sociology"@en ;
+    skos:prefLabel "Jewish sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124229> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology, Rural"@en ;
+    skos:prefLabel "Sociology, Rural"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85124232> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Shinto sociology"@en ;
+    skos:prefLabel "Shinto sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85127552> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Statics and dynamics (Social sciences)"@en ;
+    skos:prefLabel "Statics and dynamics (Social sciences)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85145155> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "War and society"@en ;
+    skos:prefLabel "War and society"@en .
+
+<http://id.loc.gov/authorities/subjects/sh85147303> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women--Health and hygiene--Sociological aspects"@en ;
+    skos:prefLabel "Women--Health and hygiene--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh86004605> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Schools of sociology"@en ;
+    skos:prefLabel "Schools of sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh87001440> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Subsidiarity"@en ;
+    skos:prefLabel "Subsidiarity"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88001829> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Economics--Sociological aspects"@en ;
+    skos:prefLabel "Economics--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88002456> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Critical theory"@en ;
+    skos:prefLabel "Critical theory"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88005447> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Economic development--Sociological aspects"@en ;
+    skos:prefLabel "Economic development--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh88007109> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Gemeinschaft and Gesellschaft (Sociology)"@en ;
+    skos:prefLabel "Gemeinschaft and Gesellschaft (Sociology)"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89000606> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Information society"@en ;
+    skos:prefLabel "Information society"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89004351> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Technology--Sociological aspects"@en ;
+    skos:prefLabel "Technology--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89004803> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Friendship--Sociological aspects"@en ;
+    skos:prefLabel "Friendship--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89005675> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Emotions--Sociological aspects"@en ;
+    skos:prefLabel "Emotions--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89005882> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Time--Sociological aspects"@en ;
+    skos:prefLabel "Time--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006494> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Agriculture--Research--Sociological aspects"@en ;
+    skos:prefLabel "Agriculture--Research--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006495> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Authorship--Sociological aspects"@en ;
+    skos:prefLabel "Authorship--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006497> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Biology--Research--Sociological aspects"@en ;
+    skos:prefLabel "Biology--Research--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006498> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Books and reading--Sociological aspects"@en ;
+    skos:prefLabel "Books and reading--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006499> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Children--Books and reading--Sociological aspects"@en ;
+    skos:prefLabel "Children--Books and reading--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006500> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Electronic data processing--Sociological aspects"@en ;
+    skos:prefLabel "Electronic data processing--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006501> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Genocide--Sociological aspects"@en ;
+    skos:prefLabel "Genocide--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006502> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library education--Sociological aspects"@en ;
+    skos:prefLabel "Library education--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006503> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Library science--Sociological aspects"@en ;
+    skos:prefLabel "Library science--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006504> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Occupations--Sociological aspects"@en ;
+    skos:prefLabel "Occupations--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006505> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Shared housing--Sociological aspects"@en ;
+    skos:prefLabel "Shared housing--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006507> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sports--Sociological aspects"@en ;
+    skos:prefLabel "Sports--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006508> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Suicide--Sociological aspects"@en ;
+    skos:prefLabel "Suicide--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006510> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women--Mental health--Sociological aspects"@en ;
+    skos:prefLabel "Women--Mental health--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh89006513> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Women--Sociological aspects"@en ;
+    skos:prefLabel "Women--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh90005431> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Jaina sociology"@en ;
+    skos:prefLabel "Jaina sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh91001970> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Risk--Sociological aspects"@en ;
+    skos:prefLabel "Risk--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh91002392> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Organizational sociology"@en ;
+    skos:prefLabel "Organizational sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh91003105> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Liturgics--Sociological aspects"@en ;
+    skos:prefLabel "Liturgics--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh91005578> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Social service--Sociological aspects"@en ;
+    skos:prefLabel "Social service--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh91006446> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Crime--Sociological aspects"@en ;
+    skos:prefLabel "Crime--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh93006019> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Visual sociology"@en ;
+    skos:prefLabel "Visual sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh95008901> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Forensic sociology"@en ;
+    skos:prefLabel "Forensic sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh96008293> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Forestry projects--Sociological aspects"@en ;
+    skos:prefLabel "Forestry projects--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh97000478> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Dance--Sociological aspects"@en ;
+    skos:prefLabel "Dance--Sociological aspects"@en .
+
+<http://id.loc.gov/authorities/subjects/sh98003718> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Applied sociology"@en ;
+    skos:prefLabel "Applied sociology"@en .
+
+<http://id.loc.gov/authorities/subjects/sh98007550> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "National socialism and sociology"@en ;
+    skos:prefLabel "National socialism and sociology"@en .
+
+<http://id.worldcat.org/fast/1123875> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology" ;
+    skos:prefLabel "Sociology" .
+
+<http://id.worldcat.org/fast/1123876> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Abstracting and indexing" ;
+    skos:prefLabel "Sociology--Abstracting and indexing" .
+
+<http://id.worldcat.org/fast/1123877> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Abstracts" ;
+    skos:prefLabel "Sociology--Abstracts" .
+
+<http://id.worldcat.org/fast/1123878> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Audio-visual aids" ;
+    skos:prefLabel "Sociology--Audio-visual aids" .
+
+<http://id.worldcat.org/fast/1123882> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Classification" ;
+    skos:prefLabel "Sociology--Classification" .
+
+<http://id.worldcat.org/fast/1123884> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Computer network resources" ;
+    skos:prefLabel "Sociology--Computer network resources" .
+
+<http://id.worldcat.org/fast/1123885> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Computer programs" ;
+    skos:prefLabel "Sociology--Computer programs" .
+
+<http://id.worldcat.org/fast/1123886> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Computer-assisted instruction" ;
+    skos:prefLabel "Sociology--Computer-assisted instruction" .
+
+<http://id.worldcat.org/fast/1123887> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Congresses" ;
+    skos:prefLabel "Sociology--Congresses" .
+
+<http://id.worldcat.org/fast/1123888> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Data processing" ;
+    skos:prefLabel "Sociology--Data processing" .
+
+<http://id.worldcat.org/fast/1123889> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Dictionaries" ;
+    skos:prefLabel "Sociology--Dictionaries" .
+
+<http://id.worldcat.org/fast/1123890> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Economic aspects" ;
+    skos:prefLabel "Sociology--Economic aspects" .
+
+<http://id.worldcat.org/fast/1123891> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Examinations" ;
+    skos:prefLabel "Sociology--Examinations" .
+
+<http://id.worldcat.org/fast/1123892> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Experiments" ;
+    skos:prefLabel "Sociology--Experiments" .
+
+<http://id.worldcat.org/fast/1123893> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Field work" ;
+    skos:prefLabel "Sociology--Field work" .
+
+<http://id.worldcat.org/fast/1123894> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Field work--Psychological aspects" ;
+    skos:prefLabel "Sociology--Field work--Psychological aspects" .
+
+<http://id.worldcat.org/fast/1123895> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Historiography" ;
+    skos:prefLabel "Sociology--Historiography" .
+
+<http://id.worldcat.org/fast/1123897> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Information services" ;
+    skos:prefLabel "Sociology--Information services" .
+
+<http://id.worldcat.org/fast/1123898> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Language" ;
+    skos:prefLabel "Sociology--Language" .
+
+<http://id.worldcat.org/fast/1123902> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Moral and ethical aspects" ;
+    skos:prefLabel "Sociology--Moral and ethical aspects" .
+
+<http://id.worldcat.org/fast/1123903> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Periodicals" ;
+    skos:prefLabel "Sociology--Periodicals" .
+
+<http://id.worldcat.org/fast/1123906> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Political aspects" ;
+    skos:prefLabel "Sociology--Political aspects" .
+
+<http://id.worldcat.org/fast/1123907> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Psychological aspects" ;
+    skos:prefLabel "Sociology--Psychological aspects" .
+
+<http://id.worldcat.org/fast/1123908> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Reference books" ;
+    skos:prefLabel "Sociology--Reference books" .
+
+<http://id.worldcat.org/fast/1123918> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Research grants" ;
+    skos:prefLabel "Sociology--Research grants" .
+
+<http://id.worldcat.org/fast/1123919> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Societies, etc." ;
+    skos:prefLabel "Sociology--Societies, etc." .
+
+<http://id.worldcat.org/fast/1123927> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Study and teaching (Elementary)" ;
+    skos:prefLabel "Sociology--Study and teaching (Elementary)" .
+
+<http://id.worldcat.org/fast/1123928> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Study and teaching (Graduate)" ;
+    skos:prefLabel "Sociology--Study and teaching (Graduate)" .
+
+<http://id.worldcat.org/fast/1123929> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Study and teaching (Higher)" ;
+    skos:prefLabel "Sociology--Study and teaching (Higher)" .
+
+<http://id.worldcat.org/fast/1123931> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Study and teaching (Secondary)" ;
+    skos:prefLabel "Sociology--Study and teaching (Secondary)" .
+
+<http://id.worldcat.org/fast/1123932> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Textbooks" ;
+    skos:prefLabel "Sociology--Textbooks" .
+
+<http://id.worldcat.org/fast/1123933> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Sociology--Vocational guidance" ;
+    skos:prefLabel "Sociology--Vocational guidance" .
+
+<http://lod.nal.usda.gov/nalt/2136> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "sociology"@en ;
+    skos:prefLabel "sociology"@en .
+
+<http://www.wikidata.org/entity/Q21201> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "sociology" ;
+    skos:prefLabel "sociology" .
+
+<http://www.yso.fi/onto/yso/p331> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "sosiologia"@fi ;
+    skos:prefLabel "sosiologia"@fi .
+

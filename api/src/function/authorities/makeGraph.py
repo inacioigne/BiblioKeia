@@ -42,7 +42,9 @@ def MakeGraphSubject(request, id):
             { f'madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ; ' if request.elementList else  f'madsrdf:authoritativeLabel "{ComponentLabel(request.componentList)}" ; '} 
             { f'madsrdf:elementList ( {MakeElement(request.elementList)} ) ; ' if request.elementList else ''} 
             { f'madsrdf:hasNarrowerAuthority {", ".join([ f"<{i.value}>" for i in request.hasNarrowerAuthority])} ;' if request.hasNarrowerAuthority else ''}
+            { f'madsrdf:hasNarrowerExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasNarrowerExternalAuthority])} ;' if request.hasNarrowerExternalAuthority else ''}
             { f'madsrdf:hasBroaderAuthority {", ".join([ f"<{i.value}>" for i in request.hasBroaderAuthority])} ;' if request.hasBroaderAuthority else ''}
+            { f'madsrdf:hasBroaderExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasBroaderExternalAuthority])} ;' if request.hasBroaderExternalAuthority else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
             { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }
@@ -50,41 +52,3 @@ def MakeGraphSubject(request, id):
             }} 
         }}"""
     return graph
-
-# def MakeGraph(request, id):
-#     graph = f"""{prefix}    
-#     INSERT DATA {{
-#         GRAPH <https://bibliokeia.com/authorities/{request.type}/{id}>
-#         {{
-#         <https://bibliokeia.com/authorities/{request.type}/{id}> a madsrdf:Authority, 
-#             madsrdf:{request.type} ;
-#             identifiers:local "{id}" ;
-#             madsrdf:adminMetadata [ a bf:AdminMetadata ;
-#             bf:assigner <{request.adminMetadata.assigner}> ;
-#             bf:creationDate "{request.adminMetadata.creationDate}"^^xsd:date ;
-#             bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
-#             bf:descriptionModifier <{request.adminMetadata.assigner}> ; 
-#             bf:generationProcess [ a bf:GenerationProcess ;
-#                     rdfs:label "{request.adminMetadata.generationProcess}" ;
-#                     bf:generationDate "{request.adminMetadata.generationDate}"^^xsd:dateTime ] ;
-#             bf:identifiedBy [ a bf:Local ;
-#                     bf:assigner <{request.adminMetadata.identifiedBy.assigner}> ;
-#                     rdf:value "{request.adminMetadata.identifiedBy.value}" ] ; 
-#             bf:status {request.adminMetadata.status.value} ] ; 
-#             { f'madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ; ' if request.elementList else  f'madsrdf:authoritativeLabel "{ComponentLabel(request.componentList)}" ; '} 
-#             { f'madsrdf:elementList ( {MakeElement(request.elementList)} ) ; ' if request.elementList else ''} 
-#             { f'madsrdf:componentList ( { MakeComponentList(request.componentList) } ) ; ' if request.componentList else '' } 
-#             { f'madsrdf:fullerName [ a madsrdf:PersonalName ; rdfs:label "{request.fullerName.elementValue.value}" ] ;' if request.fullerName else ''}            
-#             { f'madsrdf:birthDate "{request.birthDate}" ; ' if request.birthDate else ''}     
-#             { f'madsrdf:birthPlace <{request.birthPlace.value}> ; ' if request.birthPlace else ''}
-#             { f'madsrdf:deathDate "{request.deathDate}" ; ' if request.deathDate else ''}   
-#             { f'madsrdf:hasBroaderAuthority {", ".join([ f"<{i.value}>" for i in request.hasBroaderAuthority])} ;' if request.hasBroaderAuthority else ''}
-#             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
-#             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
-#             { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }
-#             { f'madsrdf:hasAffiliation { MakeAfilliation(request.hasAffiliation) } ;' if request.hasAffiliation else ''  }
-#             { f'madsrdf:occupation { ", ".join([ f"<{i.value}>" for i in request.occupation])} ;' if request.occupation else ''  }
-#             madsrdf:isMemberOfMADSCollection <{request.isMemberOfMADSCollection}> .          
-#             }} 
-#         }}"""
-#     return graph
