@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.upadeteAuthority import UpadeteAuthority
 from src.schemas.authorities.mads import Uri
 from src.schemas.authorities.authority import Authority
 from src.function.authorities.edit_uri import DelMads, PostMads
@@ -22,6 +23,8 @@ async def post_subject(request: Subject):
 
     graph = MakeGraphSubject(request, id)
     response = fuseki_update.run_sparql(graph)
+    UpadeteAuthority(request, id)
+
     # doc = MakeDocSubject(request, id)
     # responseSolr = solr.add([doc], commit=True)
 

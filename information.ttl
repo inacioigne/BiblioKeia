@@ -477,13 +477,13 @@
         <http://id.loc.gov/resources/works/11281829> ;
     identifiers:lccn "sh 85066150" ;
     madsrdf:adminMetadata [ a ri:RecordInfo ;
-            ri:recordChangeDate "2010-05-13T13:18:46"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "revised"^^xsd:string ],
-        [ a ri:RecordInfo ;
             ri:recordChangeDate "2000-08-09T00:00:00"^^xsd:dateTime ;
             ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            ri:recordStatus "new"^^xsd:string ] ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:recordChangeDate "2010-05-13T13:18:46"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
     madsrdf:authoritativeLabel "Information science"@en ;
     madsrdf:classification [ a lcc:ClassNumber ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
@@ -493,8 +493,10 @@
     madsrdf:hasBroaderAuthority <http://id.loc.gov/authorities/subjects/sh85029027> ;
     madsrdf:hasCloseExternalAuthority <http://data.bnf.fr/ark:/12148/cb11965196f>,
         <http://id.worldcat.org/fast/972640>,
+        <http://purl.org/bncf/tid/10660>,
         <http://www.wikidata.org/entity/Q16387>,
-        <http://www.yso.fi/onto/yso/p17836> ;
+        <http://www.yso.fi/onto/yso/p17836>,
+        <https://datos.bne.es/resource/XX525043> ;
     madsrdf:hasExactExternalAuthority <http://lod.nal.usda.gov/nalt/17411> ;
     madsrdf:hasNarrowerAuthority <http://id.loc.gov/authorities/subjects/sh00003585>,
         <http://id.loc.gov/authorities/subjects/sh2002000243>,
@@ -569,8 +571,10 @@
             cs:subjectOfChange <http://id.loc.gov/authorities/subjects/sh85066150> ] ;
     skos:closeMatch <http://data.bnf.fr/ark:/12148/cb11965196f>,
         <http://id.worldcat.org/fast/972640>,
+        <http://purl.org/bncf/tid/10660>,
         <http://www.wikidata.org/entity/Q16387>,
-        <http://www.yso.fi/onto/yso/p17836> ;
+        <http://www.yso.fi/onto/yso/p17836>,
+        <https://datos.bne.es/resource/XX525043> ;
     skos:exactMatch <http://lod.nal.usda.gov/nalt/17411> ;
     skos:inScheme <http://id.loc.gov/authorities/subjects> ;
     skos:narrowMatch <http://id.worldcat.org/fast/972641>,
@@ -843,6 +847,11 @@
     madsrdf:authoritativeLabel "information science"@en ;
     skos:prefLabel "information science"@en .
 
+<http://purl.org/bncf/tid/10660> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Scienze dell'informazione"@it ;
+    skos:prefLabel "Scienze dell'informazione"@it .
+
 <http://www.wikidata.org/entity/Q16387> a madsrdf:Authority,
         skos:Concept ;
     madsrdf:authoritativeLabel "information science" ;
@@ -852,4 +861,9 @@
         skos:Concept ;
     madsrdf:authoritativeLabel "informaatiotutkimus"@fi ;
     skos:prefLabel "informaatiotutkimus"@fi .
+
+<https://datos.bne.es/resource/XX525043> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Documentación"@es ;
+    skos:prefLabel "Documentación"@es .
 

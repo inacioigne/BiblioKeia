@@ -1,4 +1,4 @@
-from src.function.loc.hasReciprocal import GetHasReciprocal
+# from src.function.loc.hasReciprocal import GetHasReciprocal
 from .ElementList import GetElementList
 from .HasBroader import GetHasBroader
 from .getType import GetType
@@ -127,7 +127,11 @@ def ParserSubject(graph, authority):
 #   hasNarrower = GetHasNarrowerExternal(authority, graph, obj)
   hasNarrower = GetExternalUri(authority, graph, "NarrowerExternal", obj)
   if hasNarrower:
-    obj['hasNarrowerExternalAuthority'] = obj['hasNarrowerExternalAuthority']+hasNarrower
+    if obj.get('hasNarrowerExternalAuthority'): 
+       obj['hasNarrowerExternalAuthority'] = obj['hasNarrowerExternalAuthority']+hasNarrower
+    else:
+       obj['hasNarrowerExternalAuthority'] = hasNarrower
+       
   
   # ExactExternal
 #   obj = GetExactExternal(authority, graph, obj)

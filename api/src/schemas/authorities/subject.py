@@ -9,6 +9,8 @@ class Subject(BaseModel):
     adminMetadata: AdminMetadata 
     elementList: list[Element]
     note: Optional[str]
+    hasReciprocalAuthority: Optional[list[Uri]]
+    hasReciprocalExternalAuthority: Optional[list[Uri]]
     hasBroaderAuthority: Optional[list[Uri]]
     hasBroaderExternalAuthority: Optional[list[Uri]]
     hasNarrowerAuthority: Optional[list[Uri]]
