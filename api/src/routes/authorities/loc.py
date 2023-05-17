@@ -27,3 +27,4 @@ async def get_subject(uri: str):
     # subject = MakeTranslateLoc(subject)
 
     return subject.dict()
+    # return {'msg': uri}

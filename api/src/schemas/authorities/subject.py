@@ -4,6 +4,24 @@ from datetime import datetime
 from src.schemas.authorities.mads import Authority
 from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Element
 
+class Value(BaseModel):
+    authority: str
+    value: str
+    lang: Optional[str]
+
+class VariantEdit(BaseModel):
+    authority: str
+    oldValue: str
+    oldLang: Optional[str]
+    newValue: str
+    newLang: Optional[str]
+
+class VariantPost(BaseModel):
+    authority: str
+    type: str
+    value: str
+    lang: Optional[str]
+
 class Subject(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 

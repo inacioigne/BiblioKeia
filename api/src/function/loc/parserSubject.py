@@ -1,10 +1,6 @@
-# from src.function.loc.hasReciprocal import GetHasReciprocal
+from src.function.loc.note import Note
 from .ElementList import GetElementList
-from .HasBroader import GetHasBroader
 from .getType import GetType
-from .HasNarrower import GetHasNarrower, GetHasNarrowerExternal
-from .ExactExternal import GetExactExternal
-from .CloseExternal import GetCloseExternal
 from .Variant import GetVariant
 from src.schemas.authorities.subject import Subject
 from .graphExist import GraphExist
@@ -72,10 +68,6 @@ def GetExternalUri(authority, graph, metadata, obj):
 
 
 def ParserSubject(graph, authority):
-      
-  prefix = """PREFIX identifiers: <http://id.loc.gov/vocabulary/identifiers/>
-  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>"""
 
   # Type
   tipo = GetType(graph, authority)
@@ -100,31 +92,22 @@ def ParserSubject(graph, authority):
   obj = GetElementList(authority, graph, obj)
 
   # Note 
-  qNote = f"""{prefix}
-  SELECT ?note WHERE {{ 
-      <{authority}> madsrdf:note ?note .
-       }}"""
-  r = graph.query(qNote)
-  if len(r.bindings) > 0:
-     obj['note'] = r.bindings[0].get('note').value
+  obj = Note(graph, authority, obj)
 
   # hasVariant
   obj = GetVariant(authority, graph, obj)
 
   # URIS
   # hasReciprocalAuthority
-#   obj = GetHasReciprocal(authority, graph, obj)
   obj = GetInternalUri(authority, graph, "Reciprocal", obj)
 
   # hasBroaderAuthority
   obj = GetInternalUri(authority, graph, "Broader", obj)
-  # obj = GetHasBroader(authority, graph, obj)
   
   # Narrower Terms
   obj = GetInternalUri(authority, graph, "Narrower", obj)
-  # obj = GetHasNarrower(authority, graph, obj)
   
-#   hasNarrower = GetHasNarrowerExternal(authority, graph, obj)
+#   hasNarrower
   hasNarrower = GetExternalUri(authority, graph, "NarrowerExternal", obj)
   if hasNarrower:
     if obj.get('hasNarrowerExternalAuthority'): 
@@ -134,13 +117,11 @@ def ParserSubject(graph, authority):
        
   
   # ExactExternal
-#   obj = GetExactExternal(authority, graph, obj)
   exactExternal = GetExternalUri(authority, graph, "ExactExternal", obj)
   if exactExternal:
     obj['hasExactExternalAuthority'] = exactExternal
   
   # CloseExternal
-#   obj = GetCloseExternal(authority, graph, obj)
   closeExternal = GetExternalUri(authority, graph, "CloseExternal", obj)
   if closeExternal:
     obj['hasCloseExternalAuthority'] = closeExternal

@@ -94,7 +94,7 @@ def deleteVariantPersonalName(id, request):
 
 def addVariantPersonalName(id, request):
     
-    variant = f"""{prefix}
+    variant = f"""{prefix} 
         INSERT DATA {{ 
         GRAPH name:{id} {{
         name:{id} madsrdf:hasVariant [ a madsrdf:PersonalName,
