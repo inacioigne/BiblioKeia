@@ -5,8 +5,8 @@ from src.function.authorities.subject.editElementValue import EditElementValue
 from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant
 from src.function.authorities.subject.uri import DeleteUri, PostUri, UpdatePostUri, UpdateDeleteUri
 from src.function.authorities.upadeteAuthority import UpadeteAuthority
-from src.schemas.authorities.mads import Uri
-from src.schemas.authorities.authority import Authority
+# from src.schemas.authorities.mads import Uri
+# from src.schemas.authorities.authority import Authority
 from src.function.authorities.edit_uri import DelMads, PostMads
 from src.function.authorities.personalName.docPersonalName import GetLabelLoc
 from src.function.authorities.makeGraph import MakeGraphSubject
@@ -18,7 +18,26 @@ router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
 solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
-# Post External URI
+# Add Autority
+@router.post("/subject/", status_code=201) 
+async def post_subject(request: Subject):
+  
+    id = GenerateId()
+
+    graph = MakeGraphSubject(request, id)
+    response = fuseki_update.run_sparql(graph)
+    UpadeteAuthority(request, id)
+
+    doc = MakeDocSubject(request, id)
+    responseSolr = solr.add([doc], commit=True)
+
+    return {
+        "id": id,
+        "jena": response.convert()['message'],
+        "solr": responseSolr
+        } 
+
+# Post URI
 @router.post("/subject/uri", status_code=200) 
 async def post_uri(request: UriEdit):
 
@@ -39,11 +58,15 @@ async def post_uri(request: UriEdit):
         # "solr": responseSolr
         } 
 
-# External URI
+# Delete URI
 @router.delete("/subject/uri", status_code=200) 
 async def delete_uri(request: UriEdit):
 
     uri = DeleteUri(request)
+    auId = request.authority.split("/")[-1]
+    uriId = request.uri.split("/")[-1]
+    responseSolr = solr.delete(q=f"id:{auId}/{request.type}#{uriId}",  commit=True)
+    
     response = fuseki_update.run_sparql(uri)
     if request.type == 'hasBroaderAuthority':
         uri = UpdateDeleteUri(request, "hasNarrowerAuthority")
@@ -58,7 +81,7 @@ async def delete_uri(request: UriEdit):
 
     return {
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
 # Edit Element
@@ -109,73 +132,17 @@ async def delete_variant(request: VariantPost):
         # "solr": responseSolr
         } 
 
+
+
 # Add Autority
-@router.post("/subject/", status_code=201) 
-async def post_subject(request: Subject):
-  
-    id = GenerateId()
+@router.delete("/subject/", status_code=200) 
+async def delete_subject(uri: str):
 
-    graph = MakeGraphSubject(request, id)
-    response = fuseki_update.run_sparql(graph)
-    UpadeteAuthority(request, id)
+    d = f"""DELETE {{ graph <{uri}> {{ ?s ?p ?o }} }}
+            WHERE {{
+            graph <{uri}> {{ ?s ?p ?o. }}
+            }}"""
 
-    # doc = MakeDocSubject(request, id)
-    # responseSolr = solr.add([doc], commit=True)
-
-    return {
-        "id": id,
-        "jena": response.convert()['message'],
-        # "solr": responseSolr
-        } 
-
-
-
-# # Delete URI
-# @router.delete("/uri", status_code=200) 
-# async def delete_mads(request: Uri):
-
-#     upMads = DelMads(request)
-#     responseUpMads = fuseki_update.run_sparql(upMads)
-
-#     # doc = {
-#     # 'id': id,
-#     # f'{request.mads}': {"remove": request.uri}
-#     #   }
-#     # responseSolr = solr.add([doc], commit=True)
-#     child = request.uri.split("/")[-1]
-#     q = f"id:{request.id}!{child}"
-#     responseSolr = solr.delete(q=q, commit=True)
-
-#     return {
-#         "jena": responseUpMads.convert()['message'],
-#         "solr": responseSolr
-#         } 
-
-# # # Add URI
-# @router.post("/uri", status_code=201) 
-# async def post_mads(request: Uri):
-
-#     upMads = PostMads(request)
-#     if upMads:
-#         responseUpMads = fuseki_update.run_sparql(upMads)
-
-#         # doc = {'id': request.id,
-#         #         f'{request.mads}': {"add": request.uri}  }
-#         # label = GetLabelLoc(request.uri)
-#         child = request.uri.split("/")[-1]
-        
-#         uri = {'id': f'{request.id}!{child}',
-#         'collection': request.collection,
-#         'label': request.label,
-#         'uri': request.uri}
-
-#         doc = {'id': request.id,
-#                 f'{request.mads}': {"add": uri}  }
-#         responseSolr = solr.add([doc], commit=True)
-
-#         return {
-#         "jena": responseUpMads.convert()['message'],
-#         "solr": responseSolr
-#         } 
-#     else:
-#         raise HTTPException(status_code=409, detail="Metadado já existe")
+    response = fuseki_update.run_sparql(d)
+    response.convert()
+    

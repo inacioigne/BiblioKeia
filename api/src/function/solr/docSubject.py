@@ -1,5 +1,6 @@
 #from api.src.function.authorities.makeLabel import ComponentLabel
 from src.function.authorities.makeLabel import ComponentLabel
+
 def MakeLabel(elementList):
     labels = [i.elementValue.value for i in elementList]
     label = ", ".join(labels)
@@ -59,8 +60,20 @@ def MakeDocSubject(request, id):
             "label": f'{MakeLabel(request.elementList)}' ,
             "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
+    if request.hasVariant:
+        variants = list()
+        for i in request.hasVariant:
+            label = [j.elementValue.value for j in i.elementList]
+            label = "--".join(label)
+            variants.append(label)
+        doc['variant'] = variants
     for k, v in request:
-        if v and k not in ['type', 'adminMetadata', 'elementList', 'isMemberOfMADSCollection']:
-                uri = [{'uri': i.value, 'label': i.label.value, 'lang': i.label.lang} for i in v]
-                doc[f'{k}'] = uri
+        if v and k not in ['type', 'adminMetadata', 'elementList', 'hasVariant', 'isMemberOfMADSCollection']:
+                for i in v:
+                        uri = {
+                                'id': f"{id}/{k}#{i.value.split('/')[-1]}",
+                                'uri': i.value, 
+                                'label': i.label.value, 
+                                'lang': i.label.lang}
+                        doc[f'{k}'] = uri
     return doc

@@ -13,7 +13,7 @@ router = APIRouter()
 
 
 # Get Authority Loc
-@router.get("/loc/subject", status_code=200, response_model=Subject) 
+@router.get("/import/loc/subject", status_code=200, response_model=Subject) 
 async def get_subject(uri: str):
 
     exist = GraphExist(uri)
