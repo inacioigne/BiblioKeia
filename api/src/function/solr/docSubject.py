@@ -69,11 +69,15 @@ def MakeDocSubject(request, id):
         doc['variant'] = variants
     for k, v in request:
         if v and k not in ['type', 'adminMetadata', 'elementList', 'hasVariant', 'isMemberOfMADSCollection']:
+                uris = list()
                 for i in v:
                         uri = {
                                 'id': f"{id}/{k}#{i.value.split('/')[-1]}",
                                 'uri': i.value, 
                                 'label': i.label.value, 
-                                'lang': i.label.lang}
-                        doc[f'{k}'] = uri
+                                'lang': i.label.lang,
+                                'base': i.base
+                                }
+                        uris.append(uri)
+                doc[f'{k}'] = uris
     return doc
