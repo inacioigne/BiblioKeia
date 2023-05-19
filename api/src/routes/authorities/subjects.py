@@ -1,12 +1,11 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.subject.uri import PostUriSol
 from src.function.authorities.subject.editElementValue import EditElementValue
 from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant
 from src.function.authorities.subject.uri import DeleteUri, PostUri, UpdatePostUri, UpdateDeleteUri
 from src.function.authorities.upadeteAuthority import UpadeteAuthority
-# from src.function.authorities.edit_uri import DelMads, PostMads
-# from src.function.authorities.personalName.docPersonalName import GetLabelLoc
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId
 from src.function.solr.docSubject import MakeDocSubject
@@ -38,10 +37,12 @@ async def post_subject(request: Subject):
 # Post URI
 @router.post("/subject/uri", status_code=200) 
 async def post_uri(request: UriEdit):
+    
 
     uri = PostUri(request)
-    
     response = fuseki_update.run_sparql(uri)
+    PostUriSol(request)
+    
     if request.type == 'hasBroaderAuthority':
         uri = UpdatePostUri(request, "hasNarrowerAuthority")
         response = fuseki_update.run_sparql(uri)
