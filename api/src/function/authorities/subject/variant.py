@@ -1,3 +1,5 @@
+from pysolr import Solr
+
 def EditVariant(request):
 
     variant = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
@@ -74,3 +76,20 @@ def PostVariant(request):
                 }}
         }}"""
     return variant
+
+def VariantSolr(request):
+    solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+    idUri = request.authority.split("/")[-1]
+
+    remove = {
+        "id":idUri,
+        "variant":{ "remove": request.oldValue}
+        }
+    add = {
+        "id":idUri,
+        "variant":{ "add": request.newValue}
+        }
+
+    responseSolr = solr.add([remove, add], commit=True)
+
+    return responseSolr

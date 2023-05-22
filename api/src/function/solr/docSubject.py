@@ -1,5 +1,6 @@
 #from api.src.function.authorities.makeLabel import ComponentLabel
 from src.function.authorities.makeLabel import ComponentLabel
+from pysolr import Solr
 
 def MakeLabel(elementList):
     labels = [i.elementValue.value for i in elementList]
@@ -53,6 +54,7 @@ def MakeDoc(request, id):
     return doc
 
 def MakeDocSubject(request, id):
+    nMeta = ['type', 'adminMetadata', 'elementList', 'hasVariant', 'note', 'isMemberOfMADSCollection']
     doc = {
             'id': id,
             'type': request.type,
@@ -60,6 +62,8 @@ def MakeDocSubject(request, id):
             "label": f'{MakeLabel(request.elementList)}' ,
             "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
+    if request.note:
+        doc['note'] = request.note
     if request.hasVariant:
         variants = list()
         for i in request.hasVariant:
@@ -68,7 +72,7 @@ def MakeDocSubject(request, id):
             variants.append(label)
         doc['variant'] = variants
     for k, v in request:
-        if v and k not in ['type', 'adminMetadata', 'elementList', 'hasVariant', 'isMemberOfMADSCollection']:
+        if v and k not in nMeta:
                 uris = list()
                 for i in v:
                         uri = {
@@ -81,3 +85,29 @@ def MakeDocSubject(request, id):
                         uris.append(uri)
                 doc[f'{k}'] = uris
     return doc
+
+def DeleteDoc(uri):
+    solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+    idUri = uri.split("/")[-1]
+    r = solr.search(q=f'id:{idUri}', **{'fl': '*,[child]'})
+
+    nMeta = ["id",
+    "type",
+    "creationDate",
+    "label",
+    "isMemberOfMADSCollection",
+    "note",
+    "variant",
+    "_version_"]
+    ids = [idUri]
+    [doc] = r.docs
+    for k, v in doc.items():
+        if k not in nMeta:
+            if type(v) == list:
+                for i in v:
+                    ids.append(i['id'])
+            else:
+                ids.append(v['id'])
+    responseSolr = solr.delete(id=ids, commit=True)
+
+    return responseSolr

@@ -3,12 +3,12 @@ from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.function.authorities.subject.uri import PostUriSol
 from src.function.authorities.subject.editElementValue import EditElementValue
-from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant
+from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant, VariantSolr
 from src.function.authorities.subject.uri import DeleteUri, PostUri, UpdatePostUri, UpdateDeleteUri
 from src.function.authorities.upadeteAuthority import UpadeteAuthority
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId
-from src.function.solr.docSubject import MakeDocSubject
+from src.function.solr.docSubject import MakeDocSubject, DeleteDoc
 from src.schemas.authorities.subject import Subject, Value, VariantEdit, VariantPost, UriEdit
 
 router = APIRouter()
@@ -38,7 +38,6 @@ async def post_subject(request: Subject):
 @router.post("/subject/uri", status_code=200) 
 async def post_uri(request: UriEdit):
     
-
     uri = PostUri(request)
     response = fuseki_update.run_sparql(uri)
     PostUriSol(request)
@@ -90,10 +89,16 @@ async def edit_elementValue(request: Value):
 
     elementValue = EditElementValue(request)
     response = fuseki_update.run_sparql(elementValue)
+    auId = request.authority.split("/")[-1]
+    doc = {
+        "id": auId,
+        "label":{ "set": request.value}
+        }
+    responseSolr = solr.add([doc], commit=True)
 
     return {
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
 # Edit Variant
@@ -102,10 +107,11 @@ async def edit_variant(request: VariantEdit):
 
     variant = EditVariant(request)
     response = fuseki_update.run_sparql(variant)
+    responseSolr = VariantSolr(request)
     
     return {
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
 # Delete Variant
@@ -114,27 +120,37 @@ async def delete_variant(request: Value):
 
     variant = DeleteVariant(request)
     response = fuseki_update.run_sparql(variant)
+    idUri = request.authority.split("/")[-1]
+    remove = {
+        "id":idUri,
+        "variant":{ "remove": request.value}
+        }
+    responseSolr = solr.add([remove], commit=True)
     
     return {
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
 # Add Variant
 @router.post("/subject/variant", status_code=200) 
-async def delete_variant(request: VariantPost):
+async def post_variant(request: VariantPost):
 
     variant = PostVariant(request)
     response = fuseki_update.run_sparql(variant)
+    idUri = request.authority.split("/")[-1]
+    add = {
+        "id":idUri,
+        "variant":{ "add": request.value}
+        }
+    responseSolr = solr.add([add], commit=True)
     
     return {
         "jena": response.convert()['message'],
-        # "solr": responseSolr
+        "solr": responseSolr
         } 
 
-
-
-# Add Autority
+# Delete Autority
 @router.delete("/subject/", status_code=200) 
 async def delete_subject(uri: str):
 
@@ -142,7 +158,12 @@ async def delete_subject(uri: str):
             WHERE {{
             graph <{uri}> {{ ?s ?p ?o. }}
             }}"""
-
     response = fuseki_update.run_sparql(d)
-    response.convert()
+    
+    responseSolr = DeleteDoc(uri)
+
+    return {
+        "jena": response.convert()['message'],
+        "solr": responseSolr
+        } 
     

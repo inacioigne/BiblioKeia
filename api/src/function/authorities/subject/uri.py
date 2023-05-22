@@ -26,10 +26,11 @@ def PostUriSol(request):
         "id": id,
         f"{request.type}": {
             "add":  {
+                "id": f"{id}/{request.type}#{idUri}",
                 "uri": request.uri,
                 "label":request.value,
                 "lang": request.lang,
-                "id": f"{id}/{request.type}#{idUri}",
+                "base": request.base                
             }
         } }
     solr.add([doc], commit=True)

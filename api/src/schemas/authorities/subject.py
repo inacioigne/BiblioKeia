@@ -7,9 +7,11 @@ from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Eleme
 class UriEdit(BaseModel):
     authority: str
     uri: str
+    type: str
     value: str
     lang: str
-    type: str
+    base: Optional[str]
+    
 
 class Value(BaseModel):
     authority: str
