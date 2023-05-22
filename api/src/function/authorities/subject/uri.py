@@ -1,4 +1,5 @@
 from pysolr import Solr
+from pyfuseki import FusekiUpdate
 
 def DeleteUri(request):
     uri =  f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
@@ -38,6 +39,7 @@ def PostUriSol(request):
 
 def UpdatePostUri(request, metadata):
     solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+    fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
     
     uri = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             INSERT DATA 
@@ -45,25 +47,32 @@ def UpdatePostUri(request, metadata):
             {{
             <{request.uri}> madsrdf:{metadata} <{request.authority}> 
             }} }}"""
+    responseJena = fuseki_update.run_sparql(uri)
     
-    auId = request.uri.split("/")[-1]
-    idUri = request.authority.split("/")[-1]
+    idUri = request.uri.split("/")[-1]
+    auId = request.authority.split("/")[-1]
+    r = solr.search(q=f'id:{auId}')
+    [rdoc] = r.docs
+    [label] = rdoc['label']
 
     doc = {
-        "id": id,
+        "id": idUri,
         f"{metadata}": {
             "add":  {
+                "id": f"{idUri}/{metadata}#{auId}",
                 "uri": request.authority,
-                "label":request.value,
-                "lang": request.lang,
-                "id": f"{auId}/{metadata}#{idUri}",
+                "label": label,
+                "lang": "pt",
+                "base": "bk"
+                
             }
         } }
-    solr.add([doc], commit=True)
+    responseSolr = solr.add([doc], commit=True)
     
-    return uri
+    return {'JenaUpdate':responseJena.convert()['message'], 'SolrUpdate': responseSolr}
 
 def UpdateDeleteUri(request, metadata):
+    fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
     solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
     uri = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             DELETE DATA 
@@ -71,7 +80,17 @@ def UpdateDeleteUri(request, metadata):
             {{
             <{request.uri}> madsrdf:{metadata} <{request.authority}> 
             }} }}"""
-    auId = request.uri.split("/")[-1]
-    idUri = request.authority.split("/")[-1]
-    responseSolr = solr.delete(q=f"id:{auId}/{request.type}#{idUri}",  commit=True)
-    return uri
+    response = fuseki_update.run_sparql(uri)
+
+    # Update solr
+    uriID= request.uri.split("/")[-1]
+    auID = request.authority.split("/")[-1]
+    responseSolr = solr.delete(q=f"id:{uriID}/{request.type}#{auID}",  commit=True)
+
+
+    # responseSolr = solr.delete(q=f"id:{auId}/{request.type}#{uriId}",  commit=True)
+    
+    return {
+        'updateJena': response.convert()['message'],
+        'updateSolr': responseSolr
+        }

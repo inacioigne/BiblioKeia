@@ -1,6 +1,8 @@
 from fastapi import APIRouter, HTTPException
+import httpx
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.solr.docSubject import UpdateDelete
 from src.function.authorities.subject.uri import PostUriSol
 from src.function.authorities.subject.editElementValue import EditElementValue
 from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant, VariantSolr
@@ -9,7 +11,7 @@ from src.function.authorities.upadeteAuthority import UpadeteAuthority
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId
 from src.function.solr.docSubject import MakeDocSubject, DeleteDoc
-from src.schemas.authorities.subject import Subject, Value, VariantEdit, VariantPost, UriEdit
+from src.schemas.authorities.subject import Subject, Value, VariantEdit, VariantPost, UriEdit, UriDelete
 
 router = APIRouter()
 fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
@@ -20,13 +22,13 @@ solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 async def post_subject(request: Subject):
   
     id = GenerateId()
-
     graph = MakeGraphSubject(request, id)
     response = fuseki_update.run_sparql(graph)
-    UpadeteAuthority(request, id)
 
     doc = MakeDocSubject(request, id)
     responseSolr = solr.add([doc], commit=True)
+
+    UpadeteAuthority(request, id)
 
     return {
         "id": id,
@@ -39,49 +41,52 @@ async def post_subject(request: Subject):
 async def post_uri(request: UriEdit):
     
     uri = PostUri(request)
-    response = fuseki_update.run_sparql(uri)
+    responseJena = fuseki_update.run_sparql(uri)
     PostUriSol(request)
     
     if request.type == 'hasBroaderAuthority':
-        uri = UpdatePostUri(request, "hasNarrowerAuthority")
-        response = fuseki_update.run_sparql(uri)
+        update = UpdatePostUri(request, "hasNarrowerAuthority")
+        # response = fuseki_update.run_sparql(uri)
     if request.type == 'hasNarrowerAuthority':
-        uri = UpdatePostUri(request, "hasBroaderAuthority")
-        response = fuseki_update.run_sparql(uri)
+        update = UpdatePostUri(request, "hasBroaderAuthority")
+        # response = fuseki_update.run_sparql(uri)
     if request.type == 'hasReciprocalAuthority':
-        uri = UpdatePostUri(request, "hasReciprocalAuthority")
-        response = fuseki_update.run_sparql(uri)
+        update = UpdatePostUri(request, "hasReciprocalAuthority")
+        # response = fuseki_update.run_sparql(uri)
+
+    response = {'jena': responseJena.convert()['message'] }
+    response.update(update)
       
-    return {
-        "jena": response.convert()['message'],
-        # "solr": responseSolr
-        } 
+    return response
 
 # Delete URI
 @router.delete("/subject/uri", status_code=200) 
-async def delete_uri(request: UriEdit):
+async def delete_uri(request: UriDelete):
 
     uri = DeleteUri(request)
     auId = request.authority.split("/")[-1]
     uriId = request.uri.split("/")[-1]
     responseSolr = solr.delete(q=f"id:{auId}/{request.type}#{uriId}",  commit=True)
     
-    response = fuseki_update.run_sparql(uri)
-    if request.type == 'hasBroaderAuthority':
-        uri = UpdateDeleteUri(request, "hasNarrowerAuthority")
-        response = fuseki_update.run_sparql(uri)
-    if request.type == 'hasNarrowerAuthority':
-        uri = UpdateDeleteUri(request, "hasBroaderAuthority")
-        response = fuseki_update.run_sparql(uri)
-    if request.type == 'hasReciprocalAuthority':
-        uri = UpdateDeleteUri(request, "hasReciprocalAuthority")
-        response = fuseki_update.run_sparql(uri)
-
-
-    return {
-        "jena": response.convert()['message'],
+    responseJena = fuseki_update.run_sparql(uri)
+    response = {
+        "jena": responseJena.convert()['message'],
         "solr": responseSolr
         } 
+
+    if request.type == 'hasBroaderAuthority':
+        resposneUpdate = UpdateDeleteUri(request, "hasNarrowerAuthority")
+        response.update(resposneUpdate)
+
+    if request.type == 'hasNarrowerAuthority':
+        resposneUpdate = UpdateDeleteUri(request, "hasBroaderAuthority")
+        response.update(resposneUpdate)
+
+    if request.type == 'hasReciprocalAuthority':
+        resposneUpdate = UpdateDeleteUri(request, "hasReciprocalAuthority")
+        response.update(resposneUpdate)
+
+    return response
 
 # Edit Element
 @router.put("/subject/elementValue", status_code=200) 
@@ -154,16 +159,73 @@ async def post_variant(request: VariantPost):
 @router.delete("/subject/", status_code=200) 
 async def delete_subject(uri: str):
 
+    uriID = uri.split("/")[-1]
+    r = solr.search(q=f'id:{uriID}', **{'fl': '*,[child]'})
+    [doc] = r.docs
+
     d = f"""DELETE {{ graph <{uri}> {{ ?s ?p ?o }} }}
             WHERE {{
             graph <{uri}> {{ ?s ?p ?o. }}
             }}"""
-    response = fuseki_update.run_sparql(d)
-    
+            
+    responseJena = fuseki_update.run_sparql(d)
     responseSolr = DeleteDoc(uri)
+    response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
+    response = UpdateDelete(doc, response, uri)
 
-    return {
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
+    # if doc.get('hasBroaderAuthority'):
+    #     if type(doc.get('hasBroaderAuthority')) == list:
+    #         for i in doc.get('hasBroaderAuthority'):
+    #             request = {'authority': uri, 
+    #                     'uri': i['uri'], 
+    #                     'type': 'hasNarrowerAuthority' }
+    #             request = UriDelete(**request)
+    #             resposneUpdate = UpdateDeleteUri(request, "hasNarrowerAuthority")
+    #             response.update(resposneUpdate)
+    #     else:
+    #         [delUri] = doc.get('hasBroaderAuthority')['uri']
+    #         request = {'authority': uri, 
+    #                     'uri': delUri, 
+    #                     'type': 'hasNarrowerAuthority' }
+    #         request = UriDelete(**request)
+    #         resposneUpdate = UpdateDeleteUri(request, "hasNarrowerAuthority")
+    #         response.update(resposneUpdate)
+
+    # if doc.get('hasNarrowerAuthority'):
+    #     if type(doc.get('hasNarrowerAuthority')) == list:
+    #         for i in doc.get('hasNarrowerAuthority'):
+    #             request = {'authority': uri, 
+    #                     'uri': i['uri'], 
+    #                     'type': 'hasBroaderAuthority' }
+    #             request = UriDelete(**request)
+    #             resposneUpdate = UpdateDeleteUri(request, "hasBroaderAuthority")
+    #             response.update(resposneUpdate)
+    #     else:
+    #         [delUri] = doc.get('hasNarrowerAuthority')['uri']
+    #         request = {'authority': uri, 
+    #                     'uri':delUri, 
+    #                     'type': 'hasBroaderAuthority' }
+    #         request = UriDelete(**request)
+    #         resposneUpdate = UpdateDeleteUri(request, "hasBroaderAuthority")
+    #         response.update(resposneUpdate)
+
+    # if doc.get('hasReciprocalAuthority'):
+    #     if type(doc.get('hasReciprocalAuthority')) == list:
+    #         for i in doc.get('hasReciprocalAuthority'):
+    #             request = {'authority': uri, 
+    #                     'uri': i['uri'], 
+    #                     'type': 'hasReciprocalAuthority' }
+    #             request = UriDelete(**request)
+    #             resposneUpdate = UpdateDeleteUri(request, "hasReciprocalAuthority")
+    #             response.update(resposneUpdate)
+    #     else:
+    #         [delUri] = doc.get('hasReciprocalAuthority')['uri']
+    #         request = {'authority': uri, 
+    #                     'uri': delUri, 
+    #                     'type': 'hasReciprocalAuthority' }
+    #         request = UriDelete(**request)
+    #         resposneUpdate = UpdateDeleteUri(request, "hasReciprocalAuthority")
+    #         response.update(resposneUpdate)
+
     
+    return response

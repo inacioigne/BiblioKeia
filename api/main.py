@@ -46,7 +46,7 @@ app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 
 # Authorities
-app.include_router(subjects.router, prefix='/authorities', tags=['Authorities'])
+app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
 app.include_router(loc.router, prefix='/authorities', tags=['Authorities Import'])
 
 

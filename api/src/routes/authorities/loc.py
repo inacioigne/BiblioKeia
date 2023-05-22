@@ -12,8 +12,8 @@ from src.function.authorities.generateID import GenerateId
 router = APIRouter()
 
 
-# Get Authority Loc
-@router.get("/import/loc/subject", status_code=200, response_model=Subject) 
+# LC Subject Headings (LCSH)
+@router.get("/import/loc/subjects", status_code=200, response_model=Subject) 
 async def get_subject(uri: str):
 
     exist = GraphExist(uri)
@@ -23,8 +23,12 @@ async def get_subject(uri: str):
     graph.parse(f'{uri}.rdf')
 
     subject = ParserSubject(graph, uri)
-    # MakeTranslate
-    # subject = MakeTranslateLoc(subject)
+
 
     return subject.dict()
-    # return {'msg': uri}
+
+# LC Name Authority File (LCNAF)
+@router.get("/import/loc/agents", status_code=200) #, response_model=Subject) 
+async def get_agents(uri: str):
+
+    return { 'msg': 'ok'}

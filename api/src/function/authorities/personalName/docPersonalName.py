@@ -123,14 +123,5 @@ def MakeDocPersonalName(request):
             }
             occupations.append(occupation)
         doc['occupation'] = occupations
-        
-
-
-
-        
-            
-    
-    
-
 
     return doc

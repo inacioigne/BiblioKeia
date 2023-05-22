@@ -11,6 +11,11 @@ class UriEdit(BaseModel):
     value: str
     lang: str
     base: Optional[str]
+
+class UriDelete(BaseModel):
+    authority: str
+    uri: str
+    type: str
     
 
 class Value(BaseModel):
