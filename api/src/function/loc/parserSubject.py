@@ -67,7 +67,7 @@ def GetExternalUri(authority, graph, metadata, obj):
         return False
 
 
-def ParserSubject(graph, authority):
+def ParserSubject(graph, authority): 
 
   # Type
   tipo = GetType(graph, authority)

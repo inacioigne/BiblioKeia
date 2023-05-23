@@ -829,7 +829,7 @@
     madsrdf:authoritativeLabel "Portuguese"@en .
 
 <http://id.loc.gov/authorities/names/n80002329> a madsrdf:Authority,
-        madsrdf:PersonalName,
+        madsrdf:PersonalName, 
         skos:Concept ;
     bflc:marcKey "1001 $aMachado de Assis,$d1839-1908" ;
     identifiers:lccn "n 80002329" ;

@@ -13,7 +13,7 @@ class Uri(BaseModel):
 
 class Element(BaseModel):
     type: str
-    elementValue: Label
+    elementValue: Label 
 
 class ComponentList(BaseModel): 
     type: str
