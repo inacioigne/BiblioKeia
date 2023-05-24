@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/n80002329> a madsrdf:Authority,
+<http://id.loc.gov/authorities/names/n80002329> a madsrdf:Authority, 
         madsrdf:PersonalName ;
     bflc:marcKey "1001 $aMachado de Assis,$d1839-1908" ;
     identifiers:lccn "n 80002329" ;

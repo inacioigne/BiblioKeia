@@ -19,10 +19,10 @@ class ComponentList(BaseModel):
     type: str
     elementList: list[Element]
 
-class Variant(BaseModel):
+class Variant(BaseModel): 
     type: str
     elementList: Optional[list[Element]]
-    componentList: Optional[list[ComponentList]]
+    # componentList: Optional[list[ComponentList]]
 
 class Affiliation(BaseModel):
     organization: str
