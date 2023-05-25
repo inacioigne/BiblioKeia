@@ -5,7 +5,7 @@ from src.routes.users import login
 from src.routes.users import users
 from src.routes.cataloguing import images, generateId, work, instances, items, hub
 from src.routes.translate import translate
-from src.routes.authorities import subjects, loc
+from src.routes.authorities import subjects, loc, agents
 import uvicorn
 
 initializeDatabase()
@@ -47,6 +47,7 @@ app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 
 # Authorities
 app.include_router(subjects.router, prefix='/authorities', tags=['Authorities Subjects'])
+app.include_router(agents.router, prefix='/authorities', tags=['Authorities Agents'])
 app.include_router(loc.router, prefix='/authorities', tags=['Authorities Import'])
 
 

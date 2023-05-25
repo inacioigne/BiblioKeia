@@ -7,14 +7,20 @@ def GetOccuption(rwo, graph, obj):
    ?occupation madsrdf:authoritativeLabel ?label  }} """
     result = graph.query(q)
     if len(result.bindings) > 0:
-       occupations = list()
-       for i in result.bindings:
-        value = i.get('occupation').toPython()
-        base = value.split('//')[1].split("/")[0]
-        occupation = {'value': value,
-                     'label': i.get('label').value,
-                     'base': base}
-        occupations.append(occupation)
-    obj['occupation'] = occupations
+        occupations = list()
+        for i in result.bindings:
+            value = i.get('occupation').toPython()
+            base = value.split('//')[1].split("/")[0]
+            occupation = {'value': value,
+                        'label': i.get('label').value,
+                        'base': base}
+            occupations.append(occupation)
+        obj['occupation'] = occupations
     
     return obj
+
+
+    
+        
+
+
