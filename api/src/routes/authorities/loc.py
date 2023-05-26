@@ -32,6 +32,10 @@ async def get_subject(uri: str):
 @router.get("/import/loc/agents", status_code=200, response_model=Agents) 
 async def get_agents(authority: str):
 
+    exist = GraphExist(authority)
+    if exist:
+        raise HTTPException(status_code=409, detail="Esse registro já existe")
+
     graph = Graph()
     graph.parse(f'{authority}.rdf')
     response = ParserAgents(graph, authority)
