@@ -2,6 +2,17 @@ from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
 from datetime import datetime, date
 
+class Data(BaseModel):
+    metadata: str
+    value: str
+
+class EditAuthority(BaseModel):
+    action: str
+    data: Data
+
+
+
+
 class Label(BaseModel):
     value: str
     lang: Optional[str]

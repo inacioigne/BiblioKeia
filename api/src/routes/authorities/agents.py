@@ -29,4 +29,24 @@ async def post_agents(request: Agents):
         "jena": response.convert()['message'],
         "solr": responseSolr
         } 
-    # return {'id': id, 'agent': request.dict()}
+
+# Delete Autority
+@router.post("/agents/birthDate", status_code=200) 
+async def delete_subject(uri: str):
+
+    uriID = uri.split("/")[-1]
+    r = solr.search(q=f'id:{uriID}', **{'fl': '*,[child]'})
+    [doc] = r.docs
+
+    d = f"""DELETE {{ graph <{uri}> {{ ?s ?p ?o }} }}
+            WHERE {{
+            graph <{uri}> {{ ?s ?p ?o. }}
+            }}"""
+            
+    responseJena = fuseki_update.run_sparql(d)
+    responseSolr = DeleteDoc(uri)
+    response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
+    response = UpdateDelete(doc, response, uri)
+    
+    return response
+

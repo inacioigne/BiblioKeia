@@ -9,7 +9,7 @@ class Uri(BaseModel):
 
 class Affiliation(BaseModel):
     organization: Uri
-    affiliationStart: str
+    affiliationStart: Optional[str]
     affiliationEnd: Optional[str]
     
 class Agents(BaseModel):
@@ -22,9 +22,11 @@ class Agents(BaseModel):
     deathDate: Optional[str]
     hasAffiliation: Optional[list[Affiliation]]
     occupation: Optional[list[Uri]]
+    fieldOfActivity: Optional[list[Uri]]
     hasCloseExternalAuthority: Optional[list[Uri]]
     hasExactExternalAuthority: Optional[list[Uri]]
     hasVariant: Optional[list[Variant]]
     subjectOf: Optional[list[Uri]]
     contributorOf: Optional[list[Uri]]
     isMemberOfMADSCollection: str
+

@@ -6,9 +6,10 @@ def GetAffiliation(rwo, graph, obj):
     <{rwo}> madsrdf:hasAffiliation ?hasAffiliation .
   ?hasAffiliation madsrdf:organization ?organization .
   ?organization madsrdf:authoritativeLabel ?labelOrg .
+  OPTIONAL {{ 
   ?hasAffiliation madsrdf:affiliationStart ?start .
-  OPTIONAL {{ ?hasAffiliation madsrdf:affiliationEnd ?end  }} }}"""
-    result = graph.query(q)
+    ?hasAffiliation madsrdf:affiliationEnd ?end  }} }}"""
+    result = graph.query(q) 
     
     if len(result.bindings) > 0:
         affiliations = list()
@@ -17,9 +18,12 @@ def GetAffiliation(rwo, graph, obj):
           orgUri = i.get('organization').toPython()
           orgBase = orgUri.split('//')[1].split("/")[0]
           organization = {'value': orgUri, 'label': i.get('labelOrg').toPython(), 'base': orgBase}
-          affiliation = {'organization': organization,
-                         'affiliationStart': i.get('start').toPython(),
-                         'affiliationEnd': i.get('end').toPython()}
+          affiliation = {'organization': organization }
+          if i.get('start'):
+            affiliation['affiliationStart'] = i.get('start').toPython()
+          if i.get('end'):
+            affiliation['affiliationEnd'] = i.get('end').toPython()  
+
           affiliations.append(affiliation)
         obj['hasAffiliation'] = affiliations
 

@@ -87,10 +87,10 @@ def MakeDocSubject(request, id):
                 doc[f'{k}'] = uris
     return doc
 
-def DeleteDoc(uri):
+def DeleteDoc(uriID): 
     solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
-    idUri = uri.split("/")[-1]
-    r = solr.search(q=f'id:{idUri}', **{'fl': '*,[child]'})
+    # uriID = uri.split("/")[-1]
+    r = solr.search(q=f'id:{uriID}', **{'fl': '*,[child]'})
 
     nMeta = ["id",
     "type",
@@ -99,8 +99,10 @@ def DeleteDoc(uri):
     "isMemberOfMADSCollection",
     "note",
     "variant",
+    "imagem",
+     "birthDate",
     "_version_"]
-    ids = [idUri]
+    ids = [uriID]
     [doc] = r.docs
     for k, v in doc.items():
         if k not in nMeta:

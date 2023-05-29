@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-import httpx
+# import httpx
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.function.solr.docSubject import UpdateDelete
@@ -88,23 +88,23 @@ async def delete_uri(request: UriDelete):
 
     return response
 
-# Edit Element
-@router.put("/subject/elementValue", status_code=200) 
-async def edit_elementValue(request: Value):
+# # Edit Element
+# @router.put("/subject/elementValue", status_code=200) 
+# async def edit_elementValue(request: Value):
 
-    elementValue = EditElementValue(request)
-    response = fuseki_update.run_sparql(elementValue)
-    auId = request.authority.split("/")[-1]
-    doc = {
-        "id": auId,
-        "label":{ "set": request.value}
-        }
-    responseSolr = solr.add([doc], commit=True)
+#     elementValue = EditElementValue(request)
+#     response = fuseki_update.run_sparql(elementValue)
+#     auId = request.authority.split("/")[-1]
+#     doc = {
+#         "id": auId,
+#         "label":{ "set": request.value}
+#         }
+#     responseSolr = solr.add([doc], commit=True)
 
-    return {
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
+#     return {
+#         "jena": response.convert()['message'],
+#         "solr": responseSolr
+#         } 
 
 # Edit Variant
 @router.put("/subject/variant", status_code=200) 
@@ -155,22 +155,3 @@ async def post_variant(request: VariantPost):
         "solr": responseSolr
         } 
 
-# Delete Autority
-@router.delete("/subject/", status_code=200) 
-async def delete_subject(uri: str):
-
-    uriID = uri.split("/")[-1]
-    r = solr.search(q=f'id:{uriID}', **{'fl': '*,[child]'})
-    [doc] = r.docs
-
-    d = f"""DELETE {{ graph <{uri}> {{ ?s ?p ?o }} }}
-            WHERE {{
-            graph <{uri}> {{ ?s ?p ?o. }}
-            }}"""
-            
-    responseJena = fuseki_update.run_sparql(d)
-    responseSolr = DeleteDoc(uri)
-    response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
-    response = UpdateDelete(doc, response, uri)
-    
-    return response

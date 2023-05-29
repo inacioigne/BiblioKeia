@@ -42,8 +42,7 @@ def MakeDocAgents(request, id):
     if request.deathDate:
         doc['deathDate'] = request.deathDate
     
-    # hasAffiliation
-    
+    # hasAffiliation  
     if request.hasAffiliation:
         affiliations = list()
         for i in request.hasAffiliation:
@@ -57,6 +56,7 @@ def MakeDocAgents(request, id):
             affiliations.append(a)
         doc['hasAffiliation'] = affiliations
     
+    # hasVariant
     if request.hasVariant:
         variants = list()
         for i in request.hasVariant:
@@ -93,9 +93,16 @@ def MakeDocAgents(request, id):
             occupations.append(uri)
         doc['occupation'] = occupations
 
-
-
-
-
+    # fieldOfActivity
+    if request.fieldOfActivity:
+        fields = list()
+        for i in request.fieldOfActivity:
+            uri = {
+                    'id': f"{id}/fieldOfActivity#{i.value.split('/')[-1]}",
+                    'uri': i.value, 
+                    'label': i.label, 
+                    'base': i.base }
+            fields.append(uri)
+        doc['fieldOfActivity'] = fields
 
     return doc

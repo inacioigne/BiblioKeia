@@ -1,0 +1,208 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns1: <https://id.loc.gov/authorities/names/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/n85299803> a madsrdf:Organization ;
+    madsrdf:authoritativeLabel "University of Iowa. Department of Neurology" .
+
+<http://id.loc.gov/authorities/subjects/sh2006000762> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Neurobiologists" .
+
+<http://id.loc.gov/authorities/subjects/sh85028378> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "College teachers" .
+
+<http://id.loc.gov/authorities/subjects/sh85091114> a skos:Concept ;
+    madsrdf:authoritativeLabel "Neurobiology" .
+
+<http://id.loc.gov/authorities/subjects/sh89002432> a skos:Concept ;
+    madsrdf:authoritativeLabel "Emotions and cognition" .
+
+<http://id.loc.gov/resources/works/12282828> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Unity of knowledge : the convergence of natural and human science" .
+
+<http://id.loc.gov/resources/works/12857833> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Looking for Spinoza : joy, sorrow, and the feeling brain" .
+
+<http://id.loc.gov/resources/works/13522496> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Ao encontro de Espinosa : as emoções sociais e a neurologia do sentir" .
+
+<http://id.loc.gov/resources/works/14402061> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Descartes' error : emotion, reason, and the human brain" .
+
+<http://id.loc.gov/resources/works/14840990> a bf:Work ;
+    bflc:aap "Gluck, Andrew Lee. Damasio's error and Descartes' truth : an inquiry into consciousness, epistemology, and metaphysics" .
+
+<http://id.loc.gov/resources/works/154551> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Cervelli che parlano : il dibattito su mente, coscienza e intelligenza artificiale" .
+
+<http://id.loc.gov/resources/works/16172866> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Self comes to mind : constructing the conscious brain" .
+
+<http://id.loc.gov/resources/works/17228529> a bf:Work ;
+    bflc:aap "Markič, Olga. Kognitivna znanost : filozofska vrpašanja" .
+
+<http://id.loc.gov/resources/works/17734890> a bf:Work ;
+    bflc:aap "Barile, Emilia, 1976- Pensare Damasio : due o tre cose che so di lui" .
+
+<http://id.loc.gov/resources/works/18744611> a bf:Work ;
+    bflc:aap "Huber, Matthias, 1973- Die Bedeutung von Emotion für Entscheidung und Bewusstsein" .
+
+<http://id.loc.gov/resources/works/20485389> a bf:Work ;
+    bflc:aap "Bstan-ʼdzin-rgya-mtsho, Dalai Lama XIV, 1935- Where Buddhism meets neuroscience : conversations with the Dalai Lama on the spiritual and scientific views of our minds" .
+
+<http://id.loc.gov/resources/works/3103372> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. feeling of what happens : body and emotion in the making of consciousness" .
+
+<http://id.loc.gov/resources/works/3104536> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Scientific American book of the brain" .
+
+<http://id.loc.gov/resources/works/3857685> a bf:Work ;
+    bflc:aap "Damasio, Hanna. Lesion analysis in neuropsychology" .
+
+<http://id.loc.gov/resources/works/3980043> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Neurobiology of decision-making" .
+
+<http://id.loc.gov/resources/works/4433775> a bf:Work ;
+    bflc:aap "Damasio, Antonio R. Descartes' error : emotion, reason, and the human brain" .
+
+<http://id.loc.gov/rwo/agents/n88090795> a bf:Person,
+        madsrdf:RWO,
+        foaf:Person ;
+    rdfs:label "Damasio, Antonio R." ;
+    bflc:contributorTo <http://id.loc.gov/resources/works/12282828>,
+        <http://id.loc.gov/resources/works/12857833>,
+        <http://id.loc.gov/resources/works/13522496>,
+        <http://id.loc.gov/resources/works/14402061>,
+        <http://id.loc.gov/resources/works/154551>,
+        <http://id.loc.gov/resources/works/16172866>,
+        <http://id.loc.gov/resources/works/20485389>,
+        <http://id.loc.gov/resources/works/3103372>,
+        <http://id.loc.gov/resources/works/3104536>,
+        <http://id.loc.gov/resources/works/3857685>,
+        <http://id.loc.gov/resources/works/3980043>,
+        <http://id.loc.gov/resources/works/4433775> ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/14840990>,
+        <http://id.loc.gov/resources/works/17228529>,
+        <http://id.loc.gov/resources/works/17734890>,
+        <http://id.loc.gov/resources/works/18744611> ;
+    madsrdf:birthDate "1944-02-25"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:birthPlace [ a madsrdf:Geographic ;
+            rdfs:label "Lisbon (Portugal)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85091114>,
+        <http://id.loc.gov/authorities/subjects/sh89002432> ;
+    madsrdf:hasAffiliation [ a madsrdf:Affiliation ; 
+            madsrdf:organization <http://id.loc.gov/authorities/names/n85299803> ],
+        [ a madsrdf:Affiliation ;
+            madsrdf:affiliationStart "2005" ;
+            madsrdf:organization [ a madsrdf:Organization ;
+                    rdfs:label "University of Southern California. Brain and Creativity Institute" ] ] ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh2006000762>,
+        <http://id.loc.gov/authorities/subjects/sh85028378> .
+
+<http://id.loc.gov/authorities/names/n88090795> a madsrdf:Authority,
+        madsrdf:PersonalName,
+        skos:Concept ;
+    bflc:marcKey "1001 $aDamasio, Antonio R." ;
+    identifiers:lccn "n 88090795" ;
+    identifiers:local "(OCoLC)oca02376833" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1988-10-07T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2014-11-06T07:37:34"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/mosr> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Damasio, Antonio R." ;
+    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script reference not evaluated.]" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Damasio, Antonio R." ] ) ;
+    madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "Antonio Rosa" ] ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1487281>,
+        <http://www.wikidata.org/entity/Q380207> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++88090795#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "title page (Antonio Damasio) dust jacket (university professor of neuroscience)" ;
+            madsrdf:citationSource "Jeff Koons : a retrospective, 2014:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Antonio Damasio; Portuguese: António Rosa Damásio; born February 25, 1944 in Lisbon, Portugal; Portuguese-American neuroscientist/neurobiologist; books deal with relationship between emotions and feelings, and what the brain substrates)" ;
+            madsrdf:citationSource "Wikipedia, November 5, 2014" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "ECIP t.p. (Antonio Damasio) data view (since 2005, dir. of the USC's Brain and Creativity Institute)" ;
+            madsrdf:citationSource "Self comes to mind, c2010:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (A.R. Damasio)" ;
+            madsrdf:citationSource "Neurobiology of decision-making, c1996:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "CIP t.p. (Antonio R. Damasio; Dept. of Neurology, Univ. of Iowa Coll. of Med.)" ;
+            madsrdf:citationSource "Damasio, H. Neuroanatomy in the study of neuropsychological disorders, 1989:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "דמאסיו, אנטוניו" ] ) ;
+            madsrdf:variantLabel "דמאסיו, אנטוניו" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Damasio, A. R." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Antonio R.)" ] ) ;
+            madsrdf:variantLabel "Damasio, A. R. (Antonio R.)" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n88090795> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    skos:altLabel "Damasio, A. R. (Antonio R.)",
+        "דמאסיו, אנטוניו" ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1988-10-07T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dnlm> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n88090795> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2014-11-06T07:37:34"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/mosr> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n88090795> ] ;
+    skos:closeMatch <http://id.worldcat.org/fast/1487281>,
+        <http://www.wikidata.org/entity/Q380207> ;
+    skos:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script reference not evaluated.]" ;
+    skos:exactMatch <http://viaf.org/viaf/sourceID/LC%7Cn++88090795#skos:Concept> ;
+    skos:inScheme <http://id.loc.gov/authorities/names> ;
+    skos:prefLabel "Damasio, Antonio R." ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Damasio, A. R. (Antonio R.)" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "דמאסיו, אנטוניו" ] ;
+    ns1:test "" .
+
+<http://id.worldcat.org/fast/1487281> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Damasio, Antonio R." ;
+    skos:prefLabel "Damasio, Antonio R." .
+
+<http://www.wikidata.org/entity/Q380207> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "António Damásio" ;
+    skos:prefLabel "António Damásio" .
+

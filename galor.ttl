@@ -1,0 +1,124 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns1: <https://id.loc.gov/authorities/names/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2016060024> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "University and college faculty members" .
+
+<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Authors" .
+
+<http://id.loc.gov/authorities/subjects/sh85133052> a skos:Concept ;
+    madsrdf:authoritativeLabel "Teaching" .
+
+<http://id.loc.gov/resources/works/14558051> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- Discrete dynamical systems" .
+
+<http://id.loc.gov/resources/works/15770793> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- Inequality and economic development : the modern perspective" .
+
+<http://id.loc.gov/resources/works/16507252> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- Unified growth theory" .
+
+<http://id.loc.gov/resources/works/16900167> a bf:Work ;
+    bflc:aap "Ashraf, Quamrul, 1976- Dynamics and stagnation in the Malthusian Epoch" .
+
+<http://id.loc.gov/resources/works/16925679> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- demographic transition causes and consequences" .
+
+<http://id.loc.gov/resources/works/16925728> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- Inequality, human capital formation and the process of development" .
+
+<http://id.loc.gov/resources/works/16926969> a bf:Work ;
+    bflc:aap "Galor, Oded, 1953- Evolution and the growth process natural selection of entrepreneurial traits" .
+
+<http://id.loc.gov/resources/works/17157634> a bf:Work ;
+    bflc:aap "Ashraf, Quamrul, 1976- Cultural diversity, geographical isolation, and the origin of the wealth of nations" .
+
+<http://id.loc.gov/rwo/agents/n86870523> a bf:Person,
+        madsrdf:RWO,
+        foaf:Person ;
+    rdfs:label "Galor, Oded, 1953-" ;
+    bflc:contributorTo <http://id.loc.gov/resources/works/14558051>,
+        <http://id.loc.gov/resources/works/15770793>,
+        <http://id.loc.gov/resources/works/16507252>,
+        <http://id.loc.gov/resources/works/16900167>,
+        <http://id.loc.gov/resources/works/16925679>,
+        <http://id.loc.gov/resources/works/16925728>,
+        <http://id.loc.gov/resources/works/16926969>,
+        <http://id.loc.gov/resources/works/17157634> ;
+    madsrdf:birthDate "1953"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:fieldOfActivity [ a skos:Concept ;
+            rdfs:label "(lcsh) Economy" ],
+        <http://id.loc.gov/authorities/subjects/sh85133052> ;
+    madsrdf:occupation <http://id.loc.gov/authorities/demographicTerms/dg2016060024>,
+        <http://id.loc.gov/authorities/subjects/sh85009793> .
+
+<http://id.loc.gov/authorities/names/n86870523> a madsrdf:Authority,
+        madsrdf:PersonalName,
+        skos:Concept ;
+    bflc:marcKey "1001 $aGalor, Oded,$d1953-" ;
+    identifiers:lccn "n 86870523" ;
+    identifiers:local "(OCoLC)oca01727283" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2022-12-22T06:45:37"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/icrlf> ;
+            ri:recordStatus "revised"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1986-12-11T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "Galor, Oded, 1953-" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Galor, Oded," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1953-" ] ) ;
+    madsrdf:hasCloseExternalAuthority <http://www.wikidata.org/entity/Q7077617> ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++86870523#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "title page (Oded Galor)" ;
+            madsrdf:citationSource "The journey of humanity, 2022 :" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Oded Galor (born 1953) is an Israeli-American economist who is currently Herbert H. Goldberger Professor of Economics at Brown University)" ;
+            madsrdf:citationSource "Wikipedia, Dec. 20, 2022" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(hdg. on NNC rept.: Galor, Oded, 1953- ; usage: Oded Galor)" ;
+            madsrdf:citationSource "nuc86-110351: His Three essays in economic theory [MI] 1984" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n86870523> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2022-12-22T06:45:37"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/icrlf> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n86870523> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1986-12-11T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n86870523> ] ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q7077617> ;
+    skos:exactMatch <http://viaf.org/viaf/sourceID/LC%7Cn++86870523#skos:Concept> ;
+    skos:inScheme <http://id.loc.gov/authorities/names> ;
+    skos:prefLabel "Galor, Oded, 1953-" ;
+    ns1:test "" .
+
+<http://www.wikidata.org/entity/Q7077617> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Oded Galor" ;
+    skos:prefLabel "Oded Galor" .
+

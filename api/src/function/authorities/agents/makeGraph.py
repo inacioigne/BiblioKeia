@@ -50,6 +50,7 @@ def MakeGraphAgents(request, id):
             { MakeAffiliation(request.hasAffiliation) if request.hasAffiliation else ''  }
             { f'madsrdf:deathDate "{request.deathDate}" ;' if request.deathDate else ''  }
             { f'madsrdf:occupation {", ".join([ f"<{i.value}>" for i in request.occupation])} ;' if request.occupation else ''}
+            { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.value}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
             { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }

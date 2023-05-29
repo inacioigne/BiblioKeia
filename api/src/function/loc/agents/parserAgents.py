@@ -1,4 +1,5 @@
 
+from src.function.loc.agents.fieldOfActivity import GetFieldOfActivity
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.Occuption import GetOccuption
 from src.function.loc.agents.Affiliation import GetAffiliation
@@ -57,6 +58,7 @@ def ParserAgents(graph, authority):
     obj = GetAffiliation(rwo, graph, obj)
     # Occuptions
     obj = GetOccuption(rwo, graph, obj)
+    obj = GetFieldOfActivity(rwo, graph, obj)
 
     response = Agents(**obj)
     
