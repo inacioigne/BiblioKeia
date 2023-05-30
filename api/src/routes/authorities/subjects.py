@@ -88,23 +88,6 @@ async def delete_uri(request: UriDelete):
 
     return response
 
-# # Edit Element
-# @router.put("/subject/elementValue", status_code=200) 
-# async def edit_elementValue(request: Value):
-
-#     elementValue = EditElementValue(request)
-#     response = fuseki_update.run_sparql(elementValue)
-#     auId = request.authority.split("/")[-1]
-#     doc = {
-#         "id": auId,
-#         "label":{ "set": request.value}
-#         }
-#     responseSolr = solr.add([doc], commit=True)
-
-#     return {
-#         "jena": response.convert()['message'],
-#         "solr": responseSolr
-#         } 
 
 # Edit Variant
 @router.put("/subject/variant", status_code=200) 

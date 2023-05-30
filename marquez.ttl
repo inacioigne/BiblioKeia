@@ -1,0 +1,1039 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix identifiers: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix lcc: <http://id.loc.gov/ontologies/lcc#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns1: <https://id.loc.gov/authorities/names/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026424> a skos:Concept ;
+    madsrdf:authoritativeLabel "Magic realist fiction" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026533> a skos:Concept ;
+    madsrdf:authoritativeLabel "Screenplays" .
+
+<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Authors" .
+
+<http://id.loc.gov/authorities/subjects/sh85070736> a skos:Concept ;
+    madsrdf:authoritativeLabel "Journalism" .
+
+<http://id.loc.gov/authorities/subjects/sh85070788> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Journalists" .
+
+<http://id.loc.gov/authorities/subjects/sh85079627> a skos:Concept ;
+    madsrdf:authoritativeLabel "Magic realism (Literature)" .
+
+<http://id.loc.gov/authorities/subjects/sh85092863> a madsrdf:Occupation ;
+    madsrdf:authoritativeLabel "Novelists" .
+
+<http://id.loc.gov/resources/works/100440> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Un manual para ser niño" .
+
+<http://id.loc.gov/resources/works/1021472> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Love in the time of cholera" .
+
+<http://id.loc.gov/resources/works/10337698> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. hojarasca" .
+
+<http://id.loc.gov/resources/works/10359105> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cien años de soledad" .
+
+<http://id.loc.gov/resources/works/1073902> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. general en su laberinto" .
+
+<http://id.loc.gov/resources/works/1099566> a bf:Work ;
+    bflc:aap "Aznárez, Carlos. 500 años después : descubrimiento o genocidio?" .
+
+<http://id.loc.gov/resources/works/11212878> a bf:Work ;
+    bflc:aap "Alternativa" .
+
+<http://id.loc.gov/resources/works/1154927> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cómo se cuenta un cuento" .
+
+<http://id.loc.gov/resources/works/1157710> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Relato de un náufrago : que estuvo diez días a la deriva en una balsa sin comer ni beber, que fue proclamado héroe de la patria, besado por las reinas de la belleza y hecho rico por la publicidad, y luego aborrecido por el gobierno y olvidado para siempre" .
+
+<http://id.loc.gov/resources/works/11634230> a bf:Work ;
+    bflc:aap "Navarro, Ana Cristina, Gabriel García Márquez--magic and reality" .
+
+<http://id.loc.gov/resources/works/1179225> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. News of a kidnapping" .
+
+<http://id.loc.gov/resources/works/11831841> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Por la libre, 1974-1995" .
+
+<http://id.loc.gov/resources/works/11863054> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. bendita manía de contar" .
+
+<http://id.loc.gov/resources/works/11888647> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Notas de prensa, 1961-1984" .
+
+<http://id.loc.gov/resources/works/1191679> a bf:Work ;
+    bflc:aap "Valenzuela, Lídice. Realidad y nostalgia de García Márquez" .
+
+<http://id.loc.gov/resources/works/11975622> a bf:Work ;
+    bflc:aap "Echevarría, Rogelio. Selecciónes de Sucesos" .
+
+<http://id.loc.gov/resources/works/12033156> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. verano feliz de la señora Forbes" .
+
+<http://id.loc.gov/resources/works/12036581> a bf:Work ;
+    bflc:aap "Mendoza, Plinio Apuleyo. Aquellos tiempos con Gabo" .
+
+<http://id.loc.gov/resources/works/12108209> a bf:Work ;
+    bflc:aap "Castro, Fidel, 1926-2016. Mañana será demasiado tarde" .
+
+<http://id.loc.gov/resources/works/12236336> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. María dos Prazeres" .
+
+<http://id.loc.gov/resources/works/12236350> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. luz es como el agua" .
+
+<http://id.loc.gov/resources/works/12236361> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. siesta del martes" .
+
+<http://id.loc.gov/resources/works/12236369> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. último viaje del buque fantasma" .
+
+<http://id.loc.gov/resources/works/12237236> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. señor muy viejo con unas alas enormes" .
+
+<http://id.loc.gov/resources/works/12413959> a bf:Work ;
+    bflc:aap "Cristóbal, Juan. García Márquez y los medios de comunicación" .
+
+<http://id.loc.gov/resources/works/1292249> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Leaf storm, and other stories" .
+
+<http://id.loc.gov/resources/works/13055763> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Vivir para contarla" .
+
+<http://id.loc.gov/resources/works/13127433> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Clave diccionario de uso del español actual" .
+
+<http://id.loc.gov/resources/works/13244674> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. amor en los tiempos del cólera" .
+
+<http://id.loc.gov/resources/works/13244682> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Crónica de una muerte anunciada" .
+
+<http://id.loc.gov/resources/works/13244686> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. general en su laberinto" .
+
+<http://id.loc.gov/resources/works/13244699> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Vivir para contarla" .
+
+<http://id.loc.gov/resources/works/13302305> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Living to tell the tale" .
+
+<http://id.loc.gov/resources/works/13368768> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. general in his labyrinth : a novel" .
+
+<http://id.loc.gov/resources/works/13431998> a bf:Work ;
+    bflc:aap "Ruch, Allen B. Gabriel García Márquez Macondo" .
+
+<http://id.loc.gov/resources/works/13549193> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Vivir para contarla" .
+
+<http://id.loc.gov/resources/works/13566264> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. general in his labyrinth : a novel" .
+
+<http://id.loc.gov/resources/works/13608224> a bf:Work ;
+    bflc:aap "Strathern, Paul, 1940- García Márquez in 90 minutes" .
+
+<http://id.loc.gov/resources/works/13695507> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Innocent Eréndira and other stories" .
+
+<http://id.loc.gov/resources/works/13695512> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 No one writes to the colonel" .
+
+<http://id.loc.gov/resources/works/13695564> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Leaf storm and other stories" .
+
+<http://id.loc.gov/resources/works/13819602> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Memoria de mis putas tristes" .
+
+<http://id.loc.gov/resources/works/13880790> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Memories of my melancholy whores" .
+
+<http://id.loc.gov/resources/works/13881306> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Conversations with Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/1389870> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Chronicle of a death foretold" .
+
+<http://id.loc.gov/resources/works/13910941> a bf:Work ;
+    bflc:aap "Bloom, Harold. Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/13937119> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Memoria de mis putas tristes" .
+
+<http://id.loc.gov/resources/works/14140077> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Memories of my melancholy whores" .
+
+<http://id.loc.gov/resources/works/14322382> a bf:Work ;
+    bflc:aap "Darraj, Susan Muaddi. Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/14332640> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. mundo según Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/14395201> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. otoño del patriarca" .
+
+<http://id.loc.gov/resources/works/14395208> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Del amor y otros demonios" .
+
+<http://id.loc.gov/resources/works/1439620> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. García Márquez habla de García Márquez" .
+
+<http://id.loc.gov/resources/works/14448730> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Doce cuentos peregrinos" .
+
+<http://id.loc.gov/resources/works/14568176> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cien años de soledad" .
+
+<http://id.loc.gov/resources/works/14568298> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. aventura de Miguel Littín clandestino en Chile" .
+
+<http://id.loc.gov/resources/works/1479573> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Love in the time of cholera" .
+
+<http://id.loc.gov/resources/works/1486908> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. amor en los tiempos del cólera" .
+
+<http://id.loc.gov/resources/works/14911396> a bf:Work ;
+    bflc:aap "Contreras Torres, Marco A. (Marco Antonio) Identidad caribe : síntesis y génesis de la nacionalidad colombiana" .
+
+<http://id.loc.gov/resources/works/14911706> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cien años de soledad" .
+
+<http://id.loc.gov/resources/works/14944712> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Presencia del ausente : homenaje a Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/14971712> a bf:Work ;
+    bflc:aap "Zapata, Juan Carlos. Gabo nació en Caracas no en Aracataca" .
+
+<http://id.loc.gov/resources/works/15074088> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. hojarasca" .
+
+<http://id.loc.gov/resources/works/15075637> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. funerales de la Mamá Grande" .
+
+<http://id.loc.gov/resources/works/15075674> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. funerales de la Mamá Grande" .
+
+<http://id.loc.gov/resources/works/15075697> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Ojos de perro azul" .
+
+<http://id.loc.gov/resources/works/15075708> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Ojos de perro azul" .
+
+<http://id.loc.gov/resources/works/15075748> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. mala hora" .
+
+<http://id.loc.gov/resources/works/15075758> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. mala hora" .
+
+<http://id.loc.gov/resources/works/15075765> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. increíble y triste historia de la cándida Eréndira y de su abuela desalmada" .
+
+<http://id.loc.gov/resources/works/15075781> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. increíble y triste historia de la cándida Eréndira y de su abuela desalmada" .
+
+<http://id.loc.gov/resources/works/15075787> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. coronel no tiene quien le escriba" .
+
+<http://id.loc.gov/resources/works/15075798> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. coronel no tiene quien le escriba" .
+
+<http://id.loc.gov/resources/works/15075801> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Noticia de un secuestro" .
+
+<http://id.loc.gov/resources/works/15076079> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Diatriba de amor contra un hombre sentado" .
+
+<http://id.loc.gov/resources/works/15076094> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Del amor y otros demonios" .
+
+<http://id.loc.gov/resources/works/15076123> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Relato de un náufrago : que estuvo diez días a la deriva en una balsa sin comer ni beber, que fue proclamado héroe de la patria, besado por las reinas de la belleza y hecho rico por la publicidad, y luego aborrecido por el gobierno y alvidado para siempre" .
+
+<http://id.loc.gov/resources/works/15076136> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. otoño del patriarca" .
+
+<http://id.loc.gov/resources/works/15076146> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cien años de soledad" .
+
+<http://id.loc.gov/resources/works/15076159> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. hojarasca" .
+
+<http://id.loc.gov/resources/works/1508264> a bf:Work ;
+    bflc:aap "Bell-Villada, Gene H., 1941- García Márquez : the man and his work" .
+
+<http://id.loc.gov/resources/works/15102747> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Love in the time of cholera" .
+
+<http://id.loc.gov/resources/works/1513410> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. secuestro : guión cinematográfico" .
+
+<http://id.loc.gov/resources/works/15171295> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. News of a kidnapping" .
+
+<http://id.loc.gov/resources/works/15247438> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Love in the time of cholera" .
+
+<http://id.loc.gov/resources/works/15300941> a bf:Work ;
+    bflc:aap "Fuentes, Carlos. \"Cien años de soledad\" y un homenaje : discursos" .
+
+<http://id.loc.gov/resources/works/1537730> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Gabriel García Márquez : nuestro primer Premio Nobel" .
+
+<http://id.loc.gov/resources/works/15392898> a bf:Work ;
+    bflc:aap "Cravino, Graciela. Gabriel García Márquez : mucho más que Macondo" .
+
+<http://id.loc.gov/resources/works/15403431> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Of love and other demons" .
+
+<http://id.loc.gov/resources/works/15417860> a bf:Work ;
+    bflc:aap "Pelayo, Rubén, 1954- Gabriel García Márquez : a biography" .
+
+<http://id.loc.gov/resources/works/1546566> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. rastro de tu sangre en la nieve" .
+
+<http://id.loc.gov/resources/works/15602090> a bf:Work ;
+    bflc:aap "Martin, Gerald, 1944- Gabriel García Márquez : a life" .
+
+<http://id.loc.gov/resources/works/15774573> a bf:Work ;
+    bflc:aap "Bell-Villada, Gene H., 1941- García Márquez : the man and his work" .
+
+<http://id.loc.gov/resources/works/15774589> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Cien años de soledad" .
+
+<http://id.loc.gov/resources/works/15791979> a bf:Work ;
+    bflc:aap "Stavans, Ilan. Gabriel García Márquez : the early years" .
+
+<http://id.loc.gov/resources/works/15862533> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Clandestine in Chile : the adventures of Miguel Littín" .
+
+<http://id.loc.gov/resources/works/15899579> a bf:Work ;
+    bflc:aap "Martin, Gerald, 1944- Gabriel García Márquez : una vida" .
+
+<http://id.loc.gov/resources/works/15976080> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Del amor y otros demonios" .
+
+<http://id.loc.gov/resources/works/1598964> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Of love and other demons" .
+
+<http://id.loc.gov/resources/works/16105216> a bf:Work ;
+    bflc:aap "Martin, Gerald, 1944- Gabriel García Márquez : a life" .
+
+<http://id.loc.gov/resources/works/16286407> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Relato de un náufrago" .
+
+<http://id.loc.gov/resources/works/16385433> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. coronel no tiene quien le escriba" .
+
+<http://id.loc.gov/resources/works/16469538> a bf:Work ;
+    bflc:aap "Drekonja Kornat, Gerhard, 1939- Gabriel García Márquez in Wien und andere Kulturgeschichten aus Lateinamerika" .
+
+<http://id.loc.gov/resources/works/16514197> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Yo no vengo a decir un discurso" .
+
+<http://id.loc.gov/resources/works/16540409> a bf:Work ;
+    bflc:aap "Martin, Gerald, 1944- Gabriel García Márquez : a life" .
+
+<http://id.loc.gov/resources/works/1660812> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Por un país al alcance de los niños" .
+
+<http://id.loc.gov/resources/works/16638196> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 Noticia de un secuestro" .
+
+<http://id.loc.gov/resources/works/16685119> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Ojos de perro azul" .
+
+<http://id.loc.gov/resources/works/1675573> a bf:Work ;
+    bflc:aap "Paz, Octavio, 1914-1998. lengua es la patria" .
+
+<http://id.loc.gov/resources/works/17234523> a bf:Work ;
+    bflc:aap "Iturbide, Graciela, 1942- Torrijos" .
+
+<http://id.loc.gov/resources/works/173275> a bf:Work ;
+    bflc:aap "Mendoza, Plinio Apuleyo. fragrance of guava : conversations with Gabriel Garcia Márquez" .
+
+<http://id.loc.gov/resources/works/17349476> a bf:Work ;
+    bflc:aap "Hinestrosa Llanos, Alberto. Aracataca : 30 años del Nobel" .
+
+<http://id.loc.gov/resources/works/1744928> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. autumn of the patriarch" .
+
+<http://id.loc.gov/resources/works/17496021> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Todos los cuentos" .
+
+<http://id.loc.gov/resources/works/1756058> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. mala hora : novela" .
+
+<http://id.loc.gov/resources/works/17708594> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. funerales de la Mamá Grande" .
+
+<http://id.loc.gov/resources/works/18052757> a bf:Work ;
+    bflc:aap "Díaz Granados, José Luis, 1946- Gabo en mi memoria" .
+
+<http://id.loc.gov/resources/works/1813312> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. funerales de la Mamá Grande" .
+
+<http://id.loc.gov/resources/works/18151462> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. mala hora" .
+
+<http://id.loc.gov/resources/works/18204853> a bf:Work ;
+    bflc:aap "Ayén, Xavi, 1969- Aquellos años del boom : García Márquez, Vargas Llosa y el grupo de amigos que lo cambiaron todo" .
+
+<http://id.loc.gov/resources/works/18261027> a bf:Work ;
+    bflc:aap "Đặng, Thân, Dị-nghị-luận, đồng-chân-dung" .
+
+<http://id.loc.gov/resources/works/18359906> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. Gabriel García Márquez : the last interview and other conversations ; edited and with an introduction by David Streitfeld" .
+
+<http://id.loc.gov/resources/works/18500760> a bf:Work ;
+    bflc:aap "Valenzuela, Lídice, paseo con Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/18533054> a bf:Work ;
+    bflc:aap "Paternostro, Silvana, Soledad & compañía : un retrato compartido de Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/18591463> a bf:Work ;
+    bflc:aap "Río, Joel del, 1963- cine según García Márquez" .
+
+<http://id.loc.gov/resources/works/18696295> a bf:Work ;
+    bflc:aap "Mo, Yan, 1955- Wo yu Jiaxiya Ma'erkesi : Zhongguo zuo jia de si mi wen ben 我与加西亚・ 马尔克斯 : 中国作家的私密文本" .
+
+<http://id.loc.gov/resources/works/18706413> a bf:Work ;
+    bflc:aap "Escandón, Alfredo, Género y falocentrismo en la obra de Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/18820117> a bf:Work ;
+    bflc:aap "Paternostro, Silvana Soledad & compañía" .
+
+<http://id.loc.gov/resources/works/19121112> a bf:Work ;
+    bflc:aap "Díaz Arenas, Angel, Gabriel García Márquez : cien años de eternidad : (humo, papel y ceniza)" .
+
+<http://id.loc.gov/resources/works/19252496> a bf:Work ;
+    bflc:aap "Tatis Guerra, Gustavo, 1961- García Márquez : la llave secreta de Melquíades" .
+
+<http://id.loc.gov/resources/works/19998825> a bf:Work ;
+    bflc:aap "Moreno Blanco, Juan, Gabriel García Márquez : literatura y memoria" .
+
+<http://id.loc.gov/resources/works/20060584> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014, Nahapeti ashuně (vep); Patmvatskʻner; Hartsʻazruytsʻner; Aprel, kyankʻis masin patmelu hamar (hatvats inkʻnakensagrakan grkʻitsʻ)" .
+
+<http://id.loc.gov/resources/works/20394017> a bf:Work ;
+    bflc:aap "Zuluaga, Conrado, Gabriel García Márquez : no moriré del todo" .
+
+<http://id.loc.gov/resources/works/20473061> a bf:Work ;
+    bflc:aap "Moreno Blanco, Juan, Cien años de soledad, 50 años después" .
+
+<http://id.loc.gov/resources/works/20590311> a bf:Work ;
+    bflc:aap "Rushdie, Salman, año mágico de García Márquez : Agosto - Diciembre 2017" .
+
+<http://id.loc.gov/resources/works/20697891> a bf:Work ;
+    bflc:aap "Paternostro, Silvana Solitude & company" .
+
+<http://id.loc.gov/resources/works/20778437> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014 El escándalo del siglo" .
+
+<http://id.loc.gov/resources/works/20907091> a bf:Work ;
+    bflc:aap "Azouqa, Aida O. The literary influence of the medieval Arabian Nights on Gabriel García Márquez and novelists of the Arab world" .
+
+<http://id.loc.gov/resources/works/20989302> a bf:Work ;
+    bflc:aap "Martínez, Fabio, 1955- De Comala a Macondo" .
+
+<http://id.loc.gov/resources/works/21126408> a bf:Work ;
+    bflc:aap "Wang, Pengcheng, Ma'erkesi de you shang : xiao shuo jing shen yu Zhongguo qi xiang 马尔克斯的忧伤 : 小说精神与中国气象" .
+
+<http://id.loc.gov/resources/works/21291464> a bf:Work ;
+    bflc:aap "Balinda, Milan, 1950- Nobelovac iz Makonda : knjiga o Gabrijelu Garsiji Markesu" .
+
+<http://id.loc.gov/resources/works/22538461> a bf:Work ;
+    bflc:aap "Santana Acuña, Álvaro Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/22880732> a bf:Work ;
+    bflc:aap "Góis Vieira, Felipe de Paula Gabo, cronista da América" .
+
+<http://id.loc.gov/resources/works/2338045> a bf:Work ;
+    bflc:aap "Moreno Acero, Jorge Eduardo. Vargas Vila, mejor que García Márquez?" .
+
+<http://id.loc.gov/resources/works/2549221> a bf:Work ;
+    bflc:aap "Canfield, Martha L. Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/3182815> a bf:Work ;
+    bflc:aap "Fernández-Braso, Miguel. Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/3461690> a bf:Work ;
+    bflc:aap "Ploetz, Dagmar. Gabriel García Márquez : mit Selbstzeugnissen und Bilddokumenten" .
+
+<http://id.loc.gov/resources/works/4366722> a bf:Work ;
+    bflc:aap "Sorela, Pedro. otro García Márquez : los años difíciles : biografía" .
+
+<http://id.loc.gov/resources/works/4523840> a bf:Work ;
+    bflc:aap "Cebrián, Juan Luis, 1945- Retrato de Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/4550408> a bf:Work ;
+    bflc:aap "Vargas Llosa, Mario, 1936- García Márquez: historia de un deicidio" .
+
+<http://id.loc.gov/resources/works/4649810> a bf:Work ;
+    bflc:aap "García Márquez, Gabriel, 1927-2014. De viaje por los países socialistas : 90 días en la \"Cortina de hierro\"" .
+
+<http://id.loc.gov/resources/works/4971620> a bf:Work ;
+    bflc:aap "Saldívar, Dasso, 1951- García Márquez : el viaje a la semilla : la biografía" .
+
+<http://id.loc.gov/resources/works/5125240> a bf:Work ;
+    bflc:aap "Chen, Zhongyi, 1957- Mo huan xian shi zhu yi da shi, Jiaxiya Maerkesi 魔幻现实主义大师, 加西亚・马尔克斯" .
+
+<http://id.loc.gov/resources/works/5802277> a bf:Work ;
+    bflc:aap "Harper's magazine records" .
+
+<http://id.loc.gov/resources/works/6199039> a bf:Work ;
+    bflc:aap "Fuad Giacoman, Helmy, Homenaje a G. García Márquez; variaciones interpretativas en torno a su obra" .
+
+<http://id.loc.gov/resources/works/633579> a bf:Work ;
+    bflc:aap "Dolan, Sean. Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/6671126> a bf:Work ;
+    bflc:aap "Bollettino, Vincenzo Zin, 1942- Breve estudio de la novelística de García Márquez" .
+
+<http://id.loc.gov/resources/works/6716755> a bf:Work ;
+    bflc:aap "Mejía Duque, Jaime. Mito y realidad en Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/8044308> a bf:Work ;
+    bflc:aap "Gullón, Ricardo, 1908-1991. García Márquez; o, El olvidado arte de contar" .
+
+<http://id.loc.gov/resources/works/8502658> a bf:Work ;
+    bflc:aap "Benedetti, Mario, 1920-2009. 9 asedios a García Márquez" .
+
+<http://id.loc.gov/resources/works/9467158> a bf:Work ;
+    bflc:aap "Maturo, Graciela, 1928- Claves simbólicas de Gabriel García Márquez" .
+
+<http://id.loc.gov/resources/works/954741> a bf:Work ;
+    bflc:aap "Collazos, Óscar, 1942- García Márquez, la soledad y la gloria : su vida y su obra" .
+
+<http://id.loc.gov/resources/works/9956673> a bf:Work ;
+    bflc:aap "Arnau, Carme, 1944- mundo mítico de Gabriel García Márquez" .
+
+<http://id.loc.gov/rwo/agents/n79063441> a bf:Person,
+        madsrdf:RWO,
+        foaf:Person ;
+    rdfs:label "García Márquez, Gabriel, 1927-2014" ;
+    bflc:contributorTo <http://id.loc.gov/resources/works/100440>,
+        <http://id.loc.gov/resources/works/1021472>,
+        <http://id.loc.gov/resources/works/10337698>,
+        <http://id.loc.gov/resources/works/10359105>,
+        <http://id.loc.gov/resources/works/1073902>,
+        <http://id.loc.gov/resources/works/1099566>,
+        <http://id.loc.gov/resources/works/11212878>,
+        <http://id.loc.gov/resources/works/1154927>,
+        <http://id.loc.gov/resources/works/1157710>,
+        <http://id.loc.gov/resources/works/1179225>,
+        <http://id.loc.gov/resources/works/11831841>,
+        <http://id.loc.gov/resources/works/11863054>,
+        <http://id.loc.gov/resources/works/11888647>,
+        <http://id.loc.gov/resources/works/11975622>,
+        <http://id.loc.gov/resources/works/12033156>,
+        <http://id.loc.gov/resources/works/12108209>,
+        <http://id.loc.gov/resources/works/12236336>,
+        <http://id.loc.gov/resources/works/12236350>,
+        <http://id.loc.gov/resources/works/12236361>,
+        <http://id.loc.gov/resources/works/12236369>,
+        <http://id.loc.gov/resources/works/12237236>,
+        <http://id.loc.gov/resources/works/12413959>,
+        <http://id.loc.gov/resources/works/1292249>,
+        <http://id.loc.gov/resources/works/13055763>,
+        <http://id.loc.gov/resources/works/13127433>,
+        <http://id.loc.gov/resources/works/13244674>,
+        <http://id.loc.gov/resources/works/13244682>,
+        <http://id.loc.gov/resources/works/13244686>,
+        <http://id.loc.gov/resources/works/13244699>,
+        <http://id.loc.gov/resources/works/13302305>,
+        <http://id.loc.gov/resources/works/13368768>,
+        <http://id.loc.gov/resources/works/13549193>,
+        <http://id.loc.gov/resources/works/13566264>,
+        <http://id.loc.gov/resources/works/13695507>,
+        <http://id.loc.gov/resources/works/13695512>,
+        <http://id.loc.gov/resources/works/13695564>,
+        <http://id.loc.gov/resources/works/13819602>,
+        <http://id.loc.gov/resources/works/13880790>,
+        <http://id.loc.gov/resources/works/13881306>,
+        <http://id.loc.gov/resources/works/1389870>,
+        <http://id.loc.gov/resources/works/13937119>,
+        <http://id.loc.gov/resources/works/14140077>,
+        <http://id.loc.gov/resources/works/14332640>,
+        <http://id.loc.gov/resources/works/14395201>,
+        <http://id.loc.gov/resources/works/14395208>,
+        <http://id.loc.gov/resources/works/1439620>,
+        <http://id.loc.gov/resources/works/14448730>,
+        <http://id.loc.gov/resources/works/14568176>,
+        <http://id.loc.gov/resources/works/14568298>,
+        <http://id.loc.gov/resources/works/1479573>,
+        <http://id.loc.gov/resources/works/1486908>,
+        <http://id.loc.gov/resources/works/14911396>,
+        <http://id.loc.gov/resources/works/14911706>,
+        <http://id.loc.gov/resources/works/14944712>,
+        <http://id.loc.gov/resources/works/15074088>,
+        <http://id.loc.gov/resources/works/15075637>,
+        <http://id.loc.gov/resources/works/15075674>,
+        <http://id.loc.gov/resources/works/15075697>,
+        <http://id.loc.gov/resources/works/15075708>,
+        <http://id.loc.gov/resources/works/15075748>,
+        <http://id.loc.gov/resources/works/15075758>,
+        <http://id.loc.gov/resources/works/15075765>,
+        <http://id.loc.gov/resources/works/15075781>,
+        <http://id.loc.gov/resources/works/15075787>,
+        <http://id.loc.gov/resources/works/15075798>,
+        <http://id.loc.gov/resources/works/15075801>,
+        <http://id.loc.gov/resources/works/15076079>,
+        <http://id.loc.gov/resources/works/15076094>,
+        <http://id.loc.gov/resources/works/15076123>,
+        <http://id.loc.gov/resources/works/15076136>,
+        <http://id.loc.gov/resources/works/15076146>,
+        <http://id.loc.gov/resources/works/15076159>,
+        <http://id.loc.gov/resources/works/15102747>,
+        <http://id.loc.gov/resources/works/1513410>,
+        <http://id.loc.gov/resources/works/15171295>,
+        <http://id.loc.gov/resources/works/15247438>,
+        <http://id.loc.gov/resources/works/15300941>,
+        <http://id.loc.gov/resources/works/1537730>,
+        <http://id.loc.gov/resources/works/15403431>,
+        <http://id.loc.gov/resources/works/1546566>,
+        <http://id.loc.gov/resources/works/15774589>,
+        <http://id.loc.gov/resources/works/15862533>,
+        <http://id.loc.gov/resources/works/15976080>,
+        <http://id.loc.gov/resources/works/1598964>,
+        <http://id.loc.gov/resources/works/16286407>,
+        <http://id.loc.gov/resources/works/16385433>,
+        <http://id.loc.gov/resources/works/16514197>,
+        <http://id.loc.gov/resources/works/1660812>,
+        <http://id.loc.gov/resources/works/16638196>,
+        <http://id.loc.gov/resources/works/16685119>,
+        <http://id.loc.gov/resources/works/1675573>,
+        <http://id.loc.gov/resources/works/17234523>,
+        <http://id.loc.gov/resources/works/173275>,
+        <http://id.loc.gov/resources/works/1744928>,
+        <http://id.loc.gov/resources/works/17496021>,
+        <http://id.loc.gov/resources/works/1756058>,
+        <http://id.loc.gov/resources/works/17708594>,
+        <http://id.loc.gov/resources/works/1813312>,
+        <http://id.loc.gov/resources/works/18151462>,
+        <http://id.loc.gov/resources/works/18359906> ;
+    bflc:subjectOf <http://id.loc.gov/resources/works/11634230>,
+        <http://id.loc.gov/resources/works/1191679>,
+        <http://id.loc.gov/resources/works/12036581>,
+        <http://id.loc.gov/resources/works/13431998>,
+        <http://id.loc.gov/resources/works/13608224>,
+        <http://id.loc.gov/resources/works/13910941>,
+        <http://id.loc.gov/resources/works/14322382>,
+        <http://id.loc.gov/resources/works/14971712>,
+        <http://id.loc.gov/resources/works/1508264>,
+        <http://id.loc.gov/resources/works/15392898>,
+        <http://id.loc.gov/resources/works/15417860>,
+        <http://id.loc.gov/resources/works/15602090>,
+        <http://id.loc.gov/resources/works/15774573>,
+        <http://id.loc.gov/resources/works/15791979>,
+        <http://id.loc.gov/resources/works/15899579>,
+        <http://id.loc.gov/resources/works/16105216>,
+        <http://id.loc.gov/resources/works/16469538>,
+        <http://id.loc.gov/resources/works/16540409>,
+        <http://id.loc.gov/resources/works/17349476>,
+        <http://id.loc.gov/resources/works/18052757>,
+        <http://id.loc.gov/resources/works/18204853>,
+        <http://id.loc.gov/resources/works/18261027>,
+        <http://id.loc.gov/resources/works/18500760>,
+        <http://id.loc.gov/resources/works/18533054>,
+        <http://id.loc.gov/resources/works/18591463>,
+        <http://id.loc.gov/resources/works/18696295>,
+        <http://id.loc.gov/resources/works/18706413>,
+        <http://id.loc.gov/resources/works/18820117>,
+        <http://id.loc.gov/resources/works/19121112>,
+        <http://id.loc.gov/resources/works/19252496>,
+        <http://id.loc.gov/resources/works/19998825>,
+        <http://id.loc.gov/resources/works/20060584>,
+        <http://id.loc.gov/resources/works/20394017>,
+        <http://id.loc.gov/resources/works/20473061>,
+        <http://id.loc.gov/resources/works/20590311>,
+        <http://id.loc.gov/resources/works/20697891>,
+        <http://id.loc.gov/resources/works/20778437>,
+        <http://id.loc.gov/resources/works/20907091>,
+        <http://id.loc.gov/resources/works/20989302>,
+        <http://id.loc.gov/resources/works/21126408>,
+        <http://id.loc.gov/resources/works/21291464>,
+        <http://id.loc.gov/resources/works/22538461>,
+        <http://id.loc.gov/resources/works/22880732>,
+        <http://id.loc.gov/resources/works/2338045>,
+        <http://id.loc.gov/resources/works/2549221>,
+        <http://id.loc.gov/resources/works/3182815>,
+        <http://id.loc.gov/resources/works/3461690>,
+        <http://id.loc.gov/resources/works/4366722>,
+        <http://id.loc.gov/resources/works/4523840>,
+        <http://id.loc.gov/resources/works/4550408>,
+        <http://id.loc.gov/resources/works/4649810>,
+        <http://id.loc.gov/resources/works/4971620>,
+        <http://id.loc.gov/resources/works/5125240>,
+        <http://id.loc.gov/resources/works/5802277>,
+        <http://id.loc.gov/resources/works/6199039>,
+        <http://id.loc.gov/resources/works/633579>,
+        <http://id.loc.gov/resources/works/6671126>,
+        <http://id.loc.gov/resources/works/6716755>,
+        <http://id.loc.gov/resources/works/8044308>,
+        <http://id.loc.gov/resources/works/8502658>,
+        <http://id.loc.gov/resources/works/9467158>,
+        <http://id.loc.gov/resources/works/954741>,
+        <http://id.loc.gov/resources/works/9956673> ;
+    madsrdf:associatedLanguage <http://id.loc.gov/vocabulary/languages/spa> ;
+    madsrdf:birthDate "1927-03-06"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:birthPlace [ a madsrdf:Geographic ;
+            rdfs:label "Aracataca (Colombia)" ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ] ;
+    madsrdf:deathDate "2014-04-17"^^<http://id.loc.gov/datatypes/edtf/EDTF> ;
+    madsrdf:entityDescriptor [ a skos:Concept ;
+            rdfs:label "Colombians" ],
+        [ a skos:Concept ;
+            rdfs:label "Nobel Prize winners" ] ;
+    madsrdf:fieldOfActivity <http://id.loc.gov/authorities/genreForms/gf2014026424>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026533>,
+        <http://id.loc.gov/authorities/subjects/sh85070736>,
+        <http://id.loc.gov/authorities/subjects/sh85079627> ;
+    madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh85009793>,
+        <http://id.loc.gov/authorities/subjects/sh85070788>,
+        <http://id.loc.gov/authorities/subjects/sh85092863> .
+
+<http://id.loc.gov/vocabulary/languages/spa> a madsrdf:Language ;
+    madsrdf:authoritativeLabel "Spanish"@en .
+
+<http://id.loc.gov/authorities/names/n79063441> a madsrdf:Authority,
+        madsrdf:PersonalName,
+        skos:Concept ;
+    bflc:marcKey "1001 $aGarcía Márquez, Gabriel,$d1927-2014" ;
+    identifiers:lccn "n 79063441" ;
+    identifiers:local "(OCoLC)oca00296389" ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "1979-08-01T00:00:00"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "new"^^xsd:string ],
+        [ a ri:RecordInfo ;
+            ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+            ri:recordChangeDate "2022-05-04T10:52:24"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            ri:recordStatus "revised"^^xsd:string ] ;
+    madsrdf:authoritativeLabel "García Márquez, Gabriel, 1927-2014" ;
+    madsrdf:classification [ a lcc:ClassNumber ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            madsrdf:code "PQ8180.17.A73" ] ;
+    madsrdf:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "García Márquez, Gabriel," ] [ a madsrdf:DateNameElement ;
+                madsrdf:elementValue "1927-2014" ] ) ;
+    madsrdf:fullerName [ a madsrdf:PersonalName ;
+            rdfs:label "Gabriel José de la Concordia" ] ;
+    madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/37134>,
+        <http://www.wikidata.org/entity/Q5878> ;
+    madsrdf:hasEarlierEstablishedForm [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "García Márquez, Gabriel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1928-" ] ) ;
+            madsrdf:variantLabel "García Márquez, Gabriel, 1928-" ] ;
+    madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++79063441#skos:Concept> ;
+    madsrdf:hasSource [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (گابريل گارسيا مارکز = Gābrīl Gārsiyā Mārkiz) t.p. verso (Gabriel García Marquez [in rom])" ;
+            madsrdf:citationSource "Guzārish-i yak marg, 1990 or 1991:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "USSR CIP data (G. Garsia Markesu)" ;
+            madsrdf:citationSource "Gabriėlʹ Garsia Markes, 1986:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Gabriel García Marquez, the Nobel Prize-winning Colombian novelist whose \"One Hundred Years of Solitude\" enchanted millions of readers around the world and popularized the emerging Latin American literary genre known as magic realism, has died. He was 87)" ;
+            madsrdf:citationSource "Los Angeles times, viewed April 17, 2014" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Gabriel García Marquez d. April 17, 2014, Mexico City)" ;
+            madsrdf:citationSource "Washington Post website, viewed April 17, 2014:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(Gabriel José de la Concordia García Márquez; born 6 March 1927; died 17 April 2014; novelist, short-story writer, screenwriter and journalist, known affectionately as Gabo)" ;
+            madsrdf:citationSource "Wikipedia, April 17, 2014" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Gabrien Gacxia Mackết) cover (G. G. Mackết)" ;
+            madsrdf:citationSource "Ngài đại tá chờ thư, 1983:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Gkampriel Gkarthia Markes)" ;
+            madsrdf:citationSource "Gkampriel Gkarthia Markes dokimia gia to ergo tou, 1985:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationSource "Los funerales de la Mamá Grande, 1962." ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(born March 6, 1927 in Aracataca, Colombia; novelist, short story writer, screenwriter, and journalist)" ;
+            madsrdf:citationSource "Wikipedia, July 26, 2013" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "p. 277 (加夫列尔・加西亚・马尔克斯 = Jiafulieer Jiaxiya Maerkesi)" ;
+            madsrdf:citationSource "Mo huan xian shi zhu yi da shi, Jiaxiya Maerkesi, 1988:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "p. vii (b. 1927, Aracata, Colombia) p. 413 (b. 03-06-25)" ;
+            madsrdf:citationSource "--para que mis amigos me quieren más--, 1992:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Gabriel García Márquez) spine (G. García Márquez)" ;
+            madsrdf:citationSource "De Europa y América (1955-1960), 1983:" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "p. 5 (Gavriʼel Garsiyah Marḳes)" ;
+            madsrdf:citationSource "Ḥedṿat ha-ḥayim mul ḥemdat ha-maṿet, 1999 :" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "(in obituary published Apr. 17: Gabriel García Márquez; b. Mar. 6, 1927, Aracataca, Colombia; d. Thursday [Apr. 17, 2014], Mexico City, aged 87; received the Nobel Prize for Literature in 1982)" ;
+            madsrdf:citationSource "New York times (online), viewed Apr. 18, 2014" ;
+            madsrdf:citationStatus "found" ],
+        [ a madsrdf:Source ;
+            madsrdf:citationNote "t.p. (Габриел Гарсија Маркез = Gabriel Garsija Markez)" ;
+            madsrdf:citationSource "Рибата е црвена, 2010:" ;
+            madsrdf:citationStatus "found" ] ;
+    madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "غارسيّا ماركيز، غابرييل،" ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "غارسيّا ماركيز، غابرييل، 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Gacxia Mackết, Gabriel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Gacxia Mackết, Gabriel, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Mackêt, G. G.," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Mackêt, G. G., 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Gkarthia Markes, Gkampriel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Gkarthia Markes, Gkampriel, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Markes, Gabriėlʹ Garsia," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Markes, Gabriėlʹ Garsia, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Гарсия Маркес, Габриэль," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Гарсия Маркес, Габриэль, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Гарсия Маркес, Габриел," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Гарсия Маркес, Габриел, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "García Márquez, Gabriel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1928-" ] ) ;
+            madsrdf:variantLabel "García Márquez, Gabriel, 1928-" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "گارسيا ماركز، گابريل" ] ) ;
+            madsrdf:variantLabel "گارسيا ماركز، گابريل" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Gabo," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Gabo, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Jiaxiya Maerkesi, Jiafulieer," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Jiaxiya Maerkesi, Jiafulieer, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Garsija Markez, Gabriel," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Garsija Markez, Gabriel, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "ガルシヤマルケスガブリエル," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "ガルシヤマルケスガブリエル, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Гарсија Маркез, Габриел," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Гарсија Маркез, Габриел, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Garsia Markes, Gabriėlʹ," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Garsia Markes, Gabriėlʹ, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Marḳes, Gavriʼel Garsiyah," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Marḳes, Gavriʼel Garsiyah, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "גארסיה מארקס, גבריאל" ] ) ;
+            madsrdf:variantLabel "גארסיה מארקס, גבריאל" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "ガルシアマルケス," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "ガルシアマルケス, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "גרסיה מארקס, גבריאל," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "גרסיה מארקס, גבריאל, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Márquez, Gabriel García," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Márquez, Gabriel García, 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "García Márquez, G." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Gabriel)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "García Márquez, G. (Gabriel), 1927-2014" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Garsia Markes, G." ] [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "(Gabriėlʹ)," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1927-2014" ] ) ;
+            madsrdf:variantLabel "Garsia Markes, G. (Gabriėlʹ), 1927-2014" ] ;
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n79063441> ;
+    madsrdf:isMemberOfMADSCollection <http://id.loc.gov/authorities/names/collection_LCNAF>,
+        <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> ;
+    madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/names> ;
+    skos:altLabel "Gabo, 1927-2014",
+        "Gacxia Mackết, Gabriel, 1927-2014",
+        "García Márquez, G. (Gabriel), 1927-2014",
+        "García Márquez, Gabriel, 1928-",
+        "Garsia Markes, G. (Gabriėlʹ), 1927-2014",
+        "Garsia Markes, Gabriėlʹ, 1927-2014",
+        "Garsija Markez, Gabriel, 1927-2014",
+        "Gkarthia Markes, Gkampriel, 1927-2014",
+        "Jiaxiya Maerkesi, Jiafulieer, 1927-2014",
+        "Mackêt, G. G., 1927-2014",
+        "Markes, Gabriėlʹ Garsia, 1927-2014",
+        "Marḳes, Gavriʼel Garsiyah, 1927-2014",
+        "Márquez, Gabriel García, 1927-2014",
+        "Гарсия Маркес, Габриел, 1927-2014",
+        "Гарсия Маркес, Габриэль, 1927-2014",
+        "Гарсија Маркез, Габриел, 1927-2014",
+        "גארסיה מארקס, גבריאל",
+        "גרסיה מארקס, גבריאל, 1927-2014",
+        "غارسيّا ماركيز، غابرييل، 1927-2014",
+        "گارسيا ماركز، گابريل",
+        "ガルシアマルケス, 1927-2014",
+        "ガルシヤマルケスガブリエル, 1927-2014" ;
+    skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2022-05-04T10:52:24"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n79063441> ],
+        [ a cs:ChangeSet ;
+            cs:changeReason "new"^^xsd:string ;
+            cs:createdDate "1979-08-01T00:00:00"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n79063441> ] ;
+    skos:closeMatch <http://id.worldcat.org/fast/37134>,
+        <http://www.wikidata.org/entity/Q5878> ;
+    skos:editorialNote "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]" ;
+    skos:exactMatch <http://viaf.org/viaf/sourceID/LC%7Cn++79063441#skos:Concept> ;
+    skos:inScheme <http://id.loc.gov/authorities/names> ;
+    skos:prefLabel "García Márquez, Gabriel, 1927-2014" ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm "Gkarthia Markes, Gkampriel, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "غارسيّا ماركيز، غابرييل، 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Garsia Markes, G. (Gabriėlʹ), 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Гарсия Маркес, Габриел, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Jiaxiya Maerkesi, Jiafulieer, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Marḳes, Gavriʼel Garsiyah, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Gabo, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Markes, Gabriėlʹ Garsia, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "ガルシアマルケス, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Mackêt, G. G., 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Гарсия Маркес, Габриэль, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Gacxia Mackết, Gabriel, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Гарсија Маркез, Габриел, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "ガルシヤマルケスガブリエル, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Márquez, Gabriel García, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "García Márquez, Gabriel, 1928-" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Garsija Markez, Gabriel, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "גארסיה מארקס, גבריאל" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Garsia Markes, Gabriėlʹ, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "گارسيا ماركز، گابريل" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "גרסיה מארקס, גבריאל, 1927-2014" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "García Márquez, G. (Gabriel), 1927-2014" ] ;
+    ns1:test "" .
+
+<http://id.worldcat.org/fast/37134> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "García Márquez, Gabriel, 1927-2014" ;
+    skos:prefLabel "García Márquez, Gabriel, 1927-2014" .
+
+<http://www.wikidata.org/entity/Q5878> a madsrdf:Authority,
+        skos:Concept ;
+    madsrdf:authoritativeLabel "Gabriel García Márquez" ;
+    skos:prefLabel "Gabriel García Márquez" .
+

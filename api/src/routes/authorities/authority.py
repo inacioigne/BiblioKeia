@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
-from src.function.authorities.editAuthority import DeleteDataJena, DeleteDataSolr
+from src.function.authorities.editAuthority import AddDataSolr
+from src.function.authorities.editAuthority import DeleteDataJena, AddDataJena, DeleteDataSolr
 from src.schemas.authorities.authority import EditAuthority
 from src.function.authorities.subject.editElementValue import EditElementValue
 from src.schemas.authorities.subject import Value
@@ -41,10 +42,14 @@ async def edit_authority(authority: str, request:EditAuthority):
         jenaResponse = DeleteDataJena(authority, request)
         solrResponse = DeleteDataSolr(authority, request)
     elif request.action == 'add':
-        
+        jenaResponse = AddDataJena(authority, request)
+        solrResponse = AddDataSolr(authority, request)
+
 
     
-    return {'jena': jenaResponse, 'solr': solrResponse}
+    return {'jena': jenaResponse, 
+    # 'solr': solrResponse
+    }
 
 # Edit Element
 @router.put("/elementValue", status_code=200) 
