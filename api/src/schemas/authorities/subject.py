@@ -4,19 +4,11 @@ from datetime import datetime
 from src.schemas.authorities.mads import Authority
 from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Element
 
-class UriEdit(BaseModel):
-    authority: str
-    uri: str
-    type: str
-    value: str
-    lang: str
-    base: Optional[str]
 
 class UriDelete(BaseModel):
     authority: str
     uri: str
     type: str
-    
 
 class Value(BaseModel):
     authority: str

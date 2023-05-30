@@ -6,13 +6,17 @@ solrAu = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
 def DeleteDataJena(authority, request):
 
-    # labels = ['birthPlace',   'fullerName']
-
     if request.data.type == 'literal':
         delete = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
                  DELETE DATA
                 {{ GRAPH <{authority}> 
-                {{ <{authority}>  madsrdf:{request.data.metadata}  "{request.data.label.value}" }} }} ;"""        
+                {{ <{authority}>  madsrdf:{request.data.metadata}  "{request.data.value}" }} }} ;"""   
+    # elif request.data.type == 'uri':   
+    #     delete = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    #              DELETE DATA
+    #             {{ GRAPH <{authority}> 
+    #             {{ <{authority}>  madsrdf:{request.data.metadata}  <{request.data.value}> }} }} ;"""  
+
     else:
         delete = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -20,10 +24,10 @@ def DeleteDataJena(authority, request):
             WITH <{authority}> 
             DELETE {{ <{authority}>  madsrdf:{request.data.metadata}  ?node .
                 ?node rdf:type ?type .
-                ?node rdfs:label "{request.data.label.value}" }}
+                ?node rdfs:label "{request.data.value}" }}
             WHERE {{ <{authority}>  madsrdf:{request.data.metadata}  ?node .
                 ?node rdf:type ?type .
-                ?node rdfs:label "{request.data.label.value}"  }}"""
+                ?node rdfs:label "{request.data.value}"  }}"""
         
     response = au_update.run_sparql(delete)
     
@@ -31,14 +35,16 @@ def DeleteDataJena(authority, request):
 
 def AddDataJena(authority, request):
 
-    # labels = ['birthPlace',   'fullerName']
-
     if request.data.type == 'literal':
         add = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
                 INSERT DATA
                 {{ GRAPH <{authority}> 
                 {{ <{authority}>  madsrdf:{request.data.metadata}  "{request.data.label.value}" }} }} ;"""
-        
+    # elif request.data.type == 'uri':   
+    #     add = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    #              INSERT DATA
+    #             {{ GRAPH <{authority}> 
+    #             {{ <{authority}>  madsrdf:{request.data.metadata}  <{request.data.value}> }} }} ;"""   
     else:
         add = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -54,7 +60,13 @@ def AddDataJena(authority, request):
 
 def DeleteDataSolr(authority, request):
 
-    id = authority.split("/")[-1] 
+    id = authority.split("/")[-1]
+    if request.data.type == 'uri':
+        idUri = request.data.value.split("/")[-1]
+        uriSolr = f'{id}/{request.data.metadata}#{idUri}'
+        response = solrAu.delete(q=f"id:{uriSolr}", commit=True)
+        return response
+    
     doc = {'id': id,
        f'{request.data.metadata}': {'remove':request.data.label.value }
        }

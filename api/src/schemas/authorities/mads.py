@@ -15,9 +15,19 @@ class Authority(BaseModel):
             raise ValueError(f"Type deve ser um dos seguintes valores: {', '.join(cls._types)}")
         return v
     
-class EditVariant(BaseModel):
-    oldVariant: Authority
-    newVariant: Authority
+
+class Element(BaseModel):
+    elementType: str
+    value: str
+
+class Variant(BaseModel):
+    variantType: str
+    element: list[Element]
+    
+    
+class VariantEdit(BaseModel):
+    oldVariant: Variant
+    newVariant: Variant
     
 class Uri(BaseModel):
     id: str

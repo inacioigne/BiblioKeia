@@ -1,6 +1,8 @@
 from pysolr import Solr
 from pyfuseki import FusekiUpdate
 
+fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
+
 def DeleteUri(request):
     uri =  f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             DELETE DATA 
@@ -10,28 +12,31 @@ def DeleteUri(request):
             }} }}"""
     return uri
 
-def PostUri(request):
+def PostUriJena(request):
     uri =  f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             INSERT DATA 
             {{ GRAPH  <{request.authority}>
             {{
-            <{request.authority}> madsrdf:{request.type} <{request.uri}> 
+            <{request.authority}> madsrdf:{request.type} <{request.uri.label.value}> 
             }} }}"""
-    return uri
 
-def PostUriSol(request):
+    responseJena = fuseki_update.run_sparql(uri)
+    return responseJena
+
+
+def PostUriSolr(request):
     solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
     id = request.authority.split("/")[-1]
-    idUri = request.uri.split("/")[-1]
+    idUri = request.uri.value.split("/")[-1]
     doc = {
         "id": id,
         f"{request.type}": {
             "add":  {
                 "id": f"{id}/{request.type}#{idUri}",
-                "uri": request.uri,
-                "label":request.value,
-                "lang": request.lang,
-                "base": request.base                
+                "uri": request.uri.value,
+                "label":request.uri.label.value, 
+                "lang": request.uri.label.lang if request.uri.label.lang else None,
+                "base": request.uri.base                
             }
         } }
     solr.add([doc], commit=True)

@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.agents.hasVariant import EditVariant
+from src.schemas.authorities.mads import VariantEdit
 from src.function.solr.docAgents import MakeDocAgents
 from src.function.authorities.agents.makeGraph import MakeGraphAgents
 from src.function.authorities.generateID import GenerateId
@@ -30,23 +32,25 @@ async def post_agents(request: Agents):
         "solr": responseSolr
         } 
 
-# Delete Autority
-@router.post("/agents/birthDate", status_code=200) 
-async def delete_subject(uri: str):
+# Edit Variant
+@router.put("/agents/variant", status_code=200) 
+async def edit_variant(authority:str, request: VariantEdit):
 
-    uriID = uri.split("/")[-1]
-    r = solr.search(q=f'id:{uriID}', **{'fl': '*,[child]'})
-    [doc] = r.docs
+    responseJena = EditVariant(authority, request)
 
-    d = f"""DELETE {{ graph <{uri}> {{ ?s ?p ?o }} }}
-            WHERE {{
-            graph <{uri}> {{ ?s ?p ?o. }}
-            }}"""
-            
-    responseJena = fuseki_update.run_sparql(d)
-    responseSolr = DeleteDoc(uri)
-    response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
-    response = UpdateDelete(doc, response, uri)
+    # id = authority.split("/")[-1]
+
+    # remove = {
+    # 'id': id,
+    # 'hasVariant': {"remove": request.oldVariant.value } }
+    # add = {
+    # 'id': id,
+    # 'hasVariant': {"add": request.newVariant.value } }
     
-    return response
+    # responseSolr = solr.add([remove, add], commit=True)
+
+    return {
+        "jena": responseJena,
+        # "solr": responseSolr
+        } 
 

@@ -8,22 +8,23 @@ class Label(BaseModel):
 
 class Mads(BaseModel):
     metadata: str
-    type: Optional[str]
-    label: Label
+    type: str
+    value: str
+    lang: Optional[str]
 
-class EditAuthority(BaseModel):
+class EditMads(BaseModel):
     action: str
     data: Mads
-
-
-
-
-
 
 class Uri(BaseModel):
     value: str
     label: Label
     base: Optional[str]
+
+class UriEdit(BaseModel):
+    authority: str
+    uri: Uri
+    type: str
 
 class Element(BaseModel):
     type: str
