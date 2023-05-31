@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.agents.hasVariant import DeleteVariant
+from src.schemas.authorities.mads import Variant
 from src.function.authorities.agents.hasVariant import EditVariant
 from src.schemas.authorities.mads import VariantEdit
 from src.function.solr.docAgents import MakeDocAgents
@@ -33,24 +35,34 @@ async def post_agents(request: Agents):
         } 
 
 # Edit Variant
-@router.put("/agents/variant", status_code=200) 
-async def edit_variant(authority:str, request: VariantEdit):
+@router.delete("/agents/variant", status_code=200) 
+async def edit_variant(authority:str, request: Variant):
 
-    responseJena = EditVariant(authority, request)
+    response = DeleteVariant("https://bibliokeia.com/authorities/PersonalName/bkau-1", request)
 
-    # id = authority.split("/")[-1]
+    return response
 
-    # remove = {
-    # 'id': id,
-    # 'hasVariant': {"remove": request.oldVariant.value } }
-    # add = {
-    # 'id': id,
-    # 'hasVariant': {"add": request.newVariant.value } }
+
+
+# # Edit Variant
+# @router.put("/agents/variant", status_code=200) 
+# async def edit_variant(authority:str, request: VariantEdit):
+
+#     responseJena = EditVariant(authority, request)
+
+#     # id = authority.split("/")[-1]
+
+#     # remove = {
+#     # 'id': id,
+#     # 'hasVariant': {"remove": request.oldVariant.value } }
+#     # add = {
+#     # 'id': id,
+#     # 'hasVariant': {"add": request.newVariant.value } }
     
-    # responseSolr = solr.add([remove, add], commit=True)
+#     # responseSolr = solr.add([remove, add], commit=True)
 
-    return {
-        "jena": responseJena,
-        # "solr": responseSolr
-        } 
+#     return {
+#         "jena": responseJena,
+#         # "solr": responseSolr
+#         } 
 

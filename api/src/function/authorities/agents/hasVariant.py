@@ -19,7 +19,7 @@ def EditVariant(authority, request):
         ?elementList rdf:rest*/rdf:first ?element .
         ?element rdf:type madsrdf:{request.oldVariant.elementType} .
         ?element madsrdf:elementValue "{request.oldVariant.value}"
-             }}
+            }}
 
         INSERT {{ 
         <{authority}> madsrdf:hasVariant ?hasVariant .
@@ -43,43 +43,47 @@ def EditVariant(authority, request):
     
     return responseJena.convert()['message']
 
-def deleteVariantPersonalName(id, request):
-     
-    variant = f"""{prefix}
-
-        WITH name:{id}
+def DeleteVariant(authority, request):
+    
+    variant = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        WITH <{authority}>
 
         DELETE {{
-            name:{id} madsrdf:hasVariant ?hasVariant .
-    ?hasVariant rdf:type madsrdf:Variant, madsrdf:PersonalName .
-    ?hasVariant madsrdf:variantLabel  { f'"{request.value}, {request.date}" .' if request.date else f'"{request.value}" .' } 
+    <{authority}> madsrdf:hasVariant ?hasVariant .
+    ?hasVariant rdf:type madsrdf:Variant, madsrdf:{request.variantType} .
+    ?hasVariant madsrdf:variantLabel ?variantLabel .
     ?hasVariant madsrdf:elementList ?elementList .
     ?elementList rdf:first ?first .
-    ?first madsrdf:elementValue "{request.value}" .
-    ?first rdf:type madsrdf:FullNameElement .   
+    ?first madsrdf:elementValue "{request.name.value}" .
+    ?first rdf:type madsrdf:{request.name.elementType} .   
+    ?elementList rdf:rest rdf:nil .  
      {  '?elementList rdf:rest ?rest .' if request.date else '' } 
      {  '?rest rdf:rest rdf:nil . ' if request.date else '' } 
      {  '?rest rdf:first ?date . ' if request.date else '' } 
      {  '?date rdf:type madsrdf:DateNameElement . ' if request.date else '' } 
-     {  f'?date madsrdf:elementValue "{request.date}"' if request.date else '' }     
-             }}
+     {  f'?date madsrdf:elementValue "{request.date.value}"' if request.date else '' }     
+        }}
 
     WHERE {{ 
-       name:{id} madsrdf:hasVariant ?hasVariant .
-    ?hasVariant rdf:type madsrdf:Variant, madsrdf:PersonalName .
-    ?hasVariant madsrdf:variantLabel  { f'"{request.value}, {request.date}" .' if request.date else f'"{request.value}" .' } 
+    <{authority}> madsrdf:hasVariant ?hasVariant .
+    ?hasVariant rdf:type madsrdf:Variant, madsrdf:{request.variantType} .
+    ?hasVariant madsrdf:variantLabel ?variantLabel .
     ?hasVariant madsrdf:elementList ?elementList .
     ?elementList rdf:first ?first .
-    ?first madsrdf:elementValue "{request.value}" .
-    ?first rdf:type madsrdf:FullNameElement .   
+    ?first madsrdf:elementValue "{request.name.value}" .
+    ?first rdf:type madsrdf:{request.name.elementType} . 
+    ?elementList rdf:rest rdf:nil .  
      {  '?elementList rdf:rest ?rest .' if request.date else '' } 
      {  '?rest rdf:rest rdf:nil . ' if request.date else '' } 
      {  '?rest rdf:first ?date . ' if request.date else '' } 
      {  '?date rdf:type madsrdf:DateNameElement . ' if request.date else '' } 
-     {  f'?date madsrdf:elementValue "{request.date}"' if request.date else '' }     
-         }}"""
-     
-    return variant
+     {  f'?date madsrdf:elementValue "{request.date.value}"' if request.date else '' }  
+        }}"""
+
+    r = fuseki_update.run_sparql(variant)
+
+    return r.convert()
 
 def addVariantPersonalName(id, request):
     

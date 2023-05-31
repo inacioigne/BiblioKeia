@@ -22,7 +22,8 @@ class Element(BaseModel):
 
 class Variant(BaseModel):
     variantType: str
-    element: list[Element]
+    name: Element
+    date: Optional[Element]
     
     
 class VariantEdit(BaseModel):
