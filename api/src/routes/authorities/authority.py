@@ -1,6 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.makeElement import MakeElement
+from src.function.authorities.makeLabel import MakeLabel
 from src.function.authorities.makeVariant import MakeSparqlVariant
 from src.schemas.authorities.authority import Variant
 from src.function.authorities.subject.uri import UpdateDeleteUri
@@ -132,7 +134,31 @@ async def delete_uri(request: UriDelete):
 @router.post("/mads/variant", status_code=200) 
 async def post_variant(authority: str, request: Variant):
 
-    qVariant = MakeSparqlVariant(authority, request)
+    label = MakeLabel(request.elementList)
+    
+    variant = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        INSERT DATA 
+        {{ GRAPH <{authority}> 
+        {{ <{authority}> madsrdf:hasVariant [ a madsrdf:{request.type},
+                        madsrdf:Variant ;
+                    madsrdf:elementList ( {MakeElement(request.elementList)} ) ;
+                    madsrdf:variantLabel "{label}" ] }} 
+        }}"""
+    responseJena = fuseki_update.run_sparql(variant)
+    # Solr
+    idUri = authority.split("/")[-1]
+    add = {
+        "id":idUri,
+        "variant":{ "add": label}
+        }
+    responseSolr = solr.add([add], commit=True)
+    response = {
+        "jena": responseJena.convert()['message'],
+        "solr": responseSolr
+        } 
+    return response
+    
 
 # Delete Variant
 @router.delete("/mads/variant", status_code=200) 
