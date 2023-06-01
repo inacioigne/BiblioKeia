@@ -2,9 +2,29 @@ from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
 from datetime import datetime, date
 
+# class Element(BaseModel):
+#     elementType: str
+#     value: str
+#     lang: Optional[str]
+
 class Label(BaseModel):
     value: str
     lang: Optional[str]
+
+class Element(BaseModel):
+    type: str
+    elementValue: Label 
+
+class Variant(BaseModel): 
+    type: str
+    elementList: list[Element]
+    # componentList: Optional[list[ComponentList]]
+
+# class Variant(BaseModel):
+#     variantType: str
+#     elements: list[Element]
+
+
 
 class Mads(BaseModel):
     metadata: str
@@ -26,18 +46,13 @@ class UriEdit(BaseModel):
     uri: Uri
     type: str
 
-class Element(BaseModel):
-    type: str
-    elementValue: Label 
+
 
 class ComponentList(BaseModel): 
     type: str
     elementList: list[Element]
 
-class Variant(BaseModel): 
-    type: str
-    elementList: Optional[list[Element]]
-    # componentList: Optional[list[ComponentList]]
+
 
 class Affiliation(BaseModel):
     organization: str

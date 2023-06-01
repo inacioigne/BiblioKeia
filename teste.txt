@@ -1,0 +1,17 @@
+"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        WITH <https://bibliokeia.com/authorities/PersonalName/bkau-1>
+
+        DELETE {{
+   <https://bibliokeia.com/authorities/PersonalName/bkau-1> madsrdf:hasVariant ?variant .
+    ?variant madsrdf:elementList ?elementList .
+    ?elementList rdf:rest*/rdf:first ?element .
+    ?element madsrdf:elementValue ?element  
+        }}
+
+    WHERE {{ 
+      <https://bibliokeia.com/authorities/PersonalName/bkau-1> madsrdf:hasVariant ?variant .
+      ?variant madsrdf:elementList ?elementList .
+      ?elementList rdf:rest*/rdf:first ?element .
+      ?element madsrdf:elementValue "García Márquez, Gabriel,"
+        }}"""
