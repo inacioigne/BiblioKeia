@@ -34,13 +34,13 @@ async def post_agents(request: Agents):
         "solr": responseSolr
         } 
 
-# Edit Variant
-@router.delete("/agents/variant", status_code=200) 
-async def edit_variant(authority:str, request: Variant):
+# # Edit Variant
+# @router.delete("/agents/variant", status_code=200) 
+# async def edit_variant(authority:str, request: Variant):
 
-    response = DeleteVariant("https://bibliokeia.com/authorities/PersonalName/bkau-1", request)
+#     response = DeleteVariant("https://bibliokeia.com/authorities/PersonalName/bkau-1", request)
 
-    return response
+#     return response
 
 
 

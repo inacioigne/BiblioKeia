@@ -1,7 +1,7 @@
 from rdflib import Graph
 from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
-from pyfuseki import FusekiUpdate
+# from pyfuseki import FusekiUpdate
 import json
 from datetime import date, datetime
 
@@ -32,6 +32,16 @@ class Status(BaseModel):
             raise ValueError(f"the status code must be one of the following : {', '.join(cls._status)}")
         return v
 
+# AdminMetadata for Autority
+# class AdminMetadata(BaseModel):
+#     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
+#     descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
+#     creationDate: date = Field(default=date.today())
+#     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
+#     generationProcess: str = Field(default="BiblioKeia v.1")
+#     generationDate: datetime = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
+#     identifiedBy: list[IdentifiedBy]
+#     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
 
 class AdminMetadata(BaseModel):
@@ -39,8 +49,10 @@ class AdminMetadata(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     creationDate: Optional[str]
     descriptionConventions: str = Field(default="http://id.loc.gov/vocabulary/descriptionConventions/isbd")
+    descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: Optional[GenerationProcess]
+    # identifiedBy: list[IdentifiedBy]
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
     
     _level = vocabulary['menclvl']

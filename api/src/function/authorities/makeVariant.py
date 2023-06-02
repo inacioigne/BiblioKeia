@@ -1,5 +1,6 @@
 from .makeLabel import MakeLabel
 from .makeElement import MakeElement, MakeComplexElement
+from pyfuseki import FusekiUpdate
 
 def MakeVariant(variants): 
     vList = list()
@@ -19,7 +20,6 @@ def MakeVariant(variants):
 
 def MakeSparqlVariant(authority, request):
 
-    
     if len(request.elementList) == 1:
         i = request.elementList[0]
         qVariant = f"""<{authority}> madsrdf:hasVariant ?variant .
@@ -61,3 +61,19 @@ def MakeSparqlVariant(authority, request):
                 rest = f'?rest{index+1}'
         qVariant = " ".join(elements)   
         return qVariant 
+    
+def EditVariantJena(authority, request):
+    
+        vOld = MakeSparqlVariant(authority, request.old)
+        vNew = MakeSparqlVariant(authority, request.new)
+        variant = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>    
+                        WITH <{authority}> 
+                        DELETE {{ {vOld} }}
+                        INSERT {{ {vNew}  }}
+                        WHERE {{{vOld}  }}"""
+
+        upAuthorities = FusekiUpdate('http://localhost:3030', 'authorities')
+
+        response = upAuthorities.run_sparql(variant)
+        return response.convert()

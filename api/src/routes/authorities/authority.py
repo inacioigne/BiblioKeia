@@ -3,8 +3,8 @@ from pyfuseki import FusekiUpdate
 from pysolr import Solr
 from src.function.authorities.makeElement import MakeElement
 from src.function.authorities.makeLabel import MakeLabel
-from src.function.authorities.makeVariant import MakeSparqlVariant
-from src.schemas.authorities.authority import Variant
+from src.function.authorities.makeVariant import MakeSparqlVariant, EditVariantJena
+from src.schemas.authorities.authority import Variant, EditVariant
 from src.function.authorities.subject.uri import UpdateDeleteUri
 from src.function.authorities.subject.uri import DeleteUri
 from src.schemas.authorities.subject import UriDelete
@@ -130,7 +130,7 @@ async def delete_uri(request: UriDelete):
 
     return response
 
-# Delete Variant
+# Post Variant
 @router.post("/mads/variant", status_code=200) 
 async def post_variant(authority: str, request: Variant):
 
@@ -157,8 +157,7 @@ async def post_variant(authority: str, request: Variant):
         "jena": responseJena.convert()['message'],
         "solr": responseSolr
         } 
-    return response
-    
+    return response   
 
 # Delete Variant
 @router.delete("/mads/variant", status_code=200) 
@@ -187,5 +186,34 @@ async def delete_uri(authority: str, request: Variant):
         } 
     
     return response
+
+# Delete Variant
+@router.put("/mads/variant", status_code=200) 
+async def put_uri(authority: str, request: EditVariant):
+
+    responseJena = EditVariantJena(authority, request)
+    # Solr
+    idSolr = authority.split("/")[-1]
+    oldLabel = [i.elementValue.value for i in request.old.elementList]
+    oldLabel = " ".join(oldLabel)
+    oldDoc = {
+        'id':idSolr,
+        "variant": {"remove": oldLabel}
+    }
+    newLabel = [i.elementValue.value for i in request.new.elementList]
+    newLabel = " ".join(newLabel)
+    newDoc = {
+        'id':idSolr,
+        "variant": {"add": newLabel}
+    }
+    responseSolr = solr.add([oldDoc, newDoc], commit=True)
+
+    response = {
+        "jena": responseJena['message'],
+        "solr": responseSolr
+        }
+    return response
+
+
 
 

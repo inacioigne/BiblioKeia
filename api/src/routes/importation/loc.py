@@ -8,13 +8,12 @@ from src.routes.translate.makeTranslate import MakeTranslate
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
 
-from src.function.authorities.generateID import GenerateId
+# from src.function.authorities.generateID import GenerateId
 
 router = APIRouter()
 
-
 # LC Subject Headings (LCSH)
-@router.get("/import/loc/subjects", status_code=200, response_model=Subject) 
+@router.get("/subjects", status_code=200, response_model=Subject) 
 async def get_subject(uri: str):
 
     exist = GraphExist(uri)
@@ -29,15 +28,21 @@ async def get_subject(uri: str):
     return subject.dict()
 
 # LC Name Authority File (LCNAF)
-@router.get("/import/loc/agents", status_code=200, response_model=Agents) 
-async def get_agents(authority: str):
+@router.get("/agents", status_code=200, response_model=Agents) 
+async def get_agents(uri: str):
 
-    exist = GraphExist(authority)
+    exist = GraphExist(uri)
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
 
     graph = Graph()
-    graph.parse(f'{authority}.rdf')
-    response = ParserAgents(graph, authority)
+    graph.parse(f'{uri}.rdf')
+    response = ParserAgents(graph, uri)
 
     return response.dict()
+
+
+# LC Name Authority File (LCNAF)
+@router.get("/works", status_code=200, response_model=Agents) 
+async def get_works(uri: str):
+    pass

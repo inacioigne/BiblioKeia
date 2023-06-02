@@ -20,11 +20,9 @@ class Variant(BaseModel):
     elementList: list[Element]
     # componentList: Optional[list[ComponentList]]
 
-# class Variant(BaseModel):
-#     variantType: str
-#     elements: list[Element]
-
-
+class EditVariant(BaseModel): 
+    old: Variant
+    new: Variant
 
 class Mads(BaseModel):
     metadata: str
@@ -46,12 +44,9 @@ class UriEdit(BaseModel):
     uri: Uri
     type: str
 
-
-
 class ComponentList(BaseModel): 
     type: str
     elementList: list[Element]
-
 
 
 class Affiliation(BaseModel):
@@ -71,7 +66,7 @@ class Status(BaseModel):
 class IdentifiedBy(BaseModel):
     type: str = Field(default='Local')
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
-    value: str
+    value: str  
 
 class AdminMetadata(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")

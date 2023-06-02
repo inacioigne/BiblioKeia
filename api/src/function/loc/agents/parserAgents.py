@@ -18,7 +18,7 @@ def ParserAgents(graph, authority):
 
     # adminMetadata
     adminMetadata = {
-      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc", 
       "identifiedBy": [ {
          "type": "Lccn",
           "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
@@ -31,7 +31,7 @@ def ParserAgents(graph, authority):
       "isMemberOfMADSCollection": f'http://bibliokeia.com/authorities/{tipo}/'}
     
     # ElementList
-    obj = GetElementList(graph, authority, obj)
+    obj = GetElementList(graph, authority, obj) 
     
     # fullerName
     obj = GetFullerName(graph, authority, obj)

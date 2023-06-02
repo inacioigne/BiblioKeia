@@ -37,52 +37,52 @@ async def post_subject(request: Subject):
         } 
 
 
-# Edit Variant
-@router.put("/subject/variant", status_code=200) 
-async def edit_variant(request: VariantEdit):
+# # Edit Variant
+# @router.put("/subject/variant", status_code=200) 
+# async def edit_variant(request: VariantEdit):
 
-    variant = EditVariant(request)
-    response = fuseki_update.run_sparql(variant)
-    responseSolr = VariantSolr(request)
+#     variant = EditVariant(request)
+#     response = fuseki_update.run_sparql(variant)
+#     responseSolr = VariantSolr(request)
     
-    return {
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
+#     return {
+#         "jena": response.convert()['message'],
+#         "solr": responseSolr
+#         } 
 
-# Delete Variant
-@router.delete("/subject/variant", status_code=200) 
-async def delete_variant(request: Value):
+# # Delete Variant
+# @router.delete("/subject/variant", status_code=200) 
+# async def delete_variant(request: Value):
 
-    variant = DeleteVariant(request)
-    response = fuseki_update.run_sparql(variant)
-    idUri = request.authority.split("/")[-1]
-    remove = {
-        "id":idUri,
-        "variant":{ "remove": request.value}
-        }
-    responseSolr = solr.add([remove], commit=True)
+#     variant = DeleteVariant(request)
+#     response = fuseki_update.run_sparql(variant)
+#     idUri = request.authority.split("/")[-1]
+#     remove = {
+#         "id":idUri,
+#         "variant":{ "remove": request.value}
+#         }
+#     responseSolr = solr.add([remove], commit=True)
     
-    return {
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
+#     return {
+#         "jena": response.convert()['message'],
+#         "solr": responseSolr
+#         } 
 
-# Add Variant
-@router.post("/subject/variant", status_code=200) 
-async def post_variant(request: VariantPost):
+# # Add Variant
+# @router.post("/subject/variant", status_code=200) 
+# async def post_variant(request: VariantPost):
 
-    variant = PostVariant(request)
-    response = fuseki_update.run_sparql(variant)
-    idUri = request.authority.split("/")[-1]
-    add = {
-        "id":idUri,
-        "variant":{ "add": request.value}
-        }
-    responseSolr = solr.add([add], commit=True)
+#     variant = PostVariant(request)
+#     response = fuseki_update.run_sparql(variant)
+#     idUri = request.authority.split("/")[-1]
+#     add = {
+#         "id":idUri,
+#         "variant":{ "add": request.value}
+#         }
+#     responseSolr = solr.add([add], commit=True)
     
-    return {
-        "jena": response.convert()['message'],
-        "solr": responseSolr
-        } 
+#     return {
+#         "jena": response.convert()['message'],
+#         "solr": responseSolr
+#         } 
 

@@ -5,10 +5,12 @@ def GetType(graph, uri):
               PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
               SELECT ?type WHERE {{ 
                   <{uri}> rdf:type ?type .
-                  FILTER ( ?type != madsrdf:Authority ) 
-                  FILTER ( ?type != skos:Concept )
+                 
                   }}"""
-  r = graph.query(qtype)
-  tipo = r.bindings[0].get('type').split("#")[1]
+  response = graph.query(qtype)
+  tipos = list()
+  for i in response.bindings:
+    tipo = i.get('type').split("/")[-1]
+    tipos.append(tipo)
   
-  return tipo
+  return tipos
