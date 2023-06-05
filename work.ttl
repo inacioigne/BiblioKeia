@@ -45,7 +45,7 @@
     bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
     bf:contribution [ a bflc:PrimaryContribution,
                 bf:Contribution ;
-            bf:agent <http://id.loc.gov/rwo/agents/n86870523> ;
+            bf:agent <http://id.loc.gov/rwo/agents/n86870523> ; 
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026113> ;
     bf:hasInstance <http://id.loc.gov/resources/instances/22600263> ;
