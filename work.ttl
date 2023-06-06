@@ -55,7 +55,7 @@
     bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:subject [ a bf:Topic,
-                madsrdf:Topic ;
+                madsrdf:Topic ; 
             rdfs:label "Equality" ;
             bflc:aap-normalized "equality" ;
             bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;

@@ -1,14 +1,15 @@
 from fastapi import APIRouter, HTTPException
 from rdflib import Graph
+from src.function.loc.parserWork import ParserWork
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.parserAgents import ParserAgents
 from src.function.loc.makeTranslateLoc import MakeTranslateLoc
 from src.function.loc.graphExist import GraphExist
-from src.routes.translate.makeTranslate import MakeTranslate
+# from src.routes.translate.makeTranslate import MakeTranslate
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
+from src.schemas.metadata.bibframe.work import Work
 
-# from src.function.authorities.generateID import GenerateId
 
 router = APIRouter()
 
@@ -43,6 +44,12 @@ async def get_agents(uri: str):
 
 
 # LC Name Authority File (LCNAF)
-@router.get("/works", status_code=200, response_model=Agents) 
+@router.get("/works", status_code=200, response_model=Work) 
 async def get_works(uri: str):
-    pass
+    
+    graph = Graph()
+    # uri = 'http://id.loc.gov/resources/works/22600263'
+    graph.parse(f'{uri}.rdf')
+    response = ParserWork(graph, uri)
+
+    return response

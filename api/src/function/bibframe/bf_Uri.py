@@ -1,26 +1,35 @@
 def GetUriBF(graph, uri, bf, obj):
     
-  q = f"""PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-                SELECT ?uri ?label ?type
+  q = f"""PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                SELECT ?uri ?label
                   WHERE {{ 
                     <{uri}> bf:{bf} ?uri .
                     ?uri rdfs:label ?label .
-                    ?uri rdf:type ?type
+                    FILTER isIRI(?uri)
                     }}"""
+  
   response = graph.query(q)
   bindings = response.bindings
   if len(bindings) > 0:
-      forms = list()
+      elements = list()
       for binding in bindings:
          label = binding.get('label')
-         f = {
-            'label': label.value,
-            'lang': label.language if label.language else None,
-            'uri': binding.get('uri').toPython(),
-            'type': binding.get('type').toPython()}
-         forms.append(f)       
-      obj[bf] = forms
+         e = {'label': label.value,
+               'lang': label.language if label.language else None,
+               'uri': binding.get('uri').toPython()}
+         elements.append(e)
+
+      for e in elements:
+         q = f"""PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            SELECT ?type WHERE {{
+                <{e['uri']}> rdf:type ?type .
+            }} """
+         response = graph.query(q)
+         bindings = response.bindings
+         types = [i.get('type').toPython() for i in bindings]
+         e['type'] = types
+      obj[bf] = elements
       
   return obj
