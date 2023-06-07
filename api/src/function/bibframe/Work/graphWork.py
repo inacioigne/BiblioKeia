@@ -56,6 +56,13 @@ def MakeLanguage(languages):
 
         return language
 
+def MakeSummary(summary):
+
+    s = f""" bf:summary [ a bf:Summary ;
+            rdfs:label "{summary.replace('"','' )}" ] ;
+    """
+    return s
+
 def MakeGraphWork(request, id):
     graph = f"""{prefix}    
     INSERT DATA {{
@@ -85,7 +92,7 @@ def MakeGraphWork(request, id):
                 { MakeSubject(request.subject) if request.subject  else "" }      
                 { f'bf:genreForm { ", ".join([f"<{genreForm.uri}>" for genreForm in request.genreForm ]) } ; '}
                 { f'bf:note [ a bf:Note ; rdfs:label "{request.note}" ] ; ' if request.note else '' }
-                { f'bf:summary [ a bf:Summary ; rdfs:label "{request.summary}" ] ; ' if request.summary else '' }
+                { MakeSummary(request.summary) if request.summary else "" }
                 { f'bf:tableOfContents [ a bf:tableOfContents ; rdfs:label "{request.tableOfContents}" ] ; ' if request.tableOfContents else '' }
                 { f'bf:supplementaryContent { ", ".join([f"<{supplementaryContent.uri}>" for supplementaryContent in request.supplementaryContent ])} ;' if request.supplementaryContent else ''}
                 { f'bf:illustrativeContent { ", ".join([f"<{illustrativeContent.uri}>" for illustrativeContent in request.illustrativeContent ])} ;' if request.illustrativeContent else ''}
@@ -93,8 +100,6 @@ def MakeGraphWork(request, id):
         }} }}
         """
     return graph
-
-
 
 # def MakeGraphWork(request, id):
 #     graph = f"""{prefix}    

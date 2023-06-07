@@ -9,7 +9,7 @@
 
 <http://id.loc.gov/resources/works/22600263> a bf:Monograph,
         bf:Text,
-        bf:Work ; 
+        bf:Work ;  
     bflc:aap "Galor, Oded, 1953- The journey of humanity" ;
     bflc:aap-normalized "galoroded1953thejourneyofhumanity" ;
     bf:adminMetadata [ a bf:AdminMetadata ;

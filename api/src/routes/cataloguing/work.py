@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException
+from src.schemas.cataloguing.edit import BfEdit
 from src.function.bibframe.Work.contributionOf import ContributionOf
 from src.function.bibframe.Work.subjectOf import SubjectOf
-from src.schemas.bibframe._work import Work_Schema, Work_Edit, Work_Response
+from src.schemas.bibframe._work import Work_Schema, Work_Response
 # from src.schemas.bibframe.work import Work
 from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
@@ -62,10 +63,10 @@ async def create_work(request: Work):
 
 # PUT
 @router.put("/work", status_code=201)
-async def update_work(request: Work_Edit, work_id: str):
+async def update_work(request: BfEdit, work_id: str):
 
     EditWork(request, work_id)
-    EditDocWork(request, work_id)
+    # EditDocWork(request, work_id)
 
     return {'msg': 'Item editado com sucesso!'}
 
