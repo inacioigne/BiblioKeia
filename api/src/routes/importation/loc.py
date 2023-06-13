@@ -3,9 +3,8 @@ from rdflib import Graph
 from src.function.loc.parserWork import ParserWork
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.parserAgents import ParserAgents
-from src.function.loc.makeTranslateLoc import MakeTranslateLoc
+# from src.function.loc.makeTranslateLoc import MakeTranslateLoc
 from src.function.loc.graphExist import GraphExist
-# from src.routes.translate.makeTranslate import MakeTranslate
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
 from src.schemas.metadata.bibframe.work import Work

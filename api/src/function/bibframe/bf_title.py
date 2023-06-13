@@ -1,4 +1,4 @@
-def GetTitle(graph, uri):
+def GetTitle(graph, uri): 
 
   q = f"""PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
               SELECT ?mainTitle 

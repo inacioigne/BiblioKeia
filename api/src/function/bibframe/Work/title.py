@@ -2,8 +2,12 @@ from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS
 from pyfuseki import FusekiUpdate, FusekiQuery
 
-acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
-acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+from src.schemas.settings import Settings
+
+settings = Settings()
+
+collectionUpdate = FusekiUpdate(f'{settings.url}:3030', 'collection')
+collectionQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
 
 def Title(g, request, uri, BF):
     title = BNode()
@@ -12,7 +16,6 @@ def Title(g, request, uri, BF):
     g.add((title, BF.mainTitle, Literal(request.mainTitle)))
     if request.subtitle: 
         g.add((title, BF.subtitle, Literal(request.subtitle)))
-   # g.add((title, RDFS.label, label))
 
     # VariantTitle 
     if request.variantTitle:
@@ -23,30 +26,46 @@ def Title(g, request, uri, BF):
     
     return g
 
-def EditTitle(mainTitle, bkID):
+def EditTitle(uri, data):
+    up = f"""PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        WITH <{uri}>
+        DELETE {{  <{uri}> bf:title ?o .
+                        ?o ?p ?s}}
+        INSERT {{ <{uri}> bf:title ?o .
+                    ?o rdf:type bf:Title .
+                    ?o bf:mainTitle "{data.value.get('mainTitle')}" .
+                    { f'?o bf:subtitle "{data.value.get("subtitle")}"' if data.value.get('subtitle') else '' }
+                      }}
+        WHERE {{ <{uri}> bf:title ?o .
+                        ?o ?p ?s }} """
+    response = collectionUpdate.run_sparql(up)
+    print(response.convert())
 
-    prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
-                PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
+# def EditTitle(mainTitle, bkID):
+
+#     prefix = """PREFIX work: <https://bibliokeia.com/resources/work/>
+#                 PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+#                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"""
         
-    up = prefix+"WITH work:"+bkID+"""
-                    DELETE {work:"""+bkID+""" bf:title ?o .
-                        ?o bf:mainTitle ?t }
-                    INSERT {work:"""+bkID+""" bf:title ?o .
-                        ?o bf:mainTitle '"""+mainTitle+"""' }
-                    WHERE {work:"""+bkID+""" bf:title ?o .
-                        ?o bf:mainTitle ?t }"""
+#     up = prefix+"WITH work:"+bkID+"""
+#                     DELETE {work:"""+bkID+""" bf:title ?o .
+#                         ?o bf:mainTitle ?t }
+#                     INSERT {work:"""+bkID+""" bf:title ?o .
+#                         ?o bf:mainTitle '"""+mainTitle+"""' }
+#                     WHERE {work:"""+bkID+""" bf:title ?o .
+#                         ?o bf:mainTitle ?t }"""
 
-    acervoUpdate.run_sparql(up)
+#     collectionUpdate.run_sparql(up)
 
-    label = prefix+"WITH work:"+bkID+"""
-                    DELETE {work:"""+bkID+""" bf:title ?o .
-                        ?o rdfs:label ?t }
-                    INSERT {work:"""+bkID+""" bf:title ?o .
-                        ?o rdfs:label '"""+mainTitle+"""' }
-                    WHERE {work:"""+bkID+""" bf:title ?o .
-                        ?o rdfs:label ?t }"""
-    acervoUpdate.run_sparql(label)
+#     label = prefix+"WITH work:"+bkID+"""
+#                     DELETE {work:"""+bkID+""" bf:title ?o .
+#                         ?o rdfs:label ?t }
+#                     INSERT {work:"""+bkID+""" bf:title ?o .
+#                         ?o rdfs:label '"""+mainTitle+"""' }
+#                     WHERE {work:"""+bkID+""" bf:title ?o .
+#                         ?o rdfs:label ?t }"""
+#     collectionUpdate.run_sparql(label)
 
 def EditSubtitle(subtitle, title,  bkID):
 
@@ -59,14 +78,14 @@ def EditSubtitle(subtitle, title,  bkID):
             {work:"""+bkID+""" bf:title ?o .
             ?o bf:subtitle '"""+subtitle+"' }}"
     
-    askSubtitleSame = acervoQuery.run_sparql(subtitleSame)
+    askSubtitleSame = collectionQuery.run_sparql(subtitleSame)
     askSubtitleSame = askSubtitleSame.convert()
 
     if not askSubtitleSame['boolean']:
         subtitleExist = prefix+""" ASK { graph work:"""+bkID+"""
             {work:"""+bkID+""" bf:title ?o .
             ?o bf:subtitle ?subtitle }}"""
-        askSubtitleExist = acervoQuery.run_sparql(subtitleExist)
+        askSubtitleExist = collectionQuery.run_sparql(subtitleExist)
         askSubtitleExist = askSubtitleExist.convert()
 
         if askSubtitleExist['boolean']:
@@ -80,10 +99,10 @@ def EditSubtitle(subtitle, title,  bkID):
                           }
                     WHERE {work:"""+bkID+""" bf:title ?o .
                         ?o ?p ?t }"""
-            acervoUpdate.run_sparql(up)
+            collectionUpdate.run_sparql(up)
         else:
             up = prefix+"INSERT DATA { GRAPH work:"+bkID+" { work:"+bkID+"""  bf:title [
                         rdf:type bf:Title;
                         bf:mainTitle '"""+title+"""' ;
                         bf:subtitle '"""+subtitle+"""' ] . } }"""
-            acervoUpdate.run_sparql(up)
+            collectionUpdate.run_sparql(up)

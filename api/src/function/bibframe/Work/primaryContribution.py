@@ -13,7 +13,12 @@ PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
 PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>"""
 
-acervoUpdate = FusekiUpdate('http://localhost:3030', 'acervo')
+from src.schemas.settings import Settings
+
+settings = Settings()
+
+collectionUpdate = FusekiUpdate(f'{settings.url}:3030', 'collection')
+# collectionQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
 
 def UpdateContribution(primaryContribution, work_uri):
 
@@ -65,4 +70,4 @@ def EditPrimaryContribution(primaryContribution, bkID):
                 WHERE {work:"""+bkID+""" bf:contribution ?o .
                         ?o ?p ?contribution }"""
        
-    acervoUpdate.run_sparql(up)
+    collectionUpdate.run_sparql(up)

@@ -3,7 +3,6 @@ from src.schemas.cataloguing.edit import BfEdit
 from src.function.bibframe.Work.contributionOf import ContributionOf
 from src.function.bibframe.Work.subjectOf import SubjectOf
 from src.schemas.bibframe._work import Work_Schema, Work_Response
-# from src.schemas.bibframe.work import Work
 from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
 from src.function.bibframe.Work.work import BfWork
@@ -15,9 +14,13 @@ from src.function.bibframe.Work.graphWork import MakeGraphWork
 
 from src.schemas.metadata.bibframe.work import Work
 
+from src.schemas.settings import Settings
+
+settings = Settings()
+
 router = APIRouter()
-fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
-acervoQuery = FusekiQuery('http://localhost:3030', 'acervo')
+fuseki_update = FusekiUpdate(f'{settings.url}:3030', 'collection')
+acervoQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
 
 # GET
 @router.get("/work", status_code=200)
@@ -54,7 +57,7 @@ async def create_work(request: Work):
     
     
     # # Solr
-    # DocWork(request, work_id)
+    DocWork(request, work_id)
 
     return {
         #"id": work_id, 
@@ -62,23 +65,25 @@ async def create_work(request: Work):
     # return request.dict()
 
 # PUT
-@router.put("/work", status_code=201)
-async def update_work(request: BfEdit, work_id: str):
+@router.put("/work", status_code=200)
+async def update_work(request: BfEdit, id: str):
 
-    EditWork(request, work_id)
+    EditWork(request, id)
     # EditDocWork(request, work_id)
 
     return {'msg': 'Item editado com sucesso!'}
 
 # DELETE
 @router.delete("/work", status_code=200)
-async def delete_work(work_id: str):
+async def delete_work(id: str):
 
-    delete = "DELETE { graph <https://bibliokeia.com/resources/work/"+work_id+"""> 
-        { ?s ?p ?o } } 
-        WHERE {
-        graph ?g {?s ?p ?o.}
-        }"""
-    response = fuseki_update.run_sparql(delete)
+    uri = f'https://bibliokeia.com/resources/work/{id}'
+
+    sparql = f"""DELETE {{ graph <{uri}> 
+        {{ ?s ?p ?o }} }} 
+        WHERE {{
+        graph ?g {{ ?s ?p ?o. }}
+        }}"""
+    response = fuseki_update.run_sparql(sparql)
 
     return response.convert()

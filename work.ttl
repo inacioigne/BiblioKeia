@@ -7,198 +7,323 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/resources/works/22600263> a bf:Monograph,
-        bf:Text,
-        bf:Work ;  
-    bflc:aap "Galor, Oded, 1953- The journey of humanity" ;
-    bflc:aap-normalized "galoroded1953thejourneyofhumanity" ;
+<http://id.loc.gov/authorities/subjects/sh85047741> a madsrdf:Topic ;
+    rdfs:label "Feminism"@en ;
+    bflc:marcKey "150  $aFeminism" .
+
+<http://id.loc.gov/authorities/subjects/sh85147274> a madsrdf:Topic ;
+    rdfs:label "Women"@en ;
+    bflc:marcKey "150 0$aWomen" .
+
+<http://id.loc.gov/entities/relationships/onlineversion> a bflc:Relation ;
+    rdfs:label "Online version" .
+
+<http://id.loc.gov/resources/instances/18794275> a bf:Instance ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Amazon" ] .
+
+<http://id.loc.gov/resources/works/11644326> a bf:Work ;
+    rdfs:label "Lejtes, Josef, 1901-1983, Adventures in paradise. The Amazon" ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Manulis, Martin, 1915-2007," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Akins, Claude, 1918-1994," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cast." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Drake, Tom, 1918-1982," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cast." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "ABC Television Network." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Scott, Lizabeth, 1922-2015," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cast." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Lejtes, Josef, 1901-1983," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "direction." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Goldstone, Richard, 1912-2007," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "production." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "McKay, Gardner," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "cast." ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Michener, James A. (James Albert), 1907-1997." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "Twentieth Century-Fox Television, Inc." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Froug, William," ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writing." ] ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Adventures in paradise. The Amazon" ;
+            bf:mainTitle "Adventures in paradise." ;
+            bf:partName "The Amazon" ] .
+
+<http://id.loc.gov/resources/works/18794275> a bf:Text,
+        bf:Work ;
+    rdfs:label "Amazon" ;
+    bflc:aap "Amazon" ;
+    bflc:aap-normalized "amazon" ;
+    bflc:serialPubType <http://id.loc.gov/vocabulary/mserialpubtype/periodical> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:assigner [ a bf:Agent ;
-                    bf:code "YDX" ] ;
-            bf:changeDate "2023-05-03T11:45:30"^^xsd:dateTime ;
-            bf:creationDate "2022-05-31"^^xsd:date ;
-            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lccopycat> ;
-            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
-                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/7> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/ppiu> ;
+            bf:changeDate "2015-09-25T06:35:43"^^xsd:dateTime ;
+            bf:creationDate "1976-03-12"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/msc>,
+                <http://id.loc.gov/vocabulary/marcauthen/nsdp> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
             bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
             bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "DLC marc2bibframe2 v2.1.0" ;
-                    bf:generationDate "2023-05-04T01:52:37.016776-04:00"^^xsd:dateTime ] ;
+                    rdfs:label "DLC marc2bibframe2 v1.8.0-SNAPSHOT-MTA" ;
+                    bf:generationDate "2022-06-14T14:27:01.660983-04:00"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
                     bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
-                    rdf:value "22600263" ] ;
-            bf:status <http://id.loc.gov/vocabulary/mstatus/c> ;
-            lclocal:d906 "=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg" ;
-            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default" ;
-            lclocal:d955 "=955     $b xn18 2022-05-31 z-processor to USASH $i rm11 2022-06-09 to CMD" ] ;
+                    rdf:value "18794275" ] ;
+            bf:note [ a bf:Note,
+                        <http://id.loc.gov/vocabulary/mnotetype/metaentry> ;
+                    rdfs:label "0 - successive" ] ;
+            bf:status <http://id.loc.gov/vocabulary/mstatus/c>,
+                <http://id.loc.gov/vocabulary/mstatus/s> ;
+            lclocal:d906 "=906     $a 7 $b ibc $c sercoop $d u $e ncip $f 20 $g n-oclcserc" ;
+            lclocal:d925 "=925  0  $a undetermined $x policy default" ;
+            lclocal:d955 "=955     $b xf15 2015-09-24 $c xf15 2015-09-24 $k xf15 2015-09-24 (telework)" ;
+            lclocal:d985 "=985     $a NDMSO-BF $d 20210408 $e opacsuppress" ] ;
     bf:classification [ a bf:ClassificationLcc ;
             bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            bf:classificationPortion "HD78" ;
-            bf:itemPortion ".G35 2022" ],
+            bf:classificationPortion "ISSN RECORD" ],
         [ a bf:ClassificationDdc ;
-            bf:classificationPortion "338.9001" ;
-            bf:edition "full" ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "305.42" ;
+            bf:edition "abridged" ;
             bf:source [ a bf:Source ;
-                    bf:code "23/eng/20220309" ] ] ;
+                    bf:code "23" ] ] ;
     bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
-    bf:contribution [ a bflc:PrimaryContribution,
-                bf:Contribution ;
-            bf:agent <http://id.loc.gov/rwo/agents/n86870523> ; 
-            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026113> ;
-    bf:hasInstance <http://id.loc.gov/resources/instances/22600263> ;
-    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/chr>,
-        <http://id.loc.gov/vocabulary/millus/ill>,
-        <http://id.loc.gov/vocabulary/millus/map> ;
-    bf:intendedAudience <http://id.loc.gov/vocabulary/maudience/adu> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "Amazon Collective" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "Amazon Collective" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:genreForm [ a bf:GenreForm,
+                madsrdf:Topic ;
+            rdfs:label "Periodicals." ;
+            bf:identifiedBy [ a bf:Identifier ;
+                    bf:source [ a bf:Source ;
+                            bf:code "OCoLC" ] ;
+                    rdf:value "fst01411641" ] ;
+            bf:source <http://id.loc.gov/vocabulary/genreFormSchemes/fast> ;
+            madsrdf:authoritativeLabel "Periodicals." ] ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/18794275> ;
+    bf:identifiedBy [ a bf:Issn ;
+            bf:assigner [ a bf:Agent ;
+                    bf:code "1" ] ;
+            rdf:value "2381-0718" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation <http://id.loc.gov/vocabulary/mscript/a> ;
+    bf:otherPhysicalFormat [ a bf:Work ;
+            bflc:aap "Amazon" ;
+            bflc:aap-normalized "amazon" ;
+            bflc:relationship [ a bflc:Relationship ;
+                    bflc:relation <http://id.loc.gov/entities/relationships/onlineversion> ;
+                    bf:relatedTo <http://id.loc.gov/resources/works/18794275> ] ;
+            bf:hasInstance [ a bf:Instance ;
+                    bf:identifiedBy [ a bf:Lccn ;
+                            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                            rdf:value "  2015203292" ],
+                        [ a bf:Identifier ;
+                            bf:assigner [ a bf:Agent ;
+                                    bf:code "OCoLC" ] ;
+                            rdf:value "922007019" ] ;
+                    bf:title [ a bf:Title ;
+                            bf:mainTitle "Amazon" ] ] ;
+            bf:title [ a bf:Title ;
+                    bf:mainTitle "Amazon" ] ] ;
+    bf:relatedTo <http://id.loc.gov/resources/works/11644326>,
+        <http://id.loc.gov/resources/works/5590549>,
+        <http://id.loc.gov/resources/works/8912723> ;
     bf:subject [ a bf:Topic,
-                madsrdf:Topic ; 
-            rdfs:label "Equality" ;
-            bflc:aap-normalized "equality" ;
+                madsrdf:Topic ;
+            rdfs:label "Women." ;
+            bflc:aap-normalized "women" ;
             bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-            madsrdf:authoritativeLabel "Equality" ;
+            madsrdf:authoritativeLabel "Women." ;
             madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
         [ a bf:Topic,
-                madsrdf:Topic ;
-            rdfs:label "SOCIAL SCIENCE / Anthropology / Cultural & Social" ;
-            bflc:aap-normalized "socialscience/anthropology/cultural&social" ;
-            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
-            madsrdf:authoritativeLabel "SOCIAL SCIENCE / Anthropology / Cultural & Social" ;
-            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
+                madsrdf:ComplexSubject ;
+            rdfs:label "Feminism--Periodicals." ;
+            bflc:aap-normalized "feminismperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Feminism--Periodicals." ;
+            madsrdf:componentList ( <http://id.loc.gov/authorities/subjects/sh85047741> <http://id.loc.gov/authorities/subjects/sh99001647> ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ],
         [ a bf:Topic,
                 madsrdf:Topic ;
-            rdfs:label "HISTORY / Civilization" ;
-            bflc:aap-normalized "history/civilization" ;
-            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
-            madsrdf:authoritativeLabel "HISTORY / Civilization" ;
-            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
-        [ a bf:Topic,
-                madsrdf:Topic ;
-            rdfs:label "HISTORY / World" ;
-            bflc:aap-normalized "history/world" ;
-            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
-            madsrdf:authoritativeLabel "HISTORY / World" ;
-            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ],
-        [ a bf:Topic,
-                madsrdf:Topic ;
-            rdfs:label "Economic development" ;
-            bflc:aap-normalized "economicdevelopment" ;
+            rdfs:label "Feminism." ;
+            bflc:aap-normalized "feminism" ;
             bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-            madsrdf:authoritativeLabel "Economic development" ;
+            madsrdf:authoritativeLabel "Feminism." ;
             madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
         [ a bf:Topic,
-                madsrdf:Topic ;
-            rdfs:label "Economic history" ;
-            bflc:aap-normalized "economichistory" ;
-            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-            madsrdf:authoritativeLabel "Economic history" ;
-            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ],
-        [ a bf:Topic,
-                madsrdf:Topic ;
-            rdfs:label "economic development" ;
-            bflc:aap-normalized "economicdevelopment" ;
-            bf:source <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
-            madsrdf:authoritativeLabel "economic development" ;
-            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ],
-        <http://id.loc.gov/authorities/subjects/sh85040804>,
-        <http://id.loc.gov/authorities/subjects/sh85040817>,
-        <http://id.loc.gov/authorities/subjects/sh85044503> ;
-    bf:summary [ a bf:Summary ;
-            rdfs:label "\"Why are humans the only species to have escaped - only very recently - the subsistence trap, allowing us to enjoy a standard of living that vastly exceeds all others? And why have we progressed so unequally around the world, resulting in the great disparities between nations that exist today? Immense in scope and packed with astounding connections, Galor's gripping narrative explains how technology, population size, and adaptation led to a stunning \"phase change\" in the human story a mere two hundred years ago. But by tracing that same journey back in time and peeling away the layers of influence - colonialism, political institutions, societal structure, culture - he arrives also at an explanation of inequality's ultimate causes: those ancestral populations that enjoyed fruitful geographical characteristics and rich diversity were set on the path to prosperity, while those that lacked it were disadvantaged in ways still echoed today. As we face ecological crisis across the globe, The Journey of Humanity is a book of urgent truths and enduring relevance, with lessons that are both hopeful and profound: gender equality, investment in education, and balancing diversity with social cohesion are the keys not only to our species' thriving, but to its survival.\" -- publisher's website." ;
-            rdf:value "https://www.penguinrandomhouse.com/books/679024/the-journey-of-humanity-by-oded-galor/"^^xsd:anyURI ] ;
-    bf:supplementaryContent <http://id.loc.gov/vocabulary/msupplcont/bibliography>,
-        <http://id.loc.gov/vocabulary/msupplcont/index> ;
-    bf:tableOfContents [ a bf:TableOfContents ;
-            rdfs:label "Mysteries of the human journey -- [Part] I: The human odyssey. First steps. Genesis ; Exodus from the cradle of humankind ; Early settlement ; The dawn of civilisation -- Lost in stagnation. The Malthusian thesis ; The inevitable onset of agriculture ; Population swings ; The economic ice age -- The storm beneath the surface. Unified growth theory ; Wheels of change -- Full steam. Acceleration of technological development ; Education in the pre-industrial era ; Industrialisation and human capital ; The advent of universal public education ; Child labour no more -- Metamorphosis. Triggers of the demographic transition ; Family tales ; Phase transition -- The promised land. The twilight of industry ; The age of growth ; Growth and environmental degradation -- Coda: resolving the mystery of growth -- [Part] II: The origins of wealth and inequality. Splendour and misery. Disparate factors ; Rusty tools ; Trade, colonialism and uneven development ; Deep-rooted factors -- The fingerprints of institutions. Institutional origins of the British ascent ; Institutions and long-run development ; The legacy of colonialism ; Origins of institutions -- The cultural factor. The power of culture ; A culture of growth ; Cultural inertia ; Culture and prosperity -- The shadow of geography. Landscape fragmentation and the rise of Europe ; Origins of extractive institutions ; Geographical roots of cultural traits ; Roots of comparative development -- The legacy of the agricultural revolution. Roots and impacts of the Neolithic revolution ; The grains of civilisation ; Ceding the head start ; Geography's decree -- Out of Africa. Origins of human diversity ; Measuring diversity ; Diversity and prosperity ; The grip of the past -- Coda: unravelling the mystery of inequality -- Afterword." ] ;
+                madsrdf:ComplexSubject ;
+            rdfs:label "Women--Periodicals." ;
+            bflc:aap-normalized "womenperiodicals" ;
+            bf:source <http://id.loc.gov/authorities/subjects> ;
+            madsrdf:authoritativeLabel "Women--Periodicals." ;
+            madsrdf:componentList ( <http://id.loc.gov/authorities/subjects/sh85147274> <http://id.loc.gov/authorities/subjects/sh99001647> ) ;
+            madsrdf:isMemberOfMADSScheme <http://id.loc.gov/authorities/subjects> ] ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "The journey of humanity" ] ;
+            bf:mainTitle "Amazon" ],
+
+        [ a bf:KeyTitle ;
+            bf:mainTitle "Amazon" ;
+            bf:qualifier "(Milwaukee)" ],
+                
+        [ a bf:Title ;
+            bf:mainTitle "Amazon" ],
+        [ a bf:KeyTitle ;
+            bf:mainTitle "Amazon" ;
+            bf:qualifier "(Milwaukee)" ] ;
     dcterms:isPartOf <http://id.loc.gov/resources/works> .
 
-<http://id.loc.gov/authorities/genreForms/gf2014026113> a bf:GenreForm ;
-    rdfs:label "Informational works"@en ;
-    bflc:marcKey "155  $aInformational works" .
-
-<http://id.loc.gov/authorities/subjects/sh85040804> a bf:Topic ;
-    rdfs:label "Economic development"@en ;
-    bflc:marcKey "150  $aEconomic development" .
-
-<http://id.loc.gov/authorities/subjects/sh85040817> a bf:Topic ;
-    rdfs:label "Economic history"@en ;
-    bflc:marcKey "150 0$aEconomic history" .
-
-<http://id.loc.gov/authorities/subjects/sh85044503> a bf:Topic ;
-    rdfs:label "Equality"@en ;
-    bflc:marcKey "150  $aEquality" .
-
-<http://id.loc.gov/resources/instances/22600263> a bf:Instance ;
-    bflc:publicationStatement "[New York]: Dutton; [2022]" ;
+<http://id.loc.gov/resources/works/5590549> a bf:Work ;
+    rdfs:label "Tower, Joan, 1938- Platinum spirals ; Noon dance ; Amazon ; Wings" ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "Collage (Musical group)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prf> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Smirnoff, Joel, 1950-" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prf> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Organization ;
+                    rdfs:label "Da Capo Chamber Players." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prf> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Flax, Laura." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prf> ],
+        [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Tower, Joan, 1938-" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "The journey of humanity" ;
-            bf:subtitle "the origins of wealth and inequality" ] .
+            rdfs:label "Platinum spirals ; Noon dance ; Amazon ; Wings" ;
+            bf:mainTitle "Platinum spirals ; Noon dance ; Amazon ; Wings" ] .
 
-<http://id.loc.gov/rwo/agents/n86870523> a bf:Agent ;
-    rdfs:label "Galor, Oded, 1953-" ;
-    bflc:marcKey "1001 $aGalor, Oded,$d1953-" .
+<http://id.loc.gov/resources/works/8912723> a bf:Work ;
+    rdfs:label "Mūrti, E. Es., 1929 August 16-2012. Amejān" ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Mūrti, E. Es., 1929 August 16-2012." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Amejān." ;
+            bf:mainTitle "Amejān." ] .
 
 <http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
     rdfs:label "text" .
 
-<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
-    rdfs:label "ISBD: International standard bibliographic description" .
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules" .
 
-<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
-    rdfs:label "Resource description and access" .
+<http://id.loc.gov/vocabulary/genreFormSchemes/fast> a bf:Source ;
+    bf:code "fast" .
 
-<http://id.loc.gov/vocabulary/marcauthen/lccopycat> a bf:DescriptionAuthentication ;
-    rdfs:label "LC Copy Cataloging" .
+<http://id.loc.gov/vocabulary/marcauthen/msc> a bf:DescriptionAuthentication ;
+    rdfs:label "CONSER minimal authority application" .
 
-<http://id.loc.gov/vocabulary/maudience/adu> a bf:IntendedAudience ;
-    rdfs:label "Adult" .
+<http://id.loc.gov/vocabulary/marcauthen/nsdp> a bf:DescriptionAuthentication ;
+    rdfs:label "U.S. ISSN Center" .
 
-<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
-    rdfs:label "full" .
+<http://id.loc.gov/vocabulary/menclvl/7> a bflc:EncodingLevel ;
+    rdfs:label "minimal" .
 
-<http://id.loc.gov/vocabulary/millus/chr> a bf:Illustration ;
-    rdfs:label "Charts" .
+<http://id.loc.gov/vocabulary/mscript/a> a bf:Notation ;
+    rdfs:label "Latin" .
 
-<http://id.loc.gov/vocabulary/millus/ill> a bf:Illustration ;
-    rdfs:label "Illustrations" .
-
-<http://id.loc.gov/vocabulary/millus/map> a bf:Illustration ;
-    rdfs:label "Maps" .
+<http://id.loc.gov/vocabulary/mserialpubtype/periodical> a bflc:SerialPubType ;
+    rdfs:label "periodical" .
 
 <http://id.loc.gov/vocabulary/mstatus/c> a bf:Status ;
     rdfs:label "changed" .
 
-<http://id.loc.gov/vocabulary/msupplcont/bibliography> a bf:SupplementaryContent ;
-    rdfs:label "bibliography" .
+<http://id.loc.gov/vocabulary/mstatus/s> a bf:Status ;
+    rdfs:label "suppressed" .
 
-<http://id.loc.gov/vocabulary/msupplcont/index> a bf:SupplementaryContent ;
-    rdfs:label "index" .
+<http://id.loc.gov/vocabulary/organizations/ppiu> a bf:Organization ;
+    rdfs:label "University of Pittsburgh" .
 
-<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
-    rdfs:label "Author" .
+<http://id.loc.gov/authorities/subjects/sh99001647> a madsrdf:GenreForm ;
+    rdfs:label "Periodicals"@en ;
+    bflc:marcKey "185  $vPeriodicals" .
 
 <http://id.loc.gov/vocabulary/languages/eng> a bf:Language,
         madsrdf:Language ;
     rdfs:label "English"@en .
 
-<http://id.loc.gov/vocabulary/subjectSchemes/aat> a bf:Source,
+<http://id.loc.gov/authorities/subjects> a bf:Source,
+        madsrdf:MADSScheme ;
+    rdfs:label """Library of
+            Congress Subject Headings"""@en .
+
+<http://id.loc.gov/vocabulary/relators/prf> a bf:Role .
+
+<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source,
         madsrdf:Authority ;
-    rdfs:label "Art & architecture thesaurus" .
+    rdfs:label "Faceted application of subject terminology" .
 
 <http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization,
         madsrdf:CorporateName ;
     rdfs:label "United States, Library of Congress" .
 
-<http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> a bf:Source,
-        madsrdf:Authority ;
-    rdfs:label "BISAC subject headings" .
-
-<http://id.loc.gov/vocabulary/subjectSchemes/fast> a bf:Source,
-        madsrdf:Authority ;
-    rdfs:label "Faceted application of subject terminology" .
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role ;
+    rdfs:label "Contributor" .
 

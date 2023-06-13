@@ -1,10 +1,11 @@
 from pydantic import BaseModel
 from typing import Optional
+from typing import Union
 
 class Data(BaseModel):
     action: str
     bf: str
-    value: str
+    value: Union[dict, str]
 
 class BfEdit(BaseModel):
-    data: list[Data]
+    listData: list[Data]

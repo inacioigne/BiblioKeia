@@ -63,6 +63,12 @@ def MakeSummary(summary):
     """
     return s
 
+def MakeGenreForm(genreForm): 
+        
+        gF = f'bf:genreForm { ", ".join([f"<{i.uri}>" for i in genreForm ]) } ; '
+
+        return gF
+
 def MakeGraphWork(request, id):
     graph = f"""{prefix}    
     INSERT DATA {{
@@ -89,8 +95,8 @@ def MakeGraphWork(request, id):
                 bf:mainTitle "{request.title.mainTitle}" 
                 { f'; bf:subtitle "{request.title.subtitle}" ' if request.title.subtitle else ''} ] ;
                 { MakeContribution(request.contribution) if request.contribution  else "" }  
-                { MakeSubject(request.subject) if request.subject  else "" }      
-                { f'bf:genreForm { ", ".join([f"<{genreForm.uri}>" for genreForm in request.genreForm ]) } ; '}
+                { MakeSubject(request.subject) if request.subject  else "" }
+                { MakeGenreForm(request.genreForm)if request.genreForm  else "" }         
                 { f'bf:note [ a bf:Note ; rdfs:label "{request.note}" ] ; ' if request.note else '' }
                 { MakeSummary(request.summary) if request.summary else "" }
                 { f'bf:tableOfContents [ a bf:tableOfContents ; rdfs:label "{request.tableOfContents}" ] ; ' if request.tableOfContents else '' }
@@ -100,49 +106,3 @@ def MakeGraphWork(request, id):
         }} }}
         """
     return graph
-
-# def MakeGraphWork(request, id):
-#     graph = f"""{prefix}    
-#     INSERT DATA {{
-#         GRAPH bkw:{id}
-#         {{
-#                 bkw:{id} a { ", ".join(request.type) }  ;
-#                 bf:adminMetadata [ a bf:AdminMetadata ;
-#                 bflc:encodingLevel {request.adminMetadata.encodingLevel} ;
-#                 bf:assigner <{request.adminMetadata.assigner}> ;    
-#                 bf:creationDate "{request.adminMetadata.creationDate}"^^xsd:date ;    
-#                 bf:descriptionConventions <{request.adminMetadata.descriptionConventions}> ;
-#                 bf:descriptionLanguage <{request.adminMetadata.descriptionLanguage}> ;
-#                  bf:generationProcess [ a bf:GenerationProcess ;
-#                     rdfs:label "{request.adminMetadata.generationProcess.label}" ;
-#                     bf:generationDate "{request.adminMetadata.generationProcess.generationDate}"^^xsd:dateTime ] ;
-#                 bf:identifiedBy [ a bf:Local ;
-#                     bf:assigner <{request.adminMetadata.assigner}> ;
-#                     rdf:value "{id}" ] ;
-#                 bf:status {request.adminMetadata.status.value} ] ;
-#                 bf:classification [ a bf:ClassificationDdc ;
-#                 bf:assigner <{request.adminMetadata.assigner}> ;
-#                 bf:classificationPortion "{request.classification.classificationPortion}" ;
-#                 bf:itemPortion "{request.classification.itemPortion}" ;
-#                 bf:source [ a bf:Source ;
-#                     bf:code "{request.classification.edition}" ] ] ;
-#                 bf:content { ", ".join([content.value for content in request.content]) } ;
-#                 bf:contribution  { MakeContribution(request.contribution) } ;
-#                 { f'bf:genreForm { ", ".join([genreForm.value for genreForm in request.genreForm]) } ; ' if request.genreForm else ''}
-#                 bf:language { MakeLanguage(request.language) } ;
-#                 { f'bf:note [ a bf:Note ; rdfs:label "{request.note}" ] ; ' if request.note else '' }
-#                 { f'bf:summary [ a bf:Summary ; rdfs:label "{request.summary}" ] ; ' if request.summary else '' }
-#                 { f'bf:expressionOf <{request.expressionOf}> ;' if request.expressionOf else ''}
-#                 { f'bf:hasInstance <{request.hasInstance}> ;' if request.hasInstance else ''}
-#                 { f'bf:supplementaryContent { ", ".join([supplementaryContent.value for supplementaryContent in request.supplementaryContent ])} ;' if request.supplementaryContent else ''}
-#                 bf:subject { ", ".join([f'<{subject.value}>' for subject in request.subject]) } ;
-#                 bf:title [ a bf:Title ;
-#                 bf:mainTitle "{request.title.mainTitle}" 
-#                 { f'; bf:subtitle "{request.title.subtitle}" ' if request.title.subtitle else ''} ] .
-
-#                 {request.adminMetadata.status.value} a bf:Status ;
-#                 rdfs:label "{request.adminMetadata.status.label}" .
-#         }} 
-#         }}
-#         """
-#     return graph
