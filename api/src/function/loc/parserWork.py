@@ -49,6 +49,8 @@ def ParserWork(graph, uri):
     obj = GetUriBF(graph, uri, 'subject', obj)
     # supplementaryContent
     obj = GetUriBF(graph, uri, 'supplementaryContent', obj)
+    # geographicCoverage
+    obj = GetUriBF(graph, uri, 'geographicCoverage', obj)
     # summary
     obj = GetLiteral(graph, uri, 'summary', obj)
     # tableOfContents

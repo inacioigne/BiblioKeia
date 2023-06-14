@@ -1,9 +1,12 @@
 from datetime import datetime
 from pyfuseki import FusekiQuery
+from src.schemas.settings import Settings
+
+settings = Settings()
+
+authorityQuery = FusekiQuery(f'{settings.url}:3030', 'authority')
 
 def GenerateId():
-
-    queryAcervo = FusekiQuery('http://localhost:3030', 'authorities')
 
     q = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
     SELECT ?g
@@ -11,7 +14,7 @@ def GenerateId():
     ORDER BY DESC(?o)
     LIMIT 1"""
     
-    response = queryAcervo.run_sparql(q)
+    response = authorityQuery.run_sparql(q)
     r = response.convert()
     bindings = r['results']['bindings']
 

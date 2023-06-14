@@ -21,8 +21,8 @@ def GenerateId():
     bindings = r['results']['bindings']
 
     if len(bindings) == 0:
-        return { 'id': "bk-1" }
+        return { 'id': "bkc-1" }
     else:
         value = bindings[0]['g']['value']
         bk = int(value.split("-")[1]) + 1
-        return { 'id': "bk-"+str(bk) }
+        return { 'id': "bkc-"+str(bk) }

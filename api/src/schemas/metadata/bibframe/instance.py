@@ -7,7 +7,7 @@ from src.schemas.metadata.bibframe.contribution import Contribution
 from src.schemas.metadata.bibframe.element import Element
 from src.schemas.metadata.bibframe.title import Title
 
-class Work(BaseModel):
+class Instance(BaseModel):
     adminMetadata: AdminMetadata
     type: list[str]
     content: list[Element]
@@ -24,4 +24,3 @@ class Work(BaseModel):
     illustrativeContent: Optional[list[Element]]
     intendedAudience: Optional[list[Element]]
     geographicCoverage: Optional[list[Element]]
-    

@@ -1,8 +1,11 @@
 from pyfuseki import FusekiQuery
+from src.schemas.settings import Settings
 
-fuseki_query = FusekiQuery('http://localhost:3030', 'authorities')
+settings = Settings()
 
-def GraphExist(uri): 
+authorityQuery = FusekiQuery(f'{settings.url}:3030', 'authority')
+
+def GraphExist(uri):  
     
     token = uri.split("/")[-1]
 
@@ -14,7 +17,7 @@ def GraphExist(uri):
     ?identifiedBy rdf:value "{token}" .
     ?uri madsrdf:authoritativeLabel ?label .   
                 }} }} """
-    responseQuery = fuseki_query.run_sparql(query)
+    responseQuery = authorityQuery.run_sparql(query)
     bindings = responseQuery.convert()['results']['bindings']
     if len(bindings) > 0:
         return bindings[0]

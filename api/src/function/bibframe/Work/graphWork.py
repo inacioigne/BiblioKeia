@@ -69,6 +69,14 @@ def MakeGenreForm(genreForm):
 
         return gF
 
+def MakeUri(metadada, elements):
+       
+       sparql = f'bf:{metadada} { ", ".join([f"<{i.uri}>" for i in elements ])} ;'
+
+       return sparql
+       
+       
+
 def MakeGraphWork(request, id):
     graph = f"""{prefix}    
     INSERT DATA {{
@@ -100,9 +108,10 @@ def MakeGraphWork(request, id):
                 { f'bf:note [ a bf:Note ; rdfs:label "{request.note}" ] ; ' if request.note else '' }
                 { MakeSummary(request.summary) if request.summary else "" }
                 { f'bf:tableOfContents [ a bf:tableOfContents ; rdfs:label "{request.tableOfContents}" ] ; ' if request.tableOfContents else '' }
-                { f'bf:supplementaryContent { ", ".join([f"<{supplementaryContent.uri}>" for supplementaryContent in request.supplementaryContent ])} ;' if request.supplementaryContent else ''}
-                { f'bf:illustrativeContent { ", ".join([f"<{illustrativeContent.uri}>" for illustrativeContent in request.illustrativeContent ])} ;' if request.illustrativeContent else ''}
-                { f'bf:intendedAudience { ", ".join([f"<{intendedAudience.uri}>" for intendedAudience in request.intendedAudience ])} ;' if request.intendedAudience else ''} .
+                { MakeUri("supplementaryContent", request.supplementaryContent) if request.supplementaryContent else "" }
+                { MakeUri("illustrativeContent", request.illustrativeContent) if request.illustrativeContent else "" }
+                { MakeUri("intendedAudience", request.intendedAudience) if request.intendedAudience else "" }
+                { MakeUri("geographicCoverage", request.geographicCoverage) if request.geographicCoverage else "" }
         }} }}
         """
     return graph

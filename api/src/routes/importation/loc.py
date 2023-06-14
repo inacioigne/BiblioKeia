@@ -3,11 +3,10 @@ from rdflib import Graph
 from src.function.loc.parserWork import ParserWork
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.parserAgents import ParserAgents
-# from src.function.loc.makeTranslateLoc import MakeTranslateLoc
 from src.function.loc.graphExist import GraphExist
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
-from src.schemas.metadata.bibframe.work import Work
+from src.schemas.metadata.bibframe.work import Work, Instance
 
 
 router = APIRouter()
@@ -42,12 +41,21 @@ async def get_agents(uri: str):
     return response.dict()
 
 
-# LC Name Authority File (LCNAF)
+# Works
 @router.get("/works", status_code=200, response_model=Work) 
 async def get_works(uri: str):
     
     graph = Graph()
-    # uri = 'http://id.loc.gov/resources/works/22600263'
+    graph.parse(f'{uri}.rdf')
+    response = ParserWork(graph, uri)
+
+    return response
+
+# Instance
+@router.get("/instances", status_code=200, response_model=Instance) 
+async def get_instances(uri: str):
+    
+    graph = Graph()
     graph.parse(f'{uri}.rdf')
     response = ParserWork(graph, uri)
 

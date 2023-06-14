@@ -1,10 +1,15 @@
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 
-from src.function.authorities.makeElement import MakeElement
+# from src.function.authorities.makeElement import MakeElement
+from src.schemas.settings import Settings
+
+settings = Settings()
+
+authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
 
 def UpadeteAuthority(request, id):
-    au_update = FusekiUpdate('http://localhost:3030', 'authorities')
+    # au_update = FusekiUpdate('http://localhost:3030', 'authorities')
     solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
     authority = f'https://bibliokeia.com/authorities/{request.type}/{id}'
@@ -29,7 +34,7 @@ def UpadeteAuthority(request, id):
                     }
    
             responseSolr = solr.add([doc], commit=True)
-            r = au_update.run_sparql(narrower)
+            r = authorityUpdate.run_sparql(narrower)
             
     if request.hasNarrowerAuthority:
         for i in request.hasNarrowerAuthority:
@@ -49,7 +54,7 @@ def UpadeteAuthority(request, id):
                         'base': 'bk'  } }
                     }
             responseSolr = solr.add([doc], commit=True)
-            r = au_update.run_sparql(broader)
+            r = authorityUpdate.run_sparql(broader)
 
     if request.hasReciprocalAuthority:
         for i in request.hasReciprocalAuthority:
@@ -68,6 +73,6 @@ def UpadeteAuthority(request, id):
                         'base': 'bk'  } }
                     }
             responseSolr = solr.add([doc], commit=True)
-            r = au_update.run_sparql(reciprocal)
+            r = authorityUpdate.run_sparql(reciprocal)
             
      

@@ -7,29 +7,47 @@ def PostSolr(request, id):
     pass
     
 
-def DocWork(request, work_id):
+def DocWork(request, id):
 
     doc = {
-        "id": work_id,
-        "type": "work",
-        "content": request.content,
+        "id": id,
+        "type": request.type,
+        "content": [i.label for i in request.content],
         "mainTitle": request.title.mainTitle,
+        'language': [i.label for i in request.language],
         "subtitle": request.title.subtitle,
-        "primaryContribution" : request.primaryContribution.label,
-        "primaryContributionUri": request.primaryContribution.uri,
-        "primaryContributionRole": request.primaryContribution.role,
-        "language": request.language,
-        "cdd": request.cdd,
-        "cutter": request.cutter,
-        "hasSeries": request.serie
-        }  
+        "cdd": request.classification,
+        "note": request.note,
+        "summary": request.summary,
+        "tableOfContents": request.tableOfContents,
+        "supplementaryContent": [i.label for i in request.supplementaryContent] if request.supplementaryContent else None,
+        "illustrativeContent": [i.label for i in request.illustrativeContent] if request.illustrativeContent else None,
+        "intendedAudience": [i.label for i in request.intendedAudience] if request.intendedAudience else None,
+        "geographicCoverage": [i.label for i in request.geographicCoverage] if request.geographicCoverage else None,
 
-    subjects = list()
-    for subject in request.subjects:
-        subjects.append(subject.label)
-    doc['subjects'] = subjects
+        }
+    
+    if request.contribution:
+        contributions = list()
+        for i in request.contribution:
+            c = { "id": f"{id}/contribution/{i.agent.split('/')[-1]}",
+                "type": [i.split('/')[-1] for i in i.type],
+                "agent": i.agent,
+                "label": i.label,
+                "role": i.role } 
+            contributions.append(c)
+        doc['contribution'] = contributions   
 
-    solr.add([doc], commit=True)
+    if request.subject:
+        pass
+    if request.genreForm:
+        pass
+
+    responseSolr =  solr.add([doc], commit=True)
+
+    return responseSolr 
+
+    
 
 def EditDocWork(request, work_id):
     doc = {"id": work_id}

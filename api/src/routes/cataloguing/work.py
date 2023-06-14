@@ -42,27 +42,25 @@ async def get_work(id: str) -> Work_Response:
 async def create_work(request: Work):
 
     response = GenerateId()
-    work_id = response['id']
+    id = response['id']
 
-
-    G = MakeGraphWork(request, work_id)
+    G = MakeGraphWork(request, id)
     # Jena
-    response = fuseki_update.run_sparql(G)
+    responseJena = fuseki_update.run_sparql(G)
     # Update Sujects
-    # SubjectOf(request.subject, 'work', work_id)
+    SubjectOf(request, 'work', id)
     
     # Update Contributions
-    # ContributionOf(request.contribution, 'work', work_id)
+    ContributionOf(request, 'work', id)
 
-    
-    
-    # # Solr
-    DocWork(request, work_id)
+    # Solr
+    responseSolr = DocWork(request, id)
 
     return {
-        #"id": work_id, 
-        "jena": response.convert() }
-    # return request.dict()
+        "id": id, 
+        "jena": responseJena.convert(),
+        #  "solr":  responseSolr
+         }
 
 # PUT
 @router.put("/work", status_code=200)

@@ -1,0 +1,98 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/instances/1893399> a bf:Instance,
+        bf:Print ;
+    rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/mh> ;
+            bf:changeDate "2008-05-09T11:03:06"^^xsd:dateTime ;
+            bf:creationDate "1983-12-01"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/aacr> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T20:33:57-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "1893399" ] ;
+            bf:status [ a bf:Status ;
+                    rdfs:label "corrected or revised" ;
+                    bf:code "c" ] ;
+            lclocal:d906 "=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-gencatlg" ] ;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc> ;
+    bf:copyrightDate "1965"^^<http://id.loc.gov/datatypes/edtf> ;
+    bf:dimensions "21 cm." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiii, 417 p." ] ;
+    bf:identifiedBy [ a bf:Lccn ;
+            rdf:value "   83672449 " ] ;
+    bf:instanceOf <http://id.loc.gov/resources/works/1893399> ;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    bf:provisionActivity [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:date "1968"^^<http://id.loc.gov/datatypes/edtf> ;
+            bf:place <http://id.loc.gov/vocabulary/countries/nyu> ],
+        [ a bf:ProvisionActivity,
+                bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Harper & Row" ] ;
+            bf:date "1968, c1965" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ] ;
+    bf:provisionActivityStatement "New York : Harper & Row, 1968, c1965." ;
+    bf:responsibilityStatement "by Karl R. Popper" ;
+    bf:seriesStatement "Harper torchbooks ; TB 1376" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations" ;
+            bf:subtitle "the growth of scientific knowledge" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/instances> .
+
+<http://id.loc.gov/resources/works/1893399> a bf:Work ;
+    rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994. Conjectures and refutations : the growth of scientific knowledge" ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Popper, Karl R. (Karl Raimund), 1902-1994." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
+            bf:mainTitle "Conjectures and refutations : the growth of scientific knowledge" ] .
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier ;
+    rdfs:label "volume" .
+
+<http://id.loc.gov/vocabulary/countries/nyu> a bf:Place ;
+    rdfs:label "New York (State)"@en .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/aacr> a bf:DescriptionConventions ;
+    rdfs:label "Anglo-American cataloguing rules" .
+
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance ;
+    rdfs:label "single unit" .
+
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media ;
+    rdfs:label "unmediated" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/organizations/mh> a bf:Organization ;
+    rdfs:label "Harvard University" .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization,
+        madsrdf:CorporateName ;
+    rdfs:label "United States, Library of Congress" .
+
