@@ -7,7 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/resources/instances/1893399> a bf:Instance,
+<http://id.loc.gov/resources/instances/1893399> a bf:Instance, 
         bf:Print ;
     rdfs:label "Conjectures and refutations : the growth of scientific knowledge" ;
     bf:adminMetadata [ a bf:AdminMetadata ;
@@ -41,6 +41,7 @@
                 bf:Publication ;
             bf:date "1968"^^<http://id.loc.gov/datatypes/edtf> ;
             bf:place <http://id.loc.gov/vocabulary/countries/nyu> ],
+
         [ a bf:ProvisionActivity,
                 bf:Publication ;
             bf:agent [ a bf:Agent ;
@@ -48,6 +49,7 @@
             bf:date "1968, c1965" ;
             bf:place [ a bf:Place ;
                     rdfs:label "New York" ] ] ;
+                    
     bf:provisionActivityStatement "New York : Harper & Row, 1968, c1965." ;
     bf:responsibilityStatement "by Karl R. Popper" ;
     bf:seriesStatement "Harper torchbooks ; TB 1376" ;

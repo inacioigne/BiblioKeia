@@ -5,9 +5,9 @@ from src.function.bibframe.bf_Uri import GetUriBF
 from src.function.bibframe.bf_Literal import GetLiteral
 from src.function.bibframe.bf_title import GetTitle
 from src.function.bibframe.bf_type import GetType
-# from src.function.bibframe.bf_content import GetContent
 
-def ParserWork(graph, uri):
+
+def ParserInstance(graph, uri):
     identifier = uri.split("/")[-1]
     types = GetType(graph, uri)
     title = GetTitle(graph, uri)

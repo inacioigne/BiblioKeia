@@ -5,3 +5,4 @@ class Title(BaseModel):
     type: str = Field(default="bf:Title")
     mainTitle: str
     subtitle: Optional[str]
+    label: Optional[str]

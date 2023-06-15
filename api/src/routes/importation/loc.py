@@ -6,8 +6,8 @@ from src.function.loc.agents.parserAgents import ParserAgents
 from src.function.loc.graphExist import GraphExist
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
-from src.schemas.metadata.bibframe.work import Work, Instance
-
+from src.schemas.metadata.bibframe.work import Work
+from src.schemas.metadata.bibframe.instance import Instance
 
 router = APIRouter()
 
@@ -22,7 +22,6 @@ async def get_subject(uri: str):
     graph.parse(f'{uri}.rdf')
 
     subject = ParserSubject(graph, uri)
-
 
     return subject.dict()
 
