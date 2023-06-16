@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from rdflib import Graph
+from src.function.loc.parserInstance import ParserInstance
 from src.function.loc.parserWork import ParserWork
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.parserAgents import ParserAgents
@@ -56,6 +57,6 @@ async def get_instances(uri: str):
     
     graph = Graph()
     graph.parse(f'{uri}.rdf')
-    response = ParserWork(graph, uri)
+    response = ParserInstance(graph, uri)
 
     return response

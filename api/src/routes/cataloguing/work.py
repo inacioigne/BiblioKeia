@@ -13,14 +13,13 @@ from src.function.cataloguing.queryWork import QueryWork
 from src.function.bibframe.Work.graphWork import MakeGraphWork
 
 from src.schemas.metadata.bibframe.work import Work
-
 from src.schemas.settings import Settings
 
 settings = Settings()
 
-router = APIRouter()
 fuseki_update = FusekiUpdate(f'{settings.url}:3030', 'collection')
 acervoQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
+router = APIRouter()
 
 # GET
 @router.get("/work", status_code=200)
@@ -39,7 +38,7 @@ async def get_work(id: str) -> Work_Response:
 
 # POST
 @router.post("/work", status_code=201)
-async def create_work(request: Work):
+async def create_work(request: Work): 
 
     response = GenerateId()
     id = response['id']
@@ -59,8 +58,7 @@ async def create_work(request: Work):
     return {
         "id": id, 
         "jena": responseJena.convert(),
-        #  "solr":  responseSolr
-         }
+        "solr":  responseSolr }
 
 # PUT
 @router.put("/work", status_code=200)

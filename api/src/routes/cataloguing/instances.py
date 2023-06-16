@@ -1,34 +1,44 @@
 from fastapi import APIRouter
-from src.schemas.bibframe.instance import Instance_Schema
-from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, RDFS
-from src.function.bibframe.Work.title import Title
-from src.function.bibframe.Work.workAdmin import WorkAdmin
-from src.function.bibframe.Instance.extent import Extent
-from src.function.bibframe.Instance.instance import BfInstance
+from src.function.bibframe.Work.hasInstance import HasInstance
+from src.function.bibframe.Instance.graphInstance import MakeGraphInstance
 from pyfuseki import FusekiUpdate
 from src.function.solr.docInstance import DocInstance
 from src.function.cataloguing.generate_id import GenerateId
+from src.schemas.metadata.bibframe.instance import Instance
 
+from src.schemas.settings import Settings
+
+settings = Settings()
+
+collectionUpdate = FusekiUpdate(f'{settings.url}:3030', 'collection')
 router = APIRouter()
-fuseki_update = FusekiUpdate('http://localhost:3030', 'acervo')
+
 
 @router.post("/instance", status_code=201)
-async def create_instance(request: Instance_Schema):
+async def create_instance(request: Instance):
 
-    instance_id = GenerateId()
-    instance_id = instance_id['id']
+    response = GenerateId()
+    id = response['id']
+    graph = MakeGraphInstance(request, id)
+    responseJena = collectionUpdate.run_sparql(graph)
+    for element in request.instanceOf:
+        HasInstance(element, id)
 
-    g = BfInstance(request, instance_id)
-    g.serialize("instance.nt") 
-    nt = g.serialize(format='nt')
+    return {
+        "id": id, 
+        "jena": responseJena.convert(),
+        # "solr":  responseSolr 
+        }
 
-    G = """
-    INSERT DATA {
-        GRAPH <https://bibliokeia.com/resources/instance/"""+instance_id+""">
-        { \n"""+nt+"} }" 
+    # g.serialize("instance.nt")  
+    # nt = g.serialize(format='nt')
+
+    # G = """
+    # INSERT DATA {
+    #     GRAPH <https://bibliokeia.com/resources/instance/"""+instance_id+""">
+    #     { \n"""+nt+"} }" 
     
-    response = fuseki_update.run_sparql(G)
-    DocInstance(request, instance_id)
+    # response = fuseki_update.run_sparql(G)
+    # DocInstance(request, instance_id)
 
-    return {"id": instance_id, "jena": response.convert() }
+    # return {"id": instance_id, "jena": response.convert() }

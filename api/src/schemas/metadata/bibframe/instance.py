@@ -1,26 +1,26 @@
 from pydantic import BaseModel
 from typing import Optional
+from src.schemas.metadata.bibframe.provisionActivity import ProvisionActivity
 from src.schemas.metadata.bibframe.adminMetadata import AdminMetadata
-from src.schemas.metadata.bibframe.classification import Classification
-# from src.schemas.metadata.bibframe.content import Content
-from src.schemas.metadata.bibframe.contribution import Contribution
 from src.schemas.metadata.bibframe.element import Element
 from src.schemas.metadata.bibframe.title import Title
+
+class Value(BaseModel):
+    label: str
+    type: str
 
 class Instance(BaseModel):
     adminMetadata: AdminMetadata
     type: list[str]
-    content: list[Element]
-    language: list[Element]
     title: Title
-    classification: Optional[Classification]
-    contribution: Optional[list[Contribution]]
-    subject: Optional[list[Element]]   
-    genreForm: Optional[list[Element]]
-    note: Optional[str]
-    summary: Optional[str]
-    tableOfContents: Optional[str]
-    supplementaryContent: Optional[list[Element]]
-    illustrativeContent: Optional[list[Element]]
-    intendedAudience: Optional[list[Element]]
-    geographicCoverage: Optional[list[Element]]
+    carrier: list[Element]
+    copyrightDate: Optional[str]
+    dimensions: Optional[str]
+    extent: Optional[Value]
+    instanceOf: list[Element]
+    issuance: Optional[list[Element]]
+    media: Optional[list[Element]]
+    provisionActivity: ProvisionActivity
+    provisionActivityStatement: Optional[str]
+    responsibilityStatement: Optional[str]
+    seriesStatement: Optional[str]

@@ -34,7 +34,7 @@
             rdfs:label "xiii, 417 p." ] ;
     bf:identifiedBy [ a bf:Lccn ;
             rdf:value "   83672449 " ] ;
-    bf:instanceOf <http://id.loc.gov/resources/works/1893399> ;
+    bf:instanceOf <http://id.loc.gov/resources/works/1893399> ; 
     bf:issuance <http://id.loc.gov/vocabulary/issuance/mono> ;
     bf:media <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     bf:provisionActivity [ a bf:ProvisionActivity,

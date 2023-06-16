@@ -11,10 +11,9 @@ solr = pysolr.Solr(f'{settings.url}:8983/solr/authorities/', timeout=10)
 def SubjectOf(request, collection, id):
 
     subjectOf = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-
-                    INSERT DATA
-                        {{ GRAPH <{subject}> {{ 
-                            <{subject}>  bf:subjectOf <https://bibliokeia.com/resources/{collection}/{id}> }} }} ; """
+                INSERT DATA
+                {{ GRAPH <{subject}> {{ 
+                    <{subject}>  bf:subjectOf <https://bibliokeia.com/resources/{collection}/{id}> }} }} ; """
  
     for subject in request.subject:
         # Jena
