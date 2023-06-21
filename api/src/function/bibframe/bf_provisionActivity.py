@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, Namespace, BNode, RDFS
+from rdflib import URIRef, Namespace, BNode, RDFS
 
 bf = Namespace("http://id.loc.gov/ontologies/bibframe/")
 
@@ -18,7 +18,7 @@ def GetProvisionActivity(graph, uri, obj):
                     for _, _, label in agent:
                         objPA['agent'] = label.value
             elif p == bf.date:
-                objPA['date'] = o.n3()
+                objPA['date'] = o.n3().split("^^")[0] #o.value #
             elif p == bf.place:
                 place = graph.triples((o, RDFS.label, None))
                 for _, _, label in place:

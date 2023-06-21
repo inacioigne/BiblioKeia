@@ -17,7 +17,7 @@ class Instance(BaseModel):
     copyrightDate: Optional[str]
     dimensions: Optional[str]
     extent: Optional[Value]
-    instanceOf: list[Element]
+    instanceOf: Element
     issuance: Optional[list[Element]]
     media: Optional[list[Element]]
     provisionActivity: ProvisionActivity

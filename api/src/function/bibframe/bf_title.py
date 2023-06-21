@@ -14,7 +14,7 @@ def GetTitle(graph, uri):
 
   title = {
     'mainTitle':mainTitle,
-    'subtitle': binding.get('subtitle').value,
+    'subtitle': binding.get('subtitle').value if binding.get('subtitle') else None,
     'label': binding.get('label').value,
   }
   

@@ -71,7 +71,10 @@ def ParserInstance(graph, uri):
     # extent
     obj = GetElement(graph, uri, "extent", obj)
     # instanceOf
-    obj = GetUriBF(graph, uri, 'instanceOf', obj)
+    instanceOf = GetUriBF(graph, uri, 'instanceOf', {})
+    instanceOf = instanceOf['instanceOf'][0]
+    obj['instanceOf'] = instanceOf
+
     # issuance
     obj = GetUriBF(graph, uri, 'issuance', obj)
     # media

@@ -40,7 +40,6 @@ async def get_agents(uri: str):
 
     return response.dict()
 
-
 # Works
 @router.get("/works", status_code=200, response_model=Work) 
 async def get_works(uri: str):

@@ -49,7 +49,7 @@ def MakeGraphInstance(request, id):
                 { MakeUri("copyrightDate", request.copyrightDate) if request.copyrightDate else "" }
                 { f'bf:dimensions "{request.dimensions}" ; ' if request.dimensions else ""  }
                 { MakeLiteral(request.extent) if request.extent else "" }
-                { MakeUri("instanceOf", request.instanceOf) if request.instanceOf else "" }
+                 bf:instanceOf <{request.instanceOf.uri}> ; 
         }} }}
         """
     return graph

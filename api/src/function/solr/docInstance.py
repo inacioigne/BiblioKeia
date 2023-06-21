@@ -3,27 +3,33 @@ import pysolr
 #SOLR
 solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
 
-def DocInstance(request, instance_id):
+def DocInstance(request, id):
+
+    workID = request.instanceOf.uri.split("/")[-1]
+    uri = f'https://bibliokeia.com/resources/instance/{id}'
 
     doc = {
-        "id": instance_id,
-        "instanceOf": request.instanceOf,
-        "bibrame": "instance",
-        "contentType": request.type,
-        "mainTitle": request.mainTitle,
-        "subtitle": request.subtitle,
-        "extent": request.extent,
-        "publication": request.publication,
-        "edition": request.edition,
-        "place": request.place,
-        "date": request.date,
-        "responsibility": request.responsibility,
-        "series": request.series
+        "id": id,
+        "type": request.type,
+        "mainTitle": request.title.mainTitle,
+        "subtitle": request.title.subtitle,
+        "carrier": [i.label for i in request.carrier],
+        "dimensions": request.dimensions,
+        "extent": request.extent.label if request.extent else None,
+        "issuance": [i.label for i in request.issuance],
+        "media": [i.label for i in request.media],
+        "provisionActivityAgent": request.provisionActivity.agent,
+        "provisionActivityDate": request.provisionActivity.date,
+        "provisionActivityPlace": request.provisionActivity.place,      
+        "serie": request.seriesStatement,
+        "instanceOf": {'id': f'{id}/instanceOf/{workID}', 'uri': request.instanceOf.uri, 'label': request.instanceOf.label} 
         }
     
     work = {
-        "id": request.instanceOf,
-         "hasInstance": {"add": [instance_id]}
+        "id": workID,
+         "hasInstance": {"add": {'id': f'{workID}/hasInstance/{id}', 'uri': uri, 'label': request.title.mainTitle} }
     }
+    print("hasInstance", work)
 
-    solr.add([doc, work], commit=True)
+    response = solr.add([doc, work], commit=True)
+    return response
