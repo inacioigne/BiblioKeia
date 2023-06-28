@@ -3,11 +3,9 @@ from src.schemas.cataloguing.edit import BfEdit
 from src.function.bibframe.Work.contributionOf import ContributionOf
 from src.function.bibframe.Work.subjectOf import SubjectOf
 from src.schemas.bibframe._work import Work_Response
-# from rdflib import Graph, Namespace, URIRef
 from src.function.cataloguing.generate_id import GenerateId
-# from src.function.bibframe.Work.work import BfWork
 from pyfuseki import FusekiUpdate, FusekiQuery
-from src.function.solr.docWork import DocWork, EditDocWork
+from src.function.solr.docWork import DocWork #, EditDocWork
 from src.function.bibframe.Work.editWork import EditWork
 from src.function.cataloguing.queryWork import QueryWork
 from src.function.bibframe.Work.graphWork import MakeGraphWork

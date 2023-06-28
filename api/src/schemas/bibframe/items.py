@@ -1,30 +1,14 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import List
+from src.schemas.metadata.bibframe.adminMetadata import AdminMetadata
+from src.schemas.metadata.bibframe.element import Element
 
 class Item(BaseModel):
-    library: str
+    adminMetadata: AdminMetadata
     call: str
     shelf: str
-    item: str
+    barcode: str
 
 class Items_Schema(BaseModel):
-  itemOf: str
+  itemOf: Element
   items: List[Item]
-
-
-
-
-[
-    {
-        "library": "Biblioteca do INPA",
-        "call": "542.6 F452a",
-        "shelf": "E1.P1",
-        "register": "bk-23-7"
-    },
-    {
-        "library": "Biblioteca do INPA",
-        "call": "542.6 F452a",
-        "shelf": "E1.P1",
-        "register": "bk-23-8"
-    }
-]

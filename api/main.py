@@ -44,7 +44,7 @@ app.include_router(generateId.router, prefix='/items', tags=['Cataloguing'])
 app.include_router(hub.router, prefix='/cataloguing', tags=['Cataloguing'])
 app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work'])
 app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing Instance'])
-app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing'])
+app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing Items'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 
 # Importation

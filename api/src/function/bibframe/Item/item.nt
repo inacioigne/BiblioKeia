@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
 <http://id.loc.gov/resources/items/748300-050-10> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/1> ;
