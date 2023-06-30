@@ -77,7 +77,7 @@ def MakeUri(metadada, elements):
        
        
 
-def MakeGraphWork(request, id):
+def MakeGraphWork(request, id): 
     graph = f"""{prefix}    
     INSERT DATA {{
         GRAPH bkw:{id}
@@ -90,8 +90,8 @@ def MakeGraphWork(request, id):
                 bf:descriptionConventions <{request.adminMetadata.descriptionConventions}> ;
                 bf:descriptionLanguage <{request.adminMetadata.descriptionLanguage}> ;
                  bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "{request.adminMetadata.generationProcess.label}" ;
-                    bf:generationDate "{request.adminMetadata.generationProcess.generationDate}"^^xsd:dateTime ] ;
+                    rdfs:label "{request.adminMetadata.generationProcess}" ;
+                    bf:generationDate "{request.adminMetadata.generationDate}"^^xsd:dateTime ] ;
                 bf:identifiedBy [ a bf:Local ;
                     bf:assigner <{request.adminMetadata.assigner}> ;
                     rdf:value "{id}" ] ;

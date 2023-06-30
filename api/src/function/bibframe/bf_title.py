@@ -4,10 +4,12 @@ def GetTitle(graph, uri):
             SELECT ?mainTitle ?subtitle ?label
             WHERE {{ 
                 <{uri}> bf:title ?title .
-                 ?title rdfs:label ?label .
+              
   ?title bf:mainTitle ?mainTitle .
   OPTIONAL {{ ?title bf:subtitle ?subtitle }}
-                  }}"""
+                  }}""" 
+  
+    #  ?title rdfs:label ?label .
   response = graph.query(q)
   [binding] = response.bindings
   mainTitle = binding.get('mainTitle').value
@@ -15,7 +17,7 @@ def GetTitle(graph, uri):
   title = {
     'mainTitle':mainTitle,
     'subtitle': binding.get('subtitle').value if binding.get('subtitle') else None,
-    'label': binding.get('label').value,
+    # 'label': binding.get('label').value,
   }
   
   return title

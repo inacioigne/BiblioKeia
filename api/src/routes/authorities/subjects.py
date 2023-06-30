@@ -10,9 +10,8 @@ from src.function.authorities.subject.uri import DeleteUri, UpdatePostUri, Updat
 from src.function.authorities.upadeteAuthority import UpadeteAuthority
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId
-from src.function.solr.docSubject import MakeDocSubject, DeleteDoc
+from src.function.solr.docSubject import MakeDocSubject #, DeleteDoc
 from src.schemas.authorities.subject import Subject
-# Value, VariantEdit, VariantPost, UriDelete
 
 from src.schemas.settings import Settings
 

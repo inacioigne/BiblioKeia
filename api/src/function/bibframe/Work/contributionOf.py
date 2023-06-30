@@ -31,4 +31,4 @@ def ContributionOf(request, collection, id):
             'uri': f'https://bibliokeia.com/resources/{collection}/{id}'
         } }} 
         responseSolr =  solr.add([doc], commit=True)
-        print("UP SOLR:", responseSolr)
+        # print("UP SOLR:", responseSolr)

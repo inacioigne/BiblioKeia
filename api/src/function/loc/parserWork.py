@@ -13,9 +13,6 @@ def ParserWork(graph, uri):
 
     obj = {
     'adminMetadata': {
-        'generationProcess': {
-            'label': 'BiblioKeia'
-        },
         'identifiedBy': [ 
             {
                 "type": "Local",

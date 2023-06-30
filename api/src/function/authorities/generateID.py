@@ -1,4 +1,4 @@
-from datetime import datetime
+# from datetime import datetime
 from pyfuseki import FusekiQuery
 from src.schemas.settings import Settings
 
@@ -19,8 +19,8 @@ def GenerateId():
     bindings = r['results']['bindings']
 
     if len(bindings) == 0:
-        return "bkau-1"
+        return "bka-1"
     else:
         value = bindings[0]['g']['value']
         bk = int(value.split("-")[1]) + 1
-        return "bkau-"+str(bk)
+        return "bka-"+str(bk)

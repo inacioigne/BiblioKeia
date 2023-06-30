@@ -16,7 +16,7 @@ def DocWork(request, id):
         "mainTitle": request.title.mainTitle,
         'language': [i.label for i in request.language],
         "subtitle": request.title.subtitle,
-        "cdd": request.classification,
+        "cdd": request.classification.classificationPortion,
         "note": request.note,
         "summary": request.summary,
         "tableOfContents": request.tableOfContents,
@@ -26,7 +26,7 @@ def DocWork(request, id):
         "geographicCoverage": [i.label for i in request.geographicCoverage] if request.geographicCoverage else None,
 
         }
-    
+    # contribution
     if request.contribution:
         contributions = list()
         for i in request.contribution:
@@ -37,9 +37,18 @@ def DocWork(request, id):
                 "role": i.role } 
             contributions.append(c)
         doc['contribution'] = contributions   
-
+        
+    # subject
     if request.subject:
-        pass
+        subjects = list()
+        for i in request.subject:
+            s = { "id": f"{id}/subject/{i.uri.split('/')[-1]}",
+                    "type": [i.split('/')[-1] for i in i.type],
+                    "uri": i.uri,
+                    "label": i.label} 
+            subjects.append(s)
+        doc['subject'] = subjects
+
     if request.genreForm:
         pass
 
