@@ -3,7 +3,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from src.routes.users import login
 from src.routes.users import users
-from src.routes.cataloguing import images, generateId, work, instances, items, hub
+from src.routes.cataloguing import images, generateId, work, instances, items, hub, general
 from src.routes.translate import translate
 from src.routes.authorities import authority, subjects, agents
 from src.routes.importation import loc
@@ -40,11 +40,6 @@ app.add_middleware(
 app.include_router(login.router, tags=['Login'])
 app.include_router(users.router, prefix='/user', tags=['Users'])
 app.include_router(images.router, prefix='/items', tags=['Images'])
-app.include_router(generateId.router, prefix='/items', tags=['Cataloguing'])
-app.include_router(hub.router, prefix='/cataloguing', tags=['Cataloguing'])
-app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work'])
-app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing Instance'])
-app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing Items'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 
 # Importation
@@ -56,7 +51,13 @@ app.include_router(agents.router, prefix='/authorities', tags=['Authorities'])
 app.include_router(authority.router, prefix='/authorities', tags=['Authorities'])
 
 
-# Catalog
+# Cataloguing
+app.include_router(general.router, prefix='/cataloguing', tags=['Cataloguing'])
+app.include_router(generateId.router, prefix='/items', tags=['Cataloguing'])
+app.include_router(hub.router, prefix='/cataloguing', tags=['Cataloguing'])
+app.include_router(work.router, prefix='/cataloguing', tags=['Cataloguing Work'])
+app.include_router(instances.router, prefix='/cataloguing', tags=['Cataloguing Instance'])
+app.include_router(items.router, prefix='/cataloguing', tags=['Cataloguing Items'])
 
 
 

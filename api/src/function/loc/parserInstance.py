@@ -42,18 +42,15 @@ def GetElement(graph, uri, bf, obj):
     return obj
 
 def ParserInstance(graph, uri):
-    identifier = uri.split("/")[-1]
+    identifier = uri.split("/")[-1] 
     types = GetType(graph, uri)
     title = GetTitle(graph, uri)
 
     obj = {
     'adminMetadata': {
-        'generationProcess': {
-            'label': 'BiblioKeia'
-        },
         'identifiedBy': [ 
             {
-                "type": "Local",
+            "type": "Local",
             "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
             "value": identifier
             }

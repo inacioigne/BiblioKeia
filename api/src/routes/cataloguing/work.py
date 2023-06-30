@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+from src.function.cataloguing.work.deleteWork import DeleteWork
 from src.schemas.cataloguing.edit import BfEdit
 from src.function.bibframe.Work.contributionOf import ContributionOf
 from src.function.bibframe.Work.subjectOf import SubjectOf
@@ -16,7 +17,7 @@ from src.schemas.settings import Settings
 settings = Settings()
 
 fuseki_update = FusekiUpdate(f'{settings.url}:3030', 'collection')
-acervoQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
+collectionQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
 router = APIRouter()
 
 # GET
@@ -73,11 +74,27 @@ async def delete_work(id: str):
 
     uri = f'https://bibliokeia.com/resources/work/{id}'
 
-    sparql = f"""DELETE {{ graph <{uri}> 
-        {{ ?s ?p ?o }} }} 
-        WHERE {{
-        graph ?g {{ ?s ?p ?o. }}
-        }}"""
-    response = fuseki_update.run_sparql(sparql)
+    ask = f"""PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+                ASK {{ graph <{uri}>
+                {{ <{uri}> bf:hasInstance ?o }} }}"""
+
+    response = collectionQuery.run_sparql(ask)
+    response = response.convert()
+    if response['boolean']:
+        raise HTTPException(status_code=409, detail="Não é possível excluir um recurso com instâncias associadas a ele")
+    else:
+        response = DeleteWork(id)
+
+
+
+    # sparql = f"""DELETE {{ graph <{uri}> 
+    #     {{ ?s ?p ?o }} }} 
+    #     WHERE {{
+    #     graph ?g {{ ?s ?p ?o. }}
+    #     }}"""
+    # response = fuseki_update.run_sparql(sparql)
+
+    # Instance Update
+    instanceUpdate = " bf:instanceOf     <https://bibliokeia.com/resources/work/bkc-1> ;"
 
     return response.convert()

@@ -1,12 +1,10 @@
 from fastapi import APIRouter, HTTPException
-# import httpx
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
-from src.function.solr.docSubject import UpdateDelete
-# from src.function.authorities.subject.uri import PostUriSol
-from src.function.authorities.subject.editElementValue import EditElementValue
-from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant, VariantSolr
-from src.function.authorities.subject.uri import DeleteUri, UpdatePostUri, UpdateDeleteUri
+# from src.function.solr.docSubject import UpdateDelete
+# from src.function.authorities.subject.editElementValue import EditElementValue
+# from src.function.authorities.subject.variant import EditVariant, DeleteVariant, PostVariant, VariantSolr
+# from src.function.authorities.subject.uri import DeleteUri, UpdatePostUri, UpdateDeleteUri
 from src.function.authorities.upadeteAuthority import UpadeteAuthority
 from src.function.authorities.makeGraph import MakeGraphSubject
 from src.function.authorities.generateID import GenerateId

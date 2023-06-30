@@ -1,0 +1,54 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<bf:Item xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://id.loc.gov/resources/items/b24df14e-b5a4-4361-93b4-5dee163b46e8-0001">
+    <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:shelfMark>
+     <bf:ShelfMarkLcc>
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">542.6</rdfs:label>
+     </bf:ShelfMarkLcc>
+    </bf:shelfMark>
+    <bf:sublocation>
+     <bf:Sublocation>
+      <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">E1-P1</rdfs:label>
+     </bf:Sublocation>
+    </bf:sublocation>
+    <bf:identifiedBy>
+     <bf:Barcode>
+      <rdf:value>23-0001</rdf:value>
+     </bf:Barcode>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+     <bf:AdminMetadata>
+      <bflc:catalogerId xmlns:bflc="http://id.loc.gov/ontologies/bflc/">1</bflc:catalogerId>
+      <bf:assigner>
+       <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC</rdfs:label>
+       </bf:Agent>
+      </bf:assigner>
+      <bf:descriptionAuthentication>
+       <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">pcc</rdfs:label>
+       </bf:DescriptionAuthentication>
+      </bf:descriptionAuthentication>
+      <bf:descriptionConventions>
+       <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">rda</rdfs:label>
+       </bf:DescriptionConventions>
+      </bf:descriptionConventions>
+      <bf:descriptionLanguage>
+       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">English</rdfs:label>
+       </bf:Language>
+      </bf:descriptionLanguage>
+      <bf:descriptionModifier>
+       <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+        <rdfs:label xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">DLC</rdfs:label>
+       </bf:Agent>
+      </bf:descriptionModifier>
+      <bflc:profile xmlns:bflc="http://id.loc.gov/ontologies/bflc/">lc:RT:bf2:Monograph:Item-1</bflc:profile>
+      <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T18:08:14Z</bf:changeDate>
+      <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T18:08:14Z</bf:creationDate>
+     </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:itemOf rdf:resource="http://id.loc.gov/resources/instances/b24df14e-b5a4-4361-93b4-5dee163b46e8"/>
+   </bf:Item>
+</rdf:RDF>

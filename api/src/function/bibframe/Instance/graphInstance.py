@@ -29,6 +29,7 @@ def MakeGraphInstance(request, id):
         GRAPH bki:{id}
         {{
                 bki:{id} a { ", ".join([f'bf:{i}' for i in request.type]) }  ;
+
                 bf:adminMetadata [ a bf:AdminMetadata ;
                 bflc:encodingLevel {request.adminMetadata.encodingLevel} ;
                 bf:assigner <{request.adminMetadata.assigner}> ;    
@@ -36,11 +37,12 @@ def MakeGraphInstance(request, id):
                 bf:descriptionConventions <{request.adminMetadata.descriptionConventions}> ;
                 bf:descriptionLanguage <{request.adminMetadata.descriptionLanguage}> ;
                  bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "{request.adminMetadata.generationProcess.label}" ;
-                    bf:generationDate "{request.adminMetadata.generationProcess.generationDate}"^^xsd:dateTime ] ;
+                    rdfs:label "{request.adminMetadata.generationProcess}" ;
+                    bf:generationDate "{request.adminMetadata.generationDate}"^^xsd:dateTime ] ;
                 bf:identifiedBy [ a bf:Local ;
                     bf:assigner <{request.adminMetadata.assigner}> ;
                     rdf:value "{id}" ] ;
+
                 bf:status {request.adminMetadata.status.value} ] ;            
                 bf:title [ a bf:Title ;
                 bf:mainTitle "{request.title.mainTitle}" 
@@ -52,4 +54,4 @@ def MakeGraphInstance(request, id):
                  bf:instanceOf <{request.instanceOf.uri}> ; 
         }} }}
         """
-    return graph
+    return graph  

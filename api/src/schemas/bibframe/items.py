@@ -5,7 +5,9 @@ from src.schemas.metadata.bibframe.element import Element
 
 class Item(BaseModel):
     adminMetadata: AdminMetadata
-    call: str
+    cdd: str
+    cutter: str
+    year: str
     shelf: str
     barcode: str
 
