@@ -1,14 +1,5 @@
-from pydantic import BaseSettings
-# from pydantic import (
-#     BaseModel,
-#     BaseSettings,
-#     PyObject,
-#     RedisDsn,
-#     PostgresDsn,
-#     AmqpDsn,
-#     Field,
-
-# )
+#from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     app_name: str = "BiblioKeia"

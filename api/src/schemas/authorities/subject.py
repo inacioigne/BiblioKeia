@@ -1,7 +1,7 @@
 from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
-from datetime import datetime
-from src.schemas.authorities.mads import Authority
+# from datetime import datetime
+# from src.schemas.authorities.mads import Authority
 from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Element
 
 
