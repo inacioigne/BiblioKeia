@@ -16,17 +16,17 @@ class Agents(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 
     elementList: list[Element]
-    fullerName: Optional[Element]
-    birthDate: Optional[str]
-    birthPlace: Optional[str]
-    deathDate: Optional[str]
-    hasAffiliation: Optional[list[Affiliation]]
-    occupation: Optional[list[Uri]]
-    fieldOfActivity: Optional[list[Uri]]
-    hasCloseExternalAuthority: Optional[list[Uri]]
-    hasExactExternalAuthority: Optional[list[Uri]]
-    hasVariant: Optional[list[Variant]]
-    subjectOf: Optional[list[Uri]]
-    contributorOf: Optional[list[Uri]]
+    fullerName: Optional[Element] = None
+    birthDate: Optional[str] = None
+    birthPlace: Optional[str] = None
+    deathDate: Optional[str] = None
+    hasAffiliation: Optional[list[Affiliation]] = None
+    occupation: Optional[list[Uri]] = None
+    fieldOfActivity: Optional[list[Uri]] = None
+    hasCloseExternalAuthority: Optional[list[Uri]] = None
+    hasExactExternalAuthority: Optional[list[Uri]] = None
+    hasVariant: Optional[list[Variant]] = None
+    subjectOf: Optional[list[Uri]] = None
+    contributorOf: Optional[list[Uri]] = None
     isMemberOfMADSCollection: str
 

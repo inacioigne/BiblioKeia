@@ -20,11 +20,11 @@ async def get_subject(uri: str):
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
     graph = Graph()
-    graph.parse(f'{uri}.rdf')
+    graph.parse(f'{uri}.rdf') 
 
     subject = ParserSubject(graph, uri)
 
-    return subject.dict()
+    return subject.model_dump()
 
 # LC Name Authority File (LCNAF)
 @router.get("/agents", status_code=200, response_model=Agents) 

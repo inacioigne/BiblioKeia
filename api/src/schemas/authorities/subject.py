@@ -1,7 +1,5 @@
 from pydantic import BaseModel, validator, Field
-from typing import Optional, Union
-# from datetime import datetime
-# from src.schemas.authorities.mads import Authority
+from typing import Optional
 from src.schemas.authorities.authority import Uri, Variant, AdminMetadata, Element
 
 
@@ -32,15 +30,15 @@ class Subject(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 
     elementList: list[Element]
-    note: Optional[str]
-    hasReciprocalAuthority: Optional[list[Uri]]
-    hasReciprocalExternalAuthority: Optional[list[Uri]]
-    hasBroaderAuthority: Optional[list[Uri]]
-    hasBroaderExternalAuthority: Optional[list[Uri]]
-    hasNarrowerAuthority: Optional[list[Uri]]
-    hasNarrowerExternalAuthority: Optional[list[Uri]]
-    hasCloseExternalAuthority: Optional[list[Uri]]
-    hasExactExternalAuthority: Optional[list[Uri]]
-    hasVariant: Optional[list[Variant]]
-    subjectOf: Optional[list[Uri]]
+    note: Optional[str] = None
+    hasReciprocalAuthority: Optional[list[Uri]] = None
+    hasReciprocalExternalAuthority: Optional[list[Uri]] = None
+    hasBroaderAuthority: Optional[list[Uri]] = None
+    hasBroaderExternalAuthority: Optional[list[Uri]] = None
+    hasNarrowerAuthority: Optional[list[Uri]] = None
+    hasNarrowerExternalAuthority: Optional[list[Uri]] = None
+    hasCloseExternalAuthority: Optional[list[Uri]] = None
+    hasExactExternalAuthority: Optional[list[Uri]] = None
+    hasVariant: Optional[list[Variant]] = None
+    subjectOf: Optional[list[Uri]] = None
     isMemberOfMADSCollection: str

@@ -27,7 +27,7 @@ async def post_subject(request: Subject):
     graph = MakeGraphSubject(request, id)
     response = authorityUpdate.run_sparql(graph)
 
-    doc = MakeDocSubject(request, id)
+    doc = MakeDocSubject(request, id) 
     responseSolr = solr.add([doc], commit=True)
 
     UpadeteAuthority(request, id)
