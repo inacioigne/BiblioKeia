@@ -14,13 +14,13 @@ class Instance(BaseModel):
     type: list[str]
     title: Title
     carrier: list[Element]
-    copyrightDate: Optional[str]
-    dimensions: Optional[str]
-    extent: Optional[Value]
+    copyrightDate: Optional[str] = None
+    dimensions: Optional[str] = None
+    extent: Optional[Value] = None
     instanceOf: Element
-    issuance: Optional[list[Element]]
-    media: Optional[list[Element]]
+    issuance: Optional[list[Element]] = None
+    media: Optional[list[Element]] = None
     provisionActivity: ProvisionActivity
-    provisionActivityStatement: Optional[str]
-    responsibilityStatement: Optional[str]
-    seriesStatement: Optional[str]
+    provisionActivityStatement: Optional[str] = None
+    responsibilityStatement: Optional[str] = None
+    seriesStatement: Optional[str] = None

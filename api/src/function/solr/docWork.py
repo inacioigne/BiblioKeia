@@ -1,7 +1,7 @@
 import pysolr  
 
 #SOLR
-solr = pysolr.Solr('http://localhost:8983/solr/acervo/', timeout=10)
+solr = pysolr.Solr('http://localhost:8983/solr/collection/', timeout=10)
 
 def PostSolr(request, id):
     pass

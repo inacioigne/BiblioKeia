@@ -52,7 +52,7 @@ async def create_work(request: Work):
     ContributionOf(request, 'work', id)
 
     # Solr
-    responseSolr = DocWork(request, id)
+    responseSolr = DocWork(request, id) 
 
     return {
         "id": id, 

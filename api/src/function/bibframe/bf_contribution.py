@@ -1,10 +1,9 @@
 from src.schemas.settings import Settings
-from pyfuseki import FusekiUpdate, FusekiQuery
+from pyfuseki import FusekiUpdate
 
 settings = Settings()
 
 collectionUpdate = FusekiUpdate(f'{settings.url}:3030', 'collection')
-# collectionQuery = FusekiQuery(f'{settings.url}:3030', 'collection')
 
 def GetContribution(graph, uri, obj):
     

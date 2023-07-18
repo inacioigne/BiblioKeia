@@ -1,4 +1,3 @@
-
 from src.function.loc.agents.fieldOfActivity import GetFieldOfActivity
 from src.schemas.authorities.agents import Agents
 from src.function.loc.agents.Occuption import GetOccuption
@@ -12,9 +11,9 @@ from src.function.loc.agents.ElementList import GetElementList
 from src.function.loc.getType import GetType
 
 
-def ParserAgents(graph, authority):
+def ParserAgents(graph, uri):
     # Type
-    tipo = GetType(graph, authority)
+    tipo = GetType(graph, uri)
 
     # adminMetadata
     adminMetadata = {
@@ -22,7 +21,7 @@ def ParserAgents(graph, authority):
       "identifiedBy": [ {
          "type": "Lccn",
           "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
-          "value": authority.split('/')[-1]        
+          "value": uri.split('/')[-1]        
       }]}
     
     obj = {
@@ -31,22 +30,22 @@ def ParserAgents(graph, authority):
       "isMemberOfMADSCollection": f'http://bibliokeia.com/authorities/{tipo}/'}
     
     # ElementList
-    obj = GetElementList(graph, authority, obj) 
+    obj = GetElementList(graph, uri, obj) 
     
     # fullerName
-    obj = GetFullerName(graph, authority, obj)
+    obj = GetFullerName(graph, uri, obj)
 
-    # hasCloseExternalAuthority
-    obj = GetUri(authority, graph, "hasCloseExternalAuthority", obj)
+    # hasCloseExternaluri
+    obj = GetUri(uri, graph, "hasCloseExternalAuthority", obj)
 
     # hasExactExternalAuthority
-    obj = GetUri(authority, graph, "hasExactExternalAuthority", obj)
+    obj = GetUri(uri, graph, "hasExactExternalAuthority", obj)
 
     # Variant
-    obj = GetVariant(authority, graph, obj)
+    obj = GetVariant(uri, graph, obj)
 
     # RWO
-    token = authority.split("/")[-1]
+    token = uri.split("/")[-1]
     rwo = f'http://id.loc.gov/rwo/agents/{token}'
     # BirthDate
     obj = GetDate(rwo, 'birthDate', graph, obj)

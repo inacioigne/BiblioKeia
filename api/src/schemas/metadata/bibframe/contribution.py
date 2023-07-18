@@ -280,18 +280,13 @@ class Contribution(BaseModel):
     label: str
     role: str
 
-    _type = ["bf:Contribution", 'http://id.loc.gov/ontologies/bflc/PrimaryContribution' ]
-    # _role = relators
+    # _type = ["bf:Contribution", 'http://id.loc.gov/ontologies/bflc/PrimaryContribution' ] 
 
-    @validator('type')
-    def type_accepted(cls, v):
-        for i in v:
-            if i not in cls._type:
-                raise ValueError(f"the type code must be one of the following : {', '.join(cls._type)}")
-        return v
-    
-    # @validator('role')
-    # def role_accepted(cls, v):
-    #     if v not in cls._role:
-    #         raise ValueError(f"the role is not permited")
+
+    # @validator('type')
+    # def type_accepted(cls, v):
+    #     for i in v:
+    #         if i not in cls._type:
+    #             raise ValueError(f"the type code must be one of the following : {', '.join(cls._type)}")
     #     return v
+    

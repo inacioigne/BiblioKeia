@@ -6,7 +6,7 @@ settings = Settings()
 
 authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
 #SOLR
-solr = pysolr.Solr(f'{settings.url}:8983/solr/authorities/', timeout=10)
+solr = pysolr.Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
 def SubjectOf(request, collection, id):
 

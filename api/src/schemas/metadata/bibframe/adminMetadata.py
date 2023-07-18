@@ -9,15 +9,13 @@ from datetime import datetime, date
 class AdminMetadata(BaseModel):
     encodingLevel: str = Field(default="menclvl:f")
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
-    # creationDate: Optional[str]
     creationDate: date = Field(default=date.today())
     descriptionConventions: str = Field(default="http://id.loc.gov/vocabulary/descriptionConventions/isbd")
     descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
-    # generationProcess: Optional[GenerationProcess]
     generationProcess: str = Field(default="BiblioKeia v.1")
     generationDate: datetime = Field(default=datetime.now())
-    identifiedBy: list[IdentifiedBy]
+    # identifiedBy: list[IdentifiedBy] 
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
     # @validator('creationDate', pre=True, always=True)

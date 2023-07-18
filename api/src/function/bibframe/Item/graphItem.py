@@ -21,7 +21,7 @@ def MakeGraphItems(item, itemOf, id):
                     rdfs:label "{item.adminMetadata.generationProcess}" ;
                     bf:generationDate "{item.adminMetadata.generationDate}"^^xsd:dateTime ] ;
             bf:identifiedBy [ a bf:Local ;
-                    bf:assigner <{item.adminMetadata.assigner}> ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
                     rdf:value "{id}" ] ;
             bf:status {item.adminMetadata.status.value} ] ;   
         bf:heldBy <{item.adminMetadata.assigner}> ;

@@ -1,5 +1,3 @@
-# from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
-# from datetime import datetime
 from pyfuseki import FusekiQuery
 
 from src.schemas.settings import Settings

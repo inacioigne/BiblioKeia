@@ -14,7 +14,7 @@ from src.schemas.settings import Settings
 settings = Settings()
 
 collectionUpdate = FusekiUpdate(f'{settings.url}:3030', 'collection')
-solrAcervo = Solr(f'{settings.url}:8983/solr/acervo/', timeout=10)
+solrAcervo = Solr(f'{settings.url}:8983/solr/collection/', timeout=10)
 router = APIRouter()
 
 @router.post("/instance", status_code=201)
@@ -24,8 +24,7 @@ async def create_instance(request: Instance):
     id = response['id']
     graph = MakeGraphInstance(request, id)
     responseJena = collectionUpdate.run_sparql(graph)
-    # for element in request.instanceOf:
-    #     HasInstance(element, id)
+
     HasInstance(request.instanceOf, id)
 
     responseSolr = DocInstance(request, id)

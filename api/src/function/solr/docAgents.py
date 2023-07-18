@@ -19,9 +19,14 @@ def GetImagem(uri):
     if response.get('error'):
         return False
     else:
-        file = response['entities'][id]['claims']['P18'][0]['mainsnak']['datavalue']['value']
-        imagem = f'http://commons.wikimedia.org/wiki/Special:FilePath/{file}'
-        return imagem
+        # file = response['entities'][id]['claims']['P18'][0]['mainsnak']['datavalue']['value']
+        file = response['entities'][id]['claims'].get('P18')
+        if file:
+            img = file[0]['mainsnak']['datavalue']['value']
+            imagem = f'http://commons.wikimedia.org/wiki/Special:FilePath/{img}'
+            return imagem
+        else:
+            return False
     
 def MakeDocAgents(request, id):
 

@@ -2,14 +2,9 @@ from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
 from datetime import datetime, date
 
-# class Element(BaseModel):
-#     elementType: str
-#     value: str
-#     lang: Optional[str]
-
 class Label(BaseModel):
     value: str
-    lang: Optional[str]
+    lang: Optional[str] = None
 
 class Element(BaseModel):
     type: str

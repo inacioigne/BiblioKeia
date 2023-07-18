@@ -11,7 +11,7 @@ from pysolr import Solr
 settings = Settings()
 
 collection = FusekiUpdate(f'{settings.url}:3030', 'collection')
-solrAcervo = Solr(f'{settings.url}:8983/solr/acervo/', timeout=10)
+solrAcervo = Solr(f'{settings.url}:8983/solr/collection/', timeout=10)
 
 router = APIRouter()
 

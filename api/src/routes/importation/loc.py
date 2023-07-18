@@ -35,10 +35,10 @@ async def get_agents(uri: str):
         raise HTTPException(status_code=409, detail="Esse registro já existe")
 
     graph = Graph()
-    graph.parse(f'{uri}.rdf')
+    graph.parse(f'{uri}.rdf') 
     response = ParserAgents(graph, uri)
 
-    return response.dict()
+    return response.model_dump()
 
 # Works
 @router.get("/works", status_code=200, response_model=Work) 
@@ -46,7 +46,7 @@ async def get_works(uri: str):
     
     graph = Graph()
     graph.parse(f'{uri}.rdf')
-    response = ParserWork(graph, uri)
+    response = ParserWork(graph, uri) 
 
     return response
 

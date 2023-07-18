@@ -1,11 +1,11 @@
 from fastapi import APIRouter
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
-from src.function.authorities.upadeteAuthority import UpadeteAuthority
-from src.function.authorities.agents.hasVariant import DeleteVariant
-from src.schemas.authorities.mads import Variant
-from src.function.authorities.agents.hasVariant import EditVariant
-from src.schemas.authorities.mads import VariantEdit
+# from src.function.authorities.upadeteAuthority import UpadeteAuthority
+# from src.function.authorities.agents.hasVariant import DeleteVariant
+# from src.schemas.authorities.mads import Variant
+# from src.function.authorities.agents.hasVariant import EditVariant
+# from src.schemas.authorities.mads import VariantEdit
 from src.function.solr.docAgents import MakeDocAgents
 from src.function.authorities.agents.makeGraph import MakeGraphAgents
 from src.function.authorities.generateID import GenerateId
@@ -18,7 +18,7 @@ settings = Settings()
 router = APIRouter()
 authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
 
-solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
 # Add Autority
 @router.post("/agents/", status_code=201) 
