@@ -1,8 +1,7 @@
-from pydantic import BaseModel, Field, validator
-from typing import Optional
+from pydantic import BaseModel, Field, field_validator
+# from typing import Optional
 from datetime import date
-# from .generationProcess import GenerationProcess
-from .identifiedBy import IdentifiedBy
+# from .identifiedBy import IdentifiedBy
 from .status import Status
 from datetime import datetime, date
 
@@ -18,8 +17,6 @@ class AdminMetadata(BaseModel):
     # identifiedBy: list[IdentifiedBy] 
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
-    # @validator('creationDate', pre=True, always=True)
-    # def set_date_today(cls, v):
-    #     today = date.today().strftime("%Y-%m-%d")
-        
-    #     return today
+    # @field_validator('generationDate')
+    # def val_x(cls, v: datetime) -> datetime:
+    #     return datetime.now()

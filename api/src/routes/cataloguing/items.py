@@ -7,6 +7,7 @@ from src.function.solr.docItem import DocItem
 from src.function.cataloguing.generate_id import GenerateId
 from src.schemas.settings import Settings
 from pysolr import Solr
+from datetime import datetime
 
 settings = Settings()
 
@@ -19,6 +20,7 @@ router = APIRouter()
 async def create_items(request: Items_Schema):
 
     for item in request.items: 
+        item.adminMetadata.generationDate = datetime.now()
         response = GenerateId()
         id = response['id']
         graph = MakeGraphItems(item, request.itemOf, id)
@@ -27,6 +29,23 @@ async def create_items(request: Items_Schema):
         responseInstance = collection.run_sparql(upInstance)
         DocItem(item, request.itemOf, id)
 
-
     return {'Item': responseItem.convert(),
             'Instance': responseInstance.convert()} 
+
+@router.delete("/items", status_code=200)
+async def create_items(id: str):
+    item = f'https://bibliokeia.com/resources/item/{id}'
+
+    deleteItem = f"""DELETE {{ graph <{item}> 
+        {{ ?s ?p ?o }} }} 
+        WHERE {{
+        graph ?g {{ ?s ?p ?o. }}
+        }}"""
+    responseDelete = collection.run_sparql(deleteItem)
+
+    # Solr
+    responseSolr = solrAcervo.delete(q=f"id:{id}",  commit=True)
+    
+    return {'Jena': responseDelete,
+            'Solr': responseSolr
+            }
