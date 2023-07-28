@@ -44,7 +44,7 @@ async def create_items(id: str):
     responseDelete = collection.run_sparql(deleteItem)
 
     # Solr 
-    responseSolr = solrAcervo.delete(q=f"id:{id}",  commit=True)
+    responseSolr = solrAcervo.delete(q=f"id:{id}",  commit=True) 
     
     return {'Jena': responseDelete,
             'Solr': responseSolr
