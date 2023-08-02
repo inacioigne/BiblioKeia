@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from pyfuseki import FusekiUpdate
+from src.function.solr.docInstance import DeleteInstanceSolr
 from src.function.bibframe.Instance.editInstance import EditInstance
 from src.function.bibframe.Work.hasInstance import HasInstance
 from src.function.bibframe.Instance.graphInstance import MakeGraphInstance
@@ -66,8 +67,10 @@ async def delete_instance(id: str):
     responseUpWork = collectionUpdate.run_sparql(upWork)
 
     # Solr
-    responseSolr = solrAcervo.delete(q="id:bkc-3",  commit=True)
+    DeleteInstanceSolr(id)
+    
 
     return { 'delete': responseDelete.convert(),
             'upWork': responseUpWork.convert(), 
-            'Solr': responseSolr}
+            # 'Solr': responseSolr
+    }

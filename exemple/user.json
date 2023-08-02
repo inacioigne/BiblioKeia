@@ -1,0 +1,15 @@
+{
+    "name": "Inácio",
+    "email": "inacio@mail.com",
+    "addressCep": "69-9500",
+    "addressCity": "Óbidos",
+    "addressDistrict": "AM",
+    "addressStreet": "Rua Pedro Aleixo",
+    "addressNumber": "152",
+    "birth": "13/06/1989",
+    "cellphone": "92-9848349",
+    "sex": "Masculino",
+    "surname": "Oliveira",
+    "vinculo": "bibliotecario",
+    "password": "123"
+  }

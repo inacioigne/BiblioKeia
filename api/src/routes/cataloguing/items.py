@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from src.function.solr.docItem import DeleteItemSolr
 from src.function.bibframe.Instance.hasItem import HasItem
 from src.function.bibframe.Item.graphItem import MakeGraphItems
 from src.schemas.bibframe.items import Items_Schema
@@ -8,6 +9,8 @@ from src.function.cataloguing.generate_id import GenerateId
 from src.schemas.settings import Settings
 from pysolr import Solr
 from datetime import datetime
+from src.db.models import Item
+from src.db.init_db import session
 
 settings = Settings()
 
@@ -27,7 +30,13 @@ async def create_items(request: Items_Schema):
         responseItem = collection.run_sparql(graph)
         upInstance = HasItem(request.itemOf.uri, id)
         responseInstance = collection.run_sparql(upInstance)
+        # Solr
         DocItem(item, request.itemOf, id)
+        # MariaDB
+        itemDB = Item(itemnumber=id, title=request.itemOf.label, barcode=item.barcode)
+        session.add(itemDB) 
+        session.commit()
+
 
     return {'Item': responseItem.convert(),
             'Instance': responseInstance.convert()} 
@@ -43,9 +52,9 @@ async def create_items(id: str):
         }}"""
     responseDelete = collection.run_sparql(deleteItem)
 
-    # Solr 
-    responseSolr = solrAcervo.delete(q=f"id:{id}",  commit=True) 
+    # Solr
+    DeleteItemSolr(id)
     
     return {'Jena': responseDelete,
-            'Solr': responseSolr
+            # 'Solr': responseSolr
             }

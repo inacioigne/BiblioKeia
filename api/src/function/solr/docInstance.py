@@ -29,7 +29,21 @@ def DocInstance(request, id):
         "id": workID,
          "hasInstance": {"add": {'id': f'{workID}/hasInstance/{id}', 'uri': uri, 'label': request.title.mainTitle} }
     }
-    print("hasInstance", work)
+    # print("hasInstance", work)
 
     response = solr.add([doc, work], commit=True)
     return response
+
+def DeleteInstanceSolr(id):
+
+    r = solr.search(q=f"id:{id}", fl="*,[child]")
+    [doc] = r.docs
+    instanceOf = doc['instanceOf']['id']
+    work = instanceOf.split("/")[-1]
+    hasInstance = f"{work}/hasInstance/{id}" 
+    doc = {
+    "id": work,
+    "hasInstance": { "remove": { "id": hasInstance} } }
+    
+    solr.delete(id=id, commit=True)
+    solr.add([doc], commit=True)

@@ -1,0 +1,25 @@
+{
+    "itemOf": {
+      "label": "Physiological plant ecology",
+      "lang": "en",
+      "uri": "https://bibliokeia.com/resources/instance/bkc-2",
+      "type": [
+        "instance"
+      ]
+    },
+    "items": [
+  {
+        "adminMetadata": {
+          "status": {
+            "label": "novo",
+            "value": "mstatus:new"
+          }
+        },
+        "cdd": "595.8",
+        "cutter": "O48",
+        "year": "2023",
+        "shelf": "E1-P1",
+        "barcode": "23-0001"
+      }
+    ]
+}

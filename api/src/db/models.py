@@ -1,5 +1,5 @@
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Date, LargeBinary, ForeignKey, true
+from sqlalchemy import Column, Integer, String, Date, DATETIME, ForeignKey, true
 from sqlalchemy.orm import relationship
 from datetime import datetime, timedelta
 from sqlalchemy.dialects.mysql import JSON
@@ -27,25 +27,50 @@ class User(Base):
     created_at = Column(Date, default=datetime.now())
 
     #relationship
-    loan = relationship("Loan", back_populates="user")
+    loan_active = relationship("LoanActive", back_populates="user")
+    loan_historic = relationship("LoanHistoric", back_populates="user")
 
     def json(self):
         return {'id': self.id, 'name': self.name, "email": self.email}
 
     def __repr__(self):
-        
         return f"id:{self.id!r}, name:{self.name!r}, email:{self.email!r}"
+    
+class Item(Base):
+    __tablename__ = 'item'
+    id = Column(Integer, primary_key=True)
+    itemnumber = Column(String(8))
+    title = Column(String(200))
+    barcode = Column(String(8))
 
-class Loan(Base):
-    __tablename__ = 'loan'
+    #relationship
+    loan_active = relationship("LoanActive", back_populates="item")
+    loan_historic = relationship("LoanHistoric", back_populates="item")
+
+class LoanActive(Base):
+    __tablename__ = 'loan_active'
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('user.id'))
-    exemplar = Column(String(100))
-    created_at = Column(Date, default=datetime.now())
-    due = Column(Date, default=datetime.now()+timedelta(days = 7))
-    status = Column(String(100), default="Emprestado")
+    item_id = Column(Integer, ForeignKey('item.id'))
+    loan_at = Column(DATETIME, default=datetime.now())
+    due = Column(DATETIME, default=datetime.now()+timedelta(days = 7))
+    return_at = Column(DATETIME)
     log = Column(JSON)
 
+    user = relationship("User", back_populates="loan_active")
+    item = relationship("Item", back_populates="loan_active")
 
-    user = relationship("User", back_populates="loan")
+class LoanHistoric(Base):
+    __tablename__ = 'loan_historic'
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey('user.id'))
+    item_id = Column(Integer, ForeignKey('item.id'))
+    loan_at = Column(DATETIME, default=datetime.now())
+    due = Column(DATETIME, default=datetime.now()+timedelta(days = 7))
+    return_at = Column(DATETIME)
+    log = Column(JSON)
+
+    user = relationship("User", back_populates="loan_historic")
+    item = relationship("Item", back_populates="loan_historic")
+
     
