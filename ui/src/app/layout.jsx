@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <AlertProvider>
               <body>
                 <Providers />
-                {children}
+                {children} 
               </body>
             </AlertProvider>
           </BfProvider>
