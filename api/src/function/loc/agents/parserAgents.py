@@ -28,6 +28,17 @@ def ParserAgents(graph, uri):
      "type": tipo,
       "adminMetadata": adminMetadata,
       "isMemberOfMADSCollection": f'http://bibliokeia.com/authorities/{tipo}/'}
+
+    qAuthoritativeLabel = f"""PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    SELECT ?authoritativeLabel 
+    WHERE  {{
+    <{uri}> madsrdf:authoritativeLabel ?authoritativeLabel .
+      }}"""
+    r = graph.query(qAuthoritativeLabel)
+    [bindings] = r.bindings
+    authoritativeLabel = bindings.get('authoritativeLabel').toPython()
+    obj['authoritativeLabel'] = authoritativeLabel
     
     # ElementList
     obj = GetElementList(graph, uri, obj) 

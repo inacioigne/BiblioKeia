@@ -15,6 +15,7 @@ class Affiliation(BaseModel):
 class Agents(BaseModel):
     type: str 
     adminMetadata: AdminMetadata 
+    authoritativeLabel: str
     elementList: list[Element]
     fullerName: Optional[Element] = None
     birthDate: Optional[str] = None

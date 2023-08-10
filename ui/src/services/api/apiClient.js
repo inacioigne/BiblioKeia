@@ -11,6 +11,5 @@ export function getAPIClient(ctx) {
   if (token) {
     api.defaults.headers["Authorization"] = `Bearer ${token}`;
   }
-
   return api;
 }
