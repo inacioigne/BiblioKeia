@@ -13,6 +13,7 @@ class Element(BaseModel):
 class Variant(BaseModel): 
     type: str
     elementList: list[Element]
+    variantLabel: str
 
 class EditVariant(BaseModel): 
     old: Variant
