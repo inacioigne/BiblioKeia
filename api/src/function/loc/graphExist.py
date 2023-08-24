@@ -5,9 +5,9 @@ settings = Settings()
 
 authorityQuery = FusekiQuery(f'{settings.url}:3030', 'authority')
 
-def GraphExist(uri):  
+def GraphExist(token):  
     
-    token = uri.split("/")[-1]
+    # token = uri.split("/")[-1]
 
     query = f"""PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
             PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>

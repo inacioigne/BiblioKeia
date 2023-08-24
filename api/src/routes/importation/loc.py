@@ -29,8 +29,9 @@ async def get_subject(uri: str):
 # LC Name Authority File (LCNAF)
 @router.get("/agents", status_code=200, response_model=Agents) 
 async def get_agents(uri: str):
+    token = uri.split("/")[-1]
 
-    exist = GraphExist(uri)
+    exist = GraphExist(token)
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
 

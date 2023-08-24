@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
 # from src.function.authorities.upadeteAuthority import UpadeteAuthority
@@ -12,6 +12,7 @@ from src.function.authorities.generateID import GenerateId
 
 from src.schemas.authorities.agents import Agents
 from src.schemas.settings import Settings
+from src.function.loc.graphExist import GraphExist
 
 settings = Settings()
 
@@ -22,7 +23,13 @@ solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
 # Add Autority
 @router.post("/agents/", status_code=201) 
-async def post_agents(request: Agents):
+async def post_agents(request: Agents): 
+
+    token = request.adminMetadata.identifiedBy[0].value
+
+    exist = GraphExist(token)
+    if exist:
+        raise HTTPException(status_code=409, detail="Esse registro já existe")
   
     id = GenerateId()
     graph = MakeGraphAgents(request, id)

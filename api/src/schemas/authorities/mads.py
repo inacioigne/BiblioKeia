@@ -21,7 +21,7 @@ class Element(BaseModel):
     value: str
 
 class Variant(BaseModel):
-    variantType: str
+    variantType: str 
     name: Element
     date: Optional[Element]
     
