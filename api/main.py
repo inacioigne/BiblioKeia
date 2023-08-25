@@ -48,7 +48,7 @@ app.include_router(loc.router, prefix='/import/loc', tags=['Import'])
 # Authorities
 app.include_router(subjects.router, prefix='/authorities', tags=['Authorities'])
 app.include_router(agents.router, prefix='/authorities', tags=['Authorities'])
-app.include_router(authority.router, prefix='/authorities', tags=['Authorities'])
+app.include_router(authority.router, prefix='/authority', tags=['Authority'])
 
 
 # Cataloguing

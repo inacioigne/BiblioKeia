@@ -2,6 +2,10 @@ from pydantic import BaseModel, validator, Field
 from typing import Optional, Union
 from datetime import datetime, date
 
+class DeleteAuthority(BaseModel):
+    id: str
+    type: str
+
 class Label(BaseModel):
     value: str
     lang: Optional[str] = None

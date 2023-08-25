@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.schemas.authorities.authority import DeleteAuthority
 from src.function.authorities.makeElement import MakeElement
 from src.function.authorities.makeLabel import MakeLabel
 from src.function.authorities.makeVariant import MakeSparqlVariant, EditVariantJena
@@ -18,17 +19,23 @@ from src.schemas.authorities.subject import Value
 from src.function.solr.docSubject import UpdateDelete
 
 from src.function.solr.deleteAuthority import DeleteAuthoritySolr
+from src.schemas.settings import Settings
 
-router = APIRouter()
-fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
-solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
+settings = Settings()
+
+router = APIRouter() 
+authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
+solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
+# fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
+# solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
 # Delete Autority
 @router.delete("/", status_code=200) 
-async def delete_authority(authority: str):
+async def delete_authority(request: DeleteAuthority):
 
-    id = authority.split("/")[-1] 
-    r = solr.search(q=f'id:{id}', **{'fl': '*,[child]'})
+    # id = authority.split("/")[-1] 
+    authority = f'https://bibliokeia.com/authorities/{request.type}/{request.id}'
+    r = solr.search(q=f'id:{request.id}', **{'fl': '*,[child]'})
     [doc] = r.docs
 
     d = f"""DELETE {{ graph <{authority}> {{ ?s ?p ?o }} }}
@@ -36,8 +43,8 @@ async def delete_authority(authority: str):
             graph <{authority}> {{ ?s ?p ?o. }}
             }}"""
             
-    responseJena = fuseki_update.run_sparql(d)
-    responseSolr = DeleteAuthoritySolr(id)
+    responseJena = authorityUpdate.run_sparql(d)
+    responseSolr = DeleteAuthoritySolr(request.id)
     response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
     response = UpdateDelete(doc, response, authority)
     
