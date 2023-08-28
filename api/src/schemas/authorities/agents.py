@@ -5,12 +5,12 @@ from src.schemas.authorities.authority import Variant, AdminMetadata, Element
 class Uri(BaseModel):
     value: str
     label: str
-    base: Optional[str]
+    base: Optional[str] = None
 
 class Affiliation(BaseModel):
     organization: Uri
-    affiliationStart: Optional[str]
-    affiliationEnd: Optional[str]
+    affiliationStart: Optional[str] = None
+    affiliationEnd: Optional[str] = None
     
 class Agents(BaseModel):
     type: str 
