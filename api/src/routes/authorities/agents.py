@@ -31,7 +31,7 @@ async def post_agents(request: Agents):
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
   
-    id = GenerateId()
+    id = GenerateId() 
     graph = MakeGraphAgents(request, id)
     response = authorityUpdate.run_sparql(graph)
 

@@ -5,6 +5,7 @@ from src.function.authorities.makeElement import MakeElement
 from src.function.authorities.makeIdentifier import MakeIdentifier
 from src.function.authorities.makeLabel import MakeLabel
 from src.function.authorities.makeVariant import MakeVariant
+from datetime import datetime
 
 
 prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
@@ -25,7 +26,7 @@ prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX msupplcont: <http://id.loc.gov/vocabulary/msupplcont/>
     PREFIX millus: <http://id.loc.gov/vocabulary/millus/>"""
 
-def MakeGraphAgents(request, id):
+def MakeGraphAgents(request, id): 
     graph = f"""{prefix}    
     INSERT DATA {{
         GRAPH <https://bibliokeia.com/authorities/{request.type}/{id}>
@@ -39,7 +40,7 @@ def MakeGraphAgents(request, id):
             bf:descriptionModifier <{request.adminMetadata.assigner}> ; 
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "{request.adminMetadata.generationProcess}" ;
-                    bf:generationDate "{request.adminMetadata.generationDate}"^^xsd:dateTime ] ;
+                    bf:generationDate "{datetime.now().strftime('%Y-%m-%dT%H:%M:%S')}"^^xsd:dateTime ] ;
             bf:identifiedBy {MakeIdentifier(request.adminMetadata.identifiedBy, id)} ; 
             bf:status {request.adminMetadata.status.value} ] ; 
             madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
