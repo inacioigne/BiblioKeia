@@ -1,0 +1,1454 @@
+[
+  {
+  "type": "PersonalName",
+  "adminMetadata": {
+    "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+    "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+    "creationDate": "2023-08-31",
+    "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+    "generationProcess": "BiblioKeia v.1",
+    "generationDate": "2023-08-31T14:59:39",
+    "identifiedBy": [
+      {
+        "type": "Lccn",
+        "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+        "value": "n80002329"
+      }
+    ],
+    "status": {
+      "value": "mstatus:new",
+      "label": "novo"
+    }
+  },
+  "authoritativeLabel": "Machado de Assis, 1839-1908",
+  "elementList": [
+    {
+      "type": "FullNameElement",
+      "elementValue": {
+        "value": "Machado de Assis,",
+        "lang": null
+      }
+    },
+    {
+      "type": "DateNameElement",
+      "elementValue": {
+        "value": "1839-1908",
+        "lang": null
+      }
+    }
+  ],
+  "fullerName": {
+    "type": "PersonalName",
+    "elementValue": {
+      "value": "Joaquim Maria Machado",
+      "lang": null
+    }
+  },
+  "birthDate": "1839-06-21",
+  "birthPlace": "Rio de Janeiro (Brazil)",
+  "deathDate": "1908-09-29",
+  "hasAffiliation": [
+    {
+      "organization": {
+        "value": "http://id.loc.gov/authorities/names/n82059239",
+        "label": "Academia Brasileira de Letras",
+        "base": "id.loc.gov"
+      },
+      "affiliationStart": "1897",
+      "affiliationEnd": "1908"
+    }
+  ],
+  "occupation": [
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85092863",
+      "label": "Novelists",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85103733",
+      "label": "Poets",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85039342",
+      "label": "Dramatists",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85034154",
+      "label": "Critics",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85108733",
+      "label": "Public officers",
+      "base": "id.loc.gov"
+    }
+  ],
+  "fieldOfActivity": null,
+  "hasCloseExternalAuthority": [
+    {
+      "value": "http://www.wikidata.org/entity/Q311145",
+      "label": "Joaquim Maria Machado de Assis",
+      "base": "www.wikidata.org"
+    },
+    {
+      "value": "http://id.worldcat.org/fast/48407",
+      "label": "Machado de Assis, 1839-1908",
+      "base": "id.worldcat.org"
+    }
+  ],
+  "hasExactExternalAuthority": null,
+  "hasVariant": [
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Assis, Joaquim Maria Machado de,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Assis, Joaquim Maria Machado de, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Assis, Machado de,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Assis, Machado de, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "De Assis, Joaquim Maria Machado,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "De Assis, Joaquim Maria Machado, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "De Assis, Machado,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "De Assis, Machado, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Machado de Assis, Joaquim Maria,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Machado de Assis, Joaquim Maria, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Machado de Assis, Joaquín María,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Machado de Assis, Joaquín María, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Mashado de Assiz, Zhoakin,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Mashado de Assiz, Zhoakin, 1839-1908"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Semana",
+            "lang": null
+          }
+        },
+        {
+          "type": "TermsOfAddressNameElement",
+          "elementValue": {
+            "value": "Dr.,",
+            "lang": null
+          }
+        },
+        {
+          "type": "DateNameElement",
+          "elementValue": {
+            "value": "1839-1908",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Semana Dr., 1839-1908"
+    }
+  ],
+  "subjectOf": null,
+  "contributorOf": null,
+  "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/PersonalName/"
+},
+
+{
+    "type": "CorporateName",
+    "adminMetadata": {
+      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+      "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+      "creationDate": "2023-08-31",
+      "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+      "generationProcess": "BiblioKeia v.1",
+      "generationDate": "2023-08-31T14:59:39",
+      "identifiedBy": [
+        {
+          "type": "Lccn",
+          "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+          "value": "n82139358"
+        }
+      ],
+      "status": {
+        "value": "mstatus:new",
+        "label": "novo"
+      }
+    },
+    "authoritativeLabel": "Instituto Nacional de Pesquisas da Amazônia",
+    "elementList": [
+      {
+        "type": "NameElement",
+        "elementValue": {
+          "value": "Instituto Nacional de Pesquisas da Amazônia",
+          "lang": null
+        }
+      }
+    ],
+    "fullerName": null,
+    "birthDate": null,
+    "birthPlace": null,
+    "deathDate": null,
+    "hasAffiliation": null,
+    "occupation": null,
+    "fieldOfActivity": null,
+    "hasCloseExternalAuthority": [
+      {
+        "value": "http://www.wikidata.org/entity/Q1636101",
+        "label": "National Institute of Amazonian Research",
+        "base": "www.wikidata.org"
+      },
+      {
+        "value": "http://id.worldcat.org/fast/573736",
+        "label": "Instituto Nacional de Pesquisas da Amazônia",
+        "base": "id.worldcat.org"
+      }
+    ],
+    "hasExactExternalAuthority": null,
+    "hasVariant": [
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Brazil.",
+              "lang": null
+            }
+          },
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Instituto Nacional de Pesquisas da Amazônia",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Brazil. Instituto Nacional de Pesquisas da Amazônia"
+      },
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "I.N.P.A.",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "I.N.P.A."
+      },
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Conselho Nacional de Desenvolvimento Científico e Tecnológico.",
+              "lang": null
+            }
+          },
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Instituto Nacional de Pesquisas da Amazônia",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Conselho Nacional de Desenvolvimento Científico e Tecnológico. Instituto Nacional de Pesquisas da Amazônia"
+      },
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "INPA",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "INPA"
+      },
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Conselho Nacional de Pesquisas (Brazil).",
+              "lang": null
+            }
+          },
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Instituto Nacional de Pesquisas da Amazônia",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Conselho Nacional de Pesquisas (Brazil). Instituto Nacional de Pesquisas da Amazônia"
+      },
+      {
+        "type": "CorporateName",
+        "elementList": [
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Brazil.",
+              "lang": null
+            }
+          },
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Ministério da Ciência e Tecnologia.",
+              "lang": null
+            }
+          },
+          {
+            "type": "NameElement",
+            "elementValue": {
+              "value": "Instituto Nacional de Pesquisas da Amazônia",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Brazil. Ministério da Ciência e Tecnologia. Instituto Nacional de Pesquisas da Amazônia"
+      }
+    ],
+    "subjectOf": null,
+    "contributorOf": null,
+    "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/CorporateName/"
+  },
+
+  {
+    "type": "PersonalName",
+    "adminMetadata": {
+      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+      "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+      "creationDate": "2023-08-31",
+      "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+      "generationProcess": "BiblioKeia v.1",
+      "generationDate": "2023-08-31T14:59:39",
+      "identifiedBy": [
+        {
+          "type": "Lccn",
+          "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+          "value": "n79021614"
+        }
+      ],
+      "status": {
+        "value": "mstatus:new",
+        "label": "novo"
+      }
+    },
+    "authoritativeLabel": "Kant, Immanuel, 1724-1804",
+    "elementList": [
+      {
+        "type": "FullNameElement",
+        "elementValue": {
+          "value": "Kant, Immanuel,",
+          "lang": null
+        }
+      },
+      {
+        "type": "DateNameElement",
+        "elementValue": {
+          "value": "1724-1804",
+          "lang": null
+        }
+      }
+    ],
+    "fullerName": null,
+    "birthDate": "1724-04-22",
+    "birthPlace": "Königsberg (Germany)",
+    "deathDate": "1804-02-12",
+    "hasAffiliation": null,
+    "occupation": [
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85100836",
+        "label": "Philosophers",
+        "base": "id.loc.gov"
+      }
+    ],
+    "fieldOfActivity": [
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85044032",
+        "label": "Enlightenment",
+        "base": "id.loc.gov"
+      },
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85100962",
+        "label": "Philosophy, Modern--18th century",
+        "base": "id.loc.gov"
+      }
+    ],
+    "hasCloseExternalAuthority": [
+      {
+        "value": "http://vocab.getty.edu/ulan/500107055",
+        "label": "Kant, Immanuel",
+        "base": "vocab.getty.edu"
+      },
+      {
+        "value": "http://id.worldcat.org/fast/31763",
+        "label": "Kant, Immanuel, 1724-1804",
+        "base": "id.worldcat.org"
+      },
+      {
+        "value": "http://www.wikidata.org/entity/Q9312",
+        "label": "Immanuel Kant",
+        "base": "www.wikidata.org"
+      }
+    ],
+    "hasExactExternalAuthority": null,
+    "hasVariant": [
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, I.",
+              "lang": null
+            }
+          },
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "(Immanuil),",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, I. (Immanuil), 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kānt, ʻAmmānūʼīl,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kānt, ʻAmmānūʼīl, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Immanouel,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Immanouel, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Immanuil,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Immanuil, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kʻantʻŭ,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kʻantʻŭ, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Emmanuel,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Emmanuel, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Ḳanṭ, ʻImanuʼel,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Ḳanṭ, ʻImanuʼel, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, E.,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, E., 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Emanuel,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Emanuel, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Cantơ, I.,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Cantơ, I., 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Emanuele,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Emanuele, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Im.",
+              "lang": null
+            }
+          },
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "(Immanuel),",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Im. (Immanuel), 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט, א.",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט, א."
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט, עמנואל",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט, עמנואל"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט, עמנואל,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "4271־4081",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט, עמנואל, 4271־4081"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט, עמנואל,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724־1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט, עמנואל, 1724־1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קאנט, ע.",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קאנט, ע."
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קנט",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קנט"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קנט, עמנואל",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קנט, עמנואל"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "קנט, עמנואל,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724־1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "קנט, עמנואל, 1724־1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "كانت ، ايمانوئل",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "كانت ، ايمانوئل"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "كنت، إمانويل،",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "كنت، إمانويل، 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "カントイマニユエル,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "カントイマニユエル, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kangde,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kangde, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "康德,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "康德, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kanṭ, Īmānwīl,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kanṭ, Īmānwīl, 1724-1804"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "كانط، إيمانويل",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "كانط، إيمانويل"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Kant, Manuel,",
+              "lang": null
+            }
+          },
+          {
+            "type": "DateNameElement",
+            "elementValue": {
+              "value": "1724-1804",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Kant, Manuel, 1724-1804"
+      }
+    ],
+    "subjectOf": null,
+    "contributorOf": null,
+    "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/PersonalName/"
+  },
+  
+  {
+    "type": "PersonalName",
+    "adminMetadata": {
+      "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+      "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+      "creationDate": "2023-08-31",
+      "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+      "generationProcess": "BiblioKeia v.1",
+      "generationDate": "2023-08-31T14:59:39",
+      "identifiedBy": [
+        {
+          "type": "Lccn",
+          "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+          "value": "n85130797"
+        }
+      ],
+      "status": {
+        "value": "mstatus:new",
+        "label": "novo"
+      }
+    },
+    "authoritativeLabel": "Saramago, José",
+    "elementList": [
+      {
+        "type": "FullNameElement",
+        "elementValue": {
+          "value": "Saramago, José",
+          "lang": null
+        }
+      }
+    ],
+    "fullerName": {
+      "type": "PersonalName",
+      "elementValue": {
+        "value": "José de Sousa",
+        "lang": null
+      }
+    },
+    "birthDate": "1922-11-16",
+    "birthPlace": "Ribatejo (Portugal)",
+    "deathDate": "2010-06-18",
+    "hasAffiliation": null,
+    "occupation": [
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85092863",
+        "label": "Novelists",
+        "base": "id.loc.gov"
+      },
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85039342",
+        "label": "Dramatists",
+        "base": "id.loc.gov"
+      },
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh85070788",
+        "label": "Journalists",
+        "base": "id.loc.gov"
+      },
+      {
+        "value": "http://id.loc.gov/authorities/subjects/sh2006004988",
+        "label": "Nobel Prize winners",
+        "base": "id.loc.gov"
+      }
+    ],
+    "fieldOfActivity": null,
+    "hasCloseExternalAuthority": [
+      {
+        "value": "http://id.worldcat.org/fast/166806",
+        "label": "Saramago, José",
+        "base": "id.worldcat.org"
+      },
+      {
+        "value": "http://www.wikidata.org/entity/Q37060",
+        "label": "José Saramago",
+        "base": "www.wikidata.org"
+      }
+    ],
+    "hasExactExternalAuthority": null,
+    "hasVariant": [
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Salamage, Ruoze",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Salamage, Ruoze"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Saramago, Zhoze",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Saramago, Zhoze"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Сарамаго, Жозе",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Сарамаго, Жозе"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "סאראמאגו, ז׳וזה",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "סאראמאגו, ז׳וזה"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "סאראמאגו, ז׳וזה. טבעון, מרים",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "סאראמאגו, ז׳וזה. טבעון, מרים"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "Sousa Saramago, José de",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "Sousa Saramago, José de"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "De Sousa Saramago, José",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "De Sousa Saramago, José"
+      },
+      {
+        "type": "PersonalName",
+        "elementList": [
+          {
+            "type": "FullNameElement",
+            "elementValue": {
+              "value": "ジョゼ・サラマーゴ",
+              "lang": null
+            }
+          }
+        ],
+        "variantLabel": "ジョゼ・サラマーゴ"
+      }
+    ],
+    "subjectOf": null,
+    "contributorOf": null,
+    "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/PersonalName/"
+  },
+  
+  {
+  "type": "PersonalName",
+  "adminMetadata": {
+    "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+    "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+    "creationDate": "2023-08-31",
+    "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+    "generationProcess": "BiblioKeia v.1",
+    "generationDate": "2023-08-31T19:46:57",
+    "identifiedBy": [
+      {
+        "type": "Lccn",
+        "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+        "value": "n88090795"
+      }
+    ],
+    "status": {
+      "value": "mstatus:new",
+      "label": "novo"
+    }
+  },
+  "authoritativeLabel": "Damasio, Antonio R.",
+  "elementList": [
+    {
+      "type": "FullNameElement",
+      "elementValue": {
+        "value": "Damasio, Antonio R.",
+        "lang": null
+      }
+    }
+  ],
+  "fullerName": {
+    "type": "PersonalName",
+    "elementValue": {
+      "value": "Antonio Rosa",
+      "lang": null
+    }
+  },
+  "birthDate": "1944-02-25",
+  "birthPlace": "Lisbon (Portugal)",
+  "deathDate": null,
+  "hasAffiliation": [
+    {
+      "organization": {
+        "value": "http://id.loc.gov/authorities/names/n85299803",
+        "label": "University of Iowa. Department of Neurology",
+        "base": "id.loc.gov"
+      },
+      "affiliationStart": null,
+      "affiliationEnd": null
+    }
+  ],
+  "occupation": [
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh2006000762",
+      "label": "Neurobiologists",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85028378",
+      "label": "College teachers",
+      "base": "id.loc.gov"
+    }
+  ],
+  "fieldOfActivity": [
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh85091114",
+      "label": "Neurobiology",
+      "base": "id.loc.gov"
+    },
+    {
+      "value": "http://id.loc.gov/authorities/subjects/sh89002432",
+      "label": "Emotions and cognition",
+      "base": "id.loc.gov"
+    }
+  ],
+  "hasCloseExternalAuthority": [
+    {
+      "value": "http://id.worldcat.org/fast/1487281",
+      "label": "Damasio, Antonio R.",
+      "base": "id.worldcat.org"
+    },
+    {
+      "value": "http://www.wikidata.org/entity/Q380207",
+      "label": "António Damásio",
+      "base": "www.wikidata.org"
+    }
+  ],
+  "hasExactExternalAuthority": null,
+  "hasVariant": [
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "Damasio, A. R.",
+            "lang": null
+          }
+        },
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "(Antonio R.)",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "Damasio, A. R. (Antonio R.)"
+    },
+    {
+      "type": "PersonalName",
+      "elementList": [
+        {
+          "type": "FullNameElement",
+          "elementValue": {
+            "value": "דמאסיו, אנטוניו",
+            "lang": null
+          }
+        }
+      ],
+      "variantLabel": "דמאסיו, אנטוניו"
+    }
+  ],
+  "subjectOf": null,
+  "contributorOf": null,
+  "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/PersonalName/"
+},
+{
+  "type": "CorporateName",
+  "adminMetadata": {
+    "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+    "descriptionModifier": "http://id.loc.gov/vocabulary/organizations/brmninpa",
+    "creationDate": "2023-09-01",
+    "descriptionLanguage": "http://id.loc.gov/vocabulary/languages/por",
+    "generationProcess": "BiblioKeia v.1",
+    "generationDate": "2023-09-01T17:59:27",
+    "identifiedBy": [
+      {
+        "type": "Lccn",
+        "assigner": "http://id.loc.gov/vocabulary/organizations/dlc",
+        "value": "no2002109925"
+      }
+    ],
+    "status": {
+      "value": "mstatus:new",
+      "label": "novo"
+    }
+  },
+  "authoritativeLabel": "NASA Exploration Team",
+  "elementList": [
+    {
+      "type": "NameElement",
+      "elementValue": {
+        "value": "NASA Exploration Team",
+        "lang": null
+      }
+    }
+  ],
+  "fullerName": null,
+  "birthDate": null,
+  "birthPlace": null,
+  "deathDate": null,
+  "hasAffiliation": null,
+  "occupation": null,
+  "fieldOfActivity": null,
+  "hasCloseExternalAuthority": null,
+  "hasExactExternalAuthority": null,
+  "hasVariant": null,
+  "subjectOf": null,
+  "contributorOf": null,
+  "isMemberOfMADSCollection": "http://bibliokeia.com/authorities/CorporateName/"
+}
+]
