@@ -1,6 +1,6 @@
 import httpx
 
-from src.function.authorities.makeLabel import MakeLabel
+# from src.function.authorities.makeLabel import MakeLabel
 
 
 def GetImagem(uri):
@@ -27,14 +27,15 @@ def GetImagem(uri):
             return imagem
         else:
             return False
-    
+        
 def MakeDocAgents(request, id):
 
     doc = { 
             'id': id,
             'type': request.type,
             "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
-            "label": f'{MakeLabel(request.elementList)}' ,
+            # "label": f'{MakeLabel(request.elementList)}' ,
+            "authority": request.authoritativeLabel,
             "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
     
@@ -51,6 +52,7 @@ def MakeDocAgents(request, id):
     if request.hasAffiliation:
         affiliations = list()
         for i in request.hasAffiliation:
+
             a = {
                 'id': f"{id}/hasAffiliation#{i.organization.value.split('/')[-1]}",
                 'organization': i.organization.label,
@@ -60,6 +62,8 @@ def MakeDocAgents(request, id):
                 a['affiliationEnd'] = i.affiliationEnd
             affiliations.append(a)
         doc['hasAffiliation'] = affiliations
+        doc['affiliation']  = [i['organization'] for i in affiliations]
+
     
     # hasVariant
     if request.hasVariant:
@@ -96,7 +100,9 @@ def MakeDocAgents(request, id):
                     'label': i.label, 
                     'base': i.base }
             occupations.append(uri)
-        doc['occupation'] = occupations
+        doc['hasOccupation'] = occupations
+        doc['occupation']  = [i['label'] for i in occupations]
+
 
     # fieldOfActivity
     if request.fieldOfActivity:
