@@ -30,7 +30,7 @@ def GetImagem(uri):
     
 def MakeDocAgents(request, id):
 
-    doc = {
+    doc = { 
             'id': id,
             'type': request.type,
             "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
