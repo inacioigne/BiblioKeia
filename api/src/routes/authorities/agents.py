@@ -1,11 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
-# from src.function.authorities.upadeteAuthority import UpadeteAuthority
-# from src.function.authorities.agents.hasVariant import DeleteVariant
-# from src.schemas.authorities.mads import Variant
-# from src.function.authorities.agents.hasVariant import EditVariant
-# from src.schemas.authorities.mads import VariantEdit
 from src.function.solr.docAgents import MakeDocAgents
 from src.function.authorities.agents.makeGraph import MakeGraphAgents
 from src.function.authorities.generateID import GenerateId

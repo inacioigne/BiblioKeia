@@ -26,8 +26,6 @@ settings = Settings()
 router = APIRouter() 
 authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
 solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
-# fuseki_update = FusekiUpdate('http://localhost:3030', 'authorities')
-# solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
 # Delete Autority
 @router.delete("/", status_code=200) 
@@ -44,7 +42,7 @@ async def delete_authority(request: DeleteAuthority):
             }}"""
             
     responseJena = authorityUpdate.run_sparql(d)
-    responseSolr = DeleteAuthoritySolr(request.id)
+    responseSolr = DeleteAuthoritySolr(request.id) 
     response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
     response = UpdateDelete(doc, response, authority)
     

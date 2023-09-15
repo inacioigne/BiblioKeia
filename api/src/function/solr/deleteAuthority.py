@@ -6,11 +6,10 @@ settings = Settings()
 solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
 def DeleteAuthoritySolr(id): 
-    # solr = Solr('http://localhost:8983/solr/authorities/', timeout=10)
 
     r = solr.search(q=f'id:{id}', **{'fl': '*,[child]'})
 
-    nMeta = ["id", "type", "creationDate", "label", "isMemberOfMADSCollection", "note", "variant",
+    nMeta = ["id", "type", "creationDate", "authority", "affiliation", "occupation", "isMemberOfMADSCollection", "note", "variant",
               "imagem", "fullerName", "birthDate", "birthPlace","deathDate",  "_version_"]
     ids = [id]
     [doc] = r.docs
