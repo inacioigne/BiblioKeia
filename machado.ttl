@@ -834,10 +834,10 @@
     identifiers:lccn "n 80002329" ;
     identifiers:local "(OCoLC)oca00385024",
         "(Uk)000462837" ;
-    madsrdf:adminMetadata [ a ri:RecordInfo ;
+    madsrdf:adminMetadata [ a ri:RecordInfo ; 
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
-            ri:recordChangeDate "2023-01-27T05:25:19"^^xsd:dateTime ;
-            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/uk> ;
+            ri:recordChangeDate "2023-08-24T06:45:54"^^xsd:dateTime ;
+            ri:recordContentSource <http://id.loc.gov/vocabulary/organizations/nn> ;
             ri:recordStatus "revised"^^xsd:string ],
         [ a ri:RecordInfo ;
             ri:languageOfCataloging <http://id.loc.gov/vocabulary/iso639-2/eng> ;
@@ -858,8 +858,8 @@
         <http://www.wikidata.org/entity/Q311145> ;
     madsrdf:hasExactExternalAuthority <http://viaf.org/viaf/sourceID/LC%7Cn++80002329#skos:Concept> ;
     madsrdf:hasSource [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Dr. Semana; Machado de Assis)" ;
-            madsrdf:citationSource "Badaladas, 2019:" ;
+            madsrdf:citationNote "translator's introducation, page xxiii (Through most of his life [Machado de Assis] worked as a public official -- a bureaucrat, we should say -- for it was almost impossible to earn a living as a writer; the Brazilian Academy of Letters unanimously elected Machado its president, a title that he held from the founding of the Academy in 1897 till his death in 1908)" ;
+            madsrdf:citationSource "Machado de Assis. Epitaph of a small winner, 1990:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
             madsrdf:citationNote "(Joaquim Maria Machado de Assis; known as Machado de Assis, Machado, or Bruxo do Cosme Velho; born June 21, 1839 in Rio de Janeiro; died September 29, 1908, Rio de Janeiro; of African descent; Brazilian novelist, poet, playwright, short story writer, literary critics, and advocate of monarchism. Widely regarded as the greatest writer of Brazilian literature)" ;
@@ -867,28 +867,28 @@
                 "Wikipedia, Sept. 17, 2013" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Machado de Assis) p. 16 (Manassés, pseudônimo que Machado assumiria em todas as crônicas de série.) p. 65 (Manassés)" ;
-            madsrdf:citationSource "História de quinze dias, 2009:" ;
+            madsrdf:citationNote "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" ;
+            madsrdf:citationSource "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "translator's introducation, page xxiii (Through most of his life [Machado de Assis] worked as a public official -- a bureaucrat, we should say -- for it was almost impossible to earn a living as a writer; the Brazilian Academy of Letters unanimously elected Machado its president, a title that he held from the founding of the Academy in 1897 till his death in 1908)" ;
-            madsrdf:citationSource "Machado de Assis. Epitaph of a small winner, 1990:" ;
+            madsrdf:citationNote "title page (Dr. Semana; Machado de Assis)" ;
+            madsrdf:citationSource "Badaladas, 2019:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "t.p. (Machado de Assis) p. 19 (pseudonym Lélio)" ;
+            madsrdf:citationNote "title page (Machado de Assis) page 19 (pseudonym Lélio)" ;
             madsrdf:citationSource "Balas de estalo, 1998:" ;
             madsrdf:citationStatus "found" ],
         [ a madsrdf:Source ;
-            madsrdf:citationNote "(hdg. on PPiU rept.: Machado de Assis, 1839-1908; usage: Joaquín María Machado de Assis)" ;
-            madsrdf:citationSource "nuc88-38173: Memorias póstumas de Blas Cubas, 1982" ;
+            madsrdf:citationNote "title page (Machado de Assis) page 16 (Manassés, pseudônimo que Machado assumiria em todas as crônicas de série.) page 65 (Manassés)" ;
+            madsrdf:citationSource "História de quinze dias, 2009:" ;
             madsrdf:citationStatus "found" ] ;
     madsrdf:hasVariant [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Mashado de Assiz, Zhoakin," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "De Assis, Joaquim Maria Machado," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Mashado de Assiz, Zhoakin, 1839-1908" ],
-        [ a madsrdf:PersonalName, 
+            madsrdf:variantLabel "De Assis, Joaquim Maria Machado, 1839-1908" ],
+        [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
                         madsrdf:elementValue "Machado de Assis, Joaquín María," ] [ a madsrdf:DateNameElement ;
@@ -909,12 +909,6 @@
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "De Assis, Joaquim Maria Machado," ] [ a madsrdf:DateNameElement ;
-                        madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "De Assis, Joaquim Maria Machado, 1839-1908" ],
-        [ a madsrdf:PersonalName,
-                madsrdf:Variant ;
-            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
                         madsrdf:elementValue "Semana" ] [ a madsrdf:TermsOfAddressNameElement ;
                         madsrdf:elementValue "Dr.," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
@@ -922,15 +916,21 @@
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Machado de Assis, Joaquim Maria," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "Assis, Machado de," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ],
+            madsrdf:variantLabel "Assis, Machado de, 1839-1908" ],
         [ a madsrdf:PersonalName,
                 madsrdf:Variant ;
             madsrdf:elementList ( [ a madsrdf:FullNameElement ;
-                        madsrdf:elementValue "Assis, Machado de," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "Mashado de Assiz, Zhoakin," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
-            madsrdf:variantLabel "Assis, Machado de, 1839-1908" ] ;
+            madsrdf:variantLabel "Mashado de Assiz, Zhoakin, 1839-1908" ],
+        [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                        madsrdf:elementValue "Machado de Assis, Joaquim Maria," ] [ a madsrdf:DateNameElement ;
+                        madsrdf:elementValue "1839-1908" ] ) ;
+            madsrdf:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ] ;
     madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80002329>,
         <http://isni.org/isni/0000000121441225>,
         <http://viaf.org/viaf/95151633>,
@@ -947,14 +947,14 @@
         "Mashado de Assiz, Zhoakin, 1839-1908",
         "Semana Dr., 1839-1908" ;
     skos:changeNote [ a cs:ChangeSet ;
+            cs:changeReason "revised"^^xsd:string ;
+            cs:createdDate "2023-08-24T06:45:54"^^xsd:dateTime ;
+            cs:creatorName <http://id.loc.gov/vocabulary/organizations/nn> ;
+            cs:subjectOfChange <http://id.loc.gov/authorities/names/n80002329> ],
+        [ a cs:ChangeSet ;
             cs:changeReason "new"^^xsd:string ;
             cs:createdDate "1980-06-25T00:00:00"^^xsd:dateTime ;
             cs:creatorName <http://id.loc.gov/vocabulary/organizations/dlc> ;
-            cs:subjectOfChange <http://id.loc.gov/authorities/names/n80002329> ],
-        [ a cs:ChangeSet ;
-            cs:changeReason "revised"^^xsd:string ;
-            cs:createdDate "2023-01-27T05:25:19"^^xsd:dateTime ;
-            cs:creatorName <http://id.loc.gov/vocabulary/organizations/uk> ;
             cs:subjectOfChange <http://id.loc.gov/authorities/names/n80002329> ] ;
     skos:closeMatch <http://id.worldcat.org/fast/48407>,
         <http://www.wikidata.org/entity/Q311145> ;
@@ -963,21 +963,21 @@
     skos:inScheme <http://id.loc.gov/authorities/names> ;
     skos:prefLabel "Machado de Assis, 1839-1908" ;
     skosxl:altLabel [ a skosxl:Label ;
-            skosxl:literalForm "Machado de Assis, Joaquim Maria, 1839-1908" ],
-        [ a skosxl:Label ;
-            skosxl:literalForm "De Assis, Machado, 1839-1908" ],
-        [ a skosxl:Label ;
-            skosxl:literalForm "Mashado de Assiz, Zhoakin, 1839-1908" ],
-        [ a skosxl:Label ;
-            skosxl:literalForm "Assis, Machado de, 1839-1908" ],
-        [ a skosxl:Label ;
-            skosxl:literalForm "Machado de Assis, Joaquín María, 1839-1908" ],
+            skosxl:literalForm "Semana Dr., 1839-1908" ],
         [ a skosxl:Label ;
             skosxl:literalForm "Assis, Joaquim Maria Machado de, 1839-1908" ],
         [ a skosxl:Label ;
+            skosxl:literalForm "Mashado de Assiz, Zhoakin, 1839-1908" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Machado de Assis, Joaquim Maria, 1839-1908" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "Machado de Assis, Joaquín María, 1839-1908" ],
+        [ a skosxl:Label ;
+            skosxl:literalForm "De Assis, Machado, 1839-1908" ],
+        [ a skosxl:Label ;
             skosxl:literalForm "De Assis, Joaquim Maria Machado, 1839-1908" ],
         [ a skosxl:Label ;
-            skosxl:literalForm "Semana Dr., 1839-1908" ] .
+            skosxl:literalForm "Assis, Machado de, 1839-1908" ] .
 
 <http://id.loc.gov/resources/works/15537651> a bf:Work ;
     bflc:aap "Machado de Assis, 1839-1908. homem célebre : Machado recriado" .
