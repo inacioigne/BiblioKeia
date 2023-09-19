@@ -8,6 +8,8 @@ from src.function.authorities.generateID import GenerateId
 from src.schemas.authorities.agents import Agents
 from src.schemas.settings import Settings
 from src.function.loc.graphExist import GraphExist
+from src.db.init_db import session
+from src.db.models import Authority
 
 settings = Settings()
 
@@ -16,17 +18,31 @@ authorityUpdate = FusekiUpdate(f'{settings.url}:3030', 'authority')
 
 solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
+
 # Add Autority
 @router.post("/agents/", status_code=201) 
 async def post_agents(request: Agents): 
 
     token = request.adminMetadata.identifiedBy[0].value
+    exist = session.query(Authority).filter_by(id = token).first()
 
-    exist = GraphExist(token)
+    # exist = GraphExist(token)
     if exist:
         raise HTTPException(status_code=409, detail="Esse registro já existe")
   
-    id = GenerateId() 
+    # id = GenerateId() 
+    authority = session.query(Authority).order_by(Authority.id.desc()).first()
+    if authority:
+        id = authority.id + 1
+        uri = f'https://bibliokeia.com/authorities/{request.type}/{id}'
+    else:
+        id = 1
+        uri = f'https://bibliokeia.com/authorities/{request.type}/{id}'
+
+    a = Authority(type=request.type, uri=uri)
+    session.add(a) 
+    session.commit()
+
     graph = MakeGraphAgents(request, id)
     response = authorityUpdate.run_sparql(graph)
 

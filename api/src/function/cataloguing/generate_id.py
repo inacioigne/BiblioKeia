@@ -1,26 +1,16 @@
-from pyfuseki import FusekiQuery
+# from pyfuseki import FusekiQuery
 
-from src.schemas.settings import Settings
+# from src.schemas.settings import Settings
 
-settings = Settings()
+from src.db.init_db import session
+from src.db.models import Authority
+# settings = Settings()
 
 def GenerateId():
 
-    collection = FusekiQuery(f'{settings.url}:3030', 'collection')
-
-    sparql = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
-            SELECT ?g
-            {graph ?g {?s bf:generationDate ?o}} 
-            ORDER BY DESC(?o)
-            LIMIT 1"""
-    
-    response = collection.run_sparql(sparql)
-    response = response.convert()
-    bindings = response['results']['bindings']
-
-    if len(bindings) == 0:
-        return { 'id': "bkc-1" }
+    authority = session.query(Authority).order_by(Authority.id.desc()).first()   
+    if  authority:
+        id = authority.id + 1
+        return {'id': id}
     else:
-        value = bindings[0]['g']['value']
-        bk = int(value.split("-")[1]) + 1
-        return { 'id': "bkc-"+str(bk) } 
+        return {'id': 1}

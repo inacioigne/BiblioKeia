@@ -73,4 +73,11 @@ class LoanHistoric(Base):
     user = relationship("User", back_populates="loan_historic")
     item = relationship("Item", back_populates="loan_historic")
 
+class Authority(Base):
+    __tablename__ = 'authority'
+    id = Column(Integer, primary_key=True)
+    type = Column(String(20))
+    uri = Column(String(200))
+
+
     

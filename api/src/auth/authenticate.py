@@ -1,5 +1,5 @@
 from src.db.init_db import session
-from src.db.models import User
+from src.db.models import User 
 from passlib.context import CryptContext
 import os
 
