@@ -14,6 +14,8 @@ class Affiliation(BaseModel):
     
 class Agents(BaseModel):
     type: str 
+    identifiersLccn: Optional[str] = None
+    identifiersLocal: int
     adminMetadata: AdminMetadata 
     authoritativeLabel: str
     elementList: list[Element]

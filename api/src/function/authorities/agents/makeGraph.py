@@ -27,12 +27,14 @@ prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX millus: <http://id.loc.gov/vocabulary/millus/>"""
 
 def MakeGraphAgents(request, id): 
-    graph = f"""{prefix}    
+    graph = f"""{prefix}     
     INSERT DATA {{
         GRAPH <https://bibliokeia.com/authorities/{request.type}/{id}>
         {{
         <https://bibliokeia.com/authorities/{request.type}/{id}> a madsrdf:Authority, 
             madsrdf:{request.type} ;
+            identifiers:local {request.identifiersLocal} ; 
+            { f'identifiers:lccn "{request.identifiersLccn}" ;' if request.identifiersLccn else ''}
             madsrdf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <{request.adminMetadata.assigner}> ;
             bf:creationDate "{request.adminMetadata.creationDate}"^^xsd:date ;
@@ -41,7 +43,6 @@ def MakeGraphAgents(request, id):
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "{request.adminMetadata.generationProcess}" ;
                     bf:generationDate "{datetime.now().strftime('%Y-%m-%dT%H:%M:%S')}"^^xsd:dateTime ] ;
-            bf:identifiedBy {MakeIdentifier(request.adminMetadata.identifiedBy, id)} ; 
             bf:status {request.adminMetadata.status.value} ] ; 
             madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
             madsrdf:elementList ( {MakeElement(request.elementList)} ) ; 

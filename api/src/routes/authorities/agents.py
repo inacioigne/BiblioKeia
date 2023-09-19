@@ -23,12 +23,10 @@ solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 @router.post("/agents/", status_code=201) 
 async def post_agents(request: Agents): 
 
-    token = request.adminMetadata.identifiedBy[0].value
-    exist = session.query(Authority).filter_by(id = token).first()
-
-    # exist = GraphExist(token)
-    if exist:
-        raise HTTPException(status_code=409, detail="Esse registro já existe")
+    if request.identifiersLccn:
+        exist = GraphExist(request.identifiersLccn)
+        if exist:
+            raise HTTPException(status_code=409, detail="Esse registro já existe")
   
     # id = GenerateId() 
     authority = session.query(Authority).order_by(Authority.id.desc()).first()

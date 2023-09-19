@@ -65,7 +65,7 @@ class Status(BaseModel):
 class IdentifiedBy(BaseModel):
     type: str = Field(default='Local')
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
-    value: str  
+    value: int  
 
 class AdminMetadata(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
@@ -74,12 +74,13 @@ class AdminMetadata(BaseModel):
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: str = Field(default="BiblioKeia v.1")
     generationDate: str = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
-    identifiedBy: list[IdentifiedBy]
+    # identifiedBy: list[IdentifiedBy]
     status: Status = Field(default=Status(value="mstatus:new", label="novo"))
 
 class Authority(BaseModel):
     type: str
-    identifiers: Optional[str]
+    identifiersLccn: Optional[str] = None
+    identifiersLocal: int
     adminMetadata: AdminMetadata 
     elementList: Optional[list[Element]]
     componentList: Optional[list[Union[Uri, ComponentList]]]

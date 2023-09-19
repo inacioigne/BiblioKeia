@@ -1,0 +1,17 @@
+{
+    "type": "PersonalName",
+    "identifiersLocal": 1,
+    "adminMetadata": {
+      "creationDate": "2023-09-19"
+    },
+    "authoritativeLabel": "Machado",
+    "elementList": [
+     {
+        "type": "FullNameElement",
+        "elementValue": {
+          "value": "Machado de Assis"
+        }
+    }
+    ],
+    "isMemberOfMADSCollection": "string"
+  }
