@@ -1,5 +1,5 @@
 from src.function.authorities.agents.hasAffiliation import MakeAffiliation
-from src.function.authorities.agents.birthPlace import BirthPlace
+from src.function.authorities.agents.place import BirthPlace, DeathPlace
 from src.function.authorities.agents.fullerName import FullerName
 from src.function.authorities.makeElement import MakeElement
 from src.function.authorities.makeIdentifier import MakeIdentifier
@@ -49,6 +49,7 @@ def MakeGraphAgents(request, id):
             { FullerName(request) if request.fullerName else ''  }
             { f'madsrdf:birthDate "{request.birthDate}" ;' if request.birthDate else ''  }
             { BirthPlace(request) if request.birthPlace else ''  }
+            { DeathPlace(request.deathPlace) if request.deathPlace else ''  }
             { MakeAffiliation(request.hasAffiliation) if request.hasAffiliation else ''  }
             { f'madsrdf:deathDate "{request.deathDate}" ;' if request.deathDate else ''  }
             { f'madsrdf:occupation {", ".join([ f"<{i.value}>" for i in request.occupation])} ;' if request.occupation else ''}

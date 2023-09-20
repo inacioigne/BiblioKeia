@@ -22,6 +22,7 @@ class Agents(BaseModel):
     fullerName: Optional[Element] = None
     birthDate: Optional[str] = None
     birthPlace: Optional[str] = None
+    deathPlace: Optional[str] = None
     deathDate: Optional[str] = None
     hasAffiliation: Optional[list[Affiliation]] = None
     occupation: Optional[list[Uri]] = None

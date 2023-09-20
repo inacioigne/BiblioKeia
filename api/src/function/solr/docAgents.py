@@ -47,6 +47,8 @@ def MakeDocAgents(request, id):
         doc['birthPlace'] = request.birthPlace
     if request.deathDate:
         doc['deathDate'] = request.deathDate
+    if request.deathPlace:
+        doc['deathPlace'] = request.deathPlace
     
     # hasAffiliation  
     if request.hasAffiliation:
