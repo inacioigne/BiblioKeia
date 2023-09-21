@@ -37,7 +37,7 @@ async def post_agents(request: Agents):
         id = 1
         uri = f'https://bibliokeia.com/authorities/{request.type}/{id}'
 
-    a = Authority(type=request.type, uri=uri)
+    a = Authority(id=id, type=request.type, uri=uri)
     session.add(a) 
     session.commit()
 

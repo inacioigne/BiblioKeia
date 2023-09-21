@@ -1,7 +1,3 @@
-# from pyfuseki import FusekiQuery
-
-# from src.schemas.settings import Settings
-
 from src.db.init_db import session
 from src.db.models import Authority
 

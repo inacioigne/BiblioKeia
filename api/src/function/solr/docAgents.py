@@ -92,6 +92,22 @@ def MakeDocAgents(request, id):
                     doc['imagem'] = imagem
         doc['hasCloseExternalAuthority'] = uris
 
+    # hasCloseExternalAuthority
+    if request.hasExactExternalAuthority:
+        uris = list()
+        for i in request.hasExactExternalAuthority:
+            uri = {
+                    'id': f"{id}/hasExactExternalAuthority#{i.value.split('/')[-1]}",
+                    'uri': i.value, 
+                    'label': i.label, 
+                    'base': i.base }
+            uris.append(uri)
+            if 'wikidata' in i.base:
+                imagem = GetImagem(i.value)
+                if imagem:
+                    doc['imagem'] = imagem
+        doc['hasExactExternalAuthority'] = uris
+
     # Occupation
     if request.occupation:
         occupations = list()

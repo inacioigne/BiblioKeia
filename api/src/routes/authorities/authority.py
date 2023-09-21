@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pyfuseki import FusekiUpdate
 from pysolr import Solr
+from src.function.authorities.nextId import GenerateId
 from src.schemas.authorities.authority import DeleteAuthority
 from src.function.authorities.makeElement import MakeElement
 from src.function.authorities.makeLabel import MakeLabel
@@ -47,6 +48,14 @@ async def delete_authority(request: DeleteAuthority):
     response = UpdateDelete(doc, response, authority)
     
     return response
+
+# Delete Autority
+@router.get("/next", status_code=200) 
+async def next_id():
+
+    nextID = GenerateId()
+
+    return nextID
 
 # Edit Element
 @router.put("/elementValue", status_code=200) 
