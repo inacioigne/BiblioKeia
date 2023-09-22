@@ -20,7 +20,8 @@ class Agents(BaseModel):
     authoritativeLabel: str
     elementList: list[Element]
     fullerName: Optional[Element] = None
-    birthDate: Optional[str] = None
+    birthDayDate: Optional[str] = None
+    birthDate: Optional[str] = None 
     birthPlace: Optional[str] = None
     deathPlace: Optional[str] = None
     deathDate: Optional[str] = None

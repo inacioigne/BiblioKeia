@@ -41,6 +41,8 @@ def MakeDocAgents(request, id):
     
     if request.fullerName:
         doc['fullerName'] = request.fullerName.elementValue.value
+    if request.birthDayDate:
+        doc['birthDayDate'] = request.birthDayDate
     if request.birthDate:
         doc['birthDate'] = request.birthDate
     if request.birthPlace:
