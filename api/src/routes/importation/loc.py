@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from rdflib import Graph
 from src.function.loc.parserInstance import ParserInstance
 from src.function.loc.parserWork import ParserWork
-from src.schemas.authorities.agents import Agents
+from src.schemas.authorities.personalName import PersonalName
 from src.function.loc.agents.parserAgents import ParserAgents
 from src.function.loc.graphExist import GraphExist
 from src.function.loc.parserSubject import ParserSubject
@@ -27,7 +27,7 @@ async def get_subject(uri: str):
     return subject.model_dump()
 
 # LC Name Authority File (LCNAF)
-@router.get("/agents", status_code=200, response_model=Agents) 
+@router.get("/agents", status_code=200, response_model=PersonalName) 
 async def get_agents(uri: str):
     token = uri.split("/")[-1]
 

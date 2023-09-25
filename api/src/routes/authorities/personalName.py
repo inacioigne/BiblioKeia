@@ -5,7 +5,7 @@ from src.function.solr.docAgents import MakeDocAgents
 from src.function.authorities.agents.makeGraph import MakeGraphAgents
 from src.function.authorities.generateID import GenerateId
 
-from src.schemas.authorities.agents import Agents
+from src.schemas.authorities.personalName import PersonalName
 from src.schemas.settings import Settings
 from src.function.loc.graphExist import GraphExist
 from src.db.init_db import session
@@ -20,9 +20,9 @@ solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 
 
 # Add Autority
-@router.post("/agents/", status_code=201) 
-async def post_agents(request: Agents): 
-
+@router.post("/personalName/", status_code=201) 
+async def post_personalName(request: PersonalName): 
+    
     if request.identifiersLccn:
         exist = GraphExist(request.identifiersLccn)
         if exist:
@@ -54,3 +54,8 @@ async def post_agents(request: Agents):
         "jena": response.convert()['message'],
         "solr": responseSolr
         } 
+
+# Put Autority
+@router.put("/personalName/{id}", status_code=201) 
+async def edit_personalName(request: PersonalName): 
+    return request.model_dump()

@@ -12,7 +12,7 @@ class Affiliation(BaseModel):
     affiliationStart: Optional[str] = None
     affiliationEnd: Optional[str] = None
     
-class Agents(BaseModel):
+class PersonalName(BaseModel):
     type: str 
     identifiersLccn: Optional[str] = None
     identifiersLocal: int
@@ -21,9 +21,14 @@ class Agents(BaseModel):
     elementList: list[Element]
     fullerName: Optional[Element] = None
     birthDayDate: Optional[str] = None
+    birthMonthDate: Optional[str] = None
+    birthYearDate: Optional[str] = None
     birthDate: Optional[str] = None 
     birthPlace: Optional[str] = None
     deathPlace: Optional[str] = None
+    deathDayDate: Optional[str] = None
+    deathMonthDate: Optional[str] = None
+    deathYearDate: Optional[str] = None
     deathDate: Optional[str] = None
     hasAffiliation: Optional[list[Affiliation]] = None
     occupation: Optional[list[Uri]] = None

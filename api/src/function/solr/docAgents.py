@@ -1,7 +1,5 @@
 import httpx
 
-# from src.function.authorities.makeLabel import MakeLabel
-
 
 def GetImagem(uri):
     id = uri.split('/')[-1]
@@ -29,28 +27,26 @@ def GetImagem(uri):
             return False
         
 def MakeDocAgents(request, id):
+    print("LABEL", request)
 
     doc = { 
             'id': id,
             'type': request.type,
             "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
-            # "label": f'{MakeLabel(request.elementList)}' ,
-            "authority": request.authoritativeLabel,
+            "label": request.authoritativeLabel,
+            "authority": request.elementList[0].elementValue.value,
             "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
     
     if request.fullerName:
         doc['fullerName'] = request.fullerName.elementValue.value
-    if request.birthDayDate:
-        doc['birthDayDate'] = request.birthDayDate
-    if request.birthDate:
-        doc['birthDate'] = request.birthDate
-    if request.birthPlace:
-        doc['birthPlace'] = request.birthPlace
-    if request.deathDate:
-        doc['deathDate'] = request.deathDate
-    if request.deathPlace:
-        doc['deathPlace'] = request.deathPlace
+    
+    metadados = ['birthDayDate', 'birthMonthDate','birthYearDate', 'birthDate', 'birthPlace', 'deathDate', 'deathPlace',
+                 'deathDayDate', 'deathMonthDate', 'deathYearDate']
+    for metadado in metadados:
+        value = request.model_dump().get(metadado)
+        if value:
+            doc[metadado] = value
     
     # hasAffiliation  
     if request.hasAffiliation:

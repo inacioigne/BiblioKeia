@@ -1,3 +1,4 @@
+from src.routes.authorities import personalName
 from src.db.init_db import initializeDatabase
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -5,7 +6,7 @@ from src.routes.users import login
 from src.routes.users import users
 from src.routes.cataloguing import images, generateId, work, instances, items, hub, general
 from src.routes.translate import translate
-from src.routes.authorities import authority, subjects, agents
+from src.routes.authorities import authority, subjects
 from src.routes.importation import loc
 
 import uvicorn
@@ -47,7 +48,7 @@ app.include_router(loc.router, prefix='/import/loc', tags=['Import'])
 
 # Authorities
 app.include_router(subjects.router, prefix='/authorities', tags=['Authorities'])
-app.include_router(agents.router, prefix='/authorities', tags=['Authorities'])
+app.include_router(personalName.router, prefix='/authority', tags=['Authority Personal Name'])
 app.include_router(authority.router, prefix='/authority', tags=['Authority'])
 
 
