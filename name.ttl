@@ -1,0 +1,39 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bibliokeia.com/authorities/PersonalName/1> a ns1:Authority,
+        ns1:PersonalName ;
+    ns3:local 1 ;
+    ns1:adminMetadata [ a ns2:AdminMetadata ;
+            ns2:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ns2:creationDate "2023-09-25"^^xsd:date ;
+            ns2:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:descriptionModifier <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            ns2:generationProcess [ a ns2:GenerationProcess ;
+                    rdfs:label "BiblioKeia v.1" ;
+                    ns2:generationDate "2023-09-25T10:28:54"^^xsd:dateTime ] ;
+            ns2:status <http://id.loc.gov/vocabulary/mstatus/new> ] ;
+    ns1:authoritativeLabel "Lispector, Clarice , 1944 - 1990" ;
+    ns1:birthDate "16-05-1944" ;
+    ns1:birthPlace [ a ns1:Geographic ;
+            rdfs:label "Tchetchelnik (Ukraine)" ] ; 
+    ns1:deathDate "16-03-1990" ;
+    ns1:deathPlace [ a ns1:Geographic ;
+            rdfs:label "Rio de Janeiro" ] ;
+    ns1:elementList ( [ a ns1:FullNameElement ;
+                ns1:elementValue "Lispector, Clarice " ] [ a ns1:DateNameElement ;
+                ns1:elementValue "1944 - 1990" ] ) ;
+    ns1:fullerName [ a ns1:PersonalName ;
+            rdfs:label "Clarice Lispector " ] ;
+    ns1:hasExactExternalAuthority <https://www.wikidata.org/wiki/Q92832> ;
+    ns1:hasVariant [ a ns1:PersonalName,
+                ns1:Variant ;
+            ns1:elementList ( [ a ns1:FullNameElement ;
+                        ns1:elementValue "קלאריס, ליספקטור" ] ) ;
+            ns1:variantLabel "קלאריס, ליספקטור" ] ;
+    ns1:isMemberOfMADSCollection <https://bibliokeia.com/authorities/PersonalName/> .
+

@@ -1,0 +1,126 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lclocal: <http://id.loc.gov/ontologies/lclocal/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/resources/works/19090442> a bf:Text,
+        bf:Work ;
+    rdfs:label "Todos os contos" ;
+    bflc:aap "Lispector, Clarice, Todos os contos" ;
+    bflc:aap-normalized "lispectorclaricetodososcontos" ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:changeDate "2017-06-14T10:26:38"^^xsd:dateTime ;
+            bf:creationDate "2016-05-11"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/lcode>,
+                <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <http://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "DLC marc2bibframe2 v1.7.0-SNAPSHOT" ;
+                    bf:generationDate "2021-08-04T22:17:43-04:00"^^xsd:dateTime ] ;
+            bf:identifiedBy [ a bf:Local ;
+                    bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+                    rdf:value "19090442" ] ;
+            bf:status [ a bf:Status ;
+                    rdfs:label "corrected or revised" ;
+                    bf:code "c" ] ;
+            lclocal:d906 "=906     $a 7 $b cbc $c origode $d 3 $e ncip $f 20 $g y-gencatlg" ;
+            lclocal:d925 "=925  0  $a acquire $b 1 shelf copy $x policy default" ;
+            lclocal:d955 "=955     $b wr12 2016-05-11 $c wr08 2016-06-17 $d wr08 2016-06-17 $e wr08 2016-06-17 to CALM $a be23 2017-06-14" ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "PQ9697.L585" ;
+            bf:itemPortion "A6 2016" ],
+        [ a bf:ClassificationDdc ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/dlc> ;
+            bf:classificationPortion "869.3/42" ;
+            bf:edition "full" ;
+            bf:source [ a bf:Source ;
+                    bf:code "23" ] ] ;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Lispector, Clarice," ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Moser, Benjamin," ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:expressionOf <http://id.loc.gov/resources/hubs/8106fcc2-5068-d7b4-c1c1-63c5040df402> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339> ;
+    bf:hasInstance <http://id.loc.gov/resources/instances/19090442> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/por> ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Todos os contos" ;
+            bf:mainTitle "Todos os contos" ] ;
+    dcterms:isPartOf <http://id.loc.gov/resources/works> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> a bf:GenreForm ;
+    rdfs:label "Fiction"@en ;
+    bflc:marcKey "155  $aFiction" .
+
+<http://id.loc.gov/resources/hubs/8106fcc2-5068-d7b4-c1c1-63c5040df402> a bf:Work ;
+    rdfs:label "Lispector, Clarice Short stories" ;
+    bf:contribution [ a bflc:PrimaryContribution,
+                bf:Contribution ;
+            bf:agent [ a bf:Agent,
+                        bf:Person ;
+                    rdfs:label "Lispector, Clarice" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Short stories" ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Todos os contos" ] .
+
+<http://id.loc.gov/resources/instances/19090442> a bf:Instance ;
+    rdfs:label "Todos os contos" ;
+    bf:provisionActivityStatement "Rio de Janeiro, RJ : Rocco, [2016]" ;
+    bf:title [ a bf:Title ;
+            rdfs:label "Todos os contos" ;
+            bf:mainTitle "Todos os contos" ] .
+
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content ;
+    rdfs:label "text" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/isbd> a bf:DescriptionConventions ;
+    rdfs:label "ISBD: International standard bibliographic description" .
+
+<http://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:DescriptionConventions ;
+    rdfs:label "Resource description and access" .
+
+<http://id.loc.gov/vocabulary/languages/eng> a madsrdf:Language ;
+    rdfs:label "English"@en .
+
+<http://id.loc.gov/vocabulary/languages/por> a bf:Language ;
+    rdfs:label "Portuguese"@en .
+
+<http://id.loc.gov/vocabulary/marcauthen/lcode> a bf:DescriptionAuthentication ;
+    rdfs:label "LC Overseas Data Entry" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> a bf:DescriptionAuthentication ;
+    rdfs:label "Program for Cooperative Cataloging" .
+
+<http://id.loc.gov/vocabulary/menclvl/f> a bflc:EncodingLevel ;
+    rdfs:label "full" .
+
+<http://id.loc.gov/vocabulary/relators/aut> a bf:Role ;
+    rdfs:label "Author" .
+
+<http://id.loc.gov/vocabulary/relators/ctb> a bf:Role .
+
+<http://id.loc.gov/vocabulary/relators/edt> a bf:Role ;
+    rdfs:label "Editor" .
+
+<http://id.loc.gov/vocabulary/organizations/dlc> a bf:Organization ;
+    rdfs:label "United States, Library of Congress" .
+

@@ -27,7 +27,7 @@ def GetImagem(uri):
             return False
         
 def MakeDocAgents(request, id):
-    print("LABEL", request)
+    # print("LABEL", request)
 
     doc = { 
             'id': id,
@@ -37,6 +37,12 @@ def MakeDocAgents(request, id):
             "authority": request.elementList[0].elementValue.value,
             "isMemberOfMADSCollection": request.isMemberOfMADSCollection
         }
+    if request.imagem:
+        doc['imagem'] = request.imagem
+        print("IMG:", request.imagem )
+
+    if request.adminMetadata.changeDate:
+        doc['changeDate'] = request.adminMetadata.changeDate.strftime("%Y-%m-%dT%H:%M:%S")
     
     if request.fullerName:
         doc['fullerName'] = request.fullerName.elementValue.value
@@ -84,10 +90,10 @@ def MakeDocAgents(request, id):
                     'label': i.label, 
                     'base': i.base }
             uris.append(uri)
-            if i.base == 'www.wikidata.org':
-                imagem = GetImagem(i.value)
-                if imagem:
-                    doc['imagem'] = imagem
+            # if i.base == 'www.wikidata.org':
+            #     imagem = GetImagem(i.value)
+            #     if imagem:
+            #         doc['imagem'] = imagem
         doc['hasCloseExternalAuthority'] = uris
 
     # hasCloseExternalAuthority
@@ -100,10 +106,10 @@ def MakeDocAgents(request, id):
                     'label': i.label, 
                     'base': i.base }
             uris.append(uri)
-            if 'wikidata' in i.base:
-                imagem = GetImagem(i.value)
-                if imagem:
-                    doc['imagem'] = imagem
+            # if 'wikidata' in i.base:
+            #     imagem = GetImagem(i.value)
+            #     if imagem:
+            #         doc['imagem'] = imagem
         doc['hasExactExternalAuthority'] = uris
 
     # Occupation

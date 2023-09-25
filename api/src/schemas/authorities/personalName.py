@@ -39,4 +39,5 @@ class PersonalName(BaseModel):
     subjectOf: Optional[list[Uri]] = None
     contributorOf: Optional[list[Uri]] = None
     isMemberOfMADSCollection: str
+    imagem: Optional[str] = None
 

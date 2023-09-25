@@ -59,7 +59,7 @@ class GenerationProcess(BaseModel):
     generationDate: datetime = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
     
 class Status(BaseModel):
-    value: str = Field(default="mstatus:new")
+    value: str = Field(default="n")
     label: str = Field(default="novo")
 
 class IdentifiedBy(BaseModel):
@@ -70,12 +70,12 @@ class IdentifiedBy(BaseModel):
 class AdminMetadata(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
+    changeDate: date = None
     creationDate: date = Field(default=date.today())
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: str = Field(default="BiblioKeia v.1")
     generationDate: str = Field(default=datetime.now().strftime('%Y-%m-%dT%H:%M:%S'))
-    # identifiedBy: list[IdentifiedBy]
-    status: Status = Field(default=Status(value="mstatus:new", label="novo"))
+    status: Status = Field(default=Status(value="n", label="novo"))
 
 class Authority(BaseModel):
     type: str

@@ -10,7 +10,13 @@ def DeleteAuthoritySolr(id):
     r = solr.search(q=f'id:{id}', **{'fl': '*,[child]'})
 
     nMeta = ["id", "type", "creationDate", "authority", "affiliation", "occupation", "isMemberOfMADSCollection", "note", "variant",
-              "imagem", "fullerName", "birthDate", "birthPlace","deathDate",  "_version_"]
+              "imagem", "fullerName", "birthDate", "birthPlace","deathDate",  "_version_", "label", "changeDate", "deathPlace", "birthDayDate",
+"birthMonthDate",
+"birthYearDate",
+"deathDayDate",
+"deathMonthDate",
+"deathYearDate"
+]
     ids = [id]
     [doc] = r.docs
     for k, v in doc.items():

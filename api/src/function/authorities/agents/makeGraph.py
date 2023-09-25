@@ -37,13 +37,16 @@ def MakeGraphAgents(request, id):
             { f'identifiers:lccn "{request.identifiersLccn}" ;' if request.identifiersLccn else ''}
             madsrdf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <{request.adminMetadata.assigner}> ;
+            { f'bf:changeDate "{request.adminMetadata.changeDate}"^^xsd:dateTime ;' if request.adminMetadata.changeDate else ''  }
             bf:creationDate "{request.adminMetadata.creationDate}"^^xsd:date ;
             bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
             bf:descriptionModifier <{request.adminMetadata.assigner}> ; 
             bf:generationProcess [ a bf:GenerationProcess ;
                     rdfs:label "{request.adminMetadata.generationProcess}" ;
                     bf:generationDate "{datetime.now().strftime('%Y-%m-%dT%H:%M:%S')}"^^xsd:dateTime ] ;
-            bf:status {request.adminMetadata.status.value} ] ; 
+            bf:status [ a bf:Status ;
+                    rdfs:label "{request.adminMetadata.status.label}" ;
+                    bf:code "{request.adminMetadata.status.value}" ] ] ;
             madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
             madsrdf:elementList ( {MakeElement(request.elementList)} ) ; 
             { FullerName(request) if request.fullerName else ''  }

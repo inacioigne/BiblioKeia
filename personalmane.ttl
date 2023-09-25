@@ -1,0 +1,70 @@
+<https://bibliokeia.com/authorities/PersonalName/1>
+        a       <http://www.loc.gov/mads/rdf/v1#Authority> , <http://www.loc.gov/mads/rdf/v1#PersonalName>;
+        <http://id.loc.gov/vocabulary/identifiers/local>
+                1;
+        <http://www.loc.gov/mads/rdf/v1#adminMetadata>
+                [ a       <http://id.loc.gov/ontologies/bibframe/AdminMetadata>;
+                  <http://id.loc.gov/ontologies/bibframe/assigner>
+                          <http://id.loc.gov/vocabulary/organizations/brmninpa>;
+                  <http://id.loc.gov/ontologies/bibframe/creationDate>
+                          "2023-09-25"^^<http://www.w3.org/2001/XMLSchema#date>;
+                  <http://id.loc.gov/ontologies/bibframe/descriptionLanguage>
+                          <http://id.loc.gov/vocabulary/languages/eng>;
+                  <http://id.loc.gov/ontologies/bibframe/descriptionModifier>
+                          <http://id.loc.gov/vocabulary/organizations/brmninpa>;
+                  <http://id.loc.gov/ontologies/bibframe/generationProcess>
+                          [ a       <http://id.loc.gov/ontologies/bibframe/GenerationProcess>;
+                            <http://www.w3.org/2000/01/rdf-schema#label>
+                                    "BiblioKeia v.1";
+                            <http://id.loc.gov/ontologies/bibframe/generationDate>
+                                    "2023-09-25T10:28:54"^^<http://www.w3.org/2001/XMLSchema#dateTime>
+                          ];
+                  <http://id.loc.gov/ontologies/bibframe/status>
+                          <http://id.loc.gov/vocabulary/mstatus/new>
+                ];
+        <http://www.loc.gov/mads/rdf/v1#authoritativeLabel>
+                "Lispector, Clarice , 1944 - 1990";
+        <http://www.loc.gov/mads/rdf/v1#birthDate>
+                "16-05-1944";
+        <http://www.loc.gov/mads/rdf/v1#birthPlace>
+                [ a       <http://www.loc.gov/mads/rdf/v1#Geographic>;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Tchetchelnik (Ukraine)"
+                ];
+        <http://www.loc.gov/mads/rdf/v1#deathDate>
+                "16-03-1990";
+        <http://www.loc.gov/mads/rdf/v1#deathPlace>
+                [ a       <http://www.loc.gov/mads/rdf/v1#Geographic>;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Rio de Janeiro"
+                ];
+        <http://www.loc.gov/mads/rdf/v1#elementList>
+                ( [ a       <http://www.loc.gov/mads/rdf/v1#FullNameElement>;
+                    <http://www.loc.gov/mads/rdf/v1#elementValue>
+                            "Lispector, Clarice "
+                  ]
+                  [ a       <http://www.loc.gov/mads/rdf/v1#DateNameElement>;
+                    <http://www.loc.gov/mads/rdf/v1#elementValue>
+                            "1944 - 1990"
+                  ]
+                );
+        <http://www.loc.gov/mads/rdf/v1#fullerName>
+                [ a       <http://www.loc.gov/mads/rdf/v1#PersonalName>;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Clarice Lispector "
+                ];
+        <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority>
+                <https://www.wikidata.org/wiki/Q92832>;
+        <http://www.loc.gov/mads/rdf/v1#hasVariant>
+                [ a       <http://www.loc.gov/mads/rdf/v1#Variant> , <http://www.loc.gov/mads/rdf/v1#PersonalName>;
+                  <http://www.loc.gov/mads/rdf/v1#elementList>
+                          ( [ a       <http://www.loc.gov/mads/rdf/v1#FullNameElement>;
+                              <http://www.loc.gov/mads/rdf/v1#elementValue>
+                                      "קלאריס, ליספקטור"
+                            ]
+                          );
+                  <http://www.loc.gov/mads/rdf/v1#variantLabel>
+                          "קלאריס, ליספקטור"
+                ];
+        <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection>
+                <https://bibliokeia.com/authorities/PersonalName/> .
