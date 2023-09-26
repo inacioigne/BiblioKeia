@@ -27,7 +27,6 @@ def GetImagem(uri):
             return False
         
 def MakeDocAgents(request, id):
-    # print("LABEL", request)
 
     doc = { 
             'id': id,
@@ -98,6 +97,7 @@ def MakeDocAgents(request, id):
 
     # hasCloseExternalAuthority
     if request.hasExactExternalAuthority:
+        # print("LABEL", request.hasExactExternalAuthority)
         uris = list()
         for i in request.hasExactExternalAuthority:
             uri = {
