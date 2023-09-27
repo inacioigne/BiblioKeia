@@ -8,6 +8,7 @@ from src.routes.cataloguing import images, generateId, work, instances, items, h
 from src.routes.translate import translate
 from src.routes.authorities import authority, subjects
 from src.routes.importation import loc
+from src.routes.thesaurus import mads
 
 import uvicorn
 
@@ -46,10 +47,13 @@ app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 # Importation
 app.include_router(loc.router, prefix='/import/loc', tags=['Import'])
 
+# Thesaurus
+app.include_router(mads.router, prefix='/thesarus', tags=['Thesaurus'])
+
 # Authorities
-app.include_router(subjects.router, prefix='/authorities', tags=['Authorities'])
-app.include_router(personalName.router, prefix='/authority', tags=['Authority Personal Name'])
-app.include_router(authority.router, prefix='/authority', tags=['Authority'])
+# app.include_router(subjects.router, prefix='/authorities', tags=['Authorities'])
+# app.include_router(personalName.router, prefix='/authority', tags=['Authority Personal Name'])
+# app.include_router(authority.router, prefix='/authority', tags=['Authority'])
 
 
 # Cataloguing
