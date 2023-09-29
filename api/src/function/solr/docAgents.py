@@ -34,7 +34,7 @@ def MakeDocAgents(request, id):
             "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
             "label": request.authoritativeLabel,
             "authority": request.elementList[0].elementValue.value,
-            "isMemberOfMADSCollection": request.isMemberOfMADSCollection
+            "isMemberOfMADSCollection": "https://bibliokeia.com/authority"
         }
     if request.imagem:
         doc['imagem'] = request.imagem
@@ -84,41 +84,33 @@ def MakeDocAgents(request, id):
         uris = list()
         for i in request.hasCloseExternalAuthority:
             uri = {
-                    'id': f"{id}/hasCloseExternalAuthority#{i.value.split('/')[-1]}",
-                    'uri': i.value, 
+                    'id': f"{id}/hasCloseExternalAuthority#{i.uri.split('/')[-1]}",
+                    'uri': i.uri, 
                     'label': i.label, 
                     'base': i.base }
             uris.append(uri)
-            # if i.base == 'www.wikidata.org':
-            #     imagem = GetImagem(i.value)
-            #     if imagem:
-            #         doc['imagem'] = imagem
         doc['hasCloseExternalAuthority'] = uris
 
     # hasCloseExternalAuthority
-    if request.hasExactExternalAuthority:
-        # print("LABEL", request.hasExactExternalAuthority)
-        uris = list()
-        for i in request.hasExactExternalAuthority:
-            uri = {
-                    'id': f"{id}/hasExactExternalAuthority#{i.value.split('/')[-1]}",
-                    'uri': i.value, 
-                    'label': i.label, 
-                    'base': i.base }
-            uris.append(uri)
-            # if 'wikidata' in i.base:
-            #     imagem = GetImagem(i.value)
-            #     if imagem:
-            #         doc['imagem'] = imagem
-        doc['hasExactExternalAuthority'] = uris
+    # if request.hasExactExternalAuthority:
+    #     # print("LABEL", request.hasExactExternalAuthority)
+    #     uris = list()
+    #     for i in request.hasExactExternalAuthority:
+    #         uri = {
+    #                 'id': f"{id}/hasExactExternalAuthority#{i.value.split('/')[-1]}",
+    #                 'uri': i.value, 
+    #                 'label': i.label, 
+    #                 'base': i.base }
+    #         uris.append(uri)
+    #     doc['hasExactExternalAuthority'] = uris
 
     # Occupation
     if request.occupation:
         occupations = list()
         for i in request.occupation:
             uri = {
-                    'id': f"{id}/occupation#{i.value.split('/')[-1]}",
-                    'uri': i.value, 
+                    'id': f"{id}/occupation#{i.uri.split('/')[-1]}",
+                    'uri': i.uri, 
                     'label': i.label, 
                     'base': i.base }
             occupations.append(uri)
@@ -131,8 +123,8 @@ def MakeDocAgents(request, id):
         fields = list()
         for i in request.fieldOfActivity:
             uri = {
-                    'id': f"{id}/fieldOfActivity#{i.value.split('/')[-1]}",
-                    'uri': i.value, 
+                    'id': f"{id}/fieldOfActivity#{i.uri.split('/')[-1]}",
+                    'uri': i.uri, 
                     'label': i.label, 
                     'base': i.base }
             fields.append(uri)

@@ -6,6 +6,6 @@ def GenerateId():
     authority = session.query(Authority).order_by(Authority.id.desc()).first()   
     if  authority:
         id = authority.id + 1 
-        return {'id': id}
+        return id
     else:
-        return {'id': 1}
+        return 1

@@ -70,7 +70,7 @@ class IdentifiedBy(BaseModel):
 class AdminMetadata(BaseModel):
     assigner: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
     descriptionModifier: str = Field(default="http://id.loc.gov/vocabulary/organizations/brmninpa")
-    changeDate: date = None
+    changeDate: Optional[date] = None
     creationDate: date = Field(default=date.today())
     descriptionLanguage: str = Field(default="http://id.loc.gov/vocabulary/languages/por")
     generationProcess: str = Field(default="BiblioKeia v.1")

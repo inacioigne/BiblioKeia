@@ -1,0 +1,70 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX ri: <http://id.loc.gov/ontologies/RecordInfo#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX identifiers: <http://id.loc.gov/vocabulary/identifiers/>
+    PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
+    PREFIX bflc: <http://id.loc.gov/ontologies/bflc/>
+    PREFIX bkw: <https://bibliokeia.com/resources/work/>
+    PREFIX menclvl: <http://id.loc.gov/vocabulary/menclvl/>
+    PREFIX mstatus: <http://id.loc.gov/vocabulary/mstatus/>
+    PREFIX contentTypes: <http://id.loc.gov/vocabulary/contentTypes/>
+    PREFIX relators: <http://id.loc.gov/vocabulary/relators/>
+    PREFIX genreForms: <http://id.loc.gov/authorities/genreForms/>
+    PREFIX msupplcont: <http://id.loc.gov/vocabulary/msupplcont/>
+    PREFIX millus: <http://id.loc.gov/vocabulary/millus/>
+    INSERT DATA {
+        GRAPH <https://bibliokeia.com/authority/PersonalName/4>
+        {
+        <https://bibliokeia.com/authority/PersonalName/4> a madsrdf:Authority,
+            madsrdf:PersonalName ;
+            identifiers:local 4 ;
+            identifiers:lccn "n88090795" ;
+            madsrdf:adminMetadata [ a bf:AdminMetadata ;
+            bf:assigner <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+
+            bf:creationDate "2023-09-29"^^xsd:date ;
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:descriptionModifier <http://id.loc.gov/vocabulary/organizations/brmninpa> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "BiblioKeia" ;
+                    bf:generationDate "2023-09-29T13:58:24"^^xsd:dateTime ] ;
+            bf:status [ a bf:Status ;
+                    rdfs:label "novo" ;
+                    bf:code "n" ] ] ;
+            madsrdf:authoritativeLabel "Damasio, Antonio R." ;
+            madsrdf:elementList ( [ a madsrdf:http://www.loc.gov/mads/rdf/v1#FullNameElement ;
+                madsrdf:elementValue "Damasio, Antonio R." ] ) ;
+            madsrdf:fullerName [ a madsrdf:PersonalName ;
+                rdfs:label "Antonio Rosa" ] ;
+            madsrdf:birthDate "1944-02-25" ;
+            madsrdf:birthPlace [ a madsrdf:Geographic ;
+                rdfs:label "Lisbon (Portugal)" ] ;
+
+            madsrdf:hasAffiliation [ a madsrdf:Affiliation ;
+
+
+            madsrdf:organization <http://id.loc.gov/authorities/names/n85299803> ] , [ a madsrdf:Affiliation ;
+        madsrdf:affiliationStart "2005" ;
+
+            madsrdf:organization [ a madsrdf:Organization ;
+                    rdfs:label "University of Southern California. Brain and Creativity Institute" ] ]  ;
+
+            madsrdf:occupation <http://id.loc.gov/authorities/subjects/sh2006000762>, <http://id.loc.gov/authorities/subjects/sh85028378> ;
+            madsrdf:fieldOfActivity <http://id.loc.gov/authorities/subjects/sh85091114>, <http://id.loc.gov/authorities/subjects/sh89002432> ;
+            madsrdf:hasCloseExternalAuthority <http://id.worldcat.org/fast/1487281>, <http://www.wikidata.org/entity/Q380207> ;
+
+            madsrdf:hasVariant [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "Damasio, A. R." ] [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "(Antonio R.)" ] ) ;
+            madsrdf:variantLabel "Damasio, A. R., (Antonio R.)" ], [ a madsrdf:PersonalName,
+                madsrdf:Variant ;
+            madsrdf:elementList ( [ a madsrdf:FullNameElement ;
+                madsrdf:elementValue "דמאסיו, אנטוניו" ] ) ;
+            madsrdf:variantLabel "דמאסיו, אנטוניו" ]  ; .
+            }
+        }

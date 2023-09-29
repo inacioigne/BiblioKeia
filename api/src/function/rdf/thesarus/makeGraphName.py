@@ -1,4 +1,5 @@
-from src.function.authorities.agents.hasAffiliation import MakeAffiliation
+# from src.function.authorities.agents.hasAffiliation import MakeAffiliation
+from src.function.rdf.thesarus.hasAffiliation import MakeAffiliation
 from src.function.authorities.agents.place import BirthPlace, DeathPlace
 from src.function.authorities.agents.fullerName import FullerName
 from src.function.authorities.makeElement import MakeElement
@@ -26,14 +27,15 @@ prefix = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX msupplcont: <http://id.loc.gov/vocabulary/msupplcont/>
     PREFIX millus: <http://id.loc.gov/vocabulary/millus/>"""
 
-def MakeGraphAgents(request, id):  
+def MakeGraphName(request, id):  
+
     graph = f"""{prefix}     
     INSERT DATA {{
-        GRAPH <https://bibliokeia.com/authorities/{request.type}/{id}>
+        GRAPH <https://bibliokeia.com/authority/{request.type}/{id}>
         {{
-        <https://bibliokeia.com/authorities/{request.type}/{id}> a madsrdf:Authority, 
+        <https://bibliokeia.com/authority/{request.type}/{id}> a madsrdf:Authority, 
             madsrdf:{request.type} ;
-            identifiers:local {request.identifiersLocal} ; 
+            identifiers:local {id} ; 
             { f'identifiers:lccn "{request.identifiersLccn}" ;' if request.identifiersLccn else ''}
             madsrdf:adminMetadata [ a bf:AdminMetadata ;
             bf:assigner <{request.adminMetadata.assigner}> ;
@@ -55,12 +57,12 @@ def MakeGraphAgents(request, id):
             { DeathPlace(request.deathPlace) if request.deathPlace else ''  }
             { MakeAffiliation(request.hasAffiliation) if request.hasAffiliation else ''  }
             { f'madsrdf:deathDate "{request.deathDate}" ;' if request.deathDate else ''  }
-            { f'madsrdf:occupation {", ".join([ f"<{i.value}>" for i in request.occupation])} ;' if request.occupation else ''}
-            { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.value}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
-            { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
-            { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.value}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
+            { f'madsrdf:occupation {", ".join([ f"<{i.uri}>" for i in request.occupation])} ;' if request.occupation else ''}
+            { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.uri}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
+            { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
+            { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
             { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }
-            madsrdf:isMemberOfMADSCollection <{request.isMemberOfMADSCollection}> .          
+             madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authority> .         
             }} 
         }}"""
     return graph
