@@ -931,7 +931,7 @@
                         madsrdf:elementValue "Machado de Assis, Joaquim Maria," ] [ a madsrdf:DateNameElement ;
                         madsrdf:elementValue "1839-1908" ] ) ;
             madsrdf:variantLabel "Machado de Assis, Joaquim Maria, 1839-1908" ] ;
-    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80002329>,
+    madsrdf:identifiesRWO <http://id.loc.gov/rwo/agents/n80002329>, 
         <http://isni.org/isni/0000000121441225>,
         <http://viaf.org/viaf/95151633>,
         <http://www.wikidata.org/entity/Q311145> ;

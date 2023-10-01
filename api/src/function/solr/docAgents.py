@@ -1,30 +1,30 @@
 import httpx
 
 
-def GetImagem(uri):
-    id = uri.split('/')[-1]
+# def GetImagem(uri):
+#     id = uri.split('/')[-1]
 
-    url = 'https://www.wikidata.org/w/api.php'
-    params = {
-                'action': 'wbgetentities',
-                'ids': id,
-                'props': 'claims',
-                'languages': 'pt',
-                'format': 'json'
-            }
-    response = httpx.get(url, params=params) 
-    response = response.json()
-    if response.get('error'):
-        return False
-    else:
-        # file = response['entities'][id]['claims']['P18'][0]['mainsnak']['datavalue']['value']
-        file = response['entities'][id]['claims'].get('P18')
-        if file:
-            img = file[0]['mainsnak']['datavalue']['value']
-            imagem = f'http://commons.wikimedia.org/wiki/Special:FilePath/{img}'
-            return imagem
-        else:
-            return False
+#     url = 'https://www.wikidata.org/w/api.php'
+#     params = {
+#                 'action': 'wbgetentities',
+#                 'ids': id,
+#                 'props': 'claims',
+#                 'languages': 'pt',
+#                 'format': 'json'
+#             }
+#     response = httpx.get(url, params=params) 
+#     response = response.json()
+#     if response.get('error'):
+#         return False
+#     else:
+#         # file = response['entities'][id]['claims']['P18'][0]['mainsnak']['datavalue']['value']
+#         file = response['entities'][id]['claims'].get('P18')
+#         if file:
+#             img = file[0]['mainsnak']['datavalue']['value']
+#             imagem = f'http://commons.wikimedia.org/wiki/Special:FilePath/{img}'
+#             return imagem
+#         else:
+#             return False
         
 def MakeDocAgents(request, id):
 
@@ -38,7 +38,7 @@ def MakeDocAgents(request, id):
         }
     if request.imagem:
         doc['imagem'] = request.imagem
-        print("IMG:", request.imagem )
+        # print("IMG:", request.imagem )
 
     if request.adminMetadata.changeDate:
         doc['changeDate'] = request.adminMetadata.changeDate.strftime("%Y-%m-%dT%H:%M:%S")
@@ -57,9 +57,8 @@ def MakeDocAgents(request, id):
     if request.hasAffiliation:
         affiliations = list()
         for i in request.hasAffiliation:
-
             a = {
-                'id': f"{id}/hasAffiliation#{i.organization.value.split('/')[-1]}",
+                'id': f"{id}/hasAffiliation#{i.organization.uri.split('/')[-1]}",
                 'organization': i.organization.label,
                 'affiliationStart': i.affiliationStart,
             }
@@ -69,7 +68,6 @@ def MakeDocAgents(request, id):
         doc['hasAffiliation'] = affiliations
         doc['affiliation']  = [i['organization'] for i in affiliations]
 
-    
     # hasVariant
     if request.hasVariant:
         variants = list()
@@ -108,15 +106,21 @@ def MakeDocAgents(request, id):
     if request.occupation:
         occupations = list()
         for i in request.occupation:
-            uri = {
+            if i.uri:
+                uri = {
                     'id': f"{id}/occupation#{i.uri.split('/')[-1]}",
-                    'uri': i.uri, 
-                    'label': i.label, 
+                    'label': i.label,
+                    'uri': i.uri,
                     'base': i.base }
+            else:
+                uri = {
+                    'id': f"{id}/occupation#{i.label}",
+                    'label': i.label,
+                    'base': i.base }
+
             occupations.append(uri)
         doc['hasOccupation'] = occupations
         doc['occupation']  = [i['label'] for i in occupations]
-
 
     # fieldOfActivity
     if request.fieldOfActivity:
@@ -129,5 +133,18 @@ def MakeDocAgents(request, id):
                     'base': i.base }
             fields.append(uri)
         doc['fieldOfActivity'] = fields
+
+    # identifiesRWO
+    if request.identifiesRWO:
+        fields = list()
+        for i in request.identifiesRWO:
+            identifier = i.split("/")
+            uri = {
+                    'id': f"{id}/identifiesRWO#{identifier[-1]}",
+                    'uri': i, 
+                    'label': i, 
+                    'base': identifier[2]}
+            fields.append(uri)
+        doc['identifiesRWO'] = fields
 
     return doc

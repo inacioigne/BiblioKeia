@@ -11,7 +11,7 @@ from src.schemas.settings import Settings
 from src.function.loc.graphExist import GraphExist
 from src.db.init_db import session
 from src.db.models import Authority
-from datetime import datetime
+from datetime import datetime 
 
 settings = Settings()
 

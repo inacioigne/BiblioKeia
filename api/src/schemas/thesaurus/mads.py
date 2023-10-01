@@ -11,7 +11,7 @@ class Element(BaseModel):
     elementValue: Label 
 
 class Uri(BaseModel):
-    uri: str
+    uri: Optional[str] = None
     label: str
     base: Optional[str] = None
 
@@ -57,27 +57,21 @@ class SchemaMads(BaseModel):
     identifiesRWO: Optional[list[str]] = None
     birthPlace: Optional[str] = None
     birthDate: Optional[str] = None 
+    birthDayDate: Optional[str] = None
+    birthMonthDate: Optional[str] = None
+    birthYearDate: Optional[str] = None
     hasAffiliation: Optional[list[Affiliation]] = None
     fieldOfActivity: Optional[list[Uri]] = None
-    identifiesRWO: Optional[list[str]] = None
     deathPlace: Optional[str] = None
     deathDate: Optional[str] = None
+    deathDayDate: Optional[str] = None
+    deathMonthDate: Optional[str] = None
+    deathYearDate: Optional[str] = None
     occupation: Optional[list[Uri]] = None
     hasCloseExternalAuthority: Optional[list[Uri]] = None
     hasExactExternalAuthority: Optional[list[Uri]] = None
     imagem: Optional[str] = None
-    # deathDayDate: Optional[str] = None
-    # birthDayDate: Optional[str] = None
-    # birthMonthDate: Optional[str] = None
-    # birthYearDate: Optional[str] = None
-    # deathMonthDate: Optional[str] = None
-    # deathYearDate: Optional[str] = None
-    # 
-    # 
-    # 
-    # 
 
-    # 
     # subjectOf: Optional[list[Uri]] = None
     # contributorOf: Optional[list[Uri]] = None
     # isMemberOfMADSCollection: str

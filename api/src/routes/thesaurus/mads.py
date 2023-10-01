@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from src.schemas.thesaurus.deleteAuthority import SchemaDeleteAuthority
 from src.function.rdf.thesarus.makeGraphName import MakeGraphName
 from src.function.solr.docAgents import MakeDocAgents
 from src.function.authorities.nextId import GenerateId
@@ -7,7 +8,8 @@ from src.schemas.settings import Settings
 from src.db.init_db import session
 from src.db.models import Authority
 from pysolr import Solr
-
+from src.function.solr.deleteAuthority import DeleteAuthoritySolr
+from src.function.solr.docSubject import UpdateDelete
 from src.schemas.thesaurus.mads import SchemaMads
 
 settings = Settings()
@@ -31,8 +33,8 @@ async def post_authority(request: SchemaMads):
     graph = MakeGraphName(request, item_id)
     response = authorityUpdate.run_sparql(graph)
 
+    # Solr
     doc = MakeDocAgents(request, item_id)
-    print(doc)
     responseSolr = solr.add([doc], commit=True)
 
     return {
@@ -40,3 +42,23 @@ async def post_authority(request: SchemaMads):
          "jena": response.convert()['message'],
         "solr": responseSolr
         } 
+
+# Delete Autority
+@router.delete("/delete", status_code=200) 
+async def delete_authority(request: SchemaDeleteAuthority ):
+    # Jena
+    authority = f'https://bibliokeia.com/authority/{request.type.value}/{request.id}'
+    d = f"""DELETE {{ graph <{authority}> {{ ?s ?p ?o }} }}
+            WHERE {{
+            graph <{authority}> {{ ?s ?p ?o. }}
+            }}"""
+    responseJena = authorityUpdate.run_sparql(d)
+    
+    # Solr
+    # r = solr.search(q=f'id:{request.id}', **{'fl': '*,[child]'})
+    # [doc] = r.docs
+    # responseSolr = DeleteAuthoritySolr(doc) 
+    # response = {'jena': responseJena.convert()['message'], 'solr': responseSolr}
+    # response = UpdateDelete(doc, response, authority)
+
+    return responseJena

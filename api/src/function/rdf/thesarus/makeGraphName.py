@@ -1,11 +1,12 @@
-# from src.function.authorities.agents.hasAffiliation import MakeAffiliation
+from src.function.authorities.makeOccupation import MakeOccupation
 from src.function.rdf.thesarus.hasAffiliation import MakeAffiliation
 from src.function.authorities.agents.place import BirthPlace, DeathPlace
 from src.function.authorities.agents.fullerName import FullerName
 from src.function.authorities.makeElement import MakeElement
-from src.function.authorities.makeIdentifier import MakeIdentifier
 from src.function.authorities.makeLabel import MakeLabel
 from src.function.authorities.makeVariant import MakeVariant
+from src.function.authorities.makeRWO import MakeRWO
+
 from datetime import datetime
 
 
@@ -57,11 +58,12 @@ def MakeGraphName(request, id):
             { DeathPlace(request.deathPlace) if request.deathPlace else ''  }
             { MakeAffiliation(request.hasAffiliation) if request.hasAffiliation else ''  }
             { f'madsrdf:deathDate "{request.deathDate}" ;' if request.deathDate else ''  }
-            { f'madsrdf:occupation {", ".join([ f"<{i.uri}>" for i in request.occupation])} ;' if request.occupation else ''}
+            { MakeOccupation(request.occupation) if request.occupation else '' }
             { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.uri}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
             { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }
+            { f'madsrdf:identifiesRWO { MakeRWO(request.identifiesRWO) } ;' if request.identifiesRWO else ''  }
              madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authority> .         
             }} 
         }}"""
