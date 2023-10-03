@@ -1,44 +1,24 @@
 import httpx
 
 
-# def GetImagem(uri):
-#     id = uri.split('/')[-1]
-
-#     url = 'https://www.wikidata.org/w/api.php'
-#     params = {
-#                 'action': 'wbgetentities',
-#                 'ids': id,
-#                 'props': 'claims',
-#                 'languages': 'pt',
-#                 'format': 'json'
-#             }
-#     response = httpx.get(url, params=params) 
-#     response = response.json()
-#     if response.get('error'):
-#         return False
-#     else:
-#         # file = response['entities'][id]['claims']['P18'][0]['mainsnak']['datavalue']['value']
-#         file = response['entities'][id]['claims'].get('P18')
-#         if file:
-#             img = file[0]['mainsnak']['datavalue']['value']
-#             imagem = f'http://commons.wikimedia.org/wiki/Special:FilePath/{img}'
-#             return imagem
-#         else:
-#             return False
         
 def MakeDocAgents(request, id):
+    authority = request.elementList[0].elementValue.value
+    authority = authority.removesuffix(',')
 
     doc = { 
             'id': id,
             'type': request.type,
             "creationDate": request.adminMetadata.creationDate.strftime('%Y-%m-%d'), 
             "label": request.authoritativeLabel,
-            "authority": request.elementList[0].elementValue.value,
+            "authority": authority,
             "isMemberOfMADSCollection": "https://bibliokeia.com/authority"
         }
+    if request.identifiersLccn:
+        doc['identifiersLccn'] = request.identifiersLccn
+        
     if request.imagem:
         doc['imagem'] = request.imagem
-        # print("IMG:", request.imagem )
 
     if request.adminMetadata.changeDate:
         doc['changeDate'] = request.adminMetadata.changeDate.strftime("%Y-%m-%dT%H:%M:%S")
@@ -57,11 +37,18 @@ def MakeDocAgents(request, id):
     if request.hasAffiliation:
         affiliations = list()
         for i in request.hasAffiliation:
-            a = {
+            if i.organization.uri:
+                a = {
                 'id': f"{id}/hasAffiliation#{i.organization.uri.split('/')[-1]}",
                 'organization': i.organization.label,
-                'affiliationStart': i.affiliationStart,
-            }
+                'uri': i.organization.uri,
+                'affiliationStart': i.affiliationStart }
+            else:
+                a = {
+                'id': f"{id}/hasAffiliation#{i.organization.label}",
+                'organization': i.organization.label,
+                'affiliationStart': i.affiliationStart }
+
             if i.affiliationEnd:
                 a['affiliationEnd'] = i.affiliationEnd
             affiliations.append(a)
@@ -89,19 +76,6 @@ def MakeDocAgents(request, id):
             uris.append(uri)
         doc['hasCloseExternalAuthority'] = uris
 
-    # hasCloseExternalAuthority
-    # if request.hasExactExternalAuthority:
-    #     # print("LABEL", request.hasExactExternalAuthority)
-    #     uris = list()
-    #     for i in request.hasExactExternalAuthority:
-    #         uri = {
-    #                 'id': f"{id}/hasExactExternalAuthority#{i.value.split('/')[-1]}",
-    #                 'uri': i.value, 
-    #                 'label': i.label, 
-    #                 'base': i.base }
-    #         uris.append(uri)
-    #     doc['hasExactExternalAuthority'] = uris
-
     # Occupation
     if request.occupation:
         occupations = list()
@@ -119,8 +93,8 @@ def MakeDocAgents(request, id):
                     'base': i.base }
 
             occupations.append(uri)
-        doc['hasOccupation'] = occupations
-        doc['occupation']  = [i['label'] for i in occupations]
+        doc['occupation'] = occupations
+        doc['occupationLabels']  = [i['label'] for i in occupations]
 
     # fieldOfActivity
     if request.fieldOfActivity:

@@ -13,10 +13,10 @@ def DeleteAuthoritySolr(doc):
     # [doc] = r.docs
 
     nMeta = [
-        "id", "type", "creationDate", "authority", "affiliation", "occupation", "isMemberOfMADSCollection", 
+        "id", "identifiersLccn","type", "creationDate", "authority", "affiliation", "occupation", "isMemberOfMADSCollection", 
         "note", "variant", "imagem", "fullerName", "birthDate", "birthPlace","deathDate",  "_version_", 
         "label", "changeDate", "deathPlace", "birthDayDate", "birthMonthDate", "birthYearDate", "deathDayDate",
-        "deathMonthDate", "deathYearDate" ]
+        "deathMonthDate", "deathYearDate", "occupationLabels" ]
 
     for k, v in doc.items():
         if k not in nMeta:
@@ -24,7 +24,7 @@ def DeleteAuthoritySolr(doc):
                 for i in v:
                     ids.append(i['id']) 
             else:
-                ids.append(v['id'])
+                ids.append(v['id']) 
     responseSolr = solr.delete(id=ids, commit=True)
 
     return responseSolr

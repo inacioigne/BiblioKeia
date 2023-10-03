@@ -68,6 +68,7 @@ class SchemaMads(BaseModel):
     deathMonthDate: Optional[str] = None
     deathYearDate: Optional[str] = None
     occupation: Optional[list[Uri]] = None
+    # hasOccupation: Optional[list[Uri]] = None
     hasCloseExternalAuthority: Optional[list[Uri]] = None
     hasExactExternalAuthority: Optional[list[Uri]] = None
     imagem: Optional[str] = None
