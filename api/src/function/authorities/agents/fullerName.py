@@ -1,4 +1,4 @@
 def FullerName(request):
-    name = f"""madsrdf:fullerName [ a madsrdf:{request.fullerName.type} ; 
-                rdfs:label "{request.fullerName.elementValue.value}" ] ;"""
+    name = f"""madsrdf:fullerName [ a madsrdf:PersonalName ;  
+                rdfs:label "{request.fullerName}" ] ;"""
     return name

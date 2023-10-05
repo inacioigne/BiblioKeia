@@ -1,3 +1,4 @@
+from src.function.authorities.agents.date import BirthDate, DeathDate
 from src.function.authorities.makeOccupation import MakeOccupation
 from src.function.rdf.thesarus.hasAffiliation import MakeAffiliation
 from src.function.authorities.agents.place import BirthPlace, DeathPlace
@@ -52,12 +53,12 @@ def MakeGraphName(request, id):
                     bf:code "{request.adminMetadata.status.value}" ] ] ;
             madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
             madsrdf:elementList ( {MakeElement(request.elementList)} ) ; 
-            { FullerName(request) if request.fullerName else ''  }
-            { f'madsrdf:birthDate "{request.birthDate}" ;' if request.birthDate else ''  }
+            { FullerName(request) if request.fullerName else ''  } 
+            { BirthDate(request) }
             { BirthPlace(request) if request.birthPlace else ''  }
+            { DeathDate(request) }
             { DeathPlace(request.deathPlace) if request.deathPlace else ''  }
             { MakeAffiliation(request.hasAffiliation) if request.hasAffiliation else ''  }
-            { f'madsrdf:deathDate "{request.deathDate}" ;' if request.deathDate else ''  }
             { MakeOccupation(request.occupation) if request.occupation else '' }
             { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.uri}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}

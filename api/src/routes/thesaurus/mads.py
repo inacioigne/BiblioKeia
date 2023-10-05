@@ -66,7 +66,7 @@ async def delete_authority(request: SchemaDeleteAuthority ):
 
 # Edit Autority
 @router.put("/edit", status_code=200) 
-async def edit_authority(request: SchemaMads ):
+async def edit_authority(request: SchemaMads):
     authority = f'https://bibliokeia.com/authority/{request.type}/{request.identifiersLocal}'
     request.adminMetadata.changeDate = datetime.now()
     request.adminMetadata.status.label = 'Editado'
@@ -76,17 +76,24 @@ async def edit_authority(request: SchemaMads ):
             WHERE {{
             graph <{authority}> {{ ?s ?p ?o. }}
             }}"""
-    # deleteJena = authorityUpdate.run_sparql(deleteGraph)
-    # postJena = authorityUpdate.run_sparql(graph)
+    deleteJena = authorityUpdate.run_sparql(deleteGraph)
+    postJena = authorityUpdate.run_sparql(graph)
 
     # # Solr
     doc = MakeDocAgents(request, request.identifiersLocal)
-    # responseSolr = solr.add([doc], commit=True)
+    responseSolr = solr.add([doc], commit=True)
     
     # print(graph)
-    return request.model_dump()
-    # return {
-    #     'jena': {'deleteGraph': deleteJena.convert()['message'],
-    #              'postGraph': postJena.convert()['message']},
-    #     'solr': responseSolr 
-    #         }
+    # return request.model_dump()
+    return {
+        'jena': {'deleteGraph': deleteJena.convert()['message'],
+                 'postGraph': postJena.convert()['message']},
+        'solr': responseSolr 
+            }
+
+@router.get("/next_id")
+async def next_id():
+
+    register = GenerateId() 
+
+    return register

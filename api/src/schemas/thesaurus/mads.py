@@ -10,6 +10,11 @@ class Element(BaseModel):
     type: str
     elementValue: Label 
 
+class FullerName(BaseModel):
+    type: str
+    elementValue: Label 
+
+
 class Uri(BaseModel):
     uri: Optional[str] = None
     label: str
@@ -52,18 +57,18 @@ class SchemaMads(BaseModel):
     adminMetadata: AdminMetadata 
     authoritativeLabel: str
     elementList: list[Element]
-    fullerName: Optional[Element] = None
+    fullerName: Optional[str] = None
     hasVariant: Optional[list[Variant]] = None
-    identifiesRWO: Optional[list[str]] = None
+    identifiesRWO: Optional[list[Uri]] = None
     birthPlace: Optional[str] = None
-    birthDate: Optional[str] = None 
+    # birthDate: Optional[str] = None 
     birthDayDate: Optional[str] = None
     birthMonthDate: Optional[str] = None
     birthYearDate: Optional[str] = None
     hasAffiliation: Optional[list[Affiliation]] = None
     fieldOfActivity: Optional[list[Uri]] = None
     deathPlace: Optional[str] = None
-    deathDate: Optional[str] = None
+    # deathDate: Optional[str] = None
     deathDayDate: Optional[str] = None
     deathMonthDate: Optional[str] = None
     deathYearDate: Optional[str] = None

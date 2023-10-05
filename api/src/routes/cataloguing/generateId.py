@@ -7,8 +7,6 @@ router = APIRouter()
 @router.get("/next_id")
 async def generate_id():
 
-    
-
     register = GenerateId() 
 
     return register

@@ -24,7 +24,7 @@ def MakeDocAgents(request, id):
         doc['changeDate'] = request.adminMetadata.changeDate.strftime("%Y-%m-%dT%H:%M:%S")
     
     if request.fullerName:
-        doc['fullerName'] = request.fullerName.elementValue.value
+        doc['fullerName'] = request.fullerName
     
     metadados = ['birthDayDate', 'birthMonthDate','birthYearDate', 'birthDate', 'birthPlace', 'deathDate', 'deathPlace',
                  'deathDayDate', 'deathMonthDate', 'deathYearDate']
@@ -32,6 +32,24 @@ def MakeDocAgents(request, id):
         value = request.model_dump().get(metadado)
         if value:
             doc[metadado] = value
+
+    if request.birthDayDate and request.birthMonthDate and request.birthYearDate:
+        date = f"{request.birthDayDate}-{request.birthMonthDate}-{request.birthYearDate}"
+        doc['birthDate'] = date
+    elif request.birthMonthDate and request.birthYearDate:
+        date = f"{request.birthMonthDate}-{request.birthYearDate}"
+        doc['birthDate'] = date 
+    elif request.birthYearDate:
+        doc['birthDate'] = request.birthYearDate 
+
+    if request.deathDayDate and request.deathMonthDate and request.deathYearDate:
+        date = f"{request.deathDayDate}-{request.deathMonthDate}-{request.deathYearDate}"
+        doc['deathDate'] = date
+    elif request.deathMonthDate and request.deathYearDate:
+        date = f"{request.deathMonthDate}-{request.deathDayDate}"
+        doc['deathDate'] = date 
+    elif request.deathYearDate:
+        doc['deathDate'] = request.deathYearDate 
     
     # hasAffiliation  
     if request.hasAffiliation:
@@ -112,12 +130,12 @@ def MakeDocAgents(request, id):
     if request.identifiesRWO:
         fields = list()
         for i in request.identifiesRWO:
-            identifier = i.split("/")
+            identifier = i.uri.split("/")[-1]
             uri = {
-                    'id': f"{id}/identifiesRWO#{identifier[-1]}",
-                    'uri': i, 
-                    'label': i, 
-                    'base': identifier[2]}
+                    'id': f"{id}/identifiesRWO#{identifier}",
+                    'uri': i.uri, 
+                    'label': i.label, 
+                    'base': i.base}
             fields.append(uri)
         doc['identifiesRWO'] = fields
 
