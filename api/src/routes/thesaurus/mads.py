@@ -20,29 +20,33 @@ solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 router = APIRouter() 
 
 # Post Authority
-@router.post("/create", status_code=200) 
+@router.post("/create", status_code=201) 
 async def post_authority(request: SchemaMads):
     item_id = GenerateId()
-    uri = f'https://bibliokeia.com/authority/{request.type}/{item_id}'
+    request.identifiersLocal = item_id
+
+    uri = f'https://bibliokeia.com/authority/{request.type}/{request.identifiersLocal}'
 
     # MariaDB
-    a = Authority(id=item_id, type=request.type, uri=uri)
+    a = Authority(id=request.identifiersLocal, type=request.type, uri=uri)
     session.add(a) 
     session.commit()
     
     # Jena
-    graph = MakeGraphName(request, item_id)
+    graph = MakeGraphName(request, request.identifiersLocal)
+    print(graph)
     response = authorityUpdate.run_sparql(graph)
 
     # Solr
-    doc = MakeDocAgents(request, item_id)
+    doc = MakeDocAgents(request, request.identifiersLocal)
     responseSolr = solr.add([doc], commit=True)
 
     return {
-        "id": item_id,
+        "id": request.identifiersLocal,
          "jena": response.convert()['message'],
         "solr": responseSolr
         } 
+    # return request.model_dump()
 
 # Delete Autority
 @router.delete("/delete", status_code=200) 
