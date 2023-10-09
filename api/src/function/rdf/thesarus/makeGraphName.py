@@ -53,6 +53,7 @@ def MakeGraphName(request, id):
                     bf:code "{request.adminMetadata.status.value}" ] ] ;
             madsrdf:authoritativeLabel "{MakeLabel(request.elementList)}" ;
             madsrdf:elementList ( {MakeElement(request.elementList)} ) ; 
+            { MakeVariant(request.hasVariant)if request.hasVariant else '' }
             { FullerName(request) if request.fullerName else ''  } 
             { BirthDate(request) }
             { BirthPlace(request) if request.birthPlace else ''  }
@@ -63,7 +64,6 @@ def MakeGraphName(request, id):
             { f'madsrdf:fieldOfActivity {", ".join([ f"<{i.uri}>" for i in request.fieldOfActivity])} ;' if request.fieldOfActivity else ''}
             { f'madsrdf:hasCloseExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasCloseExternalAuthority])} ;' if request.hasCloseExternalAuthority else ''}
             { f'madsrdf:hasExactExternalAuthority {", ".join([ f"<{i.uri}>" for i in request.hasExactExternalAuthority])} ;' if request.hasExactExternalAuthority else ''}
-            { f'madsrdf:hasVariant { MakeVariant(request.hasVariant) } ;' if request.hasVariant else ''  }
             { f'madsrdf:identifiesRWO { MakeRWO(request.identifiesRWO) } ;' if request.identifiesRWO else ''  }
              madsrdf:isMemberOfMADSCollection <https://bibliokeia.com/authority> .         
             }} 

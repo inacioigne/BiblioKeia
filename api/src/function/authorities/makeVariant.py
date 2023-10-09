@@ -16,7 +16,9 @@ def MakeVariant(variants):
             madsrdf:componentList ( {MakeComplexElement(i.componentList)}) ;
             madsrdf:variantLabel "{"--".join([j.elementList.elementValue.value for j in i.componentList])}" ]"""
         vList.append(v)
-    return ", ".join(vList)
+    mads = ", ".join(vList)
+    hasVariants = f"madsrdf:hasVariant {mads} ;"
+    return hasVariants
 
 def MakeSparqlVariant(authority, request):
 

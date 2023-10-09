@@ -33,7 +33,7 @@ class Affiliation(BaseModel):
 class Variant(BaseModel): 
     type: str
     elementList: list[Element]
-    variantLabel: str
+    # variantLabel: str
 
 class Status(BaseModel):
     value: str = Field(default="n")

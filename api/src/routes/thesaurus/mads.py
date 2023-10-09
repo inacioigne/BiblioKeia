@@ -23,7 +23,7 @@ router = APIRouter()
 @router.post("/create", status_code=201) 
 async def post_authority(request: SchemaMads):
     item_id = GenerateId()
-    request.identifiersLocal = item_id
+    request.identifiersLocal = str(item_id)
 
     uri = f'https://bibliokeia.com/authority/{request.type}/{request.identifiersLocal}'
 
@@ -34,11 +34,12 @@ async def post_authority(request: SchemaMads):
     
     # Jena
     graph = MakeGraphName(request, request.identifiersLocal)
-    print(graph)
+    
     response = authorityUpdate.run_sparql(graph)
 
     # Solr
     doc = MakeDocAgents(request, request.identifiersLocal)
+    print(doc)
     responseSolr = solr.add([doc], commit=True)
 
     return {
