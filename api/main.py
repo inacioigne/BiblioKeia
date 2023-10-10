@@ -1,4 +1,4 @@
-from src.routes.authorities import personalName
+# from src.routes.authorities import personalName
 from src.db.init_db import initializeDatabase
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -6,8 +6,8 @@ from src.routes.users import login
 from src.routes.users import users
 from src.routes.cataloguing import images, generateId, work, instances, items, hub, general
 from src.routes.translate import translate
-from src.routes.authorities import authority, subjects
-from src.routes.importation import loc
+# from src.routes.authorities import authority, subjects
+# from src.routes.importation import loc
 from src.routes.thesaurus import mads
 
 import uvicorn
@@ -45,7 +45,7 @@ app.include_router(images.router, prefix='/items', tags=['Images'])
 app.include_router(translate.router, prefix='/translate', tags=['Tradutor'])
 
 # Importation
-app.include_router(loc.router, prefix='/import/loc', tags=['Import'])
+# app.include_router(loc.router, prefix='/import/loc', tags=['Import'])
 
 # Thesaurus
 app.include_router(mads.router, prefix='/thesarus', tags=['Thesaurus'])

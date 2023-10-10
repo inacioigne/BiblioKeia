@@ -8,7 +8,7 @@ from src.function.authorities.agents.makeGraph import MakeGraphAgents
 from src.function.authorities.generateID import GenerateId
 from src.schemas.authorities.personalName import PersonalName
 from src.schemas.settings import Settings
-from src.function.loc.graphExist import GraphExist
+from src.function.loc.graphExistLoc import GraphExistLoc
 from src.db.init_db import session
 from src.db.models import Authority
 from datetime import datetime 
@@ -26,7 +26,7 @@ solr = Solr(f'{settings.url}:8983/solr/authority/', timeout=10)
 async def post_personalName(request: PersonalName): 
     
     if request.identifiersLccn:
-        exist = GraphExist(request.identifiersLccn)
+        exist = GraphExistLoc(request.identifiersLccn)
         if exist:
             raise HTTPException(status_code=409, detail="Esse registro já existe")
   

@@ -4,7 +4,7 @@ from src.function.loc.parserInstance import ParserInstance
 from src.function.loc.parserWork import ParserWork
 from src.schemas.authorities.personalName import PersonalName
 from src.function.loc.agents.parserAgents import ParserAgents
-from src.function.loc.graphExist import GraphExist
+from api.src.function.loc.graphExistLoc import GraphExist
 from src.function.loc.parserSubject import ParserSubject
 from src.schemas.authorities.subject import Subject
 from src.schemas.metadata.bibframe.work import Work
@@ -25,7 +25,7 @@ async def loc_exist(identifiersLccn: str):
 ASK {{ graph ?g {{ ?s identifiers:lccn "{identifiersLccn}" }} }}"""
 
     res = query.run_sparql(ask)
-    exist = res.convert()['boolean']
+    exist = res.convert()['boolean'] 
     
     return exist
 

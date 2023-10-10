@@ -1,4 +1,5 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+from src.function.loc.graphExistLoc import GraphExistLoc
 from src.schemas.thesaurus.deleteAuthority import SchemaDeleteAuthority
 from src.function.rdf.thesarus.makeGraphName import MakeGraphName
 from src.function.solr.docAgents import MakeDocAgents
@@ -26,6 +27,12 @@ async def post_authority(request: SchemaMads):
     request.identifiersLocal = str(item_id)
 
     uri = f'https://bibliokeia.com/authority/{request.type}/{request.identifiersLocal}'
+    if request.identifiersLccn:
+        print("LCCN: ", request.identifiersLccn)
+        loc = GraphExistLoc(request.identifiersLccn)
+        if loc:
+            raise HTTPException(status_code=409, detail="Esse registro já existe")
+
 
     # MariaDB
     a = Authority(id=request.identifiersLocal, type=request.type, uri=uri)
@@ -39,7 +46,7 @@ async def post_authority(request: SchemaMads):
 
     # Solr
     doc = MakeDocAgents(request, request.identifiersLocal)
-    print(doc)
+    
     responseSolr = solr.add([doc], commit=True)
 
     return {

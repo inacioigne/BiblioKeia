@@ -1,4 +1,4 @@
-from src.function.loc.graphExist import GraphExist
+from api.src.function.loc.graphExistLoc import GraphExist
 from pyfuseki import FusekiQuery
 
 fuseki_query = FusekiQuery('http://localhost:3030', 'authorities')

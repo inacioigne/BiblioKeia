@@ -61,7 +61,6 @@ class SchemaMads(BaseModel):
     hasVariant: Optional[list[Variant]] = None
     identifiesRWO: Optional[list[Uri]] = None
     birthPlace: Optional[str] = None
-    # birthDate: Optional[str] = None 
     birthDayDate: Optional[str] = None
     birthMonthDate: Optional[str] = None
     birthYearDate: Optional[str] = None
@@ -76,6 +75,7 @@ class SchemaMads(BaseModel):
     # hasOccupation: Optional[list[Uri]] = None
     hasCloseExternalAuthority: Optional[list[Uri]] = None
     hasExactExternalAuthority: Optional[list[Uri]] = None
+    hasBroaderAuthority: Optional[Element] = None
     imagem: Optional[str] = None
 
     # subjectOf: Optional[list[Uri]] = None

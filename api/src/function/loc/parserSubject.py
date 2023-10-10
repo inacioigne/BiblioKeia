@@ -3,7 +3,7 @@ from .ElementList import GetElementList
 from .getType import GetType
 from .Variant import GetVariant
 from src.schemas.authorities.subject import Subject
-from .graphExist import GraphExist
+from .graphExistLoc import GraphExist
       
 def GetInternalUri(authority, graph, metadata, obj):
 
