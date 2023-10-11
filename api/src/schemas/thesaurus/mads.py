@@ -12,13 +12,14 @@ class Element(BaseModel):
 
 class FullerName(BaseModel):
     type: str
-    elementValue: Label 
-
+    elementValue: Label
 
 class Uri(BaseModel):
-    uri: Optional[str] = None
+    uri: str
     label: str
+    type: Optional[str] = None
     base: Optional[str] = None
+    lang: Optional[str] = None    
 
 class Organization(BaseModel):
     uri: Optional[str] = None
@@ -67,15 +68,13 @@ class SchemaMads(BaseModel):
     hasAffiliation: Optional[list[Affiliation]] = None
     fieldOfActivity: Optional[list[Uri]] = None
     deathPlace: Optional[str] = None
-    # deathDate: Optional[str] = None
     deathDayDate: Optional[str] = None
     deathMonthDate: Optional[str] = None
     deathYearDate: Optional[str] = None
     occupation: Optional[list[Uri]] = None
-    # hasOccupation: Optional[list[Uri]] = None
     hasCloseExternalAuthority: Optional[list[Uri]] = None
     hasExactExternalAuthority: Optional[list[Uri]] = None
-    hasBroaderAuthority: Optional[Element] = None
+    hasBroaderAuthority: Optional[Uri] = None
     imagem: Optional[str] = None
 
     # subjectOf: Optional[list[Uri]] = None

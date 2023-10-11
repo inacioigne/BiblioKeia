@@ -334,7 +334,7 @@
     madsrdf:authoritativeLabel "Âşıks"@en ;
     skos:prefLabel "Âşıks"@en .
 
-<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Authority,
+<http://id.loc.gov/authorities/subjects/sh85009793> a madsrdf:Authority, 
         madsrdf:Topic,
         skos:Concept ;
     madsrdf:authoritativeLabel "Authors"@en ;
